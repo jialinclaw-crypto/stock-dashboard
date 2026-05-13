@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0a0e1a">
+  <title>📈 股市儀表板 · Stock Dashboard</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📈</text></svg>">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            bg: { DEFAULT: '#0a0e1a', light: '#f8fafc' },
+            card: { DEFAULT: '#111827', light: '#ffffff' },
+            accent: { DEFAULT: '#10b981', red: '#ef4444' },
+          },
+          fontFamily: {
+            sans: ['-apple-system', 'BlinkMacSystemFont', '"Noto Sans TC"', 'sans-serif'],
+            mono: ['"SF Mono"', 'Menlo', 'monospace'],
+          },
+        }
+      }
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body class="bg-bg dark:bg-bg text-slate-100 dark:text-slate-100 min-h-screen font-sans">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 backdrop-blur-md bg-bg/80 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <span class="text-2xl">📈</span>
+        <div>
+          <h1 class="text-base font-bold tracking-tight">股市儀表板</h1>
+          <p class="text-xs text-slate-400" id="header-subtitle">載入中…</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-3 text-xs">
+        <span id="market-status" class="px-2 py-1 rounded-full bg-slate-800 text-slate-300">—</span>
+        <button id="theme-toggle" class="p-2 rounded-lg hover:bg-slate-800 transition" aria-label="切換主題">🌓</button>
+      </div>
+    </div>
+    <!-- Tab nav -->
+    <nav class="max-w-7xl mx-auto px-4 flex gap-1 overflow-x-auto text-sm">
+      <button data-tab="overview" class="tab-btn active px-4 py-2 border-b-2 border-accent text-accent font-medium whitespace-nowrap">📊 總覽</button>
+      <button data-tab="reports" class="tab-btn px-4 py-2 border-b-2 border-transparent text-slate-400 hover:text-slate-200 whitespace-nowrap">📋 報告中心</button>
+      <button data-tab="portfolio" class="tab-btn px-4 py-2 border-b-2 border-transparent text-slate-400 hover:text-slate-200 whitespace-nowrap">💼 我的部位</button>
+      <button data-tab="calendar" class="tab-btn px-4 py-2 border-b-2 border-transparent text-slate-400 hover:text-slate-200 whitespace-nowrap">📅 行事曆</button>
+    </nav>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-4 py-6">
+
+    <!-- =================== TAB: OVERVIEW =================== -->
+    <section data-panel="overview" class="tab-panel">
+
+      <!-- Latest report card -->
+      <div id="latest-report-card" class="mb-6 bg-gradient-to-br from-emerald-900/40 to-slate-900 border border-emerald-500/30 rounded-xl p-5">
+        <div class="flex items-start justify-between mb-3">
+          <div>
+            <p class="text-xs uppercase tracking-wider text-emerald-400 mb-1">最新報告</p>
+            <h2 id="latest-title" class="text-lg font-bold">尚無報告</h2>
+            <p id="latest-time" class="text-xs text-slate-400 mt-1"></p>
+          </div>
+          <span class="text-2xl">📈</span>
+        </div>
+        <div id="latest-tldr" class="text-sm text-slate-300 leading-relaxed line-clamp-4">排程啟動後，報告會自動出現在這裡。</div>
+        <button id="open-latest" class="mt-4 text-xs px-3 py-1.5 bg-emerald-500/20 text-emerald-300 rounded-lg hover:bg-emerald-500/30 transition">展開完整報告 →</button>
+      </div>
+
+      <!-- Live market widgets -->
+      <h3 class="text-sm font-semibold text-slate-400 uppercase tracking-wider mb-3">即時市場</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+
+        <div class="bg-card rounded-xl p-4 border border-slate-800">
+          <p class="text-xs text-slate-400 mb-2">台股加權 TAIEX</p>
+          <div class="tradingview-widget-container">
+            <div id="tv-taiex" style="height:120px"></div>
+          </div>
+        </div>
+
+        <div class="bg-card rounded-xl p-4 border border-slate-800">
+          <p class="text-xs text-slate-400 mb-2">費城半導體 SOX</p>
+          <div class="tradingview-widget-container">
+            <div id="tv-sox" style="height:120px"></div>
+          </div>
+        </div>
+
+        <div class="bg-card rounded-xl p-4 border border-slate-800">
+          <p class="text-xs text-slate-400 mb-2">Nasdaq Composite</p>
+          <div class="tradingview-widget-container">
+            <div id="tv-ndaq" style="height:120px"></div>
+          </div>
+        </div>
+
+        <div class="bg-card rounded-xl p-4 border border-slate-800">
+          <p class="text-xs text-slate-400 mb-2">S&P 500</p>
+          <div class="tradingview-widget-container">
+            <div id="tv-spx" style="height:120px"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Watchlist (NVDA, TSLA, AAPL, TSM + 2330, 2454, 2317) -->
+      <h3 class="text-sm font-semibold text-slate-400 uppercase tracking-wider mb-3">關注股</h3>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-3" id="watchlist-grid">
+        <!-- Cards injected by JS -->
+      </div>
+
+    </section>
+
+    <!-- =================== TAB: REPORTS =================== -->
+    <section data-panel="reports" class="tab-panel hidden">
+      <div class="flex items-center justify-between mb-4">
+        <h2 class="text-lg font-bold">所有報告</h2>
+        <div class="flex gap-2 text-xs">
+          <button data-filter="all" class="filter-btn active px-3 py-1.5 bg-emerald-500/20 text-emerald-300 rounded-lg">全部</button>
+          <button data-filter="morning" class="filter-btn px-3 py-1.5 bg-slate-800 text-slate-400 rounded-lg hover:bg-slate-700">📈 開盤前</button>
+          <button data-filter="close" class="filter-btn px-3 py-1.5 bg-slate-800 text-slate-400 rounded-lg hover:bg-slate-700">📊 收盤後</button>
+          <button data-filter="weekly" class="filter-btn px-3 py-1.5 bg-slate-800 text-slate-400 rounded-lg hover:bg-slate-700">📅 週報</button>
+        </div>
+      </div>
+      <div id="reports-list" class="space-y-3"></div>
+    </section>
+
+    <!-- =================== TAB: PORTFOLIO =================== -->
+    <section data-panel="portfolio" class="tab-panel hidden">
+      <div class="flex items-center justify-between mb-4">
+        <h2 class="text-lg font-bold">💼 我的部位</h2>
+        <button id="add-position-btn" class="text-xs px-3 py-1.5 bg-emerald-500/20 text-emerald-300 rounded-lg hover:bg-emerald-500/30">+ 新增持股</button>
+      </div>
+      <p class="text-xs text-slate-400 mb-4">資料只存在你的瀏覽器 localStorage，不會上傳。</p>
+
+      <!-- Add position form (hidden by default) -->
+      <div id="position-form" class="hidden bg-card border border-slate-800 rounded-xl p-4 mb-4">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-3 text-sm">
+          <input id="pf-symbol" placeholder="代碼 (NVDA / 2330)" class="bg-slate-800 rounded-lg px-3 py-2 text-slate-100">
+          <input id="pf-shares" type="number" placeholder="股數" class="bg-slate-800 rounded-lg px-3 py-2 text-slate-100">
+          <input id="pf-cost" type="number" step="0.01" placeholder="平均成本" class="bg-slate-800 rounded-lg px-3 py-2 text-slate-100">
+          <input id="pf-market" placeholder="市場 (US/TW)" class="bg-slate-800 rounded-lg px-3 py-2 text-slate-100">
+        </div>
+        <div class="flex gap-2 mt-3">
+          <button id="pf-save" class="text-xs px-4 py-2 bg-emerald-500 text-white rounded-lg">儲存</button>
+          <button id="pf-cancel" class="text-xs px-4 py-2 bg-slate-700 text-slate-300 rounded-lg">取消</button>
+        </div>
+      </div>
+
+      <div id="portfolio-table" class="bg-card rounded-xl border border-slate-800 overflow-hidden"></div>
+    </section>
+
+    <!-- =================== TAB: CALENDAR =================== -->
+    <section data-panel="calendar" class="tab-panel hidden">
+      <h2 class="text-lg font-bold mb-4">📅 行事曆</h2>
+      <div id="calendar-timeline" class="space-y-4"></div>
+    </section>
+
+  </main>
+
+  <!-- =================== REPORT MODAL =================== -->
+  <div id="report-modal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden p-4 overflow-y-auto">
+    <div class="max-w-3xl mx-auto my-8 bg-card rounded-xl border border-slate-700 shadow-2xl">
+      <div class="sticky top-0 bg-card border-b border-slate-700 px-5 py-3 flex items-center justify-between rounded-t-xl">
+        <h3 id="modal-title" class="font-bold"></h3>
+        <button id="modal-close" class="text-slate-400 hover:text-white text-2xl leading-none">×</button>
+      </div>
+      <article id="modal-content" class="prose prose-invert prose-sm max-w-none p-6"></article>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center text-xs text-slate-500 py-8">
+    🤖 由 Claude Code 自動產生 · 報告由 Anthropic 雲端 agent 每日定時抓取整理 · 非投資建議
+  </footer>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>

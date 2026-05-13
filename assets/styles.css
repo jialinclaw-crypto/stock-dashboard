@@ -1,0 +1,80 @@
+/* ===== Base ===== */
+html { scroll-behavior: smooth; }
+body { -webkit-font-smoothing: antialiased; }
+
+/* ===== Light theme override ===== */
+html:not(.dark) body { background: #f8fafc; color: #0f172a; }
+html:not(.dark) header { background: rgba(248,250,252,0.85); border-color: #e2e8f0; }
+html:not(.dark) .bg-card { background: #ffffff !important; }
+html:not(.dark) .border-slate-800 { border-color: #e2e8f0 !important; }
+html:not(.dark) .text-slate-100 { color: #0f172a !important; }
+html:not(.dark) .text-slate-300, html:not(.dark) .text-slate-400 { color: #475569 !important; }
+html:not(.dark) .bg-slate-800 { background: #f1f5f9 !important; }
+html:not(.dark) .bg-slate-700 { background: #e2e8f0 !important; }
+
+/* ===== Tab system ===== */
+.tab-panel.hidden { display: none; }
+.tab-btn.active { border-color: #10b981; color: #10b981; }
+
+/* ===== Markdown prose ===== */
+.prose h1 { font-size: 1.5rem; font-weight: 700; margin: 1rem 0 0.5rem; color: #f1f5f9; }
+.prose h2 { font-size: 1.25rem; font-weight: 700; margin: 1.5rem 0 0.5rem; color: #f1f5f9; border-bottom: 1px solid #334155; padding-bottom: 0.25rem; }
+.prose h3 { font-size: 1.1rem; font-weight: 600; margin: 1rem 0 0.25rem; color: #cbd5e1; }
+.prose p { margin: 0.5rem 0; line-height: 1.7; color: #cbd5e1; }
+.prose ul, .prose ol { margin: 0.5rem 0 0.5rem 1.5rem; color: #cbd5e1; }
+.prose li { margin: 0.25rem 0; }
+.prose strong { color: #f1f5f9; font-weight: 600; }
+.prose code { background: #1e293b; color: #fbbf24; padding: 0.1em 0.3em; border-radius: 0.25rem; font-size: 0.85em; }
+.prose blockquote { border-left: 3px solid #10b981; padding-left: 1rem; color: #94a3b8; margin: 1rem 0; }
+.prose table { width: 100%; margin: 1rem 0; border-collapse: collapse; font-size: 0.85rem; }
+.prose th { background: #1e293b; color: #f1f5f9; padding: 0.5rem; text-align: left; border: 1px solid #334155; }
+.prose td { padding: 0.5rem; border: 1px solid #334155; color: #cbd5e1; }
+.prose a { color: #10b981; text-decoration: underline; }
+.prose hr { border-color: #334155; margin: 1.5rem 0; }
+
+html:not(.dark) .prose h1, html:not(.dark) .prose h2, html:not(.dark) .prose h3, html:not(.dark) .prose strong { color: #0f172a; }
+html:not(.dark) .prose p, html:not(.dark) .prose ul, html:not(.dark) .prose ol, html:not(.dark) .prose td { color: #334155; }
+html:not(.dark) .prose th { background: #f1f5f9; color: #0f172a; border-color: #cbd5e1; }
+html:not(.dark) .prose td { border-color: #e2e8f0; }
+html:not(.dark) .prose blockquote { color: #475569; }
+html:not(.dark) .prose code { background: #f1f5f9; color: #b45309; }
+
+/* ===== Report card ===== */
+.report-card {
+  background: #111827;
+  border: 1px solid #1e293b;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.report-card:hover {
+  border-color: #10b981;
+  transform: translateY(-1px);
+}
+html:not(.dark) .report-card { background: #ffffff; border-color: #e2e8f0; }
+
+/* ===== Watchlist tile ===== */
+.stock-tile {
+  background: #111827;
+  border: 1px solid #1e293b;
+  border-radius: 0.75rem;
+  padding: 0.875rem;
+  transition: all 0.15s;
+}
+.stock-tile:hover { border-color: #10b981; }
+html:not(.dark) .stock-tile { background: #ffffff; border-color: #e2e8f0; }
+
+/* ===== Line clamp utility ===== */
+.line-clamp-4 {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* ===== Scrollbar ===== */
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #475569; }

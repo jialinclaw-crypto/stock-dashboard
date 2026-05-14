@@ -52,7 +52,17 @@
       "support": 2150,
       "resistance": 2350,
       "stop_loss": 2080,
-      "target": 2400
+      "target": 2400,
+      "technicals": {
+        "rsi14": 52,
+        "macd": "neutral（短均剛由空翻多）",
+        "ma_alignment": "現價 < 5MA、20MA 上行"
+      },
+      "valuation": {
+        "pe": 22.5,
+        "pe_percentile_5y": 78,
+        "verdict": "略偏貴"
+      }
     },
     {
       "ticker": "2454",
@@ -65,7 +75,17 @@
       "support": 2500,
       "resistance": 2800,
       "stop_loss": 2420,
-      "target": 2850
+      "target": 2850,
+      "technicals": {
+        "rsi14": 58,
+        "macd": "bullish_cross",
+        "ma_alignment": "現價 > 5MA > 20MA（多頭排列）"
+      },
+      "valuation": {
+        "pe": 18.2,
+        "pe_percentile_5y": 55,
+        "verdict": "合理"
+      }
     },
     {
       "ticker": "2317",
@@ -78,7 +98,17 @@
       "support": 242,
       "resistance": 260,
       "stop_loss": 238,
-      "target": 268
+      "target": 268,
+      "technicals": {
+        "rsi14": 48,
+        "macd": "neutral",
+        "ma_alignment": "現價貼近 5MA / 20MA 糾結"
+      },
+      "valuation": {
+        "pe": 11.8,
+        "pe_percentile_5y": 35,
+        "verdict": "偏便宜"
+      }
     },
     {
       "ticker": "NVDA",
@@ -91,7 +121,17 @@
       "support": 208,
       "resistance": 240,
       "stop_loss": 208,
-      "target": 240
+      "target": 240,
+      "technicals": {
+        "rsi14": 72,
+        "macd": "bullish",
+        "ma_alignment": "強勢多頭排列（5>20>60>200 MA）"
+      },
+      "valuation": {
+        "pe": 68,
+        "pe_percentile_5y": 92,
+        "verdict": "超貴（AI premium）"
+      }
     },
     {
       "ticker": "TSLA",
@@ -104,7 +144,17 @@
       "support": 393,
       "resistance": 470,
       "stop_loss": 392,
-      "target": 465
+      "target": 465,
+      "technicals": {
+        "rsi14": 69,
+        "macd": "bullish_weakening",
+        "ma_alignment": "突破 50MA，5MA 上行"
+      },
+      "valuation": {
+        "pe": 85,
+        "pe_percentile_5y": 65,
+        "verdict": "偏貴"
+      }
     },
     {
       "ticker": "AAPL",
@@ -117,7 +167,17 @@
       "support": 265,
       "resistance": 295.27,
       "stop_loss": 267,
-      "target": 310
+      "target": 310,
+      "technicals": {
+        "rsi14": 74,
+        "macd": "bullish",
+        "ma_alignment": "5MA 上揚並挑戰 ATH"
+      },
+      "valuation": {
+        "pe": 32,
+        "pe_percentile_5y": 88,
+        "verdict": "偏貴"
+      }
     },
     {
       "ticker": "TSM",
@@ -130,34 +190,54 @@
       "support": 380,
       "resistance": 419.50,
       "stop_loss": 374,
-      "target": 425
+      "target": 425,
+      "technicals": {
+        "rsi14": 55,
+        "macd": "bullish_cross",
+        "ma_alignment": "20MA 支撐有效"
+      },
+      "valuation": {
+        "pe": 24,
+        "pe_percentile_5y": 70,
+        "verdict": "略偏貴"
+      }
     }
   ],
   "alerts": [
     {
       "level": "warning",
       "text": "April PPI +6.0% 年增（大超預期 4.9%）、CPI +3.8%（超預期 3.7%），美債 10 年殖利率升至年內新高 4.48%，升息機率上升，成長股估值面臨壓力。",
-      "tickers": ["NVDA", "TSLA", "AAPL", "TSM", "2330", "2454"]
+      "tickers": ["NVDA", "TSLA", "AAPL", "TSM", "2330", "2454"],
+      "url": "https://news.cnyes.com/news/cat/wd_stock",
+      "source": "鉅亨網"
     },
     {
       "level": "warning",
       "text": "SOX 5/12 盤中暴跌 −6.8%（年內最大），反映半導體族群在高位波動加劇，持倉者應嚴設停損。",
-      "tickers": ["NVDA", "TSM", "2330", "2454"]
+      "tickers": ["NVDA", "TSM", "2330", "2454"],
+      "url": "https://tw.stock.yahoo.com/news/category-stock-us",
+      "source": "Yahoo 股市"
     },
     {
       "level": "warning",
       "text": "台積電 2330 外資近期賣超逾 304 億元，若今日補漲後外資不回補，短線壓力不輕。",
-      "tickers": ["2330"]
+      "tickers": ["2330"],
+      "url": "https://histock.tw/stock/2330",
+      "source": "Histock"
     },
     {
       "level": "info",
       "text": "Nvidia CEO 黃仁勳隨川普訪中出席川習峰會，市場預期半導體出口管制鬆綁，為半導體族群中期利多。",
-      "tickers": ["NVDA", "TSM", "2330", "2454"]
+      "tickers": ["NVDA", "TSM", "2330", "2454"],
+      "url": "https://www.cna.com.tw/news/aopl/",
+      "source": "中央社"
     },
     {
       "level": "info",
       "text": "Cisco 盤後大漲 +19%，Q3 財報及展望大超預期，AI 資料中心網路基建需求確認強勁。",
-      "tickers": []
+      "tickers": [],
+      "url": "https://news.cnyes.com/news/id/5876543",
+      "source": "鉅亨網"
     }
   ],
   "sector_rotation": {

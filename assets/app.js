@@ -279,6 +279,23 @@ function renderIndices(sig) {
   strip.classList.remove('hidden');
 }
 
+// ================== Latest signals (shared state for portfolio P&L) ==================
+let LATEST_SIGNALS = null;
+
+// Color helpers
+function rsiColor(rsi) {
+  if (rsi == null) return 'text-slate-300';
+  if (rsi >= 70) return 'text-rose-400';     // overbought
+  if (rsi <= 30) return 'text-emerald-400';  // oversold
+  return 'text-slate-300';
+}
+function pePercentileColor(p) {
+  if (p == null) return 'text-slate-500';
+  if (p >= 80) return 'text-rose-400';       // expensive
+  if (p <= 20) return 'text-emerald-400';    // cheap
+  return 'text-slate-500';
+}
+
 // ================== Signal cards (from companion JSON) ==================
 const VIEW_COLORS = {
   '🟢': 'border-emerald-500/40 bg-emerald-500/5',
@@ -302,16 +319,56 @@ async function loadSignals(latestReport) {
     const res = await fetch(`reports/${jsonFile}?t=${Date.now()}`);
     if (!res.ok) throw new Error('no signals json');
     const sig = await res.json();
+    LATEST_SIGNALS = sig;
     renderIndices(sig);
     renderMarketView(sig);
     renderSignalCards(sig);
+    renderSectorRotation(sig);
     renderAlerts(sig);
+    // Re-render portfolio so P&L picks up the new prices
+    renderPortfolio();
   } catch (e) {
-    ['indices-strip','market-view-banner','signals-section','alerts-section'].forEach(id => {
+    LATEST_SIGNALS = null;
+    ['indices-strip','market-view-banner','signals-section','sector-section','alerts-section'].forEach(id => {
       const el = document.getElementById(id);
       if (el) el.classList.add('hidden');
     });
+    // Also clear stale prices/P&L from portfolio table
+    renderPortfolio();
   }
+}
+
+// ================== Sector rotation ==================
+function renderSectorRotation(sig) {
+  const section = document.getElementById('sector-section');
+  if (!section) return;
+  const rot = sig.sector_rotation;
+  const total = (rot?.strong?.length || 0) + (rot?.weak?.length || 0) + (rot?.watch?.length || 0);
+  if (!rot || total === 0) {
+    section.classList.add('hidden');
+    return;
+  }
+  const groups = [
+    { key: 'strong', icon: '🔥', label: '啟動 / 強勢', cls: 'border-emerald-500/40 bg-emerald-500/5', chipCls: 'bg-emerald-500/20 text-emerald-200' },
+    { key: 'weak',   icon: '🌅', label: '退潮 / 弱勢', cls: 'border-rose-500/40 bg-rose-500/5',       chipCls: 'bg-rose-500/20 text-rose-200' },
+    { key: 'watch',  icon: '👁', label: '觀察名單',   cls: 'border-amber-500/40 bg-amber-500/5',     chipCls: 'bg-amber-500/20 text-amber-200' },
+  ];
+  document.getElementById('sector-grid').innerHTML = groups.map(g => {
+    const items = rot[g.key] || [];
+    if (!items.length) {
+      return `<div class="rounded-xl border ${g.cls} p-3 opacity-40">
+        <div class="text-xs mb-1 text-slate-400">${g.icon} ${esc(g.label)}</div>
+        <div class="text-[10px] text-slate-500">—</div>
+      </div>`;
+    }
+    return `<div class="rounded-xl border ${g.cls} p-3">
+      <div class="text-xs mb-2 text-slate-400">${g.icon} ${esc(g.label)} <span class="text-[10px] text-slate-600">· ${items.length} 項</span></div>
+      <div class="flex flex-wrap gap-1.5">
+        ${items.map(i => `<span class="text-[11px] px-2 py-0.5 rounded-full ${g.chipCls}">${esc(i)}</span>`).join('')}
+      </div>
+    </div>`;
+  }).join('');
+  section.classList.remove('hidden');
 }
 
 function renderMarketView(sig) {
@@ -365,6 +422,13 @@ function renderSignalCards(sig) {
       <div class="grid grid-cols-2 gap-1 text-[10px] mt-2">
         ${s.support ? `<div class="text-slate-500">支撐 <span class="text-slate-300 font-mono">${esc(s.support)}</span></div>` : '<div></div>'}
         ${s.resistance ? `<div class="text-slate-500">壓力 <span class="text-slate-300 font-mono">${esc(s.resistance)}</span></div>` : '<div></div>'}
+      </div>` : ''}
+      ${(s.technicals || s.valuation) ? `
+      <div class="grid grid-cols-2 gap-1 text-[10px] mt-2 pt-2 border-t border-slate-800/60">
+        ${s.technicals?.rsi14 != null ? `<div class="text-slate-500">RSI14 <span class="font-mono ${rsiColor(s.technicals.rsi14)}">${esc(s.technicals.rsi14)}</span></div>` : '<div></div>'}
+        ${s.valuation?.pe != null ? `<div class="text-slate-500">P/E <span class="font-mono text-slate-300">${esc(s.valuation.pe)}</span>${s.valuation.pe_percentile_5y != null ? ` <span class="text-[9px] ${pePercentileColor(s.valuation.pe_percentile_5y)}">P${esc(s.valuation.pe_percentile_5y)}</span>` : ''}</div>` : '<div></div>'}
+        ${s.technicals?.macd ? `<div class="text-slate-500 col-span-2">MACD <span class="text-slate-300">${esc(s.technicals.macd)}</span></div>` : ''}
+        ${s.technicals?.ma_alignment ? `<div class="text-slate-500 col-span-2">MA <span class="text-slate-300">${esc(s.technicals.ma_alignment)}</span></div>` : ''}
       </div>` : ''}
     `;
     grid.appendChild(card);
@@ -507,30 +571,101 @@ function renderPortfolio() {
       </div>`;
     return;
   }
+  // Build a price lookup from latest signals JSON (snapshot prices)
+  const priceMap = new Map();
+  if (LATEST_SIGNALS && Array.isArray(LATEST_SIGNALS.stocks)) {
+    LATEST_SIGNALS.stocks.forEach(s => {
+      if (s.ticker && s.price != null && !isNaN(Number(s.price))) {
+        priceMap.set(String(s.ticker).toUpperCase(), Number(s.price));
+      }
+    });
+  }
+
+  // Compute portfolio totals separately by currency (TWD vs USD) — never mix them
+  const tot = { TW: { cost: 0, market: 0, any: false }, US: { cost: 0, market: 0, any: false } };
+  const rows = positions.map((p, i) => {
+    const shares = Number(p.shares ?? 0);
+    const cost = Number(p.cost ?? 0);
+    const price = priceMap.get(String(p.symbol).toUpperCase());
+    const hasPrice = price != null && !isNaN(price);
+    const hasHolding = shares > 0 && cost > 0;
+    const currency = p.market === 'TW' ? 'TW' : 'US';
+    if (hasHolding && hasPrice && tot[currency]) {
+      tot[currency].cost   += shares * cost;
+      tot[currency].market += shares * price;
+      tot[currency].any = true;
+    }
+    const marketVal = hasPrice ? shares * price : null;
+    const costBasis = shares * cost;
+    const pnl       = (hasHolding && hasPrice) ? (marketVal - costBasis) : null;
+    const pnlPct    = (pnl != null && costBasis > 0) ? (pnl / costBasis * 100) : null;
+    const pnlColor  = pnl == null ? 'text-slate-500' : (pnl >= 0 ? 'text-emerald-400' : 'text-rose-400');
+    const pnlSign   = pnl == null ? '' : (pnl >= 0 ? '+' : '');
+    return { i, p, shares, cost, price, hasPrice, hasHolding, costBasis, marketVal, pnl, pnlPct, pnlColor, pnlSign };
+  });
+
+  const anyHolding = tot.TW.any || tot.US.any;
+  const priceAsOf = LATEST_SIGNALS?.generated_at
+    ? new Intl.DateTimeFormat('zh-TW', { month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit', hour12: false, timeZone: 'Asia/Taipei' }).format(new Date(LATEST_SIGNALS.generated_at))
+    : null;
+
+  function totalsCard(label, currency, t, badgeCls) {
+    if (!t.any) return '';
+    const pnl = t.market - t.cost;
+    const pnlPct = t.cost > 0 ? pnl / t.cost * 100 : null;
+    const color = pnl >= 0 ? 'text-emerald-400' : 'text-rose-400';
+    const sign = pnl >= 0 ? '+' : '';
+    return `<div class="flex-1 min-w-[260px] bg-gradient-to-br from-slate-800/40 to-slate-900 border border-slate-800 rounded-lg p-3 m-2">
+      <div class="flex items-center justify-between mb-1">
+        <p class="text-[10px] uppercase tracking-wider text-slate-500">${esc(label)}</p>
+        <span class="text-[10px] px-2 py-0.5 rounded ${badgeCls}">${esc(currency)}</span>
+      </div>
+      <p class="text-xl font-mono font-bold ${color}">${sign}${pnl.toFixed(0)}
+        ${pnlPct != null ? `<span class="text-sm ml-2">(${sign}${pnlPct.toFixed(2)}%)</span>` : ''}
+      </p>
+      <p class="text-[10px] text-slate-500 mt-1">市值 <span class="font-mono text-slate-300">${t.market.toFixed(0)}</span> / 成本 <span class="font-mono text-slate-400">${t.cost.toFixed(0)}</span></p>
+    </div>`;
+  }
+
   el.innerHTML = `
+    ${anyHolding ? `
+    <div class="border-b border-slate-800">
+      <div class="flex flex-wrap">
+        ${totalsCard('台股 P&L', 'TWD', tot.TW, 'bg-orange-500/20 text-orange-300')}
+        ${totalsCard('美股 P&L', 'USD', tot.US, 'bg-blue-500/20 text-blue-300')}
+      </div>
+      ${priceAsOf ? `<p class="text-[10px] text-slate-500 px-4 pb-2">📍 用 ${esc(priceAsOf)} 快照價計算（非即時）· 不同幣別不相加</p>` : ''}
+    </div>` : ''}
     <table class="w-full text-sm">
       <thead>
-        <tr class="bg-slate-800/50 text-xs uppercase tracking-wider text-slate-400">
-          <th class="text-left p-3">代碼</th>
-          <th class="text-right p-3">股數</th>
-          <th class="text-right p-3">成本</th>
-          <th class="text-right p-3">市場</th>
-          <th class="p-3"></th>
+        <tr class="bg-slate-800/30 text-[10px] uppercase tracking-wider text-slate-400">
+          <th class="text-left p-2">代碼</th>
+          <th class="text-right p-2">股數</th>
+          <th class="text-right p-2">成本</th>
+          <th class="text-right p-2">現價</th>
+          <th class="text-right p-2">市值</th>
+          <th class="text-right p-2">損益 $</th>
+          <th class="text-right p-2">損益 %</th>
+          <th class="p-2"></th>
         </tr>
       </thead>
       <tbody>
-        ${positions.map((p, i) => {
-          const shares = p.shares ?? 0;
-          const cost = Number(p.cost ?? 0);
-          return `
+        ${rows.map(r => `
           <tr class="border-t border-slate-800 hover:bg-slate-800/30">
-            <td class="p-3 font-mono font-bold">${esc(p.symbol)}</td>
-            <td class="p-3 text-right">${esc(shares)}</td>
-            <td class="p-3 text-right font-mono">${cost.toFixed(2)}</td>
-            <td class="p-3 text-right text-xs"><span class="px-2 py-0.5 rounded ${p.market === 'TW' ? 'bg-orange-500/20 text-orange-300' : 'bg-blue-500/20 text-blue-300'}">${esc(p.market || '')}</span></td>
-            <td class="p-3 text-right"><button data-i="${i}" class="del-btn text-red-400 hover:text-red-300 text-xs">刪除</button></td>
+            <td class="p-2 font-mono font-bold">
+              ${esc(r.p.symbol)}
+              <span class="text-[9px] ml-1 px-1 py-0.5 rounded ${r.p.market === 'TW' ? 'bg-orange-500/20 text-orange-300' : 'bg-blue-500/20 text-blue-300'}">${esc(r.p.market || '')}</span>
+              ${!r.hasHolding ? `<span class="text-[9px] ml-1 text-slate-500">觀察</span>` : ''}
+            </td>
+            <td class="p-2 text-right font-mono">${r.shares || '—'}</td>
+            <td class="p-2 text-right font-mono">${r.cost > 0 ? r.cost.toFixed(2) : '—'}</td>
+            <td class="p-2 text-right font-mono ${r.hasPrice ? 'text-slate-200' : 'text-slate-600'}">${r.hasPrice ? r.price.toFixed(2) : '—'}</td>
+            <td class="p-2 text-right font-mono text-slate-300">${r.marketVal != null && r.hasHolding ? r.marketVal.toFixed(0) : '—'}</td>
+            <td class="p-2 text-right font-mono ${r.pnlColor}">${r.pnl == null ? '—' : r.pnlSign + r.pnl.toFixed(0)}</td>
+            <td class="p-2 text-right font-mono ${r.pnlColor}">${r.pnlPct == null ? '—' : r.pnlSign + r.pnlPct.toFixed(2) + '%'}</td>
+            <td class="p-2 text-right"><button data-i="${r.i}" class="del-btn text-red-400 hover:text-red-300 text-xs">刪除</button></td>
           </tr>
-        `;}).join('')}
+        `).join('')}
       </tbody>
     </table>`;
   el.querySelectorAll('.del-btn').forEach(b => {

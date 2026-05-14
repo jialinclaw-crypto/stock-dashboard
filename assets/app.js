@@ -5,6 +5,10 @@ const WATCHLIST = [
   { symbol: 'TSLA',    name: '特斯拉',  market: 'US', tv: 'NASDAQ:TSLA' },
   { symbol: 'AAPL',    name: '蘋果',    market: 'US', tv: 'NASDAQ:AAPL' },
   { symbol: 'TSM',     name: '台積電 ADR', market: 'US', tv: 'NYSE:TSM' },
+  // TradingView symbol PAGE URLs use TWSE: for Taiwan stocks (e.g. /symbols/TWSE-2330/).
+  // The ticker-tape widget does NOT include free TW data feed (renders ! for both
+  // TPE: and TWSE: prefixes), so TW stocks are filtered out of the ticker entirely
+  // in mountWatchlistTicker(). This `tv` value is used only for watchlist tile links.
   { symbol: '2330',    name: '台積電',  market: 'TW', tv: 'TWSE:2330' },
   { symbol: '2454',    name: '聯發科',  market: 'TW', tv: 'TWSE:2454' },
   { symbol: '2317',    name: '鴻海',    market: 'TW', tv: 'TWSE:2317' },
@@ -118,17 +122,30 @@ function mountWatchlistTicker(stocks) {
   // for the well-known tickers when portfolio entries only carry ticker/market.
   const tvLookup = Object.fromEntries(WATCHLIST.map(w => [w.symbol.toUpperCase(), w.tv]));
 
-  const symbols = (stocks && stocks.length ? stocks : WATCHLIST).map(s => {
+  // Filter out Taiwan stocks — TradingView free ticker-tape feed doesn't include
+  // TPE/TWSE data (renders as "!" warning). TW prices come from the routine snapshot
+  // in signal cards below; for live TW quotes, see external sources like 鉅亨網/Yahoo奇摩.
+  const filtered = (stocks && stocks.length ? stocks : WATCHLIST).filter(s => s.market !== 'TW');
+
+  // Fallback: if every entry was TW (so nothing left), hide the entire ticker
+  // section — both the "美股 only" label AND the bordered widget box.
+  const section = document.getElementById('ticker-section');
+  if (!filtered.length) {
+    if (section) section.classList.add('hidden');
+    return;
+  } else {
+    if (section) section.classList.remove('hidden');
+  }
+
+  const symbols = filtered.map(s => {
     const t = (s.ticker || s.symbol || '').toUpperCase();
     let proName;
     if (s.tv) {
       proName = s.tv;                              // explicit override (e.g. baked-in WATCHLIST entry)
     } else if (tvLookup[t]) {
       proName = tvLookup[t];                       // known ticker → use canonical exchange
-    } else if (s.market === 'TW') {
-      proName = `TWSE:${t}`;                       // generic Taiwan stock
     } else {
-      proName = `NASDAQ:${t}`;                     // unknown US: default to NASDAQ (TradingView still resolves many NYSE tickers from this hint)
+      proName = `NASDAQ:${t}`;                     // unknown US: default to NASDAQ (TradingView resolves many NYSE tickers too)
     }
     return { proName, title: s.name || s.symbol || s.ticker };
   });

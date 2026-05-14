@@ -60,9 +60,14 @@
     <!-- =================== TAB: OVERVIEW =================== -->
     <section data-panel="overview" class="tab-panel">
 
-      <!-- Live ticker tape (always-fresh prices for watchlist) -->
-      <div class="mb-4 bg-card rounded-xl border border-slate-800 overflow-hidden">
-        <div class="tradingview-widget-container" id="tv-watchlist-ticker"></div>
+      <!-- Live ticker tape (real-time prices, US stocks only) -->
+      <div id="ticker-section">
+        <div class="mb-1 flex items-center justify-between px-1">
+          <span class="text-[10px] text-slate-500">💹 即時跑馬燈 · 美股 only（TradingView 免費 feed 不含台股即時報價）</span>
+        </div>
+        <div class="mb-4 bg-card rounded-xl border border-slate-800 overflow-hidden">
+          <div class="tradingview-widget-container" id="tv-watchlist-ticker"></div>
+        </div>
       </div>
 
       <!-- Latest report card -->

@@ -199,8 +199,14 @@ function renderLatest(reports) {
 
 // ================== Indices strip ==================
 function renderIndices(sig) {
-  if (!sig.indices?.length) return;
   const strip = document.getElementById('indices-strip');
+  if (!strip) return;
+  // Always clear first to avoid stale data when newer JSON omits indices
+  if (!sig.indices?.length) {
+    strip.innerHTML = '';
+    strip.classList.add('hidden');
+    return;
+  }
   strip.innerHTML = sig.indices.map(i => {
     const up = (i.change_pct ?? 0) >= 0;
     const color = up ? 'text-emerald-400' : 'text-rose-400';
@@ -363,11 +369,14 @@ async function openReport(r) {
   try {
     const res = await fetch(`reports/${r.filename}?t=${Date.now()}`);
     const md = await res.text();
-    // Sanitize markdown HTML output (defense against XSS via report content)
-    const html = (typeof DOMPurify !== 'undefined')
-      ? DOMPurify.sanitize(marked.parse(md))
-      : marked.parse(md);
-    content.innerHTML = html;
+    // Sanitize markdown HTML output (defense against XSS via report content).
+    // Fail closed: if DOMPurify is unavailable, render as plain text instead of
+    // unsanitized HTML — never let a script tag from a report execute.
+    if (typeof DOMPurify === 'undefined') {
+      content.textContent = md;  // safe plain text fallback
+    } else {
+      content.innerHTML = DOMPurify.sanitize(marked.parse(md));
+    }
   } catch (e) {
     content.textContent = `載入失敗：${e.message}`;
   }

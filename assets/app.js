@@ -282,6 +282,30 @@ function renderIndices(sig) {
 // ================== Latest signals (shared state for portfolio P&L) ==================
 let LATEST_SIGNALS = null;
 
+// Merge live quote into a single stock card view-model. Live ONLY overrides
+// display fields; never mutates the source object. If live invalid → snapshot.
+function mergeSignalWithLive(s) {
+  const view = { ...s };  // shallow clone for display-only
+  view._isLive = false;
+  view._liveAge = null;
+  if (!window.LivePrices || !s.ticker) return view;
+  const q = window.LivePrices.getQuote(s.ticker);
+  // Only let LIVE (not stale) quotes override the authoritative snapshot.
+  // Stale quotes are kept out of UI per Codex principle 3 (snapshot fallback).
+  if (!q || q.status !== 'live' || !Number.isFinite(q.price)) return view;
+  view.price = q.price;
+  if (Number.isFinite(q.change_pct)) view.change_pct = q.change_pct;
+  view._isLive = true;
+  view._liveAge = q.age_ms;
+  return view;
+}
+
+// Distance-to-target/stop helpers (uses whichever price is displayed)
+function distancePct(from, to) {
+  if (!Number.isFinite(from) || !Number.isFinite(to) || from <= 0) return null;
+  return (to - from) / from * 100;
+}
+
 // Color helpers
 function rsiColor(rsi) {
   if (rsi == null) return 'text-slate-300';
@@ -391,12 +415,20 @@ function renderSignalCards(sig) {
   const section = document.getElementById('signals-section');
   const grid = document.getElementById('signals-grid');
   grid.innerHTML = '';
-  sig.stocks.forEach(s => {
+  sig.stocks.forEach(rawStock => {
+    const s = mergeSignalWithLive(rawStock);
     const borderCls = VIEW_COLORS[s.signal] || 'border-slate-700';
     const changeColor = (s.change_pct ?? 0) >= 0 ? 'text-emerald-400' : 'text-rose-400';
     const changeArrow = (s.change_pct ?? 0) >= 0 ? '▲' : '▼';
+    const liveBadge = s._isLive
+      ? `<span class="text-[9px] px-1 py-0.5 rounded bg-emerald-500/20 text-emerald-300 ml-1">LIVE</span>`
+      : `<span class="text-[9px] px-1 py-0.5 rounded bg-slate-700 text-slate-400 ml-1">SNAP</span>`;
+    // Distance to target / stop using whichever price is showing
+    const distToTarget = distancePct(s.price, s.target);
+    const distToStop   = distancePct(s.price, s.stop_loss);
     const card = document.createElement('div');
     card.className = `rounded-xl border ${borderCls} p-3`;
+    card.dataset.ticker = String(s.ticker || '').toUpperCase();
     card.innerHTML = `
       <div class="flex items-start justify-between mb-2">
         <div>
@@ -408,9 +440,14 @@ function renderSignalCards(sig) {
           <p class="text-xs text-slate-400 mt-0.5">${esc(s.name || '')}</p>
         </div>
       </div>
-      <div class="flex items-baseline gap-2 mb-2">
-        <span class="font-mono font-bold text-base">${s.price != null ? esc(s.price) : '—'}</span>
-        ${s.change_pct != null ? `<span class="${changeColor} text-xs font-mono">${changeArrow} ${Math.abs(s.change_pct).toFixed(2)}%</span>` : `<span class="text-xs text-slate-600">(資料更新中)</span>`}
+      <div class="flex items-baseline gap-2 mb-1">
+        <span class="font-mono font-bold text-base price-cell">${s.price != null ? esc(Number(s.price).toFixed(2)) : '—'}</span>
+        <span class="change-cell text-xs font-mono ${changeColor}">${s.change_pct != null ? `${changeArrow} ${Math.abs(s.change_pct).toFixed(2)}%` : ''}</span>
+        <span class="live-badge-cell">${liveBadge}</span>
+      </div>
+      <div class="dist-row flex gap-3 text-[10px] text-slate-500 mb-2 ${(distToTarget == null && distToStop == null) ? 'hidden' : ''}">
+        <span class="dist-target ${distToTarget == null ? 'hidden' : ''}">到 🎯 <span class="${(distToTarget ?? 0) >= 0 ? 'text-emerald-400' : 'text-rose-400'} font-mono dist-target-val">${distToTarget != null ? ((distToTarget >= 0 ? '+' : '') + distToTarget.toFixed(2) + '%') : ''}</span></span>
+        <span class="dist-stop ${distToStop == null ? 'hidden' : ''}">到 🛡 <span class="${(distToStop ?? 0) >= 0 ? 'text-rose-400' : 'text-emerald-400'} font-mono dist-stop-val">${distToStop != null ? ((distToStop >= 0 ? '+' : '') + distToStop.toFixed(2) + '%') : ''}</span></span>
       </div>
       <div class="text-[11px] text-slate-300 mb-2 leading-tight">${esc(s.view || '')}</div>
       ${(s.target || s.stop_loss) ? `
@@ -571,12 +608,28 @@ function renderPortfolio() {
       </div>`;
     return;
   }
-  // Build a price lookup from latest signals JSON (snapshot prices)
+  // Build a price lookup: live cache overrides snapshot when available
   const priceMap = new Map();
+  const priceSource = new Map();  // ticker → 'live' | 'snapshot'
   if (LATEST_SIGNALS && Array.isArray(LATEST_SIGNALS.stocks)) {
     LATEST_SIGNALS.stocks.forEach(s => {
       if (s.ticker && s.price != null && !isNaN(Number(s.price))) {
-        priceMap.set(String(s.ticker).toUpperCase(), Number(s.price));
+        const t = String(s.ticker).toUpperCase();
+        priceMap.set(t, Number(s.price));
+        priceSource.set(t, 'snapshot');
+      }
+    });
+  }
+  // Overlay live quotes on top of snapshot — ONLY when fresh (status === 'live').
+  // Stale quotes are excluded so P&L never reflects out-of-date live data.
+  if (window.LivePrices) {
+    positions.forEach(p => {
+      if (!p.symbol) return;
+      const q = window.LivePrices.getQuote(p.symbol);
+      if (q && q.status === 'live' && Number.isFinite(q.price) && q.price > 0) {
+        const t = String(p.symbol).toUpperCase();
+        priceMap.set(t, q.price);
+        priceSource.set(t, 'live');
       }
     });
   }
@@ -634,7 +687,13 @@ function renderPortfolio() {
         ${totalsCard('台股 P&L', 'TWD', tot.TW, 'bg-orange-500/20 text-orange-300')}
         ${totalsCard('美股 P&L', 'USD', tot.US, 'bg-blue-500/20 text-blue-300')}
       </div>
-      ${priceAsOf ? `<p class="text-[10px] text-slate-500 px-4 pb-2">📍 用 ${esc(priceAsOf)} 快照價計算（非即時）· 不同幣別不相加</p>` : ''}
+      <p class="text-[10px] text-slate-500 px-4 pb-2">${(() => {
+        const hasLive = Array.from(priceSource.values()).some(v => v === 'live');
+        const allLive = priceSource.size > 0 && Array.from(priceSource.values()).every(v => v === 'live');
+        if (allLive) return `📡 全部用 LIVE 即時價計算 · 不同幣別不相加`;
+        if (hasLive) return `📡 LIVE 即時價 + ${priceAsOf ? esc(priceAsOf) + ' ' : ''}快照價混合 · 不同幣別不相加`;
+        return priceAsOf ? `📍 用 ${esc(priceAsOf)} 快照價計算（非即時）· 不同幣別不相加` : `📍 用報告快照價計算 · 不同幣別不相加`;
+      })()}</p>
     </div>` : ''}
     <table class="w-full text-sm">
       <thead>
@@ -680,13 +739,17 @@ function renderPortfolio() {
   });
 }
 
-// Re-mount ticker after portfolio edits so it tracks current watchlist
+// Re-mount ticker AND restart live-price poller after portfolio edits so both
+// track the current watchlist.
 function refreshTickerFromPortfolio() {
   const eff = getPortfolio();
   const stocks = (eff && eff.length)
     ? eff.map(p => ({ ticker: p.symbol, symbol: p.symbol, name: p.name, market: p.market }))
     : WATCHLIST;
   mountWatchlistTicker(stocks);
+  if (window.LivePrices && typeof window.LivePrices.start === 'function') {
+    window.LivePrices.start(stocks);  // start() resets state internally
+  }
 }
 
 document.getElementById('add-position-btn').addEventListener('click', () => {
@@ -749,6 +812,120 @@ async function renderCalendar() {
   });
 }
 
+// ================== Live status badge ==================
+function updateLiveStatusBadge() {
+  const el = document.getElementById('live-status-badge');
+  if (!el || !window.LivePrices) return;
+  const status = window.LivePrices.getStatus();
+  const updated = window.LivePrices.formatLastUpdated();
+  const styles = {
+    live:     { text: `🟢 LIVE ${updated}`,    cls: 'bg-emerald-500/20 text-emerald-300' },
+    stale:    { text: `🟡 STALE ${updated}`,   cls: 'bg-amber-500/20 text-amber-300' },
+    failed:   { text: '🔴 LIVE 取得失敗',       cls: 'bg-rose-500/20 text-rose-300' },
+    idle:     { text: '📍 SNAPSHOT only',      cls: 'bg-slate-700 text-slate-400' },
+  };
+  const s = styles[status] || styles.idle;
+  el.textContent = s.text;
+  el.className = `px-2 py-0.5 rounded text-[10px] ${s.cls}`;
+}
+
+// ================== Refresh signal cards from live cache (light) ==================
+// Surgically updates price / change% / LIVE-SNAP badge / distance-to-target/stop
+// per card. NEVER calls innerHTML — pure textContent + classList mutations.
+function refreshSignalCardLivePrices() {
+  // Even when signals JSON is unavailable, the portfolio can still benefit from
+  // live prices, so we always update the status badge + portfolio at the end.
+  if (!LATEST_SIGNALS?.stocks) {
+    updateLiveStatusBadge();
+    renderPortfolio();
+    return;
+  }
+  const grid = document.getElementById('signals-grid');
+  if (!grid) {
+    updateLiveStatusBadge();
+    renderPortfolio();
+    return;
+  }
+  LATEST_SIGNALS.stocks.forEach(raw => {
+    const card = grid.querySelector(`[data-ticker="${String(raw.ticker || '').toUpperCase()}"]`);
+    if (!card) return;
+    const view = mergeSignalWithLive(raw);
+
+    // Price cell + flash on change
+    const priceEl = card.querySelector('.price-cell');
+    if (priceEl && Number.isFinite(Number(view.price))) {
+      const next = Number(view.price).toFixed(2);
+      if (priceEl.textContent !== next) {
+        priceEl.textContent = next;
+        priceEl.classList.remove('price-flash');
+        void priceEl.offsetWidth;
+        priceEl.classList.add('price-flash');
+      }
+    }
+
+    // Change % + arrow + color
+    const changeEl = card.querySelector('.change-cell');
+    if (changeEl) {
+      if (Number.isFinite(view.change_pct)) {
+        const up = view.change_pct >= 0;
+        changeEl.textContent = `${up ? '▲' : '▼'} ${Math.abs(view.change_pct).toFixed(2)}%`;
+        changeEl.classList.remove('text-emerald-400', 'text-rose-400');
+        changeEl.classList.add(up ? 'text-emerald-400' : 'text-rose-400');
+      } else {
+        changeEl.textContent = '';
+      }
+    }
+
+    // LIVE / SNAP badge
+    const badgeEl = card.querySelector('.live-badge-cell');
+    if (badgeEl) {
+      const isLive = !!view._isLive;
+      badgeEl.innerHTML = '';
+      const span = document.createElement('span');
+      span.className = `text-[9px] px-1 py-0.5 rounded ml-1 ${
+        isLive ? 'bg-emerald-500/20 text-emerald-300' : 'bg-slate-700 text-slate-400'
+      }`;
+      span.textContent = isLive ? 'LIVE' : 'SNAP';
+      badgeEl.appendChild(span);
+    }
+
+    // Distance to target / stop (recomputed from current displayed price)
+    const distRow = card.querySelector('.dist-row');
+    const distTargetEl = card.querySelector('.dist-target');
+    const distStopEl   = card.querySelector('.dist-stop');
+    const distTargetVal = card.querySelector('.dist-target-val');
+    const distStopVal   = card.querySelector('.dist-stop-val');
+    const dT = distancePct(view.price, view.target);
+    const dS = distancePct(view.price, view.stop_loss);
+    if (distTargetEl) {
+      if (dT != null && distTargetVal) {
+        distTargetEl.classList.remove('hidden');
+        distTargetVal.textContent = `${dT >= 0 ? '+' : ''}${dT.toFixed(2)}%`;
+        distTargetVal.classList.remove('text-emerald-400', 'text-rose-400');
+        distTargetVal.classList.add(dT >= 0 ? 'text-emerald-400' : 'text-rose-400');
+      } else {
+        distTargetEl.classList.add('hidden');
+      }
+    }
+    if (distStopEl) {
+      if (dS != null && distStopVal) {
+        distStopEl.classList.remove('hidden');
+        distStopVal.textContent = `${dS >= 0 ? '+' : ''}${dS.toFixed(2)}%`;
+        distStopVal.classList.remove('text-emerald-400', 'text-rose-400');
+        distStopVal.classList.add(dS >= 0 ? 'text-rose-400' : 'text-emerald-400');
+      } else {
+        distStopEl.classList.add('hidden');
+      }
+    }
+    if (distRow) {
+      distRow.classList.toggle('hidden', dT == null && dS == null);
+    }
+  });
+  updateLiveStatusBadge();
+  // Re-render portfolio so P&L picks up live prices
+  renderPortfolio();
+}
+
 // ================== Init ==================
 (async () => {
   await loadCloudPortfolio();
@@ -766,4 +943,13 @@ async function renderCalendar() {
   mountWatchlistTicker(tickerStocks);
   loadReports();
   renderPortfolio();
+
+  // Start live price polling once we know the watchlist
+  if (window.LivePrices) {
+    const startList = (effective && effective.length) ? effective.map(p => ({
+      ticker: p.symbol, symbol: p.symbol, name: p.name, market: p.market,
+    })) : WATCHLIST;
+    window.LivePrices.subscribe(refreshSignalCardLivePrices);
+    window.LivePrices.start(startList);
+  }
 })();

@@ -73,6 +73,18 @@ html:not(.dark) .stock-tile { background: #ffffff; border-color: #e2e8f0; }
   overflow: hidden;
 }
 
+/* ===== Live price flash on update ===== */
+@keyframes priceFlash {
+  0%   { background-color: rgba(16, 185, 129, 0.35); }
+  100% { background-color: transparent; }
+}
+.price-flash {
+  animation: priceFlash 800ms ease-out;
+  border-radius: 4px;
+  padding: 0 4px;
+  margin: 0 -4px;
+}
+
 /* ===== Scrollbar ===== */
 ::-webkit-scrollbar { width: 8px; height: 8px; }
 ::-webkit-scrollbar-track { background: transparent; }

@@ -102,12 +102,16 @@
         </div>
       </div>
 
-      <!-- Signal cards grid (from latest signals JSON) -->
+      <!-- Signal cards grid (snapshot from JSON + optional live price overlay) -->
       <div id="signals-section" class="mb-6 hidden">
-        <div class="flex items-center justify-between mb-3">
-          <h3 class="text-sm font-semibold text-slate-400 uppercase tracking-wider">🚦 信號燈 <span class="text-[10px] text-slate-600 normal-case">· 報告快照（非即時，看上方跑馬燈即時價）</span></h3>
-          <span id="signals-source" class="text-[10px] text-slate-600"></span>
+        <div class="flex items-center justify-between mb-3 flex-wrap gap-2">
+          <h3 class="text-sm font-semibold text-slate-400 uppercase tracking-wider">🚦 信號燈</h3>
+          <div class="flex items-center gap-3 text-[10px]">
+            <span id="live-status-badge" class="px-2 py-0.5 rounded bg-slate-800 text-slate-400">📍 SNAPSHOT</span>
+            <span id="signals-source" class="text-slate-600"></span>
+          </div>
         </div>
+        <p class="text-[10px] text-slate-500 mb-3">📡 即時資料來源 Yahoo Finance via corsproxy.io · best-effort · <span class="text-rose-400">非交易依據</span></p>
         <div id="signals-grid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3"></div>
       </div>
 
@@ -227,6 +231,8 @@
     🤖 由 Claude Code 自動產生 · 報告由 Anthropic 雲端 agent 每日定時抓取整理 · 非投資建議
   </footer>
 
+  <!-- live-prices.js must load BEFORE app.js so window.LivePrices is defined at init -->
+  <script src="assets/live-prices.js"></script>
   <script src="assets/app.js"></script>
 </body>
 </html>

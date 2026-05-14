@@ -26,6 +26,7 @@
     }
   </script>
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dompurify@3/dist/purify.min.js"></script>
   <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body class="bg-bg dark:bg-bg text-slate-100 dark:text-slate-100 min-h-screen font-sans">
@@ -72,6 +73,9 @@
         <div id="latest-tldr" class="text-sm text-slate-300 leading-relaxed line-clamp-4">排程啟動後，報告會自動出現在這裡。</div>
         <button id="open-latest" class="mt-4 text-xs px-3 py-1.5 bg-emerald-500/20 text-emerald-300 rounded-lg hover:bg-emerald-500/30 transition">展開完整報告 →</button>
       </div>
+
+      <!-- Indices strip (compact row) -->
+      <div id="indices-strip" class="mb-4 grid grid-cols-2 md:grid-cols-4 gap-2 hidden"></div>
 
       <!-- Market view banner (from latest signals JSON) -->
       <div id="market-view-banner" class="mb-6 hidden">

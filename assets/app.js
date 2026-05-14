@@ -5,10 +5,24 @@ const WATCHLIST = [
   { symbol: 'TSLA',    name: '特斯拉',  market: 'US', tv: 'NASDAQ:TSLA' },
   { symbol: 'AAPL',    name: '蘋果',    market: 'US', tv: 'NASDAQ:AAPL' },
   { symbol: 'TSM',     name: '台積電 ADR', market: 'US', tv: 'NYSE:TSM' },
-  { symbol: '2330',    name: '台積電',  market: 'TW', tv: 'TPE:2330' },
-  { symbol: '2454',    name: '聯發科',  market: 'TW', tv: 'TPE:2454' },
-  { symbol: '2317',    name: '鴻海',    market: 'TW', tv: 'TPE:2317' },
+  { symbol: '2330',    name: '台積電',  market: 'TW', tv: 'TWSE:2330' },
+  { symbol: '2454',    name: '聯發科',  market: 'TW', tv: 'TWSE:2454' },
+  { symbol: '2317',    name: '鴻海',    market: 'TW', tv: 'TWSE:2317' },
 ];
+
+// ================== HTML escaping helpers ==================
+function esc(s) {
+  if (s == null) return '';
+  return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+function safeURL(u) {
+  if (!u) return null;
+  try {
+    const p = new URL(u, location.href);
+    if (!['http:', 'https:'].includes(p.protocol)) return null;
+    return p.href;
+  } catch { return null; }
+}
 
 // ================== Tabs ==================
 document.querySelectorAll('.tab-btn').forEach(btn => {
@@ -105,10 +119,10 @@ WATCHLIST.forEach(s => {
   tile.rel = 'noopener';
   tile.innerHTML = `
     <div class="flex items-center justify-between">
-      <span class="font-mono text-sm font-bold text-slate-100">${s.symbol}</span>
-      <span class="text-[10px] px-1.5 py-0.5 rounded ${s.market === 'TW' ? 'bg-orange-500/20 text-orange-300' : 'bg-blue-500/20 text-blue-300'}">${s.market}</span>
+      <span class="font-mono text-sm font-bold text-slate-100">${esc(s.symbol)}</span>
+      <span class="text-[10px] px-1.5 py-0.5 rounded ${s.market === 'TW' ? 'bg-orange-500/20 text-orange-300' : 'bg-blue-500/20 text-blue-300'}">${esc(s.market)}</span>
     </div>
-    <p class="text-xs text-slate-400">${s.name}</p>
+    <p class="text-xs text-slate-400">${esc(s.name)}</p>
     <p class="text-[10px] text-slate-500 mt-1">點開看 K 線 →</p>
   `;
   watchGrid.appendChild(tile);
@@ -157,13 +171,13 @@ function renderReports(reports, filter = 'all') {
         <div>
           <div class="flex items-center gap-2">
             <span class="text-xl">${meta.emoji}</span>
-            <h3 class="font-bold text-slate-100">${meta.label}</h3>
+            <h3 class="font-bold text-slate-100">${esc(meta.label)}</h3>
           </div>
-          <p class="text-xs text-slate-400 mt-1">${r.date} · ${r.weekday || ''}</p>
+          <p class="text-xs text-slate-400 mt-1">${esc(r.date)} · ${esc(r.weekday || '')}</p>
         </div>
         <span class="text-[10px] text-slate-500">${(r.size/1024).toFixed(1)}KB</span>
       </div>
-      ${r.tldr ? `<p class="text-sm text-slate-300 line-clamp-2 leading-relaxed mt-2">${r.tldr}</p>` : ''}
+      ${r.tldr ? `<p class="text-sm text-slate-300 line-clamp-2 leading-relaxed mt-2">${esc(r.tldr)}</p>` : ''}
     `;
     card.addEventListener('click', () => openReport(r));
     list.appendChild(card);
@@ -176,10 +190,30 @@ function renderLatest(reports) {
   const meta = reportTypeMeta(latest.filename);
   document.getElementById('latest-title').textContent = `${meta.emoji} ${meta.label}`;
   document.getElementById('latest-time').textContent = `${latest.date} · ${latest.weekday || ''}`;
-  if (latest.tldr) document.getElementById('latest-tldr').textContent = latest.tldr;
+  // Always set (avoid stale text leak across renders)
+  document.getElementById('latest-tldr').textContent = latest.tldr || '排程啟動後，報告會自動出現在這裡。';
   document.getElementById('open-latest').onclick = () => openReport(latest);
   // Try load companion signals JSON
   loadSignals(latest);
+}
+
+// ================== Indices strip ==================
+function renderIndices(sig) {
+  if (!sig.indices?.length) return;
+  const strip = document.getElementById('indices-strip');
+  strip.innerHTML = sig.indices.map(i => {
+    const up = (i.change_pct ?? 0) >= 0;
+    const color = up ? 'text-emerald-400' : 'text-rose-400';
+    const arrow = up ? '▲' : '▼';
+    return `<div class="bg-card rounded-lg border border-slate-800 px-3 py-2">
+      <div class="text-[10px] text-slate-500 mb-0.5">${esc(i.name)}</div>
+      <div class="flex items-baseline gap-2">
+        <span class="font-mono text-sm font-bold">${esc(i.value)}</span>
+        ${i.change_pct != null ? `<span class="${color} text-xs font-mono">${arrow} ${Math.abs(i.change_pct).toFixed(2)}%</span>` : ''}
+      </div>
+    </div>`;
+  }).join('');
+  strip.classList.remove('hidden');
 }
 
 // ================== Signal cards (from companion JSON) ==================
@@ -205,12 +239,15 @@ async function loadSignals(latestReport) {
     const res = await fetch(`reports/${jsonFile}?t=${Date.now()}`);
     if (!res.ok) throw new Error('no signals json');
     const sig = await res.json();
+    renderIndices(sig);
     renderMarketView(sig);
     renderSignalCards(sig);
     renderAlerts(sig);
   } catch (e) {
-    // Silent: hide signals UI
-    ['market-view-banner','signals-section','alerts-section'].forEach(id => document.getElementById(id).classList.add('hidden'));
+    ['indices-strip','market-view-banner','signals-section','alerts-section'].forEach(id => {
+      const el = document.getElementById(id);
+      if (el) el.classList.add('hidden');
+    });
   }
 }
 
@@ -222,6 +259,7 @@ function renderMarketView(sig) {
   const levelEl = document.getElementById('market-view-level');
   levelEl.textContent = style.label;
   levelEl.className = `text-xs font-medium px-2 py-0.5 rounded ${style.css}`;
+  // textContent is safe (no HTML parsing)
   document.getElementById('market-view-headline').textContent = sig.market_view.headline || '';
   const conf = sig.market_view.confidence;
   document.getElementById('market-view-confidence').textContent = conf != null ? `信心度 ${Math.round(conf * 100)}%` : '';
@@ -243,27 +281,27 @@ function renderSignalCards(sig) {
       <div class="flex items-start justify-between mb-2">
         <div>
           <div class="flex items-center gap-1.5">
-            <span class="text-lg">${s.signal || '🟡'}</span>
-            <span class="font-mono font-bold text-sm">${s.ticker}</span>
-            <span class="text-[10px] px-1 py-0.5 rounded ${s.market === 'TW' ? 'bg-orange-500/20 text-orange-300' : 'bg-blue-500/20 text-blue-300'}">${s.market || ''}</span>
+            <span class="text-lg">${esc(s.signal || '🟡')}</span>
+            <span class="font-mono font-bold text-sm">${esc(s.ticker)}</span>
+            <span class="text-[10px] px-1 py-0.5 rounded ${s.market === 'TW' ? 'bg-orange-500/20 text-orange-300' : 'bg-blue-500/20 text-blue-300'}">${esc(s.market || '')}</span>
           </div>
-          <p class="text-xs text-slate-400 mt-0.5">${s.name || ''}</p>
+          <p class="text-xs text-slate-400 mt-0.5">${esc(s.name || '')}</p>
         </div>
       </div>
       <div class="flex items-baseline gap-2 mb-2">
-        <span class="font-mono font-bold text-base">${s.price != null ? s.price : '—'}</span>
+        <span class="font-mono font-bold text-base">${s.price != null ? esc(s.price) : '—'}</span>
         ${s.change_pct != null ? `<span class="${changeColor} text-xs font-mono">${changeArrow} ${Math.abs(s.change_pct).toFixed(2)}%</span>` : `<span class="text-xs text-slate-600">(資料更新中)</span>`}
       </div>
-      <div class="text-[11px] text-slate-300 mb-2 leading-tight">${s.view || ''}</div>
+      <div class="text-[11px] text-slate-300 mb-2 leading-tight">${esc(s.view || '')}</div>
       ${(s.target || s.stop_loss) ? `
       <div class="grid grid-cols-2 gap-1 text-[10px] mt-2 pt-2 border-t border-slate-800">
-        ${s.target ? `<div class="text-slate-500">🎯 目標<br><span class="text-emerald-400 font-mono text-xs">${s.target}</span></div>` : '<div></div>'}
-        ${s.stop_loss ? `<div class="text-slate-500">🛡 停損<br><span class="text-rose-400 font-mono text-xs">${s.stop_loss}</span></div>` : '<div></div>'}
+        ${s.target ? `<div class="text-slate-500">🎯 目標<br><span class="text-emerald-400 font-mono text-xs">${esc(s.target)}</span></div>` : '<div></div>'}
+        ${s.stop_loss ? `<div class="text-slate-500">🛡 停損<br><span class="text-rose-400 font-mono text-xs">${esc(s.stop_loss)}</span></div>` : '<div></div>'}
       </div>` : ''}
       ${(s.support || s.resistance) ? `
       <div class="grid grid-cols-2 gap-1 text-[10px] mt-2">
-        ${s.support ? `<div class="text-slate-500">支撐 <span class="text-slate-300 font-mono">${s.support}</span></div>` : '<div></div>'}
-        ${s.resistance ? `<div class="text-slate-500">壓力 <span class="text-slate-300 font-mono">${s.resistance}</span></div>` : '<div></div>'}
+        ${s.support ? `<div class="text-slate-500">支撐 <span class="text-slate-300 font-mono">${esc(s.support)}</span></div>` : '<div></div>'}
+        ${s.resistance ? `<div class="text-slate-500">壓力 <span class="text-slate-300 font-mono">${esc(s.resistance)}</span></div>` : '<div></div>'}
       </div>` : ''}
     `;
     grid.appendChild(card);
@@ -281,16 +319,17 @@ function renderAlerts(sig) {
     const isWarn = a.level === 'warning';
     const cls = isWarn ? 'border-rose-500/30 bg-rose-500/5 text-rose-200' : 'border-amber-500/30 bg-amber-500/5 text-amber-200';
     const icon = isWarn ? '⚠️' : 'ℹ️';
-    const tickers = (a.tickers || []).map(t => `<span class="font-mono text-[10px] px-1 py-0.5 bg-slate-800 rounded">${t}</span>`).join(' ');
-    const isClickable = !!a.url;
+    const tickers = (a.tickers || []).map(t => `<span class="font-mono text-[10px] px-1 py-0.5 bg-slate-800 rounded">${esc(t)}</span>`).join(' ');
+    const url = safeURL(a.url);  // reject javascript:, data:, etc.
+    const isClickable = !!url;
     const tag = isClickable ? 'a' : 'div';
     const attrs = isClickable
-      ? `href="${a.url}" target="_blank" rel="noopener" class="block rounded-lg border ${cls} px-3 py-2 text-xs hover:brightness-125 transition cursor-pointer"`
+      ? `href="${esc(url)}" target="_blank" rel="noopener" class="block rounded-lg border ${cls} px-3 py-2 text-xs hover:brightness-125 transition cursor-pointer"`
       : `class="rounded-lg border ${cls} px-3 py-2 text-xs"`;
-    const source = a.source ? `<span class="text-[10px] text-slate-500 ml-1">· ${a.source}</span>` : '';
+    const source = a.source ? `<span class="text-[10px] text-slate-500 ml-1">· ${esc(a.source)}</span>` : '';
     const arrow = isClickable ? '<span class="float-right text-slate-500">↗</span>' : '';
     return `<${tag} ${attrs}>
-      <span class="mr-2">${icon}</span>${a.text}${source}
+      <span class="mr-2">${icon}</span>${esc(a.text || '')}${source}
       ${tickers ? `<span class="ml-2">${tickers}</span>` : ''}
       ${arrow}
     </${tag}>`;
@@ -324,17 +363,27 @@ async function openReport(r) {
   try {
     const res = await fetch(`reports/${r.filename}?t=${Date.now()}`);
     const md = await res.text();
-    content.innerHTML = marked.parse(md);
+    // Sanitize markdown HTML output (defense against XSS via report content)
+    const html = (typeof DOMPurify !== 'undefined')
+      ? DOMPurify.sanitize(marked.parse(md))
+      : marked.parse(md);
+    content.innerHTML = html;
   } catch (e) {
-    content.innerHTML = `<p class="text-red-400">載入失敗：${e.message}</p>`;
+    content.textContent = `載入失敗：${e.message}`;
   }
 }
 
-document.getElementById('modal-close').addEventListener('click', () => {
+function closeModal() {
   document.getElementById('report-modal').classList.add('hidden');
-});
+}
+document.getElementById('modal-close').addEventListener('click', closeModal);
 document.getElementById('report-modal').addEventListener('click', e => {
-  if (e.target.id === 'report-modal') e.currentTarget.classList.add('hidden');
+  if (e.target.id === 'report-modal') closeModal();
+});
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape' && !document.getElementById('report-modal').classList.contains('hidden')) {
+    closeModal();
+  }
 });
 
 // ================== Portfolio ==================
@@ -344,7 +393,14 @@ async function loadCloudPortfolio() {
   try {
     const res = await fetch(`portfolio.json?t=${Date.now()}`);
     const data = await res.json();
-    CLOUD_PORTFOLIO = data.watchlist || [];
+    // Map ticker → symbol for renderPortfolio compatibility; default missing fields
+    CLOUD_PORTFOLIO = (data.watchlist || []).map(w => ({
+      symbol: w.symbol || w.ticker || '?',
+      name:   w.name || '',
+      market: w.market || (String(w.ticker || w.symbol || '').match(/^\d/) ? 'TW' : 'US'),
+      shares: w.shares ?? 0,
+      cost:   w.cost ?? 0,
+    }));
   } catch {
     CLOUD_PORTFOLIO = [];
   }
@@ -386,15 +442,18 @@ function renderPortfolio() {
         </tr>
       </thead>
       <tbody>
-        ${positions.map((p, i) => `
+        ${positions.map((p, i) => {
+          const shares = p.shares ?? 0;
+          const cost = Number(p.cost ?? 0);
+          return `
           <tr class="border-t border-slate-800 hover:bg-slate-800/30">
-            <td class="p-3 font-mono font-bold">${p.symbol}</td>
-            <td class="p-3 text-right">${p.shares}</td>
-            <td class="p-3 text-right font-mono">${p.cost.toFixed(2)}</td>
-            <td class="p-3 text-right text-xs"><span class="px-2 py-0.5 rounded ${p.market === 'TW' ? 'bg-orange-500/20 text-orange-300' : 'bg-blue-500/20 text-blue-300'}">${p.market}</span></td>
+            <td class="p-3 font-mono font-bold">${esc(p.symbol)}</td>
+            <td class="p-3 text-right">${esc(shares)}</td>
+            <td class="p-3 text-right font-mono">${cost.toFixed(2)}</td>
+            <td class="p-3 text-right text-xs"><span class="px-2 py-0.5 rounded ${p.market === 'TW' ? 'bg-orange-500/20 text-orange-300' : 'bg-blue-500/20 text-blue-300'}">${esc(p.market || '')}</span></td>
             <td class="p-3 text-right"><button data-i="${i}" class="del-btn text-red-400 hover:text-red-300 text-xs">刪除</button></td>
           </tr>
-        `).join('')}
+        `;}).join('')}
       </tbody>
     </table>`;
   el.querySelectorAll('.del-btn').forEach(b => {

@@ -346,6 +346,7 @@ async function loadSignals(latestReport) {
     LATEST_SIGNALS = sig;
     renderIndices(sig);
     renderMarketView(sig);
+    renderWhatsChanged(sig);
     renderSignalCards(sig);
     renderSectorRotation(sig);
     renderAlerts(sig);
@@ -353,13 +354,69 @@ async function loadSignals(latestReport) {
     renderPortfolio();
   } catch (e) {
     LATEST_SIGNALS = null;
-    ['indices-strip','market-view-banner','signals-section','sector-section','alerts-section'].forEach(id => {
+    ['indices-strip','market-view-banner','changed-section','signals-section','sector-section','alerts-section'].forEach(id => {
       const el = document.getElementById(id);
       if (el) el.classList.add('hidden');
     });
     // Also clear stale prices/P&L from portfolio table
     renderPortfolio();
   }
+}
+
+// ================== What's Changed (structured diff vs previous report) ==================
+function renderWhatsChanged(sig) {
+  const section = document.getElementById('changed-section');
+  if (!section) return;
+  const wc = sig.whats_changed;
+  const totalItems = (wc?.new?.length || 0) + (wc?.strengthened?.length || 0) + (wc?.removed?.length || 0);
+  if (!wc || totalItems === 0) {
+    section.classList.add('hidden');
+    return;
+  }
+
+  const groups = [
+    { key: 'new',          icon: '🆕', label: '新增',  cls: 'border-emerald-500/40 bg-emerald-500/5', chip: 'bg-emerald-500/20 text-emerald-200' },
+    { key: 'strengthened', icon: '📈', label: '加重',  cls: 'border-amber-500/40 bg-amber-500/5',     chip: 'bg-amber-500/20 text-amber-200' },
+    { key: 'removed',      icon: '📉', label: '移除',  cls: 'border-slate-600/40 bg-slate-700/10',    chip: 'bg-slate-700 text-slate-400' },
+  ];
+
+  document.getElementById('changed-grid').innerHTML = groups.map(g => {
+    const items = wc[g.key] || [];
+    if (!items.length) {
+      return `<div class="rounded-xl border ${g.cls} p-3 opacity-40">
+        <div class="text-xs mb-1 text-slate-400">${g.icon} ${esc(g.label)} <span class="text-[10px] text-slate-600">· 0 項</span></div>
+        <div class="text-[10px] text-slate-500">無</div>
+      </div>`;
+    }
+    return `<div class="rounded-xl border ${g.cls} p-3">
+      <div class="text-xs mb-2 text-slate-400">${g.icon} ${esc(g.label)} <span class="text-[10px] text-slate-600">· ${items.length} 項</span></div>
+      <div class="space-y-2">
+        ${items.map(it => {
+          // Direction change special rendering
+          if (it.type === 'stock_direction' && it.ticker) {
+            const arrow = `<span class="text-[10px] font-mono text-slate-500">${esc(it.from || '?')}→${esc(it.to || '?')}</span>`;
+            return `<div class="text-[11px] leading-tight">
+              <div class="flex items-center gap-1.5 mb-0.5">
+                <span class="font-mono text-xs font-bold">${esc(it.ticker)}</span>
+                ${arrow}
+              </div>
+              <p class="text-slate-300">${esc(it.summary || '')}</p>
+            </div>`;
+          }
+          // Alert / topic
+          const tickers = (it.tickers || []).map(t => `<span class="font-mono text-[9px] px-1 py-0.5 ${g.chip} rounded">${esc(t)}</span>`).join(' ');
+          return `<div class="text-[11px] leading-tight text-slate-300">
+            <p>${esc(it.summary || '')}</p>
+            ${tickers ? `<div class="mt-1 flex flex-wrap gap-1">${tickers}</div>` : ''}
+          </div>`;
+        }).join('')}
+      </div>
+    </div>`;
+  }).join('');
+
+  const src = wc.compared_to_date || wc.compared_to || '';
+  document.getElementById('changed-source').textContent = src ? `vs ${esc(src)}` : '';
+  section.classList.remove('hidden');
 }
 
 // ================== Sector rotation ==================

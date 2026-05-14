@@ -244,5 +244,23 @@
     "strong": ["半導體／IC 設計", "AI 伺服器供應鏈", "記憶體", "網路基建"],
     "weak": ["金融保險（利率上升壓力）", "航運傳產（無催化劑）", "電動車（通膨成本壓力）"],
     "watch": ["石油能源（油價 >$100）", "醫療生技（防禦性資金流入）", "AI 應用軟體"]
+  },
+
+  "whats_changed": {
+    "compared_to": "股市-開盤前-20260513.md",
+    "compared_to_date": "2026-05-13",
+    "new": [
+      { "type": "alert", "summary": "April PPI +6.0% 大超預期、CPI 3.8%（升息陰影浮現）", "tickers": ["NVDA", "TSLA", "AAPL", "TSM", "2330", "2454"] },
+      { "type": "alert", "summary": "Cisco 盤後 +19%（AI 網路基建需求確認）", "tickers": [] },
+      { "type": "stock_direction", "ticker": "2330", "from": "neutral", "to": "bullish", "summary": "由觀望轉偏多（昨日延遲反映半導體殺盤後，今補漲機率高）" }
+    ],
+    "strengthened": [
+      { "type": "alert", "summary": "鴻海北美駭客事件升級到 Wisconsin 廠 IT 中斷部分產線", "tickers": ["2317"] },
+      { "type": "stock_direction", "ticker": "NVDA", "from": "bullish", "to": "bullish", "summary": "信心由 0.55 → 0.72（黃仁勳訪中峰會落實）" }
+    ],
+    "removed": [
+      { "type": "alert", "summary": "原本「SOX 大跌 -3% 為今日壓力源」議題，因美股反彈已沖淡" },
+      { "type": "topic", "summary": "WTI 原油突破 $102 議題（油價已回穩 $100 上下）" }
+    ]
   }
 }

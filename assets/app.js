@@ -70,77 +70,30 @@ updateMarketStatus();
 setInterval(updateMarketStatus, 30000);
 
 // ================== TradingView widgets ==================
-const theme = document.documentElement.classList.contains('dark') ? 'dark' : 'light';
-
-// Ticker tape: shows live quotes for major indices (台股 / SOX / Nasdaq / 道瓊 / S&P)
-function mountTicker() {
+function makeTVWidget(containerId, symbol) {
   const script = document.createElement('script');
   script.type = 'text/javascript';
-  script.src = 'https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js';
+  script.src = 'https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js';
   script.async = true;
-  script.innerHTML = JSON.stringify({
-    symbols: [
-      { proName: 'TVC:TAIEX',      title: '台股加權' },
-      { proName: 'TVC:SOX',        title: '費城半導體' },
-      { proName: 'NASDAQ:IXIC',    title: 'Nasdaq' },
-      { proName: 'FOREXCOM:SPXUSD', title: 'S&P 500' },
-      { proName: 'FOREXCOM:DJI',   title: '道瓊' },
-      { proName: 'TVC:DXY',        title: '美元指數' },
-      { proName: 'TVC:VIX',        title: 'VIX' },
-    ],
-    showSymbolLogo: true,
-    colorTheme: theme,
-    isTransparent: true,
-    displayMode: 'regular',
-    locale: 'zh_TW',
-  });
-  const c = document.getElementById('tv-ticker');
-  if (c) c.appendChild(script);
-}
-
-// Featured SOX chart (mini symbol overview which works for indices with right symbol)
-function mountSOXChart() {
-  const script = document.createElement('script');
-  script.type = 'text/javascript';
-  script.src = 'https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js';
-  script.async = true;
-  script.innerHTML = JSON.stringify({
-    symbols: [
-      ['費半 SOX', 'TVC:SOX|1D'],
-      ['台股加權', 'TVC:TAIEX|1D'],
-      ['Nasdaq', 'NASDAQ:IXIC|1D'],
-      ['NVDA',    'NASDAQ:NVDA|1D'],
-    ],
-    chartOnly: false,
+  script.textContent = JSON.stringify({
+    symbol,
     width: '100%',
-    height: 280,
+    height: 120,
     locale: 'zh_TW',
-    colorTheme: theme,
-    autosize: true,
-    showVolume: false,
-    showMA: false,
-    hideDateRanges: false,
-    hideMarketStatus: false,
-    hideSymbolLogo: false,
-    scalePosition: 'right',
-    scaleMode: 'Normal',
-    fontFamily: '-apple-system, sans-serif',
-    fontSize: '10',
-    noTimeScale: false,
-    valuesTracking: '1',
-    changeMode: 'price-and-percent',
-    chartType: 'area',
-    lineWidth: 2,
-    lineType: 0,
+    dateRange: '1D',
+    colorTheme: document.documentElement.classList.contains('dark') ? 'dark' : 'light',
     isTransparent: true,
-    dateRanges: ['1d|1', '1m|30', '3m|60', '12m|1D', 'all|1W'],
+    autosize: true,
+    largeChartUrl: ''
   });
-  const c = document.getElementById('tv-sox-chart');
-  if (c) c.appendChild(script);
+  const container = document.getElementById(containerId);
+  if (container) container.appendChild(script);
 }
-
-mountTicker();
-mountSOXChart();
+// Use TVC: prefix which has the most reliable widget index coverage
+makeTVWidget('tv-taiex', 'TVC:TAIEX');
+makeTVWidget('tv-sox',   'TVC:SOX');
+makeTVWidget('tv-ndaq',  'NASDAQ:IXIC');
+makeTVWidget('tv-spx',   'TVC:SPX');
 
 // ================== Watchlist ==================
 const watchGrid = document.getElementById('watchlist-grid');

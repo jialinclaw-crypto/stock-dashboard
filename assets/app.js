@@ -70,29 +70,77 @@ updateMarketStatus();
 setInterval(updateMarketStatus, 30000);
 
 // ================== TradingView widgets ==================
-function makeTVWidget(containerId, symbol) {
+const theme = document.documentElement.classList.contains('dark') ? 'dark' : 'light';
+
+// Ticker tape: shows live quotes for major indices (台股 / SOX / Nasdaq / 道瓊 / S&P)
+function mountTicker() {
   const script = document.createElement('script');
   script.type = 'text/javascript';
-  script.src = 'https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js';
+  script.src = 'https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js';
   script.async = true;
   script.innerHTML = JSON.stringify({
-    symbol,
-    width: '100%',
-    height: 120,
-    locale: 'zh_TW',
-    dateRange: '1D',
-    colorTheme: document.documentElement.classList.contains('dark') ? 'dark' : 'light',
+    symbols: [
+      { proName: 'TVC:TAIEX',      title: '台股加權' },
+      { proName: 'TVC:SOX',        title: '費城半導體' },
+      { proName: 'NASDAQ:IXIC',    title: 'Nasdaq' },
+      { proName: 'FOREXCOM:SPXUSD', title: 'S&P 500' },
+      { proName: 'FOREXCOM:DJI',   title: '道瓊' },
+      { proName: 'TVC:DXY',        title: '美元指數' },
+      { proName: 'TVC:VIX',        title: 'VIX' },
+    ],
+    showSymbolLogo: true,
+    colorTheme: theme,
     isTransparent: true,
-    autosize: true,
-    largeChartUrl: ''
+    displayMode: 'regular',
+    locale: 'zh_TW',
   });
-  const container = document.getElementById(containerId);
-  if (container) container.appendChild(script);
+  const c = document.getElementById('tv-ticker');
+  if (c) c.appendChild(script);
 }
-makeTVWidget('tv-taiex', 'TPE:TAIEX');
-makeTVWidget('tv-sox',   'CBOE:SOX');
-makeTVWidget('tv-ndaq',  'NASDAQ:IXIC');
-makeTVWidget('tv-spx',   'SP:SPX');
+
+// Featured SOX chart (mini symbol overview which works for indices with right symbol)
+function mountSOXChart() {
+  const script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src = 'https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js';
+  script.async = true;
+  script.innerHTML = JSON.stringify({
+    symbols: [
+      ['費半 SOX', 'TVC:SOX|1D'],
+      ['台股加權', 'TVC:TAIEX|1D'],
+      ['Nasdaq', 'NASDAQ:IXIC|1D'],
+      ['NVDA',    'NASDAQ:NVDA|1D'],
+    ],
+    chartOnly: false,
+    width: '100%',
+    height: 280,
+    locale: 'zh_TW',
+    colorTheme: theme,
+    autosize: true,
+    showVolume: false,
+    showMA: false,
+    hideDateRanges: false,
+    hideMarketStatus: false,
+    hideSymbolLogo: false,
+    scalePosition: 'right',
+    scaleMode: 'Normal',
+    fontFamily: '-apple-system, sans-serif',
+    fontSize: '10',
+    noTimeScale: false,
+    valuesTracking: '1',
+    changeMode: 'price-and-percent',
+    chartType: 'area',
+    lineWidth: 2,
+    lineType: 0,
+    isTransparent: true,
+    dateRanges: ['1d|1', '1m|30', '3m|60', '12m|1D', 'all|1W'],
+  });
+  const c = document.getElementById('tv-sox-chart');
+  if (c) c.appendChild(script);
+}
+
+mountTicker();
+mountSOXChart();
 
 // ================== Watchlist ==================
 const watchGrid = document.getElementById('watchlist-grid');

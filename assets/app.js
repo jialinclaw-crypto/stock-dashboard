@@ -178,6 +178,117 @@ function renderLatest(reports) {
   document.getElementById('latest-time').textContent = `${latest.date} · ${latest.weekday || ''}`;
   if (latest.tldr) document.getElementById('latest-tldr').textContent = latest.tldr;
   document.getElementById('open-latest').onclick = () => openReport(latest);
+  // Try load companion signals JSON
+  loadSignals(latest);
+}
+
+// ================== Signal cards (from companion JSON) ==================
+const VIEW_COLORS = {
+  '🟢': 'border-emerald-500/40 bg-emerald-500/5',
+  '🟡': 'border-amber-500/40 bg-amber-500/5',
+  '🔴': 'border-rose-500/40 bg-rose-500/5',
+};
+const LEVEL_STYLES = {
+  'very-bullish':    { emoji:'🟢', label:'非常偏多', css:'bg-emerald-500/20 text-emerald-300' },
+  'bullish':         { emoji:'🟢', label:'偏多',     css:'bg-emerald-500/20 text-emerald-300' },
+  'neutral-bullish': { emoji:'🟢', label:'偏多偏向中性', css:'bg-emerald-500/10 text-emerald-200' },
+  'neutral':         { emoji:'🟡', label:'中性',     css:'bg-amber-500/20 text-amber-300' },
+  'neutral-bearish': { emoji:'🟡', label:'中性偏空', css:'bg-amber-500/10 text-amber-200' },
+  'bearish':         { emoji:'🔴', label:'偏空',     css:'bg-rose-500/20 text-rose-300' },
+  'very-bearish':    { emoji:'🔴', label:'非常偏空', css:'bg-rose-500/20 text-rose-300' },
+};
+
+async function loadSignals(latestReport) {
+  if (!latestReport) return;
+  const jsonFile = latestReport.filename.replace(/\.md$/, '.json');
+  try {
+    const res = await fetch(`reports/${jsonFile}?t=${Date.now()}`);
+    if (!res.ok) throw new Error('no signals json');
+    const sig = await res.json();
+    renderMarketView(sig);
+    renderSignalCards(sig);
+    renderAlerts(sig);
+  } catch (e) {
+    // Silent: hide signals UI
+    ['market-view-banner','signals-section','alerts-section'].forEach(id => document.getElementById(id).classList.add('hidden'));
+  }
+}
+
+function renderMarketView(sig) {
+  if (!sig.market_view) return;
+  const banner = document.getElementById('market-view-banner');
+  const style = LEVEL_STYLES[sig.market_view.level] || LEVEL_STYLES['neutral'];
+  document.getElementById('market-view-emoji').textContent = style.emoji;
+  const levelEl = document.getElementById('market-view-level');
+  levelEl.textContent = style.label;
+  levelEl.className = `text-xs font-medium px-2 py-0.5 rounded ${style.css}`;
+  document.getElementById('market-view-headline').textContent = sig.market_view.headline || '';
+  const conf = sig.market_view.confidence;
+  document.getElementById('market-view-confidence').textContent = conf != null ? `信心度 ${Math.round(conf * 100)}%` : '';
+  banner.classList.remove('hidden');
+}
+
+function renderSignalCards(sig) {
+  if (!sig.stocks?.length) return;
+  const section = document.getElementById('signals-section');
+  const grid = document.getElementById('signals-grid');
+  grid.innerHTML = '';
+  sig.stocks.forEach(s => {
+    const borderCls = VIEW_COLORS[s.signal] || 'border-slate-700';
+    const changeColor = (s.change_pct ?? 0) >= 0 ? 'text-emerald-400' : 'text-rose-400';
+    const changeArrow = (s.change_pct ?? 0) >= 0 ? '▲' : '▼';
+    const card = document.createElement('div');
+    card.className = `rounded-xl border ${borderCls} p-3`;
+    card.innerHTML = `
+      <div class="flex items-start justify-between mb-2">
+        <div>
+          <div class="flex items-center gap-1.5">
+            <span class="text-lg">${s.signal || '🟡'}</span>
+            <span class="font-mono font-bold text-sm">${s.ticker}</span>
+            <span class="text-[10px] px-1 py-0.5 rounded ${s.market === 'TW' ? 'bg-orange-500/20 text-orange-300' : 'bg-blue-500/20 text-blue-300'}">${s.market || ''}</span>
+          </div>
+          <p class="text-xs text-slate-400 mt-0.5">${s.name || ''}</p>
+        </div>
+      </div>
+      ${s.price != null ? `
+      <div class="flex items-baseline gap-2 mb-2">
+        <span class="font-mono font-bold text-base">${s.price}</span>
+        ${s.change_pct != null ? `<span class="${changeColor} text-xs font-mono">${changeArrow} ${Math.abs(s.change_pct).toFixed(2)}%</span>` : ''}
+      </div>` : ''}
+      <div class="text-[11px] text-slate-300 mb-2 leading-tight">${s.view || ''}</div>
+      ${(s.target || s.stop_loss) ? `
+      <div class="grid grid-cols-2 gap-1 text-[10px] mt-2 pt-2 border-t border-slate-800">
+        ${s.target ? `<div class="text-slate-500">🎯 目標<br><span class="text-emerald-400 font-mono text-xs">${s.target}</span></div>` : '<div></div>'}
+        ${s.stop_loss ? `<div class="text-slate-500">🛡 停損<br><span class="text-rose-400 font-mono text-xs">${s.stop_loss}</span></div>` : '<div></div>'}
+      </div>` : ''}
+      ${(s.support || s.resistance) ? `
+      <div class="grid grid-cols-2 gap-1 text-[10px] mt-2">
+        ${s.support ? `<div class="text-slate-500">支撐 <span class="text-slate-300 font-mono">${s.support}</span></div>` : '<div></div>'}
+        ${s.resistance ? `<div class="text-slate-500">壓力 <span class="text-slate-300 font-mono">${s.resistance}</span></div>` : '<div></div>'}
+      </div>` : ''}
+    `;
+    grid.appendChild(card);
+  });
+  section.classList.remove('hidden');
+  const meta = reportTypeMeta(sig.report_file || '');
+  document.getElementById('signals-source').textContent = `來自 ${meta.label} · ${sig.date || ''}`;
+}
+
+function renderAlerts(sig) {
+  if (!sig.alerts?.length) return;
+  const section = document.getElementById('alerts-section');
+  const list = document.getElementById('alerts-list');
+  list.innerHTML = sig.alerts.map(a => {
+    const isWarn = a.level === 'warning';
+    const cls = isWarn ? 'border-rose-500/30 bg-rose-500/5 text-rose-200' : 'border-amber-500/30 bg-amber-500/5 text-amber-200';
+    const icon = isWarn ? '⚠️' : 'ℹ️';
+    const tickers = (a.tickers || []).map(t => `<span class="font-mono text-[10px] px-1 py-0.5 bg-slate-800 rounded">${t}</span>`).join(' ');
+    return `<div class="rounded-lg border ${cls} px-3 py-2 text-xs">
+      <span class="mr-2">${icon}</span>${a.text}
+      ${tickers ? `<span class="ml-2">${tickers}</span>` : ''}
+    </div>`;
+  }).join('');
+  section.classList.remove('hidden');
 }
 
 // Filter buttons
@@ -220,9 +331,25 @@ document.getElementById('report-modal').addEventListener('click', e => {
 });
 
 // ================== Portfolio ==================
+let CLOUD_PORTFOLIO = []; // loaded from repo's portfolio.json
+
+async function loadCloudPortfolio() {
+  try {
+    const res = await fetch(`portfolio.json?t=${Date.now()}`);
+    const data = await res.json();
+    CLOUD_PORTFOLIO = data.watchlist || [];
+  } catch {
+    CLOUD_PORTFOLIO = [];
+  }
+}
+
 function getPortfolio() {
-  try { return JSON.parse(localStorage.getItem('portfolio') || '[]'); }
-  catch { return []; }
+  // Merge: local overrides cloud by ticker
+  try {
+    const local = JSON.parse(localStorage.getItem('portfolio') || '[]');
+    if (local.length) return local;
+    return CLOUD_PORTFOLIO;
+  } catch { return CLOUD_PORTFOLIO; }
 }
 function savePortfolio(p) {
   localStorage.setItem('portfolio', JSON.stringify(p));
@@ -334,5 +461,8 @@ async function renderCalendar() {
 }
 
 // ================== Init ==================
-loadReports();
-renderPortfolio();
+(async () => {
+  await loadCloudPortfolio();
+  loadReports();
+  renderPortfolio();
+})();

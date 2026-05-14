@@ -1,0 +1,128 @@
+{
+  "_schema_version": 1,
+  "type": "morning",
+  "report_file": "股市-開盤前-20260514.md",
+  "date": "2026-05-14",
+  "weekday": "週四",
+  "generated_at": "2026-05-14T07:35:00+08:00",
+
+  "market_view": {
+    "level": "neutral-bullish",
+    "confidence": 0.65,
+    "headline": "美股創高（Nasdaq +1.20% / S&P +0.58%）+ AAPL 創 52 週新高帶動，台股開盤偏多但留意鴻海駭客事件 + PPI 通膨疑慮"
+  },
+
+  "indices": [
+    { "name": "台股加權", "ticker": "TAIEX", "value": 41898, "change_pct": 0.26, "trend": "neutral" },
+    { "name": "費城半導體", "ticker": "SOX", "value": 11717, "change_pct": -3.01, "trend": "bearish" },
+    { "name": "Nasdaq", "ticker": "IXIC", "value": 26402, "change_pct": 1.20, "trend": "bullish" },
+    { "name": "S&P 500", "ticker": "SPX", "value": 7444, "change_pct": 0.58, "trend": "bullish" }
+  ],
+
+  "stocks": [
+    {
+      "ticker": "2330",
+      "name": "台積電",
+      "market": "TW",
+      "signal": "🟡",
+      "view": "觀望偏多。美國 1650 億計畫深化、Q1 EPS +58% 撐基本面；短線 SOX -3% 形成壓力。",
+      "price": null,
+      "change_pct": null,
+      "support": 1100,
+      "resistance": 1200,
+      "stop_loss": 1080,
+      "target": 1250
+    },
+    {
+      "ticker": "2454",
+      "name": "聯發科",
+      "market": "TW",
+      "signal": "🟡",
+      "view": "昨重挫 4.64% 後關注止跌力道。AI 手機晶片中長線看好，但短線跟費半承壓。",
+      "support": 3500,
+      "resistance": 3800,
+      "stop_loss": 3400,
+      "target": 3900
+    },
+    {
+      "ticker": "2317",
+      "name": "鴻海",
+      "market": "TW",
+      "signal": "🔴",
+      "view": "⚠️ 北美 Wisconsin 廠遭駭客攻擊 IT 中斷，今日開盤承壓。建議觀望待消息明朗。",
+      "support": 225,
+      "resistance": 240,
+      "stop_loss": 222,
+      "target": 250
+    },
+    {
+      "ticker": "NVDA",
+      "name": "輝達",
+      "market": "US",
+      "signal": "🟢",
+      "view": "市值 $5.55T，AI 晶片需求強勁，黃仁勳赴中峰會帶出口解禁題材。",
+      "price": 225.57,
+      "change_pct": 2.5,
+      "support": 215,
+      "resistance": 235,
+      "stop_loss": 210,
+      "target": 250
+    },
+    {
+      "ticker": "AAPL",
+      "name": "蘋果",
+      "market": "US",
+      "signal": "🟢",
+      "view": "創 52 週新高，Cook 赴北京談判。9/1 卸任消息已被市場吸收。",
+      "price": 294.80,
+      "support": 280,
+      "resistance": 305,
+      "stop_loss": 275,
+      "target": 320
+    },
+    {
+      "ticker": "TSM",
+      "name": "台積電 ADR",
+      "market": "US",
+      "signal": "🟢",
+      "view": "4 月營收 YoY +17.5%，美國投資計畫獲法人加碼。",
+      "price": 397.28,
+      "support": 380,
+      "resistance": 410,
+      "target": 430
+    },
+    {
+      "ticker": "TSLA",
+      "name": "特斯拉",
+      "market": "US",
+      "signal": "🟡",
+      "view": "無重大消息，跟隨 Nasdaq 偏多。",
+      "support": 360,
+      "resistance": 390
+    }
+  ],
+
+  "alerts": [
+    {
+      "level": "warning",
+      "text": "鴻海北美設施遭駭客攻擊，Wisconsin 廠 IT 中斷部分產線",
+      "tickers": ["2317"]
+    },
+    {
+      "level": "info",
+      "text": "聯電（2303）漲停創 26 年新高，矽光子族群輪動啟動",
+      "tickers": ["2303"]
+    },
+    {
+      "level": "warning",
+      "text": "美國 PPI 批發通膨高於預期，留意降息預期下修風險",
+      "tickers": []
+    }
+  ],
+
+  "sector_rotation": {
+    "strong": ["矽光子", "光通訊", "AI 算力", "AI 應用"],
+    "weak":   ["生技", "傳產", "金融"],
+    "watch":  ["記憶體 HBM", "機器人", "AI 伺服器"]
+  }
+}

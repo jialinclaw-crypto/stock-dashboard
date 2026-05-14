@@ -73,6 +73,36 @@
         <button id="open-latest" class="mt-4 text-xs px-3 py-1.5 bg-emerald-500/20 text-emerald-300 rounded-lg hover:bg-emerald-500/30 transition">展開完整報告 →</button>
       </div>
 
+      <!-- Market view banner (from latest signals JSON) -->
+      <div id="market-view-banner" class="mb-6 hidden">
+        <div class="bg-card rounded-xl border border-slate-800 p-4 flex items-center gap-4">
+          <div id="market-view-emoji" class="text-3xl">🟡</div>
+          <div class="flex-1">
+            <div class="flex items-center gap-2 mb-1">
+              <p class="text-xs text-slate-400">市場觀點</p>
+              <span id="market-view-level" class="text-xs font-medium px-2 py-0.5 rounded">中性</span>
+              <span id="market-view-confidence" class="text-[10px] text-slate-500">信心度 —</span>
+            </div>
+            <p id="market-view-headline" class="text-sm text-slate-200 leading-relaxed">—</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Signal cards grid (from latest signals JSON) -->
+      <div id="signals-section" class="mb-6 hidden">
+        <div class="flex items-center justify-between mb-3">
+          <h3 class="text-sm font-semibold text-slate-400 uppercase tracking-wider">🚦 信號燈 <span class="text-[10px] text-slate-600 normal-case">· 由最新報告產生</span></h3>
+          <span id="signals-source" class="text-[10px] text-slate-600"></span>
+        </div>
+        <div id="signals-grid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3"></div>
+      </div>
+
+      <!-- Alerts ticker -->
+      <div id="alerts-section" class="mb-6 hidden">
+        <h3 class="text-sm font-semibold text-slate-400 uppercase tracking-wider mb-2">⚠️ 警示</h3>
+        <div id="alerts-list" class="space-y-2"></div>
+      </div>
+
       <!-- Live market widgets (ETF proxies — widgets only render stocks/ETFs, not indices) -->
       <h3 class="text-sm font-semibold text-slate-400 uppercase tracking-wider mb-3">即時市場 <span class="text-[10px] text-slate-600 normal-case">· ETF 追蹤</span></h3>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">

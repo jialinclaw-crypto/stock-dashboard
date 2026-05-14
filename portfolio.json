@@ -1,0 +1,14 @@
+{
+  "_comment": "你的關注股 / 持股清單。Routine 會讀這個檔，重點分析這些股票。可從 GitHub web UI 直接編輯，或在 dashboard '我的部位' tab 操作。",
+  "version": 1,
+  "updated_at": "2026-05-14",
+  "watchlist": [
+    { "ticker": "2330",  "name": "台積電",    "market": "TW", "shares": 0, "cost": 0, "priority": "high" },
+    { "ticker": "2454",  "name": "聯發科",    "market": "TW", "shares": 0, "cost": 0, "priority": "high" },
+    { "ticker": "2317",  "name": "鴻海",      "market": "TW", "shares": 0, "cost": 0, "priority": "med" },
+    { "ticker": "NVDA",  "name": "輝達",      "market": "US", "shares": 0, "cost": 0, "priority": "high" },
+    { "ticker": "TSLA",  "name": "特斯拉",    "market": "US", "shares": 0, "cost": 0, "priority": "med" },
+    { "ticker": "AAPL",  "name": "蘋果",      "market": "US", "shares": 0, "cost": 0, "priority": "med" },
+    { "ticker": "TSM",   "name": "台積電ADR", "market": "US", "shares": 0, "cost": 0, "priority": "med" }
+  ]
+}

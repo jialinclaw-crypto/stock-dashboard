@@ -109,6 +109,46 @@ makeTVWidget('tv-sox',   'NASDAQ:SOXX');  // iShares Semiconductor ETF
 makeTVWidget('tv-ndaq',  'NASDAQ:QQQ');   // Invesco QQQ Trust (Nasdaq 100)
 makeTVWidget('tv-spx',   'AMEX:SPY');     // SPDR S&P 500 ETF
 
+// ================== Live ticker tape (watchlist real-time prices) ==================
+function mountWatchlistTicker(stocks) {
+  const container = document.getElementById('tv-watchlist-ticker');
+  if (!container) return;
+  container.innerHTML = '';
+  // Build a lookup from WATCHLIST so we can recover exchange-qualified TV symbols
+  // for the well-known tickers when portfolio entries only carry ticker/market.
+  const tvLookup = Object.fromEntries(WATCHLIST.map(w => [w.symbol.toUpperCase(), w.tv]));
+
+  const symbols = (stocks && stocks.length ? stocks : WATCHLIST).map(s => {
+    const t = (s.ticker || s.symbol || '').toUpperCase();
+    let proName;
+    if (s.tv) {
+      proName = s.tv;                              // explicit override (e.g. baked-in WATCHLIST entry)
+    } else if (tvLookup[t]) {
+      proName = tvLookup[t];                       // known ticker → use canonical exchange
+    } else if (s.market === 'TW') {
+      proName = `TWSE:${t}`;                       // generic Taiwan stock
+    } else {
+      proName = `NASDAQ:${t}`;                     // unknown US: default to NASDAQ (TradingView still resolves many NYSE tickers from this hint)
+    }
+    return { proName, title: s.name || s.symbol || s.ticker };
+  });
+  const script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src = 'https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js';
+  script.async = true;
+  script.textContent = JSON.stringify({
+    symbols,
+    showSymbolLogo: true,
+    colorTheme: document.documentElement.classList.contains('dark') ? 'dark' : 'light',
+    isTransparent: true,
+    displayMode: 'compact',
+    locale: 'zh_TW',
+  });
+  container.appendChild(script);
+}
+// Note: ticker tape is mounted from init() after portfolio.json loads so the
+// repository-configured watchlist (not the baked-in WATCHLIST) is shown.
+
 // ================== Watchlist ==================
 const watchGrid = document.getElementById('watchlist-grid');
 WATCHLIST.forEach(s => {
@@ -314,7 +354,18 @@ function renderSignalCards(sig) {
   });
   section.classList.remove('hidden');
   const meta = reportTypeMeta(sig.report_file || '');
-  document.getElementById('signals-source').textContent = `來自 ${meta.label} · ${sig.date || ''}`;
+  let when = '';
+  if (sig.generated_at) {
+    try {
+      // Always render in Asia/Taipei regardless of viewer's local timezone
+      const fmt = new Intl.DateTimeFormat('zh-TW', {
+        hour: '2-digit', minute: '2-digit',
+        hour12: false, timeZone: 'Asia/Taipei',
+      });
+      when = ` ${fmt.format(new Date(sig.generated_at))}`;
+    } catch {}
+  }
+  document.getElementById('signals-source').textContent = `${meta.label} · ${sig.date || ''}${when} 快照`;
 }
 
 function renderAlerts(sig) {
@@ -472,8 +523,18 @@ function renderPortfolio() {
       p.splice(i, 1);
       savePortfolio(p);
       renderPortfolio();
+      refreshTickerFromPortfolio();
     });
   });
+}
+
+// Re-mount ticker after portfolio edits so it tracks current watchlist
+function refreshTickerFromPortfolio() {
+  const eff = getPortfolio();
+  const stocks = (eff && eff.length)
+    ? eff.map(p => ({ ticker: p.symbol, symbol: p.symbol, name: p.name, market: p.market }))
+    : WATCHLIST;
+  mountWatchlistTicker(stocks);
 }
 
 document.getElementById('add-position-btn').addEventListener('click', () => {
@@ -494,6 +555,7 @@ document.getElementById('pf-save').addEventListener('click', () => {
   document.getElementById('position-form').classList.add('hidden');
   ['pf-symbol','pf-shares','pf-cost','pf-market'].forEach(id => document.getElementById(id).value = '');
   renderPortfolio();
+  refreshTickerFromPortfolio();
 });
 
 // ================== Calendar timeline ==================
@@ -538,6 +600,18 @@ async function renderCalendar() {
 // ================== Init ==================
 (async () => {
   await loadCloudPortfolio();
+  // Mount live ticker using whatever the user is actually watching:
+  // getPortfolio() respects local override → falls back to cloud → finally WATCHLIST
+  const effective = getPortfolio();
+  const tickerStocks = (effective && effective.length)
+    ? effective.map(p => ({
+        ticker: p.symbol,
+        symbol: p.symbol,
+        name: p.name,
+        market: p.market,
+      }))
+    : WATCHLIST;
+  mountWatchlistTicker(tickerStocks);
   loadReports();
   renderPortfolio();
 })();

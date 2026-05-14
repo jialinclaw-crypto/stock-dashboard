@@ -60,6 +60,11 @@
     <!-- =================== TAB: OVERVIEW =================== -->
     <section data-panel="overview" class="tab-panel">
 
+      <!-- Live ticker tape (always-fresh prices for watchlist) -->
+      <div class="mb-4 bg-card rounded-xl border border-slate-800 overflow-hidden">
+        <div class="tradingview-widget-container" id="tv-watchlist-ticker"></div>
+      </div>
+
       <!-- Latest report card -->
       <div id="latest-report-card" class="mb-6 bg-gradient-to-br from-emerald-900/40 to-slate-900 border border-emerald-500/30 rounded-xl p-5">
         <div class="flex items-start justify-between mb-3">
@@ -95,7 +100,7 @@
       <!-- Signal cards grid (from latest signals JSON) -->
       <div id="signals-section" class="mb-6 hidden">
         <div class="flex items-center justify-between mb-3">
-          <h3 class="text-sm font-semibold text-slate-400 uppercase tracking-wider">🚦 信號燈 <span class="text-[10px] text-slate-600 normal-case">· 由最新報告產生</span></h3>
+          <h3 class="text-sm font-semibold text-slate-400 uppercase tracking-wider">🚦 信號燈 <span class="text-[10px] text-slate-600 normal-case">· 報告快照（非即時，看上方跑馬燈即時價）</span></h3>
           <span id="signals-source" class="text-[10px] text-slate-600"></span>
         </div>
         <div id="signals-grid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3"></div>

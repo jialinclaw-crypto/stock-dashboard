@@ -73,36 +73,33 @@
         <button id="open-latest" class="mt-4 text-xs px-3 py-1.5 bg-emerald-500/20 text-emerald-300 rounded-lg hover:bg-emerald-500/30 transition">展開完整報告 →</button>
       </div>
 
-      <!-- Live market widgets (4 mini-charts) -->
-      <h3 class="text-sm font-semibold text-slate-400 uppercase tracking-wider mb-3">即時市場</h3>
+      <!-- Live market widgets (ETF proxies — widgets only render stocks/ETFs, not indices) -->
+      <h3 class="text-sm font-semibold text-slate-400 uppercase tracking-wider mb-3">即時市場 <span class="text-[10px] text-slate-600 normal-case">· ETF 追蹤</span></h3>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
 
         <div class="bg-card rounded-xl p-4 border border-slate-800">
-          <p class="text-xs text-slate-400 mb-2">📊 台股加權 TAIEX</p>
+          <p class="text-xs text-slate-400 mb-2">📊 台股 <span class="text-[10px] text-slate-600">· EWT 台灣 ETF（NYSE 上市）</span></p>
           <div class="tradingview-widget-container">
             <div id="tv-taiex" style="height:120px"></div>
-            <div class="tradingview-widget-copyright text-[10px] text-slate-600 mt-1">
-              <a href="https://www.tradingview.com/symbols/TPE-TAIEX/" rel="noopener" target="_blank">查看詳細圖表</a>
-            </div>
           </div>
         </div>
 
         <div class="bg-card rounded-xl p-4 border border-slate-800">
-          <p class="text-xs text-slate-400 mb-2">⚡ 費城半導體 SOX <span class="text-slate-600">· 影響台股關鍵</span></p>
+          <p class="text-xs text-slate-400 mb-2">⚡ 費半 <span class="text-[10px] text-slate-600">· SOXX 半導體 ETF · 影響台股關鍵</span></p>
           <div class="tradingview-widget-container">
             <div id="tv-sox" style="height:120px"></div>
           </div>
         </div>
 
         <div class="bg-card rounded-xl p-4 border border-slate-800">
-          <p class="text-xs text-slate-400 mb-2">🇺🇸 Nasdaq Composite</p>
+          <p class="text-xs text-slate-400 mb-2">🇺🇸 Nasdaq <span class="text-[10px] text-slate-600">· QQQ ETF</span></p>
           <div class="tradingview-widget-container">
             <div id="tv-ndaq" style="height:120px"></div>
           </div>
         </div>
 
         <div class="bg-card rounded-xl p-4 border border-slate-800">
-          <p class="text-xs text-slate-400 mb-2">🇺🇸 S&P 500</p>
+          <p class="text-xs text-slate-400 mb-2">🇺🇸 S&P 500 <span class="text-[10px] text-slate-600">· SPY ETF</span></p>
           <div class="tradingview-widget-container">
             <div id="tv-spx" style="height:120px"></div>
           </div>

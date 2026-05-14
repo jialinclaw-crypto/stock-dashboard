@@ -89,11 +89,11 @@ function makeTVWidget(containerId, symbol) {
   const container = document.getElementById(containerId);
   if (container) container.appendChild(script);
 }
-// Use TVC: prefix which has the most reliable widget index coverage
-makeTVWidget('tv-taiex', 'TVC:TAIEX');
-makeTVWidget('tv-sox',   'TVC:SOX');
-makeTVWidget('tv-ndaq',  'NASDAQ:IXIC');
-makeTVWidget('tv-spx',   'TVC:SPX');
+// Use ETF proxies — TV mini widget doesn't render index data directly, only stocks/ETFs
+makeTVWidget('tv-taiex', 'AMEX:EWT');     // iShares MSCI Taiwan ETF
+makeTVWidget('tv-sox',   'NASDAQ:SOXX');  // iShares Semiconductor ETF
+makeTVWidget('tv-ndaq',  'NASDAQ:QQQ');   // Invesco QQQ Trust (Nasdaq 100)
+makeTVWidget('tv-spx',   'AMEX:SPY');     // SPDR S&P 500 ETF
 
 // ================== Watchlist ==================
 const watchGrid = document.getElementById('watchlist-grid');

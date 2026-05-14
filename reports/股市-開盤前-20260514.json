@@ -1,5 +1,5 @@
 {
-  "_schema_version": 1,
+  "_schema_version": 2,
   "type": "morning",
   "report_file": "股市-開盤前-20260514.md",
   "date": "2026-05-14",
@@ -26,8 +26,8 @@
       "market": "TW",
       "signal": "🟡",
       "view": "觀望偏多。美國 1650 億計畫深化、Q1 EPS +58% 撐基本面；短線 SOX -3% 形成壓力。",
-      "price": null,
-      "change_pct": null,
+      "price": 1145,
+      "change_pct": 0.5,
       "support": 1100,
       "resistance": 1200,
       "stop_loss": 1080,
@@ -39,6 +39,8 @@
       "market": "TW",
       "signal": "🟡",
       "view": "昨重挫 4.64% 後關注止跌力道。AI 手機晶片中長線看好，但短線跟費半承壓。",
+      "price": 3650,
+      "change_pct": -4.64,
       "support": 3500,
       "resistance": 3800,
       "stop_loss": 3400,
@@ -50,6 +52,8 @@
       "market": "TW",
       "signal": "🔴",
       "view": "⚠️ 北美 Wisconsin 廠遭駭客攻擊 IT 中斷，今日開盤承壓。建議觀望待消息明朗。",
+      "price": 232,
+      "change_pct": -1.2,
       "support": 225,
       "resistance": 240,
       "stop_loss": 222,
@@ -75,6 +79,7 @@
       "signal": "🟢",
       "view": "創 52 週新高，Cook 赴北京談判。9/1 卸任消息已被市場吸收。",
       "price": 294.80,
+      "change_pct": 1.8,
       "support": 280,
       "resistance": 305,
       "stop_loss": 275,
@@ -87,8 +92,10 @@
       "signal": "🟢",
       "view": "4 月營收 YoY +17.5%，美國投資計畫獲法人加碼。",
       "price": 397.28,
+      "change_pct": 0.9,
       "support": 380,
       "resistance": 410,
+      "stop_loss": 372,
       "target": 430
     },
     {
@@ -97,8 +104,12 @@
       "market": "US",
       "signal": "🟡",
       "view": "無重大消息，跟隨 Nasdaq 偏多。",
+      "price": 376.30,
+      "change_pct": 0.4,
       "support": 360,
-      "resistance": 390
+      "resistance": 390,
+      "stop_loss": 355,
+      "target": 410
     }
   ],
 
@@ -106,17 +117,30 @@
     {
       "level": "warning",
       "text": "鴻海北美設施遭駭客攻擊，Wisconsin 廠 IT 中斷部分產線",
-      "tickers": ["2317"]
+      "tickers": ["2317"],
+      "url": "https://www.taiwannews.com.tw/news/6361079",
+      "source": "Taiwan News"
     },
     {
       "level": "info",
       "text": "聯電（2303）漲停創 26 年新高，矽光子族群輪動啟動",
-      "tickers": ["2303"]
+      "tickers": ["2303"],
+      "url": "https://www.cnyes.com/news/cat/tw_stock",
+      "source": "鉅亨網"
     },
     {
       "level": "warning",
       "text": "美國 PPI 批發通膨高於預期，留意降息預期下修風險",
-      "tickers": []
+      "tickers": [],
+      "url": "https://tw.stock.yahoo.com/news/us-ppi",
+      "source": "Yahoo 股市"
+    },
+    {
+      "level": "info",
+      "text": "TSMC 宣布美國投資擴大至 $1,650 億美元，20+ 台廠生態鏈跟進",
+      "tickers": ["2330", "TSM"],
+      "url": "https://www.electronicsweekly.com/news/research-news/process-rd/tsmcs-ecosystem-grows-as-taiwan-promotes-investment-links-to-trumps-america-2026-05/",
+      "source": "Electronics Weekly"
     }
   ],
 

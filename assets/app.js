@@ -250,11 +250,10 @@ function renderSignalCards(sig) {
           <p class="text-xs text-slate-400 mt-0.5">${s.name || ''}</p>
         </div>
       </div>
-      ${s.price != null ? `
       <div class="flex items-baseline gap-2 mb-2">
-        <span class="font-mono font-bold text-base">${s.price}</span>
-        ${s.change_pct != null ? `<span class="${changeColor} text-xs font-mono">${changeArrow} ${Math.abs(s.change_pct).toFixed(2)}%</span>` : ''}
-      </div>` : ''}
+        <span class="font-mono font-bold text-base">${s.price != null ? s.price : '—'}</span>
+        ${s.change_pct != null ? `<span class="${changeColor} text-xs font-mono">${changeArrow} ${Math.abs(s.change_pct).toFixed(2)}%</span>` : `<span class="text-xs text-slate-600">(資料更新中)</span>`}
+      </div>
       <div class="text-[11px] text-slate-300 mb-2 leading-tight">${s.view || ''}</div>
       ${(s.target || s.stop_loss) ? `
       <div class="grid grid-cols-2 gap-1 text-[10px] mt-2 pt-2 border-t border-slate-800">
@@ -283,10 +282,18 @@ function renderAlerts(sig) {
     const cls = isWarn ? 'border-rose-500/30 bg-rose-500/5 text-rose-200' : 'border-amber-500/30 bg-amber-500/5 text-amber-200';
     const icon = isWarn ? '⚠️' : 'ℹ️';
     const tickers = (a.tickers || []).map(t => `<span class="font-mono text-[10px] px-1 py-0.5 bg-slate-800 rounded">${t}</span>`).join(' ');
-    return `<div class="rounded-lg border ${cls} px-3 py-2 text-xs">
-      <span class="mr-2">${icon}</span>${a.text}
+    const isClickable = !!a.url;
+    const tag = isClickable ? 'a' : 'div';
+    const attrs = isClickable
+      ? `href="${a.url}" target="_blank" rel="noopener" class="block rounded-lg border ${cls} px-3 py-2 text-xs hover:brightness-125 transition cursor-pointer"`
+      : `class="rounded-lg border ${cls} px-3 py-2 text-xs"`;
+    const source = a.source ? `<span class="text-[10px] text-slate-500 ml-1">· ${a.source}</span>` : '';
+    const arrow = isClickable ? '<span class="float-right text-slate-500">↗</span>' : '';
+    return `<${tag} ${attrs}>
+      <span class="mr-2">${icon}</span>${a.text}${source}
       ${tickers ? `<span class="ml-2">${tickers}</span>` : ''}
-    </div>`;
+      ${arrow}
+    </${tag}>`;
   }).join('');
   section.classList.remove('hidden');
 }

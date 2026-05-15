@@ -336,13 +336,60 @@ const LEVEL_STYLES = {
   'very-bearish':    { emoji:'🔴', label:'非常偏空', css:'bg-rose-500/20 text-rose-300' },
 };
 
+// Normalize incoming signals JSON across schema drift (routine prompt versions).
+// Tolerate snake_case `cautiously_bullish` style, indices using `close` instead
+// of `value`, missing arrays, etc. — and surface inconsistencies via console.warn
+// instead of silently rendering wrong UI.
+function normalizeSignals(sig) {
+  if (!sig || typeof sig !== 'object') return sig;
+  // Normalize market_view.level — accept kebab-case (canonical), snake_case, or
+  // common English variants from older routine prompts.
+  const LEVEL_ALIASES = {
+    'cautiously_bullish': 'neutral-bullish',
+    'cautiously-bullish': 'neutral-bullish',
+    'cautiously_bearish': 'neutral-bearish',
+    'cautiously-bearish': 'neutral-bearish',
+    'slightly_bullish':   'neutral-bullish',
+    'slightly_bearish':   'neutral-bearish',
+    'mixed':              'neutral',
+    'neutral_to_bullish': 'neutral-bullish',
+    'neutral_to_bearish': 'neutral-bearish',
+  };
+  if (sig.market_view) {
+    const lv = sig.market_view.level;
+    if (typeof lv === 'string') {
+      const raw = lv.trim().toLowerCase();
+      if (LEVEL_ALIASES[raw]) {
+        sig.market_view.level = LEVEL_ALIASES[raw];
+      } else if (Object.prototype.hasOwnProperty.call(LEVEL_STYLES, raw)) {
+        sig.market_view.level = raw;
+      } else {
+        console.warn(`[signals] unknown market_view.level "${lv}" — falling back to neutral`);
+        sig.market_view.level = 'neutral';
+      }
+    } else if (lv != null) {
+      // Non-string (number, object, etc.) — coerce to neutral and warn
+      console.warn(`[signals] non-string market_view.level (${typeof lv}) — coercing to neutral`);
+      sig.market_view.level = 'neutral';
+    }
+  }
+  // Normalize indices: accept value | close | last
+  if (Array.isArray(sig.indices)) {
+    sig.indices = sig.indices.map(i => ({
+      ...i,
+      value: i?.value ?? i?.close ?? i?.last ?? null,
+    }));
+  }
+  return sig;
+}
+
 async function loadSignals(latestReport) {
   if (!latestReport) return;
   const jsonFile = latestReport.filename.replace(/\.md$/, '.json');
   try {
     const res = await fetch(`reports/${jsonFile}?t=${Date.now()}`);
     if (!res.ok) throw new Error('no signals json');
-    const sig = await res.json();
+    const sig = normalizeSignals(await res.json());
     LATEST_SIGNALS = sig;
     renderIndices(sig);
     renderMarketView(sig);
@@ -453,8 +500,12 @@ function renderSectorRotation(sig) {
 }
 
 function renderMarketView(sig) {
-  if (!sig.market_view) return;
   const banner = document.getElementById('market-view-banner');
+  if (!sig?.market_view) {
+    if (banner) banner.classList.add('hidden');
+    return;
+  }
+  if (!banner) return;
   const style = LEVEL_STYLES[sig.market_view.level] || LEVEL_STYLES['neutral'];
   document.getElementById('market-view-emoji').textContent = style.emoji;
   const levelEl = document.getElementById('market-view-level');
@@ -468,9 +519,16 @@ function renderMarketView(sig) {
 }
 
 function renderSignalCards(sig) {
-  if (!sig.stocks?.length) return;
   const section = document.getElementById('signals-section');
   const grid = document.getElementById('signals-grid');
+  // Clear stale content + hide if no fresh data, so newer reports without
+  // stocks don't leave the previous report's cards on screen.
+  if (!sig?.stocks?.length) {
+    if (grid) grid.innerHTML = '';
+    if (section) section.classList.add('hidden');
+    return;
+  }
+  if (!grid) return;
   grid.innerHTML = '';
   sig.stocks.forEach(rawStock => {
     const s = mergeSignalWithLive(rawStock);
@@ -544,9 +602,14 @@ function renderSignalCards(sig) {
 }
 
 function renderAlerts(sig) {
-  if (!sig.alerts?.length) return;
   const section = document.getElementById('alerts-section');
   const list = document.getElementById('alerts-list');
+  if (!sig?.alerts?.length) {
+    if (list) list.innerHTML = '';
+    if (section) section.classList.add('hidden');
+    return;
+  }
+  if (!list) return;
   list.innerHTML = sig.alerts.map(a => {
     const isWarn = a.level === 'warning';
     const cls = isWarn ? 'border-rose-500/30 bg-rose-500/5 text-rose-200' : 'border-amber-500/30 bg-amber-500/5 text-amber-200';
@@ -642,12 +705,22 @@ async function loadCloudPortfolio() {
 }
 
 function getPortfolio() {
-  // Merge: local overrides cloud by ticker
+  // Return a defensive copy ALWAYS so callers can mutate freely without
+  // accidentally splicing the cloud array (which would corrupt subsequent
+  // renders before the next portfolio.json fetch).
+  // structuredClone is available in all modern browsers (2022+) and preserves
+  // Date / nested objects better than JSON.parse(JSON.stringify(...)).
+  const clone = (a) => {
+    try { return structuredClone(a); }
+    catch { return JSON.parse(JSON.stringify(a)); }  // fallback for ancient browsers
+  };
   try {
     const local = JSON.parse(localStorage.getItem('portfolio') || '[]');
-    if (local.length) return local;
-    return CLOUD_PORTFOLIO;
-  } catch { return CLOUD_PORTFOLIO; }
+    if (Array.isArray(local) && local.length) return clone(local);
+    return clone(CLOUD_PORTFOLIO);
+  } catch {
+    return clone(CLOUD_PORTFOLIO);
+  }
 }
 function savePortfolio(p) {
   localStorage.setItem('portfolio', JSON.stringify(p));
@@ -786,8 +859,12 @@ function renderPortfolio() {
     </table>`;
   el.querySelectorAll('.del-btn').forEach(b => {
     b.addEventListener('click', () => {
-      const i = parseInt(b.dataset.i);
+      const i = parseInt(b.dataset.i, 10);
+      // getPortfolio() now returns a deep clone — safe to mutate.
+      // Guard against NaN (missing dataset) and out-of-range index.
+      if (!Number.isInteger(i) || i < 0) return;
       const p = getPortfolio();
+      if (!Array.isArray(p) || i >= p.length) return;
       p.splice(i, 1);
       savePortfolio(p);
       renderPortfolio();

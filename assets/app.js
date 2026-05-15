@@ -14,6 +14,18 @@ const WATCHLIST = [
   { symbol: '2317',    name: '鴻海',    market: 'TW', tv: 'TWSE:2317' },
 ];
 
+// ================== Safety: report filename allowlist ==================
+// Routine output is trusted but the JSON sits in a git repo + GitHub Pages —
+// if reports/index.json is ever tampered with (compromised PAT, MITM at the
+// CDN edge, manual mis-edit) a malicious filename like `../../secret.json` or
+// one with backslashes / control chars could navigate fetch() outside the
+// reports/ directory or break HTML attribute escaping.
+// Allowlist: CJK + ASCII alphanumerics + `_-`, ending with `-{8 digits}.md`.
+const REPORT_FILENAME_RE = /^[一-鿿A-Za-z0-9_-]+-\d{8}\.md$/;
+function isValidReportFilename(name) {
+  return typeof name === 'string' && name.length < 256 && REPORT_FILENAME_RE.test(name);
+}
+
 // ================== HTML escaping helpers ==================
 function esc(s) {
   if (s == null) return '';
@@ -190,7 +202,15 @@ async function loadReports() {
   try {
     const res = await fetch('reports/index.json?t=' + Date.now());
     if (!res.ok) throw new Error('no index');
-    const reports = await res.json();
+    const raw = await res.json();
+    // Defensive: only render entries whose filename matches the allowlist regex.
+    // Drops anything that could traverse paths or break HTML attributes if injected.
+    const reports = Array.isArray(raw)
+      ? raw.filter(r => r && isValidReportFilename(r.filename))
+      : [];
+    if (Array.isArray(raw) && reports.length !== raw.length) {
+      console.warn(`[reports] dropped ${raw.length - reports.length} entry(ies) with invalid filename`);
+    }
     renderReports(reports);
     renderLatest(reports);
     return reports;
@@ -384,10 +404,10 @@ function normalizeSignals(sig) {
 }
 
 async function loadSignals(latestReport) {
-  if (!latestReport) return;
+  if (!latestReport || !isValidReportFilename(latestReport.filename)) return;
   const jsonFile = latestReport.filename.replace(/\.md$/, '.json');
   try {
-    const res = await fetch(`reports/${jsonFile}?t=${Date.now()}`);
+    const res = await fetch(`reports/${encodeURIComponent(jsonFile)}?t=${Date.now()}`);
     if (!res.ok) throw new Error('no signals json');
     const sig = normalizeSignals(await res.json());
     LATEST_SIGNALS = sig;
@@ -586,7 +606,11 @@ function renderSignalCards(sig) {
     grid.appendChild(card);
   });
   section.classList.remove('hidden');
-  const meta = reportTypeMeta(sig.report_file || '');
+  // Defensive: sig.report_file is routine-supplied; reportTypeMeta only does
+  // substring matching for emoji/label so it's safe today, but validate anyway
+  // so future fetch()/href consumers can't be fooled by a poisoned report_file.
+  const safeReportFile = isValidReportFilename(sig.report_file) ? sig.report_file : '';
+  const meta = reportTypeMeta(safeReportFile);
   let when = '';
   if (sig.generated_at) {
     try {
@@ -651,12 +675,19 @@ async function openReport(r) {
   const modal = document.getElementById('report-modal');
   const title = document.getElementById('modal-title');
   const content = document.getElementById('modal-content');
+  // Defensive re-validation: even though loadReports() already filtered,
+  // openReport is also called from calendar / latest-card paths that re-derive
+  // r from various places. Hard-stop on any non-allowlisted filename.
+  if (!isValidReportFilename(r?.filename)) {
+    content.textContent = '無效的報告檔名';
+    return;
+  }
   const meta = reportTypeMeta(r.filename);
-  title.textContent = `${meta.emoji} ${meta.label} · ${r.date}`;
+  title.textContent = `${meta.emoji} ${meta.label} · ${r.date || ''}`;
   content.innerHTML = '<p class="text-slate-400 text-center py-8">載入中…</p>';
   modal.classList.remove('hidden');
   try {
-    const res = await fetch(`reports/${r.filename}?t=${Date.now()}`);
+    const res = await fetch(`reports/${encodeURIComponent(r.filename)}?t=${Date.now()}`);
     const md = await res.text();
     // Sanitize markdown HTML output (defense against XSS via report content).
     // Fail closed: if DOMPurify is unavailable, render as plain text instead of
@@ -705,22 +736,58 @@ async function loadCloudPortfolio() {
 }
 
 function getPortfolio() {
-  // Return a defensive copy ALWAYS so callers can mutate freely without
-  // accidentally splicing the cloud array (which would corrupt subsequent
-  // renders before the next portfolio.json fetch).
-  // structuredClone is available in all modern browsers (2022+) and preserves
-  // Date / nested objects better than JSON.parse(JSON.stringify(...)).
+  // Returns a defensive deep clone always — callers mutate freely.
+  //
+  // Merge strategy (per code review): cloud watchlist defines the universe of
+  // tickers; local localStorage overrides per-ticker shares/cost AND can add
+  // brand-new tickers. This way:
+  //   1. Editing portfolio.json on GitHub updates everyone's watchlist
+  //      (previously local data permanently masked cloud watchlist).
+  //   2. User's own additions persist via localStorage.
+  //   3. Cloud-deleted tickers disappear (unless user re-added locally).
+  //   4. Per-position overrides (shares, cost) stay local.
+  //
+  // Local schema sentinel: if a local entry has `__tombstone: true` it means
+  // user deleted a cloud-defined ticker → suppress it from the merged view.
   const clone = (a) => {
     try { return structuredClone(a); }
-    catch { return JSON.parse(JSON.stringify(a)); }  // fallback for ancient browsers
+    catch { return JSON.parse(JSON.stringify(a)); }
   };
+  let local = [];
   try {
-    const local = JSON.parse(localStorage.getItem('portfolio') || '[]');
-    if (Array.isArray(local) && local.length) return clone(local);
-    return clone(CLOUD_PORTFOLIO);
-  } catch {
-    return clone(CLOUD_PORTFOLIO);
+    const raw = JSON.parse(localStorage.getItem('portfolio') || '[]');
+    if (Array.isArray(raw)) local = raw;
+  } catch { /* corrupted localStorage — ignore */ }
+
+  const cloud = Array.isArray(CLOUD_PORTFOLIO) ? CLOUD_PORTFOLIO : [];
+  const localBySym = new Map(local.map(p => [String(p.symbol || '').toUpperCase(), p]));
+  const result = [];
+
+  // 1. Cloud entries first (preserving order), with local overrides folded in
+  for (const c of cloud) {
+    const key = String(c.symbol || '').toUpperCase();
+    const lo = localBySym.get(key);
+    if (lo && lo.__tombstone) continue;  // user deleted this cloud ticker
+    if (lo) {
+      result.push({
+        ...c,
+        shares: Number.isFinite(Number(lo.shares)) ? Number(lo.shares) : c.shares,
+        cost:   Number.isFinite(Number(lo.cost))   ? Number(lo.cost)   : c.cost,
+        addedAt: lo.addedAt || c.addedAt,
+      });
+    } else {
+      result.push({ ...c });
+    }
+    localBySym.delete(key);  // consumed
   }
+
+  // 2. Any local-only entries (user-added) tacked on the end, except tombstones
+  for (const lo of localBySym.values()) {
+    if (lo.__tombstone) continue;
+    result.push({ ...lo });
+  }
+
+  return clone(result);
 }
 function savePortfolio(p) {
   localStorage.setItem('portfolio', JSON.stringify(p));
@@ -860,13 +927,30 @@ function renderPortfolio() {
   el.querySelectorAll('.del-btn').forEach(b => {
     b.addEventListener('click', () => {
       const i = parseInt(b.dataset.i, 10);
-      // getPortfolio() now returns a deep clone — safe to mutate.
-      // Guard against NaN (missing dataset) and out-of-range index.
       if (!Number.isInteger(i) || i < 0) return;
-      const p = getPortfolio();
-      if (!Array.isArray(p) || i >= p.length) return;
-      p.splice(i, 1);
-      savePortfolio(p);
+      const merged = getPortfolio();
+      if (!Array.isArray(merged) || i >= merged.length) return;
+      const target = merged[i];
+      const sym = String(target?.symbol || '').toUpperCase();
+      if (!sym) return;
+
+      // Read raw localStorage (not merged view) so we can rewrite it correctly
+      let local;
+      try { local = JSON.parse(localStorage.getItem('portfolio') || '[]'); }
+      catch { local = []; }
+      if (!Array.isArray(local)) local = [];
+
+      // Remove any existing local entry for this ticker
+      local = local.filter(l => String(l?.symbol || '').toUpperCase() !== sym);
+
+      // If the deleted entry is defined in CLOUD_PORTFOLIO, we need a tombstone
+      // so the merge logic in getPortfolio() doesn't bring it back next render.
+      const isCloud = Array.isArray(CLOUD_PORTFOLIO)
+        && CLOUD_PORTFOLIO.some(c => String(c?.symbol || '').toUpperCase() === sym);
+      if (isCloud) {
+        local.push({ symbol: target.symbol, __tombstone: true });
+      }
+      savePortfolio(local);
       renderPortfolio();
       refreshTickerFromPortfolio();
     });
@@ -894,13 +978,45 @@ document.getElementById('pf-cancel').addEventListener('click', () => {
 });
 document.getElementById('pf-save').addEventListener('click', () => {
   const symbol = document.getElementById('pf-symbol').value.trim().toUpperCase();
-  const shares = parseFloat(document.getElementById('pf-shares').value);
-  const cost   = parseFloat(document.getElementById('pf-cost').value);
-  const market = document.getElementById('pf-market').value.trim().toUpperCase() || (symbol.match(/^\d/) ? 'TW' : 'US');
-  if (!symbol || !shares || !cost) return alert('請填完整');
-  const p = getPortfolio();
-  p.push({ symbol, shares, cost, market, addedAt: new Date().toISOString() });
-  savePortfolio(p);
+  const sharesRaw = document.getElementById('pf-shares').value;
+  const costRaw   = document.getElementById('pf-cost').value;
+  const shares = parseFloat(sharesRaw);
+  const cost   = parseFloat(costRaw);
+  const marketRaw = document.getElementById('pf-market').value.trim().toUpperCase();
+  const market = (marketRaw === 'US' || marketRaw === 'TW')
+    ? marketRaw
+    : (symbol.match(/^\d/) ? 'TW' : 'US');
+  // Validation:
+  //   - symbol required (and not empty after trim)
+  //   - shares: must be a non-negative number (0 = watchlist-only mode)
+  //   - cost: same, 0 OK if shares is also 0
+  //   - market: must be US or TW (auto-detect handled above)
+  if (!symbol) return alert('請填股票代碼');
+  if (!Number.isFinite(shares) || shares < 0) return alert('股數必須是非負數字（0 表示觀察名單）');
+  if (!Number.isFinite(cost) || cost < 0)     return alert('成本必須是非負數字');
+  if (shares > 0 && cost === 0)               return alert('有股數時必須填入正成本');
+
+  // Update raw localStorage entry for this ticker (override merge target if
+  // it's a cloud ticker, or push as new local entry).
+  let local;
+  try { local = JSON.parse(localStorage.getItem('portfolio') || '[]'); }
+  catch { local = []; }
+  if (!Array.isArray(local)) local = [];
+  // Preserve original addedAt across edits — only the FIRST add stamps the time.
+  // Look up across both local (existing entry, even tombstone) and cloud.
+  const prevLocal = local.find(l => String(l?.symbol || '').toUpperCase() === symbol);
+  const prevCloud = Array.isArray(CLOUD_PORTFOLIO)
+    ? CLOUD_PORTFOLIO.find(c => String(c?.symbol || '').toUpperCase() === symbol)
+    : null;
+  const preservedAddedAt = (prevLocal && !prevLocal.__tombstone && prevLocal.addedAt)
+    || prevCloud?.addedAt
+    || new Date().toISOString();
+
+  // Drop any existing entry (including tombstone) for this symbol
+  local = local.filter(l => String(l?.symbol || '').toUpperCase() !== symbol);
+  local.push({ symbol, shares, cost, market, addedAt: preservedAddedAt });
+  savePortfolio(local);
+
   document.getElementById('position-form').classList.add('hidden');
   ['pf-symbol','pf-shares','pf-cost','pf-market'].forEach(id => document.getElementById(id).value = '');
   renderPortfolio();

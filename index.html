@@ -6,7 +6,13 @@
   <meta name="theme-color" content="#0a0e1a">
   <title>📈 股市儀表板 · Stock Dashboard</title>
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📈</text></svg>">
-  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Tailwind Play CDN, pinned to 3.4.0 + SRI to prevent supply-chain attacks.
+       Future hardening: vendor pre-built CSS via tailwindcss CLI to drop CDN entirely. -->
+  <script
+    src="https://cdn.tailwindcss.com/3.4.0"
+    integrity="sha384-BFORbHAnibkzoc1a2dShGYmng06a+FfQET+B9Ugu+T8o+AWQjfQ4OJeWs024LXnN"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
   <script>
     tailwind.config = {
       darkMode: 'class',
@@ -25,8 +31,16 @@
       }
     }
   </script>
-  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/dompurify@3/dist/purify.min.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/marked@12.0.0/marked.min.js"
+    integrity="sha384-NNQgBjjuhtXzPmmy4gurS5X7P4uTt1DThyevz4Ua0IVK5+kazYQI1W27JHjbbxQz"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/dompurify@3.0.11/dist/purify.min.js"
+    integrity="sha384-Ic7KEGROu37YaruU6NyiYeib7UhjFyDZQ5fzBAji965L75T/4LGk5nzwMEjNGexs"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
   <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body class="bg-bg dark:bg-bg text-slate-100 dark:text-slate-100 min-h-screen font-sans">
@@ -111,7 +125,7 @@
             <span id="signals-source" class="text-slate-600"></span>
           </div>
         </div>
-        <p class="text-[10px] text-slate-500 mb-3">📡 即時資料來源 Yahoo Finance via corsproxy.io · best-effort · <span class="text-rose-400">非交易依據</span></p>
+        <p class="text-[10px] text-slate-500 mb-3">📡 即時報價：美股 Yahoo via corsproxy（best-effort）｜🇹🇼 台股維持報告快照（無免費即時 feed） · <span class="text-rose-400">非交易依據</span></p>
         <div id="signals-grid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3"></div>
       </div>
 

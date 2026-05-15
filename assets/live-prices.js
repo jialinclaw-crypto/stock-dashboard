@@ -30,10 +30,17 @@
   const CORS_PROXY           = 'https://corsproxy.io/?';
   const YF_BASE              = 'https://query1.finance.yahoo.com/v8/finance/chart/';
 
-  // Yahoo symbol mapping. TW stocks need `.TW` suffix; US stocks use plain.
+  // Yahoo symbol mapping. Currently US-only.
+  //
+  // Why no TW: Yahoo Finance .TW quotes via corsproxy are 15-20 min delayed
+  // and do NOT update after market close. Showing them with a 🟢 LIVE badge
+  // would mislead users — "thinks it's live but actually isn't" is worse than
+  // "knows it's snapshot only". For TW stocks, we deliberately fall back to
+  // the routine snapshot price (which has a clear timestamp), and the user can
+  // open TradingView via the watchlist tile for true real-time quotes.
+  //
   // Tickers are an allowlist — never construct from untrusted input.
   function yahooSymbol(ticker, market) {
-    if (market === 'TW' && /^\d{4,6}$/.test(ticker)) return `${ticker}.TW`;
     if (market === 'US' && /^[A-Z][A-Z0-9.\-]{0,9}$/.test(ticker)) return ticker;
     return null;
   }
@@ -61,7 +68,7 @@
   // ---- Fetch one symbol with timeout ----
   async function fetchOne(ticker, market, seq) {
     const ySym = yahooSymbol(ticker, market);
-    if (!ySym) return { ticker, ok: false, reason: 'invalid-symbol' };
+    if (!ySym) return { ticker, ok: false, reason: market === 'TW' ? 'tw-not-supported' : 'invalid-symbol' };
 
     const url = `${CORS_PROXY}${encodeURIComponent(`${YF_BASE}${ySym}?interval=1d&range=2d`)}`;
     const ctrl = new AbortController();
@@ -153,23 +160,30 @@
   const api = {
     start(watchlist) {
       if (!Array.isArray(watchlist) || watchlist.length === 0) return;
+      // Filter to symbols we can actually poll (currently US only — TW would
+      // mislead with delayed data showing as LIVE).
+      const pollable = watchlist.filter(s => yahooSymbol(s.symbol || s.ticker, s.market) != null);
       if (pollHandle) clearTimeout(pollHandle);
       pollHandle = null;
       consecutiveFails = 0;
-      // Drop cached quotes for tickers that are no longer in the active watchlist;
-      // otherwise getQuote() could keep returning a removed symbol as 'live' until
-      // it crosses the stale threshold.
+      // Drop cached quotes for tickers no longer in the active set
       const activeTickers = new Set(
-        watchlist
+        pollable
           .map(s => String(s.symbol || s.ticker || '').toUpperCase())
           .filter(Boolean)
       );
       for (const key of Array.from(quoteCache.keys())) {
         if (!activeTickers.has(key)) quoteCache.delete(key);
       }
-      const gen = ++watchlistGen;  // invalidate any in-flight finally clauses
-      // Fire one round immediately, then schedule next under this generation
-      pollOnce(watchlist).finally(() => scheduleNext(watchlist, gen));
+      // If nothing is pollable (watchlist is entirely TW for example), don't
+      // start a polling loop — status stays 'idle' so UI shows SNAPSHOT honestly.
+      if (pollable.length === 0) {
+        aggregateStatus = 'idle';
+        notify();
+        return;
+      }
+      const gen = ++watchlistGen;
+      pollOnce(pollable).finally(() => scheduleNext(pollable, gen));
     },
 
     stop() {

@@ -67,16 +67,40 @@ if (localStorage.getItem('theme') === 'light') {
 }
 
 // ================== Market status header ==================
+// Use Intl.DateTimeFormat.formatToParts instead of round-tripping through
+// `new Date(toLocaleString())`, which produces locale-dependent strings that
+// Safari (and others) cannot reliably re-parse → silent NaN dates.
+function tpeNowParts() {
+  const fmt = new Intl.DateTimeFormat('en-CA', {
+    timeZone: 'Asia/Taipei',
+    year: 'numeric', month: '2-digit', day: '2-digit',
+    hour: '2-digit', minute: '2-digit', weekday: 'short', hour12: false,
+  });
+  const parts = Object.fromEntries(fmt.formatToParts(new Date()).map(p => [p.type, p.value]));
+  const weekdayMap = { Sun:0, Mon:1, Tue:2, Wed:3, Thu:4, Fri:5, Sat:6 };
+  let weekday = weekdayMap[parts.weekday];
+  if (weekday == null) {
+    // Future Intl/locale change could return a different format. Warn loudly
+    // so we catch the regression instead of silently defaulting to Sunday.
+    console.warn(`[market-status] unknown weekday "${parts.weekday}" — defaulting to 0`);
+    weekday = 0;
+  }
+  return {
+    year:   Number(parts.year),
+    month:  Number(parts.month),
+    day:    Number(parts.day),
+    hour:   Number(parts.hour) % 24,  // defensive (Intl edge-cases)
+    minute: Number(parts.minute),
+    weekday,
+  };
+}
+
 function updateMarketStatus() {
-  const now = new Date();
-  const tpe = new Date(now.toLocaleString('en-US', { timeZone: 'Asia/Taipei' }));
-  const hour = tpe.getHours();
-  const min = tpe.getMinutes();
-  const day = tpe.getDay();
-  const totalMin = hour * 60 + min;
+  const t = tpeNowParts();
+  const totalMin = t.hour * 60 + t.minute;
 
   let status, color;
-  if (day === 0 || day === 6) {
+  if (t.weekday === 0 || t.weekday === 6) {
     status = '週末休市';
     color = 'bg-slate-700 text-slate-300';
   } else if (totalMin >= 540 && totalMin < 810) {  // 9:00-13:30
@@ -93,8 +117,16 @@ function updateMarketStatus() {
   el.textContent = status;
   el.className = `px-2 py-1 rounded-full text-xs ${color}`;
 
-  const subtitle = `${tpe.toLocaleDateString('zh-TW', { month:'long', day:'numeric', weekday:'long' })} · ${tpe.toLocaleTimeString('zh-TW', {hour:'2-digit',minute:'2-digit'})} 台北`;
-  document.getElementById('header-subtitle').textContent = subtitle;
+  // Subtitle: also build using Intl directly to avoid locale-dependent round-trip
+  const dateFmt = new Intl.DateTimeFormat('zh-TW', {
+    timeZone: 'Asia/Taipei', month: 'long', day: 'numeric', weekday: 'long',
+  });
+  const timeFmt = new Intl.DateTimeFormat('zh-TW', {
+    timeZone: 'Asia/Taipei', hour: '2-digit', minute: '2-digit', hour12: false,
+  });
+  const now = new Date();
+  document.getElementById('header-subtitle').textContent =
+    `${dateFmt.format(now)} · ${timeFmt.format(now)} 台北`;
 }
 updateMarketStatus();
 setInterval(updateMarketStatus, 30000);
@@ -252,7 +284,7 @@ function renderReports(reports, filter = 'all') {
           </div>
           <p class="text-xs text-slate-400 mt-1">${esc(r.date)} · ${esc(r.weekday || '')}</p>
         </div>
-        <span class="text-[10px] text-slate-500">${(r.size/1024).toFixed(1)}KB</span>
+        <span class="text-[10px] text-slate-500">${Number.isFinite(r.size) ? (r.size/1024).toFixed(1) + 'KB' : ''}</span>
       </div>
       ${r.tldr ? `<p class="text-sm text-slate-300 line-clamp-2 leading-relaxed mt-2">${esc(r.tldr)}</p>` : ''}
     `;

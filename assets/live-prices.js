@@ -23,12 +23,43 @@
 (function () {
   'use strict';
 
-  const POLL_BASE_MS         = 30_000;
+  const POLL_BASE_MS         = 30_000;          // during US market hours
+  const POLL_OFFHOURS_MS     = 5 * 60_000;       // 5 min when US market closed (saves rate limit)
   const POLL_BACKOFFS_MS     = [30_000, 60_000, 120_000, 300_000];
   const FETCH_TIMEOUT_MS     = 8_000;
-  const STALE_THRESHOLD_MS   = 5 * 60_000;  // 5 minutes
+  const STALE_THRESHOLD_MS   = 5 * 60_000;       // 5 minutes
+  const BATCH_SIZE           = 4;                // fetch in chunks to avoid bursts
   const CORS_PROXY           = 'https://corsproxy.io/?';
   const YF_BASE              = 'https://query1.finance.yahoo.com/v8/finance/chart/';
+
+  // US market hours (approximate): 9:30 ET to 16:00 ET ≈ Taipei 21:30 to 04:00
+  // next day. Outside this window we poll less frequently because Yahoo's
+  // price won't change anyway.
+  //
+  // Returns: { open: bool, minutesUntilOpen: number|null }
+  //   - open=true while 9:30 ≤ ET-time < 16:00 on a US weekday
+  //   - minutesUntilOpen: how many ET minutes from "now" to next 9:30 open;
+  //     used by scheduleNext() to shorten the off-hours delay when reopening
+  //     soon so the user doesn't have to wait the full 5-min throttle.
+  function getUSMarketState() {
+    try {
+      const fmt = new Intl.DateTimeFormat('en-US', {
+        timeZone: 'America/New_York',
+        weekday: 'short', hour: '2-digit', minute: '2-digit', hour12: false,
+      });
+      const parts = Object.fromEntries(fmt.formatToParts(new Date()).map(p => [p.type, p.value]));
+      const wd = parts.weekday;
+      const totalMin = Number(parts.hour) * 60 + Number(parts.minute);
+      const isWeekend = (wd === 'Sat' || wd === 'Sun');
+      const open = !isWeekend && totalMin >= 570 && totalMin < 960;
+      let minutesUntilOpen = null;
+      if (!open && !isWeekend) {
+        // Same-day re-open: only meaningful when current ET time is before 9:30
+        if (totalMin < 570) minutesUntilOpen = 570 - totalMin;
+      }
+      return { open, minutesUntilOpen };
+    } catch { return { open: true, minutesUntilOpen: null }; }  // err toward polling
+  }
 
   // Yahoo symbol mapping. Currently US-only.
   //
@@ -101,9 +132,17 @@
     const seq = ++requestSeq;
     if (!Array.isArray(watchlist) || watchlist.length === 0) return;
 
-    const results = await Promise.allSettled(
-      watchlist.map(s => fetchOne(s.symbol || s.ticker, s.market, seq))
-    );
+    // Batch in chunks so we don't burst against the proxy / Yahoo when watchlist grows
+    const results = [];
+    for (let i = 0; i < watchlist.length; i += BATCH_SIZE) {
+      const chunk = watchlist.slice(i, i + BATCH_SIZE);
+      const chunkResults = await Promise.allSettled(
+        chunk.map(s => fetchOne(s.symbol || s.ticker, s.market, seq))
+      );
+      results.push(...chunkResults);
+      // If a newer poll started while we were batching, bail out early.
+      if (seq !== requestSeq) return;
+    }
 
     // Stale-response guard — drop if a newer poll started
     if (seq !== requestSeq) return;
@@ -147,11 +186,25 @@
   function scheduleNext(watchlist, gen) {
     // Bail if a newer start() has bumped the generation
     if (gen !== watchlistGen) return;
-    const idx = Math.min(consecutiveFails, POLL_BACKOFFS_MS.length - 1);
-    const delay = consecutiveFails > 0 ? POLL_BACKOFFS_MS[idx] : POLL_BASE_MS;
+    let delay;
+    if (consecutiveFails > 0) {
+      const idx = Math.min(consecutiveFails, POLL_BACKOFFS_MS.length - 1);
+      delay = POLL_BACKOFFS_MS[idx];
+    } else {
+      const state = getUSMarketState();
+      if (state.open) {
+        delay = POLL_BASE_MS;
+      } else if (state.minutesUntilOpen != null && state.minutesUntilOpen <= 5) {
+        // Within 5 min of market open — wake up no later than the open bell so
+        // the user sees fresh prices immediately, not 5 min later.
+        delay = Math.min(POLL_BASE_MS, state.minutesUntilOpen * 60_000);
+      } else {
+        delay = POLL_OFFHOURS_MS;  // market closed → save bandwidth
+      }
+    }
     if (pollHandle) clearTimeout(pollHandle);
     pollHandle = setTimeout(() => {
-      if (gen !== watchlistGen) return;  // generation check at wake-up too
+      if (gen !== watchlistGen) return;
       pollOnce(watchlist).finally(() => scheduleNext(watchlist, gen));
     }, delay);
   }

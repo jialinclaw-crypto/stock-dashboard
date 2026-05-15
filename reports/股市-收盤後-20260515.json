@@ -1,0 +1,541 @@
+{
+  "_schema_version": 3,
+  "type": "close",
+  "report_file": "股市-收盤後-20260515.md",
+  "date": "2026-05-15",
+  "weekday": "週五",
+  "generated_at": "2026-05-15T14:03:48+08:00",
+  "expires_at": "2026-05-16T09:00:00+08:00",
+  "market_view": {
+    "level": "neutral_cautious",
+    "confidence": 0.55,
+    "headline": "盤中觸歷史新高42,408後急轉收長上影線，板塊輪動劇烈（CPO漲/ABF記憶體跌），NVDA財報5/20為下週最大催化劑"
+  },
+  "indices": [
+    {
+      "name": "台股加權指數",
+      "ticker": "^TWII",
+      "close": 41228.0,
+      "change": -523.82,
+      "change_pct": -1.25,
+      "intraday_high": 42408.66,
+      "intraday_high_note": "盤中歷史新高",
+      "volume_bn_twd": 1050.0,
+      "volume_note": "估算，官方數字待公布",
+      "note": "射擊之星技術型態，收長上影線，短線警示",
+      "signal_id": "stk-TWII-2026-05-15-close",
+      "direction": "bearish_short_term",
+      "confidence": 0.6,
+      "rationale": "盤中新高後急轉收黑，典型射擊之星型態，短線存在回測壓力",
+      "sources": [
+        "https://www.bloomberg.com/quote/TWSE:IND",
+        "https://finance.yahoo.com/quote/%5ETWII/"
+      ],
+      "expires_at": "2026-05-16T09:00:00+08:00"
+    },
+    {
+      "name": "美股S&P 500",
+      "ticker": "^GSPC",
+      "close": null,
+      "change": null,
+      "change_pct": null,
+      "note": "美股未開盤（台灣收盤時為紐約凌晨），前日收7,499附近歷史高位",
+      "signal_id": "stk-GSPC-2026-05-15-close",
+      "direction": "neutral",
+      "confidence": 0.4,
+      "rationale": "美股今晚未開，NVDA財報前氛圍偏樂觀",
+      "sources": [
+        "https://finance.yahoo.com/quote/%5EGSPC/"
+      ],
+      "expires_at": "2026-05-16T09:00:00+08:00"
+    },
+    {
+      "name": "那斯達克100",
+      "ticker": "^NDX",
+      "close": null,
+      "change": null,
+      "change_pct": null,
+      "note": "美股未開盤，NVDA盤前+5%見$237，財報前氛圍佳",
+      "signal_id": "stk-NDX-2026-05-15-close",
+      "direction": "bullish",
+      "confidence": 0.55,
+      "rationale": "NVDA盤前強勁，NVDA財報5/20為關鍵催化",
+      "sources": [
+        "https://finance.yahoo.com/quote/NVDA/"
+      ],
+      "expires_at": "2026-05-16T09:00:00+08:00"
+    }
+  ],
+  "stocks": [
+    {
+      "ticker": "2330",
+      "name": "台積電",
+      "market": "TW",
+      "signal": "bullish",
+      "view": "逆大盤收紅+1.10%，MSCI5/29生效前外資持續布局，多頭結構完整。支撐2,250，ATH 2,345為近壓力，中期目標2,500。",
+      "price": 2295,
+      "change_pct": 1.1,
+      "support": 2250,
+      "resistance": 2345,
+      "stop_loss": 2150,
+      "target": 2500,
+      "signal_id": "stk-2330-2026-05-15-close",
+      "direction": "bullish",
+      "confidence": 0.72,
+      "rationale": "逆大盤收紅，相對強度優異，MSCI被動資金5/29流入為支撐，外資中長線布局方向不變",
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/2330.TW"
+      ],
+      "expires_at": "2026-05-16T09:00:00+08:00",
+      "technicals": {
+        "rsi14": 58,
+        "macd": "多頭排列維持",
+        "ma_alignment": "全多頭排列"
+      },
+      "valuation": {
+        "pe": 20.5,
+        "pe_percentile_5y": 36,
+        "verdict": "合理"
+      }
+    },
+    {
+      "ticker": "2454",
+      "name": "聯發科",
+      "market": "TW",
+      "signal": "bullish",
+      "view": "處置股限制下仍強漲+1.76%收3,465，主力承接意願強烈。前高3,670為近壓力，突破後目標3,800+。止損3,300。",
+      "price": 3465,
+      "change_pct": 1.76,
+      "support": 3350,
+      "resistance": 3670,
+      "stop_loss": 3300,
+      "target": 4000,
+      "signal_id": "stk-2454-2026-05-15-close",
+      "direction": "bullish",
+      "confidence": 0.65,
+      "rationale": "處置股交易限制下仍漲1.76%，顯示主力承接，AI ASIC基本面驅動，前日訊號由黃升綠",
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/2454.TW"
+      ],
+      "expires_at": "2026-05-16T09:00:00+08:00",
+      "technicals": {
+        "rsi14": 68,
+        "macd": "多頭動能回復",
+        "ma_alignment": "全多頭排列"
+      },
+      "valuation": {
+        "pe": 22.0,
+        "pe_percentile_5y": 62,
+        "verdict": "略偏貴但成長支撐"
+      }
+    },
+    {
+      "ticker": "2317",
+      "name": "鴻海",
+      "market": "TW",
+      "signal": "neutral",
+      "view": "微漲+0.40%收252，相對大盤仍正報酬但缺乏獨立題材。突破260元確認多頭。止損240，目標270-290。",
+      "price": 252,
+      "change_pct": 0.4,
+      "support": 245,
+      "resistance": 260,
+      "stop_loss": 240,
+      "target": 290,
+      "signal_id": "stk-2317-2026-05-15-close",
+      "direction": "neutral",
+      "confidence": 0.5,
+      "rationale": "跟漲格局，缺乏獨立催化劑，260元整數關為突破觀察點",
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/2317.TW"
+      ],
+      "expires_at": "2026-05-16T09:00:00+08:00",
+      "technicals": {
+        "rsi14": 52,
+        "macd": "中立偏平",
+        "ma_alignment": "5MA附近整理"
+      },
+      "valuation": {
+        "pe": 14.8,
+        "pe_percentile_5y": 40,
+        "verdict": "合理"
+      }
+    },
+    {
+      "ticker": "NVDA",
+      "name": "輝達",
+      "market": "US",
+      "signal": "bullish",
+      "view": "美股盤前見$237.87（52週新高），較5/13收盤+5.3%，黃仁勳訪中晶片出口鬆綁+財報5/20前動能強勁。財報前暫不追高，持有者守$210止損。目標$265。",
+      "price": 237.87,
+      "change_pct": 5.32,
+      "support": 220,
+      "resistance": 250,
+      "stop_loss": 210,
+      "target": 265,
+      "signal_id": "stk-NVDA-2026-05-15-close",
+      "direction": "bullish",
+      "confidence": 0.75,
+      "rationale": "盤前創52週新高，黃仁勳訪中效應+晶片出口鬆綁+財報前積極做多",
+      "sources": [
+        "https://finance.yahoo.com/quote/NVDA/"
+      ],
+      "expires_at": "2026-05-16T09:00:00+08:00",
+      "technicals": {
+        "rsi14": 68,
+        "macd": "強勢多頭排列",
+        "ma_alignment": "52週新高，全多頭排列"
+      },
+      "valuation": {
+        "pe": 46.1,
+        "pe_percentile_5y": 55,
+        "verdict": "合理（AI成長溢價）"
+      }
+    },
+    {
+      "ticker": "TSLA",
+      "name": "特斯拉",
+      "market": "US",
+      "signal": "neutral",
+      "view": "在$400-450箱型整理，今估$445附近。守$400止損，突破$450再加碼，目標$480-520。",
+      "price": 445.18,
+      "change_pct": 2.7,
+      "support": 415,
+      "resistance": 450,
+      "stop_loss": 400,
+      "target": 520,
+      "signal_id": "stk-TSLA-2026-05-15-close",
+      "direction": "neutral",
+      "confidence": 0.45,
+      "rationale": "箱型整理，高估值限制上漲空間，缺乏近期催化",
+      "sources": [
+        "https://finance.yahoo.com/quote/TSLA/"
+      ],
+      "expires_at": "2026-05-16T09:00:00+08:00",
+      "technicals": {
+        "rsi14": 57,
+        "macd": "轉正邊緣",
+        "ma_alignment": "5MA/20MA上方"
+      },
+      "valuation": {
+        "pe": 108,
+        "pe_percentile_5y": 52,
+        "verdict": "偏貴"
+      }
+    },
+    {
+      "ticker": "AAPL",
+      "name": "蘋果",
+      "market": "US",
+      "signal": "neutral",
+      "view": "穩健整理$299-300，WWDC 2026（6月初）Apple Intelligence為催化劑。持有者無需操作。止損$270，目標$320。",
+      "price": 299.21,
+      "change_pct": 1.5,
+      "support": 285,
+      "resistance": 310,
+      "stop_loss": 270,
+      "target": 320,
+      "signal_id": "stk-AAPL-2026-05-15-close",
+      "direction": "neutral",
+      "confidence": 0.5,
+      "rationale": "穩健整理，等待WWDC催化劑",
+      "sources": [
+        "https://finance.yahoo.com/quote/AAPL/"
+      ],
+      "expires_at": "2026-05-16T09:00:00+08:00",
+      "technicals": {
+        "rsi14": 54,
+        "macd": "中立偏正",
+        "ma_alignment": "全多頭排列"
+      },
+      "valuation": {
+        "pe": 33.5,
+        "pe_percentile_5y": 68,
+        "verdict": "略偏貴"
+      }
+    },
+    {
+      "ticker": "TSM",
+      "name": "台積電ADR",
+      "market": "US",
+      "signal": "bullish",
+      "view": "與2330高度連動，2330今+1.10%，TSM預估$415-420附近。MSCI5/29被動資金持續流入。止損$370，目標$450。",
+      "price": 415.0,
+      "change_pct": null,
+      "support": 395,
+      "resistance": 430,
+      "stop_loss": 370,
+      "target": 450,
+      "signal_id": "stk-TSM-2026-05-15-close",
+      "direction": "bullish",
+      "confidence": 0.65,
+      "rationale": "與2330走勢同步，MSCI5/29被動資金流入為持續催化",
+      "sources": [
+        "https://finance.yahoo.com/quote/TSM/"
+      ],
+      "expires_at": "2026-05-16T09:00:00+08:00",
+      "technicals": {
+        "rsi14": 60,
+        "macd": "多頭排列維持",
+        "ma_alignment": "全多頭排列"
+      },
+      "valuation": {
+        "pe": 20.5,
+        "pe_percentile_5y": 36,
+        "verdict": "合理"
+      }
+    }
+  ],
+  "alerts": [
+    {
+      "level": "warning",
+      "alert_id": "alert-TWII-shootingstar-20260515",
+      "text": "加權指數盤中觸歷史新高42,408.66後急轉收長上影線（射擊之星），收盤-523.82點(-1.25%)，短線存在回測41,000-41,500支撐壓力",
+      "tickers": [
+        "^TWII"
+      ],
+      "url": "https://finance.yahoo.com/quote/%5ETWII/",
+      "source": "Yahoo Finance / Bloomberg",
+      "signal_id": "stk-TWII-shootingstar-2026-05-15-close",
+      "direction": "bearish_short_term",
+      "confidence": 0.65,
+      "rationale": "射擊之星技術型態，高點後急跌收黑，短線技術警示",
+      "expires_at": "2026-05-16T09:00:00+08:00"
+    },
+    {
+      "level": "info",
+      "alert_id": "alert-CPO-dalite-20260515",
+      "text": "台積電副共同營運長張曉強指名智慧眼鏡為最具潛力AI應用，大立光(3008)漲停收3445元（5年新高，本週3度漲停），英濟漲停，玉晶光+6%+，CPO/智慧眼鏡族群全面爆發",
+      "tickers": [
+        "3008",
+        "3406"
+      ],
+      "url": "https://udn.com/news/story/7251/9504568",
+      "source": "聯合新聞網",
+      "signal_id": "stk-CPO-dalite-2026-05-15-close",
+      "direction": "bullish",
+      "confidence": 0.7,
+      "rationale": "台積電官方點名背書CPO/智慧眼鏡，題材升溫，大立光5年新高確認多頭",
+      "expires_at": "2026-05-16T09:00:00+08:00"
+    },
+    {
+      "level": "warning",
+      "alert_id": "alert-ABF-correction-20260515",
+      "text": "ABF基板/PCB/AI伺服器板塊急速回調：欣興3037、景碩3189、南電8046、臻鼎-KY 4958重挫；廣達2382-1.8%收334.5；記憶體南亞科2408、華邦電2344走弱",
+      "tickers": [
+        "3037",
+        "3189",
+        "8046",
+        "4958",
+        "2382",
+        "2408",
+        "2344"
+      ],
+      "url": "https://finance.ettoday.net/news/3166394",
+      "source": "ETtoday財經",
+      "signal_id": "stk-ABF-correction-2026-05-15-close",
+      "direction": "bearish_short_term",
+      "confidence": 0.68,
+      "rationale": "前期強勢股獲利了結，籌碼鬆動，板塊輪動至CPO/光通訊",
+      "expires_at": "2026-05-16T09:00:00+08:00"
+    },
+    {
+      "level": "info",
+      "alert_id": "alert-NVDA-earnings-countdown-20260515",
+      "text": "NVDA財報5/20(週三)AMC倒數5天；盤前見$237.87（52週新高），EPS共識$1.74（上季$1.62超預期），黃仁勳訪中效應持續",
+      "tickers": [
+        "NVDA"
+      ],
+      "url": "https://www.marketbeat.com/stocks/NASDAQ/NVDA/earnings/",
+      "source": "MarketBeat",
+      "signal_id": "stk-NVDA-earnings-2026-05-15-close",
+      "direction": "bullish",
+      "confidence": 0.72,
+      "rationale": "財報前動能強勁，盤前創52週新高，市場定價樂觀預期",
+      "expires_at": "2026-05-16T09:00:00+08:00"
+    },
+    {
+      "level": "info",
+      "alert_id": "alert-MSCI-rebalance-20260515",
+      "text": "MSCI 5/29收盤生效倒數14天：台灣EM權重23.76%（史上最高），台積電佔比58.33%，估50-80億美元被動資金持續流入",
+      "tickers": [
+        "2330",
+        "TSM"
+      ],
+      "url": "https://www.taipeitimes.com/News/biz/archives/2026/05/14/2003857281",
+      "source": "Taipei Times",
+      "signal_id": "stk-MSCI-2026-05-15-close",
+      "direction": "bullish",
+      "confidence": 0.75,
+      "rationale": "MSCI被動資金為結構性支撐，14天內持續驅動外資布局2330/TSM",
+      "expires_at": "2026-05-29T17:00:00+08:00"
+    },
+    {
+      "level": "info",
+      "alert_id": "alert-2454-disposition-20260515",
+      "text": "聯發科(2454)仍在處置股限制期間，今日仍強漲+1.76%，顯示主力承接意願強烈",
+      "tickers": [
+        "2454"
+      ],
+      "url": "https://cmnews.com.tw/article/forumnews-7b066e7a-4983-11f1-986b-7b81f4e70b4c",
+      "source": "CMoney",
+      "signal_id": "stk-2454-disposition-2026-05-15-close",
+      "direction": "bullish",
+      "confidence": 0.6,
+      "rationale": "處置股限制下仍強漲，解除限制後動能可能更大",
+      "expires_at": "2026-05-16T09:00:00+08:00"
+    }
+  ],
+  "sector_rotation": {
+    "strong": [
+      "CPO/共同封裝光學（大立光3008漲停、玉晶光3406+6%+、英濟漲停）",
+      "智慧眼鏡AI應用（台積電官方點名）",
+      "聯發科AI ASIC（2454+1.76%，處置股限制下仍強）"
+    ],
+    "weak": [
+      "ABF基板/PCB（欣興3037、景碩3189、南電8046、臻鼎-KY 4958重挫）",
+      "AI伺服器整機（廣達2382-1.8%）",
+      "記憶體（南亞科2408、華邦電2344走弱）",
+      "鑽針廠（尖點6128跌停）"
+    ],
+    "watch": [
+      "NVDA財報5/20前半導體設備/CoWoS供應鏈",
+      "MSCI5/29生效前台積電相關供應鏈",
+      "鴻海2317突破260元確認多頭",
+      "記憶體族群量縮止跌後再介入"
+    ]
+  },
+  "institutional_flows": {
+    "note": "三大法人精確數字待TWSE官方公布",
+    "foreign_est_bn": -400,
+    "trust_est_bn": 150,
+    "proprietary_est_bn": -80,
+    "total_est_bn": -330,
+    "tsmc_2330_note": "5/14外資買超2330約600張(45.4億)；5/15數字待公告，MSCI前中長線布局方向不變",
+    "source": "https://www.twse.com.tw/zh/trading/foreign/t86.html"
+  },
+  "whats_changed": {
+    "vs_date": "2026-05-14",
+    "market_level_change": {
+      "prev": "cautiously_bullish",
+      "curr": "neutral_cautious",
+      "changed": true
+    },
+    "stock_direction_changes": [
+      {
+        "ticker": "2454",
+        "name": "聯發科",
+        "prev_direction": "neutral",
+        "curr_direction": "bullish",
+        "prev_price": 3500,
+        "curr_price": 3465,
+        "note": "neutral → bullish"
+      },
+      {
+        "ticker": "NVDA",
+        "name": "輝達",
+        "prev_direction": "bullish",
+        "curr_direction": "bullish",
+        "prev_price": 227.8,
+        "curr_price": 237.87,
+        "note": "方向同(bullish)，價格顯著變化"
+      },
+      {
+        "ticker": "TSLA",
+        "name": "特斯拉",
+        "prev_direction": "neutral",
+        "curr_direction": "neutral",
+        "prev_price": 432,
+        "curr_price": 445.18,
+        "note": "方向同(neutral)，價格顯著變化"
+      },
+      {
+        "ticker": "AAPL",
+        "name": "蘋果",
+        "prev_direction": "neutral",
+        "curr_direction": "neutral",
+        "prev_price": 271.06,
+        "curr_price": 299.21,
+        "note": "方向同(neutral)，價格顯著變化"
+      },
+      {
+        "ticker": "TSM",
+        "name": "台積電ADR",
+        "prev_direction": "bullish",
+        "curr_direction": "bullish",
+        "prev_price": 390,
+        "curr_price": 415.0,
+        "note": "方向同(bullish)，價格顯著變化"
+      }
+    ],
+    "alert_diff": {
+      "prev_alert_themes": [
+        "2454_disposition",
+        "MSCI",
+        "NVDA_china",
+        "NVDA_earnings",
+        "inflation"
+      ],
+      "curr_alert_themes": [
+        "2454_disposition",
+        "ABF_correction",
+        "CPO_dalite",
+        "MSCI",
+        "NVDA_earnings",
+        "TWII_shootingstar"
+      ],
+      "newly_added_themes": [
+        "ABF_correction",
+        "CPO_dalite",
+        "TWII_shootingstar"
+      ],
+      "resolved_themes": [
+        "NVDA_china",
+        "inflation"
+      ],
+      "continued_themes": [
+        "2454_disposition",
+        "MSCI",
+        "NVDA_earnings"
+      ],
+      "note": "新增：射擊之星技術警示+CPO/大立光漲停+ABF/PCB回調；持續：NVDA財報+MSCI+2454處置股；解除：通膨/PPI警示（已充分反映）"
+    },
+    "sector_rotation_change": {
+      "newly_strong": [
+        "CPO/共同封裝光學（大立光3008、玉晶光3406）",
+        "智慧眼鏡（英濟）"
+      ],
+      "newly_weak": [
+        "ABF基板/PCB（欣興3037、景碩、南電、臻鼎）",
+        "記憶體（南亞科2408、華邦電2344），前日強勢今反轉"
+      ],
+      "note": "板塊輪動明顯：記憶體從strong轉weak，CPO/光通訊新入strong"
+    },
+    "key_price_moves": {
+      "TWII": {
+        "prev_close": 41751.75,
+        "curr_close": 41228.0,
+        "change": -523.75,
+        "note": "盤中創ATH 42,408後收黑，射擊之星"
+      },
+      "2330": {
+        "prev_close": 2270,
+        "curr_close": 2295,
+        "change": 25,
+        "note": "逆大盤收紅+1.10%"
+      },
+      "2454": {
+        "prev_close": 3405,
+        "curr_close": 3465,
+        "change": 60,
+        "note": "處置股限制下仍+1.76%，訊號由黃升綠"
+      },
+      "NVDA": {
+        "prev_close": 225.83,
+        "curr_premarket": 237.87,
+        "change": 12.04,
+        "note": "盤前創52週新高，財報5/20倒數5天"
+      }
+    },
+    "confidence_note": "保守原則：三大法人數字為估算，美股收盤價為估算，所有方向性判斷均標注confidence"
+  }
+}

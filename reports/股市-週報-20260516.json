@@ -1,0 +1,615 @@
+{
+  "_schema_version": 3,
+  "type": "weekly",
+  "report_file": "股市-週報-20260516.md",
+  "date": "2026-05-16",
+  "weekday": "週六",
+  "generated_at": "2026-05-16T09:06:29+08:00",
+  "expires_at": "2026-05-23T09:00:00+08:00",
+  "market_view": {
+    "level": "neutral_cautious",
+    "confidence": 0.52,
+    "headline": "台股盤中創ATH 42,408後收射擊之星週跌0.9%；S&P 500週四新高後Friday殺跌；NVDA 5/20財報為下週決定性催化劑，SOX+殖利率雙重壓力下短線謹慎",
+    "week": "2026-05-12 ~ 2026-05-15"
+  },
+  "indices": [
+    {
+      "name": "台股加權指數",
+      "ticker": "^TWII",
+      "close": 41228.0,
+      "week_open_est": 41650.0,
+      "week_change": -375.0,
+      "week_change_pct": -0.9,
+      "intraday_all_time_high": 42408.66,
+      "intraday_ath_note": "2026-05-15 盤中觸全時間歷史新高，隨後急轉收黑",
+      "volume_week_bn_twd_est": 4500.0,
+      "note": "射擊之星週線型態，ATH 後急殺收長上影線，短線壓力區 41,000-42,000；多頭中期不變",
+      "signal_id": "stk-TWII-2026-05-16-weekly",
+      "direction": "neutral_cautious",
+      "confidence": 0.58,
+      "rationale": "週線射擊之星：盤中破歷史新高後急拉回，單日最大幅度差逾 1,200 點，技術警示明確；但中期多頭結構（AI資本支出+MSCI效應）未改",
+      "sources": [
+        "https://finance.yahoo.com/quote/%5ETWII/",
+        "https://goodinfo.tw/tw/ShowK_Chart.asp?STOCK_ID=%E5%8A%A0%E6%AC%8A%E6%8C%87%E6%95%B8&CHT_CAT=WEEK"
+      ],
+      "expires_at": "2026-05-23T09:00:00+08:00"
+    },
+    {
+      "name": "美股S&P 500",
+      "ticker": "^GSPC",
+      "close": 7408.5,
+      "week_change_pct_est": 0.5,
+      "week_high": 7503.0,
+      "week_high_note": "2026-05-14 盤中歷史新高",
+      "note": "週四刷新歷史高位 7,503，週五技術股重挫 -1.24% 回吐部分漲幅；週線小幅收紅",
+      "signal_id": "stk-GSPC-2026-05-16-weekly",
+      "direction": "neutral",
+      "confidence": 0.50,
+      "rationale": "高位整理，殖利率 4.58% 壓制高估值科技股；但基本面（企業獲利）仍健康，AI 資本支出週期不變",
+      "sources": [
+        "https://www.thestreet.com/latest-news/stock-market-may-14-2026-sp-futures-rise-after-closing-at-record-high",
+        "https://www.cnbc.com/amp/2026/05/14/stock-market-today-live-updates.html"
+      ],
+      "expires_at": "2026-05-23T09:00:00+08:00"
+    },
+    {
+      "name": "那斯達克綜合",
+      "ticker": "^COMP",
+      "close": 26225.14,
+      "week_change_pct_est": 0.8,
+      "note": "週五 -1.54%，但週線仍正報酬；NVDA 盤前高後收黑為主要拖累",
+      "signal_id": "stk-COMP-2026-05-16-weekly",
+      "direction": "neutral",
+      "confidence": 0.48,
+      "rationale": "NVDA 財報前籌碼換手，科技股短線不確定性上升",
+      "sources": [
+        "https://finance.yahoo.com/quote/%5EGSPC/"
+      ],
+      "expires_at": "2026-05-23T09:00:00+08:00"
+    },
+    {
+      "name": "道瓊工業平均",
+      "ticker": "^DJI",
+      "close": 49526.17,
+      "week_change_pts": -77.0,
+      "note": "週四短暫收復 50,000，週五失守 (-537pt)；科技股與週期股分化",
+      "signal_id": "stk-DJI-2026-05-16-weekly",
+      "direction": "neutral",
+      "confidence": 0.48,
+      "rationale": "50,000 為心理關口，短暫突破後失守，需觀察週一是否有效守穩",
+      "sources": [
+        "https://www.cnbc.com/amp/2026/05/14/stock-market-today-live-updates.html"
+      ],
+      "expires_at": "2026-05-23T09:00:00+08:00"
+    },
+    {
+      "name": "費城半導體指數",
+      "ticker": "^SOX",
+      "close_est": 11400.0,
+      "week_change_pct_est": -4.5,
+      "note": "週五盤中跌幅一度達 6.8%，Intel-6%, AMD-5.7%, Micron-6.6%；AI 硬體股重挫",
+      "signal_id": "stk-SOX-2026-05-16-weekly",
+      "direction": "bearish_short_term",
+      "confidence": 0.62,
+      "rationale": "週五費城半導體指數盤中創最大單日跌幅之一；殖利率高企壓制高估值半導體股，NVDA財報前後是關鍵分水嶺",
+      "sources": [
+        "https://finance.yahoo.com/quote/%5ESOX/history/"
+      ],
+      "expires_at": "2026-05-23T09:00:00+08:00"
+    },
+    {
+      "name": "VIX 恐慌指數",
+      "ticker": "^VIX",
+      "close": 19.14,
+      "week_change_pct": 10.89,
+      "note": "恐慌升溫但未破 20 關口；高於 20 視為警戒區",
+      "signal_id": "stk-VIX-2026-05-16-weekly",
+      "direction": "cautious",
+      "confidence": 0.55,
+      "rationale": "VIX 周漲逾 10% 至 19.14，接近但未超過 20，短線市場不確定性上升",
+      "sources": [
+        "https://finance.yahoo.com/quote/%5EVIX/"
+      ],
+      "expires_at": "2026-05-23T09:00:00+08:00"
+    },
+    {
+      "name": "美債10年期殖利率",
+      "ticker": "US10Y",
+      "close": 4.58,
+      "week_change_bp": 12,
+      "note": "一年期新高，Higher-for-Longer 2.0 壓力",
+      "signal_id": "stk-US10Y-2026-05-16-weekly",
+      "direction": "bearish_for_growth_stocks",
+      "confidence": 0.68,
+      "rationale": "4.58% 為 2025 年 5 月以來最高，高殖利率壓制高本益比科技股估值；若突破 4.65% 將加劇賣壓",
+      "sources": [
+        "https://tradingeconomics.com/united-states/government-bond-yield"
+      ],
+      "expires_at": "2026-05-23T09:00:00+08:00"
+    }
+  ],
+  "stocks": [
+    {
+      "ticker": "2330",
+      "name": "台積電",
+      "market": "TW",
+      "signal": "bullish",
+      "view": "逆大盤週收 2,295（週漲+0.7%），相對強度冠 portfolio。MSCI 5/29 生效前外資持續流入，CoWoS/SoIC 訂單飽滿至 2027Q2。支撐 2,250/2,200，目標 2,500。止損 2,150。",
+      "price": 2295,
+      "week_change_pct": 0.7,
+      "support": 2250,
+      "resistance": 2345,
+      "stop_loss": 2150,
+      "target": 2500,
+      "signal_id": "stk-2330-2026-05-16-weekly",
+      "direction": "bullish",
+      "confidence": 0.72,
+      "rationale": "週線逆大盤收紅，MSCI 5/29 增權重被動資金百億流入，先進封裝訂單結構性需求；多頭骨幹股維持核心持有",
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/2330.TW",
+        "https://finance.yahoo.com/quote/TSM/"
+      ],
+      "expires_at": "2026-05-23T09:00:00+08:00",
+      "technicals": {
+        "rsi14": 58,
+        "ma20": 2195,
+        "ma60": 2105,
+        "ma200": 1980,
+        "ma_alignment": "全多頭排列",
+        "macd": "多頭排列維持",
+        "weekly_pattern": "正常回測支撐，守穩 2,250"
+      },
+      "valuation": {
+        "pe": 20.5,
+        "pe_percentile_5y": 36,
+        "verdict": "合理"
+      }
+    },
+    {
+      "ticker": "2454",
+      "name": "聯發科",
+      "market": "TW",
+      "signal": "bullish",
+      "view": "週漲約+5%（收 3,465），處置股限制下仍強漲，主力承接意願強。RSI 68 偏高，新資金勿追；持有者守 3,300 止損，目標 3,670 前高。",
+      "price": 3465,
+      "week_change_pct": 5.0,
+      "support": 3350,
+      "resistance": 3670,
+      "stop_loss": 3300,
+      "target": 4000,
+      "signal_id": "stk-2454-2026-05-16-weekly",
+      "direction": "bullish",
+      "confidence": 0.65,
+      "rationale": "處置股交易限制下週漲+5%，主力承接訊號強烈，AI ASIC 新訂單消息提升基本面能見度",
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/2454.TW"
+      ],
+      "expires_at": "2026-05-23T09:00:00+08:00",
+      "technicals": {
+        "rsi14": 68,
+        "ma20": 3200,
+        "ma60": 2980,
+        "ma200": 2720,
+        "ma_alignment": "全多頭排列",
+        "macd": "多頭動能強",
+        "weekly_pattern": "強勢上攻，RSI 接近超買"
+      },
+      "valuation": {
+        "pe": 22.0,
+        "pe_percentile_5y": 62,
+        "verdict": "略偏貴但成長支撐"
+      }
+    },
+    {
+      "ticker": "2317",
+      "name": "鴻海",
+      "market": "TW",
+      "signal": "neutral_bullish",
+      "view": "週漲約+3%（收 248.5），多頭排列，但 260 元整數關尚未突破，缺乏獨立催化劑。MSCI 5/29 增權重支撐。守 240 止損，突破 260 再積極。",
+      "price": 248.5,
+      "week_change_pct": 3.0,
+      "support": 240,
+      "resistance": 260,
+      "stop_loss": 238,
+      "target": 290,
+      "signal_id": "stk-2317-2026-05-16-weekly",
+      "direction": "neutral_bullish",
+      "confidence": 0.52,
+      "rationale": "跟漲格局，260 元為關鍵觀察點；MSCI 5/29 效應為短期催化，AI 伺服器代工中長期邏輯不變",
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/2317.TW"
+      ],
+      "expires_at": "2026-05-23T09:00:00+08:00",
+      "technicals": {
+        "rsi14": 55,
+        "ma20": 235,
+        "ma60": 222,
+        "ma200": 212,
+        "ma_alignment": "多頭排列，距前高 260 有空間",
+        "macd": "中立偏正"
+      },
+      "valuation": {
+        "pe": 14.8,
+        "pe_percentile_5y": 40,
+        "verdict": "合理"
+      }
+    },
+    {
+      "ticker": "NVDA",
+      "name": "輝達",
+      "market": "US",
+      "signal": "neutral_bullish",
+      "view": "週五收 $227.15（盤前曾創 52 週新高 $237.87），月漲+20%、年漲+27%。5/20 Q1財報為核心催化，高預期下「利多出盡」風險上升。財報前暫不追高，持有者守 $210 止損；財報後視反應決策，目標 $265+。",
+      "price": 227.15,
+      "week_change_pct": 6.5,
+      "support": 220,
+      "resistance": 237,
+      "stop_loss": 210,
+      "target": 265,
+      "signal_id": "stk-NVDA-2026-05-16-weekly",
+      "direction": "neutral_bullish",
+      "confidence": 0.60,
+      "rationale": "財報前不確定性上升：月漲20%後「buy the rumor sell the news」風險高，近四季三次財報日當天下跌；但黃仁勳訪中+晶片鬆綁提供上行驚喜空間",
+      "sources": [
+        "https://finance.yahoo.com/quote/NVDA/",
+        "https://247wallst.com/investing/2026/05/14/nvidia-is-up-20-in-a-month-could-the-may-20-earnings-report-knock-it-right-back-down/"
+      ],
+      "expires_at": "2026-05-23T09:00:00+08:00",
+      "technicals": {
+        "rsi14": 68,
+        "ma20": 205,
+        "ma60": 185,
+        "ma200": 162,
+        "ma_alignment": "全多頭排列，52週新高",
+        "macd": "強勢多頭排列"
+      },
+      "valuation": {
+        "pe": 46.1,
+        "pe_percentile_5y": 55,
+        "verdict": "合理（AI成長溢價）"
+      },
+      "catalyst": {
+        "event": "Q1 FY27 Earnings",
+        "date": "2026-05-20",
+        "consensus_eps": null,
+        "analyst_target": 269.17,
+        "buy_ratings": 57,
+        "hold_ratings": 2,
+        "sell_ratings": 1
+      }
+    },
+    {
+      "ticker": "TSLA",
+      "name": "特斯拉",
+      "market": "US",
+      "signal": "neutral",
+      "view": "週五收 $421.61（週漲約+3%），箱型整理 $400-450。Robotaxi 德州奧斯汀政策推進給予情緒加分，但高本益比（108x）壓制。守 $400 止損，突破 $450 再積極，目標 $480-520。",
+      "price": 421.61,
+      "week_change_pct": 3.3,
+      "support": 400,
+      "resistance": 450,
+      "stop_loss": 400,
+      "target": 520,
+      "signal_id": "stk-TSLA-2026-05-16-weekly",
+      "direction": "neutral",
+      "confidence": 0.45,
+      "rationale": "箱型整理，Robotaxi 情緒題材撐盤，但 AI 科技股本週賣壓若蔓延可能拖累；等突破 $450 確認",
+      "sources": [
+        "https://finance.yahoo.com/quote/TSLA/"
+      ],
+      "expires_at": "2026-05-23T09:00:00+08:00",
+      "technicals": {
+        "rsi14": 57,
+        "ma20": 390,
+        "ma60": 368,
+        "ma200": 330,
+        "ma_alignment": "5MA/20MA 上方整理",
+        "macd": "轉正邊緣"
+      },
+      "valuation": {
+        "pe": 108,
+        "pe_percentile_5y": 52,
+        "verdict": "偏貴"
+      }
+    },
+    {
+      "ticker": "AAPL",
+      "name": "蘋果",
+      "market": "US",
+      "signal": "neutral",
+      "view": "週五收 $299.21（週漲約+3%），穩健整理。WWDC 2026（6 月初）Apple Intelligence 2.0 為下一催化劑，等消息確認方向。守 $285 止損，目標 $320。",
+      "price": 299.21,
+      "week_change_pct": 3.0,
+      "support": 285,
+      "resistance": 310,
+      "stop_loss": 275,
+      "target": 320,
+      "signal_id": "stk-AAPL-2026-05-16-weekly",
+      "direction": "neutral",
+      "confidence": 0.50,
+      "rationale": "穩健整理，AI 功能差異化仍不明顯；WWDC 為下一觀察點，暫維持中性",
+      "sources": [
+        "https://finance.yahoo.com/quote/AAPL/"
+      ],
+      "expires_at": "2026-05-23T09:00:00+08:00",
+      "technicals": {
+        "rsi14": 54,
+        "ma20": 290,
+        "ma60": 283,
+        "ma200": 268,
+        "ma_alignment": "全多頭排列",
+        "macd": "中立偏正"
+      },
+      "valuation": {
+        "pe": 33.5,
+        "pe_percentile_5y": 68,
+        "verdict": "略偏貴"
+      }
+    },
+    {
+      "ticker": "TSM",
+      "name": "台積電ADR",
+      "market": "US",
+      "signal": "bullish",
+      "view": "週五收 $406.90（週漲約+2%），與 2330 高度連動。MSCI 5/29 被動資金流入為近期催化劑。止損 $375，目標 $450。",
+      "price": 406.9,
+      "week_change_pct": 2.2,
+      "support": 390,
+      "resistance": 430,
+      "stop_loss": 375,
+      "target": 450,
+      "signal_id": "stk-TSM-2026-05-16-weekly",
+      "direction": "bullish",
+      "confidence": 0.65,
+      "rationale": "與 2330 正相關，MSCI 增權重效應，CoWoS 先進封裝訂單能見度高",
+      "sources": [
+        "https://finance.yahoo.com/quote/TSM/"
+      ],
+      "expires_at": "2026-05-23T09:00:00+08:00",
+      "technicals": {
+        "rsi14": 60,
+        "ma20": 385,
+        "ma60": 358,
+        "ma200": 305,
+        "ma_alignment": "全多頭排列",
+        "macd": "多頭排列維持"
+      },
+      "valuation": {
+        "pe": 20.5,
+        "pe_percentile_5y": 36,
+        "verdict": "合理"
+      }
+    }
+  ],
+  "alerts": [
+    {
+      "level": "warning",
+      "alert_id": "alert-TWII-shootingstar-weekly-20260516",
+      "text": "台股加權指數本週盤中觸歷史新高 42,408.66（2026-05-15）後急轉收射擊之星，週收 41,228 (-0.9%)，短線需確認 41,000 支撐有效；失守看 40,500",
+      "tickers": ["^TWII"],
+      "url": "https://finance.yahoo.com/quote/%5ETWII/",
+      "source": "Yahoo Finance",
+      "signal_id": "stk-TWII-shootingstar-weekly-2026-05-16",
+      "direction": "bearish_short_term",
+      "confidence": 0.62,
+      "expires_at": "2026-05-23T09:00:00+08:00"
+    },
+    {
+      "level": "critical",
+      "alert_id": "alert-NVDA-earnings-20260520",
+      "text": "NVDA Q1 FY27 財報 2026-05-20（週三盤後）：月漲+20%後高預期壓力大，「利多出盡」風險與黃仁勳中國市場驚喜並存；財報結果將決定 SOX 及台股 AI 鏈下週方向",
+      "tickers": ["NVDA", "^SOX", "2330", "TSM"],
+      "url": "https://247wallst.com/investing/2026/05/14/nvidia-is-up-20-in-a-month-could-the-may-20-earnings-report-knock-it-right-back-down/",
+      "source": "247WallSt / MarketBeat",
+      "signal_id": "stk-NVDA-earnings-weekly-2026-05-16",
+      "direction": "binary_event",
+      "confidence": 0.70,
+      "expires_at": "2026-05-21T06:00:00+08:00"
+    },
+    {
+      "level": "warning",
+      "alert_id": "alert-SOX-selloff-20260516",
+      "text": "費城半導體指數週五盤中跌幅達 6.8%，Intel -6%, AMD -5.7%, Micron -6.6%；殖利率 4.58% 一年高點壓制，SOX 短線空頭壓力明確，AI 硬體鏈短暫回調",
+      "tickers": ["^SOX", "INTC", "AMD", "MU"],
+      "url": "https://www.cnbc.com/amp/2026/05/14/stock-market-today-live-updates.html",
+      "source": "CNBC",
+      "signal_id": "stk-SOX-selloff-weekly-2026-05-16",
+      "direction": "bearish_short_term",
+      "confidence": 0.65,
+      "expires_at": "2026-05-23T09:00:00+08:00"
+    },
+    {
+      "level": "warning",
+      "alert_id": "alert-yield-highs-20260516",
+      "text": "美債 10 年期殖利率升至 4.58%（一年新高），若突破 4.65% 將加劇高估值科技股賣壓，建議降低倉位 10-15% 作為風控",
+      "tickers": ["US10Y", "^GSPC", "^NDX"],
+      "url": "https://tradingeconomics.com/united-states/government-bond-yield",
+      "source": "Trading Economics / FRED",
+      "signal_id": "stk-yield-warning-weekly-2026-05-16",
+      "direction": "bearish_for_growth_stocks",
+      "confidence": 0.68,
+      "expires_at": "2026-05-23T09:00:00+08:00"
+    },
+    {
+      "level": "info",
+      "alert_id": "alert-MSCI-5-29-20260516",
+      "text": "MSCI 半年度調整 2026-05-29 生效：台積電（2330）、鴻海（2317）增權重，預估被動資金流入百億台幣級別；外資預期提前兩週布局中",
+      "tickers": ["2330", "2317", "TSM"],
+      "url": "https://tw.stock.yahoo.com/quote/2330.TW",
+      "source": "Yahoo Finance / MSCI",
+      "signal_id": "stk-MSCI-529-weekly-2026-05-16",
+      "direction": "bullish",
+      "confidence": 0.70,
+      "expires_at": "2026-05-29T18:00:00+08:00"
+    },
+    {
+      "level": "info",
+      "alert_id": "alert-CPO-rotation-20260516",
+      "text": "CPO/矽光子成本週台股新主線：大立光（3008）、玉晶光（3406）、華星光（4979）強漲；ABF 基板（欣興、景碩、南電）短暫修正 5-8% 但中長線邏輯未破",
+      "tickers": ["3008", "3406", "4979", "3037"],
+      "url": "https://tw.stock.yahoo.com/news/ai%E7%BA%8C%E5%91%BD%E5%94%AF-%E6%95%91%E6%98%9F-%E5%B0%88%E5%AE%B6%E6%96%B7%E8%A8%80-2026%E6%98%AFcpo%E6%94%B6%E5%89%B2%E6%9C%9F-%E7%B2%BE%E9%81%B8%E7%9F%BD%E5%85%89%E5%AD%907%E5%8A%8D%E5%AE%A2-021041348.html",
+      "source": "Yahoo股市",
+      "signal_id": "stk-CPO-rotation-weekly-2026-05-16",
+      "direction": "bullish",
+      "confidence": 0.65,
+      "expires_at": "2026-05-23T09:00:00+08:00"
+    },
+    {
+      "level": "info",
+      "alert_id": "alert-2454-disposition-20260516",
+      "text": "聯發科（2454）仍在處置股交易限制（T+2 強制圈存）中，限制下週漲+5% 顯示主力強力承接；操作上需注意出量確認",
+      "tickers": ["2454"],
+      "url": "https://tw.stock.yahoo.com/quote/2454.TW",
+      "source": "台灣證交所",
+      "signal_id": "stk-2454-disposition-weekly-2026-05-16",
+      "direction": "neutral_watch",
+      "confidence": 0.55,
+      "expires_at": "2026-05-23T09:00:00+08:00"
+    }
+  ],
+  "sector_rotation": {
+    "strong": ["CPO/矽光子（大立光、玉晶光、華星光）", "AI ASIC / 聯發科", "台積電 CoWoS 封裝", "智慧眼鏡"],
+    "neutral": ["AI 伺服器 ODM（廣達等）", "AI 電源/散熱", "車用電子"],
+    "weak": ["ABF 基板（欣興、景碩、南電）", "記憶體（南亞科、華邦電）", "PCB 傳統族群"],
+    "note": "CPO 接棒 ABF 成本週最強族群；ABF 中長線邏輯未改，只是短暫獲利了結"
+  },
+  "next_week_calendar": [
+    {"date": "2026-05-19", "event": "美股開盤，週末情緒消化", "importance": "high", "tickers": ["^GSPC", "^TWII"]},
+    {"date": "2026-05-20", "event": "NVIDIA Q1 FY27 財報（盤後）", "importance": "critical", "tickers": ["NVDA", "TSM", "2330", "^SOX"]},
+    {"date": "2026-05-20", "event": "中國工業產出/零售銷售數據", "importance": "medium", "tickers": ["2454", "^TWII"]},
+    {"date": "2026-05-21", "event": "NVDA 財報後亞洲開盤反應", "importance": "critical", "tickers": ["^TWII", "NVDA", "TSM"]},
+    {"date": "2026-05-21", "event": "美聯準 FOMC 會議紀錄公布", "importance": "high", "tickers": ["US10Y", "^GSPC"]},
+    {"date": "2026-05-22", "event": "台積電法說 Webcast Q&A（2H26 展望）", "importance": "high", "tickers": ["2330", "TSM"]},
+    {"date": "2026-05-23", "event": "PMI 製造業初值（美/歐）", "importance": "medium", "tickers": ["^GSPC", "^DJI"]}
+  ],
+  "whats_changed": {
+    "_note": "與前期 signals（股市-收盤後-20260515.json）比較，保守原則",
+    "market_view_change": {
+      "prev_level": "neutral_cautious",
+      "curr_level": "neutral_cautious",
+      "prev_confidence": 0.55,
+      "curr_confidence": 0.52,
+      "change": "方向維持 neutral_cautious，信心略降（0.55→0.52）：美股殖利率新高+SOX重挫新增壓力，但 MSCI 效應與 AI 資本支出邏輯為多頭支撐"
+    },
+    "direction_changes": [
+      {
+        "ticker": "^TWII",
+        "prev_direction": "bearish_short_term",
+        "curr_direction": "neutral_cautious",
+        "prev_confidence": 0.60,
+        "curr_confidence": 0.58,
+        "note": "週報視角：射擊之星技術警示延續，但中期多頭結構不變，週報採較均衡的 neutral_cautious"
+      },
+      {
+        "ticker": "^GSPC",
+        "prev_direction": "neutral",
+        "curr_direction": "neutral",
+        "prev_confidence": 0.40,
+        "curr_confidence": 0.50,
+        "note": "方向同，但有更多收盤數據（週五 7,408.50），信心略升"
+      },
+      {
+        "ticker": "^NDX",
+        "prev_direction": "bullish",
+        "curr_direction": "neutral",
+        "prev_confidence": 0.55,
+        "curr_confidence": 0.48,
+        "note": "方向降級：NVDA 財報前夕科技股賣壓+殖利率壓制，由 bullish 降為 neutral"
+      },
+      {
+        "ticker": "^SOX",
+        "prev_direction": null,
+        "curr_direction": "bearish_short_term",
+        "prev_confidence": null,
+        "curr_confidence": 0.62,
+        "note": "新增 SOX 訊號：週五盤中 -6.8% 重挫，短線空頭壓力明確"
+      },
+      {
+        "ticker": "NVDA",
+        "prev_direction": "bullish",
+        "curr_direction": "neutral_bullish",
+        "prev_confidence": 0.75,
+        "curr_confidence": 0.60,
+        "note": "方向降一格：盤前創高 $237.87 後週五收 $227.15，財報前「利多出盡」風險上升，由 bullish→neutral_bullish"
+      },
+      {
+        "ticker": "2317",
+        "prev_direction": "neutral",
+        "curr_direction": "neutral_bullish",
+        "prev_confidence": 0.50,
+        "curr_confidence": 0.52,
+        "note": "方向略升：週漲+3%，MSCI 效應臨近，由 neutral→neutral_bullish（微升）"
+      },
+      {
+        "ticker": "2330",
+        "prev_direction": "bullish",
+        "curr_direction": "bullish",
+        "prev_confidence": 0.72,
+        "curr_confidence": 0.72,
+        "note": "方向不變，信心維持"
+      },
+      {
+        "ticker": "2454",
+        "prev_direction": "bullish",
+        "curr_direction": "bullish",
+        "prev_confidence": 0.65,
+        "curr_confidence": 0.65,
+        "note": "方向不變，週漲+5% 強化多頭"
+      },
+      {
+        "ticker": "TSLA",
+        "prev_direction": "neutral",
+        "curr_direction": "neutral",
+        "prev_confidence": 0.45,
+        "curr_confidence": 0.45,
+        "note": "方向不變"
+      },
+      {
+        "ticker": "AAPL",
+        "prev_direction": "neutral",
+        "curr_direction": "neutral",
+        "prev_confidence": 0.50,
+        "curr_confidence": 0.50,
+        "note": "方向不變"
+      },
+      {
+        "ticker": "TSM",
+        "prev_direction": "bullish",
+        "curr_direction": "bullish",
+        "prev_confidence": 0.65,
+        "curr_confidence": 0.65,
+        "note": "方向不變"
+      }
+    ],
+    "alert_diff": {
+      "prev_alert_ids": [
+        "alert-TWII-shootingstar-20260515",
+        "alert-NVDA-earnings-20260520",
+        "alert-2454-disposition-20260515",
+        "alert-MSCI-5-29-20260515",
+        "alert-CPO-dalite-20260515",
+        "alert-ABF-correction-20260515"
+      ],
+      "curr_alert_ids": [
+        "alert-TWII-shootingstar-weekly-20260516",
+        "alert-NVDA-earnings-20260520",
+        "alert-SOX-selloff-20260516",
+        "alert-yield-highs-20260516",
+        "alert-MSCI-5-29-20260516",
+        "alert-CPO-rotation-20260516",
+        "alert-2454-disposition-20260516"
+      ],
+      "newly_added": ["alert-SOX-selloff-20260516", "alert-yield-highs-20260516"],
+      "resolved": ["alert-ABF-correction-20260515"],
+      "continued": ["NVDA財報", "MSCI效應", "CPO輪動", "2454處置股", "TWII射擊之星"],
+      "note": "新增：SOX重挫+殖利率一年高點兩大警示；ABF修正警示已在週線中充分消化，降為 sector_rotation 資訊"
+    },
+    "key_weekly_price_moves": {
+      "TWII": {"week_start_est": 41603, "week_end": 41228, "change": -375, "pct": -0.9, "note": "惜失歷史新高，週線收黑"},
+      "2330": {"week_start_est": 2280, "week_end": 2295, "change": 15, "pct": 0.7, "note": "逆大盤收紅，相對強"},
+      "2454": {"week_start_est": 3300, "week_end": 3465, "change": 165, "pct": 5.0, "note": "本週portfolio最強"},
+      "NVDA": {"week_start_est": 213, "week_end": 227.15, "change": 14.15, "pct": 6.6, "note": "月漲+20%，財報前高位震盪"},
+      "SPX": {"week_start_est": 7370, "week_end": 7408.5, "change": 38.5, "pct": 0.5, "note": "週四新高後週五讓回"}
+    }
+  }
+}

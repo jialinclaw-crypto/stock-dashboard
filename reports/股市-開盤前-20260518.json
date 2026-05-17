@@ -1,0 +1,437 @@
+{
+  "_schema_version": 3,
+  "type": "morning",
+  "report_file": "股市-開盤前-20260518.md",
+  "date": "2026-05-18",
+  "weekday": "週一",
+  "generated_at": "2026-05-18T07:36:00+08:00",
+  "market_view": {
+    "level": "neutral",
+    "confidence": 0.5,
+    "headline": "川普中美峰會無實質突破+伊朗油價衝擊疊加升息預期，週五道瓊重挫 537 點；TSM ADR -3.55% 預示台積電今日跳空低開；NVDA 財報（5/20）為本周最大催化劑"
+  },
+  "indices": [
+    {
+      "name": "道瓊工業",
+      "ticker": "DJI",
+      "value": 49526,
+      "change_pct": -1.07,
+      "trend": "bearish"
+    },
+    {
+      "name": "S&P 500",
+      "ticker": "SPX",
+      "value": 7408.5,
+      "change_pct": -1.24,
+      "trend": "bearish"
+    },
+    {
+      "name": "Nasdaq",
+      "ticker": "IXIC",
+      "value": 26225,
+      "change_pct": -1.54,
+      "trend": "bearish"
+    },
+    {
+      "name": "費城半導體",
+      "ticker": "SOX",
+      "value": 11720,
+      "change_pct": -3.4,
+      "trend": "bearish"
+    },
+    {
+      "name": "VIX 恐慌指數",
+      "ticker": "VIX",
+      "value": 18.43,
+      "change_pct": 6.78,
+      "trend": "bearish"
+    },
+    {
+      "name": "美 10Y 殖利率",
+      "ticker": "US10Y",
+      "value": 4.59,
+      "change_pct": 2.24,
+      "trend": "bearish"
+    },
+    {
+      "name": "美元指數",
+      "ticker": "DXY",
+      "value": 99.8,
+      "change_pct": 1.32,
+      "trend": "neutral"
+    }
+  ],
+  "stocks": [
+    {
+      "signal_id": "stk-2330-2026-05-18-morning",
+      "ticker": "2330",
+      "name": "台積電",
+      "market": "TW",
+      "signal": "🔴",
+      "direction": "bearish",
+      "confidence": 0.65,
+      "view": "TSM ADR 週五重跌 -3.55% 至 $402.90，台積電今日預估跳空低開至 2,195-2,220；若量縮守 2,150 平台可分批承接；量大破 2,150 → 出場觀望；等待 NVDA 財報（5/20）確認後外資是否回補。",
+      "rationale": "TSM ADR -3.55% 為最強壓力先行指標，峰會利多退潮 + 升息殖利率壓力雙重夾擊",
+      "price": 2265,
+      "change_pct": -0.22,
+      "support": 2150,
+      "resistance": 2320,
+      "stop_loss": 2150,
+      "target": 2400,
+      "technicals": {
+        "rsi14": 52,
+        "macd": "轉弱（空頭交叉臨界，短均即將跌破中均）",
+        "ma_alignment": "價格跌近 5MA，20MA 上方壓制，多頭排列受威脅"
+      },
+      "valuation": {
+        "pe": 22.5,
+        "pe_percentile_5y": 78,
+        "verdict": "略偏貴但 AI 成長支撐，中線 Buy 不變"
+      },
+      "sources": [
+        "https://finance.yahoo.com/quote/TSM/",
+        "https://tw.stock.yahoo.com/quote/2330.TW",
+        "https://www.benzinga.com/markets/tech/26/05/52337222/tsmc-stock-rallies-56-billion-ai-expansion-crushes-apple-supply-chain-fears"
+      ],
+      "expires_at": "2026-05-18T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-2454-2026-05-18-morning",
+      "ticker": "2454",
+      "name": "聯發科",
+      "market": "TW",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.52,
+      "view": "週五台股強漲 +4.26% 至 3,260，但美股半導體週五重挫，今日預計拉回 -1~-2%；守 3,200 支撐，等待 NVDA 財報正面訊號後再積極布局，目標 3,500。",
+      "rationale": "週五強漲後美股重挫，短線獲利回吐壓力；AI 手機需求旺盛為中線支撐",
+      "price": 3260,
+      "change_pct": 4.26,
+      "support": 3200,
+      "resistance": 3420,
+      "stop_loss": 3100,
+      "target": 3500,
+      "technicals": {
+        "rsi14": 64,
+        "macd": "多頭但動能需觀察是否因 gap-down 轉弱",
+        "ma_alignment": "強勢多頭排列，各均線向上，但高位有回調風險"
+      },
+      "valuation": {
+        "pe": 19.5,
+        "pe_percentile_5y": 65,
+        "verdict": "合理偏低，仍有上行空間"
+      },
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/2454.TW"
+      ],
+      "expires_at": "2026-05-18T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-2317-2026-05-18-morning",
+      "ticker": "2317",
+      "name": "鴻海",
+      "market": "TW",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.52,
+      "view": "週五收 248.50，峰會利多退潮（無具體協議削弱中國基地題材）；但 5-6 月季節性上漲機率 70%（大戶除息卡位）、Q1 營收 +30% YoY、股利 7.2 元穩健；守 244 支撐，中線目標 262。",
+      "rationale": "峰會利多消退是主要利空；季節性強勢期與基本面穩健提供支撐，整體方向中性",
+      "price": 248.5,
+      "change_pct": 1.64,
+      "support": 244,
+      "resistance": 256,
+      "stop_loss": 238,
+      "target": 262,
+      "technicals": {
+        "rsi14": 56,
+        "macd": "偏多但多頭動能減弱",
+        "ma_alignment": "5MA 壓制，需觀察量能是否回增"
+      },
+      "valuation": {
+        "pe": 13.2,
+        "pe_percentile_5y": 45,
+        "verdict": "歷史合理偏低，股利殖利率吸引長線買盤"
+      },
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/2317.TW",
+        "https://vocus.cc/article/69f316acfd89780001905b03"
+      ],
+      "expires_at": "2026-05-18T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-NVDA-2026-05-18-morning",
+      "ticker": "NVDA",
+      "name": "輝達",
+      "market": "US",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.55,
+      "view": "週五收 $225.32（-4.42%），正好守在上份報告「$225 財報前關鍵支撐」節點。財報（5/20 AMC）倒數 2 天；EPS 預期 $1.78（+115% YoY），營收 $79.2B（+77%）；不追空、不追多，持有者守 $215 停損；財報若 beat-and-raise 可能快速反彈至 $250-260。",
+      "rationale": "財報前關鍵支撐 $225 剛好守住，持觀望等待財報；結果決定下一波方向",
+      "price": 225.32,
+      "change_pct": -4.42,
+      "support": 215,
+      "resistance": 240,
+      "stop_loss": 215,
+      "target": 260,
+      "technicals": {
+        "rsi14": 55,
+        "macd": "轉弱（從 65 滑落），跌破 5MA，20MA $232 形成壓力",
+        "ma_alignment": "短線轉弱，20MA/50MA 多頭仍在，財報前不宜判斷"
+      },
+      "valuation": {
+        "pe": 37,
+        "pe_percentile_5y": 82,
+        "verdict": "高估值但 FY27 EPS +115% 可消化，分析師目標均價 $271"
+      },
+      "sources": [
+        "https://www.fool.com/investing/2026/05/16/will-nvidia-soar-after-may-20-evidence-shows/",
+        "https://finance.yahoo.com/quote/NVDA/",
+        "https://stockinvest.us/stock/NVDA"
+      ],
+      "expires_at": "2026-05-18T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-TSLA-2026-05-18-morning",
+      "ticker": "TSLA",
+      "name": "特斯拉",
+      "market": "US",
+      "signal": "🔴",
+      "direction": "bearish",
+      "confidence": 0.62,
+      "view": "週五收 $422.24（-4.75%），已跌破上份報告 $425 支撐。NHTSA 升級 FSD probe（320 萬輛），澳洲集體訴訟，高估值（PE ~95x）缺乏催化劑。$410 為次支撐，若破看 $390；停損 $408（近 in-the-money）。",
+      "rationale": "跌破 $425 支撐 + FSD 法律風險升溫 + 高估值無催化劑，偏空格局成立",
+      "price": 422.24,
+      "change_pct": -4.75,
+      "support": 410,
+      "resistance": 440,
+      "stop_loss": 408,
+      "target": 390,
+      "technicals": {
+        "rsi14": 46,
+        "macd": "死叉（偏空），跌破 5MA 和 20MA",
+        "ma_alignment": "跌破多條均線，短線偏空格局"
+      },
+      "valuation": {
+        "pe": 95,
+        "pe_percentile_5y": 88,
+        "verdict": "嚴重高估，FSD 法律風險加劇下行壓力"
+      },
+      "sources": [
+        "https://www.tradingkey.com/news/market-movers/261900513-market-movers-tsla-20260515",
+        "https://finance.yahoo.com/quote/TSLA/"
+      ],
+      "expires_at": "2026-05-18T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-AAPL-2026-05-18-morning",
+      "ticker": "AAPL",
+      "name": "蘋果",
+      "market": "US",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.55,
+      "view": "週五收 ~$300，相對抗跌。殖利率上行壓力與市場風險情緒偏弱仍構成壓力；守 $290 關鍵支撐。等待 6 月 WWDC（Apple Intelligence 2.0）為下一催化劑，目標 $325。",
+      "rationale": "相對抗跌但無短線催化劑，守 $290 整理中；WWDC 是中線關鍵觀察點",
+      "price": 300.0,
+      "change_pct": -0.12,
+      "support": 290,
+      "resistance": 315,
+      "stop_loss": 278,
+      "target": 325,
+      "technicals": {
+        "rsi14": 51,
+        "macd": "中性，20MA 附近整理",
+        "ma_alignment": "現價在 20MA 附近，方向待確認"
+      },
+      "valuation": {
+        "pe": 30,
+        "pe_percentile_5y": 70,
+        "verdict": "合理範圍上緣，等待 AI 催化"
+      },
+      "sources": [
+        "https://finance.yahoo.com/quote/AAPL/"
+      ],
+      "expires_at": "2026-05-18T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-TSM-2026-05-18-morning",
+      "ticker": "TSM",
+      "name": "台積電 ADR",
+      "market": "US",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.52,
+      "view": "週五收 $402.90（-3.55%，前一日 $417.72），略高於 $400 心理支撐。是今日台積電 2330 開盤壓力的主要先行指標。守 $400 → 觀望；跌破 $400 → 看 $385。NVDA 財報後若正面，可能快速反彈至 $420-435。",
+      "rationale": "從 $417 重挫至 $403，AI 成長支撐中線不變，但短線需消化峰會失望與殖利率壓力",
+      "price": 402.9,
+      "change_pct": -3.55,
+      "support": 400,
+      "resistance": 420,
+      "stop_loss": 385,
+      "target": 440,
+      "technicals": {
+        "rsi14": 57,
+        "macd": "轉弱交叉（從多頭急速降溫）",
+        "ma_alignment": "跌破 5MA，20MA 形成壓力"
+      },
+      "valuation": {
+        "pe": 22.5,
+        "pe_percentile_5y": 78,
+        "verdict": "略偏貴但 AI 成長支撐，長線 Buy"
+      },
+      "sources": [
+        "https://finance.yahoo.com/quote/TSM/",
+        "https://www.benzinga.com/markets/tech/26/05/52337222/tsmc-stock-rallies-56-billion-ai-expansion-crushes-apple-supply-chain-fears"
+      ],
+      "expires_at": "2026-05-18T13:30:00+08:00"
+    }
+  ],
+  "alerts": [
+    {
+      "alert_id": "alt-iran-strait-hormuz",
+      "level": "warning",
+      "text": "伊朗戰爭：荷姆茲海峽持續封閉，布蘭特原油週五+3.35%至$109.26（年漲幅超30%），油價通膨占CPI漲幅40%以上；汽油均價 $4.50+（年漲51%）。若衝突升級至 $115+ 將觸發新一輪緊縮押注，全球股市面臨估值重新定價風險。",
+      "tickers": [],
+      "url": "https://www.cp24.com/news/money/2026/05/15/us-stocks-slide-from-record-highs-as-oil-surges-and-bond-yields-jump-on-iran-war-fears/",
+      "source": "CP24 / NBC News"
+    },
+    {
+      "alert_id": "alt-trump-china-summit",
+      "level": "warning",
+      "text": "川普中美峰會（5/13-14）結束，空手而返：無具體貿易協議、無半導體出口管制放寬、無伊朗斡旋承諾。市場前期半導體族群「峰會利多」全面回吐；TSM ADR -3.55%、NVDA -4.42%、半導體族群全面重挫。",
+      "tickers": ["2330", "2454", "2317", "NVDA", "TSM"],
+      "url": "https://fortune.com/2026/05/15/trump-xi-jinping-china-summit-trade-deal-stocks/",
+      "source": "Fortune / NBC News"
+    },
+    {
+      "alert_id": "alt-fed-rate-hike-risk",
+      "level": "warning",
+      "text": "Fed 升息風險急升：美 10Y 殖利率 4.59%（1 年新高），30Y 達 5.114%（2025/5 以來最高），市場定價 2026 年底有效升息機率突破 35%；BofA 撤除全年降息預測，CPI 預估 3.89%（Cleveland Fed），高估值科技股估值壓縮風險顯著。",
+      "tickers": ["NVDA", "TSLA", "AAPL"],
+      "url": "https://www.cnbc.com/2026/05/12/markets-raise-chances-for-a-fed-rate-hike-following-hot-inflation-report.html",
+      "source": "CNBC"
+    },
+    {
+      "alert_id": "alt-ppi-inflation",
+      "level": "warning",
+      "text": "通膨壓力加劇：伊朗戰爭能源衝擊致布蘭特油 $109.26（+3.35%），Cleveland Fed CPI 預測 3.89%（近 3 年高點），通膨 40% 漲幅來自能源；若伊朗衝突不解決，通膨尾部風險持續壓制成長股估值。",
+      "tickers": [],
+      "url": "https://sundayguardianlive.com/business/us-stock-market-today-15-may-2026-dow-falls-nasdaq-sp-500-crash-after-trump-china-visit-oil-surges-109-on-us-iran-deal-gold-silver-hit-bitcoin-retreats-82k-what-investors-should-watch-192641/",
+      "source": "Sunday Guardian / CNBC"
+    },
+    {
+      "alert_id": "alt-nvda-earnings-may20",
+      "level": "info",
+      "text": "NVDA 財報倒數 2 天（5/20 AMC）：EPS 共識 $1.78（+115% YoY），營收預期 $79.2B（+77% YoY），毛利率 >74%；39 位分析師 Strong Buy，目標均價 $271。財報結果將決定半導體族群及台積電下一波走向，是本周最大催化劑。",
+      "tickers": ["NVDA", "TSM", "2330", "2454"],
+      "url": "https://www.fool.com/investing/2026/05/16/will-nvidia-soar-after-may-20-evidence-shows/",
+      "source": "Motley Fool / TipRanks"
+    },
+    {
+      "alert_id": "alt-tsla-fsd-probe",
+      "level": "warning",
+      "text": "NHTSA 升級 Tesla FSD 調查：覆蓋 320 萬輛車輛，調查系統在低能見度情況下失效；同期澳洲法院開庭審理 Tesla 集體訴訟（幻影煞車、里程誤導等）。法律風險疊加高估值（PE ~95x）令 TSLA 短線承壓。",
+      "tickers": ["TSLA"],
+      "url": "https://www.tradingkey.com/news/market-movers/261900513-market-movers-tsla-20260515",
+      "source": "TradingKey / NHTSA"
+    }
+  ],
+  "sector_rotation": {
+    "strong": [
+      "能源（油價 $109，伊朗戰爭受益）",
+      "金融（殖利率上行潛在受益）",
+      "防禦型消費"
+    ],
+    "weak": [
+      "半導體/AI 晶片（峰會失望 + 殖利率壓力）",
+      "科技高估值成長股",
+      "房地產（利率敏感）"
+    ],
+    "watch": [
+      "工業（AI 供應鏈，NVDA 財報後方向確認）",
+      "材料（數據中心建設）",
+      "公用事業（殖利率上行壓力 vs 防禦需求）"
+    ]
+  },
+  "whats_changed": {
+    "compared_to": "股市-開盤前-20260515.md",
+    "compared_to_date": "2026-05-15",
+    "new": [
+      {
+        "type": "alert",
+        "summary": "新警示：伊朗荷姆茲海峽封閉，布蘭特原油 $109.26（+3.35%），獨立識別為全市場主要壓力來源",
+        "tickers": [],
+        "alert_id": "alt-iran-strait-hormuz"
+      },
+      {
+        "type": "alert",
+        "summary": "新警示：NHTSA 升級 Tesla FSD probe（320 萬輛），澳洲集體訴訟，TSLA 法律風險升溫",
+        "tickers": ["TSLA"],
+        "alert_id": "alt-tsla-fsd-probe"
+      },
+      {
+        "type": "stock_direction",
+        "summary": "台積電 2330 方向翻轉：bullish → bearish（TSM ADR -3.55% + 峰會失望）",
+        "ticker": "2330",
+        "from": "bullish",
+        "to": "bearish"
+      },
+      {
+        "type": "stock_direction",
+        "summary": "聯發科 2454 方向翻轉：bullish → neutral（美股半導體重挫壓制週五強漲成果）",
+        "ticker": "2454",
+        "from": "bullish",
+        "to": "neutral"
+      },
+      {
+        "type": "stock_direction",
+        "summary": "鴻海 2317 方向翻轉：bullish → neutral（川普峰會利多退潮，季節性支撐抵銷）",
+        "ticker": "2317",
+        "from": "bullish",
+        "to": "neutral"
+      },
+      {
+        "type": "stock_direction",
+        "summary": "NVDA 方向翻轉：bullish → neutral（-4.42% 守 $225 支撐，財報前不宜判向）",
+        "ticker": "NVDA",
+        "from": "bullish",
+        "to": "neutral"
+      },
+      {
+        "type": "stock_direction",
+        "summary": "TSLA 方向翻轉：neutral → bearish（-4.75% 跌破 $425 支撐 + FSD probe）",
+        "ticker": "TSLA",
+        "from": "neutral",
+        "to": "bearish"
+      },
+      {
+        "type": "stock_direction",
+        "summary": "TSM ADR 方向翻轉：bullish → neutral（-3.55% 從 $417.72 跌至 $402.90）",
+        "ticker": "TSM",
+        "from": "bullish",
+        "to": "neutral"
+      }
+    ],
+    "strengthened": [
+      {
+        "type": "alert",
+        "summary": "alt-trump-china-summit 升級：info → warning（峰會無實質成果，市場失望性賣出，半導體全面重挫）",
+        "alert_id": "alt-trump-china-summit",
+        "from": "info",
+        "to": "warning"
+      },
+      {
+        "type": "alert",
+        "summary": "alt-fed-rate-hike-risk 強化：10Y 殖利率 4.59%（1年新高），升息機率突破 35%，BofA 撤降息預期",
+        "alert_id": "alt-fed-rate-hike-risk"
+      },
+      {
+        "type": "alert",
+        "summary": "alt-ppi-inflation 強化：油價升至 $109.26（+3.35%），荷姆茲海峽封閉持續惡化通膨預期",
+        "alert_id": "alt-ppi-inflation"
+      }
+    ],
+    "removed": []
+  }
+}

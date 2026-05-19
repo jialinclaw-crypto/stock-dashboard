@@ -1,0 +1,340 @@
+{
+  "_schema_version": "3.0",
+  "type": "close",
+  "report_file": "股市-收盤後-20260519.md",
+  "date": "2026-05-19",
+  "weekday": "週二",
+  "generated_at": "2026-05-19T14:01:38+08:00",
+  "expires_at": "2026-05-20T09:00:00+08:00",
+  "market_view": {
+    "level": "bullish_cautious",
+    "confidence": 0.6,
+    "headline": "NVDA財報前夕+Google I/O催化，台股強彈+2.2%至41,790，盤中創42,253新波段高；台積電逆勢補跌，NVDA財報明日台灣5/21凌晨為最大催化劑",
+    "sources": [
+      "https://statementdog.com/taiex",
+      "https://www.kiplinger.com/investing/live/nvidia-earnings-live-updates-and-commentary-may-2026",
+      "https://io.google/2026/"
+    ]
+  },
+  "indices": {
+    "TWII": {
+      "close": 41790.06,
+      "prev_close": 40891.82,
+      "change": 898.24,
+      "change_pct": 2.2,
+      "intraday_high": 42253,
+      "data_quality": "third_party_snapshot",
+      "note": "statementdog.com 快照；盤中高42253為媒體描述；TWSE官方公告請另確認"
+    }
+  },
+  "stocks": [
+    {
+      "signal_id": "stk-2330-2026-05-19-close",
+      "ticker": "2330",
+      "name": "台積電",
+      "market": "TW",
+      "direction": "neutral",
+      "price": 2205,
+      "prev_price": 2240,
+      "change_pct": -1.56,
+      "confidence": 0.55,
+      "rationale": "三日連跌自5/15高點2295累跌-3.9%；藍籌輪休，待NVDA財報後方向明朗；支撐2150-2180，NVDA財報若beat可期V彈",
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/2330.TW",
+        "https://finance.yahoo.com/quote/2330.TW/history/"
+      ],
+      "expires_at": "2026-05-20T09:00:00+08:00"
+    },
+    {
+      "signal_id": "stk-2454-2026-05-19-close",
+      "ticker": "2454",
+      "name": "聯發科",
+      "market": "TW",
+      "direction": "bullish",
+      "price": 3440,
+      "prev_price": 3400,
+      "change_pct": 1.18,
+      "confidence": 0.55,
+      "data_quality": "estimated",
+      "rationale": "AI ASIC敘事持續：Google I/O Gemini 4/Android 17利多Edge AI晶片；外資目標4500元；處置股交易限制壓制短線波動，流動性差；price為估算",
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/2454.TW",
+        "https://wantrich.chinatimes.com/news/20260504900133-420101",
+        "https://io.google/2026/"
+      ],
+      "expires_at": "2026-05-20T09:00:00+08:00",
+      "flags": [
+        "disposition_stock",
+        "price_estimated"
+      ]
+    },
+    {
+      "signal_id": "stk-2317-2026-05-19-close",
+      "ticker": "2317",
+      "name": "鴻海",
+      "market": "TW",
+      "direction": "neutral",
+      "price": 246.0,
+      "prev_price": 248.5,
+      "change_pct": -1.01,
+      "confidence": 0.6,
+      "rationale": "今日開251/高254/低246/收246，成交51482張128.75億；AI伺服器Blackwell組裝訂單穩健，短線跟盤回調，守240為關鍵支撐",
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/2317.TW",
+        "https://www.cnyes.com/twstock/2317"
+      ],
+      "expires_at": "2026-05-20T09:00:00+08:00"
+    },
+    {
+      "signal_id": "stk-NVDA-2026-05-19-close",
+      "ticker": "NVDA",
+      "name": "輝達",
+      "market": "US",
+      "direction": "neutral_cautious",
+      "price": 222.75,
+      "prev_price": 237.87,
+      "change_pct": -6.36,
+      "confidence": 0.5,
+      "rationale": "財報前夕謹慎獲利了結，5/18日高230.63日低218.37；Q1 FY2027財報5/20 US收盤後(台灣5/21凌晨)，共識$79.2B/EPS $1.78，選擇權隱含±8.65%波動；等財報驗證再調整方向",
+      "sources": [
+        "https://www.kiplinger.com/investing/live/nvidia-earnings-live-updates-and-commentary-may-2026",
+        "https://247wallst.com/companies/nvda/earnings/2026/Q1",
+        "https://finance.yahoo.com/quote/NVDA/"
+      ],
+      "expires_at": "2026-05-20T09:00:00+08:00",
+      "upcoming_catalyst": {
+        "event": "NVDA Q1 FY2027 Earnings",
+        "date_us": "2026-05-20",
+        "date_tw": "2026-05-21T04:00:00+08:00",
+        "consensus_revenue_b": 79.2,
+        "consensus_eps": 1.78,
+        "implied_move_pct": 8.65
+      }
+    },
+    {
+      "signal_id": "stk-TSLA-2026-05-19-close",
+      "ticker": "TSLA",
+      "name": "特斯拉",
+      "market": "US",
+      "direction": "neutral",
+      "price": 422.24,
+      "prev_price": 445.18,
+      "change_pct": -5.15,
+      "confidence": 0.45,
+      "rationale": "三日連跌-5.1%自5/15；無近期重大催化劑，FSD V14/Robotaxi Austin時程為下一觀察點；短線偏弱，保守觀望",
+      "sources": [
+        "https://finance.yahoo.com/quote/TSLA/history/",
+        "https://finance.yahoo.com/quote/TSLA/"
+      ],
+      "expires_at": "2026-05-20T09:00:00+08:00"
+    },
+    {
+      "signal_id": "stk-AAPL-2026-05-19-close",
+      "ticker": "AAPL",
+      "name": "蘋果",
+      "market": "US",
+      "direction": "neutral",
+      "price": 282,
+      "prev_price": 299.21,
+      "change_pct": -5.76,
+      "confidence": 0.3,
+      "data_quality": "low_confidence_estimate",
+      "rationale": "價格為估算值（區間$271-$295），不確定性高；Google I/O AI功能短線競爭壓力，但WWDC 2026（6月）有反制催化劑；保守中性",
+      "sources": [
+        "https://finance.yahoo.com/quote/AAPL/"
+      ],
+      "expires_at": "2026-05-20T09:00:00+08:00",
+      "flags": [
+        "price_low_confidence"
+      ]
+    },
+    {
+      "signal_id": "stk-TSM-2026-05-19-close",
+      "ticker": "TSM",
+      "name": "台積電ADR",
+      "market": "US",
+      "direction": "neutral",
+      "price": 402.46,
+      "prev_price": 415.0,
+      "change_pct": -3.02,
+      "confidence": 0.55,
+      "rationale": "與2330本地盤連動，自5/15跌-3.0%；方向跟隨台積電，NVDA財報後可能反彈",
+      "sources": [
+        "https://finance.yahoo.com/quote/TSM/",
+        "https://finance.yahoo.com/quote/TSM/history/"
+      ],
+      "expires_at": "2026-05-20T09:00:00+08:00"
+    }
+  ],
+  "alerts": [
+    {
+      "alert_id": "alert-NVDA-earnings-imminent-20260519",
+      "level": "warning",
+      "theme": "NVDA_earnings_imminent",
+      "title": "⚠️ NVDA 財報倒數 < 24h",
+      "message": "NVDA Q1 FY2027 財報將於台灣5/21凌晨發布（共識$79.2B/EPS $1.78），選擇權隱含±8.65%波動。結果直接影響台積電CoWoS訂單能見度及AI族群開盤方向。財報前不宜追高。",
+      "url": "https://www.kiplinger.com/investing/live/nvidia-earnings-live-updates-and-commentary-may-2026",
+      "source": "Kiplinger Earnings Live",
+      "expires_at": "2026-05-21T06:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-GoogleIO-AI-catalyst-20260519",
+      "level": "info",
+      "theme": "GoogleIO_AI_positive",
+      "title": "🟢 Google I/O 2026 Gemini 4 / Android 17 AI 利多",
+      "message": "Google I/O Day 1（5/19）正式發布 Gemini 4、Android 17、Android XR 智慧眼鏡，強化 on-device AI 敘事，直接利多聯發科(2454) AI ASIC 訂單故事。5/20 Day 2 繼續關注。",
+      "url": "https://io.google/2026/",
+      "source": "Google I/O 2026",
+      "expires_at": "2026-05-20T23:59:00+08:00"
+    },
+    {
+      "alert_id": "alert-2454-disposition-20260519",
+      "level": "info",
+      "theme": "2454_disposition_continued",
+      "title": "🟡 聯發科 2454 仍為處置股",
+      "message": "2454 聯發科持續受處置股交易限制（每10分鐘撮合），流動性受限，即使方向偏多，短線波動被壓制。注意出入流動性風險。",
+      "url": "https://cmnews.com.tw/article/forumnews-7b066e7a-4983-11f1-986b-7b81f4e70b4c",
+      "source": "CMoney 財經焦點",
+      "expires_at": "2026-05-20T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-2330-declining-trend-20260519",
+      "level": "warning",
+      "theme": "2330_short_term_weak",
+      "title": "⚠️ 台積電 2330 三日連跌 −3.9%",
+      "message": "台積電自5/15高點2295元三日連跌至2205元（-3.9%），技術面跌破5日均線，呈現藍籌輪休格局。短線支撐2150-2180，NVDA財報若beat可期反彈，否則慎防進一步整理。",
+      "url": "https://tw.stock.yahoo.com/quote/2330.TW",
+      "source": "Yahoo股市",
+      "expires_at": "2026-05-20T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-TWII-newwavehigh-20260519",
+      "level": "info",
+      "theme": "TWII_new_wave_high",
+      "title": "🟢 TWII 盤中 42,253 創新波段高點",
+      "message": "今日TWII盤中攻上42,253，創5/15以來新波段高點，但收盤41,790未守42,000。次日能否站穩42,000為觀察重點；NVDA財報若利多有望攻克歷史盤中高42,408。",
+      "url": "https://statementdog.com/taiex",
+      "source": "statementdog.com / 媒體報導",
+      "expires_at": "2026-05-20T09:00:00+08:00"
+    }
+  ],
+  "whats_changed": {
+    "vs_date": "2026-05-15",
+    "vs_report": "股市-收盤後-20260515.md",
+    "market_level_change": {
+      "prev": "neutral_cautious",
+      "curr": "bullish_cautious",
+      "changed": true,
+      "note": "今日強彈+2.2%，情緒由保守謹慎改善為偏多謹慎，但NVDA財報尚未落地"
+    },
+    "stock_direction_changes": [
+      {
+        "ticker": "2330",
+        "name": "台積電",
+        "prev_direction": "bullish",
+        "curr_direction": "neutral",
+        "prev_price": 2295,
+        "curr_price": 2205,
+        "price_change_pct": -3.93,
+        "note": "bullish → neutral；三日連跌-3.9%，藍籌輪休"
+      },
+      {
+        "ticker": "NVDA",
+        "name": "輝達",
+        "prev_direction": "bullish",
+        "curr_direction": "neutral_cautious",
+        "prev_price": 237.87,
+        "curr_price": 222.75,
+        "price_change_pct": -6.36,
+        "note": "bullish → neutral_cautious；財報前-6.4%謹慎獲利了結，等待驗證"
+      },
+      {
+        "ticker": "TSM",
+        "name": "台積電ADR",
+        "prev_direction": "bullish",
+        "curr_direction": "neutral",
+        "prev_price": 415.0,
+        "curr_price": 402.46,
+        "price_change_pct": -3.02,
+        "note": "bullish → neutral；跟隨2330方向調整"
+      },
+      {
+        "ticker": "TSLA",
+        "name": "特斯拉",
+        "prev_direction": "neutral",
+        "curr_direction": "neutral",
+        "prev_price": 445.18,
+        "curr_price": 422.24,
+        "price_change_pct": -5.15,
+        "note": "方向維持neutral，但價格顯著下跌-5.1%"
+      }
+    ],
+    "alert_diff": {
+      "prev_alert_themes": [
+        "TWII_shootingstar",
+        "CPO_dalite",
+        "ABF_correction",
+        "NVDA_earnings_countdown",
+        "MSCI_rebalance",
+        "2454_disposition"
+      ],
+      "curr_alert_themes": [
+        "NVDA_earnings_imminent",
+        "GoogleIO_AI_positive",
+        "2454_disposition_continued",
+        "2330_short_term_weak",
+        "TWII_new_wave_high"
+      ],
+      "newly_added_themes": [
+        "NVDA_earnings_imminent（升級：倒數<24h）",
+        "GoogleIO_AI_positive（新：Gemini 4 / Android 17）",
+        "2330_short_term_weak（新：台積電連跌）",
+        "TWII_new_wave_high（新：42,253波段高）"
+      ],
+      "resolved_themes": [
+        "TWII_shootingstar（已解除：市場強力反彈，射擊之星技術信號失效）",
+        "CPO_dalite（降級：非主要焦點）",
+        "ABF_correction（降級：非主要焦點）",
+        "MSCI_rebalance（無新進展）"
+      ],
+      "continued_themes": [
+        "2454_disposition（持續中）",
+        "NVDA_earnings（升級為imminent）"
+      ],
+      "note": "新增：NVDA財報倒數警示升級+Google I/O AI催化劑+台積電連跌警示；解除：射擊之星（市場已反彈破解）"
+    },
+    "sector_rotation_change": {
+      "newly_strong": [
+        "AI ASIC / Edge AI（Google I/O Gemini 4 直接利多）",
+        "CPO/光通訊延續"
+      ],
+      "newly_weak": [
+        "台積電/晶圓代工主力（藍籌輪休）",
+        "記憶體（南亞科2408、華邦電2344延續弱勢）"
+      ],
+      "note": "板塊輪動：AI ASIC新旗手（2454聯發科）vs 藍籌台積電休息；NVDA財報後可能重新洗牌"
+    },
+    "key_price_moves": {
+      "TWII": {
+        "prev_close": 41228.0,
+        "curr_close": 41790.06,
+        "change": 562.06,
+        "intraday_high": 42253,
+        "note": "今日強反彈+2.2%（自5/18 40891反彈），盤中創新波段高42253"
+      },
+      "2330": {
+        "prev_close": 2295,
+        "curr_close": 2205,
+        "change": -90,
+        "note": "三日累計-3.9%，今日-1.56%，方向由bullish降至neutral"
+      },
+      "NVDA": {
+        "prev_close": 237.87,
+        "curr_price": 222.75,
+        "change": -15.12,
+        "note": "財報前-6.4%；明日台灣時間5/21凌晨財報為最大催化劑"
+      }
+    },
+    "confidence_note": "保守原則：三大法人為估算；2454收盤為估算；AAPL價格低信心；所有direction判斷均附confidence；NVDA財報未發布前方向信心受限"
+  }
+}

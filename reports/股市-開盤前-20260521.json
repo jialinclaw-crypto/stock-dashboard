@@ -1,0 +1,504 @@
+{
+  "_schema_version": 3,
+  "type": "morning",
+  "report_file": "股市-開盤前-20260521.md",
+  "date": "2026-05-21",
+  "weekday": "週四",
+  "generated_at": "2026-05-21T07:39:27+08:00",
+  "market_view": {
+    "level": "neutral",
+    "confidence": 0.52,
+    "headline": "NVDA Q1 FY2027史詩財報（$81.6B/$1.87/Q2指引$91B）確認AI算力需求爆發，但盤後-1.8%延續sell-the-news慣例；美股5/20已大漲（道瓊+1.31%→50,009、SOX+3.94%），伊朗和談令殖利率微降；台股TWII預估開高整理（41,800–42,200），短線追漲需謹慎"
+  },
+  "indices": [
+    {
+      "name": "道瓊工業",
+      "ticker": "DJI",
+      "value": 50009.35,
+      "change_pct": 1.31,
+      "trend": "bullish"
+    },
+    {
+      "name": "S&P 500",
+      "ticker": "SPX",
+      "value": 7432.97,
+      "change_pct": 1.08,
+      "trend": "bullish"
+    },
+    {
+      "name": "Nasdaq",
+      "ticker": "IXIC",
+      "value": 26270.36,
+      "change_pct": 1.54,
+      "trend": "bullish"
+    },
+    {
+      "name": "費城半導體",
+      "ticker": "SOX",
+      "value": 11751.35,
+      "change_pct": 3.94,
+      "trend": "bullish"
+    },
+    {
+      "name": "VIX 恐慌指數",
+      "ticker": "VIX",
+      "value": 18.13,
+      "change_pct": -2.6,
+      "trend": "neutral"
+    },
+    {
+      "name": "美 10Y 殖利率",
+      "ticker": "US10Y",
+      "value": 4.67,
+      "change_pct": -0.2,
+      "trend": "neutral"
+    },
+    {
+      "name": "美 30Y 殖利率",
+      "ticker": "US30Y",
+      "value": 5.19,
+      "change_pct": 0.0,
+      "trend": "bearish"
+    },
+    {
+      "name": "美元指數",
+      "ticker": "DXY",
+      "value": 99.1,
+      "change_pct": -0.2,
+      "trend": "neutral"
+    },
+    {
+      "name": "台股加權指數",
+      "ticker": "TWII",
+      "value": 41750.0,
+      "change_pct": 0.0,
+      "trend": "neutral"
+    },
+    {
+      "name": "WTI 原油",
+      "ticker": "WTI",
+      "value": 108.0,
+      "change_pct": 4.3,
+      "trend": "neutral"
+    }
+  ],
+  "stocks": [
+    {
+      "signal_id": "stk-2330-2026-05-21-morning",
+      "ticker": "2330",
+      "name": "台積電",
+      "market": "TW",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.56,
+      "view": "台積電昨收NT$2,200（-0.23%，連4紅，自5/15高點累跌-6.2%）；NVDA Q2指引$91B確認Blackwell/AI晶圓代工長線需求，TSMC為NVDA唯一代工夥伴，基本面明顯利多。但TSM ADR昨收$392.61（低於前週$395.95），NVDA盤後-1.8%限制短線外資追買意願，10Y 4.67% / 30Y 5.19%高息環境持續壓估值。今日開盤預估2,200–2,260；量縮守2,170可分批承接，破2,150收盤需減碼。",
+      "rationale": "NVDA Q2 $91B指引確認TSMC長線訂單能見度大幅提升，但盤後-1.8%與TSM ADR位置使短線上行動能受限",
+      "price": 2200,
+      "change_pct": -0.23,
+      "support": 2150,
+      "resistance": 2280,
+      "stop_loss": 2120,
+      "target": 2400,
+      "technicals": {
+        "rsi14": 44,
+        "macd": "DIFF與DEA均在零軸下方，空頭偏弱整理；背離待確認",
+        "ma_alignment": "5MA(2,225) < 20MA(2,275) 空頭排列；60MA~2,050仍為長線支撐"
+      },
+      "valuation": {
+        "pe": 26.5,
+        "pe_percentile_5y": 55,
+        "verdict": "合理偏低，AI超級循環基本面支撐，但高息環境壓外資買盤"
+      },
+      "sources": [
+        "https://finance.yahoo.com/quote/TSM/",
+        "https://www.cnbc.com/2026/05/20/nvidia-nvda-earnings-report-q1-2027.html",
+        "https://www.gurufocus.com/news/8872854/nvidia-nvda-q1-fy2027-eps-239-beats-175-est-revenue-816b-tops-7880b-still-319-undervalued-gf-score-96100"
+      ],
+      "expires_at": "2026-05-21T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-2454-2026-05-21-morning",
+      "ticker": "2454",
+      "name": "聯發科",
+      "market": "TW",
+      "signal": "🟢",
+      "direction": "bullish",
+      "confidence": 0.6,
+      "view": "聯發科昨收NT$3,230（+3.65%，5/20台股最強），NVDA確認Agentic AI算力需求「較GenAI時代增千倍」，MediaTek邊緣AI晶片（天璣AI、Wi-Fi 7）長線受益顯著。仍為處置股（5分鐘一次撮合），流動性折價限制短線追漲空間，但題材確認。支撐3,050，壓力3,500（前ATH）。操作：限價掛單，不追漲；等回檔3,100附近才佈局較安全。",
+      "rationale": "NVDA Agentic AI千倍算力需求確認MediaTek邊緣AI晶片長線商機，但處置股限制流動性造成折價",
+      "price": 3230,
+      "change_pct": 3.65,
+      "support": 3050,
+      "resistance": 3500,
+      "stop_loss": 2980,
+      "target": 3700,
+      "technicals": {
+        "rsi14": 60,
+        "macd": "DIFF轉正，但DEA仍在零軸下方，金叉訊號形成中",
+        "ma_alignment": "5MA(3,210) > 20MA(3,100) 短多排列，但處置股限制量能確認"
+      },
+      "valuation": {
+        "pe": 20.5,
+        "pe_percentile_5y": 48,
+        "verdict": "相對合理，AI ASIC轉型若兌現可支撐估值提升"
+      },
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/2454.TW",
+        "https://www.cnbc.com/2026/05/20/nvidia-nvda-earnings-report-q1-2027.html",
+        "https://www.fool.com/investing/2026/05/20/nvidia-stock-investors-just-got-fantastic-news-fro/"
+      ],
+      "expires_at": "2026-05-21T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-2317-2026-05-21-morning",
+      "ticker": "2317",
+      "name": "鴻海",
+      "market": "TW",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.52,
+      "view": "鴻海昨收NT$240（+2.04%，從低點反彈，但仍低於前週244.5）。NVDA Q2 $91B指引強化AI伺服器代工需求（鴻海為全球最大AI伺服器代工商之一），形成中期正催化劑。但Nitrogen勒索軟體北美工廠事件（8TB含Intel/Apple/NVDA客戶資料外洩）尚未解除，資安信任損失與潛在客戶賠償壓力持續。兩力拉鋸下訊號轉中性。支撐228，壓力258。",
+      "rationale": "NVDA AI伺服器Q2 $91B利多部分抵銷Nitrogen資安洩資事件利空，方向自前日🔴空轉中性整理",
+      "price": 240,
+      "change_pct": 2.04,
+      "support": 228,
+      "resistance": 258,
+      "stop_loss": 222,
+      "target": 265,
+      "technicals": {
+        "rsi14": 52,
+        "macd": "接近零軸，DIFF略正，方向待確認",
+        "ma_alignment": "5MA(237) < 20MA(242)，短期仍偏弱，需突破245確認反轉"
+      },
+      "valuation": {
+        "pe": 13.2,
+        "pe_percentile_5y": 42,
+        "verdict": "估值偏低，AI伺服器轉型若兌現具補漲空間，但資安事件為短線風險"
+      },
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/2317.TW",
+        "https://www.cnbc.com/2026/05/20/nvidia-nvda-earnings-report-q1-2027.html"
+      ],
+      "expires_at": "2026-05-21T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-NVDA-2026-05-21-morning",
+      "ticker": "NVDA",
+      "name": "輝達",
+      "market": "US",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.55,
+      "view": "NVDA Q1 FY2027史詩財報：Rev $81.62B（+85% YoY，beat +3.6%）、Non-GAAP EPS $1.87（beat +5.6%）、Q2指引$91B ±2%（遠超共識$79B）、毛利率75%、股息25x（$0.25/季）、$80B買回。Jensen Huang：「Agentic AI需求較GenAI增千倍，AI工廠建設以非凡速度加速」。然而盤後-1.8%至$220.64，延續近4季財報後賣壓規律。短線慎追，等$218-220企穩或量縮確認後再加碼；長線基本面無懈可擊。支撐$210，壓力$235。",
+      "rationale": "史詩財報（$81.6B/$1.87/Q2$91B）但盤後-1.8%延續sell-the-news模式；短線中性，長線基本面極強",
+      "price": 220.64,
+      "change_pct": -1.8,
+      "support": 210,
+      "resistance": 235,
+      "stop_loss": 205,
+      "target": 255,
+      "technicals": {
+        "rsi14": 50,
+        "macd": "零軸上方，DIFF略正轉負（盤後滑落），短線偏弱",
+        "ma_alignment": "5MA(225) > 20MA(218)，整體仍在關鍵均線上方，但盤後跌近5MA需觀察"
+      },
+      "valuation": {
+        "pe": 29.5,
+        "pe_percentile_5y": 40,
+        "verdict": "以$1.87×4=$7.48年化EPS計算P/E約29.5x，相對合理；若Q2 $91B兌現則大幅降低Forward P/E"
+      },
+      "sources": [
+        "https://www.cnbc.com/2026/05/20/nvidia-nvda-earnings-report-q1-2027.html",
+        "https://www.gurufocus.com/news/8872854/nvidia-nvda-q1-fy2027-eps-239-beats-175-est-revenue-816b-tops-7880b-still-319-undervalued-gf-score-96100",
+        "https://www.marketbeat.com/earnings/reports/2026-5-20-nvidia-co-stock/",
+        "https://www.fool.com/investing/2026/05/20/nvidia-stock-investors-just-got-fantastic-news-fro/"
+      ],
+      "expires_at": "2026-05-21T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-TSLA-2026-05-21-morning",
+      "ticker": "TSLA",
+      "name": "特斯拉",
+      "market": "US",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.5,
+      "view": "盤後$404.68（+0.14%，幾乎持平）。無重大TSLA催化劑，Cybercab/FSD 4.0進展為下一主要看點（Q3財報期）。AI主題資金偏向NVDA/半導體鏈，TSLA吸引力相對減弱。支撐$380，壓力$430。",
+      "rationale": "缺乏近期催化劑，自駕AI敘事支撐估值但市場焦點集中在NVDA財報後效應",
+      "price": 404.68,
+      "change_pct": 0.14,
+      "support": 380,
+      "resistance": 430,
+      "stop_loss": 365,
+      "target": 450,
+      "technicals": {
+        "rsi14": 52,
+        "macd": "零軸上方，輕微正向動能",
+        "ma_alignment": "5MA(403) > 20MA(385)，短線偏多但動能有限"
+      },
+      "valuation": {
+        "pe": 65.0,
+        "pe_percentile_5y": 35,
+        "verdict": "高估值需強勁成長支撐，自駕/機器人長線故事支撐溢價但需催化劑"
+      },
+      "sources": [
+        "https://finance.yahoo.com/quote/TSLA/",
+        "https://public.com/stocks/tsla/after-hours"
+      ],
+      "expires_at": "2026-05-21T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-AAPL-2026-05-21-morning",
+      "ticker": "AAPL",
+      "name": "蘋果",
+      "market": "US",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.52,
+      "view": "收盤$301.38（+0.8%）。Apple Intelligence持續推進（iOS 20/Siri next-gen），但無近期爆發性催化劑。NVDA財報未直接影響蘋果基本面，等WWDC 2026（6月）確認AI功能路線再評估方向。支撐$285，壓力$320。",
+      "rationale": "Apple Intelligence AI敘事支撐中期方向，但缺乏立即催化劑，維持中性觀望",
+      "price": 301.38,
+      "change_pct": 0.8,
+      "support": 285,
+      "resistance": 320,
+      "stop_loss": 275,
+      "target": 340,
+      "technicals": {
+        "rsi14": 53,
+        "macd": "零軸上方輕微正向",
+        "ma_alignment": "5MA(300) > 20MA(290)，短線溫和多頭排列"
+      },
+      "valuation": {
+        "pe": 28.0,
+        "pe_percentile_5y": 60,
+        "verdict": "估值略偏高，Apple Intelligence若帶動換機潮可支撐"
+      },
+      "sources": [
+        "https://finance.yahoo.com/quote/AAPL/",
+        "https://www.cnbc.com/quotes/AMZN,%20AAPL,%20GOOGL,%20TSLA,%20MSFT,%20NVDA"
+      ],
+      "expires_at": "2026-05-21T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-TSM-2026-05-21-morning",
+      "ticker": "TSM",
+      "name": "台積電ADR",
+      "market": "US",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.55,
+      "view": "5/20收盤$392.61（日高$398.88 / 日低$385.06），盤後受NVDA結果影響方向未明。NVDA Q2 $91B指引對TSMC長線訂單能見度極度正面，但盤後NVDA-1.8%可能拖累TSM ADR初步反應。52週高點$421.97遙遠；若NVDA盤後企穩，TSM ADR有望測試$400-$408阻力。支撐$375，壓力$415。",
+      "rationale": "NVDA Q2 $91B確認TSMC長線需求，但NVDA盤後-1.8%及10Y殖利率4.67%使TSM ADR短線方向分歧",
+      "price": 392.61,
+      "change_pct": -0.84,
+      "support": 375,
+      "resistance": 415,
+      "stop_loss": 365,
+      "target": 440,
+      "technicals": {
+        "rsi14": 47,
+        "macd": "零軸下方，DIFF略負，短線偏弱整理",
+        "ma_alignment": "5MA(393) ≈ 20MA(400)，均線糾結，方向待NVDA盤後確認"
+      },
+      "valuation": {
+        "pe": 20.0,
+        "pe_percentile_5y": 52,
+        "verdict": "合理估值，AI超級循環受益明確，但ADR流動性溢價需配合外資動向"
+      },
+      "sources": [
+        "https://finance.yahoo.com/quote/TSM/",
+        "https://www.morningstar.com/stocks/XNYS/TSM/quote",
+        "https://www.cnbc.com/2026/05/20/nvidia-nvda-earnings-report-q1-2027.html"
+      ],
+      "expires_at": "2026-05-21T13:30:00+08:00"
+    }
+  ],
+  "alerts": [
+    {
+      "alert_id": "alt-nvda-sell-news",
+      "level": "warning",
+      "text": "【NVDA盤後賣壓】Q1 FY2027史詩財報（Rev $81.6B/EPS $1.87/Q2指引$91B）公布後，NVDA盤後仍下跌-1.8%至$220.64，延續近4季財報後賣壓規律（sell-the-news）；SOX期貨短線可能跟隨修正，台積電、TSM ADR今日開盤需觀察NVDA盤後最終位置",
+      "tickers": [
+        "NVDA",
+        "TSM",
+        "2330",
+        "SOX"
+      ],
+      "url": "https://www.cnbc.com/2026/05/20/nvidia-nvda-earnings-report-q1-2027.html",
+      "source": "CNBC"
+    },
+    {
+      "alert_id": "alt-nvda-q2-guide",
+      "level": "info",
+      "text": "【NVDA Q2指引$91B — AI基建基本面確認】NVIDIA Q2 FY2027指引$91B ±2%（遠超市場共識~$79B），Agentic AI算力需求「較GenAI增千倍」，Jensen Huang確認AI工廠建設「以非凡速度加速」；對台積電（唯一代工夥伴）、聯發科（邊緣AI）、鴻海（AI伺服器）長線利多確認",
+      "tickers": [
+        "NVDA",
+        "TSM",
+        "2330",
+        "2454",
+        "2317"
+      ],
+      "url": "https://www.fool.com/investing/2026/05/20/nvidia-stock-investors-just-got-fantastic-news-fro/",
+      "source": "The Motley Fool"
+    },
+    {
+      "alert_id": "alt-foxconn-hack",
+      "level": "warning",
+      "text": "鴻海(2317)北美工廠遭Nitrogen勒索軟體攻擊，8TB資料外洩含Intel/Apple/NVIDIA等客戶機密，資安風險尚未解除；可能影響企業客戶信任與潛在賠償責任",
+      "tickers": [
+        "2317"
+      ],
+      "url": "https://tw.stock.yahoo.com/quote/2317.TW",
+      "source": "市場資訊"
+    },
+    {
+      "alert_id": "alt-30y-treasury-record",
+      "level": "warning",
+      "text": "美30年期公債殖利率5.19%（2007年以來最高，18年高位持平），10年期4.67%（16個月高位）；高成本資金環境持續壓制高P/E成長股估值，外資對台灣半導體股票買盤受限",
+      "tickers": [
+        "2330",
+        "TSM",
+        "NVDA",
+        "AAPL"
+      ],
+      "url": "https://www.advisorperspectives.com/dshort/updates/2026/05/15/treasury-yields-snapshot-may-15-2026",
+      "source": "Advisor Perspectives"
+    },
+    {
+      "alert_id": "alt-iran-deal",
+      "level": "info",
+      "text": "【伊朗和談進展】Trump暫停對伊朗軍事打擊計劃，沙烏地/卡達/UAE斡旋中；伊朗-阿曼-巴基斯坦技術團隊討論Hormuz海峽通行方案。和談若成功可大幅緩解通膨壓力（殖利率下行）並改善市場情緒",
+      "tickers": [
+        "WTI",
+        "DJI",
+        "SPX"
+      ],
+      "url": "https://www.fxstreet.com/news/us-dollar-index-dxy-eases-to-9910-amid-hopes-of-a-us-iran-peace-deal-202605181010",
+      "source": "FXStreet"
+    },
+    {
+      "alert_id": "alt-fed-rate-hike-risk",
+      "level": "warning",
+      "text": "Fed升息風險升溫：市場計入50%機率12月升息；FOMC會議紀要本週公布，通膨（PPI/CPI雙超預期）與能源價格為關鍵觀察變數",
+      "tickers": [
+        "DJI",
+        "SPX",
+        "2330",
+        "TSM"
+      ],
+      "url": "https://fred.stlouisfed.org/series/DGS10",
+      "source": "FRED"
+    }
+  ],
+  "sector_rotation": {
+    "strong": [
+      "AI基礎建設（NVDA/CoWoS/HBM）",
+      "資料中心代工（TSMC/台積電）",
+      "Agentic AI應用層"
+    ],
+    "weak": [
+      "傳統半導體（非AI）",
+      "利率敏感型成長股",
+      "高P/E非盈利科技"
+    ],
+    "watch": [
+      "邊緣AI晶片（MediaTek/MRVL）",
+      "AI伺服器代工（鴻海/廣達）",
+      "Apple Intelligence受益鏈"
+    ]
+  },
+  "whats_changed": {
+    "compared_to": "股市-開盤前-20260520.md",
+    "compared_to_date": "2026-05-20",
+    "new": [
+      {
+        "type": "stock_direction",
+        "summary": "NVDA 方向翻轉 bullish→neutral：財報大幅超預期（$81.6B/$1.87/Q2$91B），但盤後-1.8%展現sell-the-news；信心從0.68降至0.55",
+        "ticker": "NVDA",
+        "tickers": [
+          "NVDA"
+        ],
+        "from": "bullish",
+        "to": "neutral"
+      },
+      {
+        "type": "stock_direction",
+        "summary": "鴻海(2317) 方向翻轉 bearish→neutral：NVDA Q2 $91B AI伺服器需求確認部分抵銷Nitrogen資安事件利空，兩力拉鋸轉中性",
+        "ticker": "2317",
+        "tickers": [
+          "2317"
+        ],
+        "from": "bearish",
+        "to": "neutral"
+      },
+      {
+        "type": "alert",
+        "summary": "新增 alt-nvda-sell-news：NVDA財報史詩超預期但盤後-1.8%，sell-the-news動態確立",
+        "tickers": [
+          "NVDA",
+          "TSM",
+          "2330"
+        ],
+        "from": "",
+        "to": "warning"
+      },
+      {
+        "type": "alert",
+        "summary": "新增 alt-nvda-q2-guide：Q2指引$91B±2%遠超共識，Agentic AI算力需求千倍成長敘事確認，AI鏈長線基本面大幅強化",
+        "tickers": [
+          "NVDA",
+          "TSM",
+          "2330",
+          "2454",
+          "2317"
+        ],
+        "from": "",
+        "to": "info"
+      },
+      {
+        "type": "alert",
+        "summary": "新增 alt-iran-deal：Trump暫停伊朗打擊、斡旋和談進展，殖利率微降、市場情緒改善",
+        "tickers": [
+          "WTI",
+          "DJI"
+        ],
+        "from": "",
+        "to": "info"
+      }
+    ],
+    "strengthened": [
+      {
+        "type": "stock_direction",
+        "summary": "聯發科(2454) 方向升級 neutral→bullish：昨收3,230（+3.65%，自前日信號價3,060漲+5.5%），NVDA Agentic AI千倍需求確認MediaTek邊緣AI商機",
+        "ticker": "2454",
+        "tickers": [
+          "2454"
+        ],
+        "from": "neutral",
+        "to": "bullish"
+      },
+      {
+        "type": "alert",
+        "summary": "alt-30y-treasury-record 持續強化：US 10Y 4.67%（16個月高）、30Y 5.19%（18年高）持平，高息壓力未解",
+        "tickers": [
+          "2330",
+          "TSM",
+          "NVDA"
+        ],
+        "from": "warning",
+        "to": "warning"
+      }
+    ],
+    "removed": [
+      {
+        "type": "alert",
+        "summary": "alt-nvda-earnings-may20 移除：NVDA Q1 FY2027財報已於5/20盤後公布，不確定性解除",
+        "tickers": [
+          "NVDA"
+        ],
+        "from": "warning",
+        "to": ""
+      }
+    ]
+  }
+}

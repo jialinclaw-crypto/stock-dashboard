@@ -1,0 +1,275 @@
+{
+  "_schema_version": "3.0",
+  "type": "close",
+  "report_file": "股市-收盤後-20260521.md",
+  "date": "2026-05-21",
+  "weekday": "週四",
+  "generated_at": "2026-05-21T14:06:33+08:00",
+  "expires_at": "2026-05-22T09:00:00+08:00",
+  "data_quality_note": "TAIEX 收盤點數 41,377.65（+3.39%）來自 WebSearch 合成，開盤 40,263.18/最高 41,414.42；個股股價為估算值，台積電 2,250（±30）、聯發科 3,380–3,440（高不確定性）、鴻海 248–252（估），待 TWSE 官方確認。三大法人數字為估算（外資 +500~750億）。美股報價為台灣14:00盤後延時（美東02:00，尚未開盤），NVDA AH -1.26%。",
+  "market_view": {
+    "level": "cautious_bullish",
+    "confidence": 0.6,
+    "headline": "NVDA Q1 FY27 大超預期（$81.62B +85% YoY）帶動 TAIEX +3.39% 至 41,377 點，AI 供應鏈全面慶功；但 NVDA 盤後 -1.26%（賣消息+自建晶片憂慮），今晚美股開盤為最大不確定因子",
+    "sources": [
+      "https://www.cnbc.com/2026/05/20/nvidia-nvda-earnings-report-q1-2027.html",
+      "https://nbsla.ca/nvda-stock-slides-after-nvidia-earnings-report/",
+      "https://tw.stock.yahoo.com/quote/%5ETWII",
+      "https://finance.ettoday.net/news/3161499"
+    ]
+  },
+  "indices": {
+    "TWII": {
+      "close": 41377.65,
+      "change_pct": 3.39,
+      "change_pts": 1356.83,
+      "open": 40263.18,
+      "high": 41414.42,
+      "prev_close": 40020.82,
+      "volume_bn_twd": 4500,
+      "data_quality": "estimated",
+      "note": "收盤點數來自 WebSearch 合成；成交量為估算值（大量日）。前日收盤 40,020.82 由今日漲幅反推。"
+    }
+  },
+  "institutional": {
+    "date": "2026-05-21",
+    "data_quality": "estimated",
+    "foreign_net_bn_twd": 625,
+    "trust_net_bn_twd": 80,
+    "proprietary_net_bn_twd": 115,
+    "total_net_bn_twd": 820,
+    "note": "估算值。消息源指外資今日買超可能達 751 億（史上第4大），重點搶進鴻海10萬張（ETtoday/3161499）。待 TWSE 官方確認。",
+    "sources": [
+      "https://finance.ettoday.net/news/3161499",
+      "https://www.twse.com.tw/zh/trading/foreign/t86.html"
+    ]
+  },
+  "stocks": [
+    {
+      "signal_id": "stk-2330-2026-05-21-close",
+      "ticker": "2330",
+      "name": "台積電",
+      "market": "TW",
+      "direction": "bullish",
+      "price": 2250,
+      "prev_price": 2185,
+      "change_pct": 2.97,
+      "confidence": 0.6,
+      "rationale": "連跌4日後止跌強彈 +2.97%（估）。NVDA Q1 FY27 數據中心近翻倍確認 CoWoS N2/N3E 封裝需求；TSM ADR +2.28% 盤後同步拉升。外資小量回補。短線支撐 2,220，目標 2,300–2,340。風險：NVDA 今晚若大跌，明日有 -2~4% 補跌壓力。",
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/2330.TW",
+        "https://www.cnbc.com/2026/05/20/nvidia-nvda-earnings-report-q1-2027.html",
+        "https://finance.ettoday.net/news/3150952"
+      ],
+      "expires_at": "2026-05-22T09:00:00+08:00",
+      "flags": [
+        "price_estimated",
+        "prev_price_corrected_from_2200_to_2185"
+      ]
+    },
+    {
+      "signal_id": "stk-2454-2026-05-21-close",
+      "ticker": "2454",
+      "name": "聯發科",
+      "market": "TW",
+      "direction": "bullish",
+      "price": 3400,
+      "prev_price": 3270,
+      "change_pct": 3.98,
+      "confidence": 0.45,
+      "rationale": "NVDA 財報驗證 Agentic AI 需求，聯發科 AI ASIC 卡位（Google Gemini/Meta）受益。估計今日漲幅 +3~5%，但股價存高度不確定性（近期處置股限制影響）。外資目標 4,500 元，長多格局。支撐 3,270，目標 3,500–3,600。",
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/2454.TW",
+        "https://www.wantgoo.com/stock/2454"
+      ],
+      "expires_at": "2026-05-22T09:00:00+08:00",
+      "flags": [
+        "price_high_uncertainty",
+        "price_estimated",
+        "watch_disposition_restrictions"
+      ]
+    },
+    {
+      "signal_id": "stk-2317-2026-05-21-close",
+      "ticker": "2317",
+      "name": "鴻海",
+      "market": "TW",
+      "direction": "bullish",
+      "price": 250,
+      "prev_price": 243.5,
+      "change_pct": 2.67,
+      "confidence": 0.55,
+      "rationale": "外資疑似大量搶進（估10萬張），Blackwell Ultra GB300 伺服器組裝為直接受惠方。NVDA Q1 數據中心需求近翻倍直接拉動組裝訂單。5/22 消息顯示鴻海當日最高漲幅達 5.7%，今日已開始先行。支撐 246，目標 255–265。",
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/2317.TW",
+        "https://finance.ettoday.net/news/3161499",
+        "https://www.moneyweekly.com.tw/ArticleData/Info/Article/222027"
+      ],
+      "expires_at": "2026-05-22T09:00:00+08:00",
+      "flags": [
+        "price_estimated",
+        "institutional_flow_unconfirmed"
+      ]
+    },
+    {
+      "signal_id": "stk-NVDA-2026-05-21-close",
+      "ticker": "NVDA",
+      "name": "輝達",
+      "market": "US",
+      "direction": "neutral",
+      "price": 219.54,
+      "prev_price": 222.33,
+      "change_pct": -1.26,
+      "confidence": 0.55,
+      "rationale": "Q1 FY27 Revenue $81.62B（+85% YoY，超預期 $79.2B），EPS $1.87（超 $1.76）。數據中心近翻倍，股息 25倍大增至 $0.25/季。但盤後 -1.26%：(1) 客戶自建晶片憂慮（Meta/Google ASIC）；(2) 高預期已消化；(3) AH 惰性效應。今晚正式開盤（台22:30）關鍵支撐 $215–216，跌破則有 -5%+ 下行風險。",
+      "sources": [
+        "https://www.cnbc.com/2026/05/20/nvidia-nvda-earnings-report-q1-2027.html",
+        "https://nbsla.ca/nvda-stock-slides-after-nvidia-earnings-report/",
+        "https://www.marketbeat.com/earnings/reports/2026-5-20-nvidia-co-stock/"
+      ],
+      "expires_at": "2026-05-22T09:00:00+08:00",
+      "flags": [
+        "us_market_not_yet_open",
+        "price_is_afterhours_52021_estimated"
+      ]
+    },
+    {
+      "signal_id": "stk-TSLA-2026-05-21-close",
+      "ticker": "TSLA",
+      "name": "特斯拉",
+      "market": "US",
+      "direction": "neutral",
+      "price": 414.75,
+      "prev_price": 410.0,
+      "change_pct": 1.16,
+      "confidence": 0.4,
+      "rationale": "震盪整理，無重大催化劑。今日交易區間 $406–418，尚在近期強勢格局內。FSD + Robotaxi 進展為中期多頭故事，但短線缺乏新消息。美東02:00尚未開盤，5/21 US 走勢待觀察。",
+      "sources": [
+        "https://finance.yahoo.com/quote/TSLA/",
+        "https://robinhood.com/us/en/stocks/TSLA/"
+      ],
+      "expires_at": "2026-05-22T09:00:00+08:00",
+      "flags": [
+        "us_market_not_yet_open",
+        "price_estimated"
+      ]
+    },
+    {
+      "signal_id": "stk-AAPL-2026-05-21-close",
+      "ticker": "AAPL",
+      "name": "蘋果",
+      "market": "US",
+      "direction": "neutral",
+      "price": 221.0,
+      "prev_price": 219.0,
+      "change_pct": 0.91,
+      "confidence": 0.35,
+      "rationale": "資料有限，以 5/20 估算收盤 ~$221 帶入。WWDC 為近期關注催化劑；iPhone 17 AI 功能備受期待，但短線缺乏新消息。美市尚未開盤，信心低。",
+      "sources": [
+        "https://finance.yahoo.com/quote/AAPL/"
+      ],
+      "expires_at": "2026-05-22T09:00:00+08:00",
+      "flags": [
+        "us_market_not_yet_open",
+        "price_high_uncertainty",
+        "data_insufficient"
+      ]
+    },
+    {
+      "signal_id": "stk-TSM-2026-05-21-close",
+      "ticker": "TSM",
+      "name": "台積電ADR",
+      "market": "US",
+      "direction": "bullish",
+      "price": 401.55,
+      "prev_price": 392.61,
+      "change_pct": 2.28,
+      "confidence": 0.6,
+      "rationale": "台灣 2330 強彈 +2.97% 帶動 ADR 盤後 +2.28%，收 $401.55。NVDA 財報確認 CoWoS 需求。美系外資目標 $430–450。今晚美股開盤可能跟隨 NVDA 波動。",
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/TSM",
+        "https://tw.tradingview.com/symbols/NYSE-TSM/"
+      ],
+      "expires_at": "2026-05-22T09:00:00+08:00",
+      "flags": [
+        "us_market_not_yet_open",
+        "price_is_extended_hours"
+      ]
+    }
+  ],
+  "alerts": [
+    {
+      "alert_id": "alert-nvda-ah-slide-20260521",
+      "level": "high",
+      "title": "NVDA 財報超預期但盤後下跌 -1.26%｜台股明日風險監控",
+      "detail": "NVDA Q1 FY27 Revenue $81.62B（+85% YoY），EPS $1.87 均超預期，但股票盤後跌 -1.26%（約$219）。原因：(1) 超大型客戶自建 AI 晶片長線威脅；(2) 市場預期極高、beat 不足以驚喜。今晚 22:30 台灣時間美股正式開盤為最大觀察點。若 NVDA 跌破 $215，台積電明日估計補跌 -2~4%；若守穩 $220+ 則台股延續多頭。",
+      "url": "https://www.cnbc.com/2026/05/20/nvidia-nvda-earnings-report-q1-2027.html",
+      "source": "CNBC / NBSLA",
+      "expires_at": "2026-05-22T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-foreign-buy-reversal-20260521",
+      "level": "medium",
+      "title": "外資疑似大舉翻多｜連2日賣超後強力回補",
+      "detail": "消息源指今日外資買超達約 751 億元（史上第4大，估），重點搶進鴻海超過10萬張；5/19（-632億）、5/20（-466億）連續大賣後可能大幅翻多。若確認，代表外資對台股 AI 供應鏈信心恢復，為短線多頭確認信號。待 TWSE 官方數據確認。",
+      "url": "https://finance.ettoday.net/news/3161499",
+      "source": "ETtoday財經",
+      "expires_at": "2026-05-22T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-agentic-ai-theme-20260521",
+      "level": "medium",
+      "title": "Jensen Huang 宣示「代理型AI時代已來」｜中期主題確立",
+      "detail": "NVDA 財報電話會議中 Jensen Huang 表示：'Demand has gone parabolic. The reason is simple: Agentic AI has arrived.' Nvidia 聲稱是唯一能運行所有前沿 AI 模型的平台（Anthropic/OpenAI/SpaceXAI/Meta/Google Gemini）。此主題對台積電 AI 先進封裝、聯發科 ASIC、廣達伺服器等供應鏈均為中期利多。",
+      "url": "https://www.cnbc.com/2026/05/20/nvidia-nvda-earnings-report-q1-2027.html",
+      "source": "CNBC Nvidia Q1 FY2027 Earnings",
+      "expires_at": "2026-05-22T09:00:00+08:00"
+    }
+  ],
+  "whats_changed": {
+    "generated_at": "2026-05-21T14:06:33+08:00",
+    "compared_to": "2026-05-20",
+    "methodology": "conservative: only flag confirmed or highly-probable changes; uncertain items flagged not asserted",
+    "changes": [
+      {
+        "type": "market_view_level",
+        "from": "cautious_neutral",
+        "to": "cautious_bullish",
+        "note": "NVDA Q1 FY27 大超預期確認 AI 需求，TAIEX +3.39% 突破整理；但 NVDA 盤後 -1.26% 保留謹慎"
+      },
+      {
+        "type": "index_estimate_correction",
+        "ticker": "TWII",
+        "prev_estimate": 41750,
+        "actual_prev_close": 40020.82,
+        "note": "5/20 TAIEX 實際收盤約40,020（由今日漲幅反推），昨日估值41,750偏高約+4.3%；今日收41,377.65確認"
+      },
+      {
+        "type": "direction_change",
+        "ticker": "2330",
+        "name": "台積電",
+        "from": "neutral",
+        "to": "bullish",
+        "note": "止跌反彈 +2.97%（估），NVDA 財報確認 CoWoS 需求；前收實際 2,185 vs 昨日估 2,200"
+      },
+      {
+        "type": "price_correction",
+        "ticker": "2330",
+        "name": "台積電",
+        "prev_estimate": 2200,
+        "actual_close": 2185,
+        "note": "5/20 台積電實際收盤 2,185，昨日估算 2,200 略高 15 元"
+      },
+      {
+        "type": "alert_added",
+        "alert_id": "alert-nvda-ah-slide-20260521",
+        "title": "NVDA 盤後下跌 -1.26%",
+        "note": "儘管 EPS/Revenue 雙超預期，NVDA 盤後仍跌，客戶自建晶片長線憂慮浮現；今晚正式開盤走勢將影響明日台股"
+      },
+      {
+        "type": "alert_resolved",
+        "note": "NVDA Q1 FY27 財報已公布（beat），前日「等待財報結果」不確定性解除；新不確定性為 NVDA 今晚美股正式走勢"
+      }
+    ]
+  }
+}

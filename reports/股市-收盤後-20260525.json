@@ -1,0 +1,342 @@
+{
+  "_schema_version": "3.0",
+  "type": "close",
+  "report_file": "股市-收盤後-20260525.md",
+  "date": "2026-05-25",
+  "weekday": "週一",
+  "generated_at": "2026-05-25T14:12:41+08:00",
+  "expires_at": "2026-05-26T09:00:00+08:00",
+  "data_quality_note": "TAIEX 43,317.88（+1,049.91，+2.48%）多源交叉確認（Yahoo/statementdog/storm.mg）。台積電 2,310（+55，+2.44%）來自 ETtoday 綜合盤後報告。聯發科 4,245 漲停（+380，+9.97%）來自 Yahoo/壹蘋/ETtoday 多源確認。鴻海 261（+11，+4.40%）來自盤後綜合報告。群創 49.1 三連漲停、友達 24.4 兩連漲停為 wantrich 5/25 當日確認。外資買超 464 億（money.udn）為新聞合成估算，官方待 TWSE 更新。美股 5/25 Memorial Day 休市，NVDA/TSLA/AAPL/TSM 引用 5/22 官方收盤價。",
+  "market_view": {
+    "level": "strongly_bullish",
+    "confidence": 0.78,
+    "headline": "TAIEX 43,317 創今年收盤新高（+2.48%）；聯發科漲停突破 4,000 元大關，外資目標價升至 5,922；MSCI 5/29 台積電被動外資窗口 Day 1；面板三虎三連漲停；美股 Memorial Day 休市，5/26 恢復交易為下一觀察點",
+    "sources": [
+      "https://tw.stock.yahoo.com/quote/%5ETWII",
+      "https://www.storm.mg/article/11135062",
+      "https://news.nextapple.com/life/20260525/48992547E1D62ED446EBC152EB54D87F",
+      "https://wantrich.chinatimes.com/news/20260525900377-420101"
+    ]
+  },
+  "indices": {
+    "TWII": {
+      "close": 43317.88,
+      "change_pct": 2.48,
+      "change_pts": 1049.91,
+      "open": 42667.87,
+      "high": 43438.13,
+      "low": 42667.87,
+      "prev_close": 42268.0,
+      "volume_bn_twd": 3695.6,
+      "volume_shares_k": 4237784,
+      "data_quality": "high_confidence",
+      "note": "多源交叉確認：43,317.88（+1,049.91，+2.48%）；成交 3,695.60 億、4,237,784 張。前收 42,268 為 5/22 確認值。"
+    }
+  },
+  "institutional": {
+    "date": "2026-05-25",
+    "data_quality": "estimated",
+    "foreign_net_bn_twd": 464,
+    "trust_net_bn_twd": 45,
+    "proprietary_net_bn_twd": 25,
+    "total_net_bn_twd": 534,
+    "foreign_top_buys": [
+      { "ticker": "3481", "name": "群創", "shares_k": 186000, "note": "漲停板追買，FOPLP/CoPoS 轉型" },
+      { "ticker": "ETF", "name": "主動式/高息ETF", "shares_k": null, "note": "MSCI 被動窗口" },
+      { "ticker": "2330", "name": "台積電", "shares_k": null, "note": "小量回補，MSCI 窗口 Day 1" },
+      { "ticker": "2409", "name": "友達", "shares_k": null, "note": "面板漲停跟進" },
+      { "ticker": "2317", "name": "鴻海", "shares_k": null, "note": "少量" }
+    ],
+    "note": "估算值。money.udn 報導「外資買超464億元，買超群創18.6萬張，主動式及高息ETF也受青睞」。官方待TWSE16:30後公布。MSCI 5/29生效窗口Day 1。",
+    "sources": [
+      "https://money.udn.com/money/story/5607/9488444",
+      "https://tw.stock.yahoo.com/news/%E3%80%90follow%E6%B3%95%E4%BA%BA%E3%80%91%E5%A4%96%E8%B3%87%E7%8B%82%E6%8E%8318%E8%90%AC%E5%BC%B5%E7%BE%A4%E5%89%B5%EF%BC%81%E5%8F%8D%E6%89%8B%E7%A0%8D3%E8%90%AC%E5%BC%B5%E6%97%BA%E5%AE%8F-%E8%81%AF%E9%9B%BB%E4%B9%9F%E9%81%AD%E7%94%A92%E8%90%AC%E5%BC%B5-070340493.html",
+      "https://www.twse.com.tw/zh/trading/foreign/t86.html"
+    ]
+  },
+  "stocks": [
+    {
+      "signal_id": "stk-2330-2026-05-25-close",
+      "ticker": "2330",
+      "name": "台積電",
+      "market": "TW",
+      "direction": "bullish",
+      "price": 2310,
+      "prev_price": 2255,
+      "change_pct": 2.44,
+      "confidence": 0.75,
+      "rationale": "MSCI 5/29 台灣新興市場調整生效（台灣EM權重 23.46%→23.76%，台積電EM佔比升至58.33%），被動外資窗口 Day 1 開啟（5/25-5/29），全周為買盤期。今日 +2.44%（+55 元至 2,310）確認突破 2,300 整數關。外資今日台積電小量回補，主力預期 5/27-5/29 集中買入。目標 2,350→2,400；支撐 2,280～2,300。TSM ADR（5/22：$405.83）隱含 5/26 開盤 $415+ 待確認。",
+      "sources": [
+        "https://finance.ettoday.net/news/3171682",
+        "https://news.pchome.com.tw/finance/cna_business/20260513/index-17786362894923722003.html",
+        "https://www.pocket.tw/school/report/perspective/7449/",
+        "https://tw.stock.yahoo.com/quote/2330.TW"
+      ],
+      "expires_at": "2026-05-26T09:00:00+08:00",
+      "flags": ["msci_window_active", "breakout_2300_confirmed"]
+    },
+    {
+      "signal_id": "stk-2454-2026-05-25-close",
+      "ticker": "2454",
+      "name": "聯發科",
+      "market": "TW",
+      "direction": "strongly_bullish",
+      "price": 4245,
+      "prev_price": 3865,
+      "change_pct": 9.97,
+      "confidence": 0.78,
+      "rationale": "【本日最大主軸】漲停突破 4,000 元大關（5/22 出關 +8.87% → 5/25 漲停 +9.97%，兩日累漲+19.8%）。外資最新研報：Google TPU v9「Humufish（A5922）」確認聯發科為核心平台供應商（而非備援），升級至 2nm 製程＋HBM4e。出貨量預估 160萬→240萬顆（+50%），ASP $15,000/顆，2028年可貢獻 360 億美元（佔總營收63%）。外資目標價 4,500→5,922 元（High Conviction Outperform）。下周守 4,000 可挑戰 4,500；短線注意 RSI 極限（≈95），連漲後獲利了結壓力。",
+      "sources": [
+        "https://news.nextapple.com/life/20260525/48992547E1D62ED446EBC152EB54D87F",
+        "https://finance.ettoday.net/news/3171489",
+        "https://www.pocket.tw/school/report/SCHOOL/7422/",
+        "https://tw.stock.yahoo.com/news/google-tpu%E8%A6%81%E8%A7%92%E4%B8%8D%E5%8F%AA%E8%81%AF%E7%99%BC%E7%A7%91%EF%BC%81%E5%8F%B0%E7%81%A3google%E9%AB%98%E7%AE%A1%E9%BB%9E%E5%90%8D%E3%80%8C%E6%95%A3%E7%86%B1%E6%88%90%E9%97%9C%E9%8D%B5%E3%80%8D-%E5%A4%A7%E8%AE%9Aai%E4%BE%9B%E6%87%89%E9%8F%88-074757331.html"
+      ],
+      "expires_at": "2026-05-26T09:00:00+08:00",
+      "flags": ["limit_up_close", "4000_breakout_new_milestone", "google_tpu_upgrade_confirmed"]
+    },
+    {
+      "signal_id": "stk-2317-2026-05-25-close",
+      "ticker": "2317",
+      "name": "鴻海",
+      "market": "TW",
+      "direction": "bullish",
+      "price": 261,
+      "prev_price": 250,
+      "change_pct": 4.4,
+      "confidence": 0.70,
+      "rationale": "連漲第三日（5/21 +3.12% → 5/22 +1.01% → 5/25 +4.40%），261 元創近期新高。Blackwell Ultra GB300 AI 伺服器組裝持續放量，2026H2 出貨高速成長。外資少量配置。支撐 255～258；目標 270→280。",
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/2317.TW",
+        "https://finance.ettoday.net/news/3171682"
+      ],
+      "expires_at": "2026-05-26T09:00:00+08:00",
+      "flags": ["three_day_rally"]
+    },
+    {
+      "signal_id": "stk-NVDA-2026-05-25-close",
+      "ticker": "NVDA",
+      "name": "輝達",
+      "market": "US",
+      "direction": "bullish",
+      "price": 223.47,
+      "prev_price": 219.54,
+      "change_pct": null,
+      "confidence": 0.65,
+      "rationale": "【無新數據：美股 5/25 Memorial Day 休市】引用 5/22 收盤 $223.47（+1.30%，化解財報後 sell-the-news）。5/26 恢復交易後，須確認能否延續 $220+ 支撐。台積電今日 +2.44% 間接利多。供應鏈 ASIC 訂單（聯發科 Google TPU）確認，Blackwell Ultra 需求持續，CoWoS 封裝供不應求。目標 $240-260；支撐 $210-215。",
+      "sources": [
+        "https://finance.yahoo.com/quote/NVDA/"
+      ],
+      "expires_at": "2026-05-26T09:00:00+08:00",
+      "flags": ["us_market_holiday_no_new_data", "last_price_date_20260522"]
+    },
+    {
+      "signal_id": "stk-TSLA-2026-05-25-close",
+      "ticker": "TSLA",
+      "name": "特斯拉",
+      "market": "US",
+      "direction": "neutral",
+      "price": 418.4,
+      "prev_price": 418.4,
+      "change_pct": null,
+      "confidence": 0.5,
+      "rationale": "【無新數據：美股 5/25 Memorial Day 休市】引用 5/22 收盤 $418.40。5/26 恢復交易觀察。FSD/Robotaxi 進展為主要催化劑；短期走勢受大盤情緒主導。",
+      "sources": [
+        "https://finance.yahoo.com/quote/TSLA/"
+      ],
+      "expires_at": "2026-05-26T09:00:00+08:00",
+      "flags": ["us_market_holiday_no_new_data", "last_price_date_20260522"]
+    },
+    {
+      "signal_id": "stk-AAPL-2026-05-25-close",
+      "ticker": "AAPL",
+      "name": "蘋果",
+      "market": "US",
+      "direction": "neutral",
+      "price": 302.25,
+      "prev_price": 302.25,
+      "change_pct": null,
+      "confidence": 0.5,
+      "rationale": "【無新數據：美股 5/25 Memorial Day 休市】引用 5/22 收盤 $302.25。5/26 恢復交易觀察。iPhone 17 AI 功能／Apple Intelligence 為下半年催化劑。",
+      "sources": [
+        "https://finance.yahoo.com/quote/AAPL/"
+      ],
+      "expires_at": "2026-05-26T09:00:00+08:00",
+      "flags": ["us_market_holiday_no_new_data", "last_price_date_20260522"]
+    },
+    {
+      "signal_id": "stk-TSM-2026-05-25-close",
+      "ticker": "TSM",
+      "name": "台積電ADR",
+      "market": "US",
+      "direction": "bullish",
+      "price": 405.83,
+      "prev_price": 405.83,
+      "change_pct": null,
+      "confidence": 0.70,
+      "rationale": "【無新數據：美股 5/25 Memorial Day 休市】引用 5/22 收盤 $405.83（+1.05%）。5/26 恢復交易時，台股台積電今日 +2.44% 應帶動 TSM ADR 開盤 +2～3%（隱含 $414-420）。MSCI 5/29 生效前被動買盤為利多。",
+      "sources": [
+        "https://finance.yahoo.com/quote/TSM/"
+      ],
+      "expires_at": "2026-05-26T09:00:00+08:00",
+      "flags": ["us_market_holiday_no_new_data", "last_price_date_20260522", "msci_window_active"]
+    }
+  ],
+  "alerts": [
+    {
+      "alert_id": "alert-msci-window-day1-20260525",
+      "level": "high",
+      "category": "event",
+      "title": "MSCI 5/29 台灣調整生效｜被動外資窗口 Day 1 啟動",
+      "body": "MSCI 半年度調整 5/29 收盤生效：台灣 EM 權重 23.46%→23.76%（+0.30%），台積電 EM 佔比升至 58.33%。被動外資自 5/25 起分批進場，5/29 為最大量集中日。台積電為首選標的，今日已收 +2.44% 至 2,310；預期 5/27-5/29 買盤加速。台股整體被動資金流入估計 120-200 億美元（分散 5 個交易日）。",
+      "tickers": ["2330", "TSM"],
+      "direction": "bullish",
+      "confidence": 0.82,
+      "rationale": "MSCI 官方公告5/29生效，台積電為最大受益個股（權重最高），被動ETF（EWT等）需同步調整。",
+      "sources": [
+        "https://news.pchome.com.tw/finance/cna_business/20260513/index-17786362894923722003.html",
+        "https://news.cnyes.com/news/id/6456090",
+        "https://www.pocket.tw/school/report/perspective/7449/"
+      ],
+      "expires_at": "2026-05-29T16:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-2454-limit-up-4000-20260525",
+      "level": "high",
+      "category": "breakout",
+      "title": "聯發科漲停突破 4,000｜外資目標價 5,922 元",
+      "body": "聯發科今日以漲停價 4,245 元（+9.97%）作收，連同 5/22（+8.87%），兩日累漲 +19.8%，完成 4,000 元歷史大關突破。催化劑：外資最新研報確認 Google TPU v9「Humufish」聯發科為核心平台供應商，2nm+HBM4e 升級，2028年ASIC出貨 240 萬顆，ASP $15,000，可貢獻 360 億美元（佔總營收 63%）。外資目標價 4,500→5,922 元。下周觀察：守穩 4,000 為關鍵；RSI≈95 極度超買，短線可能先回測 3,900-4,000 後再攻。",
+      "tickers": ["2454"],
+      "direction": "strongly_bullish",
+      "confidence": 0.75,
+      "rationale": "漲停確認＋外資目標大幅調升＋Google TPU供應鏈結構性確認，但RSI超買是主要風險。",
+      "sources": [
+        "https://news.nextapple.com/life/20260525/48992547E1D62ED446EBC152EB54D87F",
+        "https://finance.ettoday.net/news/3171489",
+        "https://www.pocket.tw/school/report/SCHOOL/7422/"
+      ],
+      "expires_at": "2026-05-26T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-panel-sector-limit-up-20260525",
+      "level": "high",
+      "category": "sector_rotation",
+      "title": "面板三虎三連漲停｜AI 封裝轉型確立",
+      "body": "群創（3481）三連漲停收 49.1 元（16年新高），友達（2409）兩連漲停收 24.4 元，彩晶（6116）漲停 13 元。外資今日買超群創 18.6 萬張（全市場第一），目標價全面超標。催化劑：群創 FOPLP→CoPoS 玻璃基板封裝定位（與 CoWoS 競品）；友達 AI 光通訊/CPO 模組；分析師確認「不再是景氣循環股，是 AI 封裝轉型股」。大摩（Morgan Stanley）上修目標價逾60%。短線注意連漲後高點套牢風險；中期轉型若成立，仍有行情。",
+      "tickers": ["3481", "2409", "6116"],
+      "direction": "strongly_bullish",
+      "confidence": 0.68,
+      "rationale": "外資18.6萬張買超+三連漲停=結構性轉型確認，但高位追貨風險不小。",
+      "sources": [
+        "https://wantrich.chinatimes.com/news/20260525900377-420101",
+        "https://money.udn.com/money/story/5607/9488444",
+        "https://tw.stock.yahoo.com/news/%E9%9D%A2%E6%9D%BF%E9%9B%99%E8%99%8E%E9%8E%96%E6%BC%B2%E5%81%9C%EF%BC%81%E7%BE%A4%E5%89%B5%E5%8F%8B%E9%81%94%E6%88%90%E4%BA%A4%E9%87%8F%E9%9C%B8%E6%A6%9C%E9%80%BE38%E8%90%AC%E5%BC%B5%E8%B2%B7%E5%96%AE%E9%AB%98%E6%8E%9B-%E5%88%86%E6%9E%90%E5%B8%AB%E6%A8%82%E7%9C%8B%E8%A1%8C%E6%83%85-020237626.html"
+      ],
+      "expires_at": "2026-05-26T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-us-memorial-day-resume-20260525",
+      "level": "low",
+      "category": "event",
+      "title": "美股 5/25 Memorial Day 休市｜5/26 恢復交易觀察",
+      "body": "美股 5/25（週一）Memorial Day 全面休市，NVDA/TSLA/AAPL/TSM 均無新數據，引用 5/22 收盤。5/26（週二）恢復交易後，需確認：① TSM ADR 能否反映台積電今日 +2.44%（隱含開盤 $414-420）；② NVDA 能否守住 $220 支撐並延續漲勢；③ 整體科技股能否接力台股氣勢。",
+      "tickers": ["NVDA", "TSLA", "AAPL", "TSM"],
+      "direction": "neutral",
+      "confidence": 0.55,
+      "rationale": "標準假日休市提醒，無方向性判斷，需等5/26實際開盤確認。",
+      "sources": [
+        "https://finance.yahoo.com/quote/NVDA/"
+      ],
+      "expires_at": "2026-05-26T12:00:00+08:00"
+    }
+  ],
+  "whats_changed": {
+    "vs_report": "股市-收盤後-20260522.json",
+    "vs_date": "2026-05-22",
+    "generated_at": "2026-05-25T14:12:41+08:00",
+    "market_level_change": {
+      "from": "bullish",
+      "to": "strongly_bullish",
+      "note": "TAIEX 42,268→43,317（+1,049.91，+2.48%），今年收盤新高，由聯發科漲停＋MSCI外資窗口主導，市場信心升級。"
+    },
+    "stock_direction_changes": [],
+    "stock_price_changes": [
+      {
+        "ticker": "2330",
+        "name": "台積電",
+        "prev_price": 2250,
+        "new_price": 2310,
+        "change_pct": 2.67,
+        "direction_unchanged": true,
+        "note": "方向不變（bullish），MSCI窗口催化，突破2,300確認。"
+      },
+      {
+        "ticker": "2454",
+        "name": "聯發科",
+        "prev_price": 3865,
+        "new_price": 4245,
+        "change_pct": 9.83,
+        "direction_unchanged": true,
+        "note": "方向不變（strongly_bullish），但強度大幅升高：漲停＋4,000突破＋外資目標5,922。"
+      },
+      {
+        "ticker": "2317",
+        "name": "鴻海",
+        "prev_price": 250,
+        "new_price": 261,
+        "change_pct": 4.4,
+        "direction_unchanged": true,
+        "note": "方向不變（bullish），連三漲。"
+      },
+      {
+        "ticker": "NVDA",
+        "name": "輝達",
+        "prev_price": 223.47,
+        "new_price": 223.47,
+        "change_pct": 0,
+        "direction_unchanged": true,
+        "note": "無變化：美股 Memorial Day 休市，引用 5/22 數據。"
+      },
+      {
+        "ticker": "TSLA",
+        "name": "特斯拉",
+        "prev_price": 418.4,
+        "new_price": 418.4,
+        "change_pct": 0,
+        "direction_unchanged": true,
+        "note": "無變化：美股 Memorial Day 休市，引用 5/22 數據。"
+      },
+      {
+        "ticker": "AAPL",
+        "name": "蘋果",
+        "prev_price": 302.25,
+        "new_price": 302.25,
+        "change_pct": 0,
+        "direction_unchanged": true,
+        "note": "無變化：美股 Memorial Day 休市，引用 5/22 數據。"
+      },
+      {
+        "ticker": "TSM",
+        "name": "台積電ADR",
+        "prev_price": 405.83,
+        "new_price": 405.83,
+        "change_pct": 0,
+        "direction_unchanged": true,
+        "note": "無變化：美股 Memorial Day 休市，引用 5/22 數據。MSCI窗口隱含5/26大漲開盤。"
+      }
+    ],
+    "alerts_added": [
+      "alert-msci-window-day1-20260525",
+      "alert-2454-limit-up-4000-20260525",
+      "alert-panel-sector-limit-up-20260525",
+      "alert-us-memorial-day-resume-20260525"
+    ],
+    "alerts_removed": [
+      "alert-2454-disposition-removed-20260522",
+      "alert-taiex-42000-watch-20260522",
+      "alert-ai-asic-rotation-20260522"
+    ],
+    "alerts_level_changes": [],
+    "summary": "三大變化：① 市場情緒升級 bullish→strongly_bullish（TAIEX創高）；② 聯發科持續 strongly_bullish 但動能更強（漲停+4000突破+目標5922）；③ 新增 MSCI 窗口（高級別）和面板漲停（高級別）兩大新主題警報，取代已到期的 5/22 處置解除/42000關口警報。美股無變化（節假日）。"
+  }
+}

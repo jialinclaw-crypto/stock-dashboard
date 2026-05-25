@@ -1,0 +1,391 @@
+{
+  "_schema_version": 3,
+  "type": "morning",
+  "report_file": "股市-開盤前-20260526.md",
+  "date": "2026-05-26",
+  "weekday": "週二",
+  "generated_at": "2026-05-26T07:38:34+08:00",
+  "market_view": {
+    "level": "bullish",
+    "confidence": 0.68,
+    "headline": "台股昨收43,644歷史新高（+3.26%），三大法人NT$642億強力護盤；MSCI 5/29台積電調升進入最後72小時，被動外資窗口今至5/28為最後加倉節點；惟聯發科3日+22%後RSI>95嚴重超買（處置交易）、美30Y殖利率5.20%仍在高位，需防昨日大漲後獲利了結壓力"
+  },
+  "indices": [
+    { "name": "道瓊工業",      "ticker": "DJI",   "value": 50580.0,  "change_pct": 0.58,  "trend": "bullish" },
+    { "name": "S&P 500",      "ticker": "SPX",   "value": 7473.47,  "change_pct": 0.37,  "trend": "bullish" },
+    { "name": "Nasdaq",       "ticker": "IXIC",  "value": 26344.0,  "change_pct": 0.19,  "trend": "bullish" },
+    { "name": "費城半導體",   "ticker": "SOX",   "value": 12202.54, "change_pct": 1.99,  "trend": "bullish" },
+    { "name": "VIX 恐慌指數", "ticker": "VIX",   "value": 16.70,    "change_pct": -0.36, "trend": "neutral" },
+    { "name": "美 10Y 殖利率","ticker": "US10Y", "value": 4.57,     "change_pct": 0.00,  "trend": "neutral" },
+    { "name": "美 30Y 殖利率","ticker": "US30Y", "value": 5.20,     "change_pct": 0.12,  "trend": "bearish" },
+    { "name": "美元指數",     "ticker": "DXY",   "value": 99.25,    "change_pct": -0.07, "trend": "neutral" },
+    { "name": "台股加權指數", "ticker": "TWII",  "value": 43644.0,  "change_pct": 3.26,  "trend": "bullish" },
+    { "name": "WTI 原油",     "ticker": "WTI",   "value": 106.5,    "change_pct": -2.30, "trend": "neutral" }
+  ],
+  "stocks": [
+    {
+      "signal_id": "stk-2330-2026-05-26-morning",
+      "ticker": "2330",
+      "name": "台積電",
+      "market": "TW",
+      "signal": "🟢",
+      "direction": "bullish",
+      "confidence": 0.72,
+      "view": "昨（5/25）收2,295元（+1.77%），創近期收盤新高，MSCI 5/29調整今日進入最後72小時。技術面多頭排列完整（5MA>20MA>60MA），RSI約68，MACD正穿訊延伸，量能充沛。今至5/28為被動外資最後加倉窗口，台積電獲獨特支撐，不宜輕言獲利了結。CoWoS/SoIC先進封裝持續滿載，GB200訂單能見度高。下一目標：5/7歷史高點2,345，突破後展望2,500。支撐2,250，止損2,180。",
+      "rationale": "MSCI被動外資窗口進入最後72小時，技術面多頭，台股昨日ATH確認主升段延伸",
+      "price": 2295,
+      "change_pct": 1.77,
+      "support": 2250,
+      "resistance": 2345,
+      "stop_loss": 2180,
+      "target": 2500,
+      "technicals": {
+        "rsi14": 68,
+        "macd": "正值延伸，動能健康",
+        "ma_alignment": "5MA>20MA>60MA多頭排列，量能充沛"
+      },
+      "valuation": {
+        "pe": 27,
+        "pe_percentile_5y": 45,
+        "verdict": "合理偏低，AI算力週期支撐高估值"
+      },
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/2330.TW",
+        "https://finance.yahoo.com/quote/TSM/",
+        "https://tw.stock.yahoo.com/news/msci%E8%AA%BF%E6%95%B45%E6%9C%8829%E6%97%A5%E7%94%9F%E6%95%88-135537232.html"
+      ],
+      "expires_at": "2026-05-26T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-2454-2026-05-26-morning",
+      "ticker": "2454",
+      "name": "聯發科",
+      "market": "TW",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.55,
+      "view": "昨（5/25）漲停至4,245元，3日累計漲幅逾+22%。AI ASIC主題長線確立（Google Cloud訂單爆發，高盛目標NT$5,000），但短線數據極度警示：RSI>95嚴重超買，目前處置交易（每5分鐘人工撮合），高檔賣壓蓄積巨大。今日若開高切勿追入；若開低，觀察4,050–4,100是否守穩（5日均線區間）。原持有者宜在4,200–4,300間繼續分批鎖利，等回調至3,950–4,050後重新評估介入時機。",
+      "rationale": "AI ASIC長線主題不動搖，但3日+22%後RSI>95+處置交易，信心降至0.55，高檔追入風險極大",
+      "price": 4245,
+      "change_pct": 9.97,
+      "support": 3950,
+      "resistance": 4500,
+      "stop_loss": 3700,
+      "target": 5000,
+      "technicals": {
+        "rsi14": 96,
+        "macd": "極強正值，嚴重正乖離，過熱警示",
+        "ma_alignment": "大幅站上所有均線，乖離率創近年最高"
+      },
+      "valuation": {
+        "pe": 61,
+        "pe_percentile_5y": 82,
+        "verdict": "偏高，AI ASIC快速成長支撐；高盛目標$5000隱含+17%空間"
+      },
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/2454.TW",
+        "https://money.udn.com/money/story/5612/9486874",
+        "https://www.sinotrade.com.tw/richclub/hotstock/%E4%BB%8A%E6%97%A5%E6%BC%B2%E5%81%9C%E8%82%A1-AI-%E5%8D%8A%E5%B0%8E%E9%AB%94%E9%A0%98%E8%BB%8D-%E5%8F%B0%E8%82%A1%E6%94%BB%E7%A0%B4-43000-%E9%BB%9E-0525-6a13eba0b9f65b18ab6f5909"
+      ],
+      "expires_at": "2026-05-26T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-2317-2026-05-26-morning",
+      "ticker": "2317",
+      "name": "鴻海",
+      "market": "TW",
+      "signal": "🟢",
+      "direction": "bullish",
+      "confidence": 0.68,
+      "view": "昨（5/25）突破260元前高阻力，收261元（+4.40%），放量K線確認突破型態。Q1 EPS NT$3.56元同期歷史最佳（+19% YoY），AI伺服器全年出貨目標倍增，Q2「整體營運雙升」。5/29股東大會將釋Q2具體展望，與MSCI生效同日，形成雙催化劑。今日觀察能否維持261以上；若回測255–260整理為健康突破確認，可考慮加碼。目標275–280，止損246。",
+      "rationale": "260元突破確認，Q1 EPS歷史最高+AI伺服器倍增+5/29股東大會，多頭格局強化",
+      "price": 261,
+      "change_pct": 4.40,
+      "support": 255,
+      "resistance": 280,
+      "stop_loss": 246,
+      "target": 280,
+      "technicals": {
+        "rsi14": 68,
+        "macd": "正值加速，突破訊號確認",
+        "ma_alignment": "5MA站上20MA，多頭格局強化，放量突破"
+      },
+      "valuation": {
+        "pe": 12,
+        "pe_percentile_5y": 33,
+        "verdict": "相對低估，AI伺服器訂單翻倍為主要催化"
+      },
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/2317.TW",
+        "https://www.sinotrade.com.tw/richclub/hotstock/%E9%B4%BB%E6%B5%B7-2317-0525-6a05828704e2f918d3577a22"
+      ],
+      "expires_at": "2026-05-26T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-NVDA-2026-05-26-morning",
+      "ticker": "NVDA",
+      "name": "輝達",
+      "market": "US",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.50,
+      "view": "Q1 FY2027財報大超（EPS $1.87，Rev $81.6B，Q2指引$91B），$800億庫藏股回購，但sell-the-news格局進入第四日。$210–$213支撐帶尚未見明確守穩訊號，$215附近徘徊中。SOX週五反彈+1.99%但NVDA逆勢偏弱，機構賣壓尚未完全消化。關鍵：今晚能否回站$217並守穩，若確認落底可考慮小倉佈局，止損$205。長線無疑問（AI基建每年3–4兆美元市場至2030）。",
+      "rationale": "財報超強但sell-the-news第四日，$210支撐帶確認前維持觀望，避免接落刀",
+      "price": 215.33,
+      "change_pct": -0.36,
+      "support": 210,
+      "resistance": 227,
+      "stop_loss": 205,
+      "target": 280,
+      "technicals": {
+        "rsi14": 45,
+        "macd": "MACD柱收縮轉負，動能持續流失",
+        "ma_alignment": "短線跌破20日均線，偏弱"
+      },
+      "valuation": {
+        "pe": 43,
+        "pe_percentile_5y": 54,
+        "verdict": "含Q2指引上調後合理；AI基建訂單支撐高估值，賣壓消化後具吸引力"
+      },
+      "sources": [
+        "https://finance.yahoo.com/quote/NVDA/",
+        "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-first-quarter-fiscal-2026",
+        "https://www.cnbc.com/2026/05/20/nvidia-nvda-earnings-report-q1-2027.html"
+      ],
+      "expires_at": "2026-05-26T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-TSLA-2026-05-26-morning",
+      "ticker": "TSLA",
+      "name": "特斯拉",
+      "market": "US",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.52,
+      "view": "大盤帶動維持$426附近。德州三城市Unsupervised FSD Robotaxi運行中，FSD歐洲轉訂閱制，基本面催化輪廓清晰但短期兌現有限（Musk：2027年才有實質收益）。47位分析師共識目標$411低於現價，P/E 105x偏高。$405–$440箱型整理為中性預期，不宜重倉追多。",
+      "rationale": "Robotaxi 2027才實質貢獻+共識目標低於現價，缺乏短線催化，維持觀望",
+      "price": 426.01,
+      "change_pct": 1.95,
+      "support": 405,
+      "resistance": 440,
+      "stop_loss": 385,
+      "target": 470,
+      "technicals": {
+        "rsi14": 58,
+        "macd": "輕微正，隨大盤反彈",
+        "ma_alignment": "50日均線附近盤整，方向中性"
+      },
+      "valuation": {
+        "pe": 105,
+        "pe_percentile_5y": 38,
+        "verdict": "高估值需FSD/Robotaxi兌現；2027年才實質貢獻"
+      },
+      "sources": [
+        "https://finance.yahoo.com/quote/TSLA/",
+        "https://www.fool.com/investing/2026/05/14/heres-when-teslas-robotaxi-rollout-will-really-ram/"
+      ],
+      "expires_at": "2026-05-26T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-AAPL-2026-05-26-morning",
+      "ticker": "AAPL",
+      "name": "蘋果",
+      "market": "US",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.60,
+      "view": "Q2 FY2026 Rev $111.2B（+17% YoY），iPhone 17強勁（+22%），印度製造44%比重，供應鏈多元化完成。Wedbush目標上調至$400。WWDC預計6月底為下一催化劑。美伊和談進展→通膨壓力降低→AAPL服務業估值受益。防禦屬性顯著，守$300支撐，目標$330。",
+      "rationale": "WWDC6月下旬催化+印度供應鏈落地+Wedbush目標$400，信心提升至0.60",
+      "price": 308.41,
+      "change_pct": 0.52,
+      "support": 300,
+      "resistance": 315,
+      "stop_loss": 288,
+      "target": 330,
+      "technicals": {
+        "rsi14": 62,
+        "macd": "輕微正，緩步上行",
+        "ma_alignment": "站穩短中期均線，緩慢多頭"
+      },
+      "valuation": {
+        "pe": 32,
+        "pe_percentile_5y": 50,
+        "verdict": "合理估值；服務業務+回購支撐，關稅風險降低"
+      },
+      "sources": [
+        "https://finance.yahoo.com/quote/AAPL/",
+        "https://www.thestreet.com/investing/stocks/veteran-analyst-resets-apple-stock-price-target-for-2026",
+        "https://www.fxleaders.com/news/2026/05/02/apple-stock-forecast-may-3-2026-iphone-cycle-wwdc-ai-catalyst-in-focus/"
+      ],
+      "expires_at": "2026-05-26T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-TSM-2026-05-26-morning",
+      "ticker": "TSM",
+      "name": "台積電ADR",
+      "market": "US",
+      "signal": "🟢",
+      "direction": "bullish",
+      "confidence": 0.70,
+      "view": "MSCI 5/29生效前最後三個交易日，TSM ADR被動外資需求持續提升。2330昨收2,295元，ADR理論值略升；ADR本身$404.52（5/22），週五小跌$1.31屬前置期正常波動。RSI約63，MACD正值，$395–$400強支撐帶為本週買點。今日若回測$400仍為好的加倉機會，目標$425–$450，止損$378。",
+      "rationale": "MSCI最後加倉視窗進入最後三天，信心升至0.70，$395-400為本週買點帶",
+      "price": 404.52,
+      "change_pct": -0.32,
+      "support": 395,
+      "resistance": 425,
+      "stop_loss": 378,
+      "target": 450,
+      "technicals": {
+        "rsi14": 63,
+        "macd": "正值延伸，動能健康",
+        "ma_alignment": "所有均線多頭排列，趨勢向上"
+      },
+      "valuation": {
+        "pe": 27,
+        "pe_percentile_5y": 45,
+        "verdict": "合理偏低；MSCI+AI算力訂單雙重催化"
+      },
+      "sources": [
+        "https://finance.yahoo.com/quote/TSM/",
+        "https://tw.stock.yahoo.com/news/msci%E8%AA%BF%E6%95%B45%E6%9C%8829%E6%97%A5%E7%94%9F%E6%95%88-135537232.html"
+      ],
+      "expires_at": "2026-05-26T13:30:00+08:00"
+    }
+  ],
+  "alerts": [
+    {
+      "alert_id": "alt-nvda-sell-news",
+      "level": "warning",
+      "text": "【NVDA sell-the-news 第四日】史詩財報（Q1 $81.6B/Q2指引$91B/$800億回購）公布後連續四日弱勢，$215附近徘徊；SOX反彈但NVDA逆市，機構賣壓仍在消化中。$210–$213支撐帶尚未確認守穩，建議等收盤站穩$217再考慮介入，止損$205。",
+      "tickers": ["NVDA"],
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-first-quarter-fiscal-2026",
+      "source": "NVIDIA Newsroom"
+    },
+    {
+      "alert_id": "alt-30y-treasury-record",
+      "level": "warning",
+      "text": "【美30Y殖利率5.20%——2007年來最高】美30年期公債殖利率持續在5.20%，創17年新高；反映市場對美國長期財政赤字疑慮，成長型/高估值股票折現率壓力加劇，NVDA/TSLA估值受結構性壓抑，注意若進一步升至5.30%可能引發估值重評。",
+      "tickers": ["NVDA", "TSLA", "AAPL", "TSM"],
+      "url": "https://www.investing.com/rates-bonds/u.s.-10-year-bond-yield",
+      "source": "Investing.com"
+    },
+    {
+      "alert_id": "alt-fed-rate-hike-risk",
+      "level": "warning",
+      "text": "【Warsh接任Fed主席，政策不確定性持續】Kevin Warsh（5/15接任）偏鷹派立場使市場維持2027升息機率評估；Fed目前維持3.50–3.75%，30Y持續走升顯示市場不信任長期通膨控制，升息尾端風險仍存。",
+      "tickers": [],
+      "url": "https://www.jpmorgan.com/insights/global-research/economy/fed-rate-cuts",
+      "source": "J.P. Morgan Global Research"
+    },
+    {
+      "alert_id": "alt-msci-rebalance",
+      "level": "warning",
+      "text": "【⚠️ MSCI 5/29 台積電調升——最後72小時！】MSCI全球指數5/29收盤生效，台積電（2330/TSM）權重上升，被動外資最後加倉窗口今日至5/28。昨日外資已大量進場（NT$494億），今日至週四為最後衝刺期，台積電不宜在5/29前放空。鴻海5/29股東大會與MSCI同日，雙催化劑。",
+      "tickers": ["2330", "TSM", "2317"],
+      "url": "https://tw.stock.yahoo.com/news/msci%E8%AA%BF%E6%95%B45%E6%9C%8829%E6%97%A5%E7%94%9F%E6%95%88-135537232.html",
+      "source": "Yahoo股市"
+    },
+    {
+      "alert_id": "alt-mediatek-asic-surge",
+      "level": "warning",
+      "text": "【⚠️ 聯發科AI ASIC暴漲三日+22%—— RSI>95+處置交易，嚴重超買警示】5/23+9.97%漲停（前兩日各+10%），3日累漲逾22%至4,245元，現處置交易（每5分鐘撮合），RSI>95。AI ASIC長線主題確立，但短線獲利了結風險極高。持倉者高檔繼續分批減碼，觀察4,050支撐，等回調至3,950–4,100再評估重新介入。",
+      "tickers": ["2454"],
+      "url": "https://money.udn.com/money/story/5612/9486874",
+      "source": "經濟日報"
+    },
+    {
+      "alert_id": "alt-twii-new-high",
+      "level": "info",
+      "text": "【台股TWII 43,644 改寫歷史新高——+3.26% 史上第四大單日漲點】台股週一（5/25）狂飆1,376點至43,644，首破43,000關口改寫歷史高點。外資買超NT$494億，三大法人合計NT$642億，AI半導體全面點火（聯發科漲停、台積電+1.77%、鴻海+4.4%）。今日觀察能否維持43,200以上動能，以確認主升段延伸。",
+      "tickers": ["2330", "2454", "2317"],
+      "url": "https://www.sinotrade.com.tw/richclub/hotstock/%E4%BB%8A%E6%97%A5%E6%BC%B2%E5%81%9C%E8%82%A1-AI-%E5%8D%8A%E5%B0%8E%E9%AB%94%E9%A0%98%E8%BB%8D-%E5%8F%B0%E8%82%A1%E6%94%BB%E7%A0%B4-43000-%E9%BB%9E-0525-6a13eba0b9f65b18ab6f5909",
+      "source": "豐雲學堂"
+    },
+    {
+      "alert_id": "alt-iran-deal-progress",
+      "level": "info",
+      "text": "【美伊和談持續推進，WTI回落至$106.5】美伊談判持續向前，霍姆茲海峽重開漸成共識，WTI本週繼續回落（從$112→$106.5），通膨壓力邊際改善，支持Fed維持利率；若協議正式簽署WTI可能跌至$95–$100，對台灣整體物價有利。",
+      "tickers": [],
+      "url": "https://fxdailyreport.com/us-dollar-index-dxy-jumps-as-30-year-year-yield-touches-highest-since-global-financial-crisis/",
+      "source": "FX Daily Report"
+    },
+    {
+      "alert_id": "alt-foxconn-shareholder-meeting",
+      "level": "info",
+      "text": "【鴻海5/29股東大會——Q2展望與AI伺服器倍增指引】鴻海5/29股東大會與MSCI台積電調升生效同日，Q1 EPS NT$3.56元歷史新高，AI伺服器全年出貨倍增確認，會中將釋Q2收入+利潤雙升具體指引，預計為鴻海短線再添題材。",
+      "tickers": ["2317"],
+      "url": "https://www.sinotrade.com.tw/richclub/hotstock/%E9%B4%BB%E6%B5%B7-2317-0525-6a05828704e2f918d3577a22",
+      "source": "豐雲學堂"
+    }
+  ],
+  "sector_rotation": {
+    "strong": [
+      "MSCI被動外資→台積電/TSM ADR（最後72小時最強支撐）",
+      "AI晶圓代工（台積電CoWoS/SoIC/GB200滿載）",
+      "AI伺服器組裝（鴻海 Q1+19%，全年倍增）",
+      "台股AI半導體族群（昨日TWII +3.26% ATH外資大掃貨）"
+    ],
+    "weak": [
+      "NVDA sell-the-news（財報後連四日弱，SOX反彈但NVDA獨立弱）",
+      "聯發科（AI ASIC長線強，但RSI>95+處置交易，短線極度超買）",
+      "長債敏感成長股（美30Y殖利率5.20% 17年高位壓抑估值）"
+    ],
+    "watch": [
+      "MSCI 5/29生效：台積電/TSM ADR最後72小時加倉動態",
+      "鴻海5/29股東大會：Q2展望與AI伺服器具體指引",
+      "聯發科4,050支撐帶：若守穩為短線底部確認，跌破則警示情緒外溢",
+      "NVDA $210支撐：若守穩+回站$217，sell-the-news消化完畢",
+      "美30Y殖利率：5.20%是否進一步升至5.30%+（結構風險升溫訊號）",
+      "台股43,200支撐：昨日ATH後今日能否維持多頭動能"
+    ]
+  },
+  "whats_changed": {
+    "compared_to": "股市-開盤前-20260525.md",
+    "compared_to_date": "2026-05-25",
+    "new": [
+      {
+        "type": "alert",
+        "summary": "新增：鴻海5/29股東大會（與MSCI同日）發布Q2展望，AI伺服器倍增指引為新催化劑",
+        "tickers": ["2317"],
+        "ticker": "",
+        "from": "",
+        "to": "alt-foxconn-shareholder-meeting"
+      }
+    ],
+    "strengthened": [
+      {
+        "type": "alert",
+        "summary": "alt-mediatek-asic-surge從info升為warning：5/25漲停至4,245（3日累漲+22%），RSI>95，進入處置交易（5分鐘撮合），超買警示等級升高",
+        "tickers": ["2454"],
+        "ticker": "",
+        "from": "info",
+        "to": "warning"
+      },
+      {
+        "type": "alert",
+        "summary": "alt-twii-new-high強化：TWII從42,268衝上43,644歷史新高（+3.26%/+1,376點），三大法人買超NT$642億，改寫歷史紀錄",
+        "tickers": ["2330", "2454", "2317"],
+        "ticker": "",
+        "from": "info@42268",
+        "to": "info@43644-ATH"
+      },
+      {
+        "type": "alert",
+        "summary": "alt-msci-rebalance進入最終72小時：5/29收盤前被動外資最後衝刺窗口，昨日外資已買超NT$494億，今日至5/28為決定性節點",
+        "tickers": ["2330", "TSM"],
+        "ticker": "",
+        "from": "warning@本週窗口開啟",
+        "to": "warning@最後72小時倒數"
+      },
+      {
+        "type": "stock_direction",
+        "summary": "鴻海(2317)突破260元前高阻力：信心值從0.62升至0.68（+0.06），放量K線突破確認多頭格局強化",
+        "ticker": "2317",
+        "from": "bullish@0.62",
+        "to": "bullish@0.68",
+        "tickers": ["2317"]
+      }
+    ],
+    "removed": []
+  }
+}

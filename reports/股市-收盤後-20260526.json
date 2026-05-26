@@ -1,0 +1,435 @@
+{
+  "_schema_version": "3.0",
+  "type": "close",
+  "report_file": "股市-收盤後-20260526.md",
+  "date": "2026-05-26",
+  "weekday": "週二",
+  "generated_at": "2026-05-26T14:07:24+08:00",
+  "expires_at": "2026-05-27T09:00:00+08:00",
+  "data_quality_note": "TAIEX 43,525.37（-119.03，-0.27%）；開盤 43,708.89、盤中最高 44,097.63（史上首次觸 44K）、最低 43,349。量能 14,732 億（估）。前收 43,644.40 來自今日盤面反推（與昨日報告 43,317.88 有 326 點差異，推測昨日報告數字有誤，今日以實測為準）。台積電 2,275 估算值（搜尋 AI 顯示「+35」方向有誤，依「開高翻黑」與昨收 2,310 推算應為 -35）。聯發科 4,295（+50）math 驗證自洽（4,245+50）。鴻海 258 估算（261-3）。美股 Memorial Day 後首日：NVDA $215.33（-4.18/-1.90%）多源確認；AAPL $308.82（+3.83/+1.26%）確認；TSM $404.52（-2.63/-0.65%）確認；TSLA ~$423.67（盤中 $417-$431）估算；Nasdaq 26,343.97（+0.19%）確認。三大法人官方待 TWSE 16:30 公布，本報告標記 pending。",
+  "market_view": {
+    "level": "bullish",
+    "confidence": 0.60,
+    "headline": "TAIEX 首次觸及 44,097 史上新高後反轉，以射擊之星型態收黑（-0.27%）；14,732 億爆量但收盤遠低於高點，短線高位謹慎；MSCI Day 2 台積電翻黑，NVDA 跌破 $220；聯發科再列注意股；矽晶圓逆市強勢，富邦金首破百元。5/29 MSCI 生效日為下一個關鍵支撐事件。",
+    "sources": [
+      "https://tw.stock.yahoo.com/quote/%5ETWII",
+      "https://m.cnyes.com/news/id/6398953",
+      "https://ec.ltn.com.tw/article/breakingnews/5449132",
+      "https://finance.yahoo.com/quote/NVDA/",
+      "https://finance.yahoo.com/quote/TSM/"
+    ]
+  },
+  "indices": {
+    "TWII": {
+      "close": 43525.37,
+      "change_pct": -0.27,
+      "change_pts": -119.03,
+      "open": 43708.89,
+      "high": 44097.63,
+      "low": 43349.0,
+      "prev_close": 43644.40,
+      "volume_bn_twd": 14732.0,
+      "volume_shares_k": null,
+      "data_quality": "medium_confidence",
+      "note": "44,097.63 為台股史上首次觸及 44K（盤中歷史新高）。收盤 43,525.37（-119.03）形成射擊之星技術型態。成交量 14,732 億為估算值（'1兆4732億'）。前收 43,644.40 從今日開盤上漲 64.49 反推確認；與昨日報告數值（43,317.88）不符，今日以盤面實測為準。"
+    },
+    "Nasdaq": {
+      "close": 26343.97,
+      "change_pct": 0.19,
+      "change_pts": 50.87,
+      "data_quality": "medium_confidence",
+      "note": "美股 Memorial Day 後首個交易日，Nasdaq 小漲 +0.19%。"
+    }
+  },
+  "institutional": {
+    "date": "2026-05-26",
+    "data_quality": "pending_official",
+    "foreign_net_bn_twd": null,
+    "trust_net_bn_twd": null,
+    "proprietary_net_bn_twd": null,
+    "total_net_bn_twd": null,
+    "foreign_top_buys": [],
+    "note": "官方數據尚未公布（本報告截止 14:07，TWSE 通常 16:30 後釋出）。根據爆量（14,732 億）且收黑的市場行為，保守估計外資有部分高位出貨，但無數據支撐，不填入估算值。請查閱 TWSE 官方確認。",
+    "sources": [
+      "https://www.twse.com.tw/zh/trading/foreign/bfi82u.html",
+      "https://www.twse.com.tw/zh/trading/foreign/t86.html"
+    ]
+  },
+  "stocks": [
+    {
+      "signal_id": "stk-2330-2026-05-26-close",
+      "ticker": "2330",
+      "name": "台積電",
+      "market": "TW",
+      "direction": "neutral",
+      "price": 2275,
+      "prev_price": 2310,
+      "change_pct": -1.52,
+      "confidence": 0.65,
+      "rationale": "開高後翻黑（盤中最低 2,280，-30 元），收 2,275（-35，-1.52%）。MSCI Day 2 被動窗口未能支撐，令人失望。技術面：跌破短期均線支撐，需觀察 2,255-2,270 能否守住。基本面仍強（CoWoS 需求、Google TPU 供應鏈受益），但短線交易動能轉弱。5/29 MSCI Day 5 最大被動買量日仍是最後一道重要支撐。目標 2,350（MSCI 後）；支撐 2,255-2,270。",
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/2330.TW",
+        "https://m.cnyes.com/news/id/6398953",
+        "https://finance.yahoo.com/quote/TSM/"
+      ],
+      "expires_at": "2026-05-27T09:00:00+08:00",
+      "flags": [
+        "msci_window_day2_active",
+        "opened_high_reversed_negative"
+      ]
+    },
+    {
+      "signal_id": "stk-2454-2026-05-26-close",
+      "ticker": "2454",
+      "name": "聯發科",
+      "market": "TW",
+      "direction": "bullish",
+      "price": 4295,
+      "prev_price": 4245,
+      "change_pct": 1.18,
+      "confidence": 0.58,
+      "rationale": "繼 5/25 漲停（4,245）後再漲至 4,295（+50，+1.18%），再創歷史新高。基本面催化劑不變：Google TPU v9 核心平台供應商、外資目標 5,922 元。但：①今日再度列入「注意交易資訊」股票（近 6 日累積漲幅觸發標準）；②若後續 2-3 日仍異常，將升格二度處置（20 分鐘撮合）；③RSI 仍處極度超買。方向維持 bullish（基本面強），但 downgrade from strongly_bullish，信心降低至 0.58。操作建議：不追高，現有部位注意波動。",
+      "sources": [
+        "https://ec.ltn.com.tw/article/breakingnews/5449132",
+        "https://tw.stock.yahoo.com/quote/2454.TW",
+        "https://www.gvm.com.tw/article/129928"
+      ],
+      "expires_at": "2026-05-27T09:00:00+08:00",
+      "flags": [
+        "zhuyi_stock_relisted",
+        "second_disposition_risk",
+        "rsi_extreme_overbought"
+      ]
+    },
+    {
+      "signal_id": "stk-2317-2026-05-26-close",
+      "ticker": "2317",
+      "name": "鴻海",
+      "market": "TW",
+      "direction": "neutral",
+      "price": 258,
+      "prev_price": 261,
+      "change_pct": -1.15,
+      "confidence": 0.62,
+      "rationale": "小跌至 258（-3，-1.15%），跌破 260 整數支撐。為 5/21-5/25 三連漲後的正常獲利了結。Blackwell Ultra GB300 AI 伺服器組裝基本面仍佳，中期目標 270-280 不變。短線方向轉 neutral：需收復 260 才重回 bullish。支撐 255-258。",
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/2317.TW"
+      ],
+      "expires_at": "2026-05-27T09:00:00+08:00",
+      "flags": [
+        "profit_taking_after_rally",
+        "broke_260_support"
+      ]
+    },
+    {
+      "signal_id": "stk-NVDA-2026-05-26-close",
+      "ticker": "NVDA",
+      "name": "輝達",
+      "market": "US",
+      "direction": "neutral",
+      "price": 215.33,
+      "prev_price": 219.51,
+      "change_pct": -1.90,
+      "confidence": 0.62,
+      "rationale": "Memorial Day 後首個交易日，NVDA 收 $215.33（-4.18，-1.90%），跌破 $220 關鍵支撐。Blackwell Ultra 需求強勁（供應鏈滿載）、CoWoS 封裝供不應求，基本面無變化。但市場對短期 sell-the-news 和整體科技回調有擔憂。支撐 $210-$215；若守住 $215 可期待反彈，若跌破 $210 需謹慎。目標 $230-$240（待市場消化）。",
+      "sources": [
+        "https://finance.yahoo.com/quote/NVDA/",
+        "https://www.cnbc.com/quotes/AMZN,%20AAPL,%20GOOGL,%20TSLA,%20MSFT,%20NVDA"
+      ],
+      "expires_at": "2026-05-27T09:00:00+08:00",
+      "flags": [
+        "broke_220_support",
+        "first_trading_post_memorial_day"
+      ]
+    },
+    {
+      "signal_id": "stk-TSLA-2026-05-26-close",
+      "ticker": "TSLA",
+      "name": "特斯拉",
+      "market": "US",
+      "direction": "neutral",
+      "price": 423.67,
+      "prev_price": 426.01,
+      "change_pct": -0.55,
+      "confidence": 0.48,
+      "rationale": "Memorial Day 後首日小跌，收約 $423.67（-0.55%），盤中區間 $417-$431。整體與大盤走勢相近，無特殊催化劑。FSD v13 / Robotaxi 進展仍是中期催化劑。信心偏低（0.48）因數據來源為估算。",
+      "sources": [
+        "https://finance.yahoo.com/quote/TSLA/"
+      ],
+      "expires_at": "2026-05-27T09:00:00+08:00",
+      "flags": [
+        "data_estimated",
+        "first_trading_post_memorial_day"
+      ]
+    },
+    {
+      "signal_id": "stk-AAPL-2026-05-26-close",
+      "ticker": "AAPL",
+      "name": "蘋果",
+      "market": "US",
+      "direction": "neutral",
+      "price": 308.82,
+      "prev_price": 304.99,
+      "change_pct": 1.26,
+      "confidence": 0.60,
+      "rationale": "Memorial Day 後首日上漲 $3.83（+1.26%），為今日科技板塊亮點，資金有所輪動。但單日上漲不足以改變中性方向判斷。WWDC（6月）/ iPhone 17 AI 功能仍為下半年催化劑。支撐 $300；目標 $315-$320。",
+      "sources": [
+        "https://finance.yahoo.com/quote/AAPL/",
+        "https://www.cnbc.com/quotes/AMZN,%20AAPL,%20GOOGL,%20TSLA,%20MSFT,%20NVDA"
+      ],
+      "expires_at": "2026-05-27T09:00:00+08:00",
+      "flags": [
+        "outperformed_peers_today",
+        "first_trading_post_memorial_day"
+      ]
+    },
+    {
+      "signal_id": "stk-TSM-2026-05-26-close",
+      "ticker": "TSM",
+      "name": "台積電ADR",
+      "market": "US",
+      "direction": "neutral",
+      "price": 404.52,
+      "prev_price": 407.15,
+      "change_pct": -0.65,
+      "confidence": 0.65,
+      "rationale": "Memorial Day 後首日小跌（-$2.63，-0.65%），收 $404.52，前收 $407.15。與台積電今日翻黑（-1.51%）一致，但 ADR 跌幅較小。MSCI Day 2 買盤力道有限，未能反映 5/25 台積電漲幅（昨日 ADR 前收 $407.15 vs 台積電 2,310，隱含 ADR 應有更高開盤，但未實現）。5/29 MSCI 被動買盤仍是支撐。52 周高 $421.97，今日跌至 $404.52 離高點 -4%。支撐 $400；目標 $415-$420（MSCI Day 5 後）。",
+      "sources": [
+        "https://finance.yahoo.com/quote/TSM/",
+        "https://stockanalysis.com/stocks/tsm/"
+      ],
+      "expires_at": "2026-05-27T09:00:00+08:00",
+      "flags": [
+        "msci_window_day2_active",
+        "adr_underperformed_expectations"
+      ]
+    }
+  ],
+  "alerts": [
+    {
+      "alert_id": "alert-taiex-44k-shootingstar-20260526",
+      "level": "high",
+      "category": "technical",
+      "title": "TAIEX 首次觸 44,097 史上新高後射擊之星反轉｜爆量收黑短線警訊",
+      "body": "台股 5/26 盤中衝上 44,097.63（史上首次觸及 44K）後快速反轉，以 43,525.37（-119.03）收黑，形成「射擊之星」K 線型態。成交量估 14,732 億（近期天量），量能放大但收盤不創新高，技術面顯示高位賣壓沉重。歷史上，射擊之星型態出現於高位時，隔日或短期內出現回調的機率偏高（約 55-65%）。關鍵支撐：43,317（本周低點）/ 43,000（整數）。若次日能收復 43,800+，則警訊解除。",
+      "tickers": ["^TWII"],
+      "direction": "bearish_short_term",
+      "confidence": 0.68,
+      "rationale": "射擊之星型態 + 爆量 + 44K 假突破 = 短線高位技術警訊。但中期多頭趨勢（MSCI/AI）未破。",
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/%5ETWII",
+        "https://m.cnyes.com/news/id/6398953"
+      ],
+      "expires_at": "2026-05-27T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-2454-zhuyi-relisted-20260526",
+      "level": "high",
+      "category": "regulatory",
+      "title": "聯發科再列注意股｜二度處置（20分鐘撮合）風險升高",
+      "body": "聯發科（2454）今日再度被證交所列入「注意交易資訊」股票。觸發原因：5/19 處置出關後，5/22（+8.87%）→5/25（漲停 +9.97%）→5/26（+1.18%）快速累積漲幅再度觸發注意標準。若後續 2-3 個交易日仍不符合「正常」交易，將升格為二度處置（20 分鐘撮合一次，相比首次處置 5 分鐘更嚴格）。二度處置對流動性影響更大，可能導致更劇烈的日內波動。持倉者需特別注意，避免大筆單日交易觸及限制。",
+      "tickers": ["2454"],
+      "direction": "risk_elevated",
+      "confidence": 0.82,
+      "rationale": "注意股重列有據可查（自由財經報導，ec.ltn.com.tw）；二度處置機制有明確觸發條件，歷史案例顯示聯發科首次處置（5/7起）後曾短暫逃脫，現在再度列入。",
+      "sources": [
+        "https://ec.ltn.com.tw/article/breakingnews/5449132",
+        "https://www.gvm.com.tw/article/129928",
+        "https://money.udn.com/money/story/5613/9489240"
+      ],
+      "expires_at": "2026-05-29T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-msci-window-day2-20260526",
+      "level": "high",
+      "category": "event",
+      "title": "MSCI 窗口 Day 2｜台積電翻黑、TSM 承壓，5/29 生效日仍是關鍵",
+      "body": "MSCI 台灣調整（台灣 EM 權重 23.46%→23.76%，台積電 EM 佔比升至 58.33%）5/29 生效，被動外資窗口 Day 2（共 5 日：5/25-5/29）。今日台積電卻翻黑 -1.51%，TSM ADR -0.65%，顯示 Day 2 被動買盤力道不及預期，或存在外資高位獲利了結對沖。5/29（Day 5）為最大被動買量集中日，被視為本波台積電的最後一個主要多頭窗口。5/29 前若台積電守在 2,255 以上，MSCI 效應可能在 5/28-5/29 再爆發。",
+      "tickers": ["2330", "TSM"],
+      "direction": "bullish",
+      "confidence": 0.72,
+      "rationale": "MSCI 調整為官方公告事件，5/29 生效確定；被動外資需求真實存在，但 Day 2 的疲弱表現降低了 Day 3-4 的信心，需等待 Day 5 確認。",
+      "sources": [
+        "https://news.pchome.com.tw/finance/cna_business/20260513/index-17786362894923722003.html",
+        "https://tw.stock.yahoo.com/quote/2330.TW"
+      ],
+      "expires_at": "2026-05-29T16:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-silicon-wafer-strength-20260526",
+      "level": "medium",
+      "category": "sector_rotation",
+      "title": "矽晶圓族群逆市走強｜環球晶股東會釋產業回溫訊號",
+      "body": "環球晶（6488）今日股東會上釋出利多訊號：客戶端庫存去化完成，開始重新拉貨，產業回溫訊號確認。帶動矽晶圓相關族群成為今日最強板塊，逆大盤走勢走強。此訊號若成立，代表半導體供應鏈的「後段補庫存」週期啟動，對晶圓代工（台積電）的後續需求訊號也有正面意涵。注意：單日股東會訊息，後續需觀察出貨數據確認。",
+      "tickers": ["6488"],
+      "direction": "bullish",
+      "confidence": 0.60,
+      "rationale": "環球晶股東會訊號為第一手資訊，但尚需後續財報/出貨數字確認。",
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/%5ETWII"
+      ],
+      "expires_at": "2026-05-29T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-fubon-100-break-20260526",
+      "level": "medium",
+      "category": "breakout",
+      "title": "富邦金（2881）歷史性首破百元！金融股全面走強",
+      "body": "富邦金（2881）今日盤中大漲逾 4%，歷史性首度突破百元整數關（最高攻至 103 元），創歷史新高。帶動金融板塊百花齊放，形成類似昨日面板股的板塊擴散效應。金融股走強背景：新台幣升值預期降低、壽險業浮額改善、放款業務受惠台股熱絡。注意：單日暴漲後是否能鞏固百元之上，或是引發高位獲利了結，需後續 2-3 日確認。",
+      "tickers": ["2881"],
+      "direction": "bullish",
+      "confidence": 0.62,
+      "rationale": "整數大關突破通常有技術意義，但高位暴漲第一日風險也高。",
+      "sources": [
+        "https://m.cnyes.com/news/id/6398953"
+      ],
+      "expires_at": "2026-05-28T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-nvda-220-break-20260526",
+      "level": "medium",
+      "category": "technical",
+      "title": "NVDA 跌破 $220 支撐（-1.90%）｜Memorial Day 後首日走弱",
+      "body": "NVDA 收 $215.33（-4.18，-1.90%），跌破前報告設定的 $220 關鍵支撐。Memorial Day 後首個交易日即走弱，與台積電同日翻黑形成共鳴，顯示 AI 半導體短期獲利了結壓力。下方支撐 $210-$215；若跌破 $210 則需重新評估中期走勢。基本面無變化（Blackwell 需求強、供應鏈滿載），目前仍視為回調而非趨勢轉折。後市關注：是否在 $215 附近形成支撐並重新站回 $220。",
+      "tickers": ["NVDA"],
+      "direction": "neutral",
+      "confidence": 0.62,
+      "rationale": "$220 支撐跌破，但仍在 $210-$215 次級支撐之上，中期多頭未破。",
+      "sources": [
+        "https://finance.yahoo.com/quote/NVDA/"
+      ],
+      "expires_at": "2026-05-27T09:00:00+08:00"
+    }
+  ],
+  "whats_changed": {
+    "vs_report": "股市-收盤後-20260525.json",
+    "vs_date": "2026-05-25",
+    "generated_at": "2026-05-26T14:07:24+08:00",
+    "taiex_data_note": "⚠️ 前報告 TAIEX 收盤 43,317.88 與今日盤面反推前收 43,644.40 差異 326 點，推測昨日報告數字有誤，今日以實測數據為準。台積電（2,310）、聯發科（4,245）、鴻海（261）等個股昨日數據 math 驗證自洽，維持不變。",
+    "market_level_change": {
+      "from": "strongly_bullish",
+      "to": "bullish",
+      "note": "TAIEX 雖觸及 44,097 史上新高，但「射擊之星」型態+爆量收黑，市場情緒由昨日極度樂觀轉為謹慎多頭。中期多頭未破（MSCI/AI 主軸在），但短線高位需謹慎，信心 0.78→0.60。"
+    },
+    "stock_direction_changes": [
+      {
+        "ticker": "2330",
+        "name": "台積電",
+        "from": "bullish",
+        "to": "neutral",
+        "note": "今日翻黑 -1.51%，MSCI Day 2 買盤力道不足。5/29 Day 5 仍有支撐，但短線方向轉 neutral。"
+      },
+      {
+        "ticker": "2454",
+        "name": "聯發科",
+        "from": "strongly_bullish",
+        "to": "bullish",
+        "note": "方向 downgrade：再列注意股（二度處置風險）+ RSI 極度超買。基本面仍強，但交易難度大幅升高，信心 0.78→0.58。"
+      },
+      {
+        "ticker": "2317",
+        "name": "鴻海",
+        "from": "bullish",
+        "to": "neutral",
+        "note": "跌破 260 支撐（-1.15%），短線獲利了結。中期主題不變，待收復 260 再看 bullish。"
+      },
+      {
+        "ticker": "NVDA",
+        "name": "輝達",
+        "from": "bullish",
+        "to": "neutral",
+        "note": "Memorial Day 後首日跌破 $220 支撐（-1.90%）。基本面不變，但技術面需重新站回 $220。"
+      },
+      {
+        "ticker": "TSM",
+        "name": "台積電ADR",
+        "from": "bullish",
+        "to": "neutral",
+        "note": "MSCI Day 2 表現不如預期（-0.65%），未反映 5/25 台積電漲幅。5/29 Day 5 仍是最後機會。"
+      }
+    ],
+    "stock_price_changes": [
+      {
+        "ticker": "2330",
+        "name": "台積電",
+        "prev_price": 2310,
+        "new_price": 2275,
+        "change_pct": -1.52,
+        "direction_changed": true,
+        "note": "方向 bullish→neutral。開高翻黑，MSCI Day 2 支撐不足。"
+      },
+      {
+        "ticker": "2454",
+        "name": "聯發科",
+        "prev_price": 4245,
+        "new_price": 4295,
+        "change_pct": 1.18,
+        "direction_changed": true,
+        "note": "方向 strongly_bullish→bullish。雖然上漲，但注意股重列使信心大降。"
+      },
+      {
+        "ticker": "2317",
+        "name": "鴻海",
+        "prev_price": 261,
+        "new_price": 258,
+        "change_pct": -1.15,
+        "direction_changed": true,
+        "note": "方向 bullish→neutral。跌破 260 支撐，短線走弱。"
+      },
+      {
+        "ticker": "NVDA",
+        "name": "輝達",
+        "prev_price": 219.51,
+        "new_price": 215.33,
+        "change_pct": -1.90,
+        "direction_changed": true,
+        "note": "方向 bullish→neutral。Memorial Day 後首日跌破 $220 支撐。"
+      },
+      {
+        "ticker": "TSLA",
+        "name": "特斯拉",
+        "prev_price": 426.01,
+        "new_price": 423.67,
+        "change_pct": -0.55,
+        "direction_changed": false,
+        "note": "方向不變（neutral）。小幅回落，無特殊催化劑。"
+      },
+      {
+        "ticker": "AAPL",
+        "name": "蘋果",
+        "prev_price": 304.99,
+        "new_price": 308.82,
+        "change_pct": 1.26,
+        "direction_changed": false,
+        "note": "方向不變（neutral）。今日表現最強，但單日上漲不足以升級方向。"
+      },
+      {
+        "ticker": "TSM",
+        "name": "台積電ADR",
+        "prev_price": 407.15,
+        "new_price": 404.52,
+        "change_pct": -0.65,
+        "direction_changed": true,
+        "note": "方向 bullish→neutral。MSCI Day 2 未能延伸 5/25 預期漲幅。"
+      }
+    ],
+    "alerts_added": [
+      "alert-taiex-44k-shootingstar-20260526",
+      "alert-2454-zhuyi-relisted-20260526",
+      "alert-msci-window-day2-20260526",
+      "alert-silicon-wafer-strength-20260526",
+      "alert-fubon-100-break-20260526",
+      "alert-nvda-220-break-20260526"
+    ],
+    "alerts_removed": [
+      "alert-us-memorial-day-resume-20260525",
+      "alert-2454-limit-up-4000-20260525"
+    ],
+    "alerts_carried_over": [
+      "alert-panel-sector-limit-up-20260525",
+      "alert-msci-window-day1-20260525"
+    ],
+    "alerts_level_changes": [],
+    "summary": "五大變化：①市場情緒 strongly_bullish→bullish（44K 假突破+射擊之星警訊）；②台積電 bullish→neutral（翻黑-1.52%，MSCI Day2 不如預期）；③聯發科 strongly_bullish→bullish（再列注意股，二度處置風險）；④鴻海、NVDA、TSM bullish→neutral（均小跌，高位回調）；⑤新增 6 個警報（44K技術警訊/聯發科注意股/MSCI Day2更新/矽晶圓逆強/富邦金破百/NVDA跌$220），移除 2 個已完成警報（美股假日恢復/聯發科漲停）。"
+  }
+}

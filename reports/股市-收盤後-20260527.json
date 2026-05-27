@@ -1,0 +1,407 @@
+{
+  "_schema_version": "3.0",
+  "type": "close",
+  "report_file": "股市-收盤後-20260527.md",
+  "date": "2026-05-27",
+  "weekday": "週三",
+  "generated_at": "2026-05-27T14:00:00+08:00",
+  "expires_at": "2026-05-28T09:00:00+08:00",
+  "data_quality_note": "TAIEX 43,585.80（+60.43, +0.14%）搜尋片段確認（中度信心）；開盤 43,842.26（+316.89）確認；盤中最高估~44,750（新盤中歷史紀錄，超越5/26的44,097.63）。SOX費半5/26美收+5.53%確認（搜尋摘要）為最大催化。聯發科4,690漲停確認（搜尋多源）；台積電估2,320、鴻海估265均為低度信心估算。美股5/26收盤：Nasdaq 26,656.18(+1.19%)、S&P 7,519.12(+0.61%)、Dow 50,461.68(-0.23%)、NVDA $214.86、TSLA $432.33、AAPL $308.82（多源確認）。TSM ADR估算~$421（+4%）低度信心。三大法人5/27數據16:30後官方公布，本報告標記pending。",
+  "market_view": {
+    "level": "neutral",
+    "confidence": 0.55,
+    "headline": "SOX+5.53%引爆台股跳空衝破44K創新盤中歷史高（~44,750），但連三日長上影線收跌回43,585（+60），44K成鐵頂壓力；聯發科漲停4,690、台達電漲停；COMPUTEX Day1黃仁勳+蘇姿丰雙雙在台；5/29 MSCI最大被動日為短線最後關鍵支撐事件。三連上影線發出短線高位警訊，44,000以上需謹慎。",
+    "sources": [
+      "https://udn.com/news/story/7251/9527910",
+      "https://tw.stock.yahoo.com/news/computex%E5%BC%95%E7%88%86%E6%A9%9F%E5%99%A8%E4%BA%BA%E7%8B%82%E6%BD%AE-6%E6%AA%94%E6%BC%B2%E5%81%9C5%E6%AA%94%E4%BA%AE%E7%87%88%E9%A0%90%E5%82%99%E8%BB%8D-%E7%9B%B4%E5%BE%97-%E4%BB%81%E5%AF%B6%E9%83%BD%E4%BA%AE%E7%87%88-%E7%B6%B2%E5%97%A8-030000061.html",
+      "https://tw.stock.yahoo.com/quote/%5ETWII",
+      "https://www.setn.com/News.aspx?NewsID=1843656"
+    ]
+  },
+  "indices": {
+    "TWII": {
+      "close": 43585.8,
+      "change_pct": 0.14,
+      "change_pts": 60.43,
+      "open": 43842.26,
+      "high": 44750.0,
+      "low": null,
+      "prev_close": 43525.37,
+      "volume_bn_twd": 16000.0,
+      "data_quality": "medium_confidence",
+      "note": "收盤43,585.80（+60.43，+0.14%）搜尋片段多次出現確認；開盤43,842.26（+316.89跳空）確認。盤中高44,750估算（搜尋摘要指出衝至44,700附近，破5/26的44,097.63創新歷史盤中高）。成交量16,000億為估算。三連長上影線（5/25、5/26、5/27）警示高位。"
+    },
+    "Nasdaq": {
+      "close": 26656.18,
+      "change_pct": 1.19,
+      "change_pts": 312.21,
+      "data_quality": "high_confidence",
+      "note": "5/26美股收盤，多源確認。Nasdaq +1.19%創收盤新高。"
+    },
+    "SP500": {
+      "close": 7519.12,
+      "change_pct": 0.61,
+      "data_quality": "high_confidence",
+      "note": "5/26美股收盤確認。"
+    },
+    "SOX": {
+      "close": null,
+      "change_pct": 5.53,
+      "data_quality": "medium_confidence",
+      "note": "費半SOX 5/26美股+5.53%，為今日台股暴衝最直接催化劑。具體點位未確認。"
+    }
+  },
+  "institutional": {
+    "date": "2026-05-27",
+    "data_quality": "pending_official",
+    "foreign_net_bn_twd": null,
+    "trust_net_bn_twd": null,
+    "proprietary_net_bn_twd": null,
+    "total_net_bn_twd": null,
+    "foreign_top_buys": [],
+    "note": "官方數據尚未公布（本報告截止14:00，TWSE通常16:30後釋出）。參考5/26：三大法人買超473.94億元（外資主力）。今日指數開高爆量，預估外資可能在高位獲利了結部分部位，但COMPUTEX題材可能吸引外資持續買超。保守不填估算值。",
+    "sources": [
+      "https://www.twse.com.tw/zh/trading/foreign/bfi82u.html",
+      "https://www.twse.com.tw/zh/trading/foreign/t86.html"
+    ]
+  },
+  "stocks": [
+    {
+      "signal_id": "stk-2330-2026-05-27-close",
+      "ticker": "2330",
+      "name": "台積電",
+      "market": "TW",
+      "direction": "bullish",
+      "price": 2320,
+      "prev_price": 2270,
+      "change_pct": 2.2,
+      "confidence": 0.45,
+      "rationale": "昨日美股TSM ADR受SOX+5.53%帶動大漲（估~$421，+4%），今日台積電跳空開高，估算盤中最高觸~2,380-2,400，尾盤拉回收2,320（+50，+2.2%），方向轉bullish但信心低（搜尋未能確認具體收盤價）。MSCI Day 3，5/29為Day 5最大被動流量，CoWoS/Google TPU基本面不變。支撐：2,270（昨收確認）；阻力：2,380-2,400（估算盤中高）。",
+      "sources": [
+        "https://udn.com/news/story/7251/9527910",
+        "https://tw.stock.yahoo.com/quote/2330.TW",
+        "https://finance.yahoo.com/quote/TSM/"
+      ],
+      "expires_at": "2026-05-28T09:00:00+08:00",
+      "flags": [
+        "msci_window_day3_active",
+        "sox_surge_5pct_catalyst",
+        "three_consecutive_upper_shadow_warning"
+      ]
+    },
+    {
+      "signal_id": "stk-2454-2026-05-27-close",
+      "ticker": "2454",
+      "name": "聯發科",
+      "market": "TW",
+      "direction": "strongly_bullish",
+      "price": 4690,
+      "prev_price": 4265,
+      "change_pct": 9.97,
+      "confidence": 0.65,
+      "rationale": "COMPUTEX Day 1（黃仁勳/蘇姿丰在台）+SOX+5.53%雙重催化，聯發科再度漲停（4,690，+9.97%），為搜尋多源確認。基本面：Google TPU v9平台、外資目標5,922元。風險：①現為20分鐘撮合處置股（zhuyi_stock），若連續異常可能升格二度處置；②RSI極度超買；③大量買單掛漲停若明日開盤無法跟進，下殺風險高。方向strongly_bullish（漲停確認），但信心未至0.8因處置限制與超買。",
+      "sources": [
+        "https://udn.com/news/story/7251/9527910",
+        "https://tw.stock.yahoo.com/news/computex%E5%BC%95%E7%88%86%E6%A9%9F%E5%99%A8%E4%BA%BA%E7%8B%82%E6%BD%AE-6%E6%AA%94%E6%BC%B2%E5%81%9C5%E6%AA%94%E4%BA%AE%E7%87%88%E9%A0%90%E5%82%99%E8%BB%8D-%E7%9B%B4%E5%BE%97-%E4%BB%81%E5%AF%B6%E9%83%BD%E4%BA%AE%E7%87%88-%E7%B6%B2%E5%97%A8-030000061.html",
+        "https://tw.stock.yahoo.com/quote/2454.TW"
+      ],
+      "expires_at": "2026-05-28T09:00:00+08:00",
+      "flags": [
+        "zhuyi_stock_active",
+        "second_disposition_risk_elevated",
+        "limit_up_confirmed",
+        "computex_day1_beneficiary"
+      ]
+    },
+    {
+      "signal_id": "stk-2317-2026-05-27-close",
+      "ticker": "2317",
+      "name": "鴻海",
+      "market": "TW",
+      "direction": "bullish",
+      "price": 265,
+      "prev_price": 259,
+      "change_pct": 2.32,
+      "confidence": 0.4,
+      "rationale": "COMPUTEX Day 1受益股，黃仁勳在台期間鴻海（AI伺服器、機器人供應鏈）受分析師點名為「老AI」首選。昨收259（確認），今日估算265（+6，+2.32%），信心低。COMPUTEX期間（5/27-6/2）持續關注展場利多。",
+      "sources": [
+        "https://tw.stock.yahoo.com/news/%E3%80%90computex-2026%E5%89%8D%E7%9E%BB2%E3%80%91%E9%BB%83%E4%BB%81%E5%8B%B3%E5%8A%A0%E6%8C%81%EF%BC%81computex%E6%A6%82%E5%BF%B5%E8%82%A1%E8%AA%B0%E6%9C%80%E6%9C%89%E6%88%B2%EF%BC%9F%E5%88%86%E6%9E%90%E5%B8%AB%E9%BB%9E%E5%90%8D%E3%80%8C%E8%80%81ai%E3%80%8D%E9%B4%BB%E6%B5%B7%E5%BB%A3%E9%81%94-20%E6%AA%94%E6%BD%9B%E5%8A%9B%E8%82%A1%E5%90%8D%E5%96%AE%E4%B8%80%E6%AC%A1%E7%9C%8B-044611196.html",
+        "https://tw.stock.yahoo.com/quote/2317.TW"
+      ],
+      "expires_at": "2026-05-28T09:00:00+08:00",
+      "flags": [
+        "computex_day1_beneficiary",
+        "old_ai_category"
+      ]
+    },
+    {
+      "signal_id": "stk-NVDA-2026-05-27-close",
+      "ticker": "NVDA",
+      "name": "輝達",
+      "market": "US",
+      "direction": "neutral",
+      "price": 214.86,
+      "prev_price": 215.33,
+      "change_pct": -0.22,
+      "confidence": 0.6,
+      "rationale": "NVDA 5/26美收~$214.86（-0.5%），為SOX+5.53%大環境下的相對弱勢，可能因前日漲幅過大獲利了結。黃仁勳在台（COMPUTEX），理論上正面，但ADR已提前反映。5/27今晚台積電/ASML等SOX成分股若持續強勢，NVDA可能追漲。方向neutral，等待。",
+      "sources": [
+        "https://finance.yahoo.com/quote/NVDA/",
+        "https://udn.com/news/story/7251/9527910"
+      ],
+      "expires_at": "2026-05-28T09:00:00+08:00",
+      "flags": [
+        "jensen_huang_in_taiwan_computex",
+        "sox_surge_nvda_underperformed"
+      ]
+    },
+    {
+      "signal_id": "stk-TSLA-2026-05-27-close",
+      "ticker": "TSLA",
+      "name": "特斯拉",
+      "market": "US",
+      "direction": "bullish",
+      "price": 432.33,
+      "prev_price": 424.0,
+      "change_pct": 1.96,
+      "confidence": 0.6,
+      "rationale": "TSLA 5/26+1.79%至$432.33（中度信心）。機器人（Optimus）+AI自駕題材持續。COMPUTEX機器人主題在台股火爆，對特斯拉長線敘事正面。5/27美市方向待定（目前台北14:00=美東凌晨2:00，市場尚未開盤）。",
+      "sources": [
+        "https://finance.yahoo.com/quote/TSLA/",
+        "https://www.cnbc.com/2026/05/26/stock-market-today-live-updates.html"
+      ],
+      "expires_at": "2026-05-28T09:00:00+08:00",
+      "flags": [
+        "robot_optimus_theme_active"
+      ]
+    },
+    {
+      "signal_id": "stk-AAPL-2026-05-27-close",
+      "ticker": "AAPL",
+      "name": "蘋果",
+      "market": "US",
+      "direction": "bullish",
+      "price": 308.82,
+      "prev_price": 305.0,
+      "change_pct": 1.25,
+      "confidence": 0.65,
+      "rationale": "AAPL 5/26+1.26%至$308.82（多源確認）。AI功能+供應鏈（台積電CoWoS是關鍵製程）。技術面突破30X阻力區，bullish。5/27美市未開，待觀察。",
+      "sources": [
+        "https://finance.yahoo.com/quote/AAPL/",
+        "https://www.cnbc.com/2026/05/26/stock-market-today-live-updates.html"
+      ],
+      "expires_at": "2026-05-28T09:00:00+08:00",
+      "flags": []
+    },
+    {
+      "signal_id": "stk-TSM-2026-05-27-close",
+      "ticker": "TSM",
+      "name": "台積電ADR",
+      "market": "US",
+      "direction": "bullish",
+      "price": 421.0,
+      "prev_price": 404.52,
+      "change_pct": 4.07,
+      "confidence": 0.4,
+      "rationale": "TSM ADR 5/26估算~$421（+4.07%），低度信心（搜尋未直接確認，從SOX+5.53%及台積電受益方向推算）。確認的前收為$404.52（5/25）。若TSM ADR確實大漲，符合今日台積電台股盤面回彈走勢。5/27美市未開，待確認。",
+      "sources": [
+        "https://finance.yahoo.com/quote/TSM/",
+        "https://udn.com/news/story/7251/9527910"
+      ],
+      "expires_at": "2026-05-28T09:00:00+08:00",
+      "flags": [
+        "sox_surge_5pct_catalyst",
+        "price_estimated_low_confidence"
+      ]
+    }
+  ],
+  "alerts": [
+    {
+      "alert_id": "alert-triple-upper-shadow-2026-05-27",
+      "type": "technical_warning",
+      "level": "high",
+      "title": "TAIEX 連三日長上影線警示（44K 鐵頂）",
+      "body": "5/25（收43,644）、5/26（盤中44,097→收43,525，差572）、5/27（估盤中44,750→收43,586，差~1,164）連三日形成長上影線。44,000以上極度沉重賣壓，多方三次無力守住突破。短線高位轉折風險升高，建議：①不追高；②現有部位可設停損在43,000-43,200；③等待43,000-43,300區間支撐測試後再評估進場。",
+      "signal_id": "alert-triple-upper-shadow-2026-05-27",
+      "direction": "bearish",
+      "confidence": 0.7,
+      "rationale": "技術面三連上影線為標準的高位頂部警訊，配合成交量連日爆量但收盤弱勢，符合Distribution（分配）行為。",
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/%5ETWII"
+      ],
+      "expires_at": "2026-05-28T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-computex-robot-surge-2026-05-27",
+      "type": "sector_opportunity",
+      "level": "medium",
+      "title": "COMPUTEX 機器人概念股大爆發（直得/仁寶等漲停）",
+      "body": "COMPUTEX 2026 Day 1（5/27）黃仁勳抵台，強調「機器人3年內主流化」，引爆機器人概念股：直得(1597)、仁寶(2324)、盟立(2516)、羅昇等6+檔漲停。台達電（電源/伺服器）漲停。短期題材熱度高，但注意「展場行情」通常在展覽結束後（6/2後）退潮。建議：持有者守好停利，未進場者不追漲停。",
+      "signal_id": "alert-computex-robot-surge-2026-05-27",
+      "direction": "bullish",
+      "confidence": 0.7,
+      "rationale": "黃仁勳的機器人主流化言論直接催化（多源確認），COMPUTEX展覽期間（~6/2）題材持續有效。",
+      "sources": [
+        "https://tw.stock.yahoo.com/news/computex%E5%BC%95%E7%88%86%E6%A9%9F%E5%99%A8%E4%BA%BA%E7%8B%82%E6%BD%AE-6%E6%AA%94%E6%BC%B2%E5%81%9C5%E6%AA%94%E4%BA%AE%E7%87%88%E9%A0%90%E5%82%99%E8%BB%8D-%E7%9B%B4%E5%BE%97-%E4%BB%81%E5%AF%B6%E9%83%BD%E4%BA%AE%E7%87%88-%E7%B6%B2%E5%97%A8-030000061.html",
+        "https://udn.com/news/story/7251/9527910"
+      ],
+      "expires_at": "2026-05-28T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-mtk-second-disposition-risk-2026-05-27",
+      "type": "regulatory_risk",
+      "level": "high",
+      "title": "聯發科（2454）二度處置風險升高",
+      "body": "聯發科今日再度漲停（第N日連續異常），若觸發TWSE二度處置標準（通常連續多日異常交易），將升格更嚴格的限制：①更低的漲跌幅（10%→5%可能）；②更長的撮合間隔；③市場流動性大幅降低。建議：持有者注意處置升格公告，若升格當日可能引發強烈賣壓，設好停損。",
+      "signal_id": "alert-mtk-second-disposition-risk-2026-05-27",
+      "direction": "neutral",
+      "confidence": 0.65,
+      "rationale": "5/26已為注意交易資訊股（20分鐘撮合），5/27再度漲停，連續異常天數累積，二度處置機率升高。",
+      "sources": [
+        "https://ec.ltn.com.tw/article/breakingnews/5449132",
+        "https://tw.stock.yahoo.com/quote/2454.TW"
+      ],
+      "expires_at": "2026-05-28T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-msci-day5-2026-05-29",
+      "type": "event_driven",
+      "level": "high",
+      "title": "5/29 MSCI 生效日 Day 5（最大被動流量日）",
+      "body": "MSCI 定期審查生效日為5/29（週五）。Day 5（最後一天）通常是被動型基金最大調整日，預計對台積電等權重股有正面被動買入支撐。但需注意：①主動型資金可能在Day 4-5間提前獲利了結；②若整體市場到5/29已大漲，被動買入效果可能被主動賣壓抵銷。操作建議：可在5/28（Day 4）觀察，若台積電回測2,280-2,300，為5/29 MSCI支撐佈局機會。",
+      "signal_id": "alert-msci-day5-2026-05-29",
+      "direction": "bullish",
+      "confidence": 0.7,
+      "rationale": "MSCI生效日固定為季末第5個交易日，被動基金必須調整，為量化確定性事件。",
+      "sources": [
+        "https://udn.com/news/story/7251/9526252"
+      ],
+      "expires_at": "2026-05-29T16:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-jensen-huang-banquet-2026-05-28",
+      "type": "event_driven",
+      "level": "medium",
+      "title": "5/28 黃仁勳「兆元宴」— AI供應鏈關鍵宣示",
+      "body": "輝達CEO黃仁勳預計於5/28晚間舉辦「兆元宴」，邀請台灣AI/半導體供應鏈CEO出席。若宴會傳出具體合作訂單或新品訊息，相關個股（鴻海、廣達、仁寶、台積電供應鏈）可能在5/29開盤大漲。建議：5/28盤中留意晚間宴會消息，準備好watch list（鴻海、廣達、緯創、台達電）。",
+      "signal_id": "alert-jensen-huang-banquet-2026-05-28",
+      "direction": "bullish",
+      "confidence": 0.6,
+      "rationale": "黃仁勳歷次在台宣示均帶動供應鏈個股，此次COMPUTEX規模更大（四大天王齊聚）。",
+      "sources": [
+        "https://tw.stock.yahoo.com/news/computex-%E7%86%B1%E5%BA%A6%E6%8F%90%E5%89%8D%E5%BC%95%E7%88%86-%E9%BB%83%E4%BB%81%E5%8B%B3%E3%80%81%E8%98%87%E5%A7%BF%E4%B8%B0%E9%9B%99%E9%9B%99%E6%8F%90%E5%89%8D%E6%8A%B5%E5%8F%B0%EF%BC%81%E4%B8%AD%E6%A6%82%E8%82%A1%E8%B2%A1%E5%A0%B1%E6%8E%A5%E5%8A%9B-%E8%81%AF%E6%BA%96%E6%9C%83%E6%96%B0%E5%B1%80%E9%9D%A2-pce-%E6%88%90%E6%94%BF%E7%AD%96%E6%96%B9%E5%90%91%E9%97%9C%E9%8D%B5%E8%A8%8A%E8%99%9F-%E4%B8%AD%E6%B2%B9%E5%AE%A3%E5%B8%83%E9%80%A3-8-%E5%91%A8%E5%87%8D%E6%BC%B2%EF%BD%9C%E6%8A%95%E8%B3%87%E6%97%A9%E7%9F%A5%E9%81%93-124404729.html"
+      ],
+      "expires_at": "2026-05-29T09:00:00+08:00"
+    }
+  ],
+  "whats_changed": {
+    "generated_at": "2026-05-27T14:00:00+08:00",
+    "prev_report_date": "2026-05-26",
+    "curr_report_date": "2026-05-27",
+    "market_level": {
+      "prev": "bullish",
+      "curr": "neutral",
+      "changed": true
+    },
+    "taiex": {
+      "prev_close": 43525.37,
+      "curr_close": 43585.8,
+      "diff": 60.43,
+      "note": "TAIEX 5/26收43525.37 → 5/27估43585.8（+60.43）"
+    },
+    "direction_changes": [
+      {
+        "ticker": "2330",
+        "name": "台積電",
+        "from": "neutral",
+        "to": "bullish",
+        "prev_price": 2275,
+        "curr_price": 2320,
+        "note": "2330 direction change: neutral → bullish"
+      },
+      {
+        "ticker": "2454",
+        "name": "聯發科",
+        "from": "bullish",
+        "to": "strongly_bullish",
+        "prev_price": 4295,
+        "curr_price": 4690,
+        "note": "2454 direction change: bullish → strongly_bullish"
+      },
+      {
+        "ticker": "2317",
+        "name": "鴻海",
+        "from": "neutral",
+        "to": "bullish",
+        "prev_price": 258,
+        "curr_price": 265,
+        "note": "2317 direction change: neutral → bullish"
+      },
+      {
+        "ticker": "TSLA",
+        "name": "特斯拉",
+        "from": "neutral",
+        "to": "bullish",
+        "prev_price": 423.67,
+        "curr_price": 432.33,
+        "note": "TSLA direction change: neutral → bullish"
+      },
+      {
+        "ticker": "AAPL",
+        "name": "蘋果",
+        "from": "neutral",
+        "to": "bullish",
+        "prev_price": 308.82,
+        "curr_price": 308.82,
+        "note": "AAPL direction change: neutral → bullish"
+      },
+      {
+        "ticker": "TSM",
+        "name": "台積電ADR",
+        "from": "neutral",
+        "to": "bullish",
+        "prev_price": 404.52,
+        "curr_price": 421.0,
+        "note": "TSM direction change: neutral → bullish"
+      }
+    ],
+    "new_alerts": [
+      "alert-computex-robot-surge-2026-05-27",
+      "alert-jensen-huang-banquet-2026-05-28",
+      "alert-msci-day5-2026-05-29",
+      "alert-triple-upper-shadow-2026-05-27",
+      "alert-mtk-second-disposition-risk-2026-05-27"
+    ],
+    "expired_alerts": [
+      "alert-fubon-100-break-20260526",
+      "alert-msci-window-day2-20260526",
+      "alert-nvda-220-break-20260526",
+      "alert-taiex-44k-shootingstar-20260526",
+      "alert-silicon-wafer-strength-20260526",
+      "alert-2454-zhuyi-relisted-20260526"
+    ],
+    "level_changes": [
+      {
+        "from": "bullish",
+        "to": "neutral",
+        "note": "市場觀點從 bullish 轉 neutral"
+      }
+    ],
+    "key_observations": [
+      "台積電：5/26 neutral(2270) → 5/27 bullish(est2320)，SOX+5.5%帶動反彈",
+      "聯發科：5/26 bullish(4265) → 5/27 strongly_bullish(4690漲停確認)",
+      "鴻海：5/26 neutral(259) → 5/27 bullish(est265)，COMPUTEX受益",
+      "市場level維持neutral（三連上影線抵消SOX催化正面效應）",
+      "新增alert：三連上影線警示、COMPUTEX機器人爆發、聯發科二度處置風險",
+      "5/29 MSCI Day5 alert延續並升級為高優先",
+      "5/26三大法人買超473.94億（昨日確認），5/27待公告"
+    ],
+    "data_caveats": [
+      "5/27個股收盤（台積電2320、鴻海265）為估算值，低度信心",
+      "聯發科4690漲停為搜尋多源確認，中度信心",
+      "TAIEX 43,585.80為中度信心（搜尋片段）",
+      "SOX+5.53%為搜尋摘要確認（中度信心）",
+      "三大法人5/27數據尚未公告，不填估算"
+    ]
+  }
+}

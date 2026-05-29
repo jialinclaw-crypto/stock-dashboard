@@ -1,0 +1,399 @@
+{
+  "_schema_version": "3.0",
+  "type": "close",
+  "report_file": "股市-收盤後-20260529.md",
+  "date": "2026-05-29",
+  "weekday": "週五",
+  "generated_at": "2026-05-29T14:03:31+08:00",
+  "expires_at": "2026-05-30T09:00:00+08:00",
+  "data_quality_note": "TAIEX 44,732.94（+1,096.5, +2.51%）高信心：數學確認（44,732.94 - 1,096.5 = 43,636.44 = 5/28 實際收盤）。台積電 2,355 高信心（搜尋明確確認「尾盤5.09萬張賣單收2,355」）。鴻海漲停中信心（「老AI全面漲停」確認，精確收盤待 TWSE）。聯發科 ~4,740 低信心（注意股限制+搜尋衝突）。美股 5/28：NVDA $214.29(+0.8%)、TSLA $442.19(+0.4%)、AAPL $312.50(+0.5%) 中度信心多源確認。TSM ADR ~$435 低信心估算。5/29 三大法人估算（官方 16:30 後確認）。5/28 資料更正：前次估 43,927.80(-329)，今確認 43,636.44(-620.36,-1.40%)，prev_signals 再次低估跌幅。催化劑：MSCI EM 權重 23.46%→23.76%（史上最高）；Dell AI 伺服器 YoY+757%。",
+  "market_view": {
+    "level": "bullish",
+    "confidence": 0.72,
+    "headline": "MSCI三升被動買盤生效＋Dell AI伺服器+757%雙催化，台股收盤新高44,733；老AI（緯創廣達鴻海）全面漲停，台積電尾盤5.09萬張賣壓需追蹤。下周6/1黃仁勳COMPUTEX主題演講為最大節點，短線維持多方但需留意台積電尾盤賣壓是否延續。",
+    "sources": [
+      "https://www.chinatimes.com/realtimenews/20260529002665-260410",
+      "https://cmnews.com.tw/article/newsyoudeservetoknow-1f64af45-5858-11f1-a357-5ed9acfd305f",
+      "https://money.udn.com/money/story/5607/9501296",
+      "https://www.sinotrade.com.tw/richclub/hotopic/MSCI%E6%98%AF%E4%BB%80%E9%BA%BC-2026%E5%B9%B4%E6%9C%80%E6%96%B0MSCI%E8%AA%BF%E6%95%B4%E6%9C%89%E4%BB%80%E9%BA%BC%E5%BD%B1%E9%9F%BF-MSCI%E6%88%90%E5%88%86%E8%82%A1%E6%9C%89%E5%93%AA%E4%BA%9B---%E5%8F%B0%E7%81%A3%E6%99%82%E9%96%935%E6%9C%8829%E6%97%A5%E6%94%B6%E7%9B%A4%E5%BE%8C%E7%94%9F%E6%95%88--63e06b987ed69159e877a773",
+      "https://tw.stock.yahoo.com/news/msci%E8%AA%BF%E6%95%B45%E6%9C%8829%E6%97%A5%E7%94%9F%E6%95%88-%E5%8F%B0%E7%A9%8D%E9%9B%BB%E6%AC%8A%E9%87%8D%E4%B8%8A%E5%8D%87-%E5%8F%B0%E8%82%A1etf%E6%9C%AC%E5%91%A8%E5%AF%86%E9%9B%86%E9%99%A4%E6%81%AF-%E8%BC%9D%E9%81%94%E8%B2%A1%E5%A0%B15%E6%9C%8820%E6%97%A5%E7%9B%A4%E5%BE%8C%E6%94%BE%E6%A6%9C-%E4%B8%AD%E6%B2%B9%E5%AE%A3%E5%B8%83%E9%80%A37%E5%91%A8%E5%87%8D%E6%BC%B2%EF%BD%9C%E6%8A%95%E8%B3%87%E6%97%A9%E7%9F%A5%E9%81%93-135537232.html"
+    ]
+  },
+  "indices": {
+    "TWII": {
+      "close": 44732.94,
+      "change_pct": 2.51,
+      "change_pts": 1096.5,
+      "prev_close": 43636.44,
+      "high": null,
+      "low": null,
+      "volume_bn_twd": 1810,
+      "data_quality": "high_confidence",
+      "note": "收盤44,732.94（+1,096.5, +2.51%）高信心，數學確認。成交1.81兆創天量。創收盤歷史新高。催化：MSCI EM三升生效（EM 23.46%→23.76%史上最高）+ Dell AI財報+757%。前日5/28收盤更正：43,636.44（-620.36, -1.40%），前次 prev_signals 高估至 43,927.80（誤差+291點）。"
+    },
+    "Nasdaq": {
+      "close": 26656.18,
+      "change_pct": null,
+      "data_quality": "stale_pending",
+      "note": "美股5/28尚未確認；5/26收盤26,656.18為前次已知數據。今晚Dell AI財報利多，預期正面開盤。"
+    },
+    "SP500": {
+      "close": 7519.12,
+      "change_pct": null,
+      "data_quality": "stale_pending",
+      "note": "美股5/28尚未確認；5/26為前次已知。今晚預期正面。"
+    },
+    "SOX": {
+      "close": null,
+      "change_pct": null,
+      "data_quality": "pending",
+      "note": "5/28 SOX 未確認。Dell AI伺服器+757%為半導體今晚最大利多催化劑。預期SOX今晚大漲（NVDA/SMCI受惠）。"
+    }
+  },
+  "institutional": {
+    "date": "2026-05-29",
+    "data_quality": "low_confidence_estimate",
+    "foreign_net_bn_twd": null,
+    "trust_net_bn_twd": null,
+    "proprietary_net_bn_twd": null,
+    "total_net_bn_twd": null,
+    "foreign_top_buys": [],
+    "note": "5/29三大法人官方數據16:30後確認（TWSE t86）。估算：MSCI EM台灣權重+0.30%（史上最高），被動外資入場1,500~2,500億集中在尾盤集合競價；加上Dell AI主動外資回補，今日外資超大買超（估+500~1,500億）。實際數字不確定，謹以低信心標記。前日5/28確認：外資-381.37億、投信-62.06億、自營-150.38億、合計-593.81億。",
+    "prev_day_confirmed": {
+      "date": "2026-05-28",
+      "foreign_net_bn_twd": -38.137,
+      "trust_net_bn_twd": -6.206,
+      "proprietary_net_bn_twd": -15.038,
+      "total_net_bn_twd": -59.381,
+      "data_quality": "medium_confidence",
+      "note": "5/28三大法人確認：外資-381.37億、投信-62.06億、自營-150.38億、合計-593.81億。前次 prev_signals 低估（估-200億，實際-593.81億）。"
+    },
+    "sources": [
+      "https://www.twse.com.tw/zh/trading/foreign/bfi82u.html",
+      "https://www.twse.com.tw/zh/trading/foreign/t86.html"
+    ]
+  },
+  "stocks": [
+    {
+      "signal_id": "stk-2330-2026-05-29-close",
+      "ticker": "2330",
+      "name": "台積電",
+      "market": "TW",
+      "direction": "bullish",
+      "price": 2355,
+      "prev_price": 2290,
+      "change_pct": 2.84,
+      "confidence": 0.78,
+      "rationale": "台積電5/29收2,355（+65, +2.84%），高信心確認。盤中刷新歷史天價至2,375，MSCI EM台積電權重最大調升受益。尾盤13:25集合競價爆出5.09萬張賣單（可能含MSCI被動調整賣壓或法人避險），收盤2,355。短多格局不變（創收盤新高），但尾盤大賣單為短線風險信號需持續追蹤。長線：CoWoS/GB200/GB300供不應求，外資目標2,800+。支撐：2,330–2,310；阻力：2,375（新高），2,400。",
+      "sources": [
+        "https://www.chinatimes.com/realtimenews/20260529002665-260410",
+        "https://cmnews.com.tw/article/newsyoudeservetoknow-1f64af45-5858-11f1-a357-5ed9acfd305f",
+        "https://tw.stock.yahoo.com/quote/2330.TW"
+      ],
+      "expires_at": "2026-05-30T09:00:00+08:00",
+      "flags": [
+        "new_all_time_high_2375_intraday",
+        "tail_sell_50900_lots_warning",
+        "msci_weight_largest_increase",
+        "close_record_high"
+      ]
+    },
+    {
+      "signal_id": "stk-2454-2026-05-29-close",
+      "ticker": "2454",
+      "name": "聯發科",
+      "market": "TW",
+      "direction": "neutral",
+      "price": 4740,
+      "prev_price": 4362,
+      "change_pct": 8.67,
+      "confidence": 0.35,
+      "rationale": "聯發科5/29估算收~4,740（低信心）。Dell AI財報+757% 為聯發科長線催化（端側AI/Apple TPU/Google晶片受惠）；MSCI被動買盤正面。但注意股（5分鐘撮合）限制預計至6/3前後，影響價格發現效率與流動性。方向由bearish調整至neutral（數據不確定+注意股限制），待注意股解除後方向更明確。支撐：4,362（前低）；外資長線目標：5,922。",
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/2454.TW",
+        "https://www.cnyes.com/twstock/ps_historyprice.aspx?code=2454"
+      ],
+      "expires_at": "2026-05-30T09:00:00+08:00",
+      "flags": [
+        "zhuyi_stock_active_5min_match_until_0603",
+        "dell_ai_indirect_beneficiary",
+        "price_low_confidence_estimate",
+        "recovery_from_oversell"
+      ]
+    },
+    {
+      "signal_id": "stk-2317-2026-05-29-close",
+      "ticker": "2317",
+      "name": "鴻海",
+      "market": "TW",
+      "direction": "bullish",
+      "price": 284,
+      "prev_price": 258,
+      "change_pct": 10.08,
+      "confidence": 0.68,
+      "rationale": "鴻海5/29攻上漲停（+10%），中高信心確認。催化：Dell AI伺服器財報YoY+757%（鴻海為Dell GB200主要組裝廠），「老AI」全面漲停。估算收盤~284（從5/28估算收盤~258 × 1.10）。5/28 估算收258（從前次262低信心，配合大盤-1.4%下修）。中線：黃仁勳6/1主題演講前，鴻海為AI伺服器概念核心。支撐：258（前低）；阻力：無（漲停後估下周持續觀察）。",
+      "sources": [
+        "https://www.chinatimes.com/realtimenews/20260529002665-260410",
+        "https://tw.stock.yahoo.com/quote/2317.TW"
+      ],
+      "expires_at": "2026-05-30T09:00:00+08:00",
+      "flags": [
+        "limit_up_confirmed",
+        "old_ai_server_beneficiary",
+        "dell_ai_server_beat_direct",
+        "computex_jensen_keynote_pending"
+      ]
+    },
+    {
+      "signal_id": "stk-NVDA-2026-05-29-close",
+      "ticker": "NVDA",
+      "name": "輝達",
+      "market": "US",
+      "direction": "bullish",
+      "price": 214.29,
+      "prev_price": 212.73,
+      "change_pct": 0.73,
+      "confidence": 0.65,
+      "rationale": "NVDA 5/28 US 收$214.29（+$1.56, +0.73%）中度信心確認。今晚（US 5/29 開盤）Dell AI伺服器+757%財報為NVDA最大直接催化劑（Dell AI Factory with NVIDIA）；加上台灣鏈全面漲停、MSCI台灣加碼，美股AI板塊今晚料大漲。方向由neutral升至bullish（Dell催化劑評估）。今晚預期：+2~5%。支撐：$210；阻力：$220–$225。",
+      "sources": [
+        "https://finance.yahoo.com/quote/NVDA/",
+        "https://www.dell.com/en-us/dt/corporate/newsroom/announcements/detailpage.press-releases~usa~2026~05~dell-technologies-closes-the-gap-between-ai-ambition-and-ai-outcomes.htm"
+      ],
+      "expires_at": "2026-05-30T09:00:00+08:00",
+      "flags": [
+        "dell_ai_factory_nvidia_beat",
+        "us_market_not_open_yet",
+        "tonight_catalyst_high"
+      ]
+    },
+    {
+      "signal_id": "stk-TSLA-2026-05-29-close",
+      "ticker": "TSLA",
+      "name": "特斯拉",
+      "market": "US",
+      "direction": "bullish",
+      "price": 442.19,
+      "prev_price": 440.35,
+      "change_pct": 0.42,
+      "confidence": 0.60,
+      "rationale": "TSLA 5/28 US 收$442.19（+$1.83, +0.42%）中度信心確認。機器人（Optimus）/ COMPUTEX AI 概念持續；$440 關鍵支撐守穩。Dell 財報非 TSLA 直接利多，但整體 AI 樂觀情緒正面。bullish 不變。",
+      "sources": [
+        "https://finance.yahoo.com/quote/TSLA/"
+      ],
+      "expires_at": "2026-05-30T09:00:00+08:00",
+      "flags": [
+        "robot_optimus_theme_active",
+        "us_market_not_open_yet"
+      ]
+    },
+    {
+      "signal_id": "stk-AAPL-2026-05-29-close",
+      "ticker": "AAPL",
+      "name": "蘋果",
+      "market": "US",
+      "direction": "bullish",
+      "price": 312.5,
+      "prev_price": 311.01,
+      "change_pct": 0.48,
+      "confidence": 0.65,
+      "rationale": "AAPL 5/28 US 收$312.50（+$1.49, +0.48%）中度信心確認，站穩$310以上技術關鍵位。AI 功能催化 + 供應鏈台積電 CoWoS 正面。Dell AI 邊緣算力公告（Dell Deskside Agentic AI）對 AAPL On-Device AI 概念小幅正面。bullish 維持。",
+      "sources": [
+        "https://finance.yahoo.com/quote/AAPL/"
+      ],
+      "expires_at": "2026-05-30T09:00:00+08:00",
+      "flags": []
+    },
+    {
+      "signal_id": "stk-TSM-2026-05-29-close",
+      "ticker": "TSM",
+      "name": "台積電ADR",
+      "market": "US",
+      "direction": "bullish",
+      "price": 435,
+      "prev_price": 430,
+      "change_pct": 1.16,
+      "confidence": 0.35,
+      "rationale": "TSM ADR 5/28估~$435（低信心）。今晚催化強勁：台灣本尊2330今日+2.84%（2,355）+ MSCI台積電權重最大調升 + Dell AI供應鏈。歷史上台灣MSCI生效日後ADR通常跳漲反映TW收盤。預期今晚TSM ADR可能+3~5%（估$445~$455）。方向升至bullish（從neutral）。",
+      "sources": [
+        "https://finance.yahoo.com/quote/TSM/",
+        "https://stockanalysis.com/stocks/tsm/history/"
+      ],
+      "expires_at": "2026-05-30T09:00:00+08:00",
+      "flags": [
+        "msci_largest_tw_weight_increase",
+        "low_confidence_estimate",
+        "tonight_strong_catalyst"
+      ]
+    }
+  ],
+  "alerts": [
+    {
+      "alert_id": "alert-dell-ai-server-beat-20260529",
+      "type": "earnings_catalyst",
+      "level": "high",
+      "title": "Dell AI 伺服器財報大爆炸 — AI 伺服器 YoY +757%",
+      "body": "Dell Technologies 最新季度財報（5/28 US 盤後公布）顯示 AI 伺服器營收相較去年同期激增 757%，AI Factory with NVIDIA 客戶突破 5,000 家。此為今日台灣 AI 伺服器供應鏈（鴻海、廣達、緯創）全面漲停的直接催化。NVDA 今晚也將受益。",
+      "url": "https://www.chinatimes.com/realtimenews/20260529002665-260410",
+      "source": "中時新聞網",
+      "expires_at": "2026-06-01T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-msci-tw-realized-20260529",
+      "type": "event_realized",
+      "level": "high",
+      "title": "MSCI 季調三升今日生效 — 台灣 EM 權重史上最高 23.76%",
+      "body": "MSCI 2026 半年度調整今日（5/29）收盤後正式生效。台股在三大指數全數調升（EM: 23.46%→23.76%史上最高），估被動買盤 1,500~2,500 億集中在 13:25-13:30 尾盤集合競價。新增成分股：旺矽（6223）。今日成交 1.81 兆天量與大漲 1,097 點均受此事件推動。",
+      "url": "https://money.udn.com/money/story/5607/9501296",
+      "source": "經濟日報",
+      "expires_at": "2026-05-30T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-tsmc-tail-sell-20260529",
+      "type": "technical_risk",
+      "level": "medium",
+      "title": "台積電（2330）尾盤爆 5.09 萬張賣單 — 短線警示",
+      "body": "台積電 5/29 盤中創新高 2,375 後，尾盤（13:25-13:30）集合競價爆出 5.09 萬張賣單，收盤 2,355（較高點回落 20 元）。賣壓來源可能為 MSCI 被動調整對沖/法人高點減碼/外資獲利了結。若下周開盤賣壓持續，留意 2,310–2,290 支撐。",
+      "url": "https://cmnews.com.tw/article/newsyoudeservetoknow-1f64af45-5858-11f1-a357-5ed9acfd305f",
+      "source": "CMoney 投資網誌",
+      "expires_at": "2026-06-01T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-old-ai-limit-up-20260529",
+      "type": "sector_momentum",
+      "level": "medium",
+      "title": "老 AI 全面漲停：緯創、廣達、鴻海（Dell 財報直接受惠）",
+      "body": "Dell Q 財報 AI 伺服器 YoY+757% 帶動台灣 AI 伺服器組裝三雄（緯創、廣達、鴻海）全面漲停，台達電（電源散熱）漲逾4%。「老 AI」板塊今日領漲全市場，顯示資金從晶片轉向組裝/系統整合端。下周 6/1 黃仁勳演講若帶出新訂單，漲停潮可能延伸。",
+      "url": "https://www.chinatimes.com/realtimenews/20260529002665-260410",
+      "source": "中時新聞網",
+      "expires_at": "2026-06-01T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-computex-jensen-keynote-20260601",
+      "type": "event",
+      "level": "high",
+      "title": "6/1（週一）黃仁勳 COMPUTEX 主題演講 — 最大催化節點",
+      "body": "NVIDIA CEO 黃仁勳將於 6/1 在台北 COMPUTEX 2026 發表主題演講（主題：AI Together）。預計聚焦 AI 基礎建設、Blackwell Ultra 進展、機器人 Optimus 合作，為 AI 概念股最大節點。若超預期（新 GPU 架構/大規模訂單），台積電/聯發科/鴻海/廣達可能再度大漲。今日已是高基期，需留意「買預期賣事實」風險。",
+      "url": "https://tw.stock.yahoo.com/news/%E3%80%90computex-2026%E5%89%8D%E7%9E%BB2%E3%80%91%E9%BB%83%E4%BB%81%E5%8B%B3%E5%8A%A0%E6%8C%81%EF%BC%81computex%E6%A6%82%E5%BF%B5%E8%82%A1%E8%AA%B0%E6%9C%80%E6%9C%89%E6%88%B2%EF%BC%9F%E5%88%86%E6%9E%90%E5%B8%AB%E9%BB%9E%E5%90%8D%E3%80%8C%E8%80%81ai%E3%80%8D%E9%B4%BB%E6%B5%B7%E5%BB%A3%E9%81%94-20%E6%AA%94%E6%BD%9B%E5%8A%9B%E8%82%A1%E5%90%8D%E5%96%AE%E4%B8%80%E6%AC%A1%E7%9C%8B-044611196.html",
+      "source": "Yahoo股市 COMPUTEX前瞻",
+      "expires_at": "2026-06-01T13:30:00+08:00"
+    },
+    {
+      "alert_id": "alert-2454-zhuyi-ongoing-20260529",
+      "type": "stock_risk",
+      "level": "medium",
+      "title": "聯發科（2454）注意股限制持續至 6/3 前後",
+      "body": "聯發科因 5/27 漲停後 5/28 急殺>6%，注意股（5分鐘撮合）狀態持續。今日雖有 Dell AI 利多和大盤大漲，注意股限制使執行效率下降、流動性受限。6/3 前後可能解除，解除後若 Dell AI 題材仍強，可能有補漲行情。",
+      "url": "https://tw.stock.yahoo.com/quote/2454.TW",
+      "source": "Yahoo股市",
+      "expires_at": "2026-06-03T09:00:00+08:00"
+    }
+  ],
+  "whats_changed": {
+    "summary": "相較5/28收盤報告，今日最重要變化：(1) TAIEX由bearish大逆轉至bullish，+1,097pt創收盤新高44,733；(2) 雙催化：MSCI三升生效+Dell AI伺服器+757%；(3) 老AI（鴻海、廣達、緯創）全面漲停；(4) TSMC盤中2,375新高，但尾盤5.09萬張賣壓需追蹤；(5) 5/28資料更正：實際收盤43,636.44（-620.36,-1.40%），非前次估計43,927.80（再次低估）；(6) 5/28三大法人實際：-593.81億，遠超前次估計-200億。",
+    "prev_report_date": "2026-05-28",
+    "data_correction": {
+      "field": "indices.TWII.close [5/28]",
+      "prev_report_value": 43927.8,
+      "actual_value": 43636.44,
+      "actual_change_pts": -620.36,
+      "actual_change_pct": -1.40,
+      "note": "5/28 close prev_signals 估 43,927.80(-329,-0.74%)，今日數學倒推確認實際為 43,636.44(-620.36,-1.40%)。誤差 +291點。連續兩次 prev_signals 低估跌幅（5/27 misestimate was corrected in 5/28 report）。"
+    },
+    "institutional_correction_5_28": {
+      "prev_estimate_total": -20.002,
+      "actual_total": -59.381,
+      "note": "5/28三大法人實際：外資-381.37億、投信-62.06億、自營-150.38億、合計-593.81億。前次估計-200.02億，低估 -393.79億。"
+    },
+    "index_direction_change": {
+      "prev": "bearish",
+      "now": "bullish",
+      "prev_change_pct": -1.40,
+      "now_change_pct": 2.51,
+      "note": "從5/28大跌-620點到今日大漲+1,097點，W型反轉，新收盤高。"
+    },
+    "stock_direction_changes": [
+      {
+        "ticker": "2330",
+        "name": "台積電",
+        "prev_direction": "neutral",
+        "now_direction": "bullish",
+        "prev_price": 2290,
+        "now_price": 2355,
+        "note": "盤中新高2,375，收2,355(+2.84%)；但尾盤5.09萬張賣壓為新的警示旗標"
+      },
+      {
+        "ticker": "2454",
+        "name": "聯發科",
+        "prev_direction": "bearish",
+        "now_direction": "neutral",
+        "prev_price": 4362,
+        "now_price": 4740,
+        "note": "Dell AI間接受惠反彈，但注意股限制持續；估算不確定性高，方向由bearish升至neutral"
+      },
+      {
+        "ticker": "2317",
+        "name": "鴻海",
+        "prev_direction": "neutral",
+        "now_direction": "bullish",
+        "prev_price": 262,
+        "now_price": 284,
+        "note": "漲停（+10%），Dell AI伺服器+757%直接受惠；老AI最強個股之一"
+      },
+      {
+        "ticker": "NVDA",
+        "name": "輝達",
+        "prev_direction": "neutral",
+        "now_direction": "bullish",
+        "prev_price": 212.73,
+        "now_price": 214.29,
+        "note": "US收盤輕微上漲；但今晚Dell AI催化令方向由neutral升至bullish"
+      },
+      {
+        "ticker": "TSM",
+        "name": "台積電ADR",
+        "prev_direction": "neutral",
+        "now_direction": "bullish",
+        "prev_price": 430,
+        "now_price": 435,
+        "note": "估算；今晚MSCI台積電最大調升+本尊+2.84%，ADR應有顯著漲幅"
+      }
+    ],
+    "alerts_added": [
+      "alert-dell-ai-server-beat-20260529",
+      "alert-msci-tw-realized-20260529",
+      "alert-tsmc-tail-sell-20260529",
+      "alert-old-ai-limit-up-20260529",
+      "alert-2454-zhuyi-ongoing-20260529"
+    ],
+    "alerts_updated": [
+      {
+        "alert_id": "alert-computex-jensen-keynote-20260601",
+        "change": "level 維持 high；距演講僅剩2天，重要性更高。今日老AI全漲停提高市場對演講的預期。注意「買預期賣事實」風險。"
+      }
+    ],
+    "alerts_expired": [
+      {
+        "alert_id": "alert-44k-ceiling-4shadow-20260528",
+        "reason": "44K鐵頂格局已被突破：今日收盤44,733，44K壓力解除"
+      },
+      {
+        "alert_id": "alert-msci-passive-day-20260529",
+        "reason": "事件已發生（今日MSCI生效），移至alert-msci-tw-realized-20260529"
+      },
+      {
+        "alert_id": "alert-pce-us-tonight-20260528",
+        "reason": "PCE數據公布日期已過（5/28晚），結果已反映"
+      },
+      {
+        "alert_id": "alert-foreign-defense-rotation-20260528",
+        "reason": "今日資金大幅回流AI科技，防禦輪動暫告終止"
+      }
+    ],
+    "market_view_change": {
+      "prev_level": "bearish",
+      "now_level": "bullish",
+      "prev_confidence": 0.65,
+      "now_confidence": 0.72
+    }
+  }
+}

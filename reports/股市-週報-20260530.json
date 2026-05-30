@@ -1,0 +1,403 @@
+{
+  "_schema_version": 3,
+  "type": "weekly",
+  "report_file": "股市-週報-20260530.md",
+  "date": "2026-05-30",
+  "weekday": "週六",
+  "generated_at": "2026-05-30T09:00:00+08:00",
+  "expires_at": "2026-06-06T09:00:00+08:00",
+  "market_view": {
+    "level": "bullish",
+    "confidence": 0.72,
+    "headline": "MSCI 三升+Dell +757% AI伺服器+Micron $1兆市值三催化引爆，台股 44,733 歷史新高，月漲 14.92%；10Y 殖利率大降 74bps，多頭格局強力確認，下週 6/1 黃仁勳 COMPUTEX 演講為最大節點",
+    "week": "2026-05-26 ~ 2026-05-29"
+  },
+  "indices": [
+    {
+      "name": "台股加權指數",
+      "ticker": "^TWII",
+      "close": 44732.94,
+      "week_open_est": 42300.0,
+      "week_change": 2464.97,
+      "week_change_pct": 5.83,
+      "prev_close": 42267.97,
+      "volume_week_bn_twd_est": 70000.0,
+      "note": "三引擎引爆：MSCI 三升5/29生效（被動資金1,500-2,500億）+ Dell AI伺服器+757% YoY + Micron $1兆市值；週五成交1.81兆天量，外資大幅買超，創歷史收盤新高44,732.94；5月全月+14.92%。20MA≈42,800、60MA≈40,600、200MA≈39,200，週線RSI≈77（超買）",
+      "signal_id": "stk-TWII-2026-05-30-weekly",
+      "direction": "bullish",
+      "confidence": 0.72,
+      "rationale": "歷史新高突破確認，三大催化劑同步，MSCI被動資金流入，AI伺服器超級週期加速；週線RSI 77超買為唯一警戒，下週COMPUTEX演講為最大正催化劑，短線買預期賣事實風險可控",
+      "sources": [
+        "https://www.twse.com.tw/zh/indices/taiex/mi-5min-hist.html",
+        "https://money.udn.com/money/story/5607/9534087"
+      ],
+      "expires_at": "2026-06-06T09:00:00+08:00"
+    },
+    {
+      "name": "美股S&P 500",
+      "ticker": "^GSPC",
+      "close": 7557.0,
+      "prev_close": 7473.47,
+      "week_change_pct": 1.1,
+      "note": "再創歷史新高，Micron+Dell帶動科技股全面走強；週二收7,519.12，週五+0.5%封關",
+      "signal_id": "stk-GSPC-2026-05-30-weekly",
+      "direction": "bullish",
+      "confidence": 0.68,
+      "rationale": "突破前高7,520，AI硬體+軟體全面加速；10Y殖利率回落至4.44%支撐估值；6/5非農為最大風險點",
+      "sources": [
+        "https://www.cnbc.com/2026/05/25/stock-futures-today-live-updates.html"
+      ],
+      "expires_at": "2026-06-06T09:00:00+08:00"
+    },
+    {
+      "name": "那斯達克綜合",
+      "ticker": "^COMP",
+      "close": 26789.0,
+      "prev_close": 26343.97,
+      "week_change_pct": 1.7,
+      "note": "Micron+Oracle+Microsoft帶動，月漲8%；AI軟硬體均告強勁",
+      "signal_id": "stk-COMP-2026-05-30-weekly",
+      "direction": "bullish",
+      "confidence": 0.68,
+      "rationale": "科技股多頭格局完整，SOX週漲16.5%強力確認半導體超級週期；COMPUTEX前後為最大催化劑",
+      "sources": [
+        "https://www.cnbc.com/2026/05/25/stock-futures-today-live-updates.html"
+      ],
+      "expires_at": "2026-06-06T09:00:00+08:00"
+    },
+    {
+      "name": "道瓊工業平均",
+      "ticker": "^DJI",
+      "close": 50666.0,
+      "prev_close": 50579.7,
+      "week_change_pct": 0.2,
+      "note": "守穩50,000之上，週漲溫和+0.2%；藍籌股跑輸科技股",
+      "signal_id": "stk-DJI-2026-05-30-weekly",
+      "direction": "bullish",
+      "confidence": 0.6,
+      "rationale": "站穩50,000心理關口，多頭格局持續；本週由科技主導，傳統藍籌相對弱勢",
+      "sources": [
+        "https://www.cnbc.com/2026/05/25/stock-futures-today-live-updates.html"
+      ],
+      "expires_at": "2026-06-06T09:00:00+08:00"
+    },
+    {
+      "name": "費城半導體SOX",
+      "ticker": "^SOX",
+      "close": 12829.14,
+      "prev_close": 10927.0,
+      "week_change_pct": 16.5,
+      "note": "Micron單日+19%引爆，創近年最強單週漲幅；HBM需求爆發確認",
+      "signal_id": "stk-SOX-2026-05-30-weekly",
+      "direction": "bullish",
+      "confidence": 0.75,
+      "rationale": "Micron $1兆里程碑+HBM需求確認+Dell AI伺服器超強財報，半導體超級週期再加速；COMPUTEX Rubin架構揭露為下週最大催化劑",
+      "sources": [
+        "https://www.investing.com/indices/phlx-semiconductor-historical-data",
+        "https://www.cnbc.com/2026/05/26/micron-stock-trillion-market-cap.html"
+      ],
+      "expires_at": "2026-06-06T09:00:00+08:00"
+    }
+  ],
+  "macro": {
+    "us_10y_yield": 4.44,
+    "us_30y_yield": 4.82,
+    "vix": 17.0,
+    "dxy": 100.5,
+    "note": "10Y殖利率由5.18%暴降至4.44%（-74bps，美伊和談草案緩解通膨），為多頭最大助力；VIX低檔維持市場信心；DXY隨殖利率回落走弱"
+  },
+  "stocks": [
+    {
+      "ticker": "2330",
+      "name": "台積電",
+      "market": "TW",
+      "close": 2355,
+      "prev_close_weekly": 2255,
+      "week_change_pct": 4.4,
+      "intraday_high_week": 2375,
+      "ma20": 2180,
+      "ma60": 2050,
+      "ma200": 1870,
+      "rsi_weekly": 76,
+      "note": "盤中歷史新高2,375，收2,355；MSCI三升最大受益個股；CoWoS月產能目標上調至20萬片（MS）；5.09萬張尾盤賣壓為短線警示",
+      "signal_id": "stk-2330-2026-05-30-weekly",
+      "direction": "bullish",
+      "confidence": 0.73,
+      "rationale": "MSCI被動資金+CoWoS需求上調+COMPUTEX Rubin架構正催化；均線多頭排列完整；RSI 76超買但強勢行情可維持高檔；下週演講後觀察量能是否縮退",
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/2330.TW",
+        "https://www.tradingkey.com/analysis/stocks/more/261927339-nvidia-nvda-amd-intc-intel-taiwan-semiconductor-stock-chip-ai-tradingkey"
+      ],
+      "expires_at": "2026-06-06T09:00:00+08:00"
+    },
+    {
+      "ticker": "2454",
+      "name": "聯發科",
+      "market": "TW",
+      "close": 4310,
+      "prev_close_weekly": 3860,
+      "week_change_pct": 11.7,
+      "intraday_high_week": 4640,
+      "ma20": 3970,
+      "ma60": 3700,
+      "ma200": 3350,
+      "rsi_weekly": 78,
+      "note": "5/27漲停4,640(+9.97%)後5/28急殺-6%，5/29回穩4,310附近；高度波動；二次處置解除；週線RSI 78超買警示",
+      "signal_id": "stk-2454-2026-05-30-weekly",
+      "direction": "neutral_bullish",
+      "confidence": 0.58,
+      "rationale": "AI Edge晶片需求確認，二次處置解除；但長上影線+RSI超買代表短線賣壓沉重；4,300為關鍵支撐，守穩後可續多，跌破需謹慎；建議不追高",
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/2454.TW"
+      ],
+      "expires_at": "2026-06-06T09:00:00+08:00"
+    },
+    {
+      "ticker": "2317",
+      "name": "鴻海",
+      "market": "TW",
+      "close": 289,
+      "prev_close_weekly": 250,
+      "week_change_pct": 15.6,
+      "ma20": 265,
+      "ma60": 248,
+      "ma200": 225,
+      "rsi_weekly": 73,
+      "note": "5/29股東會：GB200/GB300代工量超預期，機器人2026量產確認；Dell財報背書AI伺服器供應鏈；週五漲停",
+      "signal_id": "stk-2317-2026-05-30-weekly",
+      "direction": "bullish",
+      "confidence": 0.7,
+      "rationale": "股東會確認AI伺服器+機器人雙成長引擎；Dell+757%財報直接利多；技術面強力突破前高，均線多頭排列；下週COMPUTEX正向催化持續",
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/2317.TW",
+        "https://tradersunion.com/news/financial-news/show/2176204-dell-shares-jump-ai-server-sales/"
+      ],
+      "expires_at": "2026-06-06T09:00:00+08:00"
+    },
+    {
+      "ticker": "NVDA",
+      "name": "輝達",
+      "market": "US",
+      "close": 216.24,
+      "prev_close_weekly": 215.33,
+      "week_change_pct": 0.4,
+      "ma20": 195.0,
+      "ma60": 175.0,
+      "ma200": 148.0,
+      "rsi_weekly": 73,
+      "note": "週漲溫和+0.4%（前週消化Q1財報sell-the-news）；Jensen宣示每年投資台灣$1,500億；6/1 COMPUTEX Rubin+Vera架構發表為最大催化劑",
+      "signal_id": "stk-NVDA-2026-05-30-weekly",
+      "direction": "bullish",
+      "confidence": 0.7,
+      "rationale": "Q2指引$91B(+95% YoY)強勁；Rubin GPU生態系建立中；COMPUTEX演講前後為最強催化劑；Micron $1兆確認AI記憶體超級週期間接利多；方向由neutral_bullish升至bullish",
+      "sources": [
+        "https://finance.yahoo.com/quote/NVDA/",
+        "https://www.nvidia.com/en-tw/gtc/taipei/keynote/"
+      ],
+      "expires_at": "2026-06-06T09:00:00+08:00"
+    },
+    {
+      "ticker": "TSLA",
+      "name": "特斯拉",
+      "market": "US",
+      "close": 438.78,
+      "prev_close_weekly": 418.4,
+      "week_change_pct": 4.9,
+      "ma20": 390.0,
+      "ma60": 355.0,
+      "ma200": 310.0,
+      "rsi_weekly": 65,
+      "note": "跟漲大盤但落後SOX；Optimus機器人為長線期待；缺乏本週獨立催化劑",
+      "signal_id": "stk-TSLA-2026-05-30-weekly",
+      "direction": "neutral",
+      "confidence": 0.52,
+      "rationale": "跟漲但落後科技板塊；AI行情集中在伺服器/記憶體/半導體，TSLA受惠有限；均線多頭但RSI中性；維持觀望，跌破$420轉負面",
+      "sources": [
+        "https://finance.yahoo.com/quote/TSLA/"
+      ],
+      "expires_at": "2026-06-06T09:00:00+08:00"
+    },
+    {
+      "ticker": "AAPL",
+      "name": "蘋果",
+      "market": "US",
+      "close": 311.0,
+      "prev_close_weekly": 304.99,
+      "week_change_pct": 2.0,
+      "high_52w": 313.26,
+      "ma20": 290.0,
+      "ma60": 272.0,
+      "ma200": 245.0,
+      "rsi_weekly": 70,
+      "note": "5/27觸52W新高313.26；Apple Intelligence AI整合被重新定價；方向由neutral升至neutral_bullish",
+      "signal_id": "stk-AAPL-2026-05-30-weekly",
+      "direction": "neutral_bullish",
+      "confidence": 0.6,
+      "rationale": "接近52週高點，大型科技股跟漲AI行情；Apple Intelligence長線驅動；均線多頭排列；但AI伺服器行情受惠有限，維持中性看多",
+      "sources": [
+        "https://finance.yahoo.com/quote/AAPL/history/"
+      ],
+      "expires_at": "2026-06-06T09:00:00+08:00"
+    },
+    {
+      "ticker": "TSM",
+      "name": "台積電ADR",
+      "market": "US",
+      "close": 420.26,
+      "prev_close_weekly": 416.0,
+      "week_change_pct": 1.0,
+      "high_52w": 424.0,
+      "ma20": 395.0,
+      "ma60": 370.0,
+      "ma200": 330.0,
+      "rsi_weekly": 75,
+      "note": "MSCI三升+CoWoS需求上調；接近52W高424元；受美元走弱影響漲幅略小於TW股",
+      "signal_id": "stk-TSM-2026-05-30-weekly",
+      "direction": "bullish",
+      "confidence": 0.7,
+      "rationale": "MSCI機構配置直接受惠；CoWoS擴產長線利多；技術面接近52W高待突破；與台積電TW同步走強；下週COMPUTEX為最大正催化劑",
+      "sources": [
+        "https://finance.yahoo.com/quote/TSM/"
+      ],
+      "expires_at": "2026-06-06T09:00:00+08:00"
+    }
+  ],
+  "alerts": [
+    {
+      "alert_id": "alert-COMPUTEX-JensenHuang-20260601",
+      "level": "critical",
+      "title": "6/1 黃仁勳 COMPUTEX GTC Taipei 主題演講：Rubin GPU + Vera CPU 架構揭露",
+      "body": "6月1日（週一）11:00 台北音樂中心，Jensen Huang 主題演講揭露 NVIDIA Rubin GPU（TDP 1.8kW）+ Vera CPU 路線圖。台灣供應鏈 150 家廠商直接受益（TSMC CoWoS / 台達電 / 奇鋐 / 日月光）。預計帶動台股 AI 伺服器鏈繼續走強，但同時留意「買預期賣事實」效應。",
+      "url": "https://www.nvidia.com/en-tw/gtc/taipei/keynote/",
+      "source": "NVIDIA Official",
+      "expires_at": "2026-06-01T14:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-TWII-ATH-44733-20260529",
+      "level": "info",
+      "title": "台股加權指數 5/29 創歷史收盤新高 44,732.94",
+      "body": "台股加權指數週五以 44,732.94 收盤，創歷史收盤新高。5 月全月大漲 5,806 點（+14.92%）。MSCI 三升生效 + Dell 財報 + Micron $1 兆三催化共振，成交量 1.81 兆創天量。",
+      "url": "https://money.udn.com/money/story/5607/9534087",
+      "source": "經濟日報",
+      "expires_at": "2026-06-06T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-Micron-1T-20260526",
+      "level": "info",
+      "title": "Micron（MU）5/26 市值突破 $1 兆美元，單日 +19%",
+      "body": "Micron Technology 5/26 市值首次突破 $1 兆美元，股價單日 +19%（48 天從 $500B 翻倍至 $1T）。HBM AI 記憶體需求爆發確認，UBS 目標價 $1,625（原 $535，三倍跳）。帶動 SOX 週漲 16.5%，台股記憶體（南亞科）、封測（日月光）受益。",
+      "url": "https://www.cnbc.com/2026/05/26/micron-stock-trillion-market-cap.html",
+      "source": "CNBC",
+      "expires_at": "2026-06-06T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-Dell-AI-server-757pct-20260527",
+      "level": "info",
+      "title": "Dell AI 伺服器季營收 +757% YoY（$16.1B），股價週漲 35%",
+      "body": "Dell 5/27 財報：AI 伺服器季營收 $16.1B（+757% YoY），全年 AI 伺服器指引 $60B，積壓訂單 $510 億。股價週漲 35% 創歷史新高。直接利多台灣 AI 伺服器供應鏈：鴻海、廣達、緯創、緯穎（週五多數漲停）。",
+      "url": "https://tradersunion.com/news/financial-news/show/2176204-dell-shares-jump-ai-server-sales/",
+      "source": "Traders Union / Dell Earnings",
+      "expires_at": "2026-06-06T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-yield-10Y-drop-20260529",
+      "level": "info",
+      "title": "10 年美債殖利率本週暴降 74bps → 4.44%（多頭最大助力）",
+      "body": "10 年美債殖利率由前週 5.18% 大幅回落至 4.44%（-74bps），主因美伊和談草案緩解油價通膨預期；PCE 3.8% 雖略高但市場提前消化。殖利率回落 + 美元走弱 = 外資回流新興市場，MSCI 效應加乘。持續追蹤：6/5 非農若超強有機會再度推升。",
+      "url": "https://fred.stlouisfed.org/series/DGS10",
+      "source": "FRED St. Louis Fed",
+      "expires_at": "2026-06-06T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-SpaceX-IPO-20260612",
+      "level": "warning",
+      "title": "SpaceX 預計 6/12 那斯達克上市（代號 SPCX）：台灣低軌衛星概念先行",
+      "body": "SpaceX 預計 6/12 以代號「SPCX」登陸那斯達克，台灣低軌衛星供應鏈（台揚 2417、昇達科 3491、中翰）可能提前反應。建議上市前 1 週（6/5 前後）留意量能放大訊號。",
+      "url": "https://www.cnyes.com/news/id/6437929",
+      "source": "鉅亨網",
+      "expires_at": "2026-06-13T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-MSCI-3-upgrades-20260529",
+      "level": "info",
+      "title": "台股 MSCI 三升 5/29 生效：全球新興市場 + 亞洲除日本 + 全球市場指數同步調升",
+      "body": "台股在 MSCI 全球新興市場、MSCI 亞洲除日本、MSCI 全球市場三個指數同步提升權重，5/29 盤後生效。理論被動資金流入 1,500-2,500 億元。台積電為最大受益個股，週五成交量 1.81 兆天量確認資金流入。",
+      "url": "https://money.udn.com/money/story/5607/9501296",
+      "source": "經濟日報",
+      "expires_at": "2026-06-06T09:00:00+08:00"
+    }
+  ],
+  "whats_changed": {
+    "prev_report_date": "2026-05-23",
+    "generated_at": "2026-05-30T09:00:00+08:00",
+    "direction_changes": [
+      {
+        "ticker": "market_view",
+        "from": "bullish_cautious",
+        "to": "bullish",
+        "note": "信心分: 0.62 → 0.72"
+      },
+      {
+        "ticker": "^GSPC",
+        "name": "美股S&P 500",
+        "from": "neutral_bullish",
+        "to": "bullish",
+        "note": "close: 7473.47 → 7557.0"
+      },
+      {
+        "ticker": "^COMP",
+        "name": "那斯達克綜合",
+        "from": "neutral_bullish",
+        "to": "bullish",
+        "note": "close: 26343.97 → 26789.0"
+      },
+      {
+        "ticker": "2454",
+        "name": "聯發科",
+        "from": "bullish",
+        "to": "neutral_bullish",
+        "note": "close: 3860 → 4310"
+      },
+      {
+        "ticker": "NVDA",
+        "name": "輝達",
+        "from": "neutral_bullish",
+        "to": "bullish",
+        "note": "close: 215.33 → 216.24"
+      },
+      {
+        "ticker": "AAPL",
+        "name": "蘋果",
+        "from": "neutral",
+        "to": "neutral_bullish",
+        "note": "close: 304.99 → 311.0"
+      }
+    ],
+    "alerts_added": [
+      "alert-Dell-AI-server-757pct-20260527",
+      "alert-SpaceX-IPO-20260612",
+      "alert-TWII-ATH-44733-20260529",
+      "alert-yield-10Y-drop-20260529",
+      "alert-Micron-1T-20260526",
+      "alert-MSCI-3-upgrades-20260529",
+      "alert-COMPUTEX-JensenHuang-20260601"
+    ],
+    "alerts_removed": [
+      "alert-NVDA-earnings-resolved-20260523",
+      "alert-TWII-ATH-challenge-20260523",
+      "alert-yield-30Y-19yr-high-20260519",
+      "alert-SOX-recovery-20260523",
+      "alert-Memorial-Day-20260526",
+      "alert-PCE-GDP-20260528",
+      "alert-Dow-50000-ATH-20260522"
+    ],
+    "alerts_level_changed": [],
+    "summary": {
+      "direction_change_count": 6,
+      "alerts_added_count": 7,
+      "alerts_removed_count": 7,
+      "overall_bias_shift": "bearish → bullish",
+      "narrative": "本週三大事件（MSCI三升+Dell財報+Micron $1兆）共振，大盤由 bullish_cautious 升至 bullish；NVDA 由 neutral_bullish 升至 bullish；AAPL 由 neutral 升至 neutral_bullish；新增 7 個 alerts（含 critical：COMPUTEX 黃仁勳演講）；移除前週已解決的 7 個 alerts（PCE已公布/紀念日已過/ATH挑戰已達成）"
+    }
+  }
+}

@@ -1,0 +1,438 @@
+{
+  "_schema_version": 3,
+  "type": "morning",
+  "report_file": "股市-開盤前-20260602.md",
+  "date": "2026-06-02",
+  "weekday": "週二",
+  "generated_at": "2026-06-02T07:35:23+08:00",
+  "market_view": {
+    "level": "bullish",
+    "confidence": 0.70,
+    "headline": "RTX Spark@Computex引爆AI PC革命：NVDA+3.85%至$220.67、ARM+18%；S&P/Nasdaq雙創歷史新高7,600/27,087；聯發科CPU聯盟暴漲+5.68%至4,555；今日ISM製造業PMI為最大短線風險，VIX小升至15.94發出警訊"
+  },
+  "indices": [
+    {
+      "name": "道瓊工業",
+      "ticker": "DJI",
+      "value": 51078.88,
+      "change_pct": 0.09,
+      "trend": "bullish",
+      "note": "六連漲，再刷歷史新高"
+    },
+    {
+      "name": "S&P 500",
+      "ticker": "SPX",
+      "value": 7599.96,
+      "change_pct": 0.26,
+      "trend": "bullish",
+      "note": "連創歷史新高，科技+能源驅動"
+    },
+    {
+      "name": "Nasdaq",
+      "ticker": "IXIC",
+      "value": 27086.81,
+      "change_pct": 0.42,
+      "trend": "bullish",
+      "note": "AI PC熱度帶動，歷史新高"
+    },
+    {
+      "name": "費城半導體",
+      "ticker": "SOX",
+      "value": 12872.0,
+      "change_pct": 0.34,
+      "trend": "bullish",
+      "note": "NVDA+ARM大漲抵銷Intel/AMD/QCOM跌幅，整體偏多"
+    },
+    {
+      "name": "VIX 恐慌指數",
+      "ticker": "VIX",
+      "value": 15.94,
+      "change_pct": 4.05,
+      "trend": "neutral",
+      "note": "小幅升高，ISM/NFP數據週前市場添購保護，需關注"
+    },
+    {
+      "name": "美 10Y 殖利率",
+      "ticker": "US10Y",
+      "value": 4.475,
+      "change_pct": 0.025,
+      "trend": "neutral",
+      "note": "微升，數據週前殖利率維穩"
+    },
+    {
+      "name": "美 30Y 殖利率",
+      "ticker": "US30Y",
+      "value": 5.18,
+      "change_pct": 0.03,
+      "trend": "bearish",
+      "note": "仍高位，長端壓力持續，高估值成長股承壓"
+    },
+    {
+      "name": "美元指數",
+      "ticker": "DXY",
+      "value": 99.0,
+      "change_pct": 0.03,
+      "trend": "neutral",
+      "note": "微升，台廠ADR匯兌效益略有收窄"
+    },
+    {
+      "name": "台股加權指數",
+      "ticker": "TWII",
+      "value": 45426.0,
+      "change_pct": 1.55,
+      "trend": "bullish",
+      "note": "聯發科帶頭衝破45,500，創歷史新高"
+    },
+    {
+      "name": "WTI 原油",
+      "ticker": "WTI",
+      "value": 87.90,
+      "change_pct": 0.81,
+      "trend": "neutral",
+      "note": "美伊停火維持，油價低位震盪"
+    }
+  ],
+  "stocks": [
+    {
+      "signal_id": "stk-2330-2026-06-02-morning",
+      "ticker": "2330",
+      "name": "台積電",
+      "market": "TW",
+      "signal": "🟢",
+      "direction": "bullish",
+      "confidence": 0.70,
+      "view": "2,355持平整理，MSCI流入消化後量縮屬正常；RTX Spark採用台積電製程，為間接利多；多頭排列完整，等待出量突破2,400確認新段上攻；CoWoS/SoIC訂單能見度至2027",
+      "rationale": "RTX Spark製程背書+多頭排列+AI訂單能見度高，2,355支撐穩固，目標2,400-2,450",
+      "price": 2355.0,
+      "change_pct": 0.0,
+      "support": 2320.0,
+      "resistance": 2400.0,
+      "stop_loss": 2250.0,
+      "target": 2450.0,
+      "technicals": {
+        "rsi14": 65.0,
+        "macd": "正值延伸，整理後動能維持",
+        "ma_alignment": "5>10>20>60MA 多頭排列，量縮整理"
+      },
+      "valuation": {
+        "pe": 28.5,
+        "pe_percentile_5y": 70,
+        "verdict": "合理偏高，AI成長溢價支撐，RTX Spark製程認可強化護城河"
+      },
+      "sources": [
+        "https://finance.yahoo.com/quote/TSM/",
+        "https://tw.stock.yahoo.com/quote/2330.TW",
+        "https://hothardware.com/news/nvidia-announces-rtx-spark-at-computex-2026"
+      ],
+      "expires_at": "2026-06-02T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-2454-2026-06-02-morning",
+      "ticker": "2454",
+      "name": "聯發科",
+      "market": "TW",
+      "signal": "🟢",
+      "direction": "bullish",
+      "confidence": 0.78,
+      "view": "RTX Spark CPU+I/O晶片核心設計者，股價大漲+5.68%至4,555元，突破前高4,440進入價格發現；AI ASIC 2026年$20億美元收入目標+SAM 2027年$70-80億；Morgan Stanley最高首選；RSI估73逼近過熱邊界，今日留意高位震盪，守穩4,450-4,500支撐多頭維持",
+      "rationale": "RTX Spark CPU聯盟確認+AI ASIC長線成長，為Computex最大贏家，但RSI過熱需留意",
+      "price": 4555.0,
+      "change_pct": 5.68,
+      "support": 4450.0,
+      "resistance": 4800.0,
+      "stop_loss": 4200.0,
+      "target": 5000.0,
+      "technicals": {
+        "rsi14": 73.0,
+        "macd": "正值大幅延伸，動能爆發，留意過熱",
+        "ma_alignment": "股價大幅突破所有均線，進入價格發現"
+      },
+      "valuation": {
+        "pe": 37.0,
+        "pe_percentile_5y": 80,
+        "verdict": "高溢價，RTX Spark+AI ASIC雙引擎重估，SAM擴大支撐倍數"
+      },
+      "sources": [
+        "https://247wallst.com/investing/2026/06/01/arm-holdings-rockets-18-microsoft-dell-rise-on-rtx-spark-ai-pc-launch/",
+        "https://www.investing.com/news/stock-market-news/nvidias-new-rtx-spark-pc-chip-moves-chipmakers-and-tech-stocks-4718445",
+        "https://finance.yahoo.com/markets/stocks/articles/nvidia-rallies-4-rtx-spark-155423133.html"
+      ],
+      "expires_at": "2026-06-02T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-2317-2026-06-02-morning",
+      "ticker": "2317",
+      "name": "鴻海",
+      "market": "TW",
+      "signal": "🟢",
+      "direction": "bullish",
+      "confidence": 0.68,
+      "view": "前日+9.89%漲停後微升+1.56%至293.5整理，RSI從76降至~72，過熱降溫中；CPO光交換器+AI伺服器組裝基本面不變；290元為分水嶺，守穩則目標300-305，跌破下看275-280二次布局",
+      "rationale": "AI伺服器基本面強勁，但RSI從過熱回落整理，信心較昨日微降",
+      "price": 293.5,
+      "change_pct": 1.56,
+      "support": 280.0,
+      "resistance": 305.0,
+      "stop_loss": 262.0,
+      "target": 305.0,
+      "technicals": {
+        "rsi14": 72.0,
+        "macd": "正值但動能收斂，整理中",
+        "ma_alignment": "股價遠高於所有均線，RSI降溫回測"
+      },
+      "valuation": {
+        "pe": 20.0,
+        "pe_percentile_5y": 62,
+        "verdict": "合理，AI/CPO業務重估進行中，P/E有壓縮空間"
+      },
+      "sources": [
+        "https://coincentral.com/foxconn-stock-rises-after-beating-q1-profit-estimates-on-ai-boom/",
+        "https://www.marketscreener.com/news/foxconn-shares-jump-as-it-plans-push-into-next-gen-ai-tech-ce7f5ddbd889f42d"
+      ],
+      "expires_at": "2026-06-02T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-NVDA-2026-06-02-morning",
+      "ticker": "NVDA",
+      "name": "輝達",
+      "market": "US",
+      "signal": "🟢",
+      "direction": "bullish",
+      "confidence": 0.78,
+      "view": "RTX Spark發表引爆+3.85%至$220.67，突破前阻力$220，開拓AI PC新市場；Blackwell sold out+PC新引擎雙動能；RSI升至60，站回20MA上方；下次財報8/26；若今晚ISM數據佳有機會測試$235-240(ATH附近)",
+      "rationale": "RTX Spark確立PC新市場+Blackwell持續sold out，雙引擎驅動使信心大幅提升至0.78",
+      "price": 220.67,
+      "change_pct": 3.85,
+      "support": 210.0,
+      "resistance": 235.0,
+      "stop_loss": 205.0,
+      "target": 240.0,
+      "technicals": {
+        "rsi14": 60.0,
+        "macd": "正值回升，動能轉強",
+        "ma_alignment": "站回20MA上方，50MA($187)遠低，多頭格局"
+      },
+      "valuation": {
+        "pe": 29.5,
+        "pe_percentile_5y": 44,
+        "verdict": "相對歷史便宜，RTX Spark開拓新SAM，分析師均目$296"
+      },
+      "sources": [
+        "https://www.cnbc.com/2026/05/31/nvidias-new-chip-to-power-fresh-line-of-windows-laptops-by-dell-hp.html",
+        "https://finance.yahoo.com/markets/stocks/articles/nvidia-rallies-4-rtx-spark-155423133.html",
+        "https://hothardware.com/news/nvidia-announces-rtx-spark-at-computex-2026"
+      ],
+      "expires_at": "2026-06-02T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-TSLA-2026-06-02-morning",
+      "ticker": "TSLA",
+      "name": "特斯拉",
+      "market": "US",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.42,
+      "view": "大跌-4.33%至$415.55，跌破$420支撐，MACD轉負，短線技術面轉弱；Musk政治風險+中國BYD/小米競爭持續；P/E~78x高估值；Q2財報約7月前缺乏近期催化劑；$410關鍵支撐，若守住企穩，若跌破下看$400",
+      "rationale": "跌破短線支撐，技術面轉弱，無近期催化劑，信心降至0.42",
+      "price": 415.55,
+      "change_pct": -4.33,
+      "support": 405.0,
+      "resistance": 435.0,
+      "stop_loss": 400.0,
+      "target": 460.0,
+      "technicals": {
+        "rsi14": 47.0,
+        "macd": "轉負，動能轉弱",
+        "ma_alignment": "仍在均線上方但動能逆轉"
+      },
+      "valuation": {
+        "pe": 78.0,
+        "pe_percentile_5y": 43,
+        "verdict": "高估值，缺乏短線催化劑，EV/AI故事需持續兌現"
+      },
+      "sources": [
+        "https://finance.yahoo.com/quote/TSLA/",
+        "https://robinhood.com/us/en/stocks/TSLA/"
+      ],
+      "expires_at": "2026-06-02T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-AAPL-2026-06-02-morning",
+      "ticker": "AAPL",
+      "name": "蘋果",
+      "market": "US",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.48,
+      "view": "小跌-1.85%至$305.59，回測支撐$305；30Y殖利率5.18%持續壓縮高倍數；RTX Spark進入PC市場對Apple Silicon生態影響有限但增加長線競爭敘事；WWDC預計六月舉行為潛在催化劑；$305支撐守住則維持中性，跌破下看$298-300",
+      "rationale": "高殖利率環境持續壓縮估值，PCE溫和支撐，等待WWDC催化劑",
+      "price": 305.59,
+      "change_pct": -1.85,
+      "support": 298.0,
+      "resistance": 320.0,
+      "stop_loss": 293.0,
+      "target": 335.0,
+      "technicals": {
+        "rsi14": 51.0,
+        "macd": "略正但動能收斂",
+        "ma_alignment": "均線多頭但動能偏弱"
+      },
+      "valuation": {
+        "pe": 31.4,
+        "pe_percentile_5y": 63,
+        "verdict": "偏高，30Y殖利率壓制；WWDC為近期最大催化劑"
+      },
+      "sources": [
+        "https://finance.yahoo.com/quote/AAPL/",
+        "https://robinhood.com/us/en/stocks/AAPL/"
+      ],
+      "expires_at": "2026-06-02T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-TSM-2026-06-02-morning",
+      "ticker": "TSM",
+      "name": "台積電ADR",
+      "market": "US",
+      "signal": "🟢",
+      "direction": "bullish",
+      "confidence": 0.67,
+      "view": "ADR $418.45(-1.51%)，從52週高$430.55健康回測；RTX Spark採用台積電製程為正面認可；17位分析師Strong Buy；DXY微升至99.0對匯兌效益略收窄；$408支撐穩固，整體多頭格局維持，目標$430-445",
+      "rationale": "從52週高健康回調，RTX Spark製程認可+分析師共識看多，信心從0.70微降至0.67反映回調",
+      "price": 418.45,
+      "change_pct": -1.51,
+      "support": 408.0,
+      "resistance": 430.55,
+      "stop_loss": 395.0,
+      "target": 445.0,
+      "technicals": {
+        "rsi14": 60.0,
+        "macd": "正值，回測後動能整理",
+        "ma_alignment": "5>10>20MA 多頭排列，回測中"
+      },
+      "valuation": {
+        "pe": 28.1,
+        "pe_percentile_5y": 69,
+        "verdict": "合理，同2330估值邏輯，RTX Spark製程背書"
+      },
+      "sources": [
+        "https://finance.yahoo.com/quote/TSM/",
+        "https://www.investing.com/equities/taiwan-semicond.manufacturing-co",
+        "https://hothardware.com/news/nvidia-announces-rtx-spark-at-computex-2026"
+      ],
+      "expires_at": "2026-06-02T13:30:00+08:00"
+    }
+  ],
+  "alerts": [
+    {
+      "alert_id": "alt-nvda-rtx-spark-computex",
+      "level": "info",
+      "text": "Nvidia RTX Spark AI PC超級晶片於Computex 2026發表，與聯發科共同設計CPU+I/O模組，秋季搭載Dell/HP/MS Surface/ASUS/Lenovo/MSI。NVDA+3.85%、ARM+18%；Intel-6%、AMD-5%、QCOM-7%。台股聯發科+5.68%為最大台廠受益者",
+      "tickers": ["NVDA", "2454", "2330"],
+      "url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-rallies-4-rtx-spark-155423133.html",
+      "source": "Yahoo Finance / CNBC"
+    },
+    {
+      "alert_id": "alt-intel-amd-qcom-disruption",
+      "level": "warning",
+      "text": "RTX Spark衝擊傳統PC晶片生態：Intel-6%、AMD-5%、Qualcomm-7%。PC晶片市場結構性輪動加劇，ARM架構挑戰x86地位，相關台廠供應鏈（Intel伺服器散熱/記憶體客戶）需留意影響",
+      "tickers": ["2330", "2317"],
+      "url": "https://www.techtimes.com/articles/317544/20260601/nvidia-enters-pc-chip-market-rtx-spark-intel-falls-6-amd-drops-5-open.htm",
+      "source": "TechTimes"
+    },
+    {
+      "alert_id": "alt-ismnfp-dataweek",
+      "level": "warning",
+      "text": "今日（6/2）22:00 ISM製造業PMI（5月，前值49.0，預期49.5）；週五（6/5）非農就業報告（5月，預期+15萬）。VIX升至15.94顯示市場已添購保護。若ISM低於48或NFP大幅遜色，殖利率上升壓力恐重現，衝擊科技/AI板塊",
+      "tickers": ["NVDA", "TSLA", "AAPL", "2330", "2454"],
+      "url": "https://www.heygotrade.com/en/news/weekly-economic-outlook-2026-06-01/",
+      "source": "HeyGoTrade"
+    },
+    {
+      "alert_id": "alt-us30y-rate-hike-risk",
+      "level": "warning",
+      "text": "美30Y殖利率升至5.18%，10Y至4.475%；Fed料維持3.50-3.75%至2027年初；CPI/PCE 3.8% YoY仍高；62%基金經理預期30Y挑戰6%；高估值成長股（TSLA P/E 78x、AAPL P/E 31x）持續承壓",
+      "tickers": ["NVDA", "AAPL", "TSLA", "TSM"],
+      "url": "https://www.pennmutualam.com/market-insights-news/blogs/chart-of-the-week/2026-05-28-the-treasury-yield-curve-has-risen-and-flattened-in-2026",
+      "source": "Penn Mutual Asset Management"
+    },
+    {
+      "alert_id": "alt-iran-us-ceasefire-60day",
+      "level": "info",
+      "text": "美伊60天停火延長原則共識持續，WTI油價$87.90低位震盪；通膨壓力舒緩，有利成長股；若協議正式落地或破裂為下一個市場催化劑",
+      "tickers": ["AAPL", "TSLA", "SPX"],
+      "url": "https://www.cnbc.com/2026/05/29/oil-price-iran-deal-war-ceasefire-trump.html",
+      "source": "CNBC"
+    },
+    {
+      "alert_id": "alt-mediatek-ai-asic-double",
+      "level": "info",
+      "text": "聯發科2026年AI ASIC收入目標倍增至$20億美元，SAM 2027年達$70-80億，RTX Spark CPU設計角色進一步確認AI PC市場地位；Morgan Stanley維持最高首選；RSI已達73，高位震盪風險升高",
+      "tickers": ["2454"],
+      "url": "https://www.investing.com/news/stock-market-news/nvidias-new-rtx-spark-pc-chip-moves-chipmakers-and-tech-stocks-4718445",
+      "source": "Investing.com"
+    }
+  ],
+  "sector_rotation": {
+    "strong": ["AI PC晶片（聯發科RTX Spark CPU、ARM架構）", "AI伺服器組裝（鴻海、廣達、CPO光互聯）", "雲端/資料中心（Blackwell、CoWoS先進封裝）"],
+    "weak": ["傳統PC晶片（Intel x86、AMD、Qualcomm PC）", "高負債REITs（30Y殖利率5.18%壓制）", "高估值EV（TSLA政治+競爭雙重壓制）"],
+    "watch": ["ARM架構生態系（RTX Spark引爆，Windows on Arm加速）", "ISM製造業PMI（今晚22:00，景氣反彈跡象）", "WWDC蘋果開發者大會（六月，AI iPhone催化劑）"]
+  },
+  "whats_changed": {
+    "compared_to": "股市-開盤前-20260601.md",
+    "compared_to_date": "2026-06-01",
+    "new": [
+      {
+        "type": "alert",
+        "summary": "Nvidia RTX Spark AI PC晶片於Computex 2026發表，與聯發科合作，NVDA+3.85%、ARM+18%、Intel/AMD/QCOM各跌5-7%，PC晶片市場結構性輪動",
+        "tickers": ["NVDA", "2454", "2330"],
+        "alert_id": "alt-nvda-rtx-spark-computex"
+      },
+      {
+        "type": "alert",
+        "summary": "Intel/AMD/Qualcomm遭RTX Spark衝擊重挫5-7%，PC晶片生態結構性輪動警示",
+        "tickers": ["2330", "2317"],
+        "alert_id": "alt-intel-amd-qcom-disruption"
+      }
+    ],
+    "strengthened": [
+      {
+        "type": "stock_direction",
+        "summary": "聯發科RTX Spark CPU聯盟確認，+5.68%至4,555，信心從0.65大幅升至0.78（+0.13），目標上調至5,000",
+        "ticker": "2454",
+        "from": "bullish(0.65)",
+        "to": "bullish(0.78)"
+      },
+      {
+        "type": "stock_direction",
+        "summary": "NVDA RTX Spark發表確認PC新市場，+3.85%突破$220阻力，信心從0.68升至0.78（+0.10）",
+        "ticker": "NVDA",
+        "from": "bullish(0.68)",
+        "to": "bullish(0.78)"
+      },
+      {
+        "type": "alert",
+        "summary": "ISM PMI今日發布（22:00），VIX升至15.94，風險等級從info升為warning",
+        "tickers": ["NVDA", "2330", "2454"],
+        "alert_id": "alt-ismnfp-dataweek"
+      },
+      {
+        "type": "alert",
+        "summary": "聯發科RTX Spark角色確認，AI ASIC alert升級為更明確的多頭訊號",
+        "tickers": ["2454"],
+        "alert_id": "alt-mediatek-ai-asic-double"
+      }
+    ],
+    "removed": [
+      {
+        "type": "alert",
+        "summary": "MSCI季調流入效應已完成（5/29盤後生效，6/1週一已消化），事件性alert結束",
+        "alert_id": "alt-msci-rebalance-tsmc"
+      },
+      {
+        "type": "alert",
+        "summary": "鴻海Q1財報+CPO發表事件已消化，股價已充分反映（+9.89%漲停後整理），移除事件性alert",
+        "alert_id": "alt-foxconn-cpo-ai-surge"
+      }
+    ]
+  }
+}

@@ -1,0 +1,392 @@
+{
+  "_schema_version": "3.0",
+  "type": "close",
+  "report_file": "股市-收盤後-20260601.md",
+  "date": "2026-06-01",
+  "weekday": "週一",
+  "generated_at": "2026-06-01T14:02:11+08:00",
+  "expires_at": "2026-06-02T09:00:00+08:00",
+  "data_quality_note": "TAIEX 45,414.09（+681.15, +1.52%）高信心：多源搜尋確認。台積電 2,360（+5, +0.21%）中信心（單源數據）。聯發科 4,565（+255, +5.92%）中信心（注意股限制仍生效，5分鐘撮合至~6/3）。鴻海 6/1 收盤低信心（5/29確認289漲停，今日無法確認）。美股 5/30：NVDA $211.14、TSLA $435.79(-1.43%)、AAPL $312.06，中信心。三大法人 6/1 估算低信心（官方 16:30 後確認）。COMPUTEX 黃仁勳演講：Vera Rubin NVL72 全量產、Feynman 路線圖、N1X ARM PC 晶片，高信心多源確認。",
+  "market_view": {
+    "level": "bullish",
+    "confidence": 0.74,
+    "headline": "黃仁勳北流開講確認 Vera Rubin 全量產＋150 台廠供應鏈，COMPUTEX 正式展場 6/2 登場，台股再創收盤新高 45,414.09（+681, +1.52%）。聯發科 +5.92% 帶量強彈，注意股效應邊際改善；台積電小漲 +0.21%，好消息已充分預期。下一大節點：6/2 黃仁勳 x Marvell CEO 同台、6/3 聯發科注意股解除預計。短多格局確立，留意 sell-the-news 修正風險。",
+    "sources": [
+      "https://udn.com/news/story/7240/9538056",
+      "https://www.blocktempo.com/jensen-huang-gtc-taipei-2026-token-economy/",
+      "https://money.udn.com/money/story/5612/9537253",
+      "https://tw.stock.yahoo.com/quote/%5ETWII",
+      "https://wantrich.chinatimes.com/news/20260531900057-420101"
+    ]
+  },
+  "indices": {
+    "TWII": {
+      "close": 45414.09,
+      "change_pct": 1.52,
+      "change_pts": 681.15,
+      "prev_close": 44732.94,
+      "high": null,
+      "low": null,
+      "volume_bn_twd": 384.4,
+      "data_quality": "high_confidence",
+      "note": "收盤 45,414.09（+681.15, +1.52%）高信心，多源確認。連續收盤新高（5/29: 44,732.94 → 6/1: 45,414.09）。COMPUTEX 黃仁勳主題演講、Vera Rubin 全量產為主催化劑。5 月月線創史上最強（+5,896 點）。"
+    },
+    "Nasdaq": {
+      "close": null,
+      "change_pct": null,
+      "data_quality": "stale_pending",
+      "note": "美股 5/30 收盤資料：Nasdaq 數據待確認。今晚 COMPUTEX 餘溫預期偏多，NVDA/半導體相關股受益。"
+    },
+    "SP500": {
+      "close": null,
+      "change_pct": null,
+      "data_quality": "stale_pending",
+      "note": "美股 5/30 收盤 S&P500 待確認。NVDA COMPUTEX 利多預期正面影響。"
+    },
+    "SOX": {
+      "close": null,
+      "change_pct": null,
+      "data_quality": "pending",
+      "note": "SOX 5/30 未確認。Vera Rubin 全量產為半導體最大短期催化劑，預期 SOX 今晚偏多。"
+    }
+  },
+  "institutional": {
+    "date": "2026-06-01",
+    "data_quality": "low_confidence_estimate",
+    "foreign_net_bn_twd": null,
+    "trust_net_bn_twd": null,
+    "proprietary_net_bn_twd": null,
+    "total_net_bn_twd": null,
+    "foreign_top_buys": [],
+    "note": "6/1 三大法人官方數據 16:30 後確認（TWSE t86）。估算：COMPUTEX 黃仁勳 Vera Rubin 全量產正面，外資估 +150~350 億（MSCI 效應遞減，改為 COMPUTEX 主動型買盤）；投信 +30~80 億；合計估 +130~380 億。低信心，謹以估算標記。",
+    "prev_day_confirmed": {
+      "date": "2026-05-29",
+      "foreign_net_bn_twd": 80.356,
+      "trust_net_bn_twd": 6.097,
+      "proprietary_net_bn_twd": 15.427,
+      "total_net_bn_twd": 101.879,
+      "data_quality": "high_confidence",
+      "note": "5/29 三大法人確認：外資+803.56億、投信+60.97億、自營+154.27億、合計+1,018.79億。MSCI EM 被動買盤生效 + Dell AI 財報+757%催化。"
+    },
+    "sources": [
+      "https://www.twse.com.tw/zh/trading/foreign/t86.html",
+      "https://www.twse.com.tw/zh/trading/foreign/bfi82u.html"
+    ]
+  },
+  "stocks": [
+    {
+      "signal_id": "stk-2330-2026-06-01-close",
+      "ticker": "2330",
+      "name": "台積電",
+      "market": "TW",
+      "direction": "bullish",
+      "price": 2360,
+      "prev_price": 2355,
+      "change_pct": 0.21,
+      "confidence": 0.62,
+      "rationale": "台積電 6/1 收 2,360（+5, +0.21%），表現穩健偏溫。黃仁勳演講直指台積電需加速生產以滿足 NVIDIA Vera Rubin 需求，CoWoS 供應鏈長線論述強化。但盤中漲幅有限，5/29 天價 2,375 後買盤消化中。COMPUTEX 題材已充分預期（5/29 已+2.84%），今日為守穩盤。外資長線目標 2,800+，基本面無虞。短線需觀察 6/2 COMPUTEX 是否有台積電相關新訂單/合作公告。",
+      "sources": [
+        "https://udn.com/news/story/7240/9538056",
+        "https://tw.stock.yahoo.com/quote/2330.TW",
+        "https://www.blocktempo.com/jensen-huang-gtc-taipei-2026-token-economy/"
+      ],
+      "expires_at": "2026-06-02T09:00:00+08:00",
+      "flags": [
+        "computex_vera_rubin_supply_chain_confirmed",
+        "post_all_time_high_consolidation",
+        "huang_keynote_bullish_demand_confirmation",
+        "watchlist_high_priority"
+      ]
+    },
+    {
+      "signal_id": "stk-2454-2026-06-01-close",
+      "ticker": "2454",
+      "name": "聯發科",
+      "market": "TW",
+      "direction": "bullish",
+      "price": 4565,
+      "prev_price": 4310,
+      "change_pct": 5.92,
+      "confidence": 0.58,
+      "rationale": "聯發科 6/1 強彈 +5.92% 至 4,565。注意股（5 分鐘撮合）限制預計 6/3 前後解除，在限制期間仍大漲顯示 COMPUTEX 端側 AI 題材強烈。黃仁勳演講中 N1X ARM 晶片、Feynman 架構對聯發科生態系統為正面訊號（Apple TPU、Google 晶片、手機端側 AI 受益）。前次 prev_signals 聯發科價格 4,740（低信心估算）與今日 4,565 形成小幅落差，5/29 實際收 4,310 為更準確基準。方向由 neutral 上調至 bullish。外資長線目標 5,922。",
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/2454.TW",
+        "https://www.blocktempo.com/jensen-huang-gtc-taipei-2026-token-economy/",
+        "https://tw.stock.yahoo.com/news/%E3%80%90computex-2026%E5%89%8D%E7%9E%BB1%E3%80%91ai%E6%95%99%E7%88%B6%E9%BB%83%E4%BB%81%E5%8B%B361%E5%8C%97%E6%B5%81%E9%96%8B%E8%AC%9B%E6%8F%AD%E5%BA%8F%E5%B9%95%EF%BC%81%E5%8D%8A%E5%B0%8E%E9%AB%94%E5%B0%88%E5%AE%B6%E6%9B%B2%E5%BB%BA%E4%BB%B2%E5%96%8A%E3%80%8C%E4%BB%8D%E6%9C%89%E7%9C%8B%E9%A0%AD%E3%80%8D%E6%9B%9D3%E5%A4%A7%E4%BA%AE%E9%BB%9E-044541811.html"
+      ],
+      "expires_at": "2026-06-02T09:00:00+08:00",
+      "flags": [
+        "zhuyi_stock_5min_match_until_approx_0603",
+        "direction_upgraded_neutral_to_bullish",
+        "computex_n1x_arm_indirect_beneficiary",
+        "feynman_ecosystem_beneficiary",
+        "prev_price_low_confidence_corrected"
+      ]
+    },
+    {
+      "signal_id": "stk-2317-2026-06-01-close",
+      "ticker": "2317",
+      "name": "鴻海",
+      "market": "TW",
+      "direction": "bullish",
+      "price": 290,
+      "prev_price": 289,
+      "change_pct": null,
+      "confidence": 0.4,
+      "rationale": "鴻海 6/1 收盤低信心估算約 290 元（前日 5/29 漲停 289，無今日精確數據）。黃仁勳演講明確提及 150 家台廠供應鏈受益，鴻海為 AI 伺服器組裝核心廠，COMPUTEX 題材持續支撐。5/29 漲停後今日可能進入高檔整理，估計 285~295 區間。廣達、緯創為同類型老 AI 標的，留意板塊輪動。",
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/2317.TW",
+        "https://news.cnyes.com/news/id/6477007",
+        "https://udn.com/news/story/7240/9538056"
+      ],
+      "expires_at": "2026-06-02T09:00:00+08:00",
+      "flags": [
+        "price_low_confidence_estimate",
+        "post_limit_up_consolidation_expected",
+        "computex_ai_server_core_beneficiary",
+        "huang_keynote_150tw_partners_direct"
+      ]
+    },
+    {
+      "signal_id": "stk-NVDA-2026-06-01-close",
+      "ticker": "NVDA",
+      "name": "輝達",
+      "market": "US",
+      "direction": "bullish",
+      "price": 211.14,
+      "prev_price": 214.29,
+      "change_pct": null,
+      "confidence": 0.55,
+      "rationale": "NVDA 5/30 收 $211.14（5/29 收 $214.29，小幅回落）。Vera Rubin NVL72 全量產確認為最大正面催化劑，今晚 6/1 美國盤預期正面反應 COMPUTEX GTC Taipei 演講內容。Feynman 架構路線圖為中長線續漲依據。Token Economics 商業模式強化 NVDA 收入可視性。短線可能因「sell the news」短暫震盪後再漲。",
+      "sources": [
+        "https://finance.yahoo.com/quote/NVDA/",
+        "https://www.blocktempo.com/jensen-huang-gtc-taipei-2026-token-economy/",
+        "https://udn.com/news/story/7240/9538056"
+      ],
+      "expires_at": "2026-06-02T09:00:00+08:00",
+      "flags": [
+        "vera_rubin_full_production_confirmed",
+        "computex_gtc_taipei_keynote_complete",
+        "feynman_roadmap_revealed",
+        "token_economics_model_upgrade"
+      ]
+    },
+    {
+      "signal_id": "stk-TSLA-2026-06-01-close",
+      "ticker": "TSLA",
+      "name": "特斯拉",
+      "market": "US",
+      "direction": "neutral",
+      "price": 435.79,
+      "prev_price": 442.19,
+      "change_pct": -1.43,
+      "confidence": 0.55,
+      "rationale": "TSLA 5/30 收 $435.79（-1.43%），本週偏弱。COMPUTEX 題材與 Tesla 關聯度低。Robotaxi、FSD 是主要催化劑，本周無重大催化事件。方向維持 neutral。",
+      "sources": [
+        "https://finance.yahoo.com/quote/TSLA/"
+      ],
+      "expires_at": "2026-06-02T09:00:00+08:00",
+      "flags": [
+        "computex_low_correlation",
+        "robotaxi_catalyst_pending"
+      ]
+    },
+    {
+      "signal_id": "stk-AAPL-2026-06-01-close",
+      "ticker": "AAPL",
+      "name": "蘋果",
+      "market": "US",
+      "direction": "neutral",
+      "price": 312.06,
+      "prev_price": 312.5,
+      "change_pct": -0.14,
+      "confidence": 0.55,
+      "rationale": "AAPL 5/30 收 $312.06（小幅下跌）。黃仁勳 N1X ARM 晶片進軍 Windows PC 市場為潛在競爭威脅（但影響需時間評估）。Apple Intelligence / AI PC 戰略為中長線關注點。短線 COMPUTEX 效應有限，維持 neutral。",
+      "sources": [
+        "https://finance.yahoo.com/quote/AAPL/",
+        "https://www.sinotrade.com.tw/richclub/hotstock/COMPUTEX-2026-%E9%BB%83%E4%BB%81%E5%8B%B36%E6%9C%881%E6%97%A5%E7%99%BB%E5%8C%97%E6%B5%81%E9%96%8B%E8%AC%9B-%E6%8F%AD%E5%AF%86AI%E4%BA%94%E5%B1%A4%E6%9E%B6%E6%A7%8B-GTC-Taipei%E8%81%AF%E5%8B%95%E7%99%BB%E5%A0%B4-Intel%E9%99%B3%E7%AB%8B%E6%AD%A6%E7%8E%87%E7%8E%8B%E7%89%8CPanther-Lake%E8%AA%93%E5%B8%AB%E5%8F%8D%E6%94%BB-%E8%82%A1%E5%B8%82%E8%A9%B1%E9%A1%8C-69eb24d48839d70af6073790"
+      ],
+      "expires_at": "2026-06-02T09:00:00+08:00",
+      "flags": [
+        "n1x_arm_indirect_competitive_threat",
+        "apple_intelligence_ai_pc_watch"
+      ]
+    },
+    {
+      "signal_id": "stk-TSM-2026-06-01-close",
+      "ticker": "TSM",
+      "name": "台積電ADR",
+      "market": "US",
+      "direction": "bullish",
+      "price": 402.46,
+      "prev_price": 418.45,
+      "change_pct": null,
+      "confidence": 0.48,
+      "rationale": "TSM ADR 5/30-5/31 約 $402.46，低信心（單源）。本股與 2330 連動，Vera Rubin 全量產為長線利多。短線 5/31 收 $402.46 小幅修正，與台積電本股 5/29 創歷史天價後的整理格局一致。黃仁勳演講確認需求強勁，外資長線目標不變。今晚預期跟隨 COMPUTEX 消息偏多。",
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/TSM"
+      ],
+      "expires_at": "2026-06-02T09:00:00+08:00",
+      "flags": [
+        "vera_rubin_demand_confirmed",
+        "adr_premium_watch",
+        "price_low_confidence_stale"
+      ]
+    }
+  ],
+  "alerts": [
+    {
+      "alert_id": "alert-computex2026-vera-rubin-full-production-20260601",
+      "type": "catalyst",
+      "level": "high",
+      "title": "Vera Rubin NVL72 全面量產確認（COMPUTEX GTC Taipei）",
+      "body": "黃仁勳 6/1 北流演講宣布 Vera Rubin NVL72 機櫃（72 GPU + 36 CPU，100% 液冷）已全面量產。150 家台灣供應鏈合作夥伴（散熱、ABF、封測、組裝）直接受益。Token Economics 商業模式揭示 AI 算力需求長期化，為台積電 CoWoS/GB400 供應鏈強化利多。",
+      "tickers_affected": [
+        "2330",
+        "2317",
+        "TSM",
+        "NVDA"
+      ],
+      "direction": "bullish",
+      "url": "https://udn.com/news/story/7240/9538056",
+      "source": "UDN 聯合新聞網 / NVIDIA GTC Taipei 2026",
+      "expires_at": "2026-06-02T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-computex2026-feynman-roadmap-20260601",
+      "type": "catalyst",
+      "level": "medium",
+      "title": "Feynman 架構路線圖首度曝光",
+      "body": "黃仁勳演講首度公開 Feynman 架構（Vera Rubin 下一代），強調推理效能與能效再突破。N1X ARM 架構晶片揮軍 Windows PC 市場，正面衝擊 Intel/AMD。台灣供應鏈 6/2 COMPUTEX 展場可能有更多細節。",
+      "tickers_affected": [
+        "2454",
+        "NVDA",
+        "2330"
+      ],
+      "direction": "bullish",
+      "url": "https://money.udn.com/money/story/5612/9537253",
+      "source": "經濟日報",
+      "expires_at": "2026-06-02T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-mediatek-zhuyi-stock-watch-20260601",
+      "type": "risk",
+      "level": "medium",
+      "title": "聯發科注意股（5 分鐘撮合）預計 6/3 解除",
+      "body": "聯發科 (2454) 仍在注意股（5 分鐘撮合）限制中，預計 6/3 前後恢復正常撮合。解除後流動性回升可能帶來方向性大波動（雙向），需追蹤成交量是否異常。",
+      "tickers_affected": [
+        "2454"
+      ],
+      "direction": "neutral",
+      "url": "https://tw.stock.yahoo.com/quote/2454.TW",
+      "source": "Yahoo 股市",
+      "expires_at": "2026-06-03T13:30:00+08:00"
+    },
+    {
+      "alert_id": "alert-tsmc-tail-sell-watch-20260601",
+      "type": "risk",
+      "level": "medium",
+      "title": "台積電尾盤大量賣單追蹤（5/29 前例：5.09萬張）",
+      "body": "5/29 台積電收盤前 13:25 集合競價出現 5.09 萬張賣單，可能為法人避險或 MSCI 被動調整餘波。今日（6/1）及後續需持續追蹤是否再現尾盤集中賣壓，如出現則為短線看空信號。",
+      "tickers_affected": [
+        "2330"
+      ],
+      "direction": "bearish",
+      "url": "https://www.chinatimes.com/realtimenews/20260529002665-260410",
+      "source": "中時新聞網",
+      "expires_at": "2026-06-05T13:30:00+08:00"
+    },
+    {
+      "alert_id": "alert-computex-sell-the-news-risk-20260601",
+      "type": "risk",
+      "level": "medium",
+      "title": "Sell-the-news 風險：COMPUTEX 題材充分預期",
+      "body": "台股 5 月月線+5,896 點（史上最強），COMPUTEX 行情已大幅預期。黃仁勳演講落幕後需觀察是否進入短線獲利了結。特別關注 6/5 COMPUTEX 閉幕後法人是否開始減碼台股科技股。",
+      "tickers_affected": [
+        "2330",
+        "2454",
+        "2317",
+        "NVDA"
+      ],
+      "direction": "bearish",
+      "url": "https://money.udn.com/money/story/5607/9523814",
+      "source": "經濟日報",
+      "expires_at": "2026-06-05T16:30:00+08:00"
+    }
+  ],
+  "whats_changed": {
+    "prev_date": "2026-05-29",
+    "current_date": "2026-06-01",
+    "market_view_changes": [],
+    "index_changes": [
+      {
+        "index": "TWII",
+        "prev_close": 44732.94,
+        "curr_close": 45414.09,
+        "delta_pts": 681.15,
+        "delta_pct": 1.52,
+        "note": "加權指數：44732.94 (2026-05-29) → 45414.09 (2026-06-01)，+681.15點（+1.52%），連續收盤新高"
+      }
+    ],
+    "stock_direction_changes": [
+      {
+        "ticker": "2454",
+        "name": "聯發科",
+        "prev_direction": "neutral",
+        "curr_direction": "bullish",
+        "prev_price": 4740,
+        "curr_price": 4565,
+        "note": "2454 (聯發科) 方向改變：neutral → bullish；價格：4740 → 4565（-3.69%）；信心：0.35 → 0.58"
+      },
+      {
+        "ticker": "TSLA",
+        "name": "特斯拉",
+        "prev_direction": "bullish",
+        "curr_direction": "neutral",
+        "prev_price": 442.19,
+        "curr_price": 435.79,
+        "note": "TSLA (特斯拉) 方向改變：bullish → neutral；價格：442.19 → 435.79（-1.45%）；信心：0.6 → 0.55"
+      },
+      {
+        "ticker": "AAPL",
+        "name": "蘋果",
+        "prev_direction": "bullish",
+        "curr_direction": "neutral",
+        "prev_price": 312.5,
+        "curr_price": 312.06,
+        "note": "AAPL (蘋果) 方向改變：bullish → neutral；價格：312.5 → 312.06（-0.14%）；信心：0.65 → 0.55"
+      },
+      {
+        "ticker": "TSM",
+        "name": "台積電ADR",
+        "prev_direction": "bullish",
+        "curr_direction": "bullish",
+        "prev_price": 435,
+        "curr_price": 402.46,
+        "note": "TSM (台積電ADR) 方向維持 bullish，但價格顯著變動：435 → 402.46（-7.48%）"
+      }
+    ],
+    "alert_changes": {
+      "added_alert_ids": [
+        "alert-computex-sell-the-news-risk-20260601",
+        "alert-computex2026-feynman-roadmap-20260601",
+        "alert-computex2026-vera-rubin-full-production-20260601",
+        "alert-mediatek-zhuyi-stock-watch-20260601",
+        "alert-tsmc-tail-sell-watch-20260601"
+      ],
+      "removed_alert_ids": [
+        "alert-2454-zhuyi-ongoing-20260529",
+        "alert-computex-jensen-keynote-20260601",
+        "alert-dell-ai-server-beat-20260529",
+        "alert-msci-tw-realized-20260529",
+        "alert-old-ai-limit-up-20260529",
+        "alert-tsmc-tail-sell-20260529"
+      ]
+    },
+    "data_quality_notes": [
+      "聯發科 5/29 prev_signals 估算 4,740（低信心），實際修正確認約 4,310，prev 高估約 430 點（+10%誤差），本次 6/1 以 4,565 為新基準（中信心）",
+      "三大法人 6/1 數據估算，官方 16:30 確認前保持低信心標記",
+      "鴻海 6/1 收盤無法確認（低信心約 290），5/29 確認值為 289（漲停）"
+    ]
+  }
+}

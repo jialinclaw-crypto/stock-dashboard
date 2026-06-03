@@ -1,0 +1,429 @@
+{
+  "_schema_version": 3,
+  "type": "morning",
+  "report_file": "股市-開盤前-20260604.md",
+  "date": "2026-06-04",
+  "weekday": "週四",
+  "generated_at": "2026-06-04T07:35:00+08:00",
+  "market_view": {
+    "level": "neutral",
+    "confidence": 0.55,
+    "headline": "美股6/3打破九連漲（DJI-1.21%/SPX-0.74%/Nasdaq-0.89%），中東WTI突破$96警戒線為主因；台股6/3逆勢創新高46,459；NVDA跌至$215.84觸近止損支撐，Broadcom AI晶片+143%確認超級周期；周五NFP+AAPL WWDC(6/8)為剩餘重大風險；短線宜收斂槓桿，逢回布局AI半導體"
+  },
+  "indices": [
+    {
+      "name": "道瓊工業",
+      "ticker": "DJI",
+      "value": 50687.0,
+      "change_pct": -1.21,
+      "trend": "neutral",
+      "note": "終結九連漲，中東油價驚嚇引發獲利了結"
+    },
+    {
+      "name": "S&P 500",
+      "ticker": "SPX",
+      "value": 7554.0,
+      "change_pct": -0.74,
+      "trend": "neutral",
+      "note": "從7,600整數關回落，AI基本面完整但油價/地緣短線壓力"
+    },
+    {
+      "name": "Nasdaq",
+      "ticker": "IXIC",
+      "value": 26853.0,
+      "change_pct": -0.89,
+      "trend": "neutral",
+      "note": "科技股跟跌，NVDA -3.13%拖累半導體板塊"
+    },
+    {
+      "name": "費城半導體",
+      "ticker": "SOX",
+      "value": 12602.0,
+      "change_pct": -2.8,
+      "trend": "neutral",
+      "note": "NVDA重挫-3.13%帶動費半大幅回落"
+    },
+    {
+      "name": "VIX 恐慌指數",
+      "ticker": "VIX",
+      "value": 17.8,
+      "change_pct": 2.03,
+      "trend": "neutral",
+      "note": "油價衝擊推升恐慌指數，仍處歷史相對低位"
+    },
+    {
+      "name": "美 10Y 殖利率",
+      "ticker": "US10Y",
+      "value": 4.45,
+      "change_pct": -0.01,
+      "trend": "neutral",
+      "note": "避險買盤小幅壓低，仍高位壓制成長股"
+    },
+    {
+      "name": "美 30Y 殖利率",
+      "ticker": "US30Y",
+      "value": 5.19,
+      "change_pct": 0.01,
+      "trend": "bearish",
+      "note": "高位5.19%，Warsh鷹派+ADP超預期偏空成長股"
+    },
+    {
+      "name": "美元指數",
+      "ticker": "DXY",
+      "value": 99.40,
+      "change_pct": 0.25,
+      "trend": "neutral",
+      "note": "ADP超預期+避險需求推升，兩月高點，台廠ADR匯兌略收窄"
+    },
+    {
+      "name": "台股加權指數",
+      "ticker": "TWII",
+      "value": 46459.0,
+      "change_pct": 2.0,
+      "trend": "bullish",
+      "note": "6/3創歷史新高，回應6/2美股新高；今日面臨美股回落考驗"
+    },
+    {
+      "name": "WTI 原油",
+      "ticker": "WTI",
+      "value": 96.05,
+      "change_pct": 2.5,
+      "trend": "bearish",
+      "note": "突破$95警戒線，伊核談判破裂，IEA霍爾木茲封鎖警告，CPI通膨壓力加劇"
+    }
+  ],
+  "stocks": [
+    {
+      "signal_id": "stk-2330-2026-06-04-morning",
+      "ticker": "2330",
+      "name": "台積電",
+      "market": "TW",
+      "signal": "🟢",
+      "direction": "bullish",
+      "confidence": 0.72,
+      "view": "台積電6/3收2,425創新高，首次站穩2,400整數關；TAIEX再創46,459歷史新高確認多頭。今日需面臨美股SOX -2.8%/NVDA -3.13%衝擊，開盤預估承壓；關鍵觀察NT$2,400支撐能否守穩，若量縮回測2,380-2,400屬健康洗盤，非趨勢逆轉。CoWoS/CoPoS先進封裝訂單能見度高，Broadcom Q2 AI晶片+143%確認台積供應鏈強健。",
+      "rationale": "TAIEX歷史新高+Broadcom AI確認CoWoS需求，短線美股回落考驗2,400支撐，基本面完整",
+      "price": 2425.0,
+      "change_pct": 1.89,
+      "support": 2350,
+      "resistance": 2500,
+      "stop_loss": 2290,
+      "target": 2600,
+      "technicals": {
+        "rsi14": 66,
+        "macd": "多頭延伸，近期創新高",
+        "ma_alignment": "多頭排列完整（5/10/20/60MA全多頭），突破2,400確認"
+      },
+      "valuation": {
+        "pe": 27.3,
+        "pe_percentile_5y": 76,
+        "verdict": "合理偏高，AI封裝溢價持續支撐"
+      },
+      "sources": [
+        "https://www.fool.com/coverage/stock-market-today/2026/06/03/stock-market-today-june-3-markets-end-winning-streak-on-middle-east-escalation-fears/",
+        "https://www.stocktitan.net/news/AVGO/broadcom-inc-announces-second-quarter-fiscal-year-2026-financial-if4yrbje8hq6.html"
+      ],
+      "expires_at": "2026-06-04T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-2454-2026-06-04-morning",
+      "ticker": "2454",
+      "name": "聯發科",
+      "market": "TW",
+      "signal": "🟢",
+      "direction": "bullish",
+      "confidence": 0.68,
+      "view": "聯發科6/3收4,545(+0.44%)，AI ASIC全年目標翻倍至$20億美元，Morgan Stanley維持首選。Broadcom Q2 AI ASIC爆炸財報間接驗證聯發科雲端AI ASIC競爭力。惟外資一致目標均值NT$3,749低於現價約17%，RSI ~65偏高，短線宜防獲利了結拉回4,350-4,400支撐區。長線邏輯清晰，信心稍降（前值0.78）反映估值面超越目標均值壓力。",
+      "rationale": "AI ASIC爆發力確認，但股價已高於外資目標均值17%，RSI偏高，短線謹慎多",
+      "price": 4545.0,
+      "change_pct": 0.44,
+      "support": 4350,
+      "resistance": 4800,
+      "stop_loss": 4200,
+      "target": 5000,
+      "technicals": {
+        "rsi14": 65,
+        "macd": "多頭延伸，動能稍放緩",
+        "ma_alignment": "5/10/20MA多頭排列"
+      },
+      "valuation": {
+        "pe": 21.5,
+        "pe_percentile_5y": 65,
+        "verdict": "股價已超外資目標均值17%，AI ASIC溢價高但需警惕超買修正"
+      },
+      "sources": [
+        "https://futurumgroup.com/insights/mediatek-q1-fy-2026-earnings-driven-by-ai-asic-ramp-visibility/",
+        "https://www.investing.com/news/stock-market-news/mediatek-stock-remains-morgan-stanley-top-pick-on-cloud-ai-strength-93CH-4715250"
+      ],
+      "expires_at": "2026-06-04T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-2317-2026-06-04-morning",
+      "ticker": "2317",
+      "name": "鴻海",
+      "market": "TW",
+      "signal": "🟢",
+      "direction": "bullish",
+      "confidence": 0.72,
+      "view": "鴻海6/3再漲+2.49%至309元，4月營收年增+29.74%歷史新高，突破300元後量增再攻；AI伺服器全球市佔40%+，美國18州50廠戰略佈局超前。RSI ~74已進超買區，短線宜防回測295-300；若回測294-300可視為逢低加碼機會，基本面無虞。",
+      "rationale": "AI伺服器領導地位穩固，突破300元後延伸上攻，RSI超買短線防回，基本面強健",
+      "price": 309.0,
+      "change_pct": 2.49,
+      "support": 290,
+      "resistance": 325,
+      "stop_loss": 278,
+      "target": 340,
+      "technicals": {
+        "rsi14": 74,
+        "macd": "多頭量增延伸",
+        "ma_alignment": "多頭，持續突破整數關"
+      },
+      "valuation": {
+        "pe": 12.0,
+        "pe_percentile_5y": 80,
+        "verdict": "AI伺服器訂單高能見度，傳統估值框架低估其轉型價值，仍具空間"
+      },
+      "sources": [
+        "https://tw.stock.yahoo.com/news/%E9%B4%BB%E6%B5%B7%E6%96%A5%E8%B3%87%E8%BF%993%E5%84%84%E7%BE%8E%E5%85%83%E6%93%B4%E5%A4%A7%E7%BE%8E%E5%9C%8Bai%E4%BC%BA%E6%9C%8D%E5%99%A8%E4%BD%88%E5%B1%80-%E5%BC%B7%E5%8C%96%E5%85%A8%E7%90%83%E4%BE%9B%E6%87%89%E9%8F%88%E9%9F%8C%E6%80%A7-000252708.html",
+        "https://www.foreignpolicyjournal.com/2026/05/29/foxconn-tpe-2317-chairman-cites-ai-boom-as-source-of-immense-confidence-in-companys-growth-trajectory/"
+      ],
+      "expires_at": "2026-06-04T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-NVDA-2026-06-04-morning",
+      "ticker": "NVDA",
+      "name": "輝達",
+      "market": "US",
+      "signal": "🟢",
+      "direction": "bullish",
+      "confidence": 0.65,
+      "view": "NVDA 6/3收$215.84(-3.13%)，逼近前日報告止損警戒$215；中東油價宏觀衝擊為主因，非AI基本面惡化。技術面MACD短線走弱，RSI滑至~49中性，支撐$210-216關鍵。惟：①Broadcom Q2 AI晶片+143%直接確認AI超級周期；②分析師一致目標$296（現價隱含+37%上行空間）；③FY2026營收$2159億/獲利$1201億（P/E~44x，合理）。信心從0.74降至0.65，止損上移至$210，若失守需重評。",
+      "rationale": "中東宏觀衝擊觸發拋售，Broadcom+143%確認AI需求完整，$210-215支撐關鍵，不破多頭格局",
+      "price": 215.84,
+      "change_pct": -3.13,
+      "support": 210,
+      "resistance": 225,
+      "stop_loss": 210,
+      "target": 260,
+      "technicals": {
+        "rsi14": 49,
+        "macd": "短線轉弱，MACD由正轉平",
+        "ma_alignment": "仍在200MA上方，短線MA轉弱中"
+      },
+      "valuation": {
+        "pe": 43.9,
+        "pe_percentile_5y": 85,
+        "verdict": "AI溢價高但EPS增速(+65%)完全匹配，合理偏高；分析師目標$296隱含37%上行"
+      },
+      "sources": [
+        "https://stockanalysis.com/stocks/nvda/",
+        "https://www.stocktitan.net/news/AVGO/broadcom-inc-announces-second-quarter-fiscal-year-2026-financial-if4yrbje8hq6.html",
+        "https://capital.com/en-int/markets/shares/nvidia-corp-share-price/market-cap"
+      ],
+      "expires_at": "2026-06-04T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-TSLA-2026-06-04-morning",
+      "ticker": "TSLA",
+      "name": "特斯拉",
+      "market": "US",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.50,
+      "view": "TSLA 6/3收$421.60(-0.51%)，SpaceX IPO/合併傳聞（CNBC）持續支撐情緒；Robotaxi達拉斯/休士頓已上線；FSD訂閱+51% YoY至128萬戶；Q1 EPS $0.41 小幅超預期。但估值極高（P/E~200x+），中東衝擊隨大盤走弱，$410-440橫盤整理格局延續。SpaceX IPO進展為短期主要催化變數。",
+      "rationale": "SpaceX IPO傳聞+Robotaxi擴張支撐情緒，惟估值極高限制上行，高位整理中",
+      "price": 421.60,
+      "change_pct": -0.51,
+      "support": 410,
+      "resistance": 440,
+      "stop_loss": 398,
+      "target": 455,
+      "technicals": {
+        "rsi14": 52,
+        "macd": "中性",
+        "ma_alignment": "20MA上方，中性整理"
+      },
+      "valuation": {
+        "pe": 200.0,
+        "pe_percentile_5y": 75,
+        "verdict": "估值極高，需業績催化（Robotaxi規模商業化）才能推動突破"
+      },
+      "sources": [
+        "https://capital.com/en-int/market-updates/tesla-stock-forecast-03-06-2026",
+        "https://www.fool.com/investing/2026/06/02/heres-why-tesla-stock-soared-in-may-and/"
+      ],
+      "expires_at": "2026-06-04T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-AAPL-2026-06-04-morning",
+      "ticker": "AAPL",
+      "name": "蘋果",
+      "market": "US",
+      "signal": "🟢",
+      "direction": "bullish",
+      "confidence": 0.67,
+      "view": "AAPL 6/3收$310.74(-1.26%)，WWDC 2026（6/8-12）倒數4天進入最後買謠言窗口。Gemini重構Siri+iOS 27 Agentic AI為年度最大個股催化劑；Morgan Stanley：路線圖清晰可推至$365-385（上行$440）；BofA目標$380。股價從$314.70拉回至$310.74提供短線機會，事件驅動邏輯不變。風控：WWDC若令人失望可能急跌5-8%，建議設$298止損。信心從0.63升至0.67，方向從neutral升為bullish（WWDC倒數催化明確）。",
+      "rationale": "WWDC 2026倒數4天，Gemini/Siri重構為年度最大AI催化劑，買謠言窗口邏輯成立",
+      "price": 310.74,
+      "change_pct": -1.26,
+      "support": 300,
+      "resistance": 325,
+      "stop_loss": 298,
+      "target": 345,
+      "technicals": {
+        "rsi14": 55,
+        "macd": "偏多趨勢，短線整理",
+        "ma_alignment": "20MA上方，偏多"
+      },
+      "valuation": {
+        "pe": 36.0,
+        "pe_percentile_5y": 75,
+        "verdict": "WWDC催化前合理偏高，若AI路線圖強勁可推動40x重估至$380+"
+      },
+      "sources": [
+        "https://finance.yahoo.com/markets/stocks/articles/apple-wwdc-2026-key-catalyst-233816532.html",
+        "https://www.fool.com/investing/2026/06/02/apple-biggest-ai-test-june-8-whats-stake-wwdc/",
+        "https://macdailynews.com/2026/06/02/morgan-stanley-apples-wwdc-2026-a-key-catalyst-for-aapl-stock/"
+      ],
+      "expires_at": "2026-06-04T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-TSM-2026-06-04-morning",
+      "ticker": "TSM",
+      "name": "台積電ADR",
+      "market": "US",
+      "signal": "🟢",
+      "direction": "bullish",
+      "confidence": 0.67,
+      "view": "TSM 6/3受NVDA-3.13%衝擊估計收~$439(-0.45%)，日間高點曾達$446.69，後市場回落至$439.96。台灣TAIEX 46,459歷史新高確認台積電基本面強健。ADR仍是今日2330開盤最直接風向球，$425關鍵支撐完整。信心從0.73略降至0.67（隨NVDA/半導體板塊整體修正）。",
+      "rationale": "TAIEX歷史新高確認基本面，NVDA回落短線連帶，$425支撐完整，AI訂單能見度高",
+      "price": 439.0,
+      "change_pct": -0.45,
+      "support": 425,
+      "resistance": 460,
+      "stop_loss": 415,
+      "target": 480,
+      "technicals": {
+        "rsi14": 60,
+        "macd": "偏多，短線整理",
+        "ma_alignment": "多頭排列，短線小幅修正"
+      },
+      "valuation": {
+        "pe": 26.0,
+        "pe_percentile_5y": 75,
+        "verdict": "合理，AI需求持續支撐高估值"
+      },
+      "sources": [
+        "https://www.investing.com/equities/taiwan-semicond.manufacturing-co",
+        "https://seekingalpha.com/article/4855898-tsmc-why-2026-will-be-even-bigger"
+      ],
+      "expires_at": "2026-06-04T13:30:00+08:00"
+    }
+  ],
+  "alerts": [
+    {
+      "alert_id": "alt-nfp-jobs-report",
+      "level": "warning",
+      "text": "明日（6/5 20:30台北）：5月非農就業報告，預期+93-105K（前值+115K），失業率4.3%不變。今日ADP +122K超預期增加失業率守穩概率；若NFP超過115K → 30Y殖利率挑戰5.3%+，壓縮高估值；若低於80K → 降息預期回升，成長股短線彈升。為本週最後重大尾部風險。",
+      "tickers": ["NVDA", "TSLA", "AAPL", "SPX", "2330"],
+      "url": "https://finance.yahoo.com/economy/live/jobs-report-may-data-labor-market-live-updates-090000760.html",
+      "source": "Yahoo Finance / BLS"
+    },
+    {
+      "alert_id": "alt-aapl-wwdc-2026",
+      "level": "warning",
+      "text": "AAPL WWDC 2026（6/8-12）倒數4天，為本週最大個股事件。預期：Gemini重構Siri、iOS 27 Agentic AI、Vision Pro 2代路線圖。Morgan Stanley：路線圖清晰可推估值至$365-385（上行$440）；BofA目標$380。若令人失望可能觸發5-8%急跌。台積電(2nm供應商)及鴻海(組裝)有間接影響。alert level由info升為warning（倒數天數進入決策區）。",
+      "tickers": ["AAPL", "TSM", "2330", "2317"],
+      "url": "https://www.fool.com/investing/2026/06/02/apple-biggest-ai-test-june-8-whats-stake-wwdc/",
+      "source": "Motley Fool / Morgan Stanley"
+    },
+    {
+      "alert_id": "alt-us-iran-ceasefire",
+      "level": "warning",
+      "text": "美伊停火危機升級（★新高度）：6/3伊朗停止與美通訊，WTI從$91急升至$96.05(+5.5%)，突破$95警戒線；IEA正式警告霍爾木茲有效關閉將使全球庫存降至危急水位。油價每漲$5→CPI+0.15%，加劇Fed鷹派壓力。WTI$100為下一道心理關卡，若突破恐引發系統性恐慌拋售。",
+      "tickers": ["AAPL", "TSLA", "SPX", "2454", "NVDA"],
+      "url": "https://www.fool.com/coverage/stock-market-today/2026/06/03/stock-market-today-june-3-markets-end-winning-streak-on-middle-east-escalation-fears/",
+      "source": "Motley Fool / IEA"
+    },
+    {
+      "alert_id": "alt-broadcom-q2-ai-boom",
+      "level": "info",
+      "text": "Broadcom(AVGO) Q2 FY2026爆炸財報（6/3盤後）：總營收$222億(+48% YoY)，AI半導體收入$108億(+143% YoY)，Q3指引$294億(+84%)。AI ASIC設計服務史上最強季報，直接確認台積電CoWoS需求、聯發科AI ASIC市場爆發、NVDA生態系健康。為本週最重要基本面正面數據。",
+      "tickers": ["NVDA", "TSM", "2330", "2454"],
+      "url": "https://www.stocktitan.net/news/AVGO/broadcom-inc-announces-second-quarter-fiscal-year-2026-financial-if4yrbje8hq6.html",
+      "source": "StockTitan / Broadcom IR"
+    },
+    {
+      "alert_id": "alt-nvda-rtx-spark-computex",
+      "level": "info",
+      "text": "NVDA RTX Spark超晶片（Blackwell GPU+Grace CPU+ARM）Computex 2026發表，秋季搭載Dell/HP/ASUS/Lenovo/MSI筆電上市；ARM大漲+18%；台積電CoWoS/2nm主要受益，聯發科ARM CPU設計角色確認。中長線催化仍有效。",
+      "tickers": ["NVDA", "2454", "2330", "TSM"],
+      "url": "https://www.cnbc.com/2026/05/31/nvidias-new-chip-to-power-fresh-line-of-windows-laptops-by-dell-hp.html",
+      "source": "CNBC"
+    },
+    {
+      "alert_id": "alt-us30y-rate-hike-risk",
+      "level": "warning",
+      "text": "美30Y殖利率5.19%高位；CPI 3.8% YoY；ADP 5月+122K超預期稍增鷹派籌碼；DXY升至99.40兩月高點。Kevin Warsh鷹派主席首任FOMC 6/16-17，市場預期按兵不動（3.50-3.75%）但鷹派聲明可能壓縮成長股估值。高P/E股（TSLA~200x, AAPL~36x, NVDA~44x）長期承壓。",
+      "tickers": ["NVDA", "AAPL", "TSLA", "TSM"],
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "source": "Federal Reserve / ADP"
+    }
+  ],
+  "sector_rotation": {
+    "strong": ["AI伺服器（鴻海/廣達）", "先進封裝（台積電CoWoS/CoPoS）", "AI ASIC設計（聯發科/Broadcom）", "AI加速器（NVDA生態系）"],
+    "weak": ["傳統PC晶片供應鏈（Intel系）", "航空/物流（油價飆升）", "高利率受害（公用事業/REITs）"],
+    "watch": ["蘋果供應鏈（WWDC 6/8前靜待）", "能源股（霍爾木茲受益短線）", "記憶體（等量確認）", "生技（利率敏感）"]
+  },
+  "whats_changed": {
+    "compared_to": "股市-開盤前-20260603.md",
+    "compared_to_date": "2026-06-03",
+    "new": [
+      {
+        "type": "alert",
+        "summary": "Broadcom Q2 FY2026爆炸財報首次入列：AI半導體+143%、Q3指引+84%，為本季全球半導體最強財報，確認AI超級周期基本面",
+        "tickers": ["NVDA", "TSM", "2330", "2454"],
+        "alert_id": "alt-broadcom-q2-ai-boom"
+      }
+    ],
+    "strengthened": [
+      {
+        "type": "alert",
+        "summary": "中東危機升級：WTI從$91急漲至$96.05(+5.5%)突破$95警戒線，IEA正式警告霍爾木茲封鎖風險；影響股票範圍從3檔擴至5檔",
+        "tickers": ["AAPL", "TSLA", "SPX", "2454", "NVDA"],
+        "alert_id": "alt-us-iran-ceasefire",
+        "from": "warning / WTI$91，停火反覆，tickers 3檔",
+        "to": "warning / WTI$96突破警戒線，IEA霍爾木茲警告，tickers 5檔"
+      },
+      {
+        "type": "alert",
+        "summary": "WWDC 2026 alert level由info升為warning：倒數進入4天決策窗口，買謠言/賣新聞風險同步升高",
+        "tickers": ["AAPL", "TSM", "2330", "2317"],
+        "alert_id": "alt-aapl-wwdc-2026",
+        "from": "info / 倒數5天",
+        "to": "warning / 倒數4天，進入決策區"
+      },
+      {
+        "type": "stock_direction",
+        "summary": "NVDA收$215.84(-3.13%)，逼近前日止損$215；信心從0.74降至0.65，止損上移至$210；方向維持bullish（Broadcom確認AI需求）",
+        "ticker": "NVDA",
+        "from": "bullish / confidence 0.74 / price $225.61 / stop $215",
+        "to": "bullish / confidence 0.65 / price $215.84 / stop $210（觸近支撐）"
+      },
+      {
+        "type": "stock_direction",
+        "summary": "AAPL方向從neutral升為bullish（WWDC 6/8倒數4天催化劑明確性提升），信心0.63→0.67",
+        "ticker": "AAPL",
+        "from": "neutral / confidence 0.63 / price $314.70",
+        "to": "bullish / confidence 0.67 / price $310.74（WWDC事件驅動升級）"
+      }
+    ],
+    "removed": [
+      {
+        "type": "alert",
+        "summary": "alt-ism-services-adb-june3：6/3 22:00數據已公布（ADP +122K超預期，ISM服務業PMI出爐），單日事件警示解除",
+        "alert_id": "alt-ism-services-adb-june3"
+      }
+    ]
+  }
+}

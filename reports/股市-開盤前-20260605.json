@@ -1,0 +1,440 @@
+{
+  "_schema_version": 3,
+  "type": "morning",
+  "report_file": "股市-開盤前-20260605.md",
+  "date": "2026-06-05",
+  "weekday": "週五",
+  "generated_at": "2026-06-05T07:34:54+08:00",
+  "market_view": {
+    "level": "neutral",
+    "confidence": 0.52,
+    "headline": "道指創歷史新高51,562(+1.73%)但Broadcom AI指引失望(-12.59%)觸發AI估值修正，費半估算-2.6%；台股6/4跟跌46,026(-0.93%)；半導體信號全面轉neutral；NFP今晚20:30定本週方向；AAPL WWDC週一(6/8)為唯一bullish催化"
+  },
+  "indices": [
+    {
+      "name": "道瓊工業",
+      "ticker": "DJI",
+      "value": 51562.0,
+      "change_pct": 1.73,
+      "trend": "bullish",
+      "note": "創歷史新高，非科技/金融/工業輪動強勁，+875點"
+    },
+    {
+      "name": "S&P 500",
+      "ticker": "SPX",
+      "value": 7584.31,
+      "change_pct": 0.41,
+      "trend": "neutral",
+      "note": "AVGO拖累科技板塊，窄幅上漲"
+    },
+    {
+      "name": "Nasdaq",
+      "ticker": "IXIC",
+      "value": 26831.0,
+      "change_pct": -0.09,
+      "trend": "neutral",
+      "note": "AI/科技股承壓，幾乎持平"
+    },
+    {
+      "name": "費城半導體（估）",
+      "ticker": "SOX",
+      "value": 12270.0,
+      "change_pct": -2.6,
+      "trend": "bearish",
+      "note": "AVGO -12.59%重挫，估計-2.6%，週內最大單日跌幅（估算值）"
+    },
+    {
+      "name": "VIX 恐慌指數（估）",
+      "ticker": "VIX",
+      "value": 16.5,
+      "change_pct": -7.3,
+      "trend": "neutral",
+      "note": "道指創高壓低恐慌，估算值"
+    },
+    {
+      "name": "美 10Y 殖利率",
+      "ticker": "US10Y",
+      "value": 4.49,
+      "change_pct": 0.04,
+      "trend": "bearish",
+      "note": "略升，NFP前靜待；偏高壓制成長股估值"
+    },
+    {
+      "name": "美 30Y 殖利率",
+      "ticker": "US30Y",
+      "value": 5.22,
+      "change_pct": 0.03,
+      "trend": "bearish",
+      "note": "高位整理，FOMC 6/16-17前壓力持續"
+    },
+    {
+      "name": "美元指數",
+      "ticker": "DXY",
+      "value": 99.34,
+      "change_pct": -0.18,
+      "trend": "neutral",
+      "note": "美元小幅走弱，輕微利多台廠ADR匯兌"
+    },
+    {
+      "name": "台股加權指數",
+      "ticker": "TWII",
+      "value": 46026.0,
+      "change_pct": -0.93,
+      "trend": "neutral",
+      "note": "6/4跟跌，距6/3歷史高46,459回落433點；今日面臨AVGO+NFP雙重考驗"
+    },
+    {
+      "name": "WTI 原油",
+      "ticker": "WTI",
+      "value": 95.50,
+      "change_pct": -0.58,
+      "trend": "neutral",
+      "note": "稍降，霍爾木茲威脅持續，$100心理關卡為風險閾值"
+    }
+  ],
+  "stocks": [
+    {
+      "signal_id": "stk-2330-2026-06-05-morning",
+      "ticker": "2330",
+      "name": "台積電",
+      "market": "TW",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.60,
+      "view": "台積電6/4收NT$2,405(-0.82%)，TAIEX修正日相對抗跌；TSM ADR $436.69(-0.53%)暗示今日開盤小幅偏空但可控。6/4股東會通過2025年EPS NT$66.25、全年營收NT$3.8兆確認長線基本面完整。AVGO AI晶片指引miss短線壓抑CoWoS需求預期，信號由bullish降neutral屬風控調整。核心支撐2,350-2,400帶不破，多頭格局未變。",
+      "rationale": "AVGO Q3 AI指引miss打壓AI封裝需求預期；TSMC股東會確認基本面，$425/TSM支撐守穩，降neutral等NFP落地確認",
+      "price": 2405.0,
+      "change_pct": -0.82,
+      "support": 2350,
+      "resistance": 2500,
+      "stop_loss": 2290,
+      "target": 2600,
+      "technicals": {
+        "rsi14": 64,
+        "macd": "偏多但動能放緩",
+        "ma_alignment": "5/10/20/60MA 多頭排列，短線修正中"
+      },
+      "valuation": {
+        "pe": 27.3,
+        "pe_percentile_5y": 76,
+        "verdict": "合理偏高，AI封裝溢價仍支撐，但AVGO指引miss短線壓縮預期"
+      },
+      "sources": [
+        "https://www.tipranks.com/news/company-announcements/tsmc-shareholders-approve-2025-results-and-charter-changes-at-june-4-meeting",
+        "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-june-4-212339994.html"
+      ],
+      "expires_at": "2026-06-05T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-2454-2026-06-05-morning",
+      "ticker": "2454",
+      "name": "聯發科",
+      "market": "TW",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.52,
+      "view": "聯發科6/4收NT$4,430(-2.53%)，AVGO AI ASIC指引miss直接打擊聯發科估值敘事。外資目標均值NT$3,749低於現價18%，加上AI ASIC市場被重新定價，形成雙重壓力。中長線：OpenAI晶片合作、AI ASIC全年目標翻倍至$20億美元等基本面敘事不變。短線宜觀望4,200-4,350支撐帶確認後再評估佈局。",
+      "rationale": "AVGO AI ASIC指引miss削弱聯發科AI ASIC需求預期；外資目標均值低現價18%為雙重壓力，降neutral等AVGO故事明朗化",
+      "price": 4430.0,
+      "change_pct": -2.53,
+      "support": 4200,
+      "resistance": 4700,
+      "stop_loss": 4100,
+      "target": 4800,
+      "technicals": {
+        "rsi14": 61,
+        "macd": "多頭延伸，動能轉弱",
+        "ma_alignment": "5/10/20MA 多頭排列，短線修正中"
+      },
+      "valuation": {
+        "pe": 21.5,
+        "pe_percentile_5y": 65,
+        "verdict": "高於外資目標均值18%，AI ASIC溢價面臨AVGO預期下調壓力"
+      },
+      "sources": [
+        "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-june-4-212339994.html",
+        "https://www.fool.com/coverage/stock-market-today/2026/06/04/stock-market-today-june-4-broadcom-shares-plunge-after-ai-outlook-misses-high-investor-expectations/"
+      ],
+      "expires_at": "2026-06-05T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-2317-2026-06-05-morning",
+      "ticker": "2317",
+      "name": "鴻海",
+      "market": "TW",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.58,
+      "view": "鴻海6/4收NT$293(-5.18%)，從RSI 74超買大幅修正。AI伺服器全球市佔40%+、美國50廠佈局等基本面完整；4月營收年增+29.74%歷史新高未改。短線-5.18%修正後，需觀察285-293支撐帶能否守穩，量縮為正面訊號。AVGO指引miss對AI伺服器組裝需求有間接影響，但程度有限。",
+      "rationale": "RSI 74超買修正觸發-5.18%，基本面AI伺服器強健不變；285-293支撐測試中，量縮守穩可逢低佈局",
+      "price": 293.0,
+      "change_pct": -5.18,
+      "support": 278,
+      "resistance": 310,
+      "stop_loss": 268,
+      "target": 325,
+      "technicals": {
+        "rsi14": 65,
+        "macd": "多頭，動能回落",
+        "ma_alignment": "多頭排列，超買修正中"
+      },
+      "valuation": {
+        "pe": 12.0,
+        "pe_percentile_5y": 80,
+        "verdict": "AI伺服器轉型低估傳統估值框架，-5.18%修正後本益比更具吸引力"
+      },
+      "sources": [
+        "https://udn.com/news/story/7251/9537573",
+        "https://www.foreignpolicyjournal.com/2026/05/29/foxconn-tpe-2317-chairman-cites-ai-boom-as-source-of-immense-confidence-in-companys-growth-trajectory/"
+      ],
+      "expires_at": "2026-06-05T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-NVDA-2026-06-05-morning",
+      "ticker": "NVDA",
+      "name": "輝達",
+      "market": "US",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.52,
+      "view": "NVDA 6/4收$216.34（含除息$0.25調整，實質近平盤）。$210-216支撐守穩，但AVGO Q3 AI晶片指引$160B vs $172B預期，是NVDA中期需求面的重大負面訊號。市場開始質疑AI晶片整體需求曲線，雖然分析師共識目標$296不變（67票買入），但短線情緒轉謹慎。今日$208止損為關鍵，NFP前按兵不動。",
+      "rationale": "AVGO AI指引miss引發市場對AI晶片需求可見度疑慮；$210支撐守穩但信心下降至0.52，NFP前觀望，$208止損關鍵",
+      "price": 216.34,
+      "change_pct": 0.23,
+      "support": 210,
+      "resistance": 225,
+      "stop_loss": 208,
+      "target": 255,
+      "technicals": {
+        "rsi14": 50,
+        "macd": "中性偏弱",
+        "ma_alignment": "200MA上方，短線中性"
+      },
+      "valuation": {
+        "pe": 43.9,
+        "pe_percentile_5y": 85,
+        "verdict": "分析師目標$296（+37%上行），但AVGO miss壓縮近期AI溢價重估空間"
+      },
+      "sources": [
+        "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-june-4-212339994.html",
+        "https://www.cnbc.com/2026/06/03/broadcom-avgo-earnings-report-q2-2026.html"
+      ],
+      "expires_at": "2026-06-05T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-TSLA-2026-06-05-morning",
+      "ticker": "TSLA",
+      "name": "特斯拉",
+      "market": "US",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.50,
+      "view": "TSLA 6/4收$416.94(-1.11%)。P/E ~200x高估值持續承壓，NFP今晚若超預期推升殖利率，高估值成長股首當其衝。$405-410關鍵支撐，SpaceX IPO/合併傳聞維持情緒底部。Robotaxi Austin持續運營。$410-430橫盤整理格局延續。",
+      "rationale": "P/E~200x高估值+NFP殖利率風險，SpaceX IPO傳聞支撐底部，$405支撐維持，中性整理格局",
+      "price": 416.94,
+      "change_pct": -1.11,
+      "support": 405,
+      "resistance": 430,
+      "stop_loss": 395,
+      "target": 455,
+      "technicals": {
+        "rsi14": 51,
+        "macd": "中性",
+        "ma_alignment": "20MA上方，中性整理"
+      },
+      "valuation": {
+        "pe": 200.0,
+        "pe_percentile_5y": 75,
+        "verdict": "估值極高，Robotaxi規模化為唯一突破催化劑"
+      },
+      "sources": [
+        "https://finance.yahoo.com/quote/TSLA/",
+        "https://www.cnbc.com/markets/pre-markets/"
+      ],
+      "expires_at": "2026-06-05T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-AAPL-2026-06-05-morning",
+      "ticker": "AAPL",
+      "name": "蘋果",
+      "market": "US",
+      "signal": "🟢",
+      "direction": "bullish",
+      "confidence": 0.67,
+      "view": "AAPL 6/4收$311.52(+0.25%)，AVGO AI晶片miss衝擊下科技股最強抗跌標的。WWDC 2026本週一(6/8)登場，買謠言最後3天窗口。Apple的AI敘事聚焦軟體/服務（iOS 27 Agentic AI / Gemini重構Siri），與Broadcom晶片設計指引不相關，是今日AI板塊中相對優選。Morgan Stanley目標$365-385（上行$440）、BofA目標$380。風險：WWDC若失望可能觸發「賣新聞」-5~-8%，嚴守$298止損。",
+      "rationale": "WWDC 2026倒數3天(6/8)，軟體AI敘事不受AVGO晶片指引影響，相對AI硬體更安全，買謠言窗口最後衝刺",
+      "price": 311.52,
+      "change_pct": 0.25,
+      "support": 300,
+      "resistance": 325,
+      "stop_loss": 298,
+      "target": 350,
+      "technicals": {
+        "rsi14": 56,
+        "macd": "偏多整理",
+        "ma_alignment": "20MA上方，偏多"
+      },
+      "valuation": {
+        "pe": 36.0,
+        "pe_percentile_5y": 75,
+        "verdict": "WWDC前合理偏高，AI服務路線圖清晰可推動重估至$380+"
+      },
+      "sources": [
+        "https://finance.yahoo.com/markets/stocks/articles/apple-wwdc-2026-key-catalyst-233816532.html",
+        "https://www.fool.com/investing/2026/06/02/apple-biggest-ai-test-june-8-whats-stake-wwdc/"
+      ],
+      "expires_at": "2026-06-05T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-TSM-2026-06-05-morning",
+      "ticker": "TSM",
+      "name": "台積電ADR",
+      "market": "US",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.57,
+      "view": "TSM 6/4收$436.69(-0.53%)。ADR小幅修正反映AVGO衝擊可控，$425支撐完整。TSMC股東會(6/4)確認2025年EPS NT$66.25為長線信心錨。短線AVGO AI指引miss壓縮CoWoS需求預期，信號降neutral。是今日2330開盤最直接風向球。",
+      "rationale": "AVGO AI指引miss壓縮AI封裝需求預期；TSM ADR -0.53%偏可控，$425支撐守穩，TSMC股東會長線正面，降neutral等確認",
+      "price": 436.69,
+      "change_pct": -0.53,
+      "support": 425,
+      "resistance": 455,
+      "stop_loss": 415,
+      "target": 475,
+      "technicals": {
+        "rsi14": 59,
+        "macd": "偏多，短線整理",
+        "ma_alignment": "多頭排列，小幅修正"
+      },
+      "valuation": {
+        "pe": 26.0,
+        "pe_percentile_5y": 75,
+        "verdict": "合理，AI需求雖受AVGO短線壓縮但長線訂單能見度高"
+      },
+      "sources": [
+        "https://www.tipranks.com/news/company-announcements/tsmc-shareholders-approve-2025-results-and-charter-changes-at-june-4-meeting",
+        "https://www.investing.com/equities/taiwan-semicond.manufacturing-co"
+      ],
+      "expires_at": "2026-06-05T13:30:00+08:00"
+    }
+  ],
+  "alerts": [
+    {
+      "alert_id": "alt-nfp-jobs-report",
+      "level": "warning",
+      "text": "【今日 20:30 台北 / 8:30ET】5月非農就業報告正式公布！共識+105K（範圍50-125K），失業率4.3%不變。情境：①超預期(>115K)→10Y升→AI估值壓縮，NVDA/TSLA/AAPL盤後承壓；②符預期(85-115K)→市場中性；③低預期(<80K)→降息預期回升，成長股反彈，AI修復起點。台股13:30收盤後公布，但期貨/ADR即時反映，週一開盤關鍵。",
+      "tickers": ["NVDA", "TSLA", "AAPL", "SPX", "2330"],
+      "url": "https://insight.factset.com/total-nonfarm-payrolls-for-may-2026-are-projected-to-rise-by-105000",
+      "source": "FactSet / BLS"
+    },
+    {
+      "alert_id": "alt-avgo-ai-guidance-miss",
+      "level": "warning",
+      "text": "Broadcom(AVGO) -12.59%：Q3 AI晶片指引$160億 vs 預期$172億，宣布轉型「純晶片（chips only）」模式放棄整合AI系統，暴露AI投資需求預期脆弱性。市值單日蒸發~$3,200億。直接連帶：NVDA Blackwell需求敘事受質疑、台積電CoWoS需求預期壓縮、聯發科AI ASIC市場重新定價。Investing.com分析標題「Broadcom's Guidance Miss Exposes the Fragility of the AI Trade」。",
+      "tickers": ["NVDA", "TSM", "2330", "2454"],
+      "url": "https://www.investing.com/analysis/broadcoms-guidance-miss-exposes-the-fragility-of-the-ai-trade-200681543",
+      "source": "Investing.com / CNBC / Yahoo Finance"
+    },
+    {
+      "alert_id": "alt-aapl-wwdc-2026",
+      "level": "warning",
+      "text": "AAPL WWDC 2026（6/8 週一）倒數3天，買謠言最後窗口。預期：Gemini重構Siri、iOS 27 Agentic AI、Vision Pro 2代路線圖。AVGO衝擊後AAPL相對抗跌(+0.25%)，軟體AI敘事與晶片指引解耦為關鍵優勢。Morgan Stanley目標$365-385（上行$440）；BofA目標$380。止損$298，若WWDC失望觸發-5~-8%急跌。",
+      "tickers": ["AAPL", "TSM", "2330", "2317"],
+      "url": "https://www.fool.com/investing/2026/06/02/apple-biggest-ai-test-june-8-whats-stake-wwdc/",
+      "source": "Motley Fool / Morgan Stanley / BofA"
+    },
+    {
+      "alert_id": "alt-us-iran-ceasefire",
+      "level": "warning",
+      "text": "美伊衝突持續：WTI $95.50（-0.58%，稍緩），伊朗攻擊美軍巴林/科威特基地及商業船隻，霍爾木茲航運受阻。停火無進展，$95-100為核心觀察區。若WTI重回$97+ → CPI通膨壓力升 → Fed鷹派更強。$100心理關卡為系統性風險閾值。",
+      "tickers": ["AAPL", "TSLA", "SPX", "2454", "NVDA"],
+      "url": "https://fxdailyreport.com/wti-crude-oil-price-analysis-for-june-4-2026/",
+      "source": "FX Daily Report / IEA"
+    },
+    {
+      "alert_id": "alt-us30y-rate-hike-risk",
+      "level": "warning",
+      "text": "美30Y殖利率5.22%高位，10Y升至4.49%；NFP今晚加劇不確定性；FOMC 6/16-17（Kevin Warsh鷹派主席首任，市場預期按兵不動3.50-3.75%）。高P/E股（TSLA~200x, AAPL~36x, NVDA~44x）持續承壓。若NFP超預期，10Y有機會測試4.6%-4.7%。",
+      "tickers": ["NVDA", "AAPL", "TSLA", "TSM"],
+      "url": "https://www.gomarkets.com/en/articles/us-market-drivers-june-2026",
+      "source": "Federal Reserve / GoMarkets"
+    },
+    {
+      "alert_id": "alt-nvda-rtx-spark-computex",
+      "level": "info",
+      "text": "NVDA RTX Spark超晶片（Blackwell GPU+Grace CPU+ARM）Computex 2026發表，秋季搭載Dell/HP/ASUS/Lenovo/MSI筆電上市；ARM仍維持大漲；台積電CoWoS/2nm為主要受益者，聯發科ARM CPU設計角色確認。中長線催化不變，但AVGO miss短線壓制AI整體情緒。",
+      "tickers": ["NVDA", "2454", "2330", "TSM"],
+      "url": "https://www.cnbc.com/2026/05/31/nvidias-new-chip-to-power-fresh-line-of-windows-laptops-by-dell-hp.html",
+      "source": "CNBC"
+    }
+  ],
+  "sector_rotation": {
+    "strong": ["非科技價值股（金融/工業/消費：道指領軍）", "蘋果（軟體AI，WWDC催化）", "能源（WTI$95高位）"],
+    "weak": ["AI半導體（AVGO指引miss拖累費半-2.6%估）", "鴻海（RSI超買修正-5.18%）", "高P/E成長股（殖利率升壓）"],
+    "watch": ["NFP數據主導本日及下週方向", "Broadcom後市：是黃金坑或瀑布起點", "FOMC 6/16-17降息預期重定價", "WTI $95-100區間能否穩住"]
+  },
+  "whats_changed": {
+    "compared_to": "股市-開盤前-20260604.md",
+    "compared_to_date": "2026-06-04",
+    "new": [
+      {
+        "type": "alert",
+        "summary": "alt-avgo-ai-guidance-miss【全新】：AVGO -12.59%，Q3 AI晶片指引$160B vs $172B預期，轉型「純晶片」模式，暴露AI投資敘事脆弱性，直接壓制NVDA/台積電/聯發科AI ASIC估值",
+        "tickers": ["NVDA", "TSM", "2330", "2454"],
+        "alert_id": "alt-avgo-ai-guidance-miss"
+      }
+    ],
+    "strengthened": [
+      {
+        "type": "alert",
+        "summary": "alt-nfp-jobs-report：從「明日預告」升格為【今日 20:30 LIVE】，尾部風險最大化——超預期壓AI估值、低預期觸發降息預期反彈，為本週最後定方向事件",
+        "tickers": ["NVDA", "TSLA", "AAPL", "SPX", "2330"],
+        "alert_id": "alt-nfp-jobs-report",
+        "from": "明日(6/5)到期前預告",
+        "to": "今日20:30台北LIVE，市場方向定錨"
+      },
+      {
+        "type": "stock_direction",
+        "summary": "NVDA：bullish→neutral，信心0.65→0.52。AVGO AI指引miss使Blackwell需求預期受到質疑，$210支撐守穩但信號調降；非AI基本面惡化，係預期值重設",
+        "ticker": "NVDA",
+        "from": "bullish / confidence 0.65 / price $215.84 / stop $210",
+        "to": "neutral / confidence 0.52 / price $216.34 / stop $208（AVGO指引miss壓縮AI期望值）"
+      },
+      {
+        "type": "stock_direction",
+        "summary": "2317鴻海：bullish→neutral，信心0.72→0.58。RSI 74超買觸發-5.18%大幅修正，285-293支撐待確認；AI伺服器基本面不變，純技術面降neutral",
+        "ticker": "2317",
+        "from": "bullish / confidence 0.72 / price NT$309 / RSI 74超買",
+        "to": "neutral / confidence 0.58 / price NT$293 / RSI~65修正中（超買獲利了結）"
+      },
+      {
+        "type": "stock_direction",
+        "summary": "2330台積電：bullish→neutral，信心0.72→0.60。AVGO AI指引miss短線壓縮CoWoS需求預期；股東會確認長線基本面，信號降neutral屬短線風控調整",
+        "ticker": "2330",
+        "from": "bullish / confidence 0.72 / price NT$2,425",
+        "to": "neutral / confidence 0.60 / price NT$2,405（AVGO短線壓力，長線不變）"
+      },
+      {
+        "type": "stock_direction",
+        "summary": "2454聯發科：bullish→neutral，信心0.68→0.52。AVGO AI ASIC指引直接打壓聯發科估值邏輯；外資目標均值低現價18%形成雙重壓力",
+        "ticker": "2454",
+        "from": "bullish / confidence 0.68 / price NT$4,545",
+        "to": "neutral / confidence 0.52 / price NT$4,430（AVGO AI ASIC需求重新定價）"
+      },
+      {
+        "type": "stock_direction",
+        "summary": "TSM台積電ADR：bullish→neutral，信心0.67→0.57。連帶AVGO指引miss，$425支撐守穩，是今日2330開盤風向球",
+        "ticker": "TSM",
+        "from": "bullish / confidence 0.67 / price ~$439",
+        "to": "neutral / confidence 0.57 / price $436.69（AVGO短線壓力，支撐守穩）"
+      }
+    ],
+    "removed": [
+      {
+        "type": "alert",
+        "summary": "alt-broadcom-q2-ai-boom【移除】：前日引用為AI超級周期正面確認的AVGO Q2 AI+143%財報，已因Q3指引失望($160B vs $172B)及「純晶片」轉型聲明而敘事逆轉。此alert正面立場已失效，替換為alt-avgo-ai-guidance-miss",
+        "alert_id": "alt-broadcom-q2-ai-boom"
+      }
+    ]
+  }
+}

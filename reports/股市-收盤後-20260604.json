@@ -1,0 +1,334 @@
+{
+  "schema_version": "3.0",
+  "type": "close",
+  "generated_at": "2026-06-04T14:02:33+08:00",
+  "expires_at": "2026-06-05T09:00:00+08:00",
+  "date": "2026-06-04",
+  "weekday": "週四",
+  "market_summary": {
+    "taiex_close": 46025.57,
+    "taiex_change_pts": -433.59,
+    "taiex_change_pct": -0.93,
+    "taiex_prev_close_est": 46459.16,
+    "volume_b_twd": 7797.01,
+    "institutional_net_buy_est_b_twd": -165,
+    "foreign_net_buy_est_b_twd": -200,
+    "trust_net_buy_est_b_twd": 20,
+    "dealer_net_est_b_twd": 15,
+    "note": "法人數據為估算，官方盤後公告為準；TAIEX 方向確認為跌（搜尋摘要方向有誤，依昨收 46,459 推算）"
+  },
+  "stocks": [
+    {
+      "signal_id": "stk-2330-2026-06-04-close",
+      "ticker": "2330",
+      "name": "台積電",
+      "market": "TW",
+      "direction": "bullish",
+      "price": 2380,
+      "prev_price": 2400,
+      "change_pct": -0.83,
+      "confidence": 0.4,
+      "rationale": "台積電 6/4 估收 2,380 元（低信心，大盤 -0.93% 推算）。高盛目標 2,330、Aletheia 2,400 均已達標，短線高位整理；CoWoS/HBM4/SoW 超級周期長線看多不變。2,380 為即時支撐，跌破 2,350 需警覺。明日 NFP 強數據恐壓縮高 PE 估值。bullish 維持，但信心低位。",
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/2330.TW",
+        "https://finance.yahoo.com/quote/2330.TW/history/",
+        "https://www.sinotrade.com.tw/richclub/hotstock/%E5%8F%B0%E7%A9%8D%E9%9B%BB-2330-%E8%82%A1%E5%83%B9%E6%94%BB%E4%B8%8A1-650%E5%85%83%E6%96%B0%E9%AB%98-%E5%85%A9%E5%A4%A7%E5%A4%96%E8%B3%87%E5%96%8A%E5%87%BA2330%E5%85%83-2400%E5%85%83%E5%A4%A9%E5%83%B9%E7%9B%AE%E6%A8%99-%E8%82%A1%E5%B8%82%E8%A9%B1%E9%A1%8C-695b2f0f24cf3b1605175e01"
+      ],
+      "expires_at": "2026-06-05T09:00:00+08:00",
+      "flags": [
+        "taiex_pullback_0604",
+        "target_price_reached_2330_2400",
+        "cowos_hbm4_sow_long_term_bullish",
+        "price_low_confidence_estimate",
+        "watchlist_high_priority",
+        "nonfarm_june5_tail_risk",
+        "support_2380_watch"
+      ]
+    },
+    {
+      "signal_id": "stk-2454-2026-06-04-close",
+      "ticker": "2454",
+      "name": "聯發科",
+      "market": "TW",
+      "direction": "bullish",
+      "price": 4520,
+      "prev_price": 4475,
+      "change_pct": 1.01,
+      "confidence": 0.6,
+      "rationale": "聯發科 6/4 注意股解除第二日，逆勢走強（估收 4,520 元，+1.0%），籌碼沉澱後買盤回流，大盤下跌日相對強勢為重要多頭訊號。RTX Spark / AI PC / N1X ARM 晶片題材持續，COMPUTEX Day 3 黃仁勳效應延續。方向由昨日 neutral 升至 bullish。4,500 站穩，短線目標 4,600；4,400 為下行關鍵停損。",
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/2454.TW",
+        "https://finance.yahoo.com/quote/2454.TW/history/"
+      ],
+      "expires_at": "2026-06-05T09:00:00+08:00",
+      "flags": [
+        "zhuyi_stock_day2_recovering",
+        "relative_strength_vs_taiex_bullish_signal",
+        "ai_pc_n1x_rtx_spark_catalyst",
+        "direction_upgraded_neutral_to_bullish",
+        "watch_4600_target_4400_support",
+        "watchlist_high_priority"
+      ]
+    },
+    {
+      "signal_id": "stk-2317-2026-06-04-close",
+      "ticker": "2317",
+      "name": "鴻海",
+      "market": "TW",
+      "direction": "bullish",
+      "price": 298,
+      "prev_price": 301.5,
+      "change_pct": -1.16,
+      "confidence": 0.55,
+      "rationale": "鴻海 6/4 估收 298 元（低信心），大盤 -0.93% 壓力下，300 元整數關暫時受測試回落。法國 Bull 歐洲主權 AI DC（€1.2 億）、AI 機櫃 2026 年出貨倍增長線不變。295~298 視為回測買點，300 元為短線關鍵關卡。bullish 維持，觀察 295 支撐。",
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/2317.TW",
+        "https://finance.yahoo.com/quote/2317.TW/history/"
+      ],
+      "expires_at": "2026-06-05T09:00:00+08:00",
+      "flags": [
+        "taiex_pullback_pressure_0604",
+        "300_level_retest_underway",
+        "foxconn_bull_europe_ai_dc_ongoing",
+        "ai_cabinet_2026_double_growth",
+        "support_295_298_dip_buy",
+        "watchlist_med_priority"
+      ]
+    },
+    {
+      "signal_id": "stk-NVDA-2026-06-04-close",
+      "ticker": "NVDA",
+      "name": "輝達",
+      "market": "US",
+      "direction": "neutral",
+      "price": 215.84,
+      "prev_price": 225.61,
+      "change_pct": -3.13,
+      "confidence": 0.65,
+      "rationale": "NVDA 美股 6/3 收 $215.84（-3.13%），觸近止損警戒區（$210–$212 強支撐）。今晚（台北 21:30）美股開盤為關鍵觀察點。Broadcom Q2 AI 晶片 +143% 確認 AI 超級周期，NVDA 基本面強勁，但技術面緊繃。若守 $210，短線反彈機會；若跌破 $210 建議部分減倉。方向由 bullish 降至 neutral，等待今晚確認。此為 US 6/3 確認收盤價。",
+      "sources": [
+        "https://finance.yahoo.com/quote/NVDA/",
+        "https://finance.yahoo.com/quote/NVDA/history/"
+      ],
+      "expires_at": "2026-06-05T09:00:00+08:00",
+      "flags": [
+        "nvda_near_stop_loss_zone_215",
+        "support_210_212_critical",
+        "broadcom_q2_ai_143pct_confirms_cycle",
+        "direction_downgraded_bullish_to_neutral",
+        "us_market_june3_confirmed_close",
+        "nonfarm_june5_tail_risk",
+        "watchlist_high_priority"
+      ]
+    },
+    {
+      "signal_id": "stk-TSLA-2026-06-04-close",
+      "ticker": "TSLA",
+      "name": "特斯拉",
+      "market": "US",
+      "direction": "neutral",
+      "price": 421.49,
+      "prev_price": 422.12,
+      "change_pct": -0.15,
+      "confidence": 0.55,
+      "rationale": "TSLA 美股 6/3 收 $421.49（-0.15%），Nasdaq -0.89% 大環境下相對抗跌。Robotaxi 故事線持續，Musk 政治風險仍存，維持中性方向。今晚預期震盪於 $415~$430，等待 6 月下旬 Robotaxi 具體進展才可考慮轉多。此為 US 6/3 確認收盤。",
+      "sources": [
+        "https://finance.yahoo.com/quote/TSLA/",
+        "https://finance.yahoo.com/quote/TSLA/history/"
+      ],
+      "expires_at": "2026-06-05T09:00:00+08:00",
+      "flags": [
+        "us_market_june3_confirmed_close",
+        "relative_resilience_nasdaq_down",
+        "robotaxi_story_pending_confirmation",
+        "musk_political_risk_ongoing",
+        "watchlist_med_priority"
+      ]
+    },
+    {
+      "signal_id": "stk-AAPL-2026-06-04-close",
+      "ticker": "AAPL",
+      "name": "蘋果",
+      "market": "US",
+      "direction": "neutral",
+      "price": 310.06,
+      "prev_price": 315.2,
+      "change_pct": -1.63,
+      "confidence": 0.55,
+      "rationale": "AAPL 美股 6/3 收 $310.06（-1.63%），Nasdaq 弱勢拖累。WWDC 2026（6/8–6/12）為下一催化，Apple Intelligence 全面升級預期維持。$305~$310 為支撐帶，若守住等 WWDC 催化再評估是否轉多。此為 US 6/3 確認收盤。",
+      "sources": [
+        "https://finance.yahoo.com/quote/AAPL/",
+        "https://www.nasdaq.com/market-activity/stocks/aapl/historical"
+      ],
+      "expires_at": "2026-06-05T09:00:00+08:00",
+      "flags": [
+        "us_market_june3_confirmed_close",
+        "wwdc_2026_june8_catalyst_upcoming",
+        "apple_intelligence_expectation",
+        "support_305_310_key",
+        "watchlist_med_priority"
+      ]
+    },
+    {
+      "signal_id": "stk-TSM-2026-06-04-close",
+      "ticker": "TSM",
+      "name": "台積電ADR",
+      "market": "US",
+      "direction": "neutral",
+      "price": 438.99,
+      "prev_price": 446.69,
+      "change_pct": -1.72,
+      "confidence": 0.6,
+      "rationale": "TSM ADR 美股 6/3 收 $438.99（-1.72%），隨 Nasdaq 弱勢及 NVDA 大跌連帶壓力。前日（6/2）大漲 8.13% 後高位獲利了結屬正常。台積電本地股基本面強，若今晚 NVDA 守穩，TSM ADR 有補漲空間。方向短暫調降至 neutral，等待今晚美股確認。此為 US 6/3 確認收盤。",
+      "sources": [
+        "https://finance.yahoo.com/quote/TSM/",
+        "https://stockanalysis.com/stocks/tsm/"
+      ],
+      "expires_at": "2026-06-05T09:00:00+08:00",
+      "flags": [
+        "us_market_june3_confirmed_close",
+        "direction_downgraded_bullish_to_neutral",
+        "post_8pct_surge_consolidation",
+        "nvda_correlation_watch",
+        "450_level_target_if_nvda_holds",
+        "watchlist_med_priority"
+      ]
+    }
+  ],
+  "alerts": [
+    {
+      "alert_id": "alert-nonfarm-payrolls-june5-risk-20260602",
+      "level": "high",
+      "title": "6/5（週五）非農就業報告（大魔王）── 本周最大尾部風險",
+      "body": "美國 5 月非農就業報告將於 6/5 台北時間 20:30 公布。市場預期 +93K~+105K。若超預期強勁（+20 萬以上），Fed 降息預期再延遲，AI 高 Beta 股（NVDA、TSM）承壓，台股週一開盤連帶受影響。建議 6/5 前降低槓桿至六七成，保留緩衝。",
+      "url": "https://tw.stock.yahoo.com/news/6%E6%9C%88etf%E6%96%B0%E5%85%B5%E5%A0%B1%E5%88%B0%EF%BC%81-computex-2026%E5%B1%95%E8%A6%BD6%E6%9C%882%E6%97%A5%E9%96%8B%E5%B9%95-ai%E3%80%81%E6%A9%9F%E5%99%A8%E4%BA%BA%E5%BC%95%E7%88%86%E7%86%B1%E5%BA%A6-%E5%8D%9A%E9%80%9Aq2%E8%B2%A1%E5%A0%B1%E9%81%87%E4%B8%8A%E9%9D%9E%E8%BE%B2%E5%A4%A7%E9%AD%94%E7%8E%8B%EF%BC%81%E4%B8%AD%E6%B2%B9%E5%AE%A3%E5%B8%83%E9%80%A39%E5%91%A8%E5%87%8D%E6%BC%B2%EF%BD%9C%E6%8A%95%E8%B3%87%E6%97%A9%E7%9F%A5%E9%81%93-122800969.html",
+      "source": "Yahoo 財經 / 鉅亨網",
+      "expires_at": "2026-06-05T22:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-nvda-near-stop-loss-215-20260604",
+      "level": "high",
+      "title": "NVDA 觸近止損區：美股 6/3 收 $215.84（-3.13%）",
+      "body": "NVDA 美股 6/3 大跌 3.13% 至 $215.84，接近 $210–$212 關鍵支撐區。Broadcom Q2 AI +143% 確認超級周期，基本面強，但技術面脆弱。今晚（台北 21:30）若繼續下跌並跌破 $210，建議部分減倉。方向由 bullish 調降至 neutral。",
+      "url": "https://finance.yahoo.com/quote/NVDA/",
+      "source": "Yahoo Finance / 台股收盤後分析",
+      "expires_at": "2026-06-05T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-computex-sell-the-news-risk-20260602",
+      "level": "medium",
+      "title": "Sell-the-news 風險：COMPUTEX 閉幕日（6/5）後潛在獲利了結",
+      "body": "COMPUTEX 2026 於 6/5 閉幕。歷史上展覽結束後往往出現題材退潮、獲利了結賣壓。今日台股已高位回落（-0.93%），若 6/5 無法消化，下週初指數可能測試 45,000~45,500 支撐帶。",
+      "url": "https://news.cnyes.com/news/id/6471571",
+      "source": "鉅亨網專家觀點",
+      "expires_at": "2026-06-08T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-oil-spike-96-middle-east-20260604",
+      "level": "medium",
+      "title": "WTI 油價突破 $96.05 警戒線（中東局勢升溫）",
+      "body": "WTI 原油衝至 $96.05，IEA 警告霍爾木茲海峽封鎖風險。若 $100 重新突破，全球通膨預期升溫，Fed 降息空間收窄，AI 高 PE 股估值受壓。台積電、廣達等電力密集型廠商短線承壓。建議留意能源板塊波動對 AI 成本的影響。",
+      "url": "https://hk.investing.com/indices/taiwan-weighted-historical-data",
+      "source": "IEA / 鉅亨網 / 台股收盤後分析",
+      "expires_at": "2026-06-05T20:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-aapl-wwdc-june8-catalyst-20260604",
+      "level": "medium",
+      "title": "AAPL WWDC 2026（6/8–6/12）：Apple Intelligence 全面更新為下一催化",
+      "body": "蘋果 WWDC 2026 下週開展（6/8），Apple Intelligence 全面升級（含 AI 助理、第三方整合、Vision Pro 應用）為最大看點。若符合或超越市場預期，AAPL 有機會回測 $316~$320。今日 AAPL 收 $310.06（-1.63%），為 WWDC 前最後整理。",
+      "url": "https://finance.yahoo.com/quote/AAPL/",
+      "source": "Apple / Yahoo Finance",
+      "expires_at": "2026-06-08T22:00:00+08:00"
+    }
+  ],
+  "whats_changed": {
+    "generated_at": "2026-06-04T14:02:33+08:00",
+    "summary": "台股高位回落（-433.59 pts, -0.93%），成交量放大（7,797億）確認分配壓力。美股 6/3 全面下殺（NVDA -3.13%、Nasdaq -0.89%、TSM -1.72%）觸發獲利了結。NVDA 觸近止損區，方向 bullish→neutral；TSM ADR 同步調降 bullish→neutral；聯發科（2454）逆勢走強，方向 neutral→bullish。明日 NFP + COMPUTEX 閉幕為雙尾部風險。",
+    "taiex_change": {
+      "prev_close_est": 46459.16,
+      "curr_close": 46025.57,
+      "pts_change": -433.59,
+      "pct_change": -0.93,
+      "note": "自歷史新高回落，量增跌（7,797 億 > 6,597 億），分配壓力"
+    },
+    "direction_changes": [
+      {
+        "ticker": "2454",
+        "from": "neutral",
+        "to": "bullish",
+        "reason": "注意股解除第二日逆勢走強，籌碼沉澱後買盤回流，大盤跌日相對強勢"
+      },
+      {
+        "ticker": "NVDA",
+        "from": "bullish",
+        "to": "neutral",
+        "reason": "美股 6/3 收 $215.84（-3.13%），觸近 $210–$212 止損區，等待今晚守穩確認"
+      },
+      {
+        "ticker": "TSM",
+        "from": "bullish",
+        "to": "neutral",
+        "reason": "美股 6/3 收 $438.99（-1.72%），Nasdaq 弱勢連帶；等今晚確認是否回 bullish"
+      }
+    ],
+    "alerts_added": [
+      "alert-nvda-near-stop-loss-215-20260604",
+      "alert-oil-spike-96-middle-east-20260604",
+      "alert-aapl-wwdc-june8-catalyst-20260604"
+    ],
+    "alerts_removed": [
+      "alert-taiex-alltime-high-46422-2026-06-03",
+      "alert-ai-server-rotation-foxconn-2026-06-03",
+      "alert-mediatek-restriction-lifted-selling-2026-06-03"
+    ],
+    "alerts_carried_over": [
+      "alert-nonfarm-payrolls-june5-risk-20260602",
+      "alert-computex-sell-the-news-risk-20260602"
+    ],
+    "price_updates": [
+      {
+        "ticker": "2330",
+        "prev": 2400,
+        "curr": 2380,
+        "note": "低信心估算，大盤 -0.93% 推算"
+      },
+      {
+        "ticker": "2454",
+        "prev": 4475,
+        "curr": 4520,
+        "note": "逆勢走強，中信心；注意股解除第二日籌碼回穩"
+      },
+      {
+        "ticker": "2317",
+        "prev": 301.5,
+        "curr": 298,
+        "note": "低信心估算，300 元整數關受測試"
+      },
+      {
+        "ticker": "NVDA",
+        "prev": 225.61,
+        "curr": 215.84,
+        "note": "US 6/3 確認收盤，今晚尚未開盤"
+      },
+      {
+        "ticker": "TSLA",
+        "prev": 422.12,
+        "curr": 421.49,
+        "note": "US 6/3 確認收盤"
+      },
+      {
+        "ticker": "AAPL",
+        "prev": 315.2,
+        "curr": 310.06,
+        "note": "US 6/3 確認收盤，-1.63%"
+      },
+      {
+        "ticker": "TSM",
+        "prev": 446.69,
+        "curr": 438.99,
+        "note": "US 6/3 確認收盤，-1.72%"
+      }
+    ]
+  }
+}

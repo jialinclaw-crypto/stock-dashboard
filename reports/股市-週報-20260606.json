@@ -1,0 +1,468 @@
+{
+  "_schema_version": 3,
+  "type": "weekly",
+  "report_file": "股市-週報-20260606.md",
+  "date": "2026-06-06",
+  "weekday": "週六",
+  "generated_at": "2026-06-06T09:00:00+08:00",
+  "expires_at": "2026-06-13T09:00:00+08:00",
+  "market_view": {
+    "level": "neutral",
+    "confidence": 0.52,
+    "headline": "AVGO AI指引爆雷+非農172K雙重打擊引爆第二波AI估值重設；台股逆勢+2.11%相對強韌，但NASDAQ週跌-4.03%為近年最差；30Y殖利率破5%，高利率壓估值格局確立，WWDC與CPI為下週雙主軸",
+    "week": "2026-06-02 ~ 2026-06-05"
+  },
+  "indices": [
+    {
+      "name": "台股加權指數",
+      "ticker": "^TWII",
+      "close": 45677.0,
+      "prev_close": 44732.94,
+      "week_change": 944.06,
+      "week_change_pct": 2.11,
+      "week_high": 46459.0,
+      "week_low": 45209.0,
+      "volume_week_bn_twd_est": 34000.0,
+      "note": "COMPUTEX收官先漲後跌：6/3觸46,459歷史新高後賣出訊號部分兌現；6/4 AVGO爆雷台股跌-0.93%，6/5非農後再跌-0.76%，但外資MSCI持倉撐住2,400以上。週線收帶上影線紅K，多頭格局仍在。20MA≈43,500、60MA≈41,200、200MA≈39,500，週線RSI≈73",
+      "signal_id": "stk-TWII-2026-06-06-weekly",
+      "direction": "bullish",
+      "confidence": 0.65,
+      "rationale": "週漲+2.11%顯著跑贏美股（NASDAQ-4.03%），台積電MSCI持倉+CoWoS擴產為長線支撐；外資週小幅淨賣但TAIEX守45,000以上；高位整固後仍偏多，WWDC與CPI為短線方向觸媒",
+      "sources": [
+        "https://www.twse.com.tw/zh/indices/taiex/mi-5min-hist.html",
+        "https://vocus.cc/article/6a213f46fd89780001b1f3e6"
+      ],
+      "expires_at": "2026-06-13T09:00:00+08:00"
+    },
+    {
+      "name": "美股S&P 500",
+      "ticker": "^GSPC",
+      "close": 7383.74,
+      "prev_close": 7557.0,
+      "week_change": -173.26,
+      "week_change_pct": -2.29,
+      "week_high": 7601.0,
+      "week_low": 7383.74,
+      "note": "週初創歷史新高7,601+，週五非農172K爆表後崩跌-2.64%，收7,383.74，抹去全周漲幅；20MA≈7,100（下方支撐），月線多頭但短線壓力明顯",
+      "signal_id": "stk-GSPC-2026-06-06-weekly",
+      "direction": "neutral",
+      "confidence": 0.52,
+      "rationale": "周初創新高後被非農數據反殺，說明市場仍高度利率敏感；10Y 4.54%/30Y 5%對高本益比估值構成直接壓縮；WWDC/CPI為下週核心觸媒，守7,300則短線震盪，破7,100則需重評",
+      "sources": [
+        "https://www.cnbc.com/2026/06/04/stock-market-today-live-updates.html",
+        "https://www.fool.com/coverage/stock-market-today/2026/06/02/stock-market-today-june-2-chipmakers-drive-s-and-p-500-to-another-record-close/"
+      ],
+      "expires_at": "2026-06-13T09:00:00+08:00"
+    },
+    {
+      "name": "那斯達克綜合",
+      "ticker": "^COMP",
+      "close": 25709.43,
+      "prev_close": 26789.0,
+      "week_change": -1079.57,
+      "week_change_pct": -4.03,
+      "week_high": 27200.0,
+      "week_low": 25709.43,
+      "note": "週跌-4.03%，週五單日-4.18%為近年最差（自2025年4月後）；AVGO指引爆雷+非農高溫雙重打擊科技股；SOXX iShares半導體ETF週跌約-10%",
+      "signal_id": "stk-COMP-2026-06-06-weekly",
+      "direction": "neutral_bearish",
+      "confidence": 0.58,
+      "rationale": "週跌超過前週全部漲幅，顯示AI半導體估值重設正在進行；高利率（30Y 5%）壓縮成長股估值，升息機率升至70%；AAPL WWDC若超預期可提供反彈視窗，但CPI若熱可能測試-10%技術修正線",
+      "sources": [
+        "https://www.cnbc.com/2026/06/04/stock-market-today-live-updates.html"
+      ],
+      "expires_at": "2026-06-13T09:00:00+08:00"
+    },
+    {
+      "name": "道瓊工業平均",
+      "ticker": "^DJI",
+      "close": 50840.0,
+      "prev_close": 50666.0,
+      "week_change": 174.0,
+      "week_change_pct": 0.34,
+      "week_high": 51562.0,
+      "week_low": 50450.0,
+      "note": "週四創歷史新高51,562（+1.73%，非AI/價值股強力輪動）；週五非農後回落-1.4%，收50,840；全周小幅收紅，顯示大輪動格局",
+      "signal_id": "stk-DJI-2026-06-06-weekly",
+      "direction": "bullish",
+      "confidence": 0.62,
+      "rationale": "非AI藍籌（金融/工業/消費）受惠NFP強勁=企業盈利健康；DOW週+0.34% vs NASDAQ -4.03%為高達4個百分點的罕見分歧，輪動訊號明確；DOW多頭格局維持，下週關注輪動是否持續",
+      "sources": [
+        "https://www.cnbc.com/2026/06/04/stock-market-today-live-updates.html"
+      ],
+      "expires_at": "2026-06-13T09:00:00+08:00"
+    },
+    {
+      "name": "費城半導體SOX",
+      "ticker": "^SOX",
+      "close": 11580.0,
+      "prev_close": 12829.14,
+      "week_change": -1249.14,
+      "week_change_pct": -9.74,
+      "week_high": 12850.0,
+      "week_low": 11490.0,
+      "note": "AVGO-13.36%、MU-13%、MRVL-16%、AMD-11%、INTC-11%接連重創；週四SOX盤中跌逾6%（最大單日跌幅），週五非農加速賣壓；上週+16.5%本週-9.7%，技術性回調幅度已深",
+      "signal_id": "stk-SOX-2026-06-06-weekly",
+      "direction": "neutral",
+      "confidence": 0.52,
+      "rationale": "AVGO指引爆雷引發對AI晶片需求整體評估，雖基本面（Blackwell需求/CoWoS擴產）未改變，但市場短線去槓桿；前波高點12,829為阻力，近月均線（約11,200-11,500）為支撐區間；NVDA $210/$195支撐成敗決定SOX反彈空間",
+      "sources": [
+        "https://finance.yahoo.com/markets/stocks/articles/chip-selloff-hits-sox-broadcoms-100511793.html",
+        "https://www.gurufocus.com/news/8903712/ai-and-chip-stocks-plummet-broadcom-avgo-triggers-market-selloff"
+      ],
+      "expires_at": "2026-06-13T09:00:00+08:00"
+    }
+  ],
+  "macro": {
+    "us_10y_yield": 4.544,
+    "us_30y_yield": 5.007,
+    "us_2y_yield": 4.162,
+    "vix": 23.0,
+    "dxy": 100.6,
+    "nfp_may": 172000,
+    "nfp_consensus": 80000,
+    "fed_hike_prob_eoy": 0.70,
+    "note": "NFP 172K遠超預期80K；10Y +10bps至4.544%（5/21後最高）；30Y突破5%（長端壓估值）；2Y +21bps至4.162%（Fed政策敏感）；VIX自17升至≈23（恐慌升但未達系統性>30）；DXY小幅走強至100.6；CME FedWatch升息機率升至70%，降息預期推後至2027Q1"
+  },
+  "stocks": [
+    {
+      "ticker": "2330",
+      "name": "台積電",
+      "market": "TW",
+      "close": 2400,
+      "prev_close_weekly": 2355,
+      "week_change_pct": 1.91,
+      "intraday_high_week": 2435,
+      "ma20": 2230,
+      "ma60": 2080,
+      "ma200": 1895,
+      "rsi_weekly": 72,
+      "note": "週五守住2,400整數關（-1.03%），COMPUTEX sell-the-news衝擊有限；MSCI58.33%高權重+CoWoS月產能持續上調（20萬片目標）提供支撐；TSM ADR週五跌-6.69%至$415.17，TW/ADR差距擴大值得關注",
+      "signal_id": "stk-2330-2026-06-06-weekly",
+      "direction": "bullish",
+      "confidence": 0.68,
+      "rationale": "週+1.91%跑贏大盤，均線多頭排列完整（20/60/200全部支撐），MSCI被動資金持續流入；主要風險：TSM ADR賣壓若持續流至TW股，2,350成下一關鍵支撐；CPI若友善可望反彈測試2,450+",
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/2330.TW",
+        "https://finance.yahoo.com/quote/TSM/"
+      ],
+      "expires_at": "2026-06-13T09:00:00+08:00"
+    },
+    {
+      "ticker": "2454",
+      "name": "聯發科",
+      "market": "TW",
+      "close": 4525,
+      "prev_close_weekly": 4310,
+      "week_change_pct": 4.99,
+      "intraday_high_week": 4640,
+      "ma20": 4150,
+      "ma60": 3750,
+      "ma200": 3380,
+      "rsi_weekly": 77,
+      "note": "本週最大驚喜：AVGO爆雷當日台股下跌，聯發科逆勢走強（AI Edge SoC需求故事有別於資料中心晶片）；二次注意股解除效應延續；週五收4,525（週+5.0%）；高點4,640為前波阻力",
+      "signal_id": "stk-2454-2026-06-06-weekly",
+      "direction": "bullish",
+      "confidence": 0.65,
+      "rationale": "逆勢抗跌確認「AI Edge vs 資料中心」敘事分歧，聯發科受益AI終端需求而非伺服器；均線多頭完整；但RSI 77高位，建議分批佈局，不宜追高；4,300為關鍵支撐，跌破需謹慎",
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/2454.TW",
+        "https://news.cnyes.com/news/id/6484140"
+      ],
+      "expires_at": "2026-06-13T09:00:00+08:00"
+    },
+    {
+      "ticker": "2317",
+      "name": "鴻海",
+      "market": "TW",
+      "close": 284,
+      "prev_close_weekly": 289,
+      "week_change_pct": -1.73,
+      "intraday_high_week": 308,
+      "ma20": 270,
+      "ma60": 252,
+      "ma200": 227,
+      "rsi_weekly": 67,
+      "note": "COMPUTEX sell-the-news兌現：週三高點308後兩日深跌（6/4 TW -5.18%、6/5 TW -2.75%），週五收284；GB200/GB300代工+機器人故事完整但短線已充分反映；均線仍多排，RSI回落至67（健康）",
+      "signal_id": "stk-2317-2026-06-06-weekly",
+      "direction": "neutral_bullish",
+      "confidence": 0.60,
+      "rationale": "COMPUTEX後正常消化，高位回落屬技術性修正；均線多頭排列完整（20MA 270/60MA 252均為有效支撐）；AI伺服器+機器人2026量產長線利多未改；280-285為新支撐平台，守穩後可恢復多頭佈局",
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/2317.TW"
+      ],
+      "expires_at": "2026-06-13T09:00:00+08:00"
+    },
+    {
+      "ticker": "NVDA",
+      "name": "輝達",
+      "market": "US",
+      "close": 210.27,
+      "prev_close_weekly": 216.24,
+      "week_change_pct": -2.76,
+      "intraday_high_week": 235.0,
+      "ma20": 197.0,
+      "ma60": 178.0,
+      "ma200": 150.0,
+      "rsi_weekly": 58,
+      "note": "COMPUTEX演講後進入消化期：週三-3.13%至$215.84，週四技術反彈至$221.60，週五非農後再跌-5.18%至$210.27；$210為關鍵止損警戒線；52W高$236.54在上方；SOX跌幅較NVDA深，顯示NVDA相對抗跌",
+      "signal_id": "stk-NVDA-2026-06-06-weekly",
+      "direction": "neutral",
+      "confidence": 0.52,
+      "rationale": "AVGO指引miss引發市場重新評估AI晶片整體需求；非農→殖利率上升→成長股折現率↑雙重壓縮；NVDA基本面（Blackwell/Q2指引$91B+95%YoY）未變，但市場去槓桿需時間消化；$210守穩是反彈前提，跌破$195（20MA）需重新評估",
+      "sources": [
+        "https://finance.yahoo.com/quote/NVDA/",
+        "https://stocktwits.com/news-articles/markets/equity/nvda-intc-amd-mu-major-chip-stocks-fall-for-second-day-after-avgo-s-soft-ai-guidance/cZ0FhbSRez6"
+      ],
+      "expires_at": "2026-06-13T09:00:00+08:00"
+    },
+    {
+      "ticker": "TSLA",
+      "name": "特斯拉",
+      "market": "US",
+      "close": 391.0,
+      "prev_close_weekly": 438.78,
+      "week_change_pct": -10.89,
+      "ma20": 392.0,
+      "ma60": 358.0,
+      "ma200": 312.0,
+      "rsi_weekly": 54,
+      "note": "週跌-10.89%，週五-6.56%至$391；缺乏個別催化劑跟跌大盤，跌至20MA（$392）支撐邊緣；30Y殖利率破5%對電動車長期融資成本不利；Optimus機器人2026量產為長線期待但近期無實質進展",
+      "signal_id": "stk-TSLA-2026-06-06-weekly",
+      "direction": "neutral",
+      "confidence": 0.45,
+      "rationale": "跌至20MA邊緣（$391 vs MA20 $392），若失守$385可能向60MA $358回測；高利率環境對高P/E成長股不利；缺乏近期個別催化劑；Optimus機器人長線驅動未改但短期撐不住股價；維持中性，守$385才考慮短線佈局",
+      "sources": [
+        "https://finance.yahoo.com/quote/TSLA/"
+      ],
+      "expires_at": "2026-06-13T09:00:00+08:00"
+    },
+    {
+      "ticker": "AAPL",
+      "name": "蘋果",
+      "market": "US",
+      "close": 307.34,
+      "prev_close_weekly": 311.0,
+      "week_change_pct": -1.18,
+      "high_52w": 313.26,
+      "ma20": 298.0,
+      "ma60": 275.0,
+      "ma200": 248.0,
+      "rsi_weekly": 66,
+      "note": "本週最相對強：AVGO爆雷後AAPL逆勢+0.25%，週五非農後僅跌-1.25%；非晶片AI敘事（Apple Intelligence/Siri 2.0）使AAPL不受半導體賣壓拖累；全週-1.18%遠優於NASDAQ -4.03%；WWDC 6/8為最大近期催化劑",
+      "signal_id": "stk-AAPL-2026-06-06-weekly",
+      "direction": "neutral_bullish",
+      "confidence": 0.62,
+      "rationale": "相對強韌確認非晶片AI防禦性質；WWDC 6/8 Siri 2.0+iOS 27若超預期→可升格bullish；若市場失望→sell-the-news壓$295；52W高$313.26在上方，均線多頭排列；WWDC後調整訊號方向",
+      "sources": [
+        "https://finance.yahoo.com/quote/AAPL/",
+        "https://www.macrumors.com/roundup/wwdc/",
+        "https://www.fool.com/investing/2026/06/01/apples-wwdc-is-june-8-heres-the-1-announcement-tha/"
+      ],
+      "expires_at": "2026-06-13T09:00:00+08:00"
+    },
+    {
+      "ticker": "TSM",
+      "name": "台積電ADR",
+      "market": "US",
+      "close": 415.17,
+      "prev_close_weekly": 420.26,
+      "week_change_pct": -1.21,
+      "intraday_high_week": 444.92,
+      "high_52w": 444.92,
+      "ma20": 405.0,
+      "ma60": 378.0,
+      "ma200": 332.0,
+      "rsi_weekly": 68,
+      "note": "週四峰值$444.92（新52W高），週五非農後崩跌-6.69%至$415.17；TW股守2,400 vs ADR跌-6.69%，差距擴大顯示美股科技賣壓直接衝擊ADR流動性；20MA $405為下方支撐",
+      "signal_id": "stk-TSM-2026-06-06-weekly",
+      "direction": "neutral_bullish",
+      "confidence": 0.60,
+      "rationale": "TW主板基本面未變（MSCI+CoWoS），但ADR短期受美股科技賣壓顯著拖累；$415.17守在20MA $405上方；若美股科技情緒穩定，ADR有望追上TW股；NFP後ADR/TW差距需持續關注",
+      "sources": [
+        "https://finance.yahoo.com/quote/TSM/"
+      ],
+      "expires_at": "2026-06-13T09:00:00+08:00"
+    }
+  ],
+  "alerts": [
+    {
+      "alert_id": "alert-AVGO-AI-guidance-miss-20260604",
+      "level": "critical",
+      "title": "Broadcom（AVGO）Q3 AI晶片指引爆雷（-13.36%）引爆第二波AI估值重設",
+      "body": "Broadcom 6/4（US）公布Q3 AI晶片銷售指引$160億，遠低於分析師預期$172億（miss -7%），並宣布轉型「純晶片（chips only）」商業模式，觸發單日-13.36%崩跌（史上前三大單日跌幅）。連帶衝擊：MU-13%、MRVL-16%、AMD-11%、INTC-11%，SOX單日跌逾6%。AVGO miss是否代表AI晶片需求整體降速？NVDA下季（8月）財報為終極驗證。短線：AI半導體估值壓縮持續，建議降低AI晶片倉位至6成以下直到Q2財報季。",
+      "url": "https://www.gurufocus.com/news/8903354/broadcom-avgo-ai-chip-sales-guidance-falls-short-sparks-semiconductor-selloff",
+      "source": "GuruFocus / CNBC",
+      "expires_at": "2026-06-13T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-NFP-172K-hot-20260605",
+      "level": "critical",
+      "title": "5月非農172K大爆表（預期80K），殖利率飆升，升息機率70%",
+      "body": "美國勞工部5/5公布5月非農就業172K（vs市場預期80K，逾兩倍），失業率4.3%（符預期）、時薪YoY+3.4%。10Y殖利率+6bps至4.544%（5/21後最高），30Y突破5.0%，2Y升至4.162%。CME FedWatch升息機率升至70%，降息預期推後至2027Q1。股市反應：NASDAQ -4.18%（近年最差），S&P 500 -2.64%，NVDA -5.18%，TSM ADR -6.69%。「Higher for Longer 2.0」格局確立，高P/E成長股估值持續承壓。",
+      "url": "https://www.cnbc.com/2026/06/05/treasury-yields-ease-as-traders-await-key-labor-market-data-.html",
+      "source": "CNBC / BLS / CME FedWatch",
+      "expires_at": "2026-06-13T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-AAPL-WWDC-20260608",
+      "level": "warning",
+      "title": "AAPL WWDC 6/8 10:00 PT（台北 6/9 01:00）：Siri 2.0 + iOS 27 揭曉",
+      "body": "Apple WWDC 2026週一主題演講（6/8 10:00 PT = 6/9 01:00台北），主打Siri 2.0（更像ChatGPT的對話式AI助理）、iOS 27/iPadOS 27/macOS 27全面AI化、可設定第三方AI服務（Google Gemini）為預設。市場關注焦點：Siri 2.0能否實質超越競品（ChatGPT/Gemini）？若超預期→AAPL短線+5-8%，帶動台積電CoWoS（Apple Intelligence晶片）；若被批平淡→sell-the-news -3-5%。AAPL WWDC後方向將調整。",
+      "url": "https://www.macrumors.com/roundup/wwdc/",
+      "source": "MacRumors / Apple Developer",
+      "expires_at": "2026-06-09T04:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-CPI-May-20260611",
+      "level": "warning",
+      "title": "美國5月CPI（6/11 20:30台北）：非農後最關鍵數據，決定市場方向",
+      "body": "美國5月消費者物價指數（CPI）預計6/11（週四）20:30台北公布，市場預期YoY約3.0%（核心3.2%）。NFP172K爆表後，CPI成為「是否確認升息」的決定性數據。情境分析：（1）CPI≤2.9%→升息預期降溫→科技股反彈，NVDA可測試$220+；（2）CPI 3.0-3.2%→市場中性反應；（3）CPI>3.2%→10Y可能突破4.7%，NASDAQ進入技術性修正（-10%），台積電ADR可能重測$395。建議6/11前保持25-35%現金倉位。",
+      "url": "https://www.nhks.com.tw/%E9%83%A8%E8%90%BD%E6%A0%BC/%E9%87%91%E8%9E%8D%E6%8C%87%E6%A8%99/%E6%9C%80%E6%96%B0%E6%9B%B4%E6%96%B0-2026%E7%BE%8E%E5%9C%8Bcpi%E5%85%AC%E5%B8%83%E6%99%82%E9%96%93/",
+      "source": "BLS / 新百王證券",
+      "expires_at": "2026-06-12T00:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-TAIEX-new-ATH-46459-20260603",
+      "level": "info",
+      "title": "台股加權指數 6/3 觸46,459新歷史高點",
+      "body": "台股加權指數6/3（週二）觸及盤中歷史新高46,459.16，收46,459（+1.98%）。COMPUTEX 2026開幕效應+持續外資買超驅動。但6/4-6/5連跌（AVGO+非農），收週五45,677，顯示46,000以上賣壓仍重。下週重新挑戰46,000需等待美股科技回穩。",
+      "url": "https://vocus.cc/article/6a1e8807fd8978000170201d",
+      "source": "Vocus",
+      "expires_at": "2026-06-13T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-yield-30Y-5pct-20260605",
+      "level": "warning",
+      "title": "30年美債殖利率突破5%：長端壓估值格局確立",
+      "body": "美國30年期公債殖利率6/5（週五）升至5.007%，首次突破5%心理關口（前值4.82%）。配合10Y升至4.544%、2Y升至4.162%，殖利率曲線全面走陡。5%+的30Y利率代表：①長期資金成本顯著上升；②高P/E科技股（AI/成長）折現率壓縮；③台股高息防禦股（電信/公用事業）相對受益。建議降低高本益比持倉比例。",
+      "url": "https://www.cnbc.com/2026/06/05/treasury-yields-ease-as-traders-await-key-labor-market-data-.html",
+      "source": "CNBC / Treasury",
+      "expires_at": "2026-06-13T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-SpaceX-IPO-20260612",
+      "level": "warning",
+      "title": "SpaceX 預計 6/12 那斯達克上市（代號 SPCX）：台灣低軌衛星概念先行",
+      "body": "SpaceX 預計 6/12 以代號「SPCX」登陸那斯達克，台灣低軌衛星供應鏈（台揚 2417、昇達科 3491、中翰）可能提前反應。建議上市前 1 週（6/8-6/12）留意量能放大訊號。SpaceX IPO若定價高於預期，可能吸引科技資金排擠其他個股短線。",
+      "url": "https://www.cnbc.com/2026/06/04/stock-market-today-live-updates.html",
+      "source": "CNBC / Seeking Alpha",
+      "expires_at": "2026-06-13T09:00:00+08:00"
+    }
+  ],
+  "whats_changed": {
+    "prev_report_date": "2026-05-30",
+    "generated_at": "2026-06-06T09:00:00+08:00",
+    "direction_changes": [
+      {
+        "ticker": "market_view",
+        "name": "整體市場觀點",
+        "from": "bullish",
+        "to": "neutral",
+        "confidence_from": 0.72,
+        "confidence_to": 0.52,
+        "note": "AVGO爆雷+NFP雙重打擊引爆AI估值重設，NASDAQ週跌-4.03%；DOW創新高顯示輪動而非崩盤，但整體偏多格局受損"
+      },
+      {
+        "ticker": "^GSPC",
+        "name": "S&P 500",
+        "from": "bullish",
+        "to": "neutral",
+        "confidence_from": 0.68,
+        "confidence_to": 0.52,
+        "note": "close: 7,557→7,383.74（週-2.29%）；週初創新高後被非農反殺"
+      },
+      {
+        "ticker": "^COMP",
+        "name": "那斯達克",
+        "from": "bullish",
+        "to": "neutral_bearish",
+        "confidence_from": 0.68,
+        "confidence_to": 0.58,
+        "note": "close: 26,789→25,709（週-4.03%）；近年最差週表現"
+      },
+      {
+        "ticker": "^SOX",
+        "name": "費半SOX",
+        "from": "bullish",
+        "to": "neutral",
+        "confidence_from": 0.75,
+        "confidence_to": 0.52,
+        "note": "close: 12,829→11,580（週-9.74%）；AVGO指引miss觸發全線去槓桿"
+      },
+      {
+        "ticker": "2454",
+        "name": "聯發科",
+        "from": "neutral_bullish",
+        "to": "bullish",
+        "confidence_from": 0.58,
+        "confidence_to": 0.65,
+        "note": "close: 4,310→4,525（週+5.0%）；逆勢走強升格，AI Edge敘事分歧確認"
+      },
+      {
+        "ticker": "2317",
+        "name": "鴻海",
+        "from": "bullish",
+        "to": "neutral_bullish",
+        "confidence_from": 0.70,
+        "confidence_to": 0.60,
+        "note": "close: 289→284（週-1.7%）；COMPUTEX sell-the-news，高位回落"
+      },
+      {
+        "ticker": "NVDA",
+        "name": "輝達",
+        "from": "bullish",
+        "to": "neutral",
+        "confidence_from": 0.70,
+        "confidence_to": 0.52,
+        "note": "close: 216.24→210.27（週-2.76%）；AVGO miss+NFP雙重壓縮，$210守穩為反彈前提"
+      },
+      {
+        "ticker": "TSLA",
+        "name": "特斯拉",
+        "from": "neutral",
+        "to": "neutral",
+        "confidence_from": 0.52,
+        "confidence_to": 0.45,
+        "note": "close: 438.78→391.0（週-10.89%）；跌至20MA邊緣，方向維持但信心大降"
+      },
+      {
+        "ticker": "TSM",
+        "name": "台積電ADR",
+        "from": "bullish",
+        "to": "neutral_bullish",
+        "confidence_from": 0.70,
+        "confidence_to": 0.60,
+        "note": "close: 420.26→415.17（週-1.2%）；ADR受美科技賣壓顯著大於TW股"
+      }
+    ],
+    "alerts_added": [
+      "alert-AVGO-AI-guidance-miss-20260604",
+      "alert-NFP-172K-hot-20260605",
+      "alert-AAPL-WWDC-20260608",
+      "alert-CPI-May-20260611",
+      "alert-TAIEX-new-ATH-46459-20260603",
+      "alert-yield-30Y-5pct-20260605"
+    ],
+    "alerts_removed": [
+      "alert-COMPUTEX-JensenHuang-20260601",
+      "alert-TWII-ATH-44733-20260529",
+      "alert-Micron-1T-20260526",
+      "alert-Dell-AI-server-757pct-20260527",
+      "alert-yield-10Y-drop-20260529",
+      "alert-MSCI-3-upgrades-20260529"
+    ],
+    "alerts_carried_over": [
+      "alert-SpaceX-IPO-20260612"
+    ],
+    "alerts_level_changed": [],
+    "summary": {
+      "direction_change_count": 9,
+      "alerts_added_count": 6,
+      "alerts_removed_count": 6,
+      "alerts_carried_over_count": 1,
+      "overall_bias_shift": "bullish → neutral（AVGO+NFP雙重打擊）",
+      "narrative": "本週核心敘事逆轉：AVGO AI指引爆雷引發第二波AI估值重設，非農172K爆表推升殖利率（30Y破5%），NASDAQ週跌-4.03%近年最差。方向大幅下修：market_view bullish→neutral、NVDA bullish→neutral、SOX bullish→neutral、TSM bullish→neutral_bullish、鴻海 bullish→neutral_bullish；唯一升格：聯發科 neutral_bullish→bullish（逆勢抗跌）。台積電TW維持bullish但ADR另計中性偏多。下週WWDC+CPI為方向確認雙主軸，保守原則：現金25-35%、降低AI晶片部位至CPI後確認。"
+    }
+  }
+}

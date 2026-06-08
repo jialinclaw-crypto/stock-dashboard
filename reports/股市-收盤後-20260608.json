@@ -1,0 +1,383 @@
+{
+  "schema_version": "3.0",
+  "type": "close",
+  "generated_at": "2026-06-08T14:00:00+08:00",
+  "expires_at": "2026-06-09T09:00:00+08:00",
+  "date": "2026-06-08",
+  "weekday": "週一",
+  "market_summary": {
+    "taiex_close_est": 43500,
+    "taiex_change_pts_est": -2177,
+    "taiex_change_pct_est": -4.77,
+    "taiex_prev_close": 45677,
+    "taiex_intraday_low": 42389,
+    "taiex_intraday_low_pct": -7.18,
+    "taiex_ath": 46459.16,
+    "taiex_from_ath_pts_est": -2959,
+    "taiex_from_ath_pct_est": -6.37,
+    "volume_b_twd_est": 12000,
+    "institutional_net_buy_est_b_twd": -931.58,
+    "foreign_net_buy_est_b_twd": -756.85,
+    "trust_net_buy_est_b_twd": 38.94,
+    "dealer_net_est_b_twd": -135.77,
+    "data_confidence": "medium-low",
+    "note": "TAIEX 精確收盤估算，信心中偏低（AI 摘要數據不一致，官方 TWSE 數據為準）。個股日漲跌均為 vs 6/5 台股收盤。法人數據為中信心估算。WWDC keynote 台灣時間週二凌晨 1:00。",
+    "us_market_june5_friday": {
+      "sp500_close_est": 7400,
+      "sp500_change_pct": -2.64,
+      "nasdaq_change_pct": -4.18,
+      "nasdaq_note": "2025/04 關稅衝擊後最差單日",
+      "dji_close_est": 50867,
+      "dji_change_pts": -695,
+      "dji_change_pct": -1.35,
+      "vix_close": 21.51,
+      "vix_change_pct": 39.7,
+      "sox_2day_cum_pct": -10.26,
+      "10y_yield_est": 4.52,
+      "nfp_may": 172000,
+      "nfp_estimate": 80000,
+      "nfp_note": "大幅超預期；2026 降息落空確立，升息重新定價",
+      "nvda_close_est": 203.0,
+      "nvda_change_pct_est": -5.0,
+      "tsla_close_est": 391.0,
+      "tsla_change_pct_est": -6.2,
+      "aapl_close_est": 313.96,
+      "aapl_change_pct_est": 0.8,
+      "aapl_note": "WWDC 提前佈局護盤，逆勢收紅",
+      "tsm_close_est": 415.17,
+      "tsm_change_pct_est": -4.9,
+      "avgo_2day_cum_pct": -18.0
+    },
+    "tonight_outlook": {
+      "wwdc_keynote_taipei": "2026-06-09T01:00:00+08:00",
+      "wwdc_note": "Siri 2.0 × Google Gemini / iOS 27 AI；Wedbush 目標 $400，Morgan Stanley $330",
+      "oil_wti_today": 93.63,
+      "oil_wti_change_pct": 3.41,
+      "oil_note": "中東霍爾木茲局勢升溫；逼近 $96 警戒位",
+      "us_market_tonight_bias": "oversold-bounce-likely-but-capped",
+      "key_risk": "10Y yield >4.5%，Fed 鷹派表態，油價突破 $96"
+    }
+  },
+  "stocks": [
+    {
+      "signal_id": "stk-2330-2026-06-08-close",
+      "ticker": "2330",
+      "name": "台積電",
+      "market": "TW",
+      "direction": "bearish",
+      "price": 2295,
+      "prev_price": 2400,
+      "change_pct": -4.38,
+      "intraday_open_est": 2230,
+      "intraday_low_est": 2230,
+      "confidence": 0.55,
+      "rationale": "台積電 6/8 收 2,295 元（-105, -4.38% vs 6/5 收盤 2,400）。TSM ADR 上週五跌至 ~$415（-5%）帶動今日以 2,230 跳空低開（-7.1%），月線（~2,350）告破。下午技術反彈收至 2,295，但已從 neutral 下調至 bearish。核心邏輯：NFP 大超 → Fed 升息重定價 → 高估值 AI 半導體承壓；且 AVGO 兩日累跌 18% 對 AI 晶片資本支出的疑慮擴散。短期反彈條件：WWDC 明確 Apple Silicon M4/A19 需求路線圖，或 Fed 官員重新轉鴿。止損建議：2,200 以下減碼。",
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/2330.TW",
+        "https://finance.yahoo.com/quote/TSM/",
+        "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-june-05-2026"
+      ],
+      "expires_at": "2026-06-09T09:00:00+08:00",
+      "flags": [
+        "monthly_ma_broken",
+        "tsm_adr_minus5pct_june5",
+        "direction_downgraded_neutral_to_bearish",
+        "nfp_rate_hike_fear_triggered",
+        "intraday_partial_recovery_2230_to_2295",
+        "wwdc_watch_potential_reversal_catalyst",
+        "stop_loss_2200",
+        "watchlist_high_priority"
+      ]
+    },
+    {
+      "signal_id": "stk-2454-2026-06-08-close",
+      "ticker": "2454",
+      "name": "聯發科",
+      "market": "TW",
+      "direction": "bearish",
+      "price": 4070,
+      "prev_price": 4430,
+      "change_pct": -8.13,
+      "intraday_open_est": 3935,
+      "intraday_low_est": 3700,
+      "confidence": 0.5,
+      "rationale": "聯發科 6/8 收 4,070（-360, -8.13% vs 6/5 收 4,430）。盤中一度急殺至 3,700 附近（-16%），下午回穩至 4,070。SOX 兩日 -10.26% 重創整個半導體估值邏輯，聯發科 N1X/ARM PC/AI 手機題材雖本質未變，但 Fed 升息重定價壓縮高成長股 PE。從 neutral 下調至 bearish。關鍵支撐 4,000 整數關，跌破則下看 3,840。若 WWDC 後蘋果 A19 / AI 手機需求超強，可重新評估。",
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/2454.TW",
+        "https://www.cnyes.com/twstock/ps_historyprice.aspx?code=2454"
+      ],
+      "expires_at": "2026-06-09T09:00:00+08:00",
+      "flags": [
+        "sox_2day_minus10pct_pressure",
+        "direction_downgraded_neutral_to_bearish",
+        "intraday_panic_low_3700",
+        "partial_recovery_4070",
+        "support_4000_critical",
+        "wwdc_ai_phone_watch",
+        "watchlist_high_priority"
+      ]
+    },
+    {
+      "signal_id": "stk-2317-2026-06-08-close",
+      "ticker": "2317",
+      "name": "鴻海",
+      "market": "TW",
+      "direction": "bearish",
+      "price": 270,
+      "prev_price": 300.5,
+      "change_pct": -10.15,
+      "intraday_open_est": 270,
+      "intraday_low_est": 270,
+      "confidence": 0.45,
+      "rationale": "鴻海 6/8 觸跌停（300.5 × 0.9 ≈ 270.45），收約 270（-10.15% vs 6/5 收 300.5）。AI 伺服器整機廠受 AVGO 兩日 -18% 波及，市場質疑 AI 資本支出成長速度。跌停收盤後需等待 WWDC 明確 AI 硬體需求才能評估反彈力度。技術面嚴重超賣，跌深反彈機率高，但方向仍為 bearish，不宜追空。支撐：265；壓力：280 > 290。",
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/2317.TW"
+      ],
+      "expires_at": "2026-06-09T09:00:00+08:00",
+      "flags": [
+        "hit_limit_down_270",
+        "direction_downgraded_neutral_to_bearish",
+        "avgo_ai_server_capex_contagion",
+        "oversold_bounce_watch",
+        "wwdc_hardware_demand_watch",
+        "watchlist_med_priority"
+      ]
+    },
+    {
+      "signal_id": "stk-NVDA-2026-06-08-close",
+      "ticker": "NVDA",
+      "name": "輝達",
+      "market": "US",
+      "direction": "bearish",
+      "price": 203.0,
+      "prev_price": 213.5,
+      "change_pct": -4.9,
+      "confidence": 0.45,
+      "rationale": "NVDA 6/5 收約 $203（-5% vs 6/4 $213.50），跌破 $210-212 原始警戒區。NFP 確立升息預期後，高估值 AI 基礎設施股面臨系統性估值壓縮。$200 整數位是下一個心理支撐；若跌破，下看 $185（前高區域）。今晚 WWDC 對 NVDA 的間接影響：若 Apple Silicon 更強競爭，略微負面，但主要影響仍是利率環境。方向由 neutral → bearish。",
+      "sources": [
+        "https://finance.yahoo.com/quote/NVDA/",
+        "https://www.cnbc.com/2026/06/05/jobs-report-may-2026.html"
+      ],
+      "expires_at": "2026-06-09T09:00:00+08:00",
+      "flags": [
+        "broke_stop_loss_210_212",
+        "direction_downgraded_neutral_to_bearish",
+        "nfp_rate_hike_valuation_compression",
+        "support_200_watch",
+        "wwdc_indirect_impact_minor",
+        "watchlist_high_priority"
+      ]
+    },
+    {
+      "signal_id": "stk-TSLA-2026-06-08-close",
+      "ticker": "TSLA",
+      "name": "特斯拉",
+      "market": "US",
+      "direction": "bearish",
+      "price": 391.0,
+      "prev_price": 416.94,
+      "change_pct": -6.22,
+      "confidence": 0.4,
+      "rationale": "TSLA 6/5 收約 $391（-6.2%）。利率上升對電動車融資成本形成逆風，消費者信貸收緊不利 EV 銷售。自動駕駛監管催化劑（若有）是主要正面觸發器，但短期利率環境主導方向。方向由 neutral 下調至 bearish，信心偏低（TSLA 邏輯較複雜）。支撐：$380；壓力：$420。",
+      "sources": [
+        "https://finance.yahoo.com/quote/TSLA/"
+      ],
+      "expires_at": "2026-06-09T09:00:00+08:00",
+      "flags": [
+        "ev_financing_headwind_rate_hike",
+        "direction_downgraded_neutral_to_bearish",
+        "support_380",
+        "watchlist_med_priority"
+      ]
+    },
+    {
+      "signal_id": "stk-AAPL-2026-06-08-close",
+      "ticker": "AAPL",
+      "name": "蘋果",
+      "market": "US",
+      "direction": "neutral",
+      "price": 313.96,
+      "prev_price": 311.52,
+      "change_pct": 0.78,
+      "confidence": 0.5,
+      "rationale": "AAPL 6/5 收 $313.96（+0.78%），在 NASDAQ -4.18% 的環境下逆勢收紅，WWDC 提前佈局護盤效果明顯。今晚 WWDC 開幕（台灣時間週二凌晨 1:00）是最關鍵的近期催化劑：Siri 2.0 × Google Gemini 重大 AI 升級；Morgan Stanley 目標 $330（牛市 $440），Wedbush Ives 目標 $400。若 keynote 超預期，AAPL 可能 +5-8%，帶動整個蘋果生態鏈（台積電 A19 CoWoS/3nm，鴻海 iPhone 組裝）。方向維持 neutral，WWDC 後可能上調至 bullish。",
+      "sources": [
+        "https://finance.yahoo.com/quote/AAPL/",
+        "https://developer.apple.com/wwdc26/",
+        "https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/06/53033363/apple-stock-could-finally-have-its-ai-moment-at-wwdc-ives-says-expect-fireworks"
+      ],
+      "expires_at": "2026-06-09T09:00:00+08:00",
+      "flags": [
+        "wwdc_2026_major_catalyst_tonight",
+        "direction_hold_neutral_wwdc_pending",
+        "aapl_positive_vs_market_june5",
+        "siri20_gemini_ai_upgrade",
+        "potential_upgrade_bullish_post_wwdc",
+        "wedbush_target_400_morgan_stanley_330",
+        "apple_silicon_tsmc_supply_chain_impact",
+        "watchlist_med_priority"
+      ]
+    },
+    {
+      "signal_id": "stk-TSM-2026-06-08-close",
+      "ticker": "TSM",
+      "name": "台積電ADR",
+      "market": "US",
+      "direction": "bearish",
+      "price": 415.17,
+      "prev_price": 436.69,
+      "change_pct": -4.93,
+      "confidence": 0.5,
+      "rationale": "TSM ADR 6/5 收 $415.17（-4.93% vs 6/4 $436.69）。同步台股 2330 bearish 判斷。若 WWDC 後 Apple Silicon 需求路線圖正面，ADR 可能先於台股反彈。支撐：$400；壓力：$430 > $440。",
+      "sources": [
+        "https://finance.yahoo.com/quote/TSM/"
+      ],
+      "expires_at": "2026-06-09T09:00:00+08:00",
+      "flags": [
+        "direction_downgraded_neutral_to_bearish",
+        "tracking_2330_tw",
+        "wwdc_apple_silicon_watch",
+        "support_400",
+        "watchlist_med_priority"
+      ]
+    }
+  ],
+  "alerts": [
+    {
+      "alert_id": "alert-nfp-may-2026-triggered-20260608",
+      "title": "🔴 NFP +17.2 萬爆超（vs +8 萬預期）── 升息重定價完成，降息落空",
+      "level": "critical",
+      "status": "triggered",
+      "detail": "2026 年 5 月非農就業 +172,000（vs 預期 +80,000，遠超）；失業率 4.3%（符合）；前月上修 +93,000。10Y 美債殖利率突破 4.5%。市場定價 2026 年不降息，升息重新定價中。這是今日 TAIEX -4.77% 的根本原因。",
+      "url": "https://www.cnbc.com/2026/06/05/jobs-report-may-2026.html",
+      "source": "CNBC BLS",
+      "expires_at": "2026-06-09T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-taiex-monthly-ma-broken-20260608",
+      "title": "🔴 台股加權指數跌破月線，台積電同步摜破月線支撐",
+      "level": "high",
+      "status": "triggered",
+      "detail": "TAIEX 盤中最低 42,389（-7.2%），收約 43,500（-4.77%）。台積電跌破月線 (~2,350)，收 2,295。月線失守後若無反彈確認（收復 44,000+），技術面有延伸下跌風險。",
+      "url": "https://udn.com/news/story/7251/9552139",
+      "source": "聯合新聞網",
+      "expires_at": "2026-06-09T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-nvda-below-stop-loss-20260608",
+      "title": "🔴 NVDA 跌破 $210-212 警戒區，現 ~$203",
+      "level": "high",
+      "status": "triggered",
+      "detail": "NVDA 6/5 US 收 ~$203，跌破前次設定的 $210-212 止損警戒位。NFP 後 AI/Semicon 估值重設持續。下一支撐 $200 整數位；若跌破則下看 $185。",
+      "url": "https://finance.yahoo.com/quote/NVDA/",
+      "source": "Yahoo Finance",
+      "expires_at": "2026-06-09T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-wwdc-2026-tonight-20260608",
+      "title": "🟡 WWDC 2026 今晚開幕（台灣時間週二凌晨 1:00）── 最大近期催化劑",
+      "level": "high",
+      "status": "active",
+      "detail": "Apple WWDC 2026 keynote 2026-06-09 01:00:00+08:00。預期 Siri 2.0 × Google Gemini、iOS 27 全面 AI 升級。Wedbush 目標 $400，Morgan Stanley $330。若正面超預期，AAPL +5-8%，帶動台積電（A19）、MediaTek（AI 手機）、鴻海（iPhone）相關股週二開盤。",
+      "url": "https://developer.apple.com/wwdc26/",
+      "source": "Apple Developer",
+      "expires_at": "2026-06-09T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-oil-wti-93-middle-east-20260608",
+      "title": "🟡 WTI 油價 +3.4% 至 $93.63，霍爾木茲海峽緊張升溫",
+      "level": "medium",
+      "status": "active",
+      "detail": "WTI 原油今日 +3.4% 至 $93.63/桶，中東局勢（波斯灣 / 霍爾木茲近關閉）持續推升能源成本。若突破 $96，通膨 + 升息壓力再度升溫，對台股科技業不利（電力/冷卻成本、全球需求）。能源股相對受益。",
+      "url": "https://tradingeconomics.com/commodity/crude-oil",
+      "source": "TradingEconomics",
+      "expires_at": "2026-06-09T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-avgo-cumulative-minus18pct-20260608",
+      "title": "🔴 AVGO 兩日累跌 -18%，AI 資本支出信心危機持續",
+      "level": "high",
+      "status": "active",
+      "detail": "AVGO 6/4 -13.36%（Q3 AI 晶片指引 $160B < 預期 $172B），6/5 再 -5.7%，兩日累計近 -18%。市場對整個 AI 資本支出成長速度的信心持續低迷，台積電 CoWoS/HBM4 需求長線未變，但短期溢價被擠壓。",
+      "url": "https://finance.yahoo.com/quote/AVGO/",
+      "source": "Yahoo Finance",
+      "expires_at": "2026-06-09T09:00:00+08:00"
+    }
+  ],
+  "whats_changed": {
+    "vs_report": "股市-收盤後-20260605.json",
+    "vs_date": "2026-06-05",
+    "summary": "NFP 大超觸發升息重定價，所有 TW 個股與 US 半導體/EV 股 direction 由 neutral 下調至 bearish。AAPL 例外維持 neutral（WWDC 護體）。NVDA 跌破止損警戒位。WWDC 由 pending 進入 active。油價由穩定升至升溫。",
+    "direction_changes": [
+      {
+        "ticker": "2330",
+        "prev_direction": "neutral",
+        "new_direction": "bearish",
+        "reason": "月線跌破；TSM ADR -5%；NFP 升息重定價"
+      },
+      {
+        "ticker": "2454",
+        "prev_direction": "neutral",
+        "new_direction": "bearish",
+        "reason": "SOX -10.26%（兩日）；盤中急殺 -16%；升息壓估值"
+      },
+      {
+        "ticker": "2317",
+        "prev_direction": "neutral",
+        "new_direction": "bearish",
+        "reason": "觸跌停 -10.1%；AVGO AI 伺服器需求疑慮蔓延"
+      },
+      {
+        "ticker": "NVDA",
+        "prev_direction": "neutral",
+        "new_direction": "bearish",
+        "reason": "跌破 $210-212 止損警戒；NFP -5% 6/5"
+      },
+      {
+        "ticker": "TSLA",
+        "prev_direction": "neutral",
+        "new_direction": "bearish",
+        "reason": "升息逆風 EV 融資；-6.2% 6/5"
+      },
+      {
+        "ticker": "AAPL",
+        "prev_direction": "neutral",
+        "new_direction": "neutral",
+        "reason": "維持，WWDC 活動今晚，正面催化劑 pending；6/5 +0.78% 逆勢"
+      },
+      {
+        "ticker": "TSM",
+        "prev_direction": "neutral",
+        "new_direction": "bearish",
+        "reason": "同步 2330；ADR -4.93% 6/5"
+      }
+    ],
+    "alert_changes": {
+      "newly_triggered": [
+        "alert-nfp-may-2026-triggered-20260608",
+        "alert-taiex-monthly-ma-broken-20260608",
+        "alert-nvda-below-stop-loss-20260608"
+      ],
+      "now_active": [
+        "alert-wwdc-2026-tonight-20260608",
+        "alert-oil-wti-93-middle-east-20260608",
+        "alert-avgo-cumulative-minus18pct-20260608"
+      ],
+      "resolved": [],
+      "prev_active_retained": [],
+      "prev_alerts_superseded": [
+        "alert-nonfarm-payrolls-june5-risk-20260602",
+        "alert-nvda-near-stop-loss-215-20260604",
+        "alert-aapl-wwdc-june8-catalyst-20260604",
+        "alert-oil-spike-96-middle-east-20260604"
+      ]
+    },
+    "market_level_change": {
+      "prev_taiex": 45677,
+      "curr_taiex_est": 43500,
+      "change_pts": -2177,
+      "change_pct": -4.77
+    },
+    "confidence_note": "保守原則：不確定數據已標注信心等級；個股 prev_price 均以 6/5 prev_signals 估算為基準。"
+  }
+}

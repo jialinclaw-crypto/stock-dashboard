@@ -1,0 +1,471 @@
+{
+  "_schema_version": 3,
+  "type": "morning",
+  "report_file": "股市-開盤前-20260609.md",
+  "date": "2026-06-09",
+  "weekday": "週二",
+  "generated_at": "2026-06-09T07:32:40+08:00",
+  "market_view": {
+    "level": "neutral",
+    "confidence": 0.65,
+    "headline": "SOX+6.46%/Nasdaq+1.44%/VIX 16.04三重利好；TSM ADR+3.3%($428.89)指引台積電今開NT$2,363±；AAPL WWDC踩雷-1.89%(Siri AI無上市時程，不進歐/中)；WTI $90.96(-4.85%)中東緩和；CPI 6/10+SpaceX IPO 6/12+FOMC 6/16-17三大近期風險；TWII昨-3.48%大跌後今日補彈機率高"
+  },
+  "indices": [
+    {
+      "name": "道瓊工業",
+      "ticker": "DJI",
+      "value": 51162,
+      "change_pct": 0.58,
+      "trend": "bullish",
+      "note": "週一全面修復；非科技/工業/金融相對平穩，拉抬指數"
+    },
+    {
+      "name": "S&P 500",
+      "ticker": "SPX",
+      "value": 7452,
+      "change_pct": 0.93,
+      "trend": "bullish",
+      "note": "全面回升，多頭守住；CPI 6/10前靜待觀望"
+    },
+    {
+      "name": "Nasdaq",
+      "ticker": "IXIC",
+      "value": 26079,
+      "change_pct": 1.44,
+      "trend": "bullish",
+      "note": "TSLA+4.6%領漲，半導體全線反彈，Russell 2000同步上揚"
+    },
+    {
+      "name": "費城半導體",
+      "ticker": "SOX",
+      "value": 13010,
+      "change_pct": 6.46,
+      "trend": "bullish",
+      "note": "從12,220強彈至13,010，週五崩後最大單日漲；VanEck SMH ETF +5%"
+    },
+    {
+      "name": "VIX 恐慌指數",
+      "ticker": "VIX",
+      "value": 16.04,
+      "change_pct": -25.4,
+      "trend": "bullish",
+      "note": "從21.51急降至16.04，恐慌完全消退；回到正常波動區間"
+    },
+    {
+      "name": "美 10Y 殖利率",
+      "ticker": "US10Y",
+      "value": 4.57,
+      "change_pct": 0.03,
+      "trend": "neutral",
+      "note": "高位小幅上升+3bps；CPI 6/10前市場靜待，FOMC 6/16-17前壓力持續"
+    },
+    {
+      "name": "美 30Y 殖利率",
+      "ticker": "US30Y",
+      "value": 5.31,
+      "change_pct": 0.03,
+      "trend": "neutral",
+      "note": "高位穩定，FOMC 6/16-17 Kevin Warsh首次完整主持前觀望"
+    },
+    {
+      "name": "美元指數",
+      "ticker": "DXY",
+      "value": 100.11,
+      "change_pct": 0.04,
+      "trend": "neutral",
+      "note": "幾乎持平；中東緩和(WTI -4.85%)與NFP強勢相互抵消"
+    },
+    {
+      "name": "台股加權指數",
+      "ticker": "TWII",
+      "value": 43502.78,
+      "change_pct": -3.48,
+      "trend": "neutral",
+      "note": "史上第三大跌點(-1,568pt)，盤中低點42,376；尾盤買盤回補，今日美股+反彈機率高"
+    },
+    {
+      "name": "WTI 原油",
+      "ticker": "WTI",
+      "value": 90.96,
+      "change_pct": -4.85,
+      "trend": "neutral",
+      "note": "中東初步降溫，霍爾木茲壓力緩解；低於$95心理關，通膨風險溢價下降"
+    }
+  ],
+  "stocks": [
+    {
+      "signal_id": "stk-2330-2026-06-09-morning",
+      "ticker": "2330",
+      "name": "台積電",
+      "market": "TW",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.62,
+      "view": "昨收NT$2,295(-2.96%)，盤中低點2,230，尾盤買盤支撐。TSM ADR+3.3%($428.89)直接指引今日開盤NT$2,363±。技術上仍在20MA(~2,380)下方，需站回確認短線轉強。中長線基本面完整：FY2026 EPS估NT$83-88，P/E降至27.6x(NTM)；NT$2,230-2,300區間為長線配置區。CPI 6/10+FOMC 6/16-17前不宜追高。",
+      "rationale": "TSM ADR+3.3%推動今日強彈開盤，但20MA壓制+CPI週三+SpaceX IPO週四為近期三大阻力，開高後回測2,330-2,340支撐再評估",
+      "price": 2295.0,
+      "change_pct": -2.96,
+      "support": 2230,
+      "resistance": 2365,
+      "stop_loss": 2200,
+      "target": 2500,
+      "technicals": {
+        "rsi14": 42,
+        "macd": "空頭動能趨緩，即將收斂",
+        "ma_alignment": "5/20MA空頭排列；昨低2,230守住50MA支撐帶；今日開高後觀察20MA(~2,380)是否收復"
+      },
+      "valuation": {
+        "pe": 27.6,
+        "pe_percentile_5y": 65,
+        "verdict": "NTM P/E 27.6x(2,295/~83)；FY2026獲利展望完整；2,230以下P/E降至25x為長線配置帶"
+      },
+      "sources": [
+        "https://focustaiwan.tw/business/202606080015",
+        "https://finance.yahoo.com/quote/TSM/"
+      ],
+      "expires_at": "2026-06-09T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-2454-2026-06-09-morning",
+      "ticker": "2454",
+      "name": "聯發科",
+      "market": "TW",
+      "signal": "🟢",
+      "direction": "bullish",
+      "confidence": 0.67,
+      "view": "昨收NT$4,070(-230，-5.35%)，隨大盤重挫但跌幅相對可控。SOX+6.46%反彈+外資AI ASIC目標密集上調（里昂5,922、CLSA Google TPU策略核心定位）為強力支撐。2026年AI ASIC收入目標已從$10億倍增至$20億。今日預估開NT$4,200-4,260。4,000整數關為最關鍵守撐；站穩後有望回測前高4,300。",
+      "rationale": "SOX+6.46%+里昂目標5,922(Google TPU核心)+AI ASIC 2026收入倍增確認；4,070為合理配置帶，外資持續上調目標",
+      "price": 4070.0,
+      "change_pct": -5.35,
+      "support": 4000,
+      "resistance": 4300,
+      "stop_loss": 3750,
+      "target": 4700,
+      "technicals": {
+        "rsi14": 39,
+        "macd": "空頭，動能轉緩；接近超賣區反彈信號",
+        "ma_alignment": "跌破5/20MA；50MA(~3,850)在低點上方約5.5%，長線支撐仍在"
+      },
+      "valuation": {
+        "pe": 20.3,
+        "pe_percentile_5y": 55,
+        "verdict": "NTM P/E ~20.3x(4,070/~200)；外資目標均值4,500-5,922；現價折價空間大，AI ASIC成長催化明確"
+      },
+      "sources": [
+        "https://www.sinotrade.com.tw/richclub/hotstock/外資全面重估聯發科-AI-ASIC爆發力引爆史詩級目標價",
+        "https://tw.stock.yahoo.com/news/聯發科目標價上看5922元"
+      ],
+      "expires_at": "2026-06-09T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-2317-2026-06-09-morning",
+      "ticker": "2317",
+      "name": "鴻海",
+      "market": "TW",
+      "signal": "🔴",
+      "direction": "bearish",
+      "confidence": 0.60,
+      "view": "昨收NT$269.5(-15，-5.27%)。AAPL WWDC踩雷(-1.89%)，Siri AI無明確上市時程，iPhone換機週期延後預期打壓鴻海Apple組裝敘事。今日大盤反彈應有技術性跟漲，但上檔阻力270-280為主。Q1 EPS 3.56元(+17%)、AI伺服器全年出貨倍增為基本面底部支撐；P/E 11.7x偏低但短線AAPL題材受損。",
+      "rationale": "AAPL WWDC令市場失望(-1.89%)，Siri AI無時程，iPhone換機週期預期降溫；鴻海Apple供應鏈短線承壓；265支撐守穩是觀察重點",
+      "price": 269.5,
+      "change_pct": -5.27,
+      "support": 265,
+      "resistance": 280,
+      "stop_loss": 258,
+      "target": 310,
+      "technicals": {
+        "rsi14": 47,
+        "macd": "多頭動能顯著回落，接近零軸",
+        "ma_alignment": "接近20MA(265)，需守穩；AI伺服器基本面提供相對支撐"
+      },
+      "valuation": {
+        "pe": 11.7,
+        "pe_percentile_5y": 75,
+        "verdict": "P/E 11.7x偏低；AI伺服器轉型溢價尚未充分定價；AAPL失望短線壓制但長線底部仍在NT$265-270"
+      },
+      "sources": [
+        "https://www.sinotrade.com.tw/richclub/hotstock/鴻海-2317-做什麼-法說有何重點",
+        "https://finance.yahoo.com/markets/stocks/articles/apple-wwdc-2026-aapl-stock-205316754.html"
+      ],
+      "expires_at": "2026-06-09T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-NVDA-2026-06-09-morning",
+      "ticker": "NVDA",
+      "name": "輝達",
+      "market": "US",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.58,
+      "view": "昨收$208.14(+1.5%)，$200守穩，SOX+6.46%帶動情緒修復。RSI從38回升至42，技術上有反彈基礎，但仍在20MA($215)下方。長線共識目標$296(67位分析師買入)；CPI 6/10+SpaceX IPO 6/12+FOMC 6/16-17三重事件風險在本週，不宜激進追高。$205-$210為持倉合理區。",
+      "rationale": "$200支撐守穩+SOX+6.46%確認情緒修復；但20MA壓制+週三CPI+週四SpaceX IPO資金輪動為短線阻力；技術底部確認需站回$215",
+      "price": 208.14,
+      "change_pct": 1.5,
+      "support": 200,
+      "resistance": 215,
+      "stop_loss": 195,
+      "target": 240,
+      "technicals": {
+        "rsi14": 42,
+        "macd": "死叉，動能趨緩",
+        "ma_alignment": "仍在20/50MA下方；200MA在$190-195提供底部支撐"
+      },
+      "valuation": {
+        "pe": 41.6,
+        "pe_percentile_5y": 80,
+        "verdict": "NTM P/E 41.6x偏高；$200以下~40x接近合理帶，需AI需求確認支撐"
+      },
+      "sources": [
+        "https://www.gurufocus.com/news/8905089/semiconductor-stocks-rally-amid-ai-infrastructure-growth",
+        "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-june-08-2026"
+      ],
+      "expires_at": "2026-06-09T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-TSLA-2026-06-09-morning",
+      "ticker": "TSLA",
+      "name": "特斯拉",
+      "market": "US",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.55,
+      "view": "昨收$408.95(+4.6%)，止損$395收復，RSI從38升至44，短線動能恢復。P/E~188x在升息環境下高估值壓力未消；SpaceX IPO週四為最大不確定（Musk概念資金分流）。週三CPI若再熱則高估值股再度承壓。$400-$410為關鍵守撐，$430為近期阻力。",
+      "rationale": "強反彈+4.6%收復$395止損，RSI超賣回升；但P/E 188x升息環境持續承壓+SpaceX IPO週四情緒分流為主要風險",
+      "price": 408.95,
+      "change_pct": 4.6,
+      "support": 395,
+      "resistance": 430,
+      "stop_loss": 388,
+      "target": 455,
+      "technicals": {
+        "rsi14": 44,
+        "macd": "空頭動能顯著衰退，接近轉折",
+        "ma_alignment": "收復20MA，但20/50MA仍空頭排列"
+      },
+      "valuation": {
+        "pe": 188.0,
+        "pe_percentile_5y": 72,
+        "verdict": "TTM P/E 188x極端；Robotaxi規模化為唯一估值突破催化，SpaceX IPO分流短線壓力"
+      },
+      "sources": [
+        "https://www.gurufocus.com/news/8906122/tesla-inc-tsla-shares-surge-46-what-gf-score-of-88-tells-investors",
+        "https://capital.com/en-int/learn/ipo/spacex-ipo"
+      ],
+      "expires_at": "2026-06-09T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-AAPL-2026-06-09-morning",
+      "ticker": "AAPL",
+      "name": "蘋果",
+      "market": "US",
+      "signal": "🔴",
+      "direction": "bearish",
+      "confidence": 0.65,
+      "view": "昨收$301.54(-1.89%)。WWDC 2026揭曉Siri AI但缺乏明確上市時程，Siri AI確認不進歐盟/中國(監管障礙)，「賣消息」格局確立，近三週最大單日跌幅。分析師：「令人失望，競爭對手已超前太多」。$300心理支撐測試中；iPhone換機週期延後預期為主要利空敘事。若CPI超預期再壓，可能下試$295。",
+      "rationale": "WWDC Siri AI無明確上市時程+不進歐盟/中國，市場重演「期待落空」；$300守穩是短線關鍵；換機週期預期降溫打壓估值",
+      "price": 301.54,
+      "change_pct": -1.89,
+      "support": 295,
+      "resistance": 310,
+      "stop_loss": 293,
+      "target": 325,
+      "technicals": {
+        "rsi14": 46,
+        "macd": "略偏空，動能轉弱",
+        "ma_alignment": "跌破20MA；20MA約$308形成上方壓力"
+      },
+      "valuation": {
+        "pe": 35.5,
+        "pe_percentile_5y": 72,
+        "verdict": "NTM P/E 35.5x；Siri AI上市時程不明壓縮換機週期預期；$295以下進入觀察帶"
+      },
+      "sources": [
+        "https://finance.yahoo.com/markets/stocks/articles/apple-wwdc-2026-aapl-stock-205316754.html",
+        "https://www.fool.com/coverage/stock-market-today/2026/06/08/stock-market-today-june-8-apple-falls-after-unveiling-ai-siri-and-apple-intelligence-at-wwdc/"
+      ],
+      "expires_at": "2026-06-09T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-TSM-2026-06-09-morning",
+      "ticker": "TSM",
+      "name": "台積電ADR",
+      "market": "US",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.62,
+      "view": "昨收$428.89(+3.3%)，$425支撐成功收復，NTM P/E ~24.5x進入5年合理中位帶。直接帶動今日台積電開盤。技術上RSI 45回升，但MACD仍偏空；短線需站回$435-$440確認轉強。CPI週三+FOMC週次週為近期壓力；$415為強支撐。",
+      "rationale": "$425支撐收復(+3.3%)，NTM P/E 24.5x合理；SOX+6.46%帶動半導體情緒；CPI前短線整理，$415-$430為合理持倉區",
+      "price": 428.89,
+      "change_pct": 3.3,
+      "support": 415,
+      "resistance": 440,
+      "stop_loss": 412,
+      "target": 455,
+      "technicals": {
+        "rsi14": 45,
+        "macd": "空頭動能顯著衰退，趨近轉折",
+        "ma_alignment": "收復$425，但20MA約$438仍為上方壓力"
+      },
+      "valuation": {
+        "pe": 24.5,
+        "pe_percentile_5y": 65,
+        "verdict": "NTM P/E 24.5x接近5年中位數，長線合理；技術底部確認前不激進追價"
+      },
+      "sources": [
+        "https://finance.yahoo.com/quote/TSM/",
+        "https://focustaiwan.tw/business/202606080015"
+      ],
+      "expires_at": "2026-06-09T13:30:00+08:00"
+    }
+  ],
+  "alerts": [
+    {
+      "alert_id": "alt-aapl-wwdc-siri-disappointment",
+      "level": "warning",
+      "text": "【WWDC 2026踩雷：Siri AI無上市時程，AAPL -1.89%】Apple揭曉新一代Siri AI(iOS 27 agentic AI/跨App整合)，但缺明確上市時程，且確認不進歐盟/中國(監管障礙)。市場重演「期待落空」，AAPL收-1.89%，近三週最大單日跌幅。分析師：「勾選方塊但仍令人失望，競爭者早已超前」。iPhone換機週期延後預期打壓鴻海(Apple最大組裝商)、大立光等蘋概股估值敘事。$300心理支撐是否守穩為本週觀察。",
+      "tickers": ["AAPL", "2317"],
+      "url": "https://finance.yahoo.com/markets/stocks/articles/apple-wwdc-2026-aapl-stock-205316754.html",
+      "source": "Yahoo Finance / MacRumors / AppleInsider"
+    },
+    {
+      "alert_id": "alt-cpi-fomc-june-risk",
+      "level": "warning",
+      "text": "【CPI 6/10(三)+FOMC 6/16-17 雙重事件風險】5月CPI明晚21:30公布：4月CPI 3.8% YoY(能源+17.9%)為近年高點；若5月持平或再超，年底升息機率(現50-60%)進一步攀升，可能再度壓制高P/E科技股(TSLA~188x, NVDA~42x, AAPL~35.5x)。FOMC 6/16-17：Kevin Warsh首次完整主持，按兵不動(95%+)，但點陣圖將決定年底路徑。Fed Funds Rate現3.50-3.75%。",
+      "tickers": ["NVDA", "AAPL", "TSLA", "TSM", "2330"],
+      "url": "https://sg.finance.yahoo.com/news/stock-market-news-jun-8-090800440.html",
+      "source": "Yahoo Finance / CME FedWatch / Federal Reserve"
+    },
+    {
+      "alert_id": "alt-spacex-ipo-capital-rotation",
+      "level": "warning",
+      "text": "【SpaceX IPO 週四(6/12)倒計時：Nasdaq SPCX，$1.77兆估值，$135訂價】IPO規模$75億，被動基金/ETF(NDX快速納入)對Mag7形成結構性輪動賣壓；NVDA/AAPL/MSFT/AMZN/GOOG/META/AVGO/TSLA均受影響。Motley Fool：「SpaceX IPO可能摧毀最受歡迎的被動指數策略」。週三定價，週四掛牌，輪動壓力本週持續至掛牌日。",
+      "tickers": ["NVDA", "AAPL", "TSLA", "TSM"],
+      "url": "https://www.cnbc.com/2026/06/03/spacex-ipo-stock-price-roadshow-musk.html",
+      "source": "CNBC / Motley Fool / Capital.com"
+    },
+    {
+      "alert_id": "alt-nfp-rate-hike-confirmed",
+      "level": "warning",
+      "text": "【NFP 172K升息路徑確立，年底升息60%定價持續】5月就業報告(172K大超85K)已公布，市場定價年底升息機率50-60%，10Y殖利率4.57%，FOMC 6/16-17按兵不動但點陣圖為關鍵。高P/E股持續承壓；VIX雖降至16，但殖利率結構性高位未解。CPI 6/10為本週主要觸發點。",
+      "tickers": ["NVDA", "TSLA", "AAPL", "TSM", "2330"],
+      "url": "https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html",
+      "source": "BLS / CME FedWatch / Federal Reserve"
+    },
+    {
+      "alert_id": "alt-us-iran-ceasefire",
+      "level": "info",
+      "text": "【中東局勢略緩，WTI跌至$90.96(-4.85%)】美伊談判初步進展，霍爾木茲通航壓力部分緩解，WTI從$95.60跌至$90.96。此為本週正面宏觀因素，通膨壓力小幅下降；若談判繼續推進，油價進一步下行可為Fed提供降息空間。水雷問題仍未完全解決，存在反轉風險。",
+      "tickers": ["AAPL", "TSLA", "NVDA", "2330"],
+      "url": "https://fxdailyreport.com/wti-crude-oil-price-analysis-for-june-8-2026/",
+      "source": "FX Daily Report / Reuters"
+    },
+    {
+      "alert_id": "alt-us30y-rate-hike-risk",
+      "level": "warning",
+      "text": "【殖利率壓力持續：10Y 4.57%(+3bps)、30Y 5.31%】NFP確認後維持高位。FOMC 6/16-17前(6/10 CPI為最後關鍵數據)，高P/E股持續折現率壓力：TSLA~188x、AAPL~35.5x、NVDA~41.6x。若10Y突破4.6-4.7%，估值壓縮進一步加速。當前環境：升息不是基準情境，但「降息夢」已完全破滅。",
+      "tickers": ["NVDA", "AAPL", "TSLA", "TSM"],
+      "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026",
+      "source": "US Treasury / CME FedWatch"
+    }
+  ],
+  "sector_rotation": {
+    "strong": [
+      "AI半導體（SOX+6.46%強彈，2454聯發科AI ASIC外資密集上調）",
+      "台積電供應鏈（TSM ADR+3.3%，台積電今日補彈預期強）",
+      "能源（WTI雖回落，但霍爾木茲緩和為正面；$90-95區間仍高位）"
+    ],
+    "weak": [
+      "蘋果供應鏈（AAPL WWDC踩雷-1.89%；鴻海/大立光蘋概股短線承壓）",
+      "高P/E成長股（升息路徑未解，TSLA/AAPL仍承壓）",
+      "SpaceX IPO受益概念外的Mag7（輪動賣壓持續至週四）"
+    ],
+    "watch": [
+      "5月CPI週三(6/10)公布：通膨方向決定本週科技股走勢",
+      "TWII 44,000整數關守穩與否（確認補彈延續）",
+      "SpaceX SPCX週四掛牌：Mag7賣壓是否高於預期",
+      "聯發科4,000整數關支撐（外資AI ASIC目標大幅上調是否引爆買盤）"
+    ]
+  },
+  "whats_changed": {
+    "compared_to": "股市-開盤前-20260608.md",
+    "compared_to_date": "2026-06-08",
+    "new": [
+      {
+        "type": "alert",
+        "summary": "alt-aapl-wwdc-siri-disappointment【全新】：WWDC揭曉Siri AI但缺乏明確上市時程，且不進歐盟/中國。AAPL收-1.89%，前報告將WWDC列為「唯一多頭催化」，今日確認為負面事件——換機週期延後，鴻海供應鏈承壓",
+        "tickers": ["AAPL", "2317"],
+        "alert_id": "alt-aapl-wwdc-siri-disappointment"
+      },
+      {
+        "type": "alert",
+        "summary": "alt-cpi-fomc-june-risk【全新】：5月CPI明晚(6/10)公布+FOMC 6/16-17為本週兩大系統性風險事件；前報告聚焦NFP衝擊，今日NFP恐慌已退但利率路徑不確定性轉移至CPI/FOMC",
+        "tickers": ["NVDA", "AAPL", "TSLA", "TSM", "2330"],
+        "alert_id": "alt-cpi-fomc-june-risk"
+      },
+      {
+        "type": "stock_direction",
+        "summary": "AAPL：neutral(0.55)→bearish(0.65)。WWDC Siri AI無時程確認負面，前報告將WWDC視為唯一多頭催化；今日事件確認最壞情境，Siri AI故事從「期待」轉為「失望」，鴻海供應鏈連帶承壓",
+        "ticker": "AAPL",
+        "from": "neutral / confidence 0.55 / price $307.34（WWDC待催化）",
+        "to": "bearish / confidence 0.65 / price $301.54（WWDC踩雷，無時程，不進歐/中）"
+      },
+      {
+        "type": "stock_direction",
+        "summary": "2454：bearish(0.65)→bullish(0.67)。SOX+6.46%強彈+外資密集上調AI ASIC目標(里昂5,922)觸發方向反轉；前報告擔憂SOX崩跌打壓AI ASIC估值，今日市場重新定價，跌至4,070提供佈局帶",
+        "ticker": "2454",
+        "from": "bearish / confidence 0.65 / price NT$4,300",
+        "to": "bullish / confidence 0.67 / price NT$4,070（SOX+6.46%+里昂5,922目標+Google TPU核心定位）"
+      },
+      {
+        "type": "stock_direction",
+        "summary": "2330：bearish(0.72)→neutral(0.62)。TSM ADR+3.3%收復$425，今日開盤缺口回補；前報告最悲觀情境(開盤NT$2,200)已被市場消化，昨低2,230守穩、收2,295，今日預估開2,363",
+        "ticker": "2330",
+        "from": "bearish / confidence 0.72 / price NT$2,365（預估當日大跌至NT$2,200）",
+        "to": "neutral / confidence 0.62 / price NT$2,295（昨低2,230守穩，TSM ADR+3.3%帶動今日回補）"
+      },
+      {
+        "type": "stock_direction",
+        "summary": "NVDA：bearish(0.68)→neutral(0.58)。SOX+6.46%/$200守穩確認技術底部未破；前報告$200支撐岌岌可危，今日守穩但20MA壓制持續，方向從空轉中性",
+        "ticker": "NVDA",
+        "from": "bearish / confidence 0.68 / price $205.10（$200岌岌可危）",
+        "to": "neutral / confidence 0.58 / price $208.14（$200守穩，SOX反彈；20MA仍壓）"
+      },
+      {
+        "type": "stock_direction",
+        "summary": "TSLA：bearish(0.62)→neutral(0.55)。止損$395收復(+4.6%)，RSI超賣反彈；前報告止損已穿破，今日大幅反彈收復關鍵止損位，短線轉中性",
+        "ticker": "TSLA",
+        "from": "bearish / confidence 0.62 / price $391.00（止損$395已穿破）",
+        "to": "neutral / confidence 0.55 / price $408.95（+4.6%收復$395止損，SpaceX IPO週四為主要風險）"
+      },
+      {
+        "type": "stock_direction",
+        "summary": "TSM：bearish(0.70)→neutral(0.62)。$425支撐收復(+3.3%)，NTM P/E 24.5x進入合理帶；前報告$425支撐全面失守，今日強彈收復，直接帶動今日台積電開盤",
+        "ticker": "TSM",
+        "from": "bearish / confidence 0.70 / price $415.17（$425支撐失守）",
+        "to": "neutral / confidence 0.62 / price $428.89（$425收復，NTM P/E 24.5x合理區）"
+      }
+    ],
+    "strengthened": [
+      {
+        "type": "alert",
+        "summary": "alt-spacex-ipo-capital-rotation：倒數4天至IPO掛牌(6/12)，輪動壓力進入最後衝刺階段；前報告提示「本週輪動壓力」，今日更新：定價週三、掛牌週四，被動基金賣出Mag7賣壓集中在本週三四",
+        "tickers": ["NVDA", "AAPL", "TSLA", "TSM"],
+        "alert_id": "alt-spacex-ipo-capital-rotation",
+        "from": "本週持續壓力（一般預警）",
+        "to": "週四掛牌倒數4天，週三定價，被動基金賣壓集中於本週三/四（緊迫性升高）"
+      }
+    ],
+    "removed": [
+      {
+        "type": "alert",
+        "summary": "alt-aapl-wwdc-2026【移除：事件已發生，由alt-aapl-wwdc-siri-disappointment接替】WWDC 2026已於6/8舉辦，Siri AI揭曉，事件性質從「預期催化」轉為「確認失望」，由新alert承接後續影響追蹤",
+        "alert_id": "alt-aapl-wwdc-2026"
+      },
+      {
+        "type": "alert",
+        "summary": "alt-avgo-ai-guidance-miss【移除：市場已消化，SOX+6.46%驗證】6/8 SOX強彈+6.46%代表市場已充分消化AVGO事件衝擊；AI基礎建設長週期敘事由外資上調2454/NVDA目標重新確認，此alert使命完成",
+        "alert_id": "alt-avgo-ai-guidance-miss"
+      }
+    ]
+  }
+}

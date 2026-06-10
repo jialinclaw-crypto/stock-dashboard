@@ -1,0 +1,341 @@
+{
+  "schema_version": "3.0",
+  "type": "close",
+  "generated_at": "2026-06-10T14:04:16+08:00",
+  "expires_at": "2026-06-11T09:00:00+08:00",
+  "date": "2026-06-10",
+  "weekday": "週三",
+  "market_summary": {
+    "taiex_close": 44171.36,
+    "taiex_change_pts": -533.08,
+    "taiex_change_pct": -1.19,
+    "taiex_prev_close": 44704.44,
+    "taiex_open": 44581.45,
+    "taiex_intraday_high": 44676.49,
+    "taiex_intraday_low": 43933.78,
+    "taiex_ath": 46459.16,
+    "taiex_from_ath_pts": -2287.8,
+    "taiex_from_ath_pct": -4.93,
+    "volume_b_twd": 6166.69,
+    "nt_per_usd_est": 31.60,
+    "institutional_net_buy_est_b_twd": -90.0,
+    "foreign_net_buy_est_b_twd": -150.0,
+    "trust_net_buy_est_b_twd": 75.0,
+    "dealer_net_est_b_twd": -15.0,
+    "data_confidence": "medium",
+    "note": "TAIEX收盤數據高信心（TWSE來源）；個股收盤為低-中信心估算；6/10三大法人為當日估算，次日公佈實際數據。6/9實際法人：外資-917.33億、投信+232.84億、自營商-66.92億。量能銳減至6,167億（昨日53%），技術性健康整固。",
+    "june9_actual_institutional": {
+      "foreign_net_buy_b_twd": -917.33,
+      "trust_net_buy_b_twd": 232.84,
+      "dealer_net_b_twd": -66.92,
+      "total_net_b_twd": -751.41,
+      "note": "6/9實際法人數據（集中市場）；外資連續大賣第二日，投信強力護盤"
+    },
+    "us_market_june9_tuesday": {
+      "sp500_change_pct": -0.26,
+      "nasdaq_change_pct": -0.97,
+      "dow_change_pct": 0.17,
+      "smh_change_pct": -1.0,
+      "tsm_close": 427.89,
+      "aapl_close_est": 300.0,
+      "nvda_close_est": 205.5,
+      "tsla_close_est": 388.0,
+      "note": "美股6/9：納指-0.97%（伊朗局勢+費半修正）、道指+0.17%分化；TSM逆勢+0.25%顯示機構選擇性支撐；SMH -1%。"
+    },
+    "tonight_outlook": {
+      "key_event": "美國5月CPI公佈（台灣時間20:30）— 今晚最大二元事件",
+      "us_market_bias": "binary-CPI-dependent",
+      "bull_case": "CPI溫和(YoY≤3.5%) → 降息預期升溫 → Nasdaq +1~2%，台積電/聯發科明日回彈",
+      "bear_case": "CPI偏熱(YoY>3.6%) → Fed鷹派疑慮 → 科技股補跌，台積電2,300承壓",
+      "chip_premarket_signal": "Marvell(MRVL)盤前+9%（納入S&P500效應），費半情緒明顯回暖",
+      "upcoming_fomc": "下週Fed FOMC利率決策，NFP超預期後升息風險定價未完成",
+      "key_watch": "NVDA能否重返$210；TSM守$425；CPI YoY讀值",
+      "oil_wti_est": 94.0,
+      "key_risk": "CPI超預期→Fed鷹派→科技股補跌；伊朗局勢升溫→油價破$96"
+    }
+  },
+  "stocks": [
+    {
+      "signal_id": "stk-2330-2026-06-10-close",
+      "ticker": "2330",
+      "name": "台積電",
+      "market": "TW",
+      "direction": "neutral",
+      "price": 2350,
+      "prev_price": 2370,
+      "change_pct": -0.84,
+      "confidence": 0.45,
+      "rationale": "台積電今日估收2,350（−0.84%，低-中信心），隨大盤整固回測。關鍵支撐：TSM ADR 6/9收$427.89，在Nasdaq−0.97%時逆勢微漲+0.25%，顯示機構選擇性承接。多家外資目標價2,588~3,030元，基本面信心未動搖。TSMC獲Benzinga評為全球第9大市值公司。7/16法說會為下一個催化劑。方向維持neutral：未確認ATH(2,440)突破前保守觀望；今晚CPI為關鍵變數。支撐：2,305(6/8低點)、2,250(月線)；壓力：2,440(ATH)、2,500(整數)。",
+      "sources": [
+        "https://finance.yahoo.com/quote/TSM/",
+        "https://www.benzinga.com/markets/tech/26/06/53079458/taiwan-semiconductor-becomes-worlds-ninth-most-valuable-company",
+        "https://money.udn.com/money/story/5607/9449064"
+      ],
+      "expires_at": "2026-06-11T09:00:00+08:00"
+    },
+    {
+      "signal_id": "stk-2454-2026-06-10-close",
+      "ticker": "2454",
+      "name": "聯發科",
+      "market": "TW",
+      "direction": "neutral",
+      "price": 4160,
+      "prev_price": 4210,
+      "change_pct": -1.19,
+      "confidence": 0.35,
+      "rationale": "聯發科今日估收4,160（−1.19%，低信心），市場整固後昨日漲幅獲利了結。方向由bullish下調neutral：AI ASIC中期邏輯不變（目標價最高5,922元、年營收目標升至20億美元），但費半6/9 −1%、外資連續賣超，短線動能暫時消退。重新轉bullish條件：費半重回正軌+外資回補台股+外資目標價催化。支撐：4,000（整數關口）、3,900（月線）；壓力：4,400。注意：若今晚CPI溫和，費半反彈，明日聯發科有較大回升動能。",
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/2454.TW",
+        "https://www.sinotrade.com.tw/richclub/hotstock/%E5%A4%96%E8%B3%87%E5%85%A8%E9%9D%A2%E9%87%8D%E4%BC%B0%E8%81%AF%E7%99%BC%E7%A7%91"
+      ],
+      "expires_at": "2026-06-11T09:00:00+08:00"
+    },
+    {
+      "signal_id": "stk-2317-2026-06-10-close",
+      "ticker": "2317",
+      "name": "鴻海",
+      "market": "TW",
+      "direction": "neutral",
+      "price": 267,
+      "prev_price": 270,
+      "change_pct": -1.11,
+      "confidence": 0.35,
+      "rationale": "鴻海今日估收267（−1.11%，低信心），隨大盤同步回測。AI伺服器GB200/Blackwell出貨動能持續為中期支撐；高盛2026台股作戰名單成員。外資賣壓尚未完全消化。方向維持neutral，無獨立催化劑。支撐：260（月線）；壓力：280～285。",
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/2317.TW",
+        "https://tw.stock.yahoo.com/news/%E9%AB%98%E7%9B%9B%E9%87%8D%E7%A3%85%E9%BB%9E%E5%90%8D-2026%E5%8F%B0%E8%82%A1%E4%BD%9C%E6%88%B0%E5%90%8D%E5%96%AE-25%E6%AA%94%E5%8F%B0%E5%BB%A0%E8%A2%AB%E6%8C%89%E8%AE%9A%E5%BF%85%E8%B2%B7-ai-%E5%8D%8A%E5%B0%8E%E9%AB%94%E5%85%A8%E7%B7%9A%E9%BB%9E%E7%81%AB-063000624.html"
+      ],
+      "expires_at": "2026-06-11T09:00:00+08:00"
+    },
+    {
+      "signal_id": "stk-NVDA-2026-06-10-close",
+      "ticker": "NVDA",
+      "name": "輝達",
+      "market": "US",
+      "direction": "neutral",
+      "price": 205.5,
+      "prev_price": 208.14,
+      "change_pct": -1.27,
+      "confidence": 0.4,
+      "rationale": "NVDA 6/9估收$205.5（低信心），Nasdaq−0.97%拖累，仍低於$210-212關鍵支撐區。但6/10盤前Marvell+9%（S&P500納入）帶動費半情緒回暖，顯示晶片股有買盤意願。若今晚CPI溫和，NVDA有機會重返$210；若CPI偏熱，可能再測$200支撐。方向維持neutral（保守，$210未突破前不轉bullish）。",
+      "sources": [
+        "https://finance.yahoo.com/quote/NVDA/",
+        "https://www.tradingkey.com/analysis/stocks/us-stocks/261952866-us-stock-market-pre-market-chip-stocks-rebound-nasdaq-futures-marvell-surge-sp-500-tradingkey"
+      ],
+      "expires_at": "2026-06-11T09:00:00+08:00"
+    },
+    {
+      "signal_id": "stk-TSLA-2026-06-10-close",
+      "ticker": "TSLA",
+      "name": "特斯拉",
+      "market": "US",
+      "direction": "bearish",
+      "price": 388.0,
+      "prev_price": 391.0,
+      "change_pct": -0.77,
+      "confidence": 0.3,
+      "rationale": "TSLA 6/9估收$388（很低信心，維持估算值）。EV競爭持續加劇，無新正面催化劑。FSD技術進展為唯一觀察點。方向維持bearish，信心低（數據不足）。若Nasdaq今晚反彈，TSLA可能出現技術性反彈，但基本面邏輯不變。",
+      "sources": [
+        "https://finance.yahoo.com/quote/TSLA/"
+      ],
+      "expires_at": "2026-06-11T09:00:00+08:00"
+    },
+    {
+      "signal_id": "stk-AAPL-2026-06-10-close",
+      "ticker": "AAPL",
+      "name": "蘋果",
+      "market": "US",
+      "direction": "neutral",
+      "price": 300.0,
+      "prev_price": 301.54,
+      "change_pct": -0.51,
+      "confidence": 0.5,
+      "rationale": "AAPL 6/9估收$300（中信心），WWDC iOS 27 AI功能公布後市場消化期。Siri 2.0 × Google Gemini整合市場反應中性，短線$290-305區間震盪。長期正面：Apple Silicon M4/A19需求確認對台積電先進製程利多。支撐：$290；壓力：$305-310。方向維持neutral：WWDC後新題材待消化，下一觸媒為Q3法說。",
+      "sources": [
+        "https://finance.yahoo.com/quote/AAPL/"
+      ],
+      "expires_at": "2026-06-11T09:00:00+08:00"
+    },
+    {
+      "signal_id": "stk-TSM-2026-06-10-close",
+      "ticker": "TSM",
+      "name": "台積電ADR",
+      "market": "US",
+      "direction": "neutral",
+      "price": 427.89,
+      "prev_price": 426.8,
+      "change_pct": 0.26,
+      "confidence": 0.65,
+      "rationale": "TSM ADR 6/9收$427.89（高信心），Nasdaq大跌日逆勢微漲+0.26%，顯示機構選擇性承接。TSMC被評為全球第9大市值公司；多家外資長線目標$450-500。支撐：$420；壓力：$440。方向neutral：短線已反映6/8大跌後修復，等待FOMC後明確方向。",
+      "sources": [
+        "https://finance.yahoo.com/quote/TSM/",
+        "https://www.benzinga.com/markets/tech/26/06/53079458/taiwan-semiconductor-becomes-worlds-ninth-most-valuable-company"
+      ],
+      "expires_at": "2026-06-11T09:00:00+08:00"
+    }
+  ],
+  "alerts": [
+    {
+      "alert_id": "alert-cpi-may2026-tonight-20260610",
+      "level": "critical",
+      "title": "🔴 美國5月CPI今晚20:30公佈 — 台股明日方向關鍵二元事件",
+      "body": "美國5月CPI將於台灣時間今晚20:30公佈。背景：5月NFP大幅超預期(+17.2萬 vs 預期+8萬)，通膨上行風險不低。若CPI溫和(YoY≤3.5%)：Nasdaq +1~2%，明日台積電/聯發科開高；若CPI偏熱(YoY>3.6%)：Fed升息疑慮重燃，科技股補跌，台積電2,300面臨壓力。建議今晚20:30前留意部位。",
+      "url": "https://www.fool.com/investing/2026/06/05/heres-why-june-10-could-be-a-big-day-stock-market/",
+      "source": "Motley Fool / Schwab",
+      "expires_at": "2026-06-11T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-chip-premarket-rebound-marvell-20260610",
+      "level": "high",
+      "title": "🟢 費半盤前回彈訊號：Marvell(MRVL)盤前+9%（S&P 500納入效應）",
+      "body": "Marvell Technology將於6/22正式加入S&P 500，盤前股價飆升+9%，帶動費半整體情緒回暖。晶片股短線賣壓消化訊號，若今晚CPI溫和，半導體股反彈力道可能顯著。台積電TSM ADR已率先顯示機構性買盤。",
+      "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/261952866-us-stock-market-pre-market-chip-stocks-rebound-nasdaq-futures-marvell-surge-sp-500-tradingkey",
+      "source": "TradingKey",
+      "expires_at": "2026-06-11T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-low-volume-pullback-20260610",
+      "level": "medium",
+      "title": "🟢 台股低量健康回測：6,167億元（昨日53%），技術面偏中性",
+      "body": "今日台股量能驟縮至6,167億元，僅昨日11,519億的53%，但加權指數只跌-1.19%。低量回測代表空頭力道有限，市場進入技術整固而非崩跌。月線（約43,000-43,500）支撐有效。若量能回升至8,000億以上且指數重返45,000，技術面轉強確立。",
+      "url": "https://www.twse.com.tw/zh/indices/taiex/mi-5min-hist.html",
+      "source": "TWSE 臺灣證券交易所",
+      "expires_at": "2026-06-11T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-foreign-cumulative-selling-20260610",
+      "level": "high",
+      "title": "🔴 外資5日累計賣超逾3,000億 — 待反轉確認",
+      "body": "外資自6/5以來連續大量賣超：6/8實際-938億（史上第7大）、6/9實際-917億，五日累計估逾3,000億元。今日量縮顯示賣壓消化，但尚未確認外資反轉。觀察指標：外資是否轉為單日買超100億以上，以及台積電是否被外資回補。",
+      "url": "https://www.twse.com.tw/zh/trading/foreign/t86.html",
+      "source": "TWSE 三大法人買賣超日報",
+      "expires_at": "2026-06-12T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-mtk-ai-asic-upgrade-20260609",
+      "level": "high",
+      "title": "🟢 聯發科 AI ASIC 外資目標價升至 5,922 元，年營收目標倍增至 20 億美元",
+      "body": "多家外資券商全面上調聯發科目標價，最高至5,922元。Q1法說會後AI ASIC年營收目標從10億→20億美元，延聘台積電前研發副總將強化技術護城河。今日聯發科估收4,160（方向下調neutral），整固後若費半回彈，重新轉bullish機率高。",
+      "url": "https://www.sinotrade.com.tw/richclub/hotstock/%E5%A4%96%E8%B3%87%E5%85%A8%E9%9D%A2%E9%87%8D%E4%BC%B0%E8%81%AF%E7%99%BC%E7%A7%91",
+      "source": "豐雲學堂 / Sinotrade",
+      "expires_at": "2026-06-12T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-nfp-may-2026-triggered-20260608",
+      "level": "critical",
+      "title": "🔴 NFP +17.2萬爆超（vs +8萬預期）— 升息重定價，降息落空",
+      "body": "5月NFP大幅超預期（+17.2萬 vs +8萬），市場排除2026年降息可能，升息風險重新定價。Fed鷹派預期對科技高估值股持續施壓。此警示持續有效至下次FOMC（下週）。",
+      "url": "https://udn.com/news/story/5607/9551833",
+      "source": "經濟日報",
+      "expires_at": "2026-06-16T21:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-upcoming-fomc-tsmc-exdividend-20260609",
+      "level": "high",
+      "title": "🟡 下週重大事件：Fed FOMC利率決策 + 台積電除息（待確認日期）",
+      "body": "(1) Fed FOMC利率決策（下週）：NFP超預期後鷹派措辭風險高，建議保守操作；(2) 台積電除息日（待確認）：除息前後可能有機構性波動。今日CPI已觸發獨立警示，本條聚焦FOMC與台積電除息。",
+      "url": "https://www.sinotrade.com.tw/richclub/hotstock/%E5%8F%B0%E8%82%A1%E6%80%A5%E8%B7%8C%E9%82%84%E6%9C%83%E5%86%8D%E9%9C%87%E5%97%8E",
+      "source": "豐雲學堂 / Sinotrade",
+      "expires_at": "2026-06-16T21:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-avgo-cumulative-minus18pct-20260608",
+      "level": "medium",
+      "title": "🔴 AVGO兩日累跌-18%，AI資本支出信心危機尚未平息",
+      "body": "Broadcom(AVGO)6/5前後兩日累跌-18%，顯示市場對AI基礎設施資本支出永續性有疑慮。此疑慮可能在財報季延續，影響台積電CoWoS需求預期與聯發科ASIC估值。",
+      "url": "https://finance.yahoo.com/quote/AVGO/",
+      "source": "Yahoo Finance",
+      "expires_at": "2026-06-16T09:00:00+08:00"
+    }
+  ],
+  "whats_changed": {
+    "generated_at": "2026-06-10T14:04:16+08:00",
+    "prev_date": "2026-06-09",
+    "curr_date": "2026-06-10",
+    "market_direction_change": {
+      "summary": "台股由昨日強力反彈（+2.76%）轉為低量技術回測（−1.19%）；量能急縮至6,167億（昨日53%）為整固而非崩跌訊號；月線支撐持續有效",
+      "taiex_prev": 44704.44,
+      "taiex_curr": 44171.36,
+      "taiex_change": -533.08,
+      "volume_prev_b_twd": 11519.3,
+      "volume_curr_b_twd": 6166.69,
+      "volume_change_pct": -46.4
+    },
+    "stock_direction_changes": [
+      {
+        "ticker": "2454",
+        "name": "聯發科",
+        "prev_direction": "bullish",
+        "curr_direction": "neutral",
+        "prev_price": 4210,
+        "curr_price_est": 4160,
+        "reason": "市場整固＋費半6/9 −1%，昨日漲幅獲利了結；AI ASIC中期邏輯不變，但短線動能暫時消退。重新轉bullish條件：費半反彈+外資回補。"
+      }
+    ],
+    "stock_no_change": [
+      {
+        "ticker": "2330",
+        "direction": "neutral",
+        "note": "方向維持neutral；TSM ADR逆勢微漲+0.26%為正面訊號，但未突破2,440 ATH前保持保守"
+      },
+      {
+        "ticker": "2317",
+        "direction": "neutral",
+        "note": "方向維持neutral；無獨立催化劑"
+      },
+      {
+        "ticker": "NVDA",
+        "direction": "neutral",
+        "note": "方向維持neutral；低於$210-212支撐，但盤前Marvell+9%暗示費半回彈，靜待CPI"
+      },
+      {
+        "ticker": "TSLA",
+        "direction": "bearish",
+        "note": "方向維持bearish；無新催化（低信心數據）"
+      },
+      {
+        "ticker": "AAPL",
+        "direction": "neutral",
+        "note": "方向維持neutral；WWDC iOS 27消化中"
+      },
+      {
+        "ticker": "TSM",
+        "direction": "neutral",
+        "note": "方向維持neutral；逆勢小漲+0.26%為正面訊號，機構性支撐明確"
+      }
+    ],
+    "alerts_added": [
+      "alert-cpi-may2026-tonight-20260610",
+      "alert-chip-premarket-rebound-marvell-20260610",
+      "alert-low-volume-pullback-20260610",
+      "alert-foreign-cumulative-selling-20260610"
+    ],
+    "alerts_removed": [
+      {
+        "alert_id": "alert-sox-plus56pct-june8-20260609",
+        "reason": "已到期（expires_at: 2026-06-10T09:00:00+08:00）"
+      },
+      {
+        "alert_id": "alert-nvda-below-210-warning-20260609",
+        "reason": "已到期（expires_at: 2026-06-10T09:00:00+08:00）"
+      },
+      {
+        "alert_id": "alert-wwdc-siri2-gemini-result-20260609",
+        "reason": "已到期（expires_at: 2026-06-10T09:00:00+08:00）"
+      },
+      {
+        "alert_id": "alert-taiex-monthly-ma-reclaimed-20260609",
+        "reason": "已到期（expires_at: 2026-06-10T09:00:00+08:00）"
+      }
+    ],
+    "alerts_level_changed": [
+      {
+        "alert_id": "alert-upcoming-cpi-fed-tsmc-exdividend-20260609",
+        "change": "CPI部分已獨立成alert-cpi-may2026-tonight-20260610（critical）；本條更名為alert-upcoming-fomc-tsmc-exdividend-20260609，聚焦FOMC與除息",
+        "prev_level": "high",
+        "curr_level": "high"
+      }
+    ],
+    "confidence_note": "whats_changed基於可用搜尋數據；個股6/10收盤為估算值（低-中信心）；TAIEX收盤點數與成交金額為高信心數據（TWSE）；三大法人6/10為估算值，以官方次日公佈為準。保守原則：不確定不填。"
+  }
+}

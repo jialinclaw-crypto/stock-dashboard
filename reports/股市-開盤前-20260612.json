@@ -1,0 +1,467 @@
+{
+  "_schema_version": 3,
+  "type": "morning",
+  "report_file": "股市-開盤前-20260612.md",
+  "date": "2026-06-12",
+  "weekday": "週五",
+  "generated_at": "2026-06-12T07:30:50+08:00",
+  "market_view": {
+    "level": "neutral-bullish",
+    "confidence": 0.73,
+    "headline": "美股6/11全線暴漲（Dow+1.86% 50,848 / Nasdaq+2.54% 25,809）；Trump宣布伊朗核協議達成WTI-4.3%至$85.9；SpaceX今日Nasdaq掛牌($135/股/$1.75兆史上最大IPO)；NVDA股息x25暴增+Q2 $91B引導；Micron+11%/AMD+8%/Lam+12.7%/Intel+10%；台股今開估44,200-44,700（+3.5~4.5%大反攻），鴻海/台積電/聯發科SpaceX供應鏈受惠"
+  },
+  "indices": [
+    {
+      "name": "道瓊工業",
+      "ticker": "DJI",
+      "value": 50848.75,
+      "change_pct": 1.86,
+      "trend": "bullish",
+      "note": "Trump伊朗核協議聲明引發全面多頭，+929.97 pts，收復6/10失地"
+    },
+    {
+      "name": "S&P 500",
+      "ticker": "SPX",
+      "value": 7394.30,
+      "change_pct": 1.75,
+      "trend": "bullish",
+      "note": "伊朗停火+SpaceX IPO前夕科技情緒回暖，全板塊普漲"
+    },
+    {
+      "name": "Nasdaq",
+      "ticker": "IXIC",
+      "value": 25809.66,
+      "change_pct": 2.54,
+      "trend": "bullish",
+      "note": "半導體/科技族群主導，Micron+11%、AMD+8%、Lam+12.7%、Intel+10%"
+    },
+    {
+      "name": "費城半導體",
+      "ticker": "SOX",
+      "value": 13150,
+      "change_pct": 6.27,
+      "trend": "bullish",
+      "note": "個股均大漲（Micron+11%、Lam+12.7%、AMD+8%）帶動SOX估+6%，從12,376大反攻"
+    },
+    {
+      "name": "VIX 恐慌指數",
+      "ticker": "VIX",
+      "value": 19.5,
+      "change_pct": -2.0,
+      "trend": "neutral",
+      "note": "從21.5降至~19.5，伊朗協議降低地緣風險溢價；SpaceX IPO仍維持部分不確定性"
+    },
+    {
+      "name": "美 10Y 殖利率",
+      "ticker": "US10Y",
+      "value": 4.48,
+      "change_pct": -0.07,
+      "trend": "neutral",
+      "note": "伊朗協議降低能源通脹風險，殖利率從4.55%降7bps；FOMC 6/16-17前靜默期"
+    },
+    {
+      "name": "美 30Y 殖利率",
+      "ticker": "US30Y",
+      "value": 5.30,
+      "change_pct": -0.08,
+      "trend": "neutral",
+      "note": "長端隨風險情緒改善下行，$85.9 WTI降低長期通脹預期"
+    },
+    {
+      "name": "美元指數",
+      "ticker": "DXY",
+      "value": 99.7,
+      "change_pct": -0.3,
+      "trend": "neutral",
+      "note": "伊朗緊張緩解降低避險需求，DXY微降至~99.7，仍近2個月高位"
+    },
+    {
+      "name": "台股加權指數",
+      "ticker": "TWII",
+      "value": 42658,
+      "change_pct": -3.43,
+      "trend": "bearish",
+      "note": "6/11受6/10美股下跌拖累收42,658（-3.4%），今日6/12預估大反彈至44,200-44,700"
+    },
+    {
+      "name": "WTI 原油",
+      "ticker": "WTI",
+      "value": 85.94,
+      "change_pct": -4.30,
+      "trend": "bearish",
+      "note": "Trump伊朗協議聲明→WTI暴跌4.3%至$85.9（4月以來最低），霍爾木茲緊張解除"
+    }
+  ],
+  "stocks": [
+    {
+      "signal_id": "stk-2330-2026-06-12-morning",
+      "ticker": "2330",
+      "name": "台積電",
+      "market": "TW",
+      "signal": "🟢",
+      "direction": "bullish",
+      "confidence": 0.71,
+      "view": "SpaceX IPO帶動CoWoS/Blackwell需求擴張，ADR溢價對應TWD 2,310+，今日估強勢開高",
+      "rationale": "NVDA Blackwell GB300獨占台積3nm產能，SpaceX算力擴建增加先進封裝需求，ADR昨夜正向溢價",
+      "price": 2250.0,
+      "change_pct": 0.0,
+      "support": 2200,
+      "resistance": 2380,
+      "stop_loss": 2150,
+      "target": 2450,
+      "technicals": {
+        "rsi14": 52,
+        "macd": "死叉收斂中，MACD線與訊號線差距縮小",
+        "ma_alignment": "價格站穩20MA(2,220)，60MA(2,180)支撐有效"
+      },
+      "valuation": {
+        "pe": 28.5,
+        "pe_percentile_5y": 55,
+        "verdict": "合理偏高，CoWoS擴產+Blackwell獨占製程支撐premium"
+      },
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/2330.TW",
+        "https://tw.stock.yahoo.com/news/%E5%8F%B0%E7%A9%8D%E9%9B%BB%E4%BA%9E%E5%88%A9%E6%A1%91%E9%82%A3%E5%BB%A0%E9%BB%9E%E7%81%AB-%E8%BC%9D%E9%81%94blackwell%E9%A6%96%E7%89%87%E7%BE%8E%E8%A3%BD%E6%99%B6%E5%9C%93%E9%87%8F%E7%94%A2-023100637.html"
+      ],
+      "expires_at": "2026-06-12T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-2454-2026-06-12-morning",
+      "ticker": "2454",
+      "name": "聯發科",
+      "market": "TW",
+      "signal": "🟢",
+      "direction": "bullish",
+      "confidence": 0.68,
+      "view": "AI邊緣運算SoC需求旺盛，SpaceX Starlink終端晶片潛在受惠，費半大漲帶動整體族群",
+      "rationale": "天璣9400出貨强勁+車載SoC受TSLA FSD歐洲擴張拉動，費半昨夜估+6%全面帶動",
+      "price": 4085.0,
+      "change_pct": 1.68,
+      "support": 4000,
+      "resistance": 4350,
+      "stop_loss": 3900,
+      "target": 4500,
+      "technicals": {
+        "rsi14": 58,
+        "macd": "MACD黃金交叉確立，動能向上",
+        "ma_alignment": "價格站穩5MA(4,050)上方，呈短線多排"
+      },
+      "valuation": {
+        "pe": 22.0,
+        "pe_percentile_5y": 48,
+        "verdict": "歷史中位估值，AI SoC成長可支撐進一步擴張"
+      },
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/2454.TW",
+        "https://finance.yahoo.com/quote/%5ESOX/"
+      ],
+      "expires_at": "2026-06-12T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-2317-2026-06-12-morning",
+      "ticker": "2317",
+      "name": "鴻海",
+      "market": "TW",
+      "signal": "🟢",
+      "direction": "bullish",
+      "confidence": 0.73,
+      "view": "SpaceX IPO今日掛牌最直接台灣受惠股；Q1 EPS 3.56元創同期歷史新高，AI伺服器全年出貨翻倍目標，全球市占40%",
+      "rationale": "SpaceX Anthropic $450億算力合約→大規模算力基建→鴻海AI伺服器訂單直接受益，今日掛牌題材最旺",
+      "price": 258.5,
+      "change_pct": 1.71,
+      "support": 252,
+      "resistance": 278,
+      "stop_loss": 246,
+      "target": 300,
+      "technicals": {
+        "rsi14": 55,
+        "macd": "MACD轉正，短期動能翻多",
+        "ma_alignment": "突破255短期壓力，均線多頭排列初步形成"
+      },
+      "valuation": {
+        "pe": 14.5,
+        "pe_percentile_5y": 42,
+        "verdict": "相對低估（EPS目標22-23元，目標價315元），錯殺後具重新定價空間"
+      },
+      "sources": [
+        "https://tw.stock.yahoo.com/news/%E9%B4%BB%E6%B5%B7-%E7%B7%AF%E5%89%B5%E5%90%83%E8%A3%9C%E4%BA%86-spacex%E7%8B%82%E5%90%9E450%E5%84%84%E7%BE%8E%E5%85%83%E5%90%88%E4%BD%9C-%E5%8F%B0%E7%81%A3ai%E4%BC%BA%E6%9C%8D%E5%99%A8%E9%8F%88-%E9%82%84%E6%9C%89%E9%80%99%E5%B9%BE%E6%AA%94-061500836.html",
+        "https://www.sinotrade.com.tw/richclub/hotstock/%E9%B4%BB%E6%B5%B7-2317-%E5%81%9A%E4%BB%80%E9%BA%BC-%E6%B3%95%E8%AA%AA%E6%9C%89%E4%BD%95%E9%87%8D%E9%BB%9E--%E9%A6%96%E5%AD%A3EPS%E9%81%943-56%E5%85%83%E5%89%B5%E5%90%8C%E6%9C%9F%E6%96%B0%E9%AB%98-AI%E4%BC%BA%E6%9C%8D%E5%99%A8%E5%85%A8%E5%B9%B4%E5%87%BA%E8%B2%A8%E5%80%8D%E6%95%B8%E6%88%90%E9%95%B7-Q2%E6%95%B4%E9%AB%94%E7%87%9F%E9%81%8B%E9%9B%99%E5%8D%87-%E8%82%A1%E5%B8%82%E8%A9%B1%E9%A1%8C-6a05828704e2f918d3577a22"
+      ],
+      "expires_at": "2026-06-12T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-NVDA-2026-06-12-morning",
+      "ticker": "NVDA",
+      "name": "輝達",
+      "market": "US",
+      "signal": "🟢",
+      "direction": "bullish",
+      "confidence": 0.78,
+      "view": "股息25倍暴增（$0.01→$0.25）顯示管理層高度信心；Q2引導$91B(+95%)遠超市場預期；Vera Rubin接棒Blackwell Ultra確保技術護城河",
+      "rationale": "股息大幅提升+$800億回購+$91B Q2引導三重利好，Blackwell生態系無可替代",
+      "price": 205.81,
+      "change_pct": -1.13,
+      "support": 195,
+      "resistance": 220,
+      "stop_loss": 190,
+      "target": 240,
+      "technicals": {
+        "rsi14": 54,
+        "macd": "黃金交叉確立，多頭動能持續",
+        "ma_alignment": "200美元以上多頭排列，20MA(198)/50MA(192)均向上"
+      },
+      "valuation": {
+        "pe": 35.0,
+        "pe_percentile_5y": 58,
+        "verdict": "FY27 EPS $5.8計算PE35x合理偏高，但成長能見度($91B引導)支撐premium"
+      },
+      "sources": [
+        "https://www.gurufocus.com/news/8911876/nvidia-nvda-increases-quarterly-dividend-significantly-amid-strong-growth",
+        "https://www.fool.com/investing/2026/06/11/nvidia-just-announced-a-potential-windfall-for-sha/",
+        "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000051/q1fy27pr.htm"
+      ],
+      "expires_at": "2026-06-12T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-TSLA-2026-06-12-morning",
+      "ticker": "TSLA",
+      "name": "特斯拉",
+      "market": "US",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.55,
+      "view": "FSD歐洲擴張（比利時第5個EU國）支撐反彈，但SpaceX IPO今日掛牌製造資金輪換壓力；Piper Sandler目標$500",
+      "rationale": "FSD歐洲動能正面但SpaceX市值已超TSLA，IPO當日資金排擠效應不可忽視",
+      "price": 399.15,
+      "change_pct": 3.09,
+      "support": 380,
+      "resistance": 420,
+      "stop_loss": 368,
+      "target": 450,
+      "technicals": {
+        "rsi14": 50,
+        "macd": "自超賣回升，MACD翻正但動能尚弱",
+        "ma_alignment": "回試20MA(395)壓力轉支撐，結果待觀察"
+      },
+      "valuation": {
+        "pe": 95.0,
+        "pe_percentile_5y": 40,
+        "verdict": "PE高位但Robotaxi/FSD選擇權價值難以傳統估值衡量"
+      },
+      "sources": [
+        "https://www.tipranks.com/news/why-tesla-stock-is-rising-today-june-11-2026",
+        "https://www.tradingkey.com/news/market-movers/261962007-market-movers-tsla-20260611"
+      ],
+      "expires_at": "2026-06-12T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-AAPL-2026-06-12-morning",
+      "ticker": "AAPL",
+      "name": "蘋果",
+      "market": "US",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.55,
+      "view": "$290支撐守住，分析師上調目標至$350，止跌訊號出現但WWDC AI失望情緒未完全消散",
+      "rationale": "$290支撐測試成功+分析師升評使方向從bearish調升至neutral，等待具體AI功能里程碑",
+      "price": 293.64,
+      "change_pct": 1.96,
+      "support": 285,
+      "resistance": 305,
+      "stop_loss": 278,
+      "target": 320,
+      "technicals": {
+        "rsi14": 43,
+        "macd": "偏弱但從超賣區回升，死叉縮窄",
+        "ma_alignment": "低於50MA(298)及200MA(310)，短線修復進行中"
+      },
+      "valuation": {
+        "pe": 35.27,
+        "pe_percentile_5y": 65,
+        "verdict": "估值偏高（vs AI更新未達市場預期），目標$320需等AI落地驗證"
+      },
+      "sources": [
+        "https://finance.yahoo.com/quote/AAPL/",
+        "https://www.cnbc.com/markets/stocks/AAPL"
+      ],
+      "expires_at": "2026-06-12T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-TSM-2026-06-12-morning",
+      "ticker": "TSM",
+      "name": "台積電ADR",
+      "market": "US",
+      "signal": "🟢",
+      "direction": "bullish",
+      "confidence": 0.68,
+      "view": "美股Nasdaq+2.54%+SOX估+6%帶動ADR，SpaceX算力擴建進一步強化3nm需求能見度",
+      "rationale": "TSM追蹤2330但具美股倍率效應，昨日惜售回到$420，今日SpaceX掛牌日補漲空間大",
+      "price": 420.0,
+      "change_pct": -1.85,
+      "support": 400,
+      "resistance": 445,
+      "stop_loss": 390,
+      "target": 465,
+      "technicals": {
+        "rsi14": 50,
+        "macd": "中性，等待美股收盤後ADR定向",
+        "ma_alignment": "52週範圍$206.2-$450.2，現處中位，多頭回補空間充裕"
+      },
+      "valuation": {
+        "pe": 26.5,
+        "pe_percentile_5y": 52,
+        "verdict": "合理估值，CoWoS擴產+Blackwell獨占支撐長期上行"
+      },
+      "sources": [
+        "https://finance.yahoo.com/quote/TSM/",
+        "https://www.investing.com/equities/taiwan-semicond.manufacturing-co"
+      ],
+      "expires_at": "2026-06-12T13:30:00+08:00"
+    }
+  ],
+  "alerts": [
+    {
+      "alert_id": "alt-spacex-ipo-day",
+      "level": "warning",
+      "text": "【🚀 SpaceX SPCX 今日掛牌（6/12 Nasdaq），$135/股，$1.75兆估值，史上最大IPO】認購超額3.5-4x；Anthropic $450億算力合約確認鴻海/緯創供應鏈受益；資金輪換效應可能衝擊TSLA及Mag7；台灣AI伺服器族群（2317/2382/3231）直接受惠",
+      "tickers": ["TSLA", "2317", "NVDA"],
+      "url": "https://www.heygotrade.com/en/news/spacex-ipo-177-trillion-valuation-2026-ipo-wave/",
+      "source": "HeyGoTrade / CNBC"
+    },
+    {
+      "alert_id": "alt-iran-trump-deal",
+      "level": "info",
+      "text": "【🕊️ Trump宣布伊朗核協議達成，取消空襲計畫】WTI暴跌-4.3%至$85.9（4月以來最低），10Y殖利率降7bps至4.48%，VIX從21.5降至~19.5；如協議正式簽署，能源通脹壓力大幅緩解",
+      "tickers": ["WTI"],
+      "url": "https://www.cnbc.com/2026/06/10/trump-iran-deal-oil-markets-stocks.html",
+      "source": "CNBC"
+    },
+    {
+      "alert_id": "alt-nvda-dividend-windfall",
+      "level": "info",
+      "text": "【💰 NVDA季度股息暴增25倍（$0.01→$0.25），$800億回購授權；Q2引導$91B(+95% YoY)】Blackwell Ultra -35x成本/-35x能耗；Vera Rubin接棒路線明確；AI基礎設施支出強勁",
+      "tickers": ["NVDA", "TSM", "2330"],
+      "url": "https://www.gurufocus.com/news/8911876/nvidia-nvda-increases-quarterly-dividend-significantly-amid-strong-growth",
+      "source": "GuruFocus / Motley Fool"
+    },
+    {
+      "alert_id": "alt-cpi-4pct-energy-inflation",
+      "level": "warning",
+      "text": "【📊 CPI 5月確認4.2% YoY（3年新高），核心0.2% MoM輕微低於預期0.3%】伊朗協議若成立將大幅降低能源驅動通脹；FOMC 6/16-17前靜默期，仍需觀察6月PPI/CPI確認通脹走向",
+      "tickers": [],
+      "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-june-11-dow-sp-500-nasdaq-222511784.html",
+      "source": "Yahoo Finance"
+    },
+    {
+      "alert_id": "alt-fomc-june-blackout",
+      "level": "info",
+      "text": "【🏦 FOMC 6/16-17 靜默期：Fed主席Kevin Warsh首次主持會議】Rate Futures 98%維持不變；伊朗協議若降低能源通脹，有助Fed在後續會議降息，但6月維持概率極高",
+      "tickers": [],
+      "url": "https://www.schwab.com/learn/story/stock-market-update-open",
+      "source": "Charles Schwab"
+    },
+    {
+      "alert_id": "alt-foxconn-ai-server-rerating",
+      "level": "info",
+      "text": "【鴻海(2317)基本面強化：SpaceX IPO今日掛牌+Anthropic $450億算力合約→AI伺服器供應鏈直接受惠】Q1 EPS 3.56創同期新高，AI機櫃出貨全年目標翻倍，全球市占40%；分析師目標價315元（現258.5元，折價22%）",
+      "tickers": ["2317"],
+      "url": "https://tw.stock.yahoo.com/news/%E9%B4%BB%E6%B5%B7-%E7%B7%AF%E5%89%B5%E5%90%83%E8%A3%9C%E4%BA%86-spacex%E7%8B%82%E5%90%9E450%E5%84%84%E7%BE%8E%E5%85%83%E5%90%88%E4%BD%9C-%E5%8F%B0%E7%81%A3ai%E4%BC%BA%E6%9C%8D%E5%99%A8%E9%8F%88-%E9%82%84%E6%9C%89%E9%80%99%E5%B9%BE%E6%AA%94-061500836.html",
+      "source": "Yahoo Finance 台灣 / 富聯網"
+    },
+    {
+      "alert_id": "alt-aapl-wwdc-siri-disappointment",
+      "level": "info",
+      "text": "【AAPL WWDC iOS 27 Siri 2.0：AI更新未達預期，但$290支撐守住，分析師上調目標至$350】訊號從空頭調升至中性；等待iPhone 18 AI功能落地為下一個催化劑",
+      "tickers": ["AAPL"],
+      "url": "https://finance.yahoo.com/quote/AAPL/",
+      "source": "Yahoo Finance / CNN Markets"
+    }
+  ],
+  "sector_rotation": {
+    "strong": ["半導體（費半估+6%）", "AI伺服器供應鏈", "能源替代（伊朗停火）", "科技成長股"],
+    "weak": ["石油能源（WTI-4.3%）", "避險資產（黃金/美元/長債）"],
+    "watch": ["TSLA/SpaceX資金輪換", "AAPL AI功能落地", "台股週五換手賣壓"]
+  },
+  "whats_changed": {
+    "compared_to": "股市-開盤前-20260611.md",
+    "compared_to_date": "2026-06-11",
+    "new": [
+      {
+        "type": "alert",
+        "summary": "伊朗-美國核協議宣布達成（Trump取消空襲），WTI暴跌4.3%，地緣風險溢價大幅降低",
+        "alert_id": "alt-iran-trump-deal",
+        "tickers": []
+      },
+      {
+        "type": "alert",
+        "summary": "NVDA股息暴增25倍（$0.01→$0.25）+ Q2 $91B引導，半導體基本面信心大幅提升",
+        "alert_id": "alt-nvda-dividend-windfall",
+        "tickers": ["NVDA", "TSM", "2330"]
+      },
+      {
+        "type": "stock_direction",
+        "summary": "AAPL方向從空頭(bearish)調升至中性(neutral)：$290支撐守住，分析師上調至$350",
+        "ticker": "AAPL",
+        "from": "bearish",
+        "to": "neutral"
+      },
+      {
+        "type": "stock_direction",
+        "summary": "2330台積電從中性(neutral)升至多頭(bullish)：SOX估+6%+SpaceX算力需求確認",
+        "ticker": "2330",
+        "from": "neutral",
+        "to": "bullish"
+      },
+      {
+        "type": "stock_direction",
+        "summary": "2454聯發科從中性(neutral)升至多頭(bullish)：費半大漲帶動，SpaceX終端晶片潛力",
+        "ticker": "2454",
+        "from": "neutral",
+        "to": "bullish"
+      },
+      {
+        "type": "stock_direction",
+        "summary": "2317鴻海從中性(neutral)升至多頭(bullish)：SpaceX IPO當日供應鏈直接受惠，$450億Anthropic算力合約確認",
+        "ticker": "2317",
+        "from": "neutral",
+        "to": "bullish"
+      },
+      {
+        "type": "stock_direction",
+        "summary": "NVDA從中性(neutral)升至多頭(bullish)：股息25倍暴增+Q2 $91B引導三重利好",
+        "ticker": "NVDA",
+        "from": "neutral",
+        "to": "bullish"
+      },
+      {
+        "type": "stock_direction",
+        "summary": "TSM從中性(neutral)升至多頭(bullish)：Nasdaq+2.54%+SOX估+6%+SpaceX供應鏈",
+        "ticker": "TSM",
+        "from": "neutral",
+        "to": "bullish"
+      }
+    ],
+    "strengthened": [
+      {
+        "type": "alert",
+        "summary": "alt-foxconn-ai-server-rerating升級：SpaceX IPO今日掛牌+Anthropic $450億合約具體確認鴻海供應鏈受益，基本面更強",
+        "alert_id": "alt-foxconn-ai-server-rerating",
+        "tickers": ["2317"]
+      },
+      {
+        "type": "alert",
+        "summary": "alt-spacex-ipo-capital-rotation升級為alt-spacex-ipo-day：IPO今日實際掛牌，從預期事件變為即時催化劑，台灣供應鏈題材最旺",
+        "alert_id": "alt-spacex-ipo-day",
+        "tickers": ["2317", "TSLA", "NVDA"]
+      }
+    ],
+    "removed": [
+      {
+        "type": "alert",
+        "summary": "alt-iran-israel-escalation撤除：Trump宣布伊朗核協議達成，取消空襲，停火前景轉佳，WTI暴跌確認風險溢價消散",
+        "alert_id": "alt-iran-israel-escalation",
+        "tickers": []
+      }
+    ]
+  }
+}

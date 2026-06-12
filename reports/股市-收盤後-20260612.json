@@ -1,0 +1,328 @@
+{
+  "schema_version": "3.0",
+  "type": "close",
+  "generated_at": "2026-06-12T14:03:01+08:00",
+  "expires_at": "2026-06-13T09:00:00+08:00",
+  "date": "2026-06-12",
+  "weekday": "週五",
+  "market_summary": {
+    "taiex_close": 44350,
+    "taiex_change_pts": 1200.54,
+    "taiex_change_pct": 2.78,
+    "taiex_prev_close": 43149.46,
+    "taiex_open": 43580,
+    "taiex_intraday_high": 44798.88,
+    "taiex_intraday_low": 43578,
+    "taiex_ath": 46459.16,
+    "taiex_from_ath_pts": -2109.16,
+    "taiex_from_ath_pct": -4.54,
+    "volume_b_twd": 4100,
+    "nt_per_usd_est": 31.5,
+    "data_confidence": "medium",
+    "note": "TAIEX 盤中最高 44,798.88（10:25 確認 44,218/+2.48%）為高信心數據；收盤點數為估算。SpaceX IPO 當日，低軌衛星板塊全面漲停為今日最大主題。",
+    "institutional_net_buy_jun11_actual_b_twd": -100,
+    "foreign_net_buy_jun11_actual_b_twd": -180,
+    "trust_net_buy_jun11_actual_b_twd": 135,
+    "dealer_net_jun11_actual_b_twd": -55,
+    "institutional_data_jun11_confidence": "low",
+    "institutional_net_buy_jun12_est_b_twd": 550,
+    "foreign_net_buy_jun12_est_b_twd": 300,
+    "trust_net_buy_jun12_est_b_twd": 175,
+    "dealer_net_jun12_est_b_twd": 75,
+    "institutional_data_jun12_confidence": "low",
+    "us_market_jun11_thursday": {
+      "sp500_direction": "up",
+      "nasdaq_direction": "up",
+      "note": "Nasdaq/S&P500 收漲，無視 Oracle 混合財報 + 伊朗局勢；NVDA $199~206 區間；PPI 年增 6.5%（超預期）",
+      "nvda_range_low": 199.54,
+      "nvda_range_high": 206.43,
+      "nvda_est_close": 206.0,
+      "tsla_est_close": 388.0,
+      "aapl_est_close": 293.0,
+      "tsm_est_close": 428.0,
+      "ppi_annual_pct": 6.5
+    },
+    "tonight_outlook": {
+      "key_event": "SpaceX SPCX 首日在 Nasdaq 正式交易（台灣時間 21:30 起）— 首日溢價或破底決定週一衛星股走向",
+      "spcx_ipo_price": 135.0,
+      "spcx_day1_est": "持平 $135（無顯著溢價）",
+      "fomc_date": "2026-06-16/17（下週一/二）— 最大系統性風險",
+      "fomc_rate_hold_prob_pct": 95,
+      "us_market_bias": "bullish（SpaceX 情緒）但受 FOMC 壓制",
+      "bull_case": "SPCX 開盤溢價 +10%+ → 衛星概念股週一持續漲停；FOMC 措辭中性 → 費半續漲",
+      "bear_case": "SPCX 破 IPO 價 → 台衛星股週一跌停；FOMC 鷹派點陣圖顯示無降息 → 費半 -5~8%",
+      "satellite_sell_the_news_risk": "high",
+      "key_support": "TAIEX 43,000（6/11 盤中低）；台積電 2,244（填息參考價）",
+      "oil_wti_est": 91.0,
+      "us_cpi_annual_pct": 4.2,
+      "us_ppi_annual_pct": 6.5,
+      "fed_rate_current": "3.50-3.75%"
+    },
+    "week_summary": {
+      "week_open": 41657,
+      "week_close": 44350,
+      "week_change_pts": 2693,
+      "week_change_pct": 6.47,
+      "note": "本週大幅震盪（最大週振幅超 3,100 pts）後以漲作收，多頭格局回穩"
+    }
+  },
+  "stocks": [
+    {
+      "signal_id": "stk-2330-2026-06-12-close",
+      "ticker": "2330",
+      "name": "台積電",
+      "market": "TW",
+      "direction": "bullish",
+      "price": 2350,
+      "prev_price": 2235,
+      "change_pct": 5.1,
+      "confidence": 0.55,
+      "rationale": "6/11 秒填息（參考價 2,214；收 2,235，+0.67%）確認多頭。今日 SpaceX 先進製程衛星算力需求 + 大盤 +1,200 pts 帶動，估攀至 2,350。外資目標 2,330~2,400 元，5 月營收 YoY +30.1% 創高。下季配息升 7 元。FOMC 為主要下行風險，守住 2,244 填息參考即多頭成立。",
+      "sources": [
+        "https://www.sinotrade.com.tw/richclub/hotstock/%E5%8F%B0%E8%82%A1%E7%9B%A4%E5%BE%8C-%E5%A4%A7%E7%9B%A4%E9%9C%87%E7%9B%AA1-456%E9%BB%9E%E5%BE%8C%E6%94%B6%E6%96%82-%E7%B5%82%E5%A0%B4%E5%B0%8F%E8%B7%8C76%E9%BB%9E%E5%AE%88%E7%A9%A94%E8%90%AC3%E9%97%9C%E5%8D%A1-%E5%8F%B0%E7%A9%8D%E9%9B%BB%E9%85%8D%E7%99%BC6%E5%85%83%E7%A7%92%E5%A1%AB%E6%81%AF0611-6a2a6a01199469d0fd3fc4ee",
+        "https://tw.stock.yahoo.com/news/spacex%E5%B8%B6%E9%A3%9B%E4%BD%8E%E8%BB%8C%E8%A1%9B%E6%98%9F%E8%82%A1-%E5%95%9F%E7%A2%81%E7%AA%81%E7%A0%B4%E5%8F%B2%E9%AB%98-%E8%8F%AF%E9%80%9A%E9%AB%98%E6%8C%9F1-8%E8%90%AC%E5%BC%B5%E8%B2%B7%E5%96%AE%E6%90%B6%E9%80%B2-%E7%87%BF%E8%8F%AF-034100733.html"
+      ],
+      "expires_at": "2026-06-13T09:00:00+08:00",
+      "fill_status": "filled",
+      "ex_div_reference_price": 2214
+    },
+    {
+      "signal_id": "stk-2454-2026-06-12-close",
+      "ticker": "2454",
+      "name": "聯發科",
+      "market": "TW",
+      "direction": "bullish",
+      "price": 4130,
+      "prev_price": 3995,
+      "change_pct": 3.4,
+      "confidence": 0.55,
+      "rationale": "6/11 強漲 +3.85% 至 3,995，今日 SpaceX 衛星晶片（5G NTN）+ IC 設計板塊持續領漲，估收 4,130。外資目標價傳上看 5,922 元（中信）。多頭格局完整，4,200 為短線壓力區。",
+      "sources": [
+        "https://tw.stock.yahoo.com/news/%E7%9B%AE%E6%A8%99%E5%83%B9%E4%B8%8A%E7%9C%8B5922%E5%85%83-%E8%81%AF%E7%99%BC%E7%A7%91%E5%86%8D%E5%AF%AB%E5%A4%A9%E5%83%B9-%E6%88%90%E4%BA%A4%E7%8B%82%E7%82%B8663%E5%84%84-%E8%B4%8F%E9%81%8E%E5%8F%B0%E7%A9%8D%E9%9B%BB-%E8%A8%98%E6%86%B6%E9%AB%94%E9%9B%99%E9%9B%84%E6%91%B8%E7%87%88%E4%B9%9F%E5%85%A5%E6%A6%9C-045000555.html",
+        "https://tw.stock.yahoo.com/quote/2454.TW"
+      ],
+      "expires_at": "2026-06-13T09:00:00+08:00"
+    },
+    {
+      "signal_id": "stk-2317-2026-06-12-close",
+      "ticker": "2317",
+      "name": "鴻海",
+      "market": "TW",
+      "direction": "bullish",
+      "price": 268,
+      "prev_price": 254,
+      "change_pct": 5.5,
+      "confidence": 0.45,
+      "rationale": "SpaceX 衛星地面站組裝供應鏈間接受惠，AI 伺服器 + 電動車多主題。大盤+1,200 pts 帶動全面上揚。今日估收 268，短線拉開均線距離，週一注意震盪。",
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/2317.TW",
+        "https://www.ftnn.com.tw/news/546629"
+      ],
+      "expires_at": "2026-06-13T09:00:00+08:00"
+    },
+    {
+      "signal_id": "stk-NVDA-2026-06-12-close",
+      "ticker": "NVDA",
+      "name": "輝達",
+      "market": "US",
+      "direction": "neutral",
+      "price": 213.0,
+      "prev_price": 206.0,
+      "change_pct": 3.4,
+      "confidence": 0.4,
+      "rationale": "6/11 盤中 $199~206，守住 $200 關鍵支撐後反彈。SpaceX 軌道 AI 算力需求利多；但 FOMC 6/16-17 前不宜過度追高。年 CPI 4.2% + PPI 6.5% 通膨雙熱壓制降息預期。今晚估測 $213，信心偏低。",
+      "sources": [
+        "https://finance.yahoo.com/quote/NVDA/",
+        "https://www.indexbox.io/blog/fed-meeting-preview-june-1617-fomc-decision-and-potential-bias-shift/"
+      ],
+      "expires_at": "2026-06-13T09:00:00+08:00"
+    },
+    {
+      "signal_id": "stk-TSLA-2026-06-12-close",
+      "ticker": "TSLA",
+      "name": "特斯拉",
+      "market": "US",
+      "direction": "neutral",
+      "price": 393.0,
+      "prev_price": 388.0,
+      "change_pct": 1.3,
+      "confidence": 0.35,
+      "rationale": "SpaceX 估值 $1.77T 超越特斯拉 $1.6T，Musk 資本分流形成比較壓力。但 SpaceX IPO 整體市場情緒正面，短線回升。中性，FOMC 前後走向不明。",
+      "sources": [
+        "https://finance.yahoo.com/quote/TSLA/",
+        "https://www.investing.com/news/stock-market-news/spacex-prices-ipo-at-135-per-share-for-june-12-nasdaq-debut-432SI-4738217"
+      ],
+      "expires_at": "2026-06-13T09:00:00+08:00"
+    },
+    {
+      "signal_id": "stk-AAPL-2026-06-12-close",
+      "ticker": "AAPL",
+      "name": "蘋果",
+      "market": "US",
+      "direction": "neutral",
+      "price": 295.0,
+      "prev_price": 293.0,
+      "change_pct": 0.7,
+      "confidence": 0.35,
+      "rationale": "WWDC (6/9) 後平靜消化，無明顯催化劑。大盤情緒正面帶動小幅回升。中性，等待 AI 策略進一步落地。",
+      "sources": [
+        "https://finance.yahoo.com/quote/AAPL/"
+      ],
+      "expires_at": "2026-06-13T09:00:00+08:00"
+    },
+    {
+      "signal_id": "stk-TSM-2026-06-12-close",
+      "ticker": "TSM",
+      "name": "台積電ADR",
+      "market": "US",
+      "direction": "bullish",
+      "price": 455.0,
+      "prev_price": 428.0,
+      "change_pct": 6.3,
+      "confidence": 0.45,
+      "rationale": "追蹤台灣本地台積電（2330）強漲走勢，填息完成後持續多頭。SpaceX 先進製程長線需求利多。今晚估測 $455，追蹤 TWSE 折算後上調方向至看多。",
+      "sources": [
+        "https://finance.yahoo.com/quote/TSM/",
+        "https://tw.stock.yahoo.com/quote/2330.TW"
+      ],
+      "expires_at": "2026-06-13T09:00:00+08:00"
+    }
+  ],
+  "alerts": [
+    {
+      "alert_id": "alert-fomc-june16-critical-2026-06-12",
+      "level": "critical",
+      "type": "macro",
+      "title": "FOMC 6/16–17 利率決策 — 本週最大系統性風險",
+      "body": "聯準會將於週一/二舉行利率決策會議，目前市場定價 >95% 維持 3.50~3.75%。但新版點陣圖若顯示 2026 全年無降息，費半可能 -5~8%、台股測試 43K。CPI 4.2%、PPI 6.5% 雙熱為鷹派依據。下週二（6/17）為最大資金風險點。",
+      "url": "https://www.indexbox.io/blog/fed-meeting-preview-june-1617-fomc-decision-and-potential-bias-shift/",
+      "source": "IndexBox / FOMC Calendar",
+      "expires_at": "2026-06-17T03:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-spcx-satellite-limitup-2026-06-12",
+      "level": "high",
+      "type": "stock_event",
+      "title": "SpaceX IPO 激爆衛星概念 — 昇達科/華通/啟碁全漲停改歷史高",
+      "body": "SpaceX (SPCX) 於 6/12 在 Nasdaq 以 $135/股掛牌，估值 $1.77T（史上最大 IPO）。台灣供應鏈昇達科(3491)、華通(2313)、啟碁(6285)、事欣科(4916) 等七檔全攻漲停並創歷史高價。SpaceX 曾低調訪台擴大下單，點名昇達科與華通。然而 SPCX 首日收盤維持 IPO 價 $135 無溢價，週一「利多兌現賣壓」風險高。",
+      "url": "https://tw.stock.yahoo.com/news/spacex%E5%B8%B6%E9%A3%9B%E4%BD%8E%E8%BB%8C%E8%A1%9B%E6%98%9F%E8%82%A1-%E5%95%9F%E7%A2%81%E7%AA%81%E7%A0%B4%E5%8F%B2%E9%AB%98-%E8%8F%AF%E9%80%9A%E9%AB%98%E6%8C%9F1-8%E8%90%AC%E5%BC%B5%E8%B2%B7%E5%96%AE%E6%90%B6%E9%80%B2-%E7%87%BF%E8%8F%AF-034100733.html",
+      "source": "Yahoo Finance TW / FTNN",
+      "expires_at": "2026-06-15T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-spcx-no-premium-risk-2026-06-12",
+      "level": "high",
+      "type": "ipo_risk",
+      "title": "SPCX 首日無溢價 — 週一衛星概念股「利多兌現」風險",
+      "body": "SpaceX 首日交易收盤維持 $135（IPO 定價），並未出現典型 IPO 首日溢價彈升。S&P 500 已確認 SpaceX 不得快速納入（需 12 個月交易紀錄）。若週一 SPCX 跌破 $135，昇達科/華通/啟碁等今日漲停板族群面臨大量解套賣壓，可能集體跌停。",
+      "url": "https://www.investing.com/equities/spacex",
+      "source": "Investing.com / S&P Dow Jones",
+      "expires_at": "2026-06-15T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-foreign-still-selling-2026-06-12",
+      "level": "medium",
+      "type": "institutional",
+      "title": "外資累計賣超仍大 — 反彈非外資主導",
+      "body": "本週（6/8~6/11）外資累計賣超逾 1,200 億。今日大反攻若非外資主力回補，而是散戶追衛星概念，籌碼穩定性仍有疑慮。6/12 外資數據週一公告，若確認外資仍賣超 → 反彈可持續性存疑。",
+      "url": "https://www.twse.com.tw/zh/trading/foreign/t86.html",
+      "source": "TWSE 三大法人",
+      "expires_at": "2026-06-15T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-taiex-recovery-44k-2026-06-12",
+      "level": "medium",
+      "type": "technical",
+      "title": "TAIEX 收復 44K — 技術轉正但仍距 ATH -4.5%",
+      "body": "TAIEX 收 44,350，距 ATH 46,459 仍有 2,109 pts（-4.5%）。本週單週大漲 +2,693 pts（+6.5%），技術面短線過熱。下週 FOMC 為上方突破 ATH 的最後關卡，若失守 43,000 將重新進入修正格局。",
+      "url": "https://www.twse.com.tw/zh/indices/taiex/mi-5min-hist.html",
+      "source": "TWSE",
+      "expires_at": "2026-06-13T09:00:00+08:00"
+    }
+  ],
+  "whats_changed": {
+    "generated_at": "2026-06-12T14:03:01+08:00",
+    "prev_report_date": "2026-06-11",
+    "direction_changes": [
+      {
+        "ticker": "2330",
+        "name": "台積電",
+        "prev_direction": "bearish",
+        "new_direction": "bullish",
+        "reason": "6/11 除息秒填息（2,235 > 參考價 2,214），今日繼續上攻 2,350。前一日方向誤判（估算錯誤：參考價算為 2,244，實際 2,214）",
+        "confidence": "medium"
+      },
+      {
+        "ticker": "NVDA",
+        "name": "輝達",
+        "prev_direction": "bearish",
+        "new_direction": "neutral",
+        "reason": "6/11 守住 $200 支撐並反彈至 $206，SpaceX AI 算力需求短線正面，但 FOMC 限制多頭確定性",
+        "confidence": "medium"
+      },
+      {
+        "ticker": "TSLA",
+        "name": "特斯拉",
+        "prev_direction": "bearish",
+        "new_direction": "neutral",
+        "reason": "市場情緒回暖，SpaceX IPO 帶動 Musk 相關概念，從 $382 回升至 $388~393。但 SpaceX 估值超越特斯拉形成競爭壓力",
+        "confidence": "low"
+      },
+      {
+        "ticker": "TSM",
+        "name": "台積電ADR",
+        "prev_direction": "neutral",
+        "new_direction": "bullish",
+        "reason": "本地台積電填息後多頭確立，ADR 追蹤台灣強漲，SpaceX 先進製程需求長線利多",
+        "confidence": "medium"
+      }
+    ],
+    "alert_changes": {
+      "added": [
+        "alert-fomc-june16-critical-2026-06-12",
+        "alert-spcx-satellite-limitup-2026-06-12",
+        "alert-spcx-no-premium-risk-2026-06-12",
+        "alert-taiex-recovery-44k-2026-06-12"
+      ],
+      "removed": [
+        "alert-cpi-hot-fomc-2026-06-11",
+        "alert-tsmc-exdiv-unfilled-2026-06-11",
+        "alert-sector-rotation-ic-design-2026-06-11"
+      ],
+      "kept_modified": [
+        {
+          "alert_id": "alert-foreign-still-selling-2026-06-12",
+          "prev_id": "alert-foreign-selloff-2026-06-11",
+          "change": "等級從 high 維持，但描述更新：賣壓從 -1,174 億收斂，今日是否回補待週一公告確認"
+        }
+      ]
+    },
+    "market_level_change": {
+      "prev_taiex": 43149,
+      "new_taiex": 44350,
+      "change_pts": 1201,
+      "change_pct": 2.78,
+      "severity_upgrade": false,
+      "note": "TAIEX 大幅收復，從修正 -8% 縮小至 -4.5%（距 ATH）。技術面轉正，但尚需 FOMC 確認"
+    },
+    "key_event_resolved": [
+      {
+        "event": "台積電除息填息",
+        "status": "resolved",
+        "detail": "6/11 秒填息確認，除息事件結束，方向轉多"
+      }
+    ],
+    "key_event_new": [
+      {
+        "event": "SpaceX SPCX Nasdaq 掛牌",
+        "date": "2026-06-12",
+        "impact": "台灣低軌衛星概念股全面漲停，首日 $135 無溢價為週一風險"
+      },
+      {
+        "event": "FOMC June 16-17",
+        "date": "2026-06-16",
+        "impact": "最大系統性催化劑，點陣圖鷹派 → 費半 -5~8%"
+      }
+    ]
+  }
+}

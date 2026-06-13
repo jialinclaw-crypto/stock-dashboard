@@ -1,0 +1,413 @@
+{
+  "_schema_version": 3,
+  "type": "weekly",
+  "report_file": "股市-週報-20260613.md",
+  "date": "2026-06-13",
+  "weekday": "週六",
+  "generated_at": "2026-06-13T09:03:43+08:00",
+  "expires_at": "2026-06-20T09:00:00+08:00",
+  "market_view": {
+    "tw": "neutral_bearish",
+    "us": "neutral",
+    "summary": "台股週跌-2%，距ATH 46,459仍-4.9%；外資連6日賣超累計逾3,000億；FOMC 6/16-17為最大尾部風險。US大盤週漲（S&P+1.75%/SOX+15.1%），但高通膨(CPI4.2%/PPI6.5%)制約Fed降息空間。伊朗核協議提供油價緩解，但尚未落地。整體多頭格局未破壞（200MA支撐完整），但短線波動依然高企。"
+  },
+  "indices": [
+    {
+      "name": "台股加權指數",
+      "ticker": "^TWII",
+      "close": 44169.04,
+      "prev_close": 45070.0,
+      "week_change": -900.96,
+      "week_change_pct": -2.0,
+      "week_high": 44704.44,
+      "week_low": 43149.46,
+      "volume_week_bn_twd_est": 29400.0,
+      "note": "本週極端震盪：6/8史上第三大跌點-1568pts/-3.48%→6/9費半反彈+2.76%→6/10 CPI熱-3.31%→6/11台積電除息秒填-0.18%→6/12 SpaceX IPO+2.36%。週收44,169（-901/-2.0%）；外資累計賣超3,000億+。20MA≈43,800，60MA≈41,500，200MA≈39,800；週RSI≈52（從ATH週73回落後反彈）",
+      "signal_id": "stk-TWII-2026-06-13-weekly",
+      "direction": "neutral_bearish",
+      "confidence": 0.55,
+      "rationale": "週跌-2.0%確認多頭整固格局；外資連續大賣後週五開始回補（衛星+台積）；ATH46,459下方-4.9%但200MA完整支撐；FOMC為下週最大變數。若FOMC鴿派，45,000回測；若鷹派，43,000測試。",
+      "sources": [
+        "https://vocus.cc/article/6a2b4d30fd89780001627dd6",
+        "https://www.twse.com.tw/zh/indices/taiex/mi-5min-hist.html"
+      ],
+      "expires_at": "2026-06-20T09:00:00+08:00"
+    },
+    {
+      "name": "美股S&P 500",
+      "ticker": "^GSPC",
+      "close": 7513.0,
+      "prev_close": 7383.74,
+      "week_change": 129.26,
+      "week_change_pct": 1.75,
+      "week_high": 7556.0,
+      "week_low": 7310.0,
+      "note": "週漲+1.75%；Iran peace deal+SpaceX情緒雙驅動；CPI熱初期壓制但後期消化；FOMC維持定價65%hold；週收7513已收復上週部分失地",
+      "signal_id": "stk-GSPC-2026-06-13-weekly",
+      "direction": "neutral",
+      "confidence": 0.55,
+      "rationale": "週漲抵消部分上週-2.29%跌幅；伊朗和平預期為正催化；但CPI4.2%+PPI6.5%制約Fed；FOMC前維持中性",
+      "sources": [
+        "https://www.schwab.com/learn/story/stock-market-update-open",
+        "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-june-11-2026"
+      ],
+      "expires_at": "2026-06-20T09:00:00+08:00"
+    },
+    {
+      "name": "那斯達克綜合",
+      "ticker": "^COMP",
+      "close": 26362.0,
+      "prev_close": 25709.43,
+      "week_change": 652.57,
+      "week_change_pct": 2.54,
+      "week_high": 26450.0,
+      "week_low": 25312.0,
+      "note": "週漲+2.54%；SpaceX IPO觸媒+Iran deal+週四Nasdaq+2.54%（Dow+1.86%）；週五SpaceX SPCX+19.2%帶動科技情緒全面回暖",
+      "signal_id": "stk-COMP-2026-06-13-weekly",
+      "direction": "neutral",
+      "confidence": 0.58,
+      "rationale": "收復上週-4.03%跌幅超過半數；SpaceX情緒觸媒效果顯著；但高通膨+FOMC未定，維持中性",
+      "sources": [
+        "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-june-11-2026"
+      ],
+      "expires_at": "2026-06-20T09:00:00+08:00"
+    },
+    {
+      "name": "道瓊工業平均",
+      "ticker": "^DJI",
+      "close": 51786.0,
+      "prev_close": 50840.0,
+      "week_change": 946.0,
+      "week_change_pct": 1.86,
+      "week_high": 51850.0,
+      "week_low": 50420.0,
+      "note": "週漲+1.86%；Iran deal=能源/工業/金融輪動；Dow連續第二週跑贏科技指數",
+      "signal_id": "stk-DJI-2026-06-13-weekly",
+      "direction": "bullish",
+      "confidence": 0.62,
+      "rationale": "輪動邏輯持續；價值股受益NFP強勁（企業盈利健康）；Iran peace=能源成本降，工業利潤空間擴大",
+      "sources": [
+        "https://finance.yahoo.com/markets/live/stock-market-today-thursday-june-11-dow-sp-500-nasdaq-222511784.html"
+      ],
+      "expires_at": "2026-06-20T09:00:00+08:00"
+    },
+    {
+      "name": "費城半導體SOX",
+      "ticker": "^SOX",
+      "close": 13333.0,
+      "prev_close": 11580.0,
+      "week_change": 1753.0,
+      "week_change_pct": 15.1,
+      "week_high": 13420.0,
+      "week_low": 11250.0,
+      "note": "週漲+15.1%為本週最大亮點！Marvell+9%、Lam Research+12.7%、AMD+8%、Intel+10%；6/9（美週一）SOX+5.6%引爆台灣6/9反彈；週五SpaceX算力需求再拉一棒",
+      "signal_id": "stk-SOX-2026-06-13-weekly",
+      "direction": "neutral_bullish",
+      "confidence": 0.62,
+      "rationale": "週漲+15.1%收復上週-9.74%，技術上大型W底雛形；SOX 13,333已超越前週12,829高點；FOMC若不意外，半導體去槓桿已接近尾聲。但FOMC鷹派風險仍在。",
+      "sources": [
+        "https://www.barchart.com/stocks/quotes/$SOX/performance"
+      ],
+      "expires_at": "2026-06-20T09:00:00+08:00"
+    }
+  ],
+  "macro": {
+    "us_10y_yield": 4.55,
+    "us_30y_yield": 4.95,
+    "us_2y_yield": 4.18,
+    "vix": 18.0,
+    "dxy": 99.3,
+    "wti_crude": 86.0,
+    "nfp_may": 172000,
+    "cpi_may_yoy": 4.2,
+    "ppi_yoy": 6.5,
+    "fed_rate_current": "3.50-3.75%",
+    "fomc_hold_prob": 0.65,
+    "fomc_cut_prob": 0.35,
+    "note": "CPI5月YoY4.2%（創2023-04以來高點）；PPI6.5%雙熱；Iran核協議6/11-12初步宣布→WTI從~$93降至~$86；VIX從上週23降至~18（恐慌緩解）；DXY 99.3（避險需求降）；FOMC 6/16-17為最大催化：65%維持3.50-3.75%，35%降息（Iran和平降通膨預期）；Fed主席Warsh（上任2026-05-15）首次重大決策；6/19 Juneteenth美股休市"
+  },
+  "stocks": [
+    {
+      "ticker": "2330",
+      "name": "台積電",
+      "market": "TW",
+      "signal_id": "stk-2330-2026-06-13-weekly",
+      "price": 2310.0,
+      "price_prev_week": 2400.0,
+      "week_change_pct": -3.75,
+      "week_change_pct_incl_div": -3.5,
+      "dividend_this_week": 6.0,
+      "ma20": 2280.0,
+      "ma60": 2080.0,
+      "ma200": 1880.0,
+      "week_rsi": 55.0,
+      "direction": "neutral_bullish",
+      "confidence": 0.62,
+      "rationale": "除息秒填（6/11；6元→參考2,244，收2,250）確認機構性支撐；SpaceX N2/N3先進製程衛星算力需求（+）；5月合併營收4,170億YoY+30%創歷史新高（+）；外資累計賣超3,000億+仍為壓力（-）；FOMC前高本益比估值面臨壓縮風險（-）。中線外資目標2,330~3,030元（CLSA最高）未改。上週bullish→本週neutral_bullish（微降）",
+      "sources": [
+        "https://www.sinotrade.com.tw/richclub/hotstock/台積電秒填息0611盤後",
+        "https://tw.stock.yahoo.com/news/spacex帶飛低軌衛星股"
+      ],
+      "support": [2244.0, 2200.0],
+      "resistance": [2400.0, 2440.0],
+      "expires_at": "2026-06-20T09:00:00+08:00"
+    },
+    {
+      "ticker": "2454",
+      "name": "聯發科",
+      "market": "TW",
+      "signal_id": "stk-2454-2026-06-13-weekly",
+      "price": 4180.0,
+      "price_prev_week": 4430.0,
+      "week_change_pct": -5.6,
+      "ma20": 4200.0,
+      "ma60": 3900.0,
+      "ma200": 3350.0,
+      "week_rsi": 50.0,
+      "direction": "bullish",
+      "confidence": 0.62,
+      "rationale": "AI ASIC年營收目標$20億USD（前$10億）翻倍成長邏輯不變（+）；外資目標5,922元（中信）大幅上調（+）；SpaceX 5G NTN衛星模組新應用場景（+）；台積電前研發副總加盟強化護城河（+）；週跌-5.6%主因外資整體去槓桿（-）；週RSI≈50技術中性；4,000整數/60MA為關鍵支撐。維持bullish但信心略降（前0.65→0.62）",
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/2454.TW/technical-analysis",
+        "https://www.sinotrade.com.tw/richclub/hotstock/聯發科AI-ASIC"
+      ],
+      "support": [4000.0, 3900.0],
+      "resistance": [4400.0, 4600.0],
+      "expires_at": "2026-06-20T09:00:00+08:00"
+    },
+    {
+      "ticker": "2317",
+      "name": "鴻海",
+      "market": "TW",
+      "signal_id": "stk-2317-2026-06-13-weekly",
+      "price": 268.0,
+      "price_prev_week": 283.0,
+      "week_change_pct": -5.3,
+      "ma20": 265.0,
+      "ma60": 248.0,
+      "ma200": 225.0,
+      "week_rsi": 52.0,
+      "direction": "neutral_bullish",
+      "confidence": 0.58,
+      "rationale": "SpaceX衛星地面站組裝間接受惠（週五+5.5%反彈）（+）；AI伺服器/GB200 Blackwell組裝需求強勁（+）；週跌-5.3%主因6/8大盤崩跌（-）；20MA≈265為短線支撐，收盤268高於20MA（+）。維持neutral_bullish，信心略降（前0.60→0.58）",
+      "sources": [
+        "https://tw.stock.yahoo.com/news/spacex帶飛低軌衛星股-啟碁突破史高"
+      ],
+      "support": [260.0, 255.0],
+      "resistance": [280.0, 290.0],
+      "expires_at": "2026-06-20T09:00:00+08:00"
+    },
+    {
+      "ticker": "NVDA",
+      "name": "輝達",
+      "market": "US",
+      "signal_id": "stk-NVDA-2026-06-13-weekly",
+      "price": 205.16,
+      "price_prev_week": 213.5,
+      "week_change_pct": -3.9,
+      "ma20": 207.0,
+      "ma60": 188.0,
+      "ma200": 168.0,
+      "week_rsi": 52.0,
+      "direction": "neutral",
+      "confidence": 0.54,
+      "rationale": "$200關口守住（週中盤中低$199）並反彈至$205（+）；SOX本週+15.1%為強力正面訊號（+）；SpaceX算力/軌道計算Blackwell應用場景（+）；週收$205低於20MA $207，未完全確認反轉（-）；FOMC鷹派風險若實現→$195測試（-）。前neutral維持（信心0.52→0.54微升）",
+      "sources": [
+        "https://finance.yahoo.com/quote/NVDA/history/",
+        "https://www.cnbc.com/2026/06/12/spacex-ipo-spcx-live-updates.html"
+      ],
+      "support": [200.0, 195.0],
+      "resistance": [210.0, 218.0],
+      "expires_at": "2026-06-20T09:00:00+08:00"
+    },
+    {
+      "ticker": "TSLA",
+      "name": "特斯拉",
+      "market": "US",
+      "signal_id": "stk-TSLA-2026-06-13-weekly",
+      "price": 400.77,
+      "price_prev_week": 416.94,
+      "week_change_pct": -3.9,
+      "ma20": 403.0,
+      "ma60": 370.0,
+      "ma200": 335.0,
+      "week_rsi": 48.0,
+      "direction": "neutral",
+      "confidence": 0.43,
+      "rationale": "SpaceX估值$1.77兆>特斯拉$1.6兆，形成比較壓力（-）；週收$400.77跌破20MA $403（-）；Iran和平=Tesla新市場潛力（+，遠期）；缺乏短線明確催化劑；信心輕微下調（前0.45→0.43）",
+      "sources": [
+        "https://finance.yahoo.com/quote/TSLA/history/",
+        "https://finance.yahoo.com/markets/stocks/article/spacex-stock-jumps-nearly-20-following-largest-ipo-ever-101955001.html"
+      ],
+      "support": [390.0, 370.0],
+      "resistance": [415.0, 430.0],
+      "expires_at": "2026-06-20T09:00:00+08:00"
+    },
+    {
+      "ticker": "AAPL",
+      "name": "蘋果",
+      "market": "US",
+      "signal_id": "stk-AAPL-2026-06-13-weekly",
+      "price": 296.52,
+      "price_prev_week": 311.52,
+      "week_change_pct": -4.8,
+      "ma20": 302.0,
+      "ma60": 279.0,
+      "ma200": 247.0,
+      "week_rsi": 46.0,
+      "direction": "neutral",
+      "confidence": 0.48,
+      "rationale": "WWDC 2026（6/9）Siri 2.0+iOS 27市場冷淡反應（sell-the-news）（-）；週跌-4.8%為portfolio最大跌幅（-）；週收$296.52跌破20MA $302（-）；週RSI≈46偏弱（-）；$290整數/60MA $279為關鍵支撐（+）。上週neutral_bullish→本週降為neutral；信心0.62→0.48",
+      "sources": [
+        "https://finance.yahoo.com/quote/AAPL/history/",
+        "https://stockanalysis.com/stocks/aapl/history/"
+      ],
+      "support": [290.0, 279.0],
+      "resistance": [302.0, 312.0],
+      "expires_at": "2026-06-20T09:00:00+08:00"
+    },
+    {
+      "ticker": "TSM",
+      "name": "台積電ADR",
+      "market": "US",
+      "signal_id": "stk-TSM-2026-06-13-weekly",
+      "price": 421.07,
+      "price_prev_week": 436.69,
+      "week_change_pct": -3.6,
+      "ma20": 428.0,
+      "ma60": 393.0,
+      "ma200": 354.0,
+      "week_rsi": 54.0,
+      "direction": "neutral_bullish",
+      "confidence": 0.60,
+      "rationale": "追蹤台積電本地股動向（除息秒填+SpaceX需求）（+）；中線基本面未改（N2/N3擴產、CoWoS超級周期）（+）；週收$421低於20MA $428（-）；FOMC前維持謹慎（-）。維持neutral_bullish，信心維持0.60",
+      "sources": [
+        "https://stockanalysis.com/stocks/tsm/history/",
+        "https://www.investing.com/equities/taiwan-semicond.manufacturing-co"
+      ],
+      "support": [412.0, 393.0],
+      "resistance": [440.0, 455.0],
+      "expires_at": "2026-06-20T09:00:00+08:00"
+    }
+  ],
+  "alerts": [
+    {
+      "alert_id": "alert-FOMC-June16-17-2026",
+      "title": "FOMC 6/16–17 利率決策：新主席 Warsh 首次重大決策（台北 6/18 02:00）",
+      "level": "critical",
+      "url": "https://www.federalreserve.gov/newsevents/2026-june.htm",
+      "source": "Federal Reserve",
+      "rationale": "市場定價65%維持/35%降息；CPI4.2%+PPI6.5%雙熱但Iran和平協議打開鴿派窗口；鷹派點陣圖→台股週四測試43,000；鴿派→45,000回測。為下週最大風險事件。",
+      "direction": "bearish_risk",
+      "expires_at": "2026-06-18T04:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-SPCX-IPO-satellite-follow-through-20260613",
+      "title": "SpaceX SPCX 首日+19.2%（收$160.95）：台灣衛星供應鏈下週延續 vs. 利多兌現",
+      "level": "warning",
+      "url": "https://www.cnbc.com/2026/06/12/spacex-ipo-spcx-live-updates.html",
+      "source": "CNBC",
+      "rationale": "SPCX收$160.95（+19.2%），優於早盤傳無溢價預期。台灣衛星供應鏈（華通/昇達科/啟碁）7檔漲停。下週一SPCX是否維持$155+為台灣衛星股方向關鍵。若滑落$145→利多兌現賣壓。",
+      "direction": "bullish_risk",
+      "expires_at": "2026-06-17T16:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-CPI-May-4pct-confirmed-20260610",
+      "title": "美 5 月 CPI YoY 4.2% 確認高溫——Fed 降息空間受限",
+      "level": "warning",
+      "url": "https://www.bls.gov/cpi/",
+      "source": "BLS / 美勞工統計局",
+      "rationale": "CPI4.2%（創2023-04以來最高）+PPI6.5%雙熱，制約Fed降息空間；Iran和平若油價跌至$75-80可部分抵消；但通膨頑固性（Core CPI服務業）仍高；持續關注月度數據。",
+      "direction": "bearish",
+      "expires_at": "2026-06-20T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-TAIEX-distance-ATH-20260613",
+      "title": "台股距 ATH 46,459 仍有 -4.9%（2,290 pts）；外資連6日賣超",
+      "level": "warning",
+      "url": "https://www.twse.com.tw/zh/indices/taiex/mi-5min-hist.html",
+      "source": "TWSE",
+      "rationale": "本週週跌-2.0%，外資自6/5起累計賣超估超3,000億（歷史第三快速度）。投信強力護盤+400~500億但規模不及外資。FOMC後外資是否回流為ATH挑戰關鍵。",
+      "direction": "neutral",
+      "expires_at": "2026-06-20T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-NVDA-200-support-confirmed-20260613",
+      "title": "NVDA $200 關口守住（週中低$199）——但仍在20MA下方",
+      "level": "info",
+      "url": "https://finance.yahoo.com/quote/NVDA/",
+      "source": "Yahoo Finance",
+      "rationale": "NVDA週收$205.16，守住$200技術關鍵支撐；SOX本週+15.1%確認費半去槓桿接近尾聲。但$207（20MA）需突破才能轉攻；FOMC鷹派→$195測試。",
+      "direction": "neutral_bullish",
+      "expires_at": "2026-06-20T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-Iran-deal-oil-disinflation-20260611",
+      "title": "Trump 伊朗核協議初步達成：WTI 從 $93 跌至 ~$86",
+      "level": "info",
+      "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-june-11-dow-sp-500-nasdaq-222511784.html",
+      "source": "Yahoo Finance",
+      "rationale": "伊朗石油重返市場可壓低能源通膨，有助Fed降息視窗。但協議細節未落地，地緣風險仍在。若油價跌至$78-80，CPI可望在2-3個月後顯著降溫。",
+      "direction": "bullish",
+      "expires_at": "2026-06-20T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-US-Juneteenth-holiday-20260619",
+      "title": "6/19 美股 Juneteenth 休市——週後段流動性降低",
+      "level": "info",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "source": "Federal Reserve",
+      "rationale": "FOMC決策後隔一天美股休市（6/19），FOMC反應時間只有6/18一個交易日。台股6/19正常交易，需注意流動性不對稱。",
+      "direction": "neutral",
+      "expires_at": "2026-06-19T23:59:00+08:00"
+    }
+  ],
+  "whats_changed": {
+    "generated_at": "2026-06-13T09:03:43+08:00",
+    "prev_report": "股市-週報-20260606.json",
+    "prev_date": "2026-06-06",
+    "stock_direction_changes": [
+      {
+        "ticker": "2330",
+        "prev_direction": "bullish",
+        "curr_direction": "neutral_bullish",
+        "change_type": "downgrade",
+        "reason": "外資連續大賣超3,000億+（週跌-3.75%）；FOMC前估值壓縮風險；雖除息秒填為正訊號但未能完全抵消。中線邏輯（CoWoS/N2/SpaceX需求）完整，謹慎下調。"
+      },
+      {
+        "ticker": "AAPL",
+        "prev_direction": "neutral_bullish",
+        "curr_direction": "neutral",
+        "change_type": "downgrade",
+        "reason": "WWDC 2026（6/9）市場冷淡（sell-the-news）；週跌-4.8%為portfolio最大；週收跌破20MA $302；無明確短線催化劑。"
+      }
+    ],
+    "stock_confidence_changes": [
+      { "ticker": "2454", "prev": 0.65, "curr": 0.62, "note": "信心微降；AI ASIC邏輯不變但週跌-5.6%" },
+      { "ticker": "2317", "prev": 0.60, "curr": 0.58, "note": "信心微降；SpaceX週五反彈(+)但整體週跌-5.3%(-)" },
+      { "ticker": "NVDA", "prev": 0.52, "curr": 0.54, "note": "信心微升；SOX+15.1%+$200守住；FOMC仍是主要風險" },
+      { "ticker": "TSLA", "prev": 0.45, "curr": 0.43, "note": "信心微降；SpaceX估值超越特斯拉比較壓力增加" },
+      { "ticker": "AAPL", "prev": 0.62, "curr": 0.48, "note": "信心大幅下調；WWDC冷場+技術破位" }
+    ],
+    "new_alerts": [
+      "alert-FOMC-June16-17-2026",
+      "alert-SPCX-IPO-satellite-follow-through-20260613",
+      "alert-Iran-deal-oil-disinflation-20260611",
+      "alert-US-Juneteenth-holiday-20260619"
+    ],
+    "resolved_alerts": [
+      "alert-AVGO-AI-guidance-miss-20260604",
+      "alert-NFP-172K-hot-20260605",
+      "alert-AAPL-WWDC-20260608",
+      "alert-SpaceX-IPO-20260612",
+      "alert-TAIEX-new-ATH-46459-20260603"
+    ],
+    "macro_changes": {
+      "vix": { "prev": 23.0, "curr": 18.0, "note": "恐慌顯著緩解（Iran deal+SpaceX情緒）" },
+      "wti_crude_est": { "prev_est": 93.0, "curr_est": 86.0, "note": "Iran和平協議壓低油價" },
+      "dxy": { "prev": 100.6, "curr": 99.3, "note": "避險需求降，美元微貶" },
+      "key_new_risk": "FOMC 6/16-17 + 新主席Warsh首次決策（取代上週NFP/CPI為最大風險）"
+    },
+    "summary": "本週最大變化：(1)台股外資連6日賣超3,000億+（歷史級別）但週五開始回補；(2)SpaceX IPO+19.2%確認衛星板塊新主線；(3)AAPL WWDC冷場，方向從neutral_bullish降為neutral；(4)2330從bullish降為neutral_bullish（外資壓力+FOMC風險）；(5)FOMC取代NFP成為下週最大風險變數；(6)SOX費半+15.1%是最大正訊號，暗示去槓桿接近尾聲。"
+  }
+}

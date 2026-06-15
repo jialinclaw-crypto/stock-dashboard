@@ -1,0 +1,413 @@
+{
+  "schema_version": "3.0",
+  "type": "close",
+  "generated_at": "2026-06-15T14:00:00+08:00",
+  "expires_at": "2026-06-16T09:00:00+08:00",
+  "date": "2026-06-15",
+  "weekday": "週一",
+  "market_summary": {
+    "taiex_close_est": 45369,
+    "taiex_change_pts_est": 1200,
+    "taiex_change_pct_est": 2.72,
+    "taiex_prev_close": 44169,
+    "taiex_open_est": 44650,
+    "taiex_intraday_high_est": 45438,
+    "taiex_ath": 46459,
+    "taiex_from_ath_pts_est": -1090,
+    "taiex_from_ath_pct_est": -2.35,
+    "volume_b_twd_est": 4800,
+    "nt_per_usd_est": 31.2,
+    "data_confidence": "medium-low",
+    "note": "收盤點位為估算（信心：中低）。確認依據：TVBS「台股暴力大漲1200點攻上45K」、台積電2,360元（高信心）、三大法人買超（中信心）、Chinatimes 20260615盤中「噴千點慶和談」。",
+    "catalyst_primary": "美伊MOU（備忘錄）6/14週日準簽署，霍爾木茲海峽即日重開，WTI原油下測$82-84，科技/AI板塊全面受惠",
+    "three_institutions_direction": "net_buy",
+    "three_institutions_amount_b_twd_est": null,
+    "three_institutions_confidence": "medium",
+    "three_institutions_source": "Yahoo Finance 「三大法人15日買超前十大」",
+    "us_market_jun12_friday": {
+      "dji_close": 51202.26,
+      "dji_change_pct": 0.70,
+      "sp500_close": 7431.46,
+      "sp500_change_pct": 0.50,
+      "nasdaq_close": 25888.84,
+      "nasdaq_change_pct": 0.31,
+      "sox_close": 13350,
+      "sox_change_pct": 1.52,
+      "vix": 17.68,
+      "us_10y_yield": 4.49,
+      "us_30y_yield": 5.30,
+      "dxy": 99.81,
+      "wti_oil": 85.0,
+      "wti_oil_outlook_est": 82.0,
+      "spcx_close": 161.00,
+      "spcx_change_pct": 19.3,
+      "nvda_close": 205.00,
+      "tsla_close": 406.00,
+      "aapl_close": 292.50,
+      "tsm_close": 421.00,
+      "note": "6/12（週五）美股實際收盤數據（高信心）。SPCX首日$161+19.3%（原估$135無溢價，大幅正向修正）。"
+    },
+    "tonight_us_outlook": {
+      "us_market_open_tw_time": "2026-06-15T21:30:00+08:00",
+      "fomc_day1": "2026-06-16（台灣時間）",
+      "fomc_decision_tw_time": "2026-06-17T02:00:00+08:00",
+      "fomc_press_conf_tw_time": "2026-06-17T02:30:00+08:00",
+      "fomc_rate_hold_prob_pct": 99.5,
+      "sp500_futures_est": 7450,
+      "market_bias": "cautious-bullish",
+      "key_watch": "美伊MOU正式落地確認、SPCX第二交易日走勢、Fed官員是否發出pre-FOMC訊號",
+      "juneteenth_holiday": "2026-06-19（美股週五休市）",
+      "bull_case": "油 $82 確認 + SPCX $165+ → Nasdaq衝26,200，科技股FOMC前不賣",
+      "bear_case": "FOMC前獲利了結 + SPCX跌破$155 → Nasdaq回測25,500，台股週二 -300至-500",
+      "wti_target_est": 82.5
+    },
+    "fomc_context": {
+      "chair": "Kevin Warsh（首次主持SEP點陣圖會議）",
+      "current_rate": "3.50-3.75%",
+      "cpi_annual_pct": 4.2,
+      "ppi_annual_pct": 6.5,
+      "rate_hold_prob_pct": 99.5,
+      "hawkish_dot_plot_risk": "high",
+      "hawkish_scenario_taiex_impact_pts": -1500,
+      "dovish_scenario_taiex_impact_pts": 800
+    }
+  },
+  "stocks": [
+    {
+      "signal_id": "stk-2330-2026-06-15-close",
+      "ticker": "2330",
+      "name": "台積電",
+      "market": "TW",
+      "direction": "bullish",
+      "price": 2360,
+      "prev_price": 2295,
+      "change_pts": 65,
+      "change_pct": 2.83,
+      "confidence": 0.65,
+      "rationale": "今收2,360元（TVBS確認，信心高）。美伊MOU霍爾木茲開放降低地緣禁運疑慮；AI CoWoS需求SPCX $161驗證；外資目標2,330~2,400元已在距離之內。FOMC風險：點陣圖鷹派可能測試2,280（填息參考）。技術面RSI ~62，20MA/60MA多排完整。",
+      "sources": [
+        "https://news.tvbs.com.tw/money/3231030",
+        "https://www.sinotrade.com.tw/richclub/hotstock/2330-2026-06",
+        "https://tw.stock.yahoo.com/quote/2330.TW"
+      ],
+      "expires_at": "2026-06-16T09:00:00+08:00",
+      "support": 2280,
+      "resistance": 2420,
+      "stop_loss": 2220,
+      "target": 2450
+    },
+    {
+      "signal_id": "stk-2454-2026-06-15-close",
+      "ticker": "2454",
+      "name": "聯發科",
+      "market": "TW",
+      "direction": "bullish",
+      "price": 4375,
+      "prev_price": 4250,
+      "change_pts": 125,
+      "change_pct": 2.94,
+      "confidence": 0.45,
+      "rationale": "估收4,375元（信心低，由4,250+大盤漲幅估算）。SOX趨勢上行+AI邊緣SoC需求清晰（天璣9400/Tesla FSD歐洲）。外資目標上看5,922元（中信）。壓力區4,500，FOMC前不追高，守住4,100即多頭成立。",
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/2454.TW",
+        "https://www.wantgoo.com/stock/2454/technical-chart"
+      ],
+      "expires_at": "2026-06-16T09:00:00+08:00",
+      "support": 4100,
+      "resistance": 4500,
+      "stop_loss": 3960,
+      "target": 4600
+    },
+    {
+      "signal_id": "stk-2317-2026-06-15-close",
+      "ticker": "2317",
+      "name": "鴻海",
+      "market": "TW",
+      "direction": "bullish",
+      "price": 274,
+      "prev_price": 268,
+      "change_pts": 6,
+      "change_pct": 2.24,
+      "confidence": 0.45,
+      "rationale": "估收274元（信心低，由268+大盤估算）。SpaceX SPCX首日$161確認AI伺服器超級週期，鴻海Anthropic $450B算力合約供應商地位鞏固。Q1 EPS 3.56元同期新高，全年AI機櫃目標翻倍。目標285-305，但FOMC前不追高。",
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/2317.TW",
+        "https://stocktwits.com/symbol/TSM"
+      ],
+      "expires_at": "2026-06-16T09:00:00+08:00",
+      "support": 258,
+      "resistance": 285,
+      "stop_loss": 250,
+      "target": 305
+    },
+    {
+      "signal_id": "stk-NVDA-2026-06-15-close",
+      "ticker": "NVDA",
+      "name": "輝達",
+      "market": "US",
+      "direction": "bullish",
+      "price": 205.0,
+      "prev_price": 205.0,
+      "change_pts": 0,
+      "change_pct": 0.0,
+      "price_note": "6/12週五實際收盤，今晚21:30開盤",
+      "confidence": 0.70,
+      "rationale": "6/12收$205（高信心）。SPCX首日$161+19%進一步確認Blackwell AI算力需求不可撼動；德銀PT $220，共識目標$309（現$205，+51%空間）。美伊MOU油價利多（降通脹→有利FOMC鴿）。FOMC前預估$205-215；FOMC鷹派則可能測試$195支撐。方向由中性升至多頭（因SPCX驗證）。",
+      "sources": [
+        "https://finance.yahoo.com/quote/NVDA/",
+        "https://news.tvbs.com.tw/money/3231030"
+      ],
+      "expires_at": "2026-06-16T09:00:00+08:00",
+      "support": 195,
+      "resistance": 220,
+      "stop_loss": 190,
+      "target": 240
+    },
+    {
+      "signal_id": "stk-TSLA-2026-06-15-close",
+      "ticker": "TSLA",
+      "name": "特斯拉",
+      "market": "US",
+      "direction": "neutral",
+      "price": 406.0,
+      "prev_price": 393.0,
+      "change_pts": 13.0,
+      "change_pct": 3.31,
+      "price_note": "6/12週五實際收盤，今晚21:30開盤",
+      "confidence": 0.55,
+      "rationale": "6/12收$406（高信心，較前一日估算$393上修）。美伊MOU霍爾木茲開放 → 能源穩定 → EV長期利多；FSD歐洲第5國擴張；Piper Sandler目標$500。但SpaceX市值$2.08T超越特斯拉$1.6T的資本排擠效應仍存；FOMC高不確定性。方向維持中性（雖有利多但限制多）。",
+      "sources": [
+        "https://finance.yahoo.com/quote/TSLA/"
+      ],
+      "expires_at": "2026-06-16T09:00:00+08:00",
+      "support": 385,
+      "resistance": 425,
+      "stop_loss": 370,
+      "target": 450
+    },
+    {
+      "signal_id": "stk-AAPL-2026-06-15-close",
+      "ticker": "AAPL",
+      "name": "蘋果",
+      "market": "US",
+      "direction": "neutral",
+      "price": 292.5,
+      "prev_price": 295.0,
+      "change_pts": -2.5,
+      "change_pct": -0.85,
+      "price_note": "6/12週五實際收盤，今晚21:30開盤",
+      "confidence": 0.50,
+      "rationale": "6/12收$292.50（高信心，確認下修自前估$295）。WWDC iOS 27 Siri 2.0失望情緒持續，50MA $298為主要壓力。$290支撐守住。AI落地催化劑缺席，FOMC前不建議新建倉。等待iPhone 18 AI功能確認。",
+      "sources": [
+        "https://finance.yahoo.com/quote/AAPL/"
+      ],
+      "expires_at": "2026-06-16T09:00:00+08:00",
+      "support": 285,
+      "resistance": 305,
+      "stop_loss": 275,
+      "target": 318
+    },
+    {
+      "signal_id": "stk-TSM-2026-06-15-close",
+      "ticker": "TSM",
+      "name": "台積電ADR",
+      "market": "US",
+      "direction": "bullish",
+      "price": 421.0,
+      "prev_price": 421.0,
+      "change_pts": 0,
+      "change_pct": 0.0,
+      "price_note": "6/12週五實際收盤（$421，較前估$455下修確認）；今晚預估追漲台積電2,360",
+      "confidence": 0.65,
+      "rationale": "6/12收$421（高信心，確認自prev估$455大幅下修）。今晚預估追漲至$425-445（追蹤台積電本地2360+2.83%）。MOU地緣禁運風險降低；SPCX驗證CoWoS需求；技術面站穩$405支撐。FOMC前估$425-445，FOMC後若鴿派則衝$465。",
+      "sources": [
+        "https://finance.yahoo.com/quote/TSM/",
+        "https://tw.stock.yahoo.com/quote/2330.TW"
+      ],
+      "expires_at": "2026-06-16T09:00:00+08:00",
+      "support": 405,
+      "resistance": 445,
+      "stop_loss": 393,
+      "target": 465
+    }
+  ],
+  "alerts": [
+    {
+      "alert_id": "alert-fomc-jun17-imminent-2026-06-15",
+      "level": "critical",
+      "type": "macro",
+      "title": "FOMC 6/17 凌晨02:00（T-36h）— 最大系統性風險即將引爆",
+      "body": "FOMC 明（6/16）開會，後天（6/17）凌晨02:00公布利率決定+點陣圖。Fed主席Warsh首次SEP點陣圖。利率維持3.5-3.75%概率99.5%，但點陣圖若顯示「2026全年無降息」→費半-5~8%、台積電測2,220、TAIEX測43K。鴿派情境（Q4暗示降息）→ 全面攻ATH 46,459。美伊MOU油價利多可能提供Warsh一點鴿派空間，但CPI 4.2%+PPI 6.5%仍是硬約束。",
+      "url": "https://www.indexbox.io/blog/fed-meeting-preview-june-1617-fomc-decision-and-potential-bias-shift/",
+      "source": "IndexBox / FOMC Calendar",
+      "expires_at": "2026-06-17T03:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-iran-mou-hormuz-2026-06-15",
+      "level": "high",
+      "type": "geopolitical",
+      "title": "美伊MOU霍爾木茲開放 — 能源通脹壓力消退，科技股正向受惠",
+      "body": "美伊備忘錄6/14（週日）準簽署：美方解除海上封鎖+釋放$250億凍結資產；霍爾木茲海峽即日重開；伊朗承諾不發展/購置核武；60天後正式談判。WTI原油預估開週後測試$82-84（從$85+下行）。對台積電/NVDA/聯發科等科技股構成正向催化：能源通脹壓力緩解→FOMC鷹派立場有所收斂空間。風險：60天談判期間可能出現反覆，任何外交摩擦將使油價快速反彈至$90+。",
+      "url": "https://www.cnbc.com/2026/06/15/iran-us-mou-hormuz-strait-reopening.html",
+      "source": "CNBC / RFERL / PBS News",
+      "expires_at": "2026-06-16T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-spcx-first-day-161-2026-06-15",
+      "level": "medium",
+      "type": "stock_event",
+      "title": "SpaceX SPCX 首日$161（+19.3%）確認 — AI超級週期獲市場全面背書",
+      "body": "SpaceX SPCX 6/12 Nasdaq首日交易實際收$161（+19.3%），市值達$2.08兆（超越Apple $2.0兆）。上週五預警的「利多兌現賣壓」風險並未兌現，台灣衛星概念股（昇達科/華通/啟碁）今日亦未出現集體跌停。SPCX強勁首日進一步確認AI算力基礎設施超級週期，對鴻海（Anthropic合約）/台積電（CoWoS）/廣達/緯創均為長線正向訊號。今晚SPCX第二交易日走勢為短線關鍵：維持$155+視為強勢繼續；跌破$150則衛星概念股面臨壓力。",
+      "url": "https://tw.stock.yahoo.com/news/spacex",
+      "source": "CNBC / TechCrunch / Yahoo Finance TW",
+      "expires_at": "2026-06-16T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-taiex-breaks-45k-2026-06-15",
+      "level": "medium",
+      "type": "technical",
+      "title": "TAIEX 突破45K整數關 — 多頭格局確立，距ATH縮短至-2.3%",
+      "body": "加權指數今收~45,369（估），成功突破45,000整數關卡。距ATH 46,459僅-2.35%（-1,090 pts）。本週（6/9-6/15）台股已累計反彈超4,000點，技術面全面轉正。然而，下方關鍵支撐43,000（6/8大跌低點）需作為FOMC鷹派情境的停損參考；上方突破ATH 46,459需FOMC中性或鴿派作為燃料。",
+      "url": "https://www.twse.com.tw/zh/indices/taiex/mi-5min-hist.html",
+      "source": "TWSE / TVBS",
+      "expires_at": "2026-06-16T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-juneteenth-low-liquidity-2026-06-15",
+      "level": "low",
+      "type": "market_closure",
+      "title": "Juneteenth 6/19（週五）美股休市 — 週後段流動性偏低",
+      "body": "美國 Juneteenth 國定假日，美股6/19（週五）休市。台股當日正常交易但外資活動可能減少，流動性偏低。建議FOMC後倉位調整在週三/四完成，避免週五低流動性市場造成不必要滑價。",
+      "url": "https://www.nyse.com/markets/hours-calendars",
+      "source": "NYSE Market Calendar",
+      "expires_at": "2026-06-19T16:00:00+08:00"
+    }
+  ],
+  "whats_changed": {
+    "generated_at": "2026-06-15T14:00:00+08:00",
+    "prev_report_date": "2026-06-12",
+    "prev_report_type": "close",
+    "direction_changes": [
+      {
+        "ticker": "NVDA",
+        "name": "輝達",
+        "prev_direction": "neutral",
+        "new_direction": "bullish",
+        "reason": "SpaceX SPCX首日實收$161（+19.3%，原估$135無溢價）大幅正向超出預期，Blackwell AI算力需求獲市場全面背書。美伊MOU油價利多提供通脹緩解空間。方向由中性升至多頭，信心從0.40升至0.70。",
+        "confidence": "high"
+      }
+    ],
+    "price_corrections": [
+      {
+        "ticker": "TSM",
+        "name": "台積電ADR",
+        "prev_est_price": 455.0,
+        "actual_price": 421.0,
+        "correction_pct": -7.5,
+        "note": "前次估算$455偏高，6/12實際收$421（差距$34）。已修正至實際值。"
+      },
+      {
+        "ticker": "NVDA",
+        "name": "輝達",
+        "prev_est_price": 213.0,
+        "actual_price": 205.0,
+        "correction_pct": -3.8,
+        "note": "前次估算$213，6/12實際收$205。已修正至實際值。"
+      },
+      {
+        "ticker": "TSLA",
+        "name": "特斯拉",
+        "prev_est_price": 393.0,
+        "actual_price": 406.0,
+        "correction_pct": 3.3,
+        "note": "前次估算$393偏低，6/12實際收$406。已修正至實際值（正向超預期）。"
+      },
+      {
+        "ticker": "2330",
+        "name": "台積電",
+        "prev_est_price": 2350,
+        "actual_price_jun12": 2295,
+        "today_price": 2360,
+        "note": "前次估算2,350 vs 6/12實際2,295（偏高55元）。今日確認2,360（高信心）。"
+      },
+      {
+        "ticker": "taiex",
+        "name": "加權指數",
+        "prev_est_close": 44350,
+        "actual_close_jun12": 44169,
+        "today_est_close": 45369,
+        "note": "前次估算44,350 vs 6/12實際44,169（偏高181點）。今日估算45,369（中低信心）。"
+      }
+    ],
+    "alert_changes": {
+      "added": [
+        "alert-fomc-jun17-imminent-2026-06-15",
+        "alert-iran-mou-hormuz-2026-06-15",
+        "alert-spcx-first-day-161-2026-06-15",
+        "alert-taiex-breaks-45k-2026-06-15",
+        "alert-juneteenth-low-liquidity-2026-06-15"
+      ],
+      "resolved_positively": [
+        {
+          "alert_id": "alert-spcx-no-premium-risk-2026-06-12",
+          "resolution": "SPCX首日實收$161（+19.3%），「無溢價利多兌現賣壓」風險未兌現。結果為大幅正向超預期。"
+        },
+        {
+          "alert_id": "alert-spcx-satellite-limitup-2026-06-12",
+          "resolution": "台灣衛星概念股（昇達科/華通/啟碁）未出現集體跌停，SpaceX題材延續。"
+        }
+      ],
+      "expired_naturally": [
+        "alert-taiex-recovery-44k-2026-06-12",
+        "alert-foreign-still-selling-2026-06-12"
+      ],
+      "kept_updated": [
+        {
+          "alert_id": "alert-fomc-jun17-imminent-2026-06-15",
+          "prev_id": "alert-fomc-june16-critical-2026-06-12",
+          "change": "FOMC從「下週最大風險」升格為「T-36h最大系統性風險」。美伊MOU提供Warsh一點鴿派空間，但CPI/PPI雙熱限制降息空間。等級維持critical但緊迫性大幅提升。"
+        }
+      ]
+    },
+    "market_level_change": {
+      "prev_taiex_actual": 44169,
+      "new_taiex_est": 45369,
+      "change_pts_est": 1200,
+      "change_pct_est": 2.72,
+      "from_ath_pct_prev": -4.9,
+      "from_ath_pct_now": -2.35,
+      "severity_upgrade": false,
+      "note": "加權指數從44,169升至估算45,369，突破45K整數大關，距ATH 46,459從-4.9%縮短至-2.35%。多頭格局大幅確立，但FOMC仍是最後一道關卡。"
+    },
+    "key_event_resolved": [
+      {
+        "event": "SpaceX SPCX IPO首日走勢",
+        "status": "resolved_positively",
+        "detail": "SPCX首日收$161（+19.3%），遠超IPO價$135。AI算力超級週期敘事獲全面驗證，台灣衛星概念股無集體賣壓。"
+      },
+      {
+        "event": "台積電填息確認（6/11）",
+        "status": "resolved_and_sustained",
+        "detail": "6/11秒填息後，今日2,360元持續上攻，填息後多頭格局完整延伸。"
+      }
+    ],
+    "key_event_new": [
+      {
+        "event": "美伊MOU霍爾木茲協議",
+        "date": "2026-06-14",
+        "impact": "WTI原油估下測$82-84，能源通脹壓力緩解，科技股受益；60天談判期存在反覆風險"
+      },
+      {
+        "event": "FOMC 6/16-17（T-1 DAY）",
+        "date": "2026-06-16",
+        "impact": "最大系統性催化劑。鷹派→費半-5~8%；鴿派→衝ATH 46,459。決定本週方向。"
+      },
+      {
+        "event": "Juneteenth 6/19 美股休市",
+        "date": "2026-06-19",
+        "impact": "週後段外資活動減少，建議FOMC後調倉在週三/四完成"
+      }
+    ],
+    "conservative_note": "whats_changed 僅列出有明確資料支撐的方向變化（NVDA由neutral→bullish）。其他台股個股雖上漲但方向維持bullish無改變。TSLA雖有油價利多但FOMC壓制，維持neutral不升。價格修正以實際6/12收盤確認值更新前次估算偏差。"
+  }
+}

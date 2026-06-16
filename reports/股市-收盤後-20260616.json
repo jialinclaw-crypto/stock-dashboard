@@ -1,0 +1,368 @@
+{
+  "schema_version": "3",
+  "type": "close",
+  "generated_at": "2026-06-16T14:03:09+08:00",
+  "expires_at": "2026-06-17T09:00:00+08:00",
+  "date": "2026-06-16",
+  "weekday": "週二",
+  "market_summary": {
+    "taiex_close_est": 45850,
+    "taiex_change_pts_est": 454,
+    "taiex_change_pct_est": 1.0,
+    "taiex_prev_close": 45396.99,
+    "taiex_open_est": 45737,
+    "taiex_intraday_high_est": 45737,
+    "taiex_ath": 46552,
+    "taiex_from_ath_pts_est": -702,
+    "taiex_from_ath_pct_est": -1.51,
+    "tw_futures_wtx_close": 46246,
+    "tw_futures_wtx_change": 649,
+    "tw_futures_wtx_change_pct": 1.42,
+    "volume_b_twd_est": 4500,
+    "nt_per_usd_est": 31.1,
+    "data_confidence": "medium-low",
+    "note": "收盤點位為估算（信心：中低）。確認依據：台指期WTX&收46,246(+649)、China Times「開盤大漲近400點最高45,737」、前日確認收盤45,396.99。",
+    "catalyst_primary": "美伊MOU霍爾木茲海峽持續開放，美股6/15全面強漲（NVDA+3.4%/TSM+4.0%），被動元件AI-MLCC需求爆發；FOMC前多頭持續",
+    "sector_rotation": "資金由台積電/半導體龍頭輪動至被動元件（MLCC）；AI伺服器Rubin需求+78% MLCC量",
+    "three_institutions_direction": "net_buy",
+    "three_institutions_amount_b_twd_est": 150,
+    "three_institutions_confidence": "medium",
+    "three_institutions_source": "Yahoo財經「三大法人16日買超前十大」",
+    "foreign_investor_tsmc_consecutive_sell_days": 5,
+    "passive_components_highlight": "國巨(2327)衝996元天價+漲停，10+被動元件股漲停；Morgan Stanley目標1,335元",
+    "us_market_jun15_monday": {
+      "nvda_close": 211.93,
+      "nvda_change_pct": 3.37,
+      "tsla_close": 413.7,
+      "tsla_change_pct": 1.9,
+      "aapl_close": 296.42,
+      "aapl_change_pct": 1.34,
+      "tsm_close": 438.13,
+      "tsm_change_pct": 4.07,
+      "wti_oil": 83.0,
+      "note": "6/15（週一）美股收盤數據（高信心）。美伊MOU催化全面上漲。"
+    },
+    "tonight_fomc": {
+      "fomc_meeting": "2026-06-16至06-17",
+      "chair": "Kevin Warsh（首次主持，2026-05-22就任）",
+      "current_rate": "3.50-3.75%",
+      "rate_hold_prob_pct": 99.5,
+      "cpi_annual_pct": 4.2,
+      "ppi_annual_pct": 6.5,
+      "hawkish_dot_2026_hike_prob_pct": 70,
+      "decision_tw_time": "2026-06-17T02:00:00+08:00",
+      "press_conf_tw_time": "2026-06-17T02:30:00+08:00",
+      "bull_scenario_taiex_pts": 1000,
+      "neutral_scenario_taiex_pts": 200,
+      "bear_scenario_taiex_pts": -1300,
+      "key_watch": "點陣圖是否出現2026升息點位（>3.75%）；Warsh記者會措辭"
+    }
+  },
+  "stocks": [
+    {
+      "signal_id": "stk-2330-2026-06-16-close",
+      "ticker": "2330",
+      "name": "台積電",
+      "market": "TW",
+      "price": 2365,
+      "price_prev": 2375,
+      "change_pts": -10,
+      "change_pct": -0.42,
+      "price_confidence": "medium",
+      "direction": "neutral",
+      "confidence": 0.5,
+      "rationale": "外資連5日賣超（累積~6.4萬張）、FOMC前去槓桿；2,375元頸線失守為短線阻力。長線兩大外資目標2,330-2,400元不變，基本面無慮。",
+      "key_risk": "FOMC鷹派→短線測2,300；外資賣超能否逆轉",
+      "key_upside": "FOMC鴿派→多頭回補挑戰2,400",
+      "sources": [
+        "Yahoo財經「台積電漲不動外資連5砍6.4萬張」",
+        "中時20260616「台股續衝開盤大漲近400點」"
+      ],
+      "expires_at": "2026-06-17T09:00:00+08:00"
+    },
+    {
+      "signal_id": "stk-2454-2026-06-16-close",
+      "ticker": "2454",
+      "name": "聯發科",
+      "market": "TW",
+      "price": 4370,
+      "price_prev": 4470,
+      "change_pts": -100,
+      "change_pct": -2.24,
+      "price_confidence": "low",
+      "direction": "bullish",
+      "confidence": 0.45,
+      "rationale": "前日大漲6.94%後今日高檔震盪整理（估）；AI PC/邊緣AI晶片需求基本面支撐，短線需消化前日漲幅。",
+      "key_risk": "FOMC鷹派拖累科技族群全面回調",
+      "key_upside": "AI應用端需求確認 → 4,600+目標",
+      "sources": [
+        "Goodinfo搜尋摘要（聯發科前日4,470）"
+      ],
+      "expires_at": "2026-06-17T09:00:00+08:00"
+    },
+    {
+      "signal_id": "stk-2317-2026-06-16-close",
+      "ticker": "2317",
+      "name": "鴻海",
+      "market": "TW",
+      "price": 270,
+      "price_prev": 267.5,
+      "change_pts": 2.5,
+      "change_pct": 0.93,
+      "price_confidence": "low",
+      "direction": "neutral",
+      "confidence": 0.4,
+      "rationale": "美伊和談間接利好供應鏈，iPhone 17 Pro備貨期確認；惟FOMC前無重大催化，預期小漲或平盤。",
+      "key_risk": "FOMC鷹派拖累；美中貿易政策不確定",
+      "key_upside": "AI伺服器代工訂單放量確認",
+      "sources": [
+        "搜尋摘要（前日267.50+7）"
+      ],
+      "expires_at": "2026-06-17T09:00:00+08:00"
+    },
+    {
+      "signal_id": "stk-NVDA-2026-06-16-close",
+      "ticker": "NVDA",
+      "name": "輝達",
+      "market": "US",
+      "price": 211.93,
+      "price_prev": 205.0,
+      "change_pts": 6.93,
+      "change_pct": 3.37,
+      "price_confidence": "high",
+      "direction": "bullish",
+      "confidence": 0.7,
+      "rationale": "6/15（週一）確認收盤$211.93（+3.37%）；美伊MOU能源成本下降 + AI訓練需求持續。Rubin架構帶動整個AI半導體生態系受益。FOMC前若點陣圖溫和有望挑戰$215-220。",
+      "key_risk": "FOMC鷹派→科技股估值壓縮",
+      "key_upside": "Rubin平台出貨確認→$230+",
+      "sources": [
+        "Robinhood實時數據（高信心）",
+        "搜尋摘要6/15收盤"
+      ],
+      "expires_at": "2026-06-17T09:00:00+08:00"
+    },
+    {
+      "signal_id": "stk-TSLA-2026-06-16-close",
+      "ticker": "TSLA",
+      "name": "特斯拉",
+      "market": "US",
+      "price": 413.7,
+      "price_prev": 406.0,
+      "change_pts": 7.7,
+      "change_pct": 1.9,
+      "price_confidence": "high",
+      "direction": "neutral",
+      "confidence": 0.5,
+      "rationale": "6/15收$413.70（+1.90%）。霍爾木茲開放→油價下行對EV銷售中性至正向；惟利率偏高環境（FOMC）壓制消費信貸，汽車銷售承壓。",
+      "key_risk": "FOMC鷹派→高利率壓制汽車貸款需求",
+      "key_upside": "油價繼續下跌+RoboTaxi新進展",
+      "sources": [
+        "Yahoo Finance搜尋摘要6/15確認"
+      ],
+      "expires_at": "2026-06-17T09:00:00+08:00"
+    },
+    {
+      "signal_id": "stk-AAPL-2026-06-16-close",
+      "ticker": "AAPL",
+      "name": "蘋果",
+      "market": "US",
+      "price": 296.42,
+      "price_prev": 292.5,
+      "change_pts": 3.92,
+      "change_pct": 1.34,
+      "price_confidence": "high",
+      "direction": "neutral",
+      "confidence": 0.5,
+      "rationale": "6/15收$296.42（+1.34%）。iPhone 17 Pro備貨進度正常，AI功能（Apple Intelligence）逐步落地；短線受FOMC情緒主導。",
+      "key_risk": "FOMC鷹派壓制；中國市場份額競爭",
+      "key_upside": "Apple Intelligence加速用戶升機週期",
+      "sources": [
+        "Yahoo Finance搜尋摘要6/15確認"
+      ],
+      "expires_at": "2026-06-17T09:00:00+08:00"
+    },
+    {
+      "signal_id": "stk-TSM-2026-06-16-close",
+      "ticker": "TSM",
+      "name": "台積電ADR",
+      "market": "US",
+      "price": 438.13,
+      "price_prev": 421.0,
+      "change_pts": 17.13,
+      "change_pct": 4.07,
+      "price_confidence": "high",
+      "direction": "bullish",
+      "confidence": 0.6,
+      "rationale": "6/15收$438.13（+4.07%）強勁反彈；ADR與台積電現股折/溢價正常化。惟台積現股今日外資連賣，明日FOMC後表現需觀察ADR走勢是否同步。",
+      "key_risk": "FOMC鷹派→ADR明日開低；台積現股外資持續賣超",
+      "key_upside": "FOMC鴿派+外資回補→$460+",
+      "sources": [
+        "搜尋摘要6/15收盤$438.13（高信心）"
+      ],
+      "expires_at": "2026-06-17T09:00:00+08:00"
+    }
+  ],
+  "alerts": [
+    {
+      "alert_id": "alert-fomc-warsh-dotplot-2026-06-16",
+      "title": "FOMC 6/17 02:00（T-12h）Kevin Warsh點陣圖鷹派風險 — 台股最大系統性威脅",
+      "level": "critical",
+      "direction": "bearish_risk",
+      "rationale": "Kevin Warsh主持首次SEP點陣圖會議，70%概率點陣圖顯示2026年至少升息1次。維持利率但鷹派措辭→估-1,000至-1,500點壓力。利率確認不動+中性措辭→+800至+1,200點反彈。",
+      "action": "今晚縮小倉位，等待凌晨02:00結果。鴿派→加碼；鷹派→明日低接台積電/加權",
+      "url": "https://www.fxstreet.com/analysis/kevin-warsh-opens-first-fed-meeting-june-16-with-rate-hold-expected-202606151326",
+      "source": "FXStreet / coinpaprika / Chase / CME FedWatch",
+      "expires_at": "2026-06-17T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-passive-components-mlcc-boom-2026-06-16",
+      "title": "被動元件爆量漲停潮 — 國巨996元天價，AI-MLCC需求Rubin+78%",
+      "level": "high",
+      "direction": "bullish",
+      "rationale": "AI伺服器Rubin NVL72機架MLCC用量較GB300增加78%，外資摩根士丹利目標價調升至1,335元。國巨外資今日轉向回補鎖漲停，被動元件缺貨延至2027。",
+      "action": "已持有持守；未布局者注意高位追價風險（國巨PE>50倍），關注低基期品種",
+      "url": "https://udn.com/news/story/7251/9567853",
+      "source": "UDN聯合新聞網、ETtoday財經雲、Yahoo財經",
+      "expires_at": "2026-06-17T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-tsmc-foreign-sell-streak-2026-06-16",
+      "title": "台積電外資連賣第5日（累積6.4萬張）— 方向轉中立",
+      "level": "medium",
+      "direction": "bearish",
+      "rationale": "外資在法說會後連續5日賣超台積電，累積減持近6.4萬張；FOMC前去風險情緒主導，資金輪動至被動元件。長線目標2,330-2,400元不變，惟短線壓力明顯。",
+      "action": "短線觀望；若FOMC溫和且外資賣超停止 → 低接2,300-2,350元區間",
+      "url": "https://tw.stock.yahoo.com/news/台積電漲不動-外資連5砍6-4萬張-002100709.html",
+      "source": "Yahoo財經台股新聞",
+      "expires_at": "2026-06-17T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-iran-mou-sustained-2026-06-16",
+      "title": "美伊MOU持續發酵 — 霍爾木茲海峽開放，油價維持低檔",
+      "level": "medium",
+      "direction": "bullish",
+      "rationale": "6/14週日美伊MOU落地，霍爾木茲持續開放，WTI油價測$82-83低檔。能源成本下降對科技/AI板塊維持正向；此利好已部分反映在昨日大漲1,228點中。",
+      "action": "持有科技/AI相關部位；觀察油價是否進一步跌破$80",
+      "url": "https://news.cnyes.com/news/id/6479266",
+      "source": "鉅亨網、中時財經",
+      "expires_at": "2026-06-17T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-juneteenth-low-liquidity-2026-06-16",
+      "title": "Juneteenth 6/19（週五）美股休市 — 週後段流動性偏低",
+      "level": "low",
+      "direction": "neutral",
+      "rationale": "6/19美股休市，對6/18週四收盤有提前減倉效應；台股6/18可能因流動性偏低出現波動。",
+      "action": "6/18台股不宜大量追漲；週後段降低槓桿",
+      "url": "",
+      "source": "市場日曆",
+      "expires_at": "2026-06-17T09:00:00+08:00"
+    }
+  ],
+  "whats_changed": {
+    "generated_at": "2026-06-16T14:03:09+08:00",
+    "prev_date": "2026-06-15",
+    "stock_direction_changes": [
+      {
+        "ticker": "2330",
+        "name": "台積電",
+        "from": "bullish",
+        "to": "neutral",
+        "confidence_from": 0.65,
+        "confidence_to": 0.5,
+        "reason": "外資連日賣超+FOMC前去風險"
+      },
+      {
+        "ticker": "2317",
+        "name": "鴻海",
+        "from": "bullish",
+        "to": "neutral",
+        "confidence_from": 0.45,
+        "confidence_to": 0.4,
+        "reason": "收盤後數據更新"
+      }
+    ],
+    "stock_price_deltas": [
+      {
+        "ticker": "2317",
+        "name": "鴻海",
+        "price_from": 274,
+        "price_to": 270,
+        "change_pct": -1.46
+      },
+      {
+        "ticker": "NVDA",
+        "name": "輝達",
+        "price_from": 205.0,
+        "price_to": 211.93,
+        "change_pct": 3.38
+      },
+      {
+        "ticker": "TSLA",
+        "name": "特斯拉",
+        "price_from": 406.0,
+        "price_to": 413.7,
+        "change_pct": 1.9
+      },
+      {
+        "ticker": "AAPL",
+        "name": "蘋果",
+        "price_from": 292.5,
+        "price_to": 296.42,
+        "change_pct": 1.34
+      },
+      {
+        "ticker": "TSM",
+        "name": "台積電ADR",
+        "price_from": 421.0,
+        "price_to": 438.13,
+        "change_pct": 4.07
+      }
+    ],
+    "alert_new": [
+      {
+        "alert_id": "alert-juneteenth-low-liquidity-2026-06-16",
+        "title": "Juneteenth 6/19（週五）美股休市 — 週後段流動性偏低",
+        "level": "low"
+      },
+      {
+        "alert_id": "alert-fomc-warsh-dotplot-2026-06-16",
+        "title": "FOMC 6/17 02:00（T-12h）Kevin Warsh點陣圖鷹派風險 — 台股最大系統性威脅",
+        "level": "critical"
+      },
+      {
+        "alert_id": "alert-tsmc-foreign-sell-streak-2026-06-16",
+        "title": "台積電外資連賣第5日（累積6.4萬張）— 方向轉中立",
+        "level": "medium"
+      },
+      {
+        "alert_id": "alert-iran-mou-sustained-2026-06-16",
+        "title": "美伊MOU持續發酵 — 霍爾木茲海峽開放，油價維持低檔",
+        "level": "medium"
+      },
+      {
+        "alert_id": "alert-passive-components-mlcc-boom-2026-06-16",
+        "title": "被動元件爆量漲停潮 — 國巨996元天價，AI-MLCC需求Rubin+78%",
+        "level": "high"
+      }
+    ],
+    "alert_resolved": [
+      {
+        "alert_id": "alert-taiex-breaks-45k-2026-06-15"
+      },
+      {
+        "alert_id": "alert-fomc-jun17-imminent-2026-06-15"
+      },
+      {
+        "alert_id": "alert-juneteenth-low-liquidity-2026-06-15"
+      },
+      {
+        "alert_id": "alert-spcx-first-day-161-2026-06-15"
+      },
+      {
+        "alert_id": "alert-iran-mou-hormuz-2026-06-15"
+      }
+    ],
+    "summary": "方向改變：2330 bullish→neutral、2317 bullish→neutral｜價格變動：2317 -1.46%、NVDA +3.38%、TSLA +1.9%、AAPL +1.34%、TSM +4.07%｜新增警示：alert-juneteenth-low-liquidity-2026-06-16[low]；alert-fomc-warsh-dotplot-2026-06-16[critical]；alert-tsmc-foreign-sell-streak-2026-06-16[medium]；alert-iran-mou-sustained-2026-06-16[medium]；alert-passive-components-mlcc-boom-2026-06-16[high]｜消除警示：5個（換日更新）"
+  }
+}

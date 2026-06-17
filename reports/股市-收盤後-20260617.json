@@ -1,0 +1,432 @@
+{
+  "schema_version": "3",
+  "type": "close",
+  "generated_at": "2026-06-17T14:03:00+08:00",
+  "expires_at": "2026-06-18T09:00:00+08:00",
+  "date": "2026-06-17",
+  "weekday": "週三",
+  "market_summary": {
+    "taiex_close_est": 45420,
+    "taiex_change_pts_est": -389,
+    "taiex_change_pct_est": -0.85,
+    "taiex_prev_close": 45809,
+    "taiex_intraday_low_est": 45000,
+    "taiex_intraday_high_est": 45720,
+    "taiex_ath": 46552,
+    "taiex_from_ath_pts_est": -1132,
+    "taiex_from_ath_pct_est": -2.43,
+    "volume_b_twd_est": 4200,
+    "nt_per_usd_est": 31.15,
+    "data_confidence": "medium",
+    "note": "收盤點位為估算（信心：中）。確認依據：①鉅亨網「台股開盤美科技股拖累一度挫逾600點回測4萬5，金融股強勢撐盤」；②CMoney「台積電尾盤爆量甩尾！台股齊揚」；③Focus Taiwan「Taiwan shares end down after wild swing」；④Yahoo財經「三大法人17日賣超前十大」。昨收45,809確認。",
+    "catalyst_primary": "FOMC 鷹派預期壓抑：美科技股6/16下跌拖累台股開盤重挫，三大法人賣超，尾盤台積電爆量帶動局部回補",
+    "sector_rotation": "資金短暫從 AI/半導體輪動至金融股（利率高檔受益），被動元件 MLCC 高點整理",
+    "three_institutions_direction": "net_sell",
+    "three_institutions_amount_b_twd_est": -176,
+    "three_institutions_confidence": "medium",
+    "three_institutions_source": "Yahoo財經「三大法人17日賣超前十大 土洋追砍 元大金、南亞科淪前二」",
+    "three_institutions_top_sold": [
+      {
+        "ticker": "2885",
+        "name": "元大金",
+        "note": "外資+自營商共同賣超"
+      },
+      {
+        "ticker": "2408",
+        "name": "南亞科",
+        "note": "外資連續賣超"
+      }
+    ],
+    "passive_components_note": "國巨等被動元件昨日漲停後今日高點整理，MLCC主題未變但短線降溫",
+    "fomc_tonight": {
+      "meeting_dates": "2026-06-16至06-17 ET",
+      "chair": "Kevin Warsh（首次主持）",
+      "current_rate": "3.50-3.75%",
+      "decision_tw_time": "2026-06-18T02:00:00+08:00",
+      "press_conf_tw_time": "2026-06-18T02:30:00+08:00",
+      "rate_hold_prob_pct": 99,
+      "dot_plot_consensus": "抹去2026年降息預測（3月點陣圖曾顯示1次降息），至少3名委員可能寫入升息",
+      "easing_bias": "預計移除",
+      "cpi_annual_pct": 4.2,
+      "ppi_annual_pct": 6.5,
+      "scenario_hawk_prob_pct": 55,
+      "scenario_neutral_prob_pct": 35,
+      "scenario_dove_prob_pct": 10,
+      "hawk_taiex_impact_pts": -850,
+      "neutral_taiex_impact_pts": 0,
+      "dove_taiex_impact_pts": 800,
+      "source": "TechTimes/IndexBox/REXShares/FXStreet FOMC June 2026 previews"
+    },
+    "us_market_jun16": {
+      "sp500_est": 7540,
+      "sp500_change_pct_est": -0.19,
+      "nasdaq_est": 26574,
+      "nasdaq_change_pct_est": -0.41,
+      "dow_note": "道指創歷史新高，科技股/成長股跌",
+      "nvda_range": "208.42-212.44",
+      "nvda_est_close": 209.5,
+      "note": "6/16 ET 數據估算（信心：低）。Nasdaq/S&P 在 FOMC 前哨警戒中下滑。"
+    }
+  },
+  "stocks": [
+    {
+      "signal_id": "stk-2330-2026-06-17-close",
+      "ticker": "2330",
+      "name": "台積電",
+      "market": "TW",
+      "price": 2370,
+      "price_confidence": "medium-low",
+      "price_note": "尾盤爆量甩尾後收盤估算；盤中最低約2,310附近，尾盤強彈。",
+      "change_pts": 5,
+      "change_pct": 0.21,
+      "direction": "neutral",
+      "confidence": 0.45,
+      "rationale": "今日尾盤台積電爆量護盤，帶動大盤反彈，但外資持續賣超（累積第6日）壓制上漲空間。FOMC 鷹派風險在前，成長股估值承壓，維持中性。短線需待 FOMC 落地再評估。",
+      "catalysts_positive": [
+        "尾盤主力資金護盤明確",
+        "AI CoWoS 2.5D 封裝需求不變",
+        "NVDA Rubin 伺服器出貨週期確立"
+      ],
+      "catalysts_negative": [
+        "外資連續賣超累積第6日",
+        "FOMC鷹派→高利率壓估值",
+        "Nasdaq前日走弱"
+      ],
+      "sources": [
+        "https://cmnews.com.tw/article/forumnews-72ab4829-69ab-11f1-97e0-fbb0d5e3aa02",
+        "Yahoo財經外資法人買賣"
+      ],
+      "expires_at": "2026-06-18T09:00:00+08:00"
+    },
+    {
+      "signal_id": "stk-2454-2026-06-17-close",
+      "ticker": "2454",
+      "name": "聯發科",
+      "market": "TW",
+      "price": 4465,
+      "price_confidence": "medium",
+      "price_note": "開盤價 4,465（+2.08% 確認）；收盤為維持開盤水準之估算。",
+      "change_pts": 95,
+      "change_pct": 2.17,
+      "direction": "bullish",
+      "confidence": 0.55,
+      "rationale": "聯發科今日盤中強勢，漲幅逾2%，AI手機旗艦晶片需求週期向上，Dimensity AI 持續帶動出貨成長。相比台積電，聯發科受外資連賣影響較小，IC設計類股相對強勢。維持偏多，但FOMC後需重新評估高本益比風險。",
+      "catalysts_positive": [
+        "AI手機晶片需求週期確立",
+        "Dimensity新品週期",
+        "外資目標價上調"
+      ],
+      "catalysts_negative": [
+        "FOMC鷹派→高本益比股壓力",
+        "美中科技出口限制風險"
+      ],
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/2454.TW",
+        "https://tw.stock.yahoo.com/news/ai%E8%A1%8C%E6%83%85%E9%82%84%E6%B2%92%E7%B5%90%E6%9D%9F-%E5%A4%96%E8%B3%87%E4%B8%8A%E8%AA%BF-%E5%8F%B0%E7%A9%8D%E9%9B%BB-%E8%81%AF%E7%99%BC%E7%A7%91-%E7%9B%AE%E6%A8%99%E5%83%B9-232706442.html"
+      ],
+      "expires_at": "2026-06-18T09:00:00+08:00"
+    },
+    {
+      "signal_id": "stk-2317-2026-06-17-close",
+      "ticker": "2317",
+      "name": "鴻海",
+      "market": "TW",
+      "price": 269,
+      "price_confidence": "low",
+      "price_note": "開盤 268.01（+0.37% 確認），收盤約持平附近估算。",
+      "change_pts": -1,
+      "change_pct": -0.37,
+      "direction": "neutral",
+      "confidence": 0.35,
+      "rationale": "鴻海今日小幅整理，AI伺服器組裝訂單長線利多，但短線在FOMC風險與大盤賣壓下缺乏動能。維持中性，等FOMC。",
+      "catalysts_positive": [
+        "AI伺服器GB200 NVL組裝訂單持續",
+        "美伊油價低檔利降成本"
+      ],
+      "catalysts_negative": [
+        "大盤系統性賣壓",
+        "FOMC不確定性"
+      ],
+      "sources": [
+        "https://pchome.megatime.com.tw/stock/sid2317.html"
+      ],
+      "expires_at": "2026-06-18T09:00:00+08:00"
+    },
+    {
+      "signal_id": "stk-NVDA-2026-06-17-close",
+      "ticker": "NVDA",
+      "name": "輝達",
+      "market": "US",
+      "price": 209.5,
+      "price_confidence": "low",
+      "price_note": "6/16 ET 盤中區間 208.42-212.44 估算；正式收盤待確認（台北 6/18 04:00）。今晚 FOMC 後將波動。",
+      "change_pts": -2.43,
+      "change_pct": -1.14,
+      "direction": "neutral",
+      "confidence": 0.4,
+      "rationale": "NVDA 因 Nasdaq 在 FOMC 前哨警戒承壓，6/16 ET 下跌。今晚 FOMC 若出現鷹派點陣圖（機率55%），NVDA 等 AI/高本益比成長股首當其衝。中性偏謹慎，等 FOMC 後再判斷方向。Rubin 週期需求不變，只是利率環境變差。",
+      "catalysts_positive": [
+        "Rubin/Blackwell Ultra 需求週期持續",
+        "AI資本支出大廠不減"
+      ],
+      "catalysts_negative": [
+        "FOMC鷹派→高本益比首當其衝",
+        "Nasdaq前日下跌",
+        "估值已高（P/E>40x）"
+      ],
+      "sources": [
+        "https://finance.yahoo.com/quote/NVDA/history/",
+        "https://www.techtimes.com/articles/318527/20260616/federal-reserve-june-2026-meeting-warsh-set-drop-dot-hike-risk-climbs.htm"
+      ],
+      "expires_at": "2026-06-18T09:00:00+08:00"
+    },
+    {
+      "signal_id": "stk-TSLA-2026-06-17-close",
+      "ticker": "TSLA",
+      "name": "特斯拉",
+      "market": "US",
+      "price": 412,
+      "price_confidence": "low",
+      "price_note": "6/15確認收413.7；6/16 FOMC前夕小幅回落估算。",
+      "change_pts": -1.7,
+      "change_pct": -0.41,
+      "direction": "neutral",
+      "confidence": 0.4,
+      "rationale": "TSLA 短線無明確催化劑，隨大市 FOMC 前偏謹慎。FSD V14 進展持續但短線股價更受利率環境主導。維持中性。",
+      "catalysts_positive": [
+        "FSD自動駕駛商業化進程",
+        "Optimus人形機器人進度"
+      ],
+      "catalysts_negative": [
+        "FOMC鷹派→高成長股壓力",
+        "EV銷售增速放緩"
+      ],
+      "sources": [
+        "https://finance.yahoo.com/quote/TSLA/history/"
+      ],
+      "expires_at": "2026-06-18T09:00:00+08:00"
+    },
+    {
+      "signal_id": "stk-AAPL-2026-06-17-close",
+      "ticker": "AAPL",
+      "name": "蘋果",
+      "market": "US",
+      "price": 292,
+      "price_confidence": "low",
+      "price_note": "6/15確認收 296.42；6/16 Nasdaq 弱勢背景下小幅下滑估算。",
+      "change_pts": -4.42,
+      "change_pct": -1.49,
+      "direction": "neutral",
+      "confidence": 0.4,
+      "rationale": "AAPL 在 FOMC 前哨承壓回落，AI Phone 週期（iPhone 17 AI 功能）支撐長線展望，但短線利率環境不利估值。維持中性。",
+      "catalysts_positive": [
+        "iPhone 17 Apple Intelligence功能週期",
+        "服務業務高毛利持續"
+      ],
+      "catalysts_negative": [
+        "FOMC鷹派→科技估值壓縮",
+        "中國市場競爭壓力"
+      ],
+      "sources": [
+        "https://finance.yahoo.com/quote/AAPL/history/"
+      ],
+      "expires_at": "2026-06-18T09:00:00+08:00"
+    },
+    {
+      "signal_id": "stk-TSM-2026-06-17-close",
+      "ticker": "TSM",
+      "name": "台積電ADR",
+      "market": "US",
+      "price": 435,
+      "price_confidence": "low",
+      "price_note": "6/15確認收 438.13；6/16 美台科技股弱勢下估算小跌。",
+      "change_pts": -3.13,
+      "change_pct": -0.71,
+      "direction": "neutral",
+      "confidence": 0.4,
+      "rationale": "TSM ADR 跟隨台股正股與 Nasdaq 氛圍雙重影響，FOMC 前承壓。今晚 FOMC 落地後方向更明朗。中性。",
+      "catalysts_positive": [
+        "AI晶片代工需求不變",
+        "台積電護城河"
+      ],
+      "catalysts_negative": [
+        "外資連日賣超正股",
+        "FOMC鷹派壓估值"
+      ],
+      "sources": [
+        "https://finance.yahoo.com/quote/TSM/history/"
+      ],
+      "expires_at": "2026-06-18T09:00:00+08:00"
+    }
+  ],
+  "alerts": [
+    {
+      "alert_id": "alert-fomc-warsh-hawkish-dot-2026-06-17",
+      "level": "critical",
+      "title": "FOMC 今夜決議（6/18 02:00 台北）—— Warsh 首份點陣圖鷹派風險，台股最大系統性威脅",
+      "body": "Kevin Warsh 6/16-17 ET 首次 FOMC 會議，台北時間 6/18 02:00 公布決議。利率維持 3.50-3.75%（99%），但核心風險在點陣圖：多家投行預警至少 3 名委員寫入 2026 升息點位，抹去降息預期。聲明若移除「寬鬆偏向」→ AI/半導體成長股估值壓力立即浮現。鷹派情境機率 55%，台股次日下跌 500-1200 點風險。CPI 4.2%、PPI 6.5%，通膨環境不利降息。",
+      "url": "https://www.techtimes.com/articles/318527/20260616/federal-reserve-june-2026-meeting-warsh-set-drop-dot-hike-risk-climbs.htm",
+      "source": "TechTimes / IndexBox / REXShares FOMC June 2026",
+      "expires_at": "2026-06-18T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-three-inst-netsell-streak-2026-06-17",
+      "level": "high",
+      "title": "三大法人連日賣超，外資砍元大金/南亞科 — 市場去槓桿訊號",
+      "body": "三大法人 6/17 確認淨賣超（總估約 -176 億元），外資今日賣超前二為元大金（2885）與南亞科（2408）。土洋追砍同方向，顯示外資與自營商均處守勢。台積電外資持股已連多日減碼，若 FOMC 後外資賣壓未止，台股系統性回測 45,000 下方風險上升。",
+      "url": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E5%8C%97%E8%82%A1%E5%B8%82-%E4%B8%89%E5%A4%A7%E6%B3%95%E4%BA%BA17%E6%97%A5%E8%B3%A3%E8%B6%85%E5%89%8D%E5%8D%81%E5%A4%A7-%E5%9C%9F%E6%B4%8B%E8%BF%BD%E7%A0%8D-%E5%85%83%E5%A4%A7%E9%87%91-%E5%8D%97%E4%BA%9E%E7%A7%91%E6%B7%AA%E5%89%8D%E4%BA%8C-082452473.html",
+      "source": "Yahoo財經 台北股市三大法人17日賣超前十大",
+      "expires_at": "2026-06-18T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-financial-sector-stronghold-2026-06-17",
+      "level": "medium",
+      "title": "金融股強勢撐盤 — 利率高檔受益、資金輪動至防禦板塊",
+      "body": "今日台股受美科技股拖累重挫 600+ 點，但金融股強力撐盤為最大亮點。在利率高檔環境下，銀行（NIM提升）、保險（再投資收益改善）相對受益。資金出現短暫輪動跡象。觀察：若 FOMC 鷹派確立，金融股防禦特性可能持續。",
+      "url": "https://news.cnyes.com/news/id/6502387",
+      "source": "鉅亨網台股開盤報「金融股強勢撐盤」",
+      "expires_at": "2026-06-18T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-tsmc-late-session-surge-2026-06-17",
+      "level": "medium",
+      "title": "台積電尾盤爆量甩尾 — 主力護盤信號，但後續需FOMC驗證",
+      "body": "台積電今日尾盤出現爆量上攻，帶動指數回補部分失地。尾盤爆量通常代表主力資金介入護盤，短線情緒由極度悲觀回穩。但此護盤能否持續，取決於 FOMC 結果：若鷹派，護盤效果可能被明日賣壓抵消。",
+      "url": "https://cmnews.com.tw/article/forumnews-72ab4829-69ab-11f1-97e0-fbb0d5e3aa02",
+      "source": "CMoney 台積電尾盤爆量甩尾！台股齊揚",
+      "expires_at": "2026-06-18T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-passive-components-cooldown-2026-06-17",
+      "level": "medium",
+      "title": "被動元件 MLCC 高點整理 — 昨日漲停後短線獲利了結",
+      "body": "國巨（2327）昨日衝 996 元天價並漲停，今日在高點壓回整理。短線獲利了結壓力浮現，但 Morgan Stanley 目標 1,335 元及 AI-MLCC 量需求（Rubin +78%）長線主題不變。整理後若站穩，仍為觀察重點。",
+      "url": "https://news.cnyes.com/news/id/6479266",
+      "source": "先前報告被動元件主題 + MLCC需求分析",
+      "expires_at": "2026-06-18T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-holiday-liquidity-risk-2026-06-17",
+      "level": "low",
+      "title": "流動性風險：6/19 Juneteenth 美股休市 + 台灣端午節 6/20-22 連假",
+      "body": "6/19（週五）美股 Juneteenth 假日休市。6/20-22（週五到週日）台灣端午節連假，台股 6/20 休市。加上 FOMC 後市場重新定價，本週後段流動性偏低，波動可能放大。建議假期前降低高波動部位。",
+      "url": "https://www.twse.com.tw/zh/",
+      "source": "TWSE 假期行事曆",
+      "expires_at": "2026-06-19T09:00:00+08:00"
+    }
+  ],
+  "whats_changed": {
+    "generated_at": "2026-06-17T14:03:00+08:00",
+    "prev_date": "2026-06-16",
+    "curr_date": "2026-06-17",
+    "confidence": "medium",
+    "note": "Conservative diff: direction changes confirmed only where signals shifted meaningfully. Uncertain items not filled.",
+    "market_direction_flip": {
+      "prev_taiex_change_pts": 454,
+      "curr_taiex_change_pts": -389,
+      "note": "台股由昨日上漲 +454pts 轉為今日下跌 -389pts（FOMC 前夕美科技股走弱，三大法人由買翻賣）"
+    },
+    "institutions_flip": {
+      "prev_direction": "net_buy",
+      "prev_amount_b_twd": 150,
+      "curr_direction": "net_sell",
+      "curr_amount_b_twd_est": -176,
+      "note": "三大法人由買超 +150B 轉為賣超 -176B（方向反轉確認，信心：中）"
+    },
+    "stock_direction_changes": [
+      {
+        "ticker": "NVDA",
+        "prev_direction": "bullish",
+        "curr_direction": "neutral",
+        "prev_confidence": 0.7,
+        "curr_confidence": 0.4,
+        "reason": "FOMC鷹派點陣圖抹去2026降息，成長股估值風險上升，降為中性"
+      },
+      {
+        "ticker": "TSM",
+        "prev_direction": "bullish",
+        "curr_direction": "neutral",
+        "prev_confidence": 0.6,
+        "curr_confidence": 0.4,
+        "reason": "同NVDA：FOMC鷹派 + 外資正股連賣，ADR方向降至中性"
+      }
+    ],
+    "stock_price_changes": [
+      {
+        "ticker": "2330",
+        "prev_price": 2365,
+        "curr_price": 2370,
+        "change_pts": 5,
+        "change_pct": 0.21
+      },
+      {
+        "ticker": "2454",
+        "prev_price": 4370,
+        "curr_price": 4465,
+        "change_pts": 95,
+        "change_pct": 2.17
+      },
+      {
+        "ticker": "2317",
+        "prev_price": 270,
+        "curr_price": 269,
+        "change_pts": -1,
+        "change_pct": -0.37
+      },
+      {
+        "ticker": "NVDA",
+        "prev_price": 211.93,
+        "curr_price": 209.5,
+        "change_pts": -2.43,
+        "change_pct": -1.15
+      },
+      {
+        "ticker": "TSLA",
+        "prev_price": 413.7,
+        "curr_price": 412,
+        "change_pts": -1.7,
+        "change_pct": -0.41
+      },
+      {
+        "ticker": "AAPL",
+        "prev_price": 296.42,
+        "curr_price": 292,
+        "change_pts": -4.42,
+        "change_pct": -1.49
+      },
+      {
+        "ticker": "TSM",
+        "prev_price": 438.13,
+        "curr_price": 435,
+        "change_pts": -3.13,
+        "change_pct": -0.71
+      }
+    ],
+    "alerts_added": [
+      "alert-fomc-warsh-hawkish-dot-2026-06-17",
+      "alert-three-inst-netsell-streak-2026-06-17",
+      "alert-financial-sector-stronghold-2026-06-17",
+      "alert-tsmc-late-session-surge-2026-06-17",
+      "alert-passive-components-cooldown-2026-06-17",
+      "alert-holiday-liquidity-risk-2026-06-17"
+    ],
+    "alerts_removed": [
+      "alert-fomc-warsh-dotplot-2026-06-16",
+      "alert-passive-components-mlcc-boom-2026-06-16",
+      "alert-tsmc-foreign-sell-streak-2026-06-16",
+      "alert-iran-mou-sustained-2026-06-16",
+      "alert-juneteenth-low-liquidity-2026-06-16"
+    ],
+    "alerts_level_escalated": [],
+    "alerts_level_deescalated": [],
+    "key_theme_changes": [
+      "NVDA: bullish(0.7)→neutral(0.4) — FOMC鷹派點陣圖抹去降息，成長股估值風險上升",
+      "TSM ADR: bullish(0.6)→neutral(0.4) — 同上 + 外資正股連賣",
+      "三大法人: net_buy(+150B)→net_sell(-176B) — 方向反轉確認",
+      "FOMC alert: 由「昨日預警」升級為「今夜02:00即將發生」，緊迫度最高",
+      "被動元件MLCC: high(漲停)→medium(高點整理) — 短線降溫",
+      "金融股撐盤: 新增alert（昨日未見，利率高檔受益輪動）",
+      "台積電尾盤護盤: 新增alert（昨日未見，尾盤爆量甩尾訊號）"
+    ]
+  }
+}

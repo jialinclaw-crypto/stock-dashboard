@@ -1,0 +1,441 @@
+{
+  "_schema_version": 3,
+  "type": "morning",
+  "report_file": "股市-開盤前-20260618.md",
+  "date": "2026-06-18",
+  "weekday": "週四",
+  "generated_at": "2026-06-18T07:31:00+08:00",
+  "market_view": {
+    "level": "bearish",
+    "confidence": 0.78,
+    "headline": "FOMC Warsh 鷹派首秀：9/18 委員預測年底升息、PCE 上修至 3.6%；SOX −8%、VIX 跳至 20.47；台股估缺口低開 1–3%，半導體首當其衝"
+  },
+  "indices": [
+    {
+      "name": "道瓊工業",
+      "ticker": "DJI",
+      "value": 51492.55,
+      "change_pct": -0.98,
+      "trend": "neutral-bearish",
+      "note": "−507.12pts；金融/能源跟跌，傳產藍籌稍具防禦性但無法對抗鷹派 FOMC 壓力"
+    },
+    {
+      "name": "S&P 500",
+      "ticker": "SPX",
+      "value": 7420.10,
+      "change_pct": -1.21,
+      "trend": "bearish",
+      "note": "跌破 7,450 支撐；大型科技 Microsoft/Meta/Alphabet/Amazon 全線收黑"
+    },
+    {
+      "name": "Nasdaq",
+      "ticker": "IXIC",
+      "value": 26021.66,
+      "change_pct": -1.34,
+      "trend": "bearish",
+      "note": "科技/AI 估值承壓；升息預期重燃壓制高本益比族群"
+    },
+    {
+      "name": "費城半導體",
+      "ticker": "SOX",
+      "value": 12500.0,
+      "change_pct": -8.2,
+      "trend": "bearish",
+      "note": "暴跌逾 8%；Micron −17%、Intel −9%、AMD −12.6%；FOMC 鷹派 + AI 泡沫疑慮雙重打壓"
+    },
+    {
+      "name": "VIX 恐慌指數",
+      "ticker": "VIX",
+      "value": 20.47,
+      "change_pct": 3.02,
+      "trend": "bearish",
+      "note": "自 16.41 跳升至 20.47，恐慌情緒升溫；高於 20 為警戒區"
+    },
+    {
+      "name": "美 10Y 殖利率",
+      "ticker": "US10Y",
+      "value": 4.65,
+      "change_pct": 0.18,
+      "trend": "bearish",
+      "note": "FOMC 鷹派後公債拋售，殖利率上揚至 4.65%；高利率壓制科技估值"
+    },
+    {
+      "name": "美元指數",
+      "ticker": "DXY",
+      "value": 104.8,
+      "change_pct": 0.4,
+      "trend": "bullish",
+      "note": "升息預期支撐美元走強；強美元對台積電等出口導向個股為短線逆風"
+    }
+  ],
+  "stocks": [
+    {
+      "signal_id": "stk-2330-2026-06-18-morning",
+      "ticker": "2330",
+      "name": "台積電",
+      "market": "TW",
+      "signal": "🔴",
+      "direction": "bearish",
+      "confidence": 0.72,
+      "view": "FOMC 鷹派後 TSM ADR ~$432 相對抗跌，但台股今估開 NT$2,300–2,330(前收 2,360)；RSI 約 38 接近超賣；基本面無虞，宏觀利率上行壓估值",
+      "rationale": "SOX −8% + 利率上行壓估值，短線回測 NT$2,280–2,300 支撐帶",
+      "price": 2360.0,
+      "change_pct": 1.67,
+      "support": 2280.0,
+      "resistance": 2420.0,
+      "stop_loss": 2240.0,
+      "target": 2500.0,
+      "technicals": {
+        "rsi14": 38,
+        "macd": "bearish crossover, histogram 負值擴大",
+        "ma_alignment": "股價跌破 5MA，20MA 下行壓制"
+      },
+      "valuation": {
+        "pe": 24.0,
+        "pe_percentile_5y": 45,
+        "verdict": "合理偏低，但升息環境壓縮本益比空間"
+      },
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/2330.TW",
+        "https://www.cnbc.com/quotes/TSM"
+      ],
+      "expires_at": "2026-06-18T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-2454-2026-06-18-morning",
+      "ticker": "2454",
+      "name": "聯發科",
+      "market": "TW",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.58,
+      "view": "SOX −8% 短線拖累，今估開 NT$4,350–4,420(前收 4,485)；AI ASIC 重評題材基本面仍強，RSI 約 40 近超賣；NT$4,200 為關鍵支撐",
+      "rationale": "基本面 AI ASIC 題材強勁，但宏觀鷹派環境壓估值；中性觀望等落底",
+      "price": 4485.0,
+      "change_pct": 1.64,
+      "support": 4200.0,
+      "resistance": 4600.0,
+      "stop_loss": 4100.0,
+      "target": 4800.0,
+      "technicals": {
+        "rsi14": 40,
+        "macd": "中線偏弱，MACD 0 軸下方",
+        "ma_alignment": "5MA 下行，暫守 20MA"
+      },
+      "valuation": {
+        "pe": 18.0,
+        "pe_percentile_5y": 50,
+        "verdict": "合理估值，AI ASIC 爆發力未完全反映"
+      },
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/2454.TW"
+      ],
+      "expires_at": "2026-06-18T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-2317-2026-06-18-morning",
+      "ticker": "2317",
+      "name": "鴻海",
+      "market": "TW",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.60,
+      "view": "估開 NT$263–267(前收 268)；AI 伺服器/GB200 出貨題材支撐；對 SOX 敏感度低；大盤低開後可能成相對強勢防禦標的",
+      "rationale": "非純半導體，PE 10x 低估值提供下檔保護；AI 伺服器出貨動能延續",
+      "price": 268.0,
+      "change_pct": 0.37,
+      "support": 258.0,
+      "resistance": 278.0,
+      "stop_loss": 252.0,
+      "target": 290.0,
+      "technicals": {
+        "rsi14": 52,
+        "macd": "輕微多頭，趨勢相對完整",
+        "ma_alignment": "股價在 5MA/20MA 之上，均線多頭排列"
+      },
+      "valuation": {
+        "pe": 10.0,
+        "pe_percentile_5y": 30,
+        "verdict": "偏低估值，AI 伺服器溢價尚未完全反映"
+      },
+      "sources": [
+        "https://www.fugle.tw/ai/2317/2330/%E7%B6%93%E7%87%9F%E8%83%BD%E5%8A%9B",
+        "https://www.cnyes.com/twstock/ps_historyprice.aspx?code=2317"
+      ],
+      "expires_at": "2026-06-18T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-NVDA-2026-06-18-morning",
+      "ticker": "NVDA",
+      "name": "輝達",
+      "market": "US",
+      "signal": "🔴",
+      "direction": "bearish",
+      "confidence": 0.70,
+      "view": "6/17 收 $204.65(−3.7% 自前日 $212.45)；SOX −8% 主導；RSI 約 35 短線超賣；$195 為重要支撐；升息路徑明朗前難快速反彈",
+      "rationale": "FOMC 升息預期重燃 + SOX 全面崩跌，短線動能轉弱；$195 支撐關鍵",
+      "price": 204.65,
+      "change_pct": -3.7,
+      "support": 195.0,
+      "resistance": 215.0,
+      "stop_loss": 188.0,
+      "target": 240.0,
+      "technicals": {
+        "rsi14": 35,
+        "macd": "死亡交叉形成，bearish momentum 加速",
+        "ma_alignment": "股價跌破 50MA，200MA 在 $185 位置"
+      },
+      "valuation": {
+        "pe": 31.76,
+        "pe_percentile_5y": 55,
+        "verdict": "合理偏高；升息壓縮本益比，但 FY2026 營收 +65% 支撐長線"
+      },
+      "sources": [
+        "https://stockanalysis.com/stocks/nvda/",
+        "https://finance.yahoo.com/quote/NVDA/"
+      ],
+      "expires_at": "2026-06-18T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-TSLA-2026-06-18-morning",
+      "ticker": "TSLA",
+      "name": "特斯拉",
+      "market": "US",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.55,
+      "view": "6/17 收 $404.66(−1.6%)；SpaceX IPO 排擠效應 + FOMC 壓估值；Q2 交付量估 42 萬輛(YoY+9%)提供支撐；$390 支撐，跌破測 $370",
+      "rationale": "基本面交付量改善，但宏觀利率上行 + Musk 資金分散為雙重壓力",
+      "price": 404.66,
+      "change_pct": -1.58,
+      "support": 390.0,
+      "resistance": 420.0,
+      "stop_loss": 372.0,
+      "target": 450.0,
+      "technicals": {
+        "rsi14": 48,
+        "macd": "中性偏弱，接近轉負",
+        "ma_alignment": "股價在 20MA 附近震盪"
+      },
+      "valuation": {
+        "pe": 70.0,
+        "pe_percentile_5y": 40,
+        "verdict": "估值偏高，交付量改善但需更強 EPS 催化"
+      },
+      "sources": [
+        "https://finance.yahoo.com/quote/TSLA/",
+        "https://stockanalysis.com/stocks/tsla/"
+      ],
+      "expires_at": "2026-06-18T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-AAPL-2026-06-18-morning",
+      "ticker": "AAPL",
+      "name": "蘋果",
+      "market": "US",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.60,
+      "view": "6/17 收 $295.12(−0.1%)；WWDC Siri AI 利多已反映；FOMC 後相對抗跌；升息環境壓回購效益；支撐 $285，壓力 $305",
+      "rationale": "防禦性較強但 WWDC 催化劑已反映；升息回購效益縮減為主要風險",
+      "price": 295.12,
+      "change_pct": -0.1,
+      "support": 285.0,
+      "resistance": 305.0,
+      "stop_loss": 278.0,
+      "target": 320.0,
+      "technicals": {
+        "rsi14": 52,
+        "macd": "輕微多頭但動能減弱",
+        "ma_alignment": "在 20MA 上方，趨勢維持"
+      },
+      "valuation": {
+        "pe": 30.0,
+        "pe_percentile_5y": 60,
+        "verdict": "略高，但現金流強勁、回購計劃支撐；升息縮減回購吸引力"
+      },
+      "sources": [
+        "https://finance.yahoo.com/quote/AAPL/",
+        "https://robinhood.com/us/en/stocks/AAPL/"
+      ],
+      "expires_at": "2026-06-18T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-TSM-2026-06-18-morning",
+      "ticker": "TSM",
+      "name": "台積電ADR",
+      "market": "US",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.62,
+      "view": "6/17 區間 $427–440，相對 SOX −8% 顯著抗跌；NVDA AI 晶片需求旺盛支撐長線；支撐 $415，壓力 $450；升息環境短線承壓",
+      "rationale": "相對 SOX 抗跌，NVDA 需求驅動基本面強；升息壓估值為主要短線阻力",
+      "price": 432.0,
+      "change_pct": 0.89,
+      "support": 415.0,
+      "resistance": 450.0,
+      "stop_loss": 405.0,
+      "target": 470.0,
+      "technicals": {
+        "rsi14": 44,
+        "macd": "輕微偏弱，在 0 軸附近",
+        "ma_alignment": "暫守 20MA，5MA 下行"
+      },
+      "valuation": {
+        "pe": 22.0,
+        "pe_percentile_5y": 48,
+        "verdict": "合理估值，AI 需求溢價已部分反映；升息壓縮本益比空間"
+      },
+      "sources": [
+        "https://www.cnbc.com/quotes/TSM",
+        "https://finance.yahoo.com/quote/TSM/"
+      ],
+      "expires_at": "2026-06-18T13:30:00+08:00"
+    }
+  ],
+  "alerts": [
+    {
+      "alert_id": "alt-fomc-hawkish-hold-june",
+      "level": "warning",
+      "text": "Fed 6/17 維持利率 3.5–3.75% 但鷹派超預期：9/18 委員預測年底前升息、PCE 預測上修至 3.6%；Warsh 棄權點陣圖增添不確定性；高估值科技/半導體持續承壓",
+      "tickers": ["NVDA", "AAPL", "TSLA", "TSM", "2330", "2454"],
+      "url": "https://www.foxbusiness.com/economy/federal-reserve-interest-rate-decision-june-17-2026",
+      "source": "Fox Business / CNBC"
+    },
+    {
+      "alert_id": "alt-sox-semi-selloff-june",
+      "level": "warning",
+      "text": "費半 SOX 6/17 暴跌逾 8%（Micron −17%、Intel −9%、AMD −12.6%）；AI 晶片需求疑慮 + FOMC 升息預期雙重壓制；連續多日重創",
+      "tickers": ["NVDA", "TSM", "2330", "2454"],
+      "url": "https://fortune.com/2026/06/05/tech-stocks-market-bloodbath-fed-rate-hikes-jobs-report-ai-fueled-chip-boom/",
+      "source": "Fortune"
+    },
+    {
+      "alert_id": "alt-iran-war-oil-inflation",
+      "level": "warning",
+      "text": "伊朗戰爭持續推高油價（Brent ~$88），供應鏈中斷風險維持；能源通膨推升 PCE 居高不下，為 Fed 升息提供理由",
+      "tickers": [],
+      "url": "https://www.cnbc.com/amp/2026/06/11/iran-war-us-trump-strikes-centcom-oil-investors.html",
+      "source": "CNBC"
+    },
+    {
+      "alert_id": "alt-aapl-wwdc-2026-siri-ai",
+      "level": "info",
+      "text": "WWDC 2026 Siri AI 徹底翻修利多已反映在股價，短期催化劑消化完畢；關注下次硬體發表時間",
+      "tickers": ["AAPL"],
+      "url": "https://finance.yahoo.com/quote/AAPL/",
+      "source": "Yahoo Finance"
+    },
+    {
+      "alert_id": "alt-foxconn-ai-server-rerating",
+      "level": "info",
+      "text": "鴻海 GB200 AI 伺服器出貨題材持續；COMPUTEX 展示 NVIDIA Vera Rubin 超算平台，AI 伺服器估值重評進行中",
+      "tickers": ["2317"],
+      "url": "https://www.fugle.tw/ai/2317/2330/%E7%B6%93%E7%87%9F%E8%83%BD%E5%8A%9B",
+      "source": "Fugle 富果"
+    },
+    {
+      "alert_id": "alt-mediatek-ai-asic-rerating",
+      "level": "info",
+      "text": "聯發科 AI ASIC 爆發力重評題材仍在進行；外資大幅上修目標價，長線動能不變但短線受 SOX 拖累",
+      "tickers": ["2454"],
+      "url": "https://tw.stock.yahoo.com/quote/2454.TW",
+      "source": "Yahoo 股市"
+    }
+  ],
+  "sector_rotation": {
+    "strong": ["能源", "防禦型金融", "傳產藍籌"],
+    "weak": ["半導體/IC設計", "AI基礎設施", "高估值科技"],
+    "watch": ["AI伺服器代工(鴻海/廣達)", "電信/公用事業", "生技醫療"]
+  },
+  "whats_changed": {
+    "compared_to": "股市-開盤前-20260617.md",
+    "compared_to_date": "2026-06-17",
+    "new": [
+      {
+        "type": "alert",
+        "summary": "FOMC 鷹派落地：alt-fomc-hawkish-hold-june 新增（取代昨日事前風險警示 alt-fomc-june-blackout）",
+        "tickers": ["NVDA", "AAPL", "TSLA", "TSM", "2330", "2454"],
+        "ticker": "",
+        "from": "",
+        "to": ""
+      },
+      {
+        "type": "stock_direction",
+        "summary": "NVDA 方向由 neutral 轉 bearish：SOX −8%、FOMC 升息壓估值，RSI 跌至 35",
+        "tickers": ["NVDA"],
+        "ticker": "NVDA",
+        "from": "neutral",
+        "to": "bearish"
+      },
+      {
+        "type": "stock_direction",
+        "summary": "2330 台積電方向由 neutral 轉 bearish：SOX 暴跌 + 利率上行壓縮估值",
+        "tickers": ["2330"],
+        "ticker": "2330",
+        "from": "neutral",
+        "to": "bearish"
+      },
+      {
+        "type": "stock_direction",
+        "summary": "2454 聯發科方向由 bullish 轉 neutral：SOX 拖累短線，基本面仍強但信心下降",
+        "tickers": ["2454"],
+        "ticker": "2454",
+        "from": "bullish",
+        "to": "neutral"
+      },
+      {
+        "type": "stock_direction",
+        "summary": "2317 鴻海方向由 bullish 轉 neutral：大盤壓力，但 AI 伺服器題材維持相對支撐",
+        "tickers": ["2317"],
+        "ticker": "2317",
+        "from": "bullish",
+        "to": "neutral"
+      },
+      {
+        "type": "stock_direction",
+        "summary": "AAPL 蘋果方向由 bullish 轉 neutral：WWDC 催化劑消化，升息縮減回購吸引力",
+        "tickers": ["AAPL"],
+        "ticker": "AAPL",
+        "from": "bullish",
+        "to": "neutral"
+      },
+      {
+        "type": "alert",
+        "summary": "新增 alt-iran-war-oil-inflation：伊朗戰爭油價高企推升 PCE，為 Fed 升息理由之一",
+        "tickers": [],
+        "ticker": "",
+        "from": "",
+        "to": ""
+      }
+    ],
+    "strengthened": [
+      {
+        "type": "alert",
+        "summary": "alt-sox-semi-selloff-june 升級：昨日 SOX −3.44%，今日暴跌 −8.2%，跌幅大幅擴大",
+        "tickers": ["NVDA", "TSM", "2330", "2454"],
+        "ticker": "",
+        "from": "SOX -3.44%",
+        "to": "SOX -8.2%"
+      },
+      {
+        "type": "topic",
+        "summary": "market_view 信心由 0.65 升至 0.78（bearish 更明確）：FOMC 結果落地消除不確定性，但方向更偏空",
+        "tickers": [],
+        "ticker": "",
+        "from": "neutral-bearish / 0.65",
+        "to": "bearish / 0.78"
+      }
+    ],
+    "removed": [
+      {
+        "type": "alert",
+        "summary": "alt-fomc-june-blackout 移除：FOMC 已於 6/17 決策，事件風險已落地；由 alt-fomc-hawkish-hold-june 取代",
+        "tickers": ["NVDA", "AAPL", "TSLA", "TSM", "2330"],
+        "ticker": "",
+        "from": "",
+        "to": ""
+      }
+    ]
+  }
+}

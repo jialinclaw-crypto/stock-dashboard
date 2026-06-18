@@ -1,0 +1,368 @@
+{
+  "schema_version": "3",
+  "type": "close",
+  "generated_at": "2026-06-18T14:05:00+08:00",
+  "expires_at": "2026-06-19T09:00:00+08:00",
+  "date": "2026-06-18",
+  "weekday": "週四",
+  "whats_changed": {
+    "vs_date": "2026-06-17",
+    "vs_signal_type": "close",
+    "direction_changes": [
+      {
+        "ticker": "2330",
+        "name": "台積電",
+        "prev_direction": "neutral",
+        "new_direction": "bullish",
+        "reason": "FOMC 落地 buy-the-fact；台股大盤 +1.08%，台積電盤中確認 2,410 反彈，SOX 超跌消化完畢"
+      }
+    ],
+    "market_changes": [
+      {
+        "field": "three_institutions_direction",
+        "prev": "net_sell",
+        "new": "net_buy_est",
+        "confidence": "low",
+        "note": "昨日 -251.59 億 → 今日量能 5,284 億爆量反彈，估計轉買超；待交易所盤後公告確認"
+      },
+      {
+        "field": "taiex_close",
+        "prev_est": 45420,
+        "prev_actual": 45877,
+        "new_est": 46373,
+        "note": "6/17 收盤報告估算偏低（45,420 估 vs 45,877 實際）；今日 46,373 為確認值"
+      },
+      {
+        "field": "taiex_ath",
+        "prev": 46552,
+        "new": 46565,
+        "note": "盤中微幅突破前 ATH，歷史新高位阻轉支撐待驗證"
+      }
+    ],
+    "alerts_added": [
+      "alert-taiex-ath-breach-2026-06-18",
+      "alert-passive-components-resurgence-2026-06-18",
+      "alert-holiday-liquidity-juneteenth-dragonboat-2026-06-18"
+    ],
+    "alerts_resolved": [
+      "alert-fomc-warsh-hawkish-dot-2026-06-17"
+    ],
+    "alerts_removed": [
+      "alert-passive-components-cooldown-2026-06-17"
+    ],
+    "alerts_downgraded": [
+      {
+        "alert_id": "alert-three-inst-netsell-streak-2026-06-17",
+        "prev_level": "high",
+        "new_level": "medium",
+        "note": "方向可能反轉，待確認"
+      }
+    ]
+  },
+  "market_summary": {
+    "taiex_close_est": 46373,
+    "taiex_change_pts_est": 496,
+    "taiex_change_pct_est": 1.08,
+    "taiex_prev_close": 45877,
+    "taiex_intraday_low_est": 45972,
+    "taiex_intraday_high_est": 46565,
+    "taiex_ath": 46565,
+    "taiex_ath_updated": true,
+    "taiex_from_ath_pts_est": 0,
+    "taiex_from_ath_pct_est": 0.0,
+    "volume_b_twd_est": 5284,
+    "nt_per_usd_est": 31.05,
+    "data_confidence": "medium",
+    "note": "TAIEX 收盤 46,373（+495.82 pts）及盤中高點 46,565 由搜尋結果確認。個股價格為盤中+推算。三大法人為估算。",
+    "catalyst_primary": "FOMC buy-the-fact：Warsh 首場維持利率不變（12-0），不確定性解除；點陣圖鷹派但市場解讀「壞事沒有更壞」，半導體超跌反彈+被動元件國巨漲停",
+    "sector_rotation": "從昨日金融股防禦 → 今日半導體/被動元件領漲；AI 伺服器鏈跟漲",
+    "three_institutions_direction": "net_buy_est",
+    "three_institutions_amount_b_twd_est": 280,
+    "three_institutions_confidence": "low",
+    "three_institutions_note": "估算：外資+150~300億，投信+20~50億，自營商+20~40億，合計+190~390億。量能5,284億及FOMC落地為估算依據。",
+    "passive_components_note": "國巨（2327）今日再次漲停，MLCC 漲價循環敘事強勢復活；昨日短暫冷卻後今日爆發",
+    "fomc_result": {
+      "decision": "hold",
+      "rate_range": "3.50-3.75%",
+      "vote": "12-0",
+      "dot_plot_hike_count": 9,
+      "dot_plot_median_2026_rate": 3.8,
+      "pce_forecast_2026": 3.6,
+      "warsh_abstained_dot_plot": true,
+      "market_reaction": "buy-the-fact；SOX 昨跌8.2%已提前超跌，今日台股+1.08%",
+      "sources": [
+        "https://www.cnbc.com/2026/06/17/fed-interest-rate-decision-june-2026.html",
+        "https://www.npr.org/2026/06/17/nx-s1-5860084/fed-chief-warsh-first-fomc-meeting",
+        "https://www.tradingkey.com/analysis/economic/central-banks/261973912-fed-federal-fomc-2-economic-projections-decision-rates-tradingkey"
+      ]
+    },
+    "us_market_jun17": {
+      "sp500_close": 7420.10,
+      "sp500_change_pct": -1.21,
+      "nasdaq_close": 26021.66,
+      "nasdaq_change_pct": -1.34,
+      "sox_change_pct_est": -8.2,
+      "nvda_close_est": 204.65,
+      "nvda_change_pct_est": -3.7,
+      "tsla_close_est": 404.66,
+      "aapl_close_est": 295.12,
+      "tsm_adr_close_est": 432,
+      "note": "6/17 ET 收盤。6/18 ET 今晚開市為 Juneteenth 前最後交易日，台股反彈有望帶動半導體 ADR。"
+    },
+    "holiday_calendar": {
+      "us_juneteenth": "2026-06-19",
+      "tw_dragonboat_start": "2026-06-20",
+      "tw_dragonboat_end": "2026-06-22",
+      "tw_reopen": "2026-06-23",
+      "note": "雙長假：台股 6/20–22 連休三天，收假第一天 6/23（週二）面臨美股 6/18 ET 收盤後的價格發現風險"
+    }
+  },
+  "stocks": [
+    {
+      "signal_id": "stk-2330-2026-06-18-close",
+      "ticker": "2330",
+      "name": "台積電",
+      "market": "TW",
+      "price": 2425,
+      "price_confidence": "low-medium",
+      "price_note": "盤中 10:28 確認 2,410 (+1.05%)；估收盤 ~2,425（市場持續上漲推算）。昨日實際收盤約 2,385（非 close report 估算的 2,360）。",
+      "change_pts": 40,
+      "change_pct": 1.68,
+      "direction": "bullish",
+      "confidence": 0.6,
+      "rationale": "FOMC 落地確認「按兵不動」，不確定性解除觸發 buy-the-fact 行情。台積電盤中確認反彈至 2,410，估收盤 ~2,425。TSM ADR $432（相對 SOX -8.2% 顯著抗跌）支撐台積電估值底部。AI CoWoS 2.5D 需求持續、N2 良率改善，基本面無虞。短線方向轉偏多，但端午連假後仍需觀察美股 6/18 ET 收盤反應。",
+      "catalysts_positive": [
+        "FOMC 不確定性解除，buy-the-fact 推動超跌反彈",
+        "AI CoWoS 2.5D 需求旺盛，N2 良率持續改善",
+        "TSM ADR 昨日相對抗跌（$432 vs SOX -8.2%），ADR 折溢價修復空間存在",
+        "台股盤中創新 ATH 46,565，市場情緒轉正向"
+      ],
+      "catalysts_negative": [
+        "FOMC 鷹派架構未改（9/18 委員傾向年底升息，PCE 上修 3.6%）",
+        "端午連假 3 天（6/20-22）持倉風險，收假後面臨美股跳空",
+        "SOX 昨跌 8.2% 技術面受損，短線震盪尚未完全平復"
+      ],
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/2330.TW",
+        "https://www.cnbc.com/2026/06/17/fed-interest-rate-decision-june-2026.html"
+      ],
+      "expires_at": "2026-06-19T09:00:00+08:00"
+    },
+    {
+      "signal_id": "stk-2454-2026-06-18-close",
+      "ticker": "2454",
+      "name": "聯發科",
+      "market": "TW",
+      "price": 4485,
+      "price_confidence": "low",
+      "price_note": "盤中 10:29 確認 4,445 (+0.34%)；估收盤 ~4,480–4,510（市場持續上漲推算）。昨日實際收盤估 4,430–4,465。",
+      "change_pts": 50,
+      "change_pct": 1.12,
+      "direction": "bullish",
+      "confidence": 0.58,
+      "rationale": "AI ASIC 重評題材持續，聯發科本季 AI 相關收入貢獻提升中。FOMC 落地解除利率升升壓，高成長股估值回升。盤中確認反彈但力道略遜於台積電（可能因昨日下跌幅度較淺）。短線支撐 4,200 有效，維持偏多。",
+      "catalysts_positive": [
+        "AI ASIC 重評題材：Google/Meta 自製晶片採用聯發科方案敘事持續",
+        "FOMC 落地後成長股估值回升",
+        "費半反彈帶動整體 IC 設計族群"
+      ],
+      "catalysts_negative": [
+        "盤中漲幅相對 TAIEX 偏小（可能受昨日4,560高點後調整影響）",
+        "FOMC 鷹派點陣圖中長期壓估值",
+        "端午連假持倉風險"
+      ],
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/2454.TW"
+      ],
+      "expires_at": "2026-06-19T09:00:00+08:00"
+    },
+    {
+      "signal_id": "stk-2317-2026-06-18-close",
+      "ticker": "2317",
+      "name": "鴻海",
+      "market": "TW",
+      "price": 270,
+      "price_confidence": "medium",
+      "price_note": "盤中確認 270 元（+0.74%，+2元）；多來源吻合，收盤估同 270–272。",
+      "change_pts": 2,
+      "change_pct": 0.75,
+      "direction": "neutral",
+      "confidence": 0.55,
+      "rationale": "鴻海隨大盤小漲，非今日主角（今日主角為半導體/被動元件）。AI 伺服器 GB200 出貨題材支撐，PE ~10x 估值便宜，下行有限。但漲幅明顯遜於大盤（+0.75% vs +1.08%），呈相對弱勢。端午連假前偏防禦型持股。",
+      "catalysts_positive": [
+        "GB200/AI 伺服器持續出貨，H2 訂單能見度佳",
+        "PE ~10x，估值安全墊厚",
+        "端午假前資金避險性買盤"
+      ],
+      "catalysts_negative": [
+        "今日相對弱勢（+0.75% vs 大盤 +1.08%）",
+        "非今日主題（被動元件、半導體吸引主要資金）",
+        "端午連假持倉不確定性"
+      ],
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/2317.TW"
+      ],
+      "expires_at": "2026-06-19T09:00:00+08:00"
+    },
+    {
+      "signal_id": "stk-NVDA-2026-06-18-close",
+      "ticker": "NVDA",
+      "name": "輝達",
+      "market": "US",
+      "price": 204.65,
+      "price_confidence": "medium",
+      "price_note": "6/17 ET 確認收盤。6/18 ET 今晚開盤前（台北時間 21:30）為最新有效數據；台股今日+1.08%反彈可能帶動晚間正向情緒。",
+      "change_pts": -7.8,
+      "change_pct": -3.7,
+      "direction": "neutral",
+      "confidence": 0.45,
+      "rationale": "6/17 收盤 $204.65（-3.7%）反映 FOMC 後 SOX -8.2% 衝擊。短線 RSI ~33 超賣，技術面具反彈條件。支撐 $195，壓力 $215。台股今日 buy-the-fact 強彈或提振今晚美股半導體情緒，但 Juneteenth 前流動性薄。6/18 ET 收盤後需觀察。方向維持中性（正式轉多需確認今晚收盤>$210）。",
+      "catalysts_positive": [
+        "台股今日 buy-the-fact +1.08%，半導體情緒改善",
+        "RSI ~33 技術超賣，反彈動能充足",
+        "Blackwell/Rubin 出貨週期確立，長線邏輯未破壞",
+        "Juneteenth 後市場重新聚焦 AI 需求週期"
+      ],
+      "catalysts_negative": [
+        "6/17 SOX 歷史級單日跌幅 -8.2%，技術面受損",
+        "FOMC 鷹派：PCE 3.6%，高利率壓高估值（PE ~31x）",
+        "Juneteenth 前薄量，做市商退場，波動加大",
+        "2026年降息概率大幅下降"
+      ],
+      "sources": [
+        "https://www.cnbc.com/2026/06/17/fed-meeting-today-live-updates.html"
+      ],
+      "expires_at": "2026-06-19T09:00:00+08:00"
+    },
+    {
+      "signal_id": "stk-TSLA-2026-06-18-close",
+      "ticker": "TSLA",
+      "name": "特斯拉",
+      "market": "US",
+      "price": 404.66,
+      "price_confidence": "medium",
+      "price_note": "6/17 ET 確認收盤；6/18 ET 今晚開盤前最新有效數據。",
+      "change_pts": -6.49,
+      "change_pct": -1.58,
+      "direction": "neutral",
+      "confidence": 0.42,
+      "rationale": "6/17 收盤 $404.66（-1.6%）。Q2 交付量預估 42 萬輛（+9% YoY）提供基本面支撐，但 FOMC 高利率環境壓高估值。支撐 $390，關鍵壓力 $420。維持中性，端午+Juneteenth 雙假期前不建議加碼。",
+      "catalysts_positive": [
+        "Q2 2026 交付量預估 42 萬輛（YoY +9%），7 月初公布",
+        "SpaceX IPO 籌備中，馬斯克資產重新被市場重新定價"
+      ],
+      "catalysts_negative": [
+        "FOMC 鷹派壓高 PE 股票估值",
+        "SpaceX IPO 融資排擠效應",
+        "雙長假（Juneteenth + 端午）持倉不確定性"
+      ],
+      "sources": [
+        "https://finance.yahoo.com/quote/TSLA/"
+      ],
+      "expires_at": "2026-06-19T09:00:00+08:00"
+    },
+    {
+      "signal_id": "stk-AAPL-2026-06-18-close",
+      "ticker": "AAPL",
+      "name": "蘋果",
+      "market": "US",
+      "price": 295.12,
+      "price_confidence": "medium",
+      "price_note": "6/17 ET 確認收盤，相對 SOX -8.2% 顯著抗跌（-0.1%）。6/18 ET 今晚開盤前最新有效數據。",
+      "change_pts": -0.41,
+      "change_pct": -0.14,
+      "direction": "neutral",
+      "confidence": 0.48,
+      "rationale": "AAPL 昨日最抗跌（-0.1% vs Nasdaq -1.34%），WWDC 2026 AI 升級利多持續作用。支撐 $285，壓力 $305。升息環境下回購效益縮減但消費者需求穩。防禦性仍佳，維持中性。",
+      "catalysts_positive": [
+        "WWDC 2026 AI 升級（Siri 重大改版）利多持續",
+        "昨日相對市場最抗跌，顯示機構資金防禦性買盤",
+        "服務業務（Apple Intelligence）高毛利率"
+      ],
+      "catalysts_negative": [
+        "升息環境壓低回購效益",
+        "China 市場份額壓力（國產手機替代效應）",
+        "Juneteenth 前薄量波動風險"
+      ],
+      "sources": [
+        "https://finance.yahoo.com/quote/AAPL/"
+      ],
+      "expires_at": "2026-06-19T09:00:00+08:00"
+    },
+    {
+      "signal_id": "stk-TSM-2026-06-18-close",
+      "ticker": "TSM",
+      "name": "台積電ADR",
+      "market": "US",
+      "price": 432,
+      "price_confidence": "low-medium",
+      "price_note": "6/17 ET 估算收盤；ADR 相較 SOX -8.2% 顯著抗跌，反映台積電訂單能見度強。台股今日實際收盤後 ADR 估值應同步調整。",
+      "change_pts": 3.82,
+      "change_pct": 0.89,
+      "direction": "neutral",
+      "confidence": 0.45,
+      "rationale": "TSM ADR 6/17 相對抗跌，反映機構對台積電基本面信心。今日台股 2330 收盤 ~2,425，依當前匯率（NT/USD ~31.05）折算 ADR 公允價值約 $440–450，存在小幅折讓（$432 < $440）。長線看多邏輯不變，短線跟隨美股半導體情緒波動。維持中性。",
+      "catalysts_positive": [
+        "台股 2330 今日漲至 ~2,425，ADR 折讓存在修復空間",
+        "NVDA Rubin / Google TPU 需求確認",
+        "Juneteenth 後資金可能回補半導體 ADR"
+      ],
+      "catalysts_negative": [
+        "SOX 昨跌 8.2% 技術面受損",
+        "FOMC 鷹派框架維持",
+        "Juneteenth 薄量波動"
+      ],
+      "sources": [
+        "https://finance.yahoo.com/quote/TSM/"
+      ],
+      "expires_at": "2026-06-19T09:00:00+08:00"
+    }
+  ],
+  "alerts": [
+    {
+      "alert_id": "alert-taiex-ath-breach-2026-06-18",
+      "level": "high",
+      "title": "台股盤中創歷史新高 46,565 點 — 突破前 ATH 46,552",
+      "body": "台股加權指數今日盤中達 46,565 點，微幅突破 2026 年前高 46,552（ATH）。收盤若能確認站上前高則具技術意義，為牛市繼續確立信號。端午連假後若美股配合，可能進一步挑戰 47,000 整數關卡。反之，連假回來若美股走弱，前 ATH 可能重新成為阻力。",
+      "url": "https://tw.stock.yahoo.com/quote/%5ETWII",
+      "source": "Yahoo 股市 / 搜尋結果確認",
+      "expires_at": "2026-06-19T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-passive-components-resurgence-2026-06-18",
+      "level": "medium",
+      "title": "被動元件 MLCC 急復活 — 國巨再次漲停",
+      "body": "繼 6/15 漲停潮後，今日國巨（2327）再次漲停，MLCC 漲價循環敘事強勢復活。昨日短暫冷卻今日爆發，確認這是多日持續的主題性行情而非一日蜂擁。持有相關股票（國巨/華新科/大毅）的投資人注意連假前是否需減碼。",
+      "url": "https://tw.stock.yahoo.com/rank/change-up",
+      "source": "台股漲幅排行 / 盤後搜尋確認",
+      "expires_at": "2026-06-19T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-fomc-resolved-buy-the-fact-2026-06-18",
+      "level": "medium",
+      "title": "FOMC 落地完畢 — Buy-the-fact 行情驗證，鷹派架構仍存",
+      "body": "Warsh 首場 FOMC 維持利率 3.5–3.75%（昨日前 alert-fomc-warsh-hawkish-dot 已解除）。市場採取 buy-the-fact，台股今日 +1.08%。惟點陣圖 9/18 委員傾向年底升息、PCE 上修至 3.6%，鷹派框架仍為中長線壓力。下次 FOMC 會議預計 7/28–29（需確認），屆時需再評估。",
+      "url": "https://www.cnbc.com/2026/06/17/fed-interest-rate-decision-june-2026.html",
+      "source": "CNBC Fed decision June 2026",
+      "expires_at": "2026-06-19T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-holiday-liquidity-juneteenth-dragonboat-2026-06-18",
+      "level": "high",
+      "title": "雙長假流動性警示 — Juneteenth（6/19 美股休市）+ 端午節（6/20–22 台股連休三天）",
+      "body": "今日為端午連假前最後交易日。台股收假後（6/23 週二）將面臨：①美股 6/18 ET 收盤方向（今晚開盤，台北凌晨 4:30 前收盤）、②Juneteenth 後美股重新定價。若美股 6/18 ET 大漲，台股 6/23 跳高開；若大跌，台股跳空低開。持倉者需評估三天連假持股風險。建議連假前避免高槓桿。",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/key-closures-juneteenth-markets-2026-182108168.html",
+      "source": "Yahoo Finance Juneteenth 2026 schedule",
+      "expires_at": "2026-06-23T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-three-inst-direction-reversal-est-2026-06-18",
+      "level": "medium",
+      "title": "三大法人方向估計反轉 — 昨日賣超 -251 億 → 今日估計轉買超",
+      "body": "昨日（6/17）三大法人合計賣超 251.59 億（外資 -206.84億、投信 -2.06億、自營商 -42.69億），為連日賣超格局。今日台股量能爆增至 ~5,284 億、指數大漲 +496 點，估計三大法人轉為買超。惟此為推算，需待盤後 TWSE 公告確認（預計 15:00–16:00）。",
+      "url": "https://www.twse.com.tw/zh/trading/foreign/t86.html",
+      "source": "TWSE 三大法人買賣超日報",
+      "expires_at": "2026-06-19T09:00:00+08:00"
+    }
+  ]
+}

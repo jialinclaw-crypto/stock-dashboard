@@ -1,0 +1,380 @@
+{
+  "_schema_version": 3,
+  "type": "weekly",
+  "report_file": "股市-週報-20260620.md",
+  "date": "2026-06-20",
+  "weekday": "週六",
+  "generated_at": "2026-06-20T09:00:00+08:00",
+  "expires_at": "2026-06-27T09:00:00+08:00",
+  "market_view": {
+    "tw_overall": "bullish",
+    "us_overall": "neutral",
+    "short_term_bias": "neutral_bullish",
+    "key_risk": "PCE 5月 6/25 超預期→Fed升息路徑前移；FOMC點陣圖9/18委員已預期年底升息",
+    "key_catalyst": "台股ATH確認（46,465突破46,459）；6/22台股重開後量能持續性",
+    "note": "FOMC Warsh首次決策維持3.50-3.75%，點陣圖鷹派（9/18委員年底升息）；台股單週+5.2%（ATH！）；PCE 5月（6/25）為下週最大事件"
+  },
+  "indices": [
+    {
+      "name": "台股加權指數",
+      "ticker": "^TWII",
+      "close": 46465.0,
+      "prev_close": 44169.0,
+      "week_change": 2296.0,
+      "week_change_pct": 5.2,
+      "week_high": 46565.0,
+      "week_low": 44900.0,
+      "volume_week_bn_twd_est": 22500.0,
+      "note": "ATH！6/18 +588pts收46,465（新收盤高）；外資+211億大翻轉；端午6/19休市；20MA≈44,800, 60MA≈42,000, 200MA≈40,100；週RSI估68-70（接近超買）。6/22重開首日量能確認關鍵",
+      "signal_id": "stk-TWII-2026-06-20-weekly",
+      "direction": "bullish",
+      "confidence": 0.68,
+      "rationale": "FOMC hold+外資回買+ATH突破三重確認；但點陣圖鷹派+RSI超買為短線風險；PCE 6/25為中線方向關鍵",
+      "sources": [
+        "https://www.twse.com.tw/zh/indices/taiex/mi-5min-hist.html",
+        "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-june-18-2026"
+      ],
+      "expires_at": "2026-06-27T09:00:00+08:00"
+    },
+    {
+      "name": "S&P 500",
+      "ticker": "^GSPC",
+      "close": 7500.58,
+      "prev_close": 7513.0,
+      "week_change": -12.42,
+      "week_change_pct": -0.2,
+      "note": "6/17 -1.21%（FOMC鷹派點陣圖）→ 6/18 +1.08%（buy-the-dip+Iran）；週結果近乎持平",
+      "signal_id": "stk-GSPC-2026-06-20-weekly",
+      "direction": "neutral",
+      "confidence": 0.55,
+      "expires_at": "2026-06-27T09:00:00+08:00"
+    },
+    {
+      "name": "Nasdaq",
+      "ticker": "^COMP",
+      "close": 26517.93,
+      "prev_close": 26362.0,
+      "week_change": 155.93,
+      "week_change_pct": 0.6,
+      "signal_id": "stk-COMP-2026-06-20-weekly",
+      "direction": "neutral_bullish",
+      "confidence": 0.52,
+      "expires_at": "2026-06-27T09:00:00+08:00"
+    },
+    {
+      "name": "費城半導體 SOX",
+      "ticker": "^SOX",
+      "close": 14100.0,
+      "prev_close": 13333.0,
+      "week_change": 767.0,
+      "week_change_pct": 5.7,
+      "note": "估算值；AI半導體需求持續；NVDA +2.7%、TSMC ADR +4.5%",
+      "signal_id": "stk-SOX-2026-06-20-weekly",
+      "direction": "bullish",
+      "confidence": 0.65,
+      "expires_at": "2026-06-27T09:00:00+08:00"
+    }
+  ],
+  "macro": {
+    "us_10y_yield": 4.44,
+    "us_30y_yield": 4.88,
+    "us_2y_yield": 4.12,
+    "vix": 17.07,
+    "dxy": 100.79,
+    "wti_crude": 83.0,
+    "fed_rate_current": "3.50-3.75%",
+    "fomc_outcome": "hold",
+    "fomc_dot_plot_hike_members": 9,
+    "fomc_dot_plot_total_members": 18,
+    "pce_yearend_forecast_fomc": 3.6,
+    "cpi_may_yoy": 4.2,
+    "note": "FOMC維持3.50-3.75%（全票通過）；點陣圖9/18成員預期年底升息（PCE上調3.6%）；10Y殖利率不升反降4.44%（債市不信升息）；DXY上升至100.79（鷹派美元）；VIX降至17.07；WTI ~$83（Iran停火持續壓油）；PCE 5月（6/25）為關鍵驗證"
+  },
+  "stocks": [
+    {
+      "ticker": "2330",
+      "name": "台積電",
+      "market": "TW",
+      "signal_id": "stk-2330-2026-06-20-weekly",
+      "price": 2410.0,
+      "price_prev_week": 2310.0,
+      "week_change_pct": 4.33,
+      "ma20": 2355.0,
+      "ma60": 2110.0,
+      "ma200": 1900.0,
+      "week_rsi": 68.0,
+      "direction": "bullish",
+      "confidence": 0.72,
+      "rationale": "FOMC buy-the-fact帶動外資6/18大買211億；TAIEX ATH確認帶動台積電接近個股ATH 2,440；週+4.3%站穩20MA上方；Apple+Intel合作短期無損N3/N2訂單；CoWoS封裝需求緊；Q2毛利率估57-58%。上週neutral_bullish→本週升級bullish",
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/2330.TW",
+        "https://www.foxbusiness.com/economy/federal-reserve-interest-rate-decision-june-17-2026"
+      ],
+      "support": [2350.0, 2280.0],
+      "resistance": [2440.0, 2500.0],
+      "expires_at": "2026-06-27T09:00:00+08:00"
+    },
+    {
+      "ticker": "2454",
+      "name": "聯發科",
+      "market": "TW",
+      "signal_id": "stk-2454-2026-06-20-weekly",
+      "price": 4445.0,
+      "price_prev_week": 4180.0,
+      "week_change_pct": 6.34,
+      "ma20": 4240.0,
+      "ma60": 3950.0,
+      "ma200": 3380.0,
+      "week_rsi": 65.0,
+      "direction": "bullish",
+      "confidence": 0.68,
+      "rationale": "本週Portfolio最強（+6.3%，超越TAIEX +5.2%）；AI ASIC年營收目標升至$20億；5G NTN衛星模組新題材；大幅站上20MA（4,240）；60MA（3,950）遠在下方，多頭格局完整",
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/2454.TW",
+        "https://news.cnyes.com/news/id/6260906"
+      ],
+      "support": [4200.0, 4000.0],
+      "resistance": [4600.0, 4800.0],
+      "expires_at": "2026-06-27T09:00:00+08:00"
+    },
+    {
+      "ticker": "2317",
+      "name": "鴻海",
+      "market": "TW",
+      "signal_id": "stk-2317-2026-06-20-weekly",
+      "price": 270.5,
+      "price_prev_week": 268.0,
+      "week_change_pct": 0.93,
+      "ma20": 266.0,
+      "ma60": 250.0,
+      "ma200": 227.0,
+      "week_rsi": 54.0,
+      "direction": "neutral_bullish",
+      "confidence": 0.55,
+      "rationale": "本週相對落後（+0.9% vs 指數+5.2%），衛星題材熱度消退，AI伺服器組裝需求持續但未成主線。站上20MA（266）為基本確認；280關口為下一考驗",
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/2317.TW"
+      ],
+      "support": [265.0, 255.0],
+      "resistance": [280.0, 295.0],
+      "expires_at": "2026-06-27T09:00:00+08:00"
+    },
+    {
+      "ticker": "NVDA",
+      "name": "輝達",
+      "market": "US",
+      "signal_id": "stk-NVDA-2026-06-20-weekly",
+      "price": 210.79,
+      "price_prev_week": 205.16,
+      "week_change_pct": 2.74,
+      "ma20": 208.0,
+      "ma60": 189.0,
+      "ma200": 170.0,
+      "week_rsi": 58.0,
+      "direction": "neutral_bullish",
+      "confidence": 0.62,
+      "rationale": "週收$210.79突破20MA~$208（技術面改善），FOMC buy-the-fact+SOX +5.7%帶動；GB200 Blackwell出貨持續正向。然FOMC點陣圖鷹派（高估值壓力）+PCE 6/25風險為限制；上週neutral→本週升級neutral_bullish",
+      "sources": [
+        "https://finance.yahoo.com/quote/NVDA/",
+        "https://www.investing.com/equities/nvidia-corp-technical"
+      ],
+      "support": [207.0, 200.0],
+      "resistance": [220.0, 235.0],
+      "expires_at": "2026-06-27T09:00:00+08:00"
+    },
+    {
+      "ticker": "TSLA",
+      "name": "特斯拉",
+      "market": "US",
+      "signal_id": "stk-TSLA-2026-06-20-weekly",
+      "price": 406.0,
+      "price_prev_week": 400.77,
+      "week_change_pct": 1.3,
+      "ma20": 403.0,
+      "ma60": 371.0,
+      "ma200": 337.0,
+      "week_rsi": 50.0,
+      "direction": "neutral",
+      "confidence": 0.45,
+      "rationale": "週+1.3%落後大盤；SpaceX估值$1.77兆超越TSLA$1.6兆比價壓力持續；20MA $403邊緣整固未能明確突破；Q2銷量（估7月初）為下一催化劑",
+      "sources": [
+        "https://finance.yahoo.com/quote/TSLA/history/"
+      ],
+      "support": [400.0, 380.0],
+      "resistance": [420.0, 445.0],
+      "expires_at": "2026-06-27T09:00:00+08:00"
+    },
+    {
+      "ticker": "AAPL",
+      "name": "蘋果",
+      "market": "US",
+      "signal_id": "stk-AAPL-2026-06-20-weekly",
+      "price": 298.01,
+      "price_prev_week": 296.52,
+      "week_change_pct": 0.5,
+      "ma20": 302.0,
+      "ma60": 281.0,
+      "ma200": 248.0,
+      "week_rsi": 48.0,
+      "direction": "neutral",
+      "confidence": 0.50,
+      "rationale": "週+0.5%大幅落後指數；Apple+Intel合作（Trump6/18宣布）市場反應冷淡（AAPL +0.7% vs INTC +10.6%）；仍在20MA $302之下；WWDC Siri2.0熱度退，缺乏短線催化劑",
+      "sources": [
+        "https://finance.yahoo.com/video/intel-shares-rise-trump-announces-180835092.html",
+        "https://finance.yahoo.com/markets/stocks/articles/aapl-crossroads-price-hikes-margin-120908405.html"
+      ],
+      "support": [290.0, 279.0],
+      "resistance": [302.0, 312.0],
+      "expires_at": "2026-06-27T09:00:00+08:00"
+    },
+    {
+      "ticker": "TSM",
+      "name": "台積電ADR",
+      "market": "US",
+      "signal_id": "stk-TSM-2026-06-20-weekly",
+      "price": 440.07,
+      "price_prev_week": 421.07,
+      "week_change_pct": 4.51,
+      "ma20": 432.0,
+      "ma60": 397.0,
+      "ma200": 358.0,
+      "week_rsi": 65.0,
+      "direction": "bullish",
+      "confidence": 0.68,
+      "rationale": "週+4.5%突破20MA $432，與本地台積電同步（2310→2410, +4.3%）；Intel+Apple合作短線中性（TSMC N3/N2主力地位未撼動）；AI capex週期支持；上週neutral_bullish→升級bullish",
+      "sources": [
+        "https://finance.yahoo.com/quote/TSM/",
+        "https://stockanalysis.com/stocks/tsm/"
+      ],
+      "support": [430.0, 412.0],
+      "resistance": [450.0, 480.0],
+      "expires_at": "2026-06-27T09:00:00+08:00"
+    }
+  ],
+  "alerts": [
+    {
+      "alert_id": "alert-FOMC-hawkish-dotplot-20260617",
+      "title": "FOMC 點陣圖鷹派：9/18 委員預期年底升息——PCE 5 月（6/25）為關鍵驗證",
+      "level": "critical",
+      "url": "https://www.foxbusiness.com/economy/federal-reserve-interest-rate-decision-june-17-2026",
+      "source": "Fox Business / Federal Reserve",
+      "rationale": "Warsh首次決策維持3.50-3.75%，但點陣圖9/18委員支持年底前升息（超預期）；PCE年末預測上修至3.6%（前2.7%）。若6/25 PCE≥3.5%，H2升息機率急升→高估值股（NVDA/2454）估值壓縮；若PCE<3.2%，鷹派敘事鬆動→市場再攻高",
+      "direction": "bearish_risk",
+      "expires_at": "2026-06-28T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-PCE-May-critical-20260625",
+      "title": "PCE 5 月（6/25 周四）——下週最重要數據，Fed 升息路徑關鍵",
+      "level": "critical",
+      "url": "https://www.kiplinger.com/investing/economy/this-weeks-economic-calendar",
+      "source": "Kiplinger / BEA",
+      "rationale": "5月PCE為FOMC決策首選通膨指標，市場估YoY~3.3-3.5%。FOMC已把年末PCE預期上修至3.6%——若5月數據超預期（≥3.5%）將確認升息路徑，S&P 7,300測試；若低於3.0%則點陣圖可疑，科技/台積電受惠",
+      "direction": "neutral_risk",
+      "expires_at": "2026-06-26T22:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-TAIEX-new-ATH-20260618",
+      "title": "TAIEX 46,465 創收盤新高 ATH——6/22 重開後量能決定是否確認",
+      "level": "info",
+      "url": "https://statementdog.com/taiex",
+      "source": "StatementDog / TWSE",
+      "rationale": "6/18收盤46,465突破6/3的46,459（前ATH），外資+211億。端午假後6/22(一)重開首日若量能≥1兆+站穩46,000以上，確認ATH有效突破；若量縮在45,500-46,000整固亦屬健康；破45,000則需警惕假突破",
+      "direction": "bullish",
+      "expires_at": "2026-06-27T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-Apple-Intel-chip-deal-20260618",
+      "title": "Apple + Intel 晶片合作（Trump 6/18 宣布）：INTC +10.6%，AAPL +0.7%，TSMC 影響評估中",
+      "level": "warning",
+      "url": "https://finance.yahoo.com/video/intel-shares-rise-trump-announces-180835092.html",
+      "source": "Yahoo Finance / Reuters",
+      "rationale": "川普宣布Apple採用Intel晶圓代工（Intel 18A）。市場反應：INTC大漲、AAPL小漲（政治性>商業性解讀）。TSMC短線中性：Apple訂單目前仍高度依賴N3/N2，Intel 18A良率/量產能力未驗證。中期需觀察Apple 2027/28訂單分流程度",
+      "direction": "neutral_risk",
+      "expires_at": "2026-07-05T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-CPI-May-4pct-confirmed-20260610",
+      "title": "美 5 月 CPI YoY 4.2% 高溫——通膨黏性持續（PCE 6/25 接力驗證）",
+      "level": "warning",
+      "url": "https://www.kiplinger.com/news/live/fed-meeting-updates-and-commentary-june-2026",
+      "source": "Kiplinger / BLS",
+      "rationale": "5月CPI 4.2%（最高自2023-04），Core CPI MoM+0.2%略低。Iran停火後油價可望壓低6月CPI，但PCE黏性（住房/服務）仍高。FOMC點陣圖已反映此風險，持續性高通膨為H2升息主要觸發器",
+      "direction": "bearish_risk",
+      "expires_at": "2026-07-10T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-Iran-deal-oil-disinflation-20260611",
+      "title": "US-Iran 停火持續→ WTI ~$83，油價低壓有助通膨但滯後反映",
+      "level": "info",
+      "url": "https://www.mitrade.com/au/insights/others/cfd-trading/fed-interest-rate-decision-2026",
+      "source": "Mitrade / Reuters",
+      "rationale": "Iran停火框架持續，WTI從$93降至~$83（跌幅約11%）。5月PCE仍反映高油時期，6月PCE（7月底公布）才會看到實質油價紅利。短線對能源類股（XOM/CVX）仍有壓力",
+      "direction": "bullish_for_growth",
+      "expires_at": "2026-07-15T09:00:00+08:00"
+    }
+  ],
+  "whats_changed": {
+    "generated_at": "2026-06-20T09:00:00+08:00",
+    "prev_report": "股市-週報-20260613.json",
+    "prev_date": "2026-06-13",
+    "stock_direction_changes": [
+      {
+        "ticker": "2330",
+        "prev_direction": "neutral_bullish",
+        "curr_direction": "bullish",
+        "change_type": "upgrade",
+        "reason": "TAIEX ATH確認；台積電2,410週+4.3%，逼近個股ATH 2,440；外資6/18大幅回買"
+      },
+      {
+        "ticker": "NVDA",
+        "prev_direction": "neutral",
+        "curr_direction": "neutral_bullish",
+        "change_type": "upgrade",
+        "reason": "週收$210.79突破20MA $208；SOX費半+5.7%；FOMC buy-the-fact帶動"
+      },
+      {
+        "ticker": "TSM",
+        "prev_direction": "neutral_bullish",
+        "curr_direction": "bullish",
+        "change_type": "upgrade",
+        "reason": "$440.07突破20MA $432；週+4.5%；追蹤本地台積電ATH動能"
+      }
+    ],
+    "alert_changes": {
+      "new_alerts": [
+        "alert-FOMC-hawkish-dotplot-20260617",
+        "alert-PCE-May-critical-20260625",
+        "alert-TAIEX-new-ATH-20260618",
+        "alert-Apple-Intel-chip-deal-20260618"
+      ],
+      "resolved_alerts": [
+        "alert-FOMC-June16-17-2026",
+        "alert-TAIEX-distance-ATH-20260613",
+        "alert-NVDA-200-support-confirmed-20260613",
+        "alert-US-Juneteenth-holiday-20260619",
+        "alert-SPCX-IPO-satellite-follow-through-20260613"
+      ],
+      "continuing_alerts": [
+        "alert-CPI-May-4pct-confirmed-20260610",
+        "alert-Iran-deal-oil-disinflation-20260611"
+      ]
+    },
+    "level_changes": [
+      {
+        "ticker": "2330",
+        "field": "confidence",
+        "prev": 0.62,
+        "curr": 0.72,
+        "note": "ATH突破+外資回買提升信心"
+      },
+      {
+        "ticker": "2454",
+        "field": "confidence",
+        "prev": 0.62,
+        "curr": 0.68,
+        "note": "週+6.3%超越指數，Alpha確認"
+      }
+    ],
+    "summary": "本週台股新ATH（46,465，突破46,459）為重大里程碑；3支個股升級（2330/NVDA/TSM）；FOMC落地消除最大不確定性，但點陣圖鷹派（9/18升息）為新risk；下週PCE 5月（6/25）接棒為最大催化劑。保守原則：ATH後勿追高，留子彈等PCE結果"
+  }
+}

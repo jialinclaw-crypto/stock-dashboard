@@ -1,0 +1,404 @@
+{
+  "_schema_version": 3,
+  "type": "morning",
+  "report_file": "股市-開盤前-20260622.md",
+  "date": "2026-06-22",
+  "weekday": "週一",
+  "generated_at": "2026-06-22T07:31:10+08:00",
+  "market_view": {
+    "level": "neutral-bullish",
+    "confidence": 0.62,
+    "headline": "美股 Juneteenth 三日長假後週一首開：台股週五已消化 SOX +6.67%，台積電至 NT$2,415；TSM ADR 突破前高 $452；Fed Warsh 鷹派（PCE 3.6%，9/18 升息點）壓頂，今日窄幅整理，守 46,000 為關鍵"
+  },
+  "indices": [
+    {
+      "name": "道瓊工業",
+      "ticker": "DJI",
+      "value": 51564.70,
+      "change_pct": 0.14,
+      "trend": "neutral-bullish",
+      "note": "最後交易日 6/18 +0.14%；傳產藍籌守穩，今日美股長假重開首日觀察"
+    },
+    {
+      "name": "S&P 500",
+      "ticker": "SPX",
+      "value": 7500.58,
+      "change_pct": 1.08,
+      "trend": "bullish",
+      "note": "6/18 收復 7,500 整數關；大型科技與成長股反彈，今日為三日後首開"
+    },
+    {
+      "name": "Nasdaq",
+      "ticker": "IXIC",
+      "value": 26517.93,
+      "change_pct": 1.91,
+      "trend": "bullish",
+      "note": "6/18 +1.91%，科技/AI 股強力反彈；Juneteenth 後今日重開"
+    },
+    {
+      "name": "費城半導體",
+      "ticker": "SOX",
+      "value": 14376.34,
+      "change_pct": 6.67,
+      "trend": "bullish",
+      "note": "6/18 V 型強彈修復 6/17 FOMC -8.2% 跌幅；台股週五已完全反應，今日美股繼續還是整理待觀察"
+    },
+    {
+      "name": "VIX 恐慌指數",
+      "ticker": "VIX",
+      "value": 17.07,
+      "change_pct": -16.6,
+      "trend": "bullish",
+      "note": "恐慌消退，Fear&Greed 回升；Fed 升息尾端風險為下一個波動催化點"
+    },
+    {
+      "name": "美 10Y 殖利率",
+      "ticker": "US10Y",
+      "value": 4.46,
+      "change_pct": -0.07,
+      "trend": "neutral",
+      "note": "自 FOMC 高峰 4.65% 回落至 4.46%；若 Warsh 升息信號強化，4.65% 為科技股壓力觸發點"
+    },
+    {
+      "name": "美元指數",
+      "ticker": "DXY",
+      "value": 100.85,
+      "change_pct": -0.38,
+      "trend": "neutral",
+      "note": "殖利率回落帶動美元弱勢；台幣相對支撐，對台股外資持有成本友善"
+    },
+    {
+      "name": "台股加權指數",
+      "ticker": "TWII",
+      "value": 46465.20,
+      "change_pct": 1.28,
+      "trend": "bullish",
+      "note": "上週五（6/19）收盤 +1.28%，SOX 反彈兌現；今日（6/22）預估區間 46,200-46,800"
+    }
+  ],
+  "stocks": [
+    {
+      "signal_id": "stk-2330-2026-06-22-morning",
+      "ticker": "2330",
+      "name": "台積電",
+      "market": "TW",
+      "signal": "🟢",
+      "direction": "bullish",
+      "confidence": 0.75,
+      "view": "週五（6/19）收 NT$2,415，由 6/18 低點 +12.3% 達成上份報告目標；TSM ADR ~$452 突破前高 $432，短線動能強勁；守穩 NT$2,350 後下一目標 NT$2,500-2,600",
+      "rationale": "TSM ADR 突破 52 週高 $452 + 台股週五 V 型修復，多頭格局確立，目標 NT$2,600",
+      "price": 2415.0,
+      "change_pct": 12.3,
+      "support": 2350.0,
+      "resistance": 2500.0,
+      "stop_loss": 2300.0,
+      "target": 2600.0,
+      "technicals": {
+        "rsi14": 60,
+        "macd": "MACD 轉正，histogram 翻紅，動能健康",
+        "ma_alignment": "5MA/20MA/60MA 向上排列，股價站上所有短中期均線"
+      },
+      "valuation": {
+        "pe": 27.5,
+        "pe_percentile_5y": 68,
+        "verdict": "合理偏貴，N2 製程 + CoWoS AI 超級週期溢價支撐，FCF 強勁"
+      },
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/2330.TW",
+        "https://finance.yahoo.com/quote/TSM/"
+      ],
+      "expires_at": "2026-06-22T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-2454-2026-06-22-morning",
+      "ticker": "2454",
+      "name": "聯發科",
+      "market": "TW",
+      "signal": "🟢",
+      "direction": "bullish",
+      "confidence": 0.65,
+      "view": "週五（6/19）收 NT$4,390（+1.57%），AI ASIC 訂單動能持續，21 位分析師全面強力買進；PE 46.5x 高估值仍受資金追捧；52 週高 NT$4,970 為中線目標",
+      "rationale": "AI ASIC + 端側 AI 晶片雙驅動，200MA 溢價 +122%，機構全面買進支撐",
+      "price": 4390.0,
+      "change_pct": 1.57,
+      "support": 4200.0,
+      "resistance": 4600.0,
+      "stop_loss": 4100.0,
+      "target": 4800.0,
+      "technicals": {
+        "rsi14": 65,
+        "macd": "MACD 正值走擴，短線偏熱注意整理",
+        "ma_alignment": "股價大幅超越 200MA +122%，全面強勢排列"
+      },
+      "valuation": {
+        "pe": 46.5,
+        "pe_percentile_5y": 85,
+        "verdict": "高估值但 AI 成長預期支撐，分析師目標均值 NT$4,131、最高 NT$6,150"
+      },
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/2454.TW",
+        "https://www.stockopedia.com/share-prices/media-tek-TPE:2454/"
+      ],
+      "expires_at": "2026-06-22T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-2317-2026-06-22-morning",
+      "ticker": "2317",
+      "name": "鴻海",
+      "market": "TW",
+      "signal": "🟢",
+      "direction": "bullish",
+      "confidence": 0.70,
+      "view": "週五（6/19）收 NT$268.50（+1.29%），AI 伺服器市占 44%（Q1 機櫃 3,700 台）、Q1 營收 NT$2.13 兆創高；大摩目標 NT$310 代表 +15.7% 上行空間；PE 13.5x 低估值重估持續",
+      "rationale": "AI 伺服器 44% 市占確認 + 大摩目標 NT$310 = 低估值補漲故事仍在進行中",
+      "price": 268.5,
+      "change_pct": 1.29,
+      "support": 255.0,
+      "resistance": 280.0,
+      "stop_loss": 250.0,
+      "target": 310.0,
+      "technicals": {
+        "rsi14": 55,
+        "macd": "MACD 轉正，動能回升中",
+        "ma_alignment": "突破 5MA，20MA 向上斜率轉正"
+      },
+      "valuation": {
+        "pe": 13.5,
+        "pe_percentile_5y": 45,
+        "verdict": "傳統製造業 PE 低廉，AI 伺服器敘事溢價尚未完全兌現，仍具重估空間"
+      },
+      "sources": [
+        "https://finance.technews.tw/2026/05/12/foxconn-leads-quanta-and-wistron-in-ai-server-shipments/",
+        "https://finance.technews.tw/2026/05/15/ai-server-800g-switch-foxconn"
+      ],
+      "expires_at": "2026-06-22T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-NVDA-2026-06-22-morning",
+      "ticker": "NVDA",
+      "name": "輝達",
+      "market": "US",
+      "signal": "🟢",
+      "direction": "bullish",
+      "confidence": 0.68,
+      "view": "US 6/18 收盤 $210.69（+2.95%），盤前 6/22 ~$209.52（-0.55%，穩定）；市值 $5.17 兆；$250 億美元公司債彰顯 AI 長線信念；今日美股三日假後首開為觀察重點",
+      "rationale": "AI 基建資本支出週期主受益者，$200 強支撐，$250B 債券資本承諾為長線信號",
+      "price": 210.69,
+      "change_pct": 2.95,
+      "support": 200.0,
+      "resistance": 225.0,
+      "stop_loss": 195.0,
+      "target": 250.0,
+      "technicals": {
+        "rsi14": 58,
+        "macd": "MACD 轉正，histogram 擴張中",
+        "ma_alignment": "5MA/20MA/50MA 向上，趨勢健康"
+      },
+      "valuation": {
+        "pe": 35.2,
+        "pe_percentile_5y": 55,
+        "verdict": "AI 超級週期折現合理，FY27 EPS 成長預期消化估值壓力"
+      },
+      "sources": [
+        "https://finance.yahoo.com/quote/NVDA/",
+        "https://www.cnbc.com/quotes/NVDA"
+      ],
+      "expires_at": "2026-06-22T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-TSLA-2026-06-22-morning",
+      "ticker": "TSLA",
+      "name": "特斯拉",
+      "market": "US",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.50,
+      "view": "US 6/18 收盤 $400.49（+0.23%），缺乏 Robotaxi / FSD 商業化新催化劑，區間 $380-425 震盪；等待自駕節點或財報確認才有方向",
+      "rationale": "無新催化劑，自駕商業化時程不確定性維持中性",
+      "price": 400.49,
+      "change_pct": 0.23,
+      "support": 380.0,
+      "resistance": 425.0,
+      "stop_loss": 370.0,
+      "target": 450.0,
+      "technicals": {
+        "rsi14": 52,
+        "macd": "MACD 趨平，方向不明",
+        "ma_alignment": "股價在 5MA/20MA 之間震盪"
+      },
+      "valuation": {
+        "pe": 78.0,
+        "pe_percentile_5y": 55,
+        "verdict": "高 PE 依靠自駕/機器人預期，缺催化劑時估值壓力大"
+      },
+      "sources": [
+        "https://finance.yahoo.com/quote/TSLA/"
+      ],
+      "expires_at": "2026-06-22T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-AAPL-2026-06-22-morning",
+      "ticker": "AAPL",
+      "name": "蘋果",
+      "market": "US",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.52,
+      "view": "US 6/18 收盤 $298.01（+0.70%）；WWDC 2026 Apple Intelligence 2.0 落地時程待確認為最大催化劑；$285-310 整理區間，確認前中性",
+      "rationale": "WWDC Siri AI 升級待落地，確認前持觀望；服務業務穩定提供估值底部",
+      "price": 298.01,
+      "change_pct": 0.70,
+      "support": 285.0,
+      "resistance": 310.0,
+      "stop_loss": 280.0,
+      "target": 330.0,
+      "technicals": {
+        "rsi14": 53,
+        "macd": "MACD 趨平，區間整理",
+        "ma_alignment": "股價在 5MA/20MA 間盤整"
+      },
+      "valuation": {
+        "pe": 28.2,
+        "pe_percentile_5y": 60,
+        "verdict": "合理估值，服務業務提供穩定底部；WWDC AI 確認後看 $330"
+      },
+      "sources": [
+        "https://finance.yahoo.com/quote/AAPL/"
+      ],
+      "expires_at": "2026-06-22T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-TSM-2026-06-22-morning",
+      "ticker": "TSM",
+      "name": "台積電ADR",
+      "market": "US",
+      "signal": "🟢",
+      "direction": "bullish",
+      "confidence": 0.77,
+      "view": "最新報價 $452.54（較前收盤 $432.15 +4.72%），挑戰 52 週高 $452.85；台積電 ADR 突破前高為今日台股 2330 最強正信號，目標看 $480-500",
+      "rationale": "ADR 突破 52 週高 $452 為技術確認信號，對應台積電 NT$2,420+ 的多頭延伸",
+      "price": 452.54,
+      "change_pct": 4.72,
+      "support": 440.0,
+      "resistance": 475.0,
+      "stop_loss": 430.0,
+      "target": 500.0,
+      "technicals": {
+        "rsi14": 62,
+        "macd": "MACD 強勢走擴，多頭動能明確",
+        "ma_alignment": "全面多頭排列，突破 52 週高位"
+      },
+      "valuation": {
+        "pe": 25.5,
+        "pe_percentile_5y": 65,
+        "verdict": "合理估值，ADR 突破前高強化台股 2330 多頭格局"
+      },
+      "sources": [
+        "https://finance.yahoo.com/quote/TSM/",
+        "https://www.investing.com/equities/taiwan-semicond.manufacturing-co"
+      ],
+      "expires_at": "2026-06-22T13:30:00+08:00"
+    }
+  ],
+  "alerts": [
+    {
+      "alert_id": "alt-fomc-hawkish-hold-june",
+      "level": "warning",
+      "text": "Fed Warsh 鷹派首秀（6/17 FOMC）：PCE 上修至 3.6%，點陣圖 9/18 官員預期 2026 年升息；殖利率若重返 4.65% 以上為科技股重要壓力觸發點",
+      "tickers": ["NVDA", "AAPL", "TSM", "2330", "2454"],
+      "url": "https://www.chase.com/personal/investments/learning-and-insights/article/kevin-warsh-june-2026-federal-reserve-meeting-key-takeaways",
+      "source": "Chase / Fox Business / CNBC"
+    },
+    {
+      "alert_id": "alt-fed-pce-inflation-revision",
+      "level": "warning",
+      "text": "FOMC 大幅上修 PCE 通膨預測至 2026 年 3.6%（原 2.7%）、2027 年 3.3%；通膨黏性超預期，年底升息風險上升，高估值科技承壓",
+      "tickers": ["NVDA", "TSLA", "AAPL", "2454"],
+      "url": "https://www.foxbusiness.com/economy/federal-reserve-interest-rate-decision-june-17-2026",
+      "source": "Fox Business"
+    },
+    {
+      "alert_id": "alt-iran-ceasefire-market-rally",
+      "level": "info",
+      "text": "美伊停火達成，霍爾木茲海峽重新開放，油價下行；地緣風險溢價消退，已為 6/18 SOX +6.67% 重要驅動力，效果持續但邊際遞減",
+      "tickers": ["NVDA", "2330", "TSM"],
+      "url": "https://www.cnbc.com/2026/06/14/stock-market-today-live-updates.html",
+      "source": "CNBC"
+    },
+    {
+      "alert_id": "alt-us-juneteenth-reopen",
+      "level": "info",
+      "text": "美股 Juneteenth 三日長假（6/19-21）後今日（6/22）首個交易日重開；台股已於 6/19 消化 SOX 利多，今日美股開盤為短線方向決定點",
+      "tickers": ["NVDA", "TSLA", "AAPL", "TSM"],
+      "url": "https://www.cnbc.com/2026/06/17/fed-meeting-today-live-updates.html",
+      "source": "CNBC"
+    },
+    {
+      "alert_id": "alt-foxconn-ai-server-rerating",
+      "level": "info",
+      "text": "鴻海 Q1 營收 NT$2.13 兆創高，AI 伺服器市占 44%（3,700 機櫃）；摩根士丹利目標價 NT$310，較現價 NT$268 +15.7% 上行空間",
+      "tickers": ["2317"],
+      "url": "https://finance.technews.tw/2026/05/12/foxconn-leads-quanta-and-wistron-in-ai-server-shipments/",
+      "source": "TechNews 科技新報"
+    },
+    {
+      "alert_id": "alt-mediatek-ai-asic-rerating",
+      "level": "info",
+      "text": "聯發科 AI ASIC / 端側 AI 訂單成長，200MA 溢價 +122%，PE 46.5x；21 位分析師全面強力買進評級，中線估值重評持續",
+      "tickers": ["2454"],
+      "url": "https://www.stockopedia.com/share-prices/media-tek-TPE:2454/",
+      "source": "Stockopedia / Investing.com"
+    },
+    {
+      "alert_id": "alt-nvda-25b-bond-ai-infra",
+      "level": "info",
+      "text": "輝達發行 $250 億美元公司債（史上最大規模），強化 AI 基礎建設資本投入；彰顯 AI 長線需求高度信心，資本密集度持續提升",
+      "tickers": ["NVDA"],
+      "url": "https://finance.yahoo.com/quote/NVDA/",
+      "source": "Yahoo Finance"
+    }
+  ],
+  "sector_rotation": {
+    "strong": ["半導體 / AI 晶片（SOX 強彈確認）", "AI 伺服器基礎設施（鴻海 44% 市占）", "小型股 Russell 2000（利率回落受益）"],
+    "weak": ["傳統能源（霍爾木茲重開，油價承壓）", "黃金（地緣溢價回吐）", "高槓桿債券（Fed 升息尾端風險）"],
+    "watch": ["金融類股（升息預期升溫受益利差）", "被動元件（AI 伺服器需求外溢）", "低軌道衛星（AI 基建延伸）"]
+  },
+  "whats_changed": {
+    "compared_to": "股市-開盤前-20260619.md",
+    "compared_to_date": "2026-06-19",
+    "new": [
+      {
+        "type": "alert",
+        "summary": "美股 Juneteenth 三日長假後今日（6/22）首開，台股已領跑消化利多，今日為 US 方向決定點",
+        "tickers": ["NVDA", "TSLA", "AAPL", "TSM"],
+        "ticker": "",
+        "from": "",
+        "to": "alt-us-juneteenth-reopen"
+      }
+    ],
+    "strengthened": [
+      {
+        "type": "stock_direction",
+        "summary": "台積電 NT$2,150 → NT$2,415（+12.3%）達成上份目標，TSM ADR $432 → $452（+4.72%）突破前高，多頭確認；信心由 0.72 升至 0.75",
+        "ticker": "2330",
+        "from": "bullish 0.72 @ NT$2,150",
+        "to": "bullish 0.75 @ NT$2,415"
+      },
+      {
+        "type": "stock_direction",
+        "summary": "TSM ADR 由 $432.15 升至 $452.54（+4.72%），挑戰 52 週高 $452.85，技術突破信號強；信心由 0.72 升至 0.77",
+        "ticker": "TSM",
+        "from": "bullish 0.72 @ $432.15",
+        "to": "bullish 0.77 @ $452.54"
+      },
+      {
+        "type": "stock_direction",
+        "summary": "鴻海 AI 伺服器 44% 市占數據確認 + 摩根士丹利 NT$310 目標；信心由 0.68 升至 0.70",
+        "ticker": "2317",
+        "from": "bullish 0.68 @ NT$268.5",
+        "to": "bullish 0.70 @ NT$268.5"
+      }
+    ],
+    "removed": []
+  }
+}

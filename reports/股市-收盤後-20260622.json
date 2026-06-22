@@ -1,0 +1,395 @@
+{
+  "_schema_version": 3,
+  "type": "close",
+  "report_file": "股市-收盤後-20260622.md",
+  "date": "2026-06-22",
+  "weekday": "週一",
+  "generated_at": "2026-06-22T14:02:37+08:00",
+  "expires_at": "2026-06-23T09:00:00+08:00",
+  "market_view": {
+    "tw_overall": "bullish",
+    "us_overall": "neutral_bullish",
+    "short_term_bias": "bullish",
+    "key_risk": "PCE 5月（6/25 週四）超預期熱→FOMC升息前移；短線RSI超買（日RSI估75+）；尾盤神祕拉尾若為軋空前奏，6/23波動放大",
+    "key_catalyst": "TAIEX 47,713.28 史上收盤ATH（+1,248pts, +2.69%），成交量7,065億爆量確認；台積電個股ATH 2,510；老AI族群（鴻海/廣達/緯創）全面補漲；明日軋空傳聞帶動空單回補壓力",
+    "note": "重開首日爆噴，上週ATH（46,465, 6/18）徹底確認後今日再跳空突破。成交量7,065億為關鍵量能確認依據。PCE 6/25為本週最大下行風險，美股今晚（21:30 TW）開盤TSM ADR/NVDA預計強勢跟進。"
+  },
+  "indices": [
+    {
+      "name": "台股加權指數",
+      "ticker": "^TWII",
+      "close": 47713.28,
+      "prev_close": 46465.0,
+      "day_change": 1248.28,
+      "day_change_pct": 2.69,
+      "day_high": 47794.75,
+      "day_low": 46679.57,
+      "volume_bn_twd": 7065.0,
+      "ma20_est": 44800.0,
+      "ma60_est": 42000.0,
+      "ma200_est": 40100.0,
+      "note": "史上收盤新高ATH 47,713.28；成交量7,065億爆量確認突破有效性（前高46,465 6/18 ATH）；老AI伺服器族群+半導體聯動領漲；日RSI估計突破75（短線超買但動能強）",
+      "signal_id": "stk-TWII-2026-06-22-close",
+      "direction": "bullish",
+      "confidence": 0.82,
+      "rationale": "假期重開日爆量（7,065億）+2.69%創ATH，量價俱佳徹底確認突破；老AI補漲+台積電新天價雙主線；PCE 6/25為唯一近期風險，但今日動能極強",
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/%5ETWII",
+        "https://www.twse.com.tw/zh/indices/taiex/mi-5min-hist.html",
+        "https://tradingeconomics.com/taiwan/stock-market"
+      ],
+      "expires_at": "2026-06-23T09:00:00+08:00"
+    },
+    {
+      "name": "S&P 500",
+      "ticker": "^GSPC",
+      "close": 7500.58,
+      "prev_close": 7513.0,
+      "day_change_est": null,
+      "note": "美股今晚21:30 TW開盤；上次收盤7,500.58（6/19）；台股ATH正面外溢預期；PCE 6/25為主要下行壓力",
+      "signal_id": "stk-GSPC-2026-06-22-close",
+      "direction": "neutral_bullish",
+      "confidence": 0.55,
+      "rationale": "台股ATH帶動正面情緒；但PCE 6/25前部分資金保守；半導體板塊（TSM ADR/NVDA）預計強勢開盤",
+      "sources": [
+        "https://finance.yahoo.com/quote/%5EGSPC/"
+      ],
+      "expires_at": "2026-06-23T09:00:00+08:00"
+    },
+    {
+      "name": "Nasdaq",
+      "ticker": "^COMP",
+      "close": 26517.93,
+      "prev_close": 26362.0,
+      "note": "上次收盤（6/19估）；AI半導體帶動，今晚預計開高",
+      "signal_id": "stk-COMP-2026-06-22-close",
+      "direction": "neutral_bullish",
+      "confidence": 0.57,
+      "expires_at": "2026-06-23T09:00:00+08:00"
+    },
+    {
+      "name": "費城半導體 SOX",
+      "ticker": "^SOX",
+      "close_est": 14100.0,
+      "note": "估算值；台積電+NVDA聯動，今晚預計跟進台灣強勢",
+      "signal_id": "stk-SOX-2026-06-22-close",
+      "direction": "bullish",
+      "confidence": 0.68,
+      "expires_at": "2026-06-23T09:00:00+08:00"
+    }
+  ],
+  "macro": {
+    "us_10y_yield": 4.44,
+    "us_30y_yield": 4.88,
+    "us_2y_yield": 4.12,
+    "vix": 17.07,
+    "dxy": 100.79,
+    "wti_crude": 83.0,
+    "fed_rate_current": "3.50-3.75%",
+    "fomc_outcome": "hold",
+    "fomc_dot_plot_hike_members": 9,
+    "fomc_dot_plot_total_members": 18,
+    "pce_may_release_date": "2026-06-25",
+    "cpi_may_yoy": 4.2,
+    "note": "宏觀數據維持上週水位；PCE 5月6/25公布為本週最大風險；FOMC 9/18成員預期年底升息（50% odds）；10Y利率4.44%市場仍不信升息；VIX 17.07低波動；WTI $83 US-Iran停火持續"
+  },
+  "institutional_flows": {
+    "date": "2026-06-22",
+    "note": "三大法人盤後數據待 17:00 TWSE 官方公布，以下為估算值",
+    "foreign_net_bn_twd_est": 375.0,
+    "trust_net_bn_twd_est": 40.0,
+    "dealer_net_bn_twd_est": -15.0,
+    "total_est": 400.0,
+    "source": "https://www.twse.com.tw/zh/trading/foreign/t86.html"
+  },
+  "stocks": [
+    {
+      "ticker": "2330",
+      "name": "台積電",
+      "market": "TW",
+      "signal_id": "stk-2330-2026-06-22-close",
+      "price": 2495.0,
+      "price_note": "估算值；盤中ATH 2,510確認，收盤估 2,490–2,510",
+      "price_intraday_high": 2510.0,
+      "price_prev": 2410.0,
+      "day_change_pct_est": 3.5,
+      "ma20_est": 2370.0,
+      "ma60_est": 2110.0,
+      "ma200_est": 1900.0,
+      "direction": "bullish",
+      "confidence": 0.80,
+      "rationale": "盤中神祕大單爆量拉至2,510新天價（+4.1%盤中）；尾盤強力軋空傳言；TAIEX ATH確認帶動個股ATH突破；外資目標價最高3,030（里昂）；CoWoS封裝需求緊；Q2毛利率 57-58% 穩健",
+      "sources": [
+        "https://tw.stock.yahoo.com/news/%E5%B0%BE%E7%9B%A4%E7%88%86%E5%A4%A7%E5%96%AE%E5%8E%9F%E5%9B%A0%E6%9B%9D%E5%85%89-%E5%8F%B0%E7%A9%8D%E9%9B%BB-%E8%81%AF%E7%99%BC%E7%A7%91%E8%A2%AB%E7%A5%9E%E7%A5%98%E8%B3%87%E9%87%91%E7%A1%AC%E6%8B%89",
+        "https://www.sinotrade.com.tw/richclub/hotstock/%E5%8F%B0%E7%A9%8D%E9%9B%BB-2330-%E8%82%A1%E5%83%B9%E6%94%BB%E4%B8%8A1-650%E5%85%83%E6%96%B0%E9%AB%98"
+      ],
+      "support": [2440.0, 2380.0],
+      "resistance": [2600.0, 2800.0],
+      "expires_at": "2026-06-23T09:00:00+08:00"
+    },
+    {
+      "ticker": "2454",
+      "name": "聯發科",
+      "market": "TW",
+      "signal_id": "stk-2454-2026-06-22-close",
+      "price": 4570.0,
+      "price_note": "估算值；前週4,445基礎加估+2.8%",
+      "price_prev": 4445.0,
+      "day_change_pct_est": 2.8,
+      "ma20_est": 4260.0,
+      "ma60_est": 3950.0,
+      "ma200_est": 3380.0,
+      "direction": "bullish",
+      "confidence": 0.70,
+      "rationale": "跟隨大盤ATH上漲；AI ASIC年收入目標升至$20億；5G NTN衛星模組新題材；注意：已被列為處置股（流動性受限），短線波動放大風險",
+      "warning": "已列處置股，成交量受限，避免追高",
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/2454.TW",
+        "https://cmnews.com.tw/article/forumnews-7b066e7a-4983-11f1-986b-7b81f4e70b4c"
+      ],
+      "support": [4400.0, 4200.0],
+      "resistance": [4800.0, 5000.0],
+      "expires_at": "2026-06-23T09:00:00+08:00"
+    },
+    {
+      "ticker": "2317",
+      "name": "鴻海",
+      "market": "TW",
+      "signal_id": "stk-2317-2026-06-22-close",
+      "price": 281.0,
+      "price_note": "估算值；老AI伺服器族群補漲，估+3.7%",
+      "price_prev": 270.5,
+      "day_change_pct_est": 3.9,
+      "ma20_est": 268.0,
+      "ma60_est": 252.0,
+      "ma200_est": 230.0,
+      "direction": "bullish",
+      "confidence": 0.65,
+      "rationale": "老AI伺服器族群（鴻海/廣達/緯創）今日全面補漲；外資籌碼回補；雲端網路產品占比超越消費電子；高盛2026台股25首選；AI伺服器組裝訂單強勁；前週相對落後（+0.9% vs +5.2%）今日補正",
+      "sources": [
+        "https://news.cnyes.com/news/id/6477007",
+        "https://www.sinotrade.com.tw/richclub/hotstock/%E8%80%81AI%E4%BC%BA%E6%9C%8D%E5%99%A8%E6%97%8F%E7%BE%A4%E4%BB%8A%E6%97%A5%E5%9B%9E%E7%A5%9E"
+      ],
+      "support": [270.0, 255.0],
+      "resistance": [290.0, 310.0],
+      "expires_at": "2026-06-23T09:00:00+08:00"
+    },
+    {
+      "ticker": "NVDA",
+      "name": "輝達",
+      "market": "US",
+      "signal_id": "stk-NVDA-2026-06-22-close",
+      "price": 210.79,
+      "price_note": "上週五(6/19)收盤；美股今晚21:30 TW開盤",
+      "price_prev": 210.79,
+      "day_change_pct_est": null,
+      "ma20_est": 208.0,
+      "direction": "neutral_bullish",
+      "confidence": 0.62,
+      "rationale": "站上20MA $208技術面改善；Blackwell GB200出貨持續正向；台積電ATH+SOX預計帶動今晚強勢；PCE 6/25前部分獲利了結風險",
+      "sources": [
+        "https://finance.yahoo.com/quote/NVDA/"
+      ],
+      "support": [205.0, 195.0],
+      "resistance": [220.0, 235.0],
+      "expires_at": "2026-06-23T09:00:00+08:00"
+    },
+    {
+      "ticker": "TSLA",
+      "name": "特斯拉",
+      "market": "US",
+      "signal_id": "stk-TSLA-2026-06-22-close",
+      "price": 406.0,
+      "price_note": "上週五收盤；今日可能範圍 $384–$402 (預市估計)",
+      "price_prev": 406.0,
+      "direction": "neutral",
+      "confidence": 0.45,
+      "rationale": "SpaceX估值$1.77兆超越TSLA$1.6兆比價壓力；Q2銷量（7月初公布）為下一催化劑；20MA $403邊緣整固；落後大盤",
+      "sources": [
+        "https://finance.yahoo.com/quote/TSLA/"
+      ],
+      "support": [385.0, 365.0],
+      "resistance": [420.0, 440.0],
+      "expires_at": "2026-06-23T09:00:00+08:00"
+    },
+    {
+      "ticker": "AAPL",
+      "name": "蘋果",
+      "market": "US",
+      "signal_id": "stk-AAPL-2026-06-22-close",
+      "price": 298.01,
+      "price_note": "上週五收盤（6/19估 $298.01）",
+      "price_prev": 298.01,
+      "ma20_est": 295.0,
+      "direction": "neutral",
+      "confidence": 0.50,
+      "rationale": "Apple+Intel合作（Trump 6/18宣布）市場反應冷淡（AAPL +0.7%）；仍在20MA整固；52週高 $317.40提供向上空間但缺乏催化劑",
+      "sources": [
+        "https://finance.yahoo.com/quote/AAPL/"
+      ],
+      "support": [290.0, 280.0],
+      "resistance": [305.0, 317.0],
+      "expires_at": "2026-06-23T09:00:00+08:00"
+    },
+    {
+      "ticker": "TSM",
+      "name": "台積電ADR",
+      "market": "US",
+      "signal_id": "stk-TSM-2026-06-22-close",
+      "price": 440.07,
+      "price_note": "上週五收盤；台積電本地+4.1%→今晚TSM ADR估 $455–$465",
+      "price_prev": 440.07,
+      "price_tonight_est": 458.0,
+      "ma20_est": 432.0,
+      "direction": "bullish",
+      "confidence": 0.78,
+      "rationale": "台積電本地ATH 2,510帶動ADR強勢；外資目標最高$175（1 ADR=5股）估算約 $3000/5/TWD rate = 高潛力；今晚預計強勢開盤；突破$450阻力後下一目標$480",
+      "sources": [
+        "https://finance.yahoo.com/quote/TSM/",
+        "https://www.etoro.com/markets/tsm"
+      ],
+      "support": [435.0, 420.0],
+      "resistance": [465.0, 480.0],
+      "expires_at": "2026-06-23T09:00:00+08:00"
+    }
+  ],
+  "alerts": [
+    {
+      "alert_id": "alert-TAIEX-ATH-47713-confirmed-20260622",
+      "level": "critical",
+      "title": "TAIEX 47,713.28 史上收盤ATH——爆量7,065億徹底確認突破",
+      "body": "台股重開首日（6/22, 週一）暴漲+1,248pts (+2.69%)，收盤新高47,713.28，日高47,794.75。成交量7,065億元（遠超6,000億關鍵門檻），量價俱佳確認上週ATH 46,465（6/18）突破有效。技術面多頭格局強化，但日RSI估計突破75，短線超買需注意。",
+      "url": "https://tradingeconomics.com/taiwan/stock-market",
+      "source": "Trading Economics / TWSE",
+      "expires_at": "2026-06-23T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-TSMC-2510-mystery-bid-20260622",
+      "level": "warning",
+      "title": "台積電尾盤神祕大單→2,510元新天價，明日軋空傳言",
+      "body": "6/22尾盤台積電出現多筆神祕法人大單，股價被拉至歷史新天價2,510元（+4.1% vs 前週2,410）。市場傳言明日（6/23）將引發「歷史級軋空行情」，空方回補壓力龐大。外資同步拋售部分個股，資金集中台積電、聯發科。短線追高風險高；若軋空成立，6/23波動劇烈。",
+      "url": "https://tw.stock.yahoo.com/news/%E5%B0%BE%E7%9B%A4%E7%88%86%E5%A4%A7%E5%96%AE%E5%8E%9F%E5%9B%A0%E6%9B%9D%E5%85%89-%E5%8F%B0%E7%A9%8D%E9%9B%BB-%E8%81%AF%E7%99%BC%E7%A7%91%E8%A2%AB%E7%A5%9E%E7%A5%98%E8%B3%87%E9%87%91%E7%A1%AC%E6%8B%89",
+      "source": "Yahoo Finance 台股新聞",
+      "expires_at": "2026-06-23T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-PCE-May-critical-20260625",
+      "level": "critical",
+      "title": "PCE 5月（6/25 週四）——本週最重要數據，Fed升息路徑關鍵",
+      "body": "美國 5月 PCE 物價指數將於6/25（週四）公布。CPI 5月已達4.2%（YoY），若PCE同步超預期，FOMC升息路徑（目前9/18委員預期年底升息）可能前移，將直接衝擊美股及台股。本週最大系統性風險。",
+      "url": "https://www.bea.gov/",
+      "source": "BEA / Kiplinger",
+      "expires_at": "2026-06-26T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-FOMC-hawkish-dotplot-20260617",
+      "level": "warning",
+      "title": "FOMC 點陣圖鷹派：9/18委員預期年底升息——PCE 6/25為關鍵驗證",
+      "body": "FOMC 6/17維持3.50-3.75%（全票通過），但點陣圖顯示9/18位委員預期年底前升息。Fed主席Warsh首次決策。10Y利率不升反降至4.44%（債市不信升息），VIX 17.07。PCE 6/25為升息路徑關鍵驗證點。",
+      "url": "https://www.foxbusiness.com/economy/federal-reserve-interest-rate-decision-june-17-2026",
+      "source": "Fox Business / Federal Reserve",
+      "expires_at": "2026-06-27T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-old-AI-server-catchup-20260622",
+      "level": "info",
+      "title": "老AI伺服器族群今日全面補漲——鴻海領漲，廣達/緯創同步回神",
+      "body": "鴻海（2317）、廣達（2382）、緯創（3231）等AI伺服器代工廠今日強力補漲。過去一個月相對台積電/聯發科明顯落後（籌碼整理），今日外資回補+量能確認，補漲條件成熟。鴻海方向升級為bullish（前週neutral_bullish）。AI供應鏈全面輪動，記憶體族群（南亞科/華邦電）也同步轉強。",
+      "url": "https://news.cnyes.com/news/id/6477007",
+      "source": "鉅亨網",
+      "expires_at": "2026-06-23T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-Apple-Intel-chip-deal-20260618",
+      "level": "info",
+      "title": "Apple+Intel晶片合作（6/18宣布）：市場反應分化，TSM影響中性",
+      "body": "Trump 6/18宣布Apple+Intel合作，INTC +10.6%，AAPL +0.7%，TSM/TSMC反應中性（N3/N2主力地位未受威脅）。短線話題已消化，中期影響評估仍待。",
+      "url": "https://finance.yahoo.com/quote/INTC/",
+      "source": "Yahoo Finance / Reuters",
+      "expires_at": "2026-06-27T09:00:00+08:00"
+    }
+  ],
+  "whats_changed": {
+    "_generated_at": "2026-06-22T14:02:37+08:00",
+    "_prev_report": "股市-週報-20260620.json",
+    "_prev_date": "2026-06-20",
+    "direction_changes": [
+      {
+        "ticker": "2317",
+        "name": "鴻海",
+        "prev_direction": "neutral_bullish",
+        "new_direction": "bullish",
+        "reason": "老AI伺服器族群今日全面補漲，外資籌碼回補，前週落後今日補正；AI伺服器訂單結構改善"
+      },
+      {
+        "ticker": "^GSPC",
+        "name": "S&P 500",
+        "prev_direction": "neutral",
+        "new_direction": "neutral_bullish",
+        "reason": "台股ATH外溢效應，AI半導體帶動；但PCE 6/25仍制約升幅"
+      }
+    ],
+    "confidence_changes": [
+      {
+        "ticker": "^TWII",
+        "name": "台股加權",
+        "prev": 0.68,
+        "new": 0.82,
+        "reason": "ATH+爆量7,065億量價確認，多頭格局強化"
+      },
+      {
+        "ticker": "2330",
+        "name": "台積電",
+        "prev": 0.72,
+        "new": 0.80,
+        "reason": "個股ATH 2,510新天價突破，神祕大單進場，空單回補壓力龐大"
+      },
+      {
+        "ticker": "TSM",
+        "name": "台積電ADR",
+        "prev": 0.68,
+        "new": 0.78,
+        "reason": "本地台積電ATH帶動ADR，今晚預計強勢跟進"
+      },
+      {
+        "ticker": "2454",
+        "name": "聯發科",
+        "prev": 0.68,
+        "new": 0.70,
+        "reason": "處置股限制流動性，信心略降；但AI ASIC主線不變"
+      }
+    ],
+    "alerts_new": [
+      "alert-TAIEX-ATH-47713-confirmed-20260622",
+      "alert-TSMC-2510-mystery-bid-20260622",
+      "alert-old-AI-server-catchup-20260622"
+    ],
+    "alerts_resolved": [
+      {
+        "alert_id": "alert-TAIEX-new-ATH-20260618",
+        "reason": "已由更強確認替代：alert-TAIEX-ATH-47713-confirmed-20260622（量能7,065億確認ATH有效）"
+      }
+    ],
+    "alerts_inherited": [
+      "alert-PCE-May-critical-20260625",
+      "alert-FOMC-hawkish-dotplot-20260617",
+      "alert-Apple-Intel-chip-deal-20260618"
+    ],
+    "alerts_dropped": [
+      {
+        "alert_id": "alert-CPI-May-4pct-confirmed-20260610",
+        "reason": "PCE 6/25已接棒為更直接驗證事件，CPI 4.2%已知，不重複列出"
+      },
+      {
+        "alert_id": "alert-Iran-deal-oil-disinflation-20260611",
+        "reason": "US-Iran停火持續穩定，WTI $83無異常，短期影響消退"
+      }
+    ],
+    "market_view_change": {
+      "tw_overall": "bullish → bullish（維持，信心升級）",
+      "us_overall": "neutral → neutral_bullish（外溢效應）",
+      "key_catalyst_update": "上週關鍵為『6/22重開量能確認』→ 今日已確認（7,065億爆量），關鍵前移至PCE 6/25",
+      "new_risk": "台積電2,510神祕拉尾+軋空傳言→6/23波動放大；聯發科處置股流動性風險"
+    }
+  }
+}

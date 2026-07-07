@@ -1,0 +1,622 @@
+{
+  "_schema_version": 3,
+  "type": "morning",
+  "report_file": "股市-開盤前-20260708.md",
+  "date": "2026-07-08",
+  "weekday": "週三",
+  "generated_at": "2026-07-08T07:34:51+08:00",
+  "market_view": {
+    "level": "neutral-bearish",
+    "confidence": 0.65,
+    "headline": "DeepSeek 自製推理晶片衝擊費半 SOX -6%，台積電 ADR -3.74%；台股今日預計承壓，守 44,800-45,000 為關鍵；FOMC 紀要今晚為尾部風險"
+  },
+  "indices": [
+    {
+      "name": "道瓊工業",
+      "ticker": "DJI",
+      "value": 52925.15,
+      "change_pct": -0.2,
+      "trend": "neutral",
+      "note": "7/7 傳產藍籌相對抗跌，晶片股崩跌未大幅拖累道瓊"
+    },
+    {
+      "name": "S&P 500",
+      "ticker": "SPX",
+      "value": 7503.85,
+      "change_pct": -0.45,
+      "trend": "neutral",
+      "note": "7/7 大型科技下跌，Nasdaq 帶頭賣壓"
+    },
+    {
+      "name": "Nasdaq",
+      "ticker": "IXIC",
+      "value": 25818.69,
+      "change_pct": -1.16,
+      "trend": "bearish",
+      "note": "7/7 DeepSeek+Samsung 雙重衝擊，晶片股領跌"
+    },
+    {
+      "name": "費城半導體",
+      "ticker": "SOX",
+      "value": 12318.0,
+      "change_pct": -6.0,
+      "trend": "bearish",
+      "note": "7/7 Intel -9%、AMD -6%、Micron -5%；全線崩跌"
+    },
+    {
+      "name": "VIX 恐慌指數",
+      "ticker": "VIX",
+      "value": 15.91,
+      "change_pct": 0.63,
+      "trend": "neutral",
+      "note": "小幅上升但未失控，市場非恐慌性拋售"
+    },
+    {
+      "name": "美 10Y 殖利率",
+      "ticker": "US10Y",
+      "value": 4.479,
+      "change_pct": -0.02,
+      "trend": "neutral",
+      "note": "殖利率小降，避險資金進場；FOMC 紀要今晚為關鍵"
+    },
+    {
+      "name": "美元指數",
+      "ticker": "DXY",
+      "value": 100.85,
+      "change_pct": 0.0,
+      "trend": "neutral",
+      "note": "弱勢美元維持；NFP 低於預期後降息預期尚存"
+    },
+    {
+      "name": "WTI 原油",
+      "ticker": "WTI",
+      "value": 69.14,
+      "change_pct": 0.3,
+      "trend": "neutral",
+      "note": "OPEC+ 計劃 8 月增產，壓制油價上行"
+    }
+  ],
+  "stocks": [
+    {
+      "signal_id": "stk-2330-2026-07-08-morning",
+      "ticker": "2330",
+      "name": "台積電",
+      "market": "TW",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.6,
+      "view": "TSM ADR 昨夜 -3.74%（$435），今日預估 2330 承壓開低 -2~3%，目標 2,415-2,450；但 DeepSeek 晶片仍須台積電製程，長線基本面未動搖，守 2,400 可觀察反彈",
+      "rationale": "ADR 跌 -3.74% 帶來短線拋壓，但 DeepSeek 自研晶片仍依賴台積電先進製程，長期需求不變",
+      "price": 2490,
+      "change_pct": 1.22,
+      "support": 2400,
+      "resistance": 2510,
+      "stop_loss": 2380,
+      "target": 2550,
+      "technicals": {
+        "rsi14": 58,
+        "macd": "多頭排列，即將收斂",
+        "ma_alignment": "5>20>60 多頭，但承壓今日可能跌破 MA20"
+      },
+      "valuation": {
+        "pe": 24,
+        "pe_percentile_5y": 65,
+        "verdict": "合理偏高；NTM 24x vs 5Y 均 22x"
+      },
+      "sources": [
+        "https://www.tradingkey.com/news/market-movers/262016394-market-movers-tsm-20260707",
+        "https://finance.yahoo.com/markets/live/stock-market-today-sp-500-nasdaq-futures-slip-after-samsung-results-spark-chip-sell-off-223015294.html",
+        "https://tw.stock.yahoo.com/quote/2330.TW"
+      ],
+      "expires_at": "2026-07-08T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-2454-2026-07-08-morning",
+      "ticker": "2454",
+      "name": "聯發科",
+      "market": "TW",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.55,
+      "view": "昨收 4,335（+2.49%），但美股 AI 晶片情緒低迷，今日估承壓 4,100-4,200；DeepSeek 自製推理晶片是否影響 Edge AI 的 Dimensity 晶片需求，為本週最大觀察點",
+      "rationale": "美股半導體 -6% 情緒傳遞，DeepSeek 推理晶片直接競爭行動/邊緣 AI 市場，短線風險偏高",
+      "price": 4335,
+      "change_pct": 2.49,
+      "support": 4100,
+      "resistance": 4500,
+      "stop_loss": 4050,
+      "target": 4600,
+      "technicals": {
+        "rsi14": 57,
+        "macd": "黃金交叉後承壓，需觀察今日走勢",
+        "ma_alignment": "5>20 多頭，60MA 約 4,050 為中長線支撐"
+      },
+      "valuation": {
+        "pe": 20,
+        "pe_percentile_5y": 60,
+        "verdict": "合理；NTM 20x vs 5Y 均 18x"
+      },
+      "sources": [
+        "https://www.xtb.com/en/market-analysis/nasdaq-selloff-deepseek-and-samsung-earnings-reaction-sink-semiconductor-stocks",
+        "https://tw.stock.yahoo.com/quote/2454.TW"
+      ],
+      "expires_at": "2026-07-08T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-2317-2026-07-08-morning",
+      "ticker": "2317",
+      "name": "鴻海",
+      "market": "TW",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.5,
+      "view": "昨收 242（平盤），技術面仍弱（RSI 42，MACD 死叉），但AI 伺服器組裝需求不受 DeepSeek 晶片直接衝擊；今日可能相對抗跌 239-244",
+      "rationale": "伺服器/EV 組裝受益 AI 趨勢，不受晶片替代影響，但股價技術面未轉強，中性觀望",
+      "price": 242,
+      "change_pct": 0.0,
+      "support": 235,
+      "resistance": 260,
+      "stop_loss": 232,
+      "target": 265,
+      "technicals": {
+        "rsi14": 42,
+        "macd": "死叉，空頭動能",
+        "ma_alignment": "現價低於 MA20（約 250），均線空頭"
+      },
+      "valuation": {
+        "pe": 11,
+        "pe_percentile_5y": 30,
+        "verdict": "低估；P/E 11x 為歷史低位，AI 伺服器轉型期"
+      },
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/2317.TW",
+        "https://finance.yahoo.com/markets/stocks/articles/intel-applied-materials-dive-10-142759197.html"
+      ],
+      "expires_at": "2026-07-08T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-NVDA-2026-07-08-morning",
+      "ticker": "NVDA",
+      "name": "輝達",
+      "market": "US",
+      "signal": "🔴",
+      "direction": "bearish",
+      "confidence": 0.65,
+      "view": "昨收 ~$190（-2.5%），DeepSeek 自製推理晶片直接威脅護城河；Intel -9%、AMD -6% 顯示市場重新定價半導體估值；守 $185 為短線關鍵，FOMC 鷹派則再跌",
+      "rationale": "DeepSeek 推理晶片消息直接衝擊 NVDA 推理 GPU 長期需求，市場重新評估 AI 晶片壟斷溢價",
+      "price": 190.0,
+      "change_pct": -2.5,
+      "support": 185,
+      "resistance": 200,
+      "stop_loss": 180,
+      "target": 210,
+      "technicals": {
+        "rsi14": 42,
+        "macd": "空頭排列，現價低於 50MA($205)",
+        "ma_alignment": "現價跌破 MA20/MA50，均線全面空頭"
+      },
+      "valuation": {
+        "pe": 35,
+        "pe_percentile_5y": 40,
+        "verdict": "接近合理；NTM 35x vs 5Y 均 50x；Goldman 稱 21.7x EV/GP 具吸引力"
+      },
+      "sources": [
+        "https://www.tradingkey.com/analysis/stocks/us-stocks/262015350-nvidia-nvda-stock-forecast-july-2026-kyber-denial-goldman-tradingkey",
+        "https://www.tradingkey.com/analysis/stocks/us-stocks/262016163-nvda-deepseek-ipo-opanai-ai-tradingkey",
+        "https://www.cnbc.com/2026/07/07/chip-stocks-ai-selloff-samsung.html"
+      ],
+      "expires_at": "2026-07-08T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-TSLA-2026-07-08-morning",
+      "ticker": "TSLA",
+      "name": "特斯拉",
+      "market": "US",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.5,
+      "view": "昨收 $404（-0.3%），不直接受晶片新聞衝擊；近期守 $390 支撐，FSD/Robotaxi 進展為主要催化劑，中性觀察",
+      "rationale": "晶片新聞對 TSLA 無直接影響，需觀察 Robotaxi 商業化進度與 FSD 訂閱數據",
+      "price": 404.0,
+      "change_pct": -0.3,
+      "support": 390,
+      "resistance": 430,
+      "stop_loss": 380,
+      "target": 450,
+      "technicals": {
+        "rsi14": 50,
+        "macd": "中性",
+        "ma_alignment": "均線中性整理"
+      },
+      "valuation": {
+        "pe": 85,
+        "pe_percentile_5y": 50,
+        "verdict": "高估值；需 AI/自駕成長故事支撐"
+      },
+      "sources": [
+        "https://www.vantagemarkets.com/market-analysis/tsla-stock-price-today-tesla-share-price-july-6-2026/",
+        "https://finance.yahoo.com/quote/TSLA/"
+      ],
+      "expires_at": "2026-07-08T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-AAPL-2026-07-08-morning",
+      "ticker": "AAPL",
+      "name": "蘋果",
+      "market": "US",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.55,
+      "view": "估昨收 ~$311（約-0.5%），Apple Intelligence 自研晶片路線反而是 DeepSeek 衝擊的護城河；守 $305，技術面中性",
+      "rationale": "蘋果自研 Silicon 晶片策略使其不受外部 AI 晶片替代威脅，但高 P/E 須維持 AI 功能差異化",
+      "price": 311.0,
+      "change_pct": -0.5,
+      "support": 305,
+      "resistance": 325,
+      "stop_loss": 300,
+      "target": 330,
+      "technicals": {
+        "rsi14": 52,
+        "macd": "中性",
+        "ma_alignment": "均線中性"
+      },
+      "valuation": {
+        "pe": 28,
+        "pe_percentile_5y": 55,
+        "verdict": "合理偏高；AI 功能差異化為估值支撐"
+      },
+      "sources": [
+        "https://finance.yahoo.com/quote/AAPL/",
+        "https://www.cnbc.com/quotes/AAPL"
+      ],
+      "expires_at": "2026-07-08T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-TSM-2026-07-08-morning",
+      "ticker": "TSM",
+      "name": "台積電ADR",
+      "market": "US",
+      "signal": "🔴",
+      "direction": "bearish",
+      "confidence": 0.6,
+      "view": "昨收 $435（-3.74%；前收 $451.79），跌破 MA20；短線承壓，但 DeepSeek 晶片若採用台積電製程則為逆向利多；守 $420 為短期關鍵",
+      "rationale": "市場情緒殺估值，-3.74% 大跌後技術面偏弱；長期 AI 晶片製造需求完整，但短線難抗市場情緒",
+      "price": 435.0,
+      "change_pct": -3.74,
+      "support": 420,
+      "resistance": 460,
+      "stop_loss": 415,
+      "target": 460,
+      "technicals": {
+        "rsi14": 45,
+        "macd": "空頭轉折",
+        "ma_alignment": "跌破 MA20，短線偏空"
+      },
+      "valuation": {
+        "pe": 24,
+        "pe_percentile_5y": 65,
+        "verdict": "合理；與 2330 同步，ADR 溢價通常 5-8%"
+      },
+      "sources": [
+        "https://www.tradingkey.com/news/market-movers/262016394-market-movers-tsm-20260707",
+        "https://www.investing.com/news/stock-market-news/asia-chip-shares-fall-as-samsung-earnings-fail-to-calm-ai-valuation-fears-4778207"
+      ],
+      "expires_at": "2026-07-08T13:30:00+08:00"
+    }
+  ],
+  "alerts": [
+    {
+      "alert_id": "alt-deepseek-chip-inference",
+      "level": "warning",
+      "text": "DeepSeek 正開發自製 AI 推理晶片（Reuters 7/7），目標降低對 NVDA/Huawei 依賴；推理晶片是 GPU 需求成長最快區段，直接衝擊 NVDA 護城河，SOX -6%",
+      "tickers": [
+        "NVDA",
+        "TSM",
+        "2330",
+        "2454"
+      ],
+      "url": "https://mezha.net/eng/bukvy/8450321d_nasdaq_set_to/",
+      "source": "Reuters / Mezha"
+    },
+    {
+      "alert_id": "alt-samsung-q2-chip-selloff",
+      "level": "warning",
+      "text": "三星 Q2 獲利 +19 倍（89.4 兆韓元），但 AI HBM 需求峰值疑慮引發亞洲半導體拋售，三星跌 8%，拖累全球晶片股",
+      "tickers": [
+        "NVDA",
+        "TSM",
+        "2330",
+        "2454"
+      ],
+      "url": "https://www.cnbc.com/2026/07/07/chip-stocks-ai-selloff-samsung.html",
+      "source": "CNBC"
+    },
+    {
+      "alert_id": "alt-fomc-minutes-july8",
+      "level": "warning",
+      "text": "FOMC 6/17 會議紀要今晚 2pm ET 公布；Warsh 鷹派主持，9/18 委員傾向升息，升息概率 40%；鷹派紀要將加壓台股明日走勢",
+      "tickers": [
+        "2330",
+        "2454",
+        "NVDA",
+        "TSLA",
+        "AAPL"
+      ],
+      "url": "https://www.tradingview.com/news/coinpedia:a9f8c9851094b:0-fed-minutes-july-8-will-the-fomc-signal-a-rate-cut-or-another-hike/",
+      "source": "TradingView / Fed"
+    },
+    {
+      "alert_id": "alt-fed-warsh-rate-hike",
+      "level": "info",
+      "text": "Fed 主席 Warsh 鷹派立場維持；6/17 FOMC 點陣圖 9 位委員預期年內升息，PCE 上修至 3.6%，升息尾部風險持續",
+      "tickers": [
+        "2330",
+        "2454",
+        "NVDA",
+        "TSLA"
+      ],
+      "url": "https://goldsilver.com/industry-news/goldsilver-news/gold-price-fomc-minutes-july-2026/",
+      "source": "GoldSilver / Fed"
+    },
+    {
+      "alert_id": "alt-cpi-july14",
+      "level": "info",
+      "text": "美國 CPI 6 月數據將於 7/14-15 公布，為 FOMC 7/28-29 升息決策關鍵依據，市場高度關注通膨是否降溫",
+      "tickers": [
+        "2330",
+        "NVDA",
+        "TSLA",
+        "AAPL"
+      ],
+      "url": "https://www.heygotrade.com/en/news/weekly-economic-outlook-2026-07-06/",
+      "source": "HeyGoTrade"
+    }
+  ],
+  "sector_rotation": {
+    "strong": [
+      "傳產藍籌（道瓊相對抗跌）",
+      "防禦型消費",
+      "能源（油價回升）"
+    ],
+    "weak": [
+      "半導體/費半（SOX -6%）",
+      "AI 記憶體（Micron -5%、SanDisk -6%）",
+      "晶片設備（AMAT -6%、Lam -6%）"
+    ],
+    "watch": [
+      "台灣 AI 伺服器供應鏈（鴻海、廣達）",
+      "Apple Intelligence 生態（AAPL）",
+      "DeepSeek 晶片代工受益（台積電長線）"
+    ]
+  },
+  "whats_changed": {
+    "compared_to": "股市-開盤前-20260623.md",
+    "compared_to_date": "2026-06-23",
+    "new": [
+      {
+        "type": "alert",
+        "summary": "新增警報：DeepSeek 正開發自製 AI 推理晶片（Reuters 7/7），目標降低對 NVDA/Huawei 依賴；推理晶...",
+        "tickers": [
+          "NVDA",
+          "TSM",
+          "2330",
+          "2454"
+        ],
+        "ticker": "",
+        "from": "",
+        "to": "alt-deepseek-chip-inference"
+      },
+      {
+        "type": "alert",
+        "summary": "新增警報：三星 Q2 獲利 +19 倍（89.4 兆韓元），但 AI HBM 需求峰值疑慮引發亞洲半導體拋售，三星跌 8%，拖累全...",
+        "tickers": [
+          "NVDA",
+          "TSM",
+          "2330",
+          "2454"
+        ],
+        "ticker": "",
+        "from": "",
+        "to": "alt-samsung-q2-chip-selloff"
+      },
+      {
+        "type": "alert",
+        "summary": "新增警報：FOMC 6/17 會議紀要今晚 2pm ET 公布；Warsh 鷹派主持，9/18 委員傾向升息，升息概率 40%；鷹...",
+        "tickers": [
+          "2330",
+          "2454",
+          "NVDA",
+          "TSLA",
+          "AAPL"
+        ],
+        "ticker": "",
+        "from": "",
+        "to": "alt-fomc-minutes-july8"
+      },
+      {
+        "type": "alert",
+        "summary": "新增警報：Fed 主席 Warsh 鷹派立場維持；6/17 FOMC 點陣圖 9 位委員預期年內升息，PCE 上修至 3.6%，升...",
+        "tickers": [
+          "2330",
+          "2454",
+          "NVDA",
+          "TSLA"
+        ],
+        "ticker": "",
+        "from": "",
+        "to": "alt-fed-warsh-rate-hike"
+      },
+      {
+        "type": "alert",
+        "summary": "新增警報：美國 CPI 6 月數據將於 7/14-15 公布，為 FOMC 7/28-29 升息決策關鍵依據，市場高度關注通膨是否...",
+        "tickers": [
+          "2330",
+          "NVDA",
+          "TSLA",
+          "AAPL"
+        ],
+        "ticker": "",
+        "from": "",
+        "to": "alt-cpi-july14"
+      },
+      {
+        "type": "stock_direction",
+        "summary": "2330（台積電）方向翻轉",
+        "tickers": [
+          "2330"
+        ],
+        "ticker": "2330",
+        "from": "bullish",
+        "to": "neutral"
+      },
+      {
+        "type": "stock_direction",
+        "summary": "2454（聯發科）方向翻轉",
+        "tickers": [
+          "2454"
+        ],
+        "ticker": "2454",
+        "from": "bullish",
+        "to": "neutral"
+      },
+      {
+        "type": "stock_direction",
+        "summary": "NVDA（輝達）方向翻轉",
+        "tickers": [
+          "NVDA"
+        ],
+        "ticker": "NVDA",
+        "from": "neutral",
+        "to": "bearish"
+      },
+      {
+        "type": "stock_direction",
+        "summary": "TSLA（特斯拉）方向翻轉",
+        "tickers": [
+          "TSLA"
+        ],
+        "ticker": "TSLA",
+        "from": "bullish",
+        "to": "neutral"
+      },
+      {
+        "type": "stock_direction",
+        "summary": "TSM（台積電ADR）方向翻轉",
+        "tickers": [
+          "TSM"
+        ],
+        "ticker": "TSM",
+        "from": "neutral",
+        "to": "bearish"
+      }
+    ],
+    "strengthened": [],
+    "removed": [
+      {
+        "type": "alert",
+        "summary": "移除警報：Alphabet -5% 觸發科技股連鎖拋售：AI人才流失疑慮（Alphabet、Amazon -4.8%、Meta -...",
+        "tickers": [
+          "NVDA",
+          "AAPL",
+          "TSM"
+        ],
+        "ticker": "",
+        "from": "alt-bigtech-ai-talent-exodus",
+        "to": ""
+      },
+      {
+        "type": "alert",
+        "summary": "移除警報：外資空單創新高、台指期溢價1,222點：台股昨日強漲後外資做空力道增強，台指期48,963遠高於現指47,741，今日軋...",
+        "tickers": [
+          "2330",
+          "2454",
+          "2317"
+        ],
+        "ticker": "",
+        "from": "alt-taiwan-foreign-short-record",
+        "to": ""
+      },
+      {
+        "type": "alert",
+        "summary": "移除警報：Micron (MU) 本週財報（AI高頻寬記憶體HBM需求）：強弱結果將決定SOX及半導體族群下一波走向，直接影響NV...",
+        "tickers": [
+          "NVDA",
+          "TSM",
+          "2330"
+        ],
+        "ticker": "",
+        "from": "alt-micron-earnings-semiconductor",
+        "to": ""
+      },
+      {
+        "type": "alert",
+        "summary": "移除警報：Fed Warsh 首次FOMC（6/17）：維持利率3.50-3.75%，但9位官員點陣圖預測年內升息，市場升息概率升...",
+        "tickers": [
+          "NVDA",
+          "AAPL",
+          "TSM",
+          "2330",
+          "2454"
+        ],
+        "ticker": "",
+        "from": "alt-fomc-hawkish-hold-june",
+        "to": ""
+      },
+      {
+        "type": "alert",
+        "summary": "移除警報：Fed 上修2026年PCE通脹預測至3.6%（前值2.7%），核心PCE 3.3%，均遠超2%目標。滯脹組合（高通脹+...",
+        "tickers": [
+          "NVDA",
+          "TSLA",
+          "AAPL",
+          "2454"
+        ],
+        "ticker": "",
+        "from": "alt-fed-pce-inflation-revision",
+        "to": ""
+      },
+      {
+        "type": "alert",
+        "summary": "移除警報：美伊和平協議（6/20確認）：油價穩定降通脹壓力，Risk-On情緒擴散，台股強勢受惠；後續觀察協議執行進度及油價走向...",
+        "tickers": [
+          "NVDA",
+          "2330",
+          "TSM"
+        ],
+        "ticker": "",
+        "from": "alt-iran-ceasefire-market-rally",
+        "to": ""
+      },
+      {
+        "type": "alert",
+        "summary": "移除警報：鴻海5月營收8,590億元優於預期，AI伺服器機櫃出貨持續放量，法人估Q2營收2.4兆元，但昨日台股大漲時股價未跟，需觀...",
+        "tickers": [
+          "2317"
+        ],
+        "ticker": "",
+        "from": "alt-foxconn-ai-server-rerating",
+        "to": ""
+      },
+      {
+        "type": "alert",
+        "summary": "移除警報：聯發科Q3 N2旗艦AP+Q4 ASIC貢獻20億美元，AI手機+邊緣AI雙驅動，外資目標最高上調至2,454元；現價4...",
+        "tickers": [
+          "2454"
+        ],
+        "ticker": "",
+        "from": "alt-mediatek-ai-asic-rerating",
+        "to": ""
+      },
+      {
+        "type": "alert",
+        "summary": "移除警報：NVIDIA 發行250億美元債券支持AI基礎設施，顯示長線資本佈局信心堅定；短線需等待MU財報確認AI記憶體需求強度...",
+        "tickers": [
+          "NVDA"
+        ],
+        "ticker": "",
+        "from": "alt-nvda-25b-bond-ai-infra",
+        "to": ""
+      }
+    ]
+  }
+}

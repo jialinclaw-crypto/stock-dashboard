@@ -1,0 +1,444 @@
+{
+  "_schema_version": 3,
+  "type": "morning",
+  "report_file": "股市-開盤前-20260709.md",
+  "date": "2026-07-09",
+  "weekday": "週四",
+  "generated_at": "2026-07-09T07:34:35+08:00",
+  "market_view": {
+    "level": "neutral",
+    "confidence": 0.60,
+    "headline": "美伊衝突升級+FOMC鷹派紀要雙重壓制，油價WTI+4.4%；但SOX+1.35%晶片股回血、H200大單利多台積電，台股今日震盪偏平，守45,300-45,500支撐，7/16 TSMC Q2法說為關鍵催化劑"
+  },
+  "indices": [
+    {
+      "name": "道瓊工業",
+      "ticker": "DJI",
+      "value": 52348.0,
+      "change_pct": -1.09,
+      "trend": "bearish",
+      "note": "7/8 美伊衝突+FOMC鷹派雙重打壓傳統股，-577點"
+    },
+    {
+      "name": "S&P 500",
+      "ticker": "SPX",
+      "value": 7483.0,
+      "change_pct": -0.28,
+      "trend": "neutral",
+      "note": "7/8 科技小升抵銷傳產跌勢，整體小幅走低"
+    },
+    {
+      "name": "Nasdaq",
+      "ticker": "IXIC",
+      "value": 25870.0,
+      "change_pct": 0.20,
+      "trend": "neutral",
+      "note": "7/8 晶片股回血帶動Nasdaq微升，H200訂單利多科技板塊"
+    },
+    {
+      "name": "費城半導體",
+      "ticker": "SOX",
+      "value": 12466.0,
+      "change_pct": 1.35,
+      "trend": "bullish",
+      "note": "7/8 由前日-6%大幅反彈，中國H200訂單+NVDA+0.71%帶動"
+    },
+    {
+      "name": "VIX 恐慌指數",
+      "ticker": "VIX",
+      "value": 17.22,
+      "change_pct": 6.77,
+      "trend": "bearish",
+      "note": "VIX上升6.77%，伊朗衝突引發市場警覺，但未達恐慌水平"
+    },
+    {
+      "name": "美 10Y 殖利率",
+      "ticker": "US10Y",
+      "value": 4.50,
+      "change_pct": 0.02,
+      "trend": "bearish",
+      "note": "FOMC鷹派紀要+油價通膨疑慮推升殖利率至4.50%"
+    },
+    {
+      "name": "美元指數",
+      "ticker": "DXY",
+      "value": 101.5,
+      "change_pct": 0.65,
+      "trend": "bearish",
+      "note": "FOMC鷹派預期+避險需求推升美元，外資回流美元資產"
+    },
+    {
+      "name": "WTI 原油",
+      "ticker": "WTI",
+      "value": 73.52,
+      "change_pct": 4.40,
+      "trend": "bullish",
+      "note": "美伊衝突+Hormuz斷航風險推升油價+4.4%，為近月最大單日漲幅"
+    },
+    {
+      "name": "Brent 原油",
+      "ticker": "BRENT",
+      "value": 78.02,
+      "change_pct": 5.20,
+      "trend": "bullish",
+      "note": "Brent +5.2%，中東地緣風險溢價大幅走高"
+    },
+    {
+      "name": "台股加權指數",
+      "ticker": "TAIEX",
+      "value": 45734.0,
+      "change_pct": 0.56,
+      "trend": "neutral",
+      "note": "7/8台股收+0.56%（+255點），半導體板塊抗跌，今日（7/9）開盤預測持平偏升"
+    }
+  ],
+  "stocks": [
+    {
+      "signal_id": "stk-2330-2026-07-09-morning",
+      "ticker": "2330",
+      "name": "台積電",
+      "market": "TW",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.62,
+      "view": "法說前整理，守NT$2,400支撐為關鍵；H200訂單擴大提升產能利用率，7/16 Q2法說（指引$39-40.2B）為主要催化劑",
+      "rationale": "TSM ADR+0.94%領先，H200中國訂單直接利多台積電4nm產能；惟FOMC升息壓制評價倍數，法說前短線區間整理",
+      "price": 2480,
+      "change_pct": 0.8,
+      "support": 2400,
+      "resistance": 2535,
+      "stop_loss": 2350,
+      "target": 2600,
+      "technicals": {
+        "rsi14": 56,
+        "macd": "黃金交叉待確認，偏多",
+        "ma_alignment": "MA20(2400)/MA60(2200) 多頭排列"
+      },
+      "valuation": {
+        "pe": 30,
+        "pe_percentile_5y": 55,
+        "verdict": "合理；法說指引>$40B可提升評價倍數"
+      },
+      "sources": [
+        "https://investor.tsmc.com/english/quarterly-results/2026/q2",
+        "https://finance.yahoo.com/news/exclusive-nvidia-sounds-tsmc-h200-074433953.html"
+      ],
+      "expires_at": "2026-07-09T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-2454-2026-07-09-morning",
+      "ticker": "2454",
+      "name": "聯發科",
+      "market": "TW",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.55,
+      "view": "AI手機晶片需求強勁，SOX反彈+H200訂單有溢出利多；DeepSeek自製晶片為長期下行風險，操作上建議區間應對",
+      "rationale": "SOX+1.35%為利多，但DeepSeek自製推理晶片長期衝擊難以量化；估值22x相對合理",
+      "price": 4200,
+      "change_pct": null,
+      "support": 4000,
+      "resistance": 4500,
+      "stop_loss": 3900,
+      "target": 4700,
+      "technicals": {
+        "rsi14": 52,
+        "macd": "中性，多空平衡",
+        "ma_alignment": "橫盤整理，MA20/MA60均線支撐"
+      },
+      "valuation": {
+        "pe": 22,
+        "pe_percentile_5y": 40,
+        "verdict": "相對合理；AI晶片需求增長若持續可提升評價"
+      },
+      "sources": [
+        "https://finance.yahoo.com/quote/2454.TW/",
+        "https://www.cnbc.com/quotes/2454-TW"
+      ],
+      "expires_at": "2026-07-09T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-2317-2026-07-09-morning",
+      "ticker": "2317",
+      "name": "鴻海",
+      "market": "TW",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.50,
+      "view": "EV佈局穩步推進，FII董事會改選治理優化；油價激升利好EV需求論述，但全球消費放緩及代工毛利壓力制約評價",
+      "rationale": "P/E 14x偏低估，FII公司治理改善；惟缺乏短期催化劑，等待EV訂單具體化",
+      "price": 237.5,
+      "change_pct": 0.21,
+      "support": 230,
+      "resistance": 250,
+      "stop_loss": 225,
+      "target": 260,
+      "technicals": {
+        "rsi14": 48,
+        "macd": "偏平，無明顯方向",
+        "ma_alignment": "MA均線整理中，多空拉鋸"
+      },
+      "valuation": {
+        "pe": 14,
+        "pe_percentile_5y": 35,
+        "verdict": "低估；但需EV訂單或AI伺服器訂單放量才能重新評價"
+      },
+      "sources": [
+        "https://www.tipranks.com/news/company-announcements/hon-hai-refreshes-board-and-pay-structure-at-key-foxconn-industrial-internet-subsidiary",
+        "https://www.investing.com/news/company-news/hon-hai-increases-stake-in-foxconn-system-with-292m-deal-93CH-4775860"
+      ],
+      "expires_at": "2026-07-09T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-NVDA-2026-07-09-morning",
+      "ticker": "NVDA",
+      "name": "輝達",
+      "market": "US",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.62,
+      "view": "H200中國訂單>200萬片為短期催化劑，P/E 22.22x為2019年以來最低提供估值支撐；DeepSeek自製晶片+FOMC升息為主要壓制；建議$185-190逢低布局，$210壓力前保留獲利",
+      "rationale": "H200訂單+低P/E提供基本面支撐，由前日DeepSeek恐慌中反彈；升息風險及DeepSeek長期競爭使信號維持中性而非看多",
+      "price": 196.93,
+      "change_pct": 0.71,
+      "support": 185,
+      "resistance": 210,
+      "stop_loss": 178,
+      "target": 225,
+      "technicals": {
+        "rsi14": 52,
+        "macd": "轉正，多空平衡偏多",
+        "ma_alignment": "MA50(185)支撐有效，MA200(160)多頭格局"
+      },
+      "valuation": {
+        "pe": 22.22,
+        "pe_percentile_5y": 15,
+        "verdict": "低估；FY2026 Revenue $215.9B(+65.5% YoY)，P/E為近年低位"
+      },
+      "sources": [
+        "https://finance.yahoo.com/news/nvidia-stock-rises-china-orders-143039535.html",
+        "https://www.gurufocus.com/news/8950027/china-eases-ai-chip-restrictions-for-nvidia-nvda-unlocks-h200-supply-potential",
+        "https://www.tradingkey.com/analysis/stocks/us-stocks/262015350-nvidia-nvda-stock-forecast-july-2026-kyber-denial-goldman-tradingkey"
+      ],
+      "expires_at": "2026-07-09T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-TSLA-2026-07-09-morning",
+      "ticker": "TSLA",
+      "name": "特斯拉",
+      "market": "US",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.48,
+      "view": "油價激升長期利好EV論述，但風險資產在伊朗衝突+FOMC升息背景下承壓；TSLA從$404回落-2.6%，失守MA50($400)，技術面短線偏弱",
+      "rationale": "從$404跌至$393(-2.6%)，FOMC升息壓制高P/E成長股；油價利好EV論述但短期難抵宏觀逆風",
+      "price": 393.40,
+      "change_pct": -2.6,
+      "support": 380,
+      "resistance": 415,
+      "stop_loss": 365,
+      "target": 435,
+      "technicals": {
+        "rsi14": 46,
+        "macd": "死叉偏弱，動能轉空",
+        "ma_alignment": "跌破MA50($400)，短線轉弱"
+      },
+      "valuation": {
+        "pe": 100,
+        "pe_percentile_5y": 40,
+        "verdict": "高估；升息環境壓制高倍數評價"
+      },
+      "sources": [
+        "https://www.vantagemarkets.com/market-analysis/tsla-stock-price-today-tesla-share-price-july-6-2026/",
+        "https://finance.yahoo.com/quote/TSLA/"
+      ],
+      "expires_at": "2026-07-09T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-AAPL-2026-07-09-morning",
+      "ticker": "AAPL",
+      "name": "蘋果",
+      "market": "US",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.55,
+      "view": "防守性大型股，地緣動盪中相對抗跌；無重大近期催化劑，靜待AI iPhone產品周期。DXY走強略壓製海外收入，無明顯方向",
+      "rationale": "股價持平維穩，防守屬性優異；惟FOMC升息壓制評價倍數，等待下一個產品催化劑",
+      "price": 311.50,
+      "change_pct": 0.16,
+      "support": 305,
+      "resistance": 320,
+      "stop_loss": 298,
+      "target": 330,
+      "technicals": {
+        "rsi14": 53,
+        "macd": "中性，略偏多",
+        "ma_alignment": "MA多頭排列，均線支撐穩健"
+      },
+      "valuation": {
+        "pe": 28,
+        "pe_percentile_5y": 50,
+        "verdict": "合理；AI整合新品周期啟動可重估"
+      },
+      "sources": [
+        "https://finance.yahoo.com/quote/AAPL/",
+        "https://www.cnn.com/markets/stocks/AAPL"
+      ],
+      "expires_at": "2026-07-09T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-TSM-2026-07-09-morning",
+      "ticker": "TSM",
+      "name": "台積電ADR",
+      "market": "US",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.65,
+      "view": "H200大單直接利多（NVDA增加委外4nm訂單），ADR+0.94%收復前日跌幅；7/16 Q2法說為主要催化劑，指引>$40B可推動突破$460；17位分析師目標中位$490.34",
+      "rationale": "H200訂單+ADR復收多重正面信號；FOMC升息使殖利率回升略壓估值，信號維持中性偏多",
+      "price": 436.59,
+      "change_pct": 0.94,
+      "support": 420,
+      "resistance": 460,
+      "stop_loss": 408,
+      "target": 490,
+      "technicals": {
+        "rsi14": 55,
+        "macd": "轉正，回升趨勢確立",
+        "ma_alignment": "MA50(420)有效支撐，回升動能恢復"
+      },
+      "valuation": {
+        "pe": 28,
+        "pe_percentile_5y": 55,
+        "verdict": "合理偏低；Q2法說強勁可提升至30x評價"
+      },
+      "sources": [
+        "https://finance.yahoo.com/quote/TSM/",
+        "https://www.tipranks.com/news/citi-raises-tsmc-stock-price-target-ahead-of-q2-earnings-sees-higher-2026-revenue-guidance",
+        "https://finance.yahoo.com/news/exclusive-nvidia-sounds-tsmc-h200-074433953.html"
+      ],
+      "expires_at": "2026-07-09T13:30:00+08:00"
+    }
+  ],
+  "alerts": [
+    {
+      "alert_id": "alt-iran-ceasefire-over",
+      "level": "warning",
+      "text": "Trump 7/8宣稱美伊停火「結束」，美軍打擊伊朗80+目標（空防、雷達、IRGC快艇）；Hormuz斷航風險激增，WTI+4.4%/$73.52、Brent+5.2%/$78.02；能源板塊受益，科技/消費股承壓",
+      "tickers": ["2317", "TSLA"],
+      "url": "https://www.nbcnews.com/business/business-news/oil-prices-surge-stocks-tumble-trump-iran-ceasefire-over-hormuz-rcna353446",
+      "source": "NBC News"
+    },
+    {
+      "alert_id": "alt-fomc-hawkish-hike-2026",
+      "level": "warning",
+      "text": "FOMC 6/17紀要鷹派：9/17委員支持2026年升息，僅1人主張降息，PCE預測3.6%（遠超2%目標）；市場9月升息概率提升至40%+，10Y殖利率升至4.50%",
+      "tickers": ["NVDA", "TSLA", "AAPL", "TSM", "2330"],
+      "url": "https://www.cnbc.com/2026/07/08/with-minutes-due-feds-family-fight-over-interest-rates-could-drag-on.html",
+      "source": "CNBC"
+    },
+    {
+      "alert_id": "alt-deepseek-chip-inference",
+      "level": "warning",
+      "text": "DeepSeek 正開發自製AI推理晶片（Reuters 7/7），目標降低對NVDA/Huawei依賴；推理晶片是GPU需求成長最快區段，長期衝擊NVDA需求模型；7/8因H200中國訂單暫時被抵銷",
+      "tickers": ["NVDA", "2330", "2454"],
+      "url": "https://finance.yahoo.com/news/nvidia-stock-rises-china-orders-143039535.html",
+      "source": "Yahoo Finance / Reuters"
+    },
+    {
+      "alert_id": "alt-cpi-july14",
+      "level": "info",
+      "text": "美國CPI 6月數據7/14公布，為FOMC 7/28-29升息決策關鍵依據；市場高度關注，若CPI再超預期將進一步壓制台股評價",
+      "tickers": ["2330", "NVDA", "TSM"],
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "source": "Federal Reserve"
+    },
+    {
+      "alert_id": "alt-tsmc-q2-earnings-jul16",
+      "level": "info",
+      "text": "TSMC Q2 2026法說7/16 14:00台灣時間；指引$39-40.2B（+10% QoQ），HPC佔61%、7nm以下74%；法說結果將為整體台股半導體板塊定調，為本週最重要事件",
+      "tickers": ["2330", "TSM", "2454", "NVDA"],
+      "url": "https://investor.tsmc.com/english/quarterly-results/2026/q2",
+      "source": "TSMC Investor Relations"
+    },
+    {
+      "alert_id": "alt-fed-warsh-rate-hike",
+      "level": "info",
+      "text": "Fed主席Warsh鷹派立場維持；FOMC點陣圖9位委員預期年內升息，升息尾部風險持續存在，外資資金動向受美元走強影響",
+      "tickers": ["2330", "TSM", "NVDA"],
+      "url": "https://www.tradingview.com/news/coinpedia:a9f8c9851094b:0-fed-minutes-july-8-will-the-fomc-signal-a-rate-cut-or-another-hike/",
+      "source": "TradingView"
+    }
+  ],
+  "sector_rotation": {
+    "strong": ["能源（油價+4.4%受益）", "半導體（SOX+1.35%，H200訂單利多）", "AI基礎設施（H200大單直接利多）"],
+    "weak": ["傳統製造（Dow -1.09%）", "高P/E成長股（FOMC升息壓制）", "消費（伊朗風險+通膨疑慮）"],
+    "watch": ["台灣半導體（7/16法說為關鍵）", "EV板塊（油價利好論述vs升息逆風）", "美元走強受益板塊（金融、保險）"]
+  },
+  "whats_changed": {
+    "compared_to": "股市-開盤前-20260708.md",
+    "compared_to_date": "2026-07-08",
+    "new": [
+      {
+        "type": "alert",
+        "alert_id": "alt-iran-ceasefire-over",
+        "summary": "美伊衝突升級：Trump宣稱停火「結束」，美軍打擊伊朗80+目標，WTI +4.4%/$73.52，Hormuz斷航風險上升",
+        "tickers": ["2317", "TSLA"],
+        "from": "",
+        "to": "warning"
+      },
+      {
+        "type": "alert",
+        "alert_id": "alt-tsmc-q2-earnings-jul16",
+        "summary": "TSMC Q2法說倒數8天（7/16），指引$39-40.2B，為台股半導體板塊最重要近期催化劑",
+        "tickers": ["2330", "TSM", "NVDA"],
+        "from": "",
+        "to": "info"
+      },
+      {
+        "type": "stock_direction",
+        "summary": "NVDA 由空轉中性：H200中國訂單>200萬片抵銷DeepSeek恐慌，P/E 22.22x估值吸引",
+        "ticker": "NVDA",
+        "tickers": ["NVDA"],
+        "from": "bearish",
+        "to": "neutral"
+      },
+      {
+        "type": "stock_direction",
+        "summary": "TSM 由空轉中性：ADR收復+0.94%，H200大單直接利多，法說前情緒回穩",
+        "ticker": "TSM",
+        "tickers": ["TSM"],
+        "from": "bearish",
+        "to": "neutral"
+      }
+    ],
+    "strengthened": [
+      {
+        "type": "alert",
+        "alert_id": "alt-fomc-hawkish-hike-2026",
+        "summary": "FOMC升息風險由「尾部風險」升級為「確認鷹派」：紀要揭示9/17委員支持升息，PCE 3.6%遠超目標，市場升息概率40%+",
+        "tickers": ["NVDA", "TSLA", "TSM", "2330"],
+        "from": "info/warning（前瞻尾部風險）",
+        "to": "warning（已確認鷹派）"
+      }
+    ],
+    "removed": [
+      {
+        "type": "alert",
+        "alert_id": "alt-fomc-minutes-july8",
+        "summary": "FOMC紀要公布前之前瞻尾部風險警告已實現（7/8紀要已公布為鷹派），前瞻警示移除，升級為確認風險警示",
+        "tickers": [],
+        "from": "warning",
+        "to": ""
+      },
+      {
+        "type": "alert",
+        "alert_id": "alt-samsung-q2-chip-selloff",
+        "summary": "三星Q2財報衝擊已充分消化（SOX從-6%反彈+1.35%），急性拋售警示解除",
+        "tickers": [],
+        "from": "warning",
+        "to": ""
+      }
+    ]
+  }
+}

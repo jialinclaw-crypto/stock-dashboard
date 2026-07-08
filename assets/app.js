@@ -513,8 +513,28 @@ function renderWhatsChanged(sig) {
     </div>`;
   }).join('');
 
-  const src = wc.compared_to_date || wc.compared_to || '';
-  document.getElementById('changed-source').textContent = src ? `vs ${esc(src)}` : '';
+  // Staleness guard: a diff against a report from many days ago is misleading as
+  // "自上次" — flag it so users don't read stale rotation as fresh signal.
+  const STALE_DIFF_DAYS = 5;
+  const srcDate = wc.compared_to_date || '';
+  // Prefer the clean date for display; fall back to the raw filename only if no date.
+  const baseDate = srcDate || wc.compared_to || '';
+  const el = document.getElementById('changed-source');
+  el.classList.remove('text-amber-400');
+  let ageDays = null;
+  if (srcDate && sig.date) {
+    const a = Date.parse(srcDate + 'T00:00:00Z');
+    const b = Date.parse(sig.date + 'T00:00:00Z');
+    if (Number.isFinite(a) && Number.isFinite(b)) ageDays = Math.round((b - a) / 86400000);
+  }
+  if (baseDate && ageDays != null && ageDays > STALE_DIFF_DAYS) {
+    el.textContent = `vs ${baseDate}（${ageDays} 天前 ⚠️ 非近期，變化未必是最新輪動）`;
+    el.classList.add('text-amber-400');
+  } else if (baseDate) {
+    el.textContent = ageDays != null ? `vs ${baseDate}（${ageDays} 天前）` : `vs ${baseDate}`;
+  } else {
+    el.textContent = '';
+  }
   section.classList.remove('hidden');
 }
 
@@ -629,6 +649,7 @@ function renderSignalCards(sig) {
       </div>` : ''}
       ${(s.technicals || s.valuation) ? `
       <div class="grid grid-cols-2 gap-1 text-[10px] mt-2 pt-2 border-t border-slate-800/60">
+        <div class="col-span-2 flex items-center gap-1 text-[9px] text-slate-500 mb-0.5">技術 / 估值 <span class="est-tag">估</span></div>
         ${s.technicals?.rsi14 != null ? `<div class="text-slate-500">RSI14 <span class="font-mono ${rsiColor(s.technicals.rsi14)}">${esc(s.technicals.rsi14)}</span></div>` : '<div></div>'}
         ${s.valuation?.pe != null ? `<div class="text-slate-500">P/E <span class="font-mono text-slate-300">${esc(s.valuation.pe)}</span>${s.valuation.pe_percentile_5y != null ? ` <span class="text-[9px] ${pePercentileColor(s.valuation.pe_percentile_5y)}">P${esc(s.valuation.pe_percentile_5y)}</span>` : ''}</div>` : '<div></div>'}
         ${s.technicals?.macd ? `<div class="text-slate-500 col-span-2">MACD <span class="text-slate-300">${esc(s.technicals.macd)}</span></div>` : ''}

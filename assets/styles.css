@@ -272,6 +272,18 @@ html:not(.dark) #open-latest { background: rgba(16,185,129,0.14) !important; col
 [class*="rounded-full"].px-2,
 .rounded.px-1, .rounded.px-1\.5 { letter-spacing: .01em; }
 
+/* Estimate provenance tag — marks model-estimated (not computed) metrics */
+.est-tag {
+  display: inline-block;
+  font-size: 8px; line-height: 1;
+  padding: 2px 4px; border-radius: 4px;
+  letter-spacing: .04em;
+  color: #fbbf24;
+  background: rgba(251, 191, 36, 0.14);
+  border: 1px solid rgba(251, 191, 36, 0.30);
+  vertical-align: middle;
+}
+
 /* ============================================================
    Buttons (portfolio / filters / forms)
    ============================================================ */

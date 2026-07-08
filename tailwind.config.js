@@ -19,7 +19,7 @@ module.exports = {
     },
   },
   safelist: [
-    'text-emerald-400','text-rose-400','text-amber-300','text-slate-300','text-slate-400','text-slate-500',
+    'text-emerald-400','text-rose-400','text-amber-300','text-amber-400','text-slate-300','text-slate-400','text-slate-500',
     'bg-emerald-500/20','bg-amber-500/20','bg-rose-500/20','bg-slate-700','bg-slate-800',
     'text-emerald-300','text-amber-200','text-rose-300','text-emerald-200','text-rose-200',
     'price-flash','hidden',

@@ -1,92 +1,360 @@
-/* ===== Base ===== */
+/* ============================================================
+   Stock Dashboard — "Aurora Terminal" design system
+   Layered ON TOP of the compiled Tailwind utilities
+   (assets/tailwind.css). This file owns the visual identity:
+   surfaces, depth, typography, accents, motion. It only styles
+   presentation — every id / data-attr / utility class the app.js
+   contract depends on is left untouched.
+   ============================================================ */
+
+/* ---------- Design tokens ---------- */
+:root {
+  --bg-0:        #070a12;
+  --bg-1:        #0b0f1a;
+  --glow-a:      rgba(16, 185, 129, 0.14);   /* emerald */
+  --glow-b:      rgba(56, 189, 248, 0.12);   /* sky */
+  --glow-c:      rgba(129, 140, 248, 0.10);  /* indigo */
+
+  --surface:     rgba(255, 255, 255, 0.032);
+  --surface-2:   rgba(255, 255, 255, 0.055);
+  --surface-hi:  rgba(255, 255, 255, 0.10);
+  --hairline:    rgba(255, 255, 255, 0.09);
+  --hairline-hi: rgba(255, 255, 255, 0.16);
+
+  --text:        #e8edf5;
+  --text-dim:    #93a1b8;
+  --text-mute:   #64748b;
+
+  --accent:      #10b981;
+  --accent-2:    #22d3ee;
+  --up:          #34d399;
+  --down:        #fb7185;
+
+  --shadow-sm:   0 1px 2px rgba(0,0,0,0.4);
+  --shadow-md:   0 8px 24px -8px rgba(0,0,0,0.55), 0 2px 6px -2px rgba(0,0,0,0.4);
+  --shadow-lg:   0 24px 60px -20px rgba(0,0,0,0.7);
+  --ring:        0 0 0 1px rgba(16,185,129,0.35), 0 0 24px -4px rgba(16,185,129,0.35);
+  --radius:      14px;
+}
+
+/* Light theme token overrides */
+html:not(.dark) {
+  --bg-0:        #eef2f9;
+  --bg-1:        #e7edf6;
+  --glow-a:      rgba(16, 185, 129, 0.14);
+  --glow-b:      rgba(56, 189, 248, 0.14);
+  --glow-c:      rgba(129, 140, 248, 0.12);
+
+  --surface:     #ffffff;
+  --surface-2:   #ffffff;
+  --surface-hi:  #ffffff;
+  --hairline:    rgba(15, 23, 42, 0.09);
+  --hairline-hi: rgba(15, 23, 42, 0.16);
+
+  --text:        #0f172a;
+  --text-dim:    #475569;
+  --text-mute:   #64748b;
+
+  --shadow-sm:   0 1px 2px rgba(15,23,42,0.06);
+  --shadow-md:   0 10px 30px -12px rgba(15,23,42,0.18), 0 2px 6px -2px rgba(15,23,42,0.08);
+  --shadow-lg:   0 30px 60px -25px rgba(15,23,42,0.25);
+}
+
+/* ---------- Base ---------- */
 html { scroll-behavior: smooth; }
-body { -webkit-font-smoothing: antialiased; }
+body {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  background: var(--bg-0);
+  color: var(--text);
+  position: relative;
+  min-height: 100vh;
+}
+/* Ambient aurora field — fixed, behind everything, cheap (no repaint on scroll) */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(60% 42% at 12% -8%,  var(--glow-a), transparent 60%),
+    radial-gradient(48% 38% at 92% 2%,   var(--glow-b), transparent 62%),
+    radial-gradient(55% 45% at 50% 118%, var(--glow-c), transparent 60%);
+}
+html:not(.dark) body::before { opacity: 0.7; }
 
-/* ===== Light theme override ===== */
-html:not(.dark) body { background: #f8fafc; color: #0f172a; }
-html:not(.dark) header { background: rgba(248,250,252,0.85); border-color: #e2e8f0; }
-html:not(.dark) .bg-card { background: #ffffff !important; }
-html:not(.dark) .border-slate-800 { border-color: #e2e8f0 !important; }
-html:not(.dark) .text-slate-100 { color: #0f172a !important; }
-html:not(.dark) .text-slate-300, html:not(.dark) .text-slate-400 { color: #475569 !important; }
-html:not(.dark) .bg-slate-800 { background: #f1f5f9 !important; }
-html:not(.dark) .bg-slate-700 { background: #e2e8f0 !important; }
+/* Numeric data should always align in columns */
+.font-mono, table, .price-cell, .change-cell { font-variant-numeric: tabular-nums; }
 
-/* ===== Tab system ===== */
-.tab-panel.hidden { display: none; }
-.tab-btn.active { border-color: #10b981; color: #10b981; }
+/* Snap the page background utilities to our token so nothing shows the old flat navy */
+body.bg-bg, .bg-bg { background-color: var(--bg-0) !important; }
 
-/* ===== Markdown prose ===== */
-.prose h1 { font-size: 1.5rem; font-weight: 700; margin: 1rem 0 0.5rem; color: #f1f5f9; }
-.prose h2 { font-size: 1.25rem; font-weight: 700; margin: 1.5rem 0 0.5rem; color: #f1f5f9; border-bottom: 1px solid #334155; padding-bottom: 0.25rem; }
-.prose h3 { font-size: 1.1rem; font-weight: 600; margin: 1rem 0 0.25rem; color: #cbd5e1; }
-.prose p { margin: 0.5rem 0; line-height: 1.7; color: #cbd5e1; }
-.prose ul, .prose ol { margin: 0.5rem 0 0.5rem 1.5rem; color: #cbd5e1; }
-.prose li { margin: 0.25rem 0; }
-.prose strong { color: #f1f5f9; font-weight: 600; }
-.prose code { background: #1e293b; color: #fbbf24; padding: 0.1em 0.3em; border-radius: 0.25rem; font-size: 0.85em; }
-.prose blockquote { border-left: 3px solid #10b981; padding-left: 1rem; color: #94a3b8; margin: 1rem 0; }
-.prose table { width: 100%; margin: 1rem 0; border-collapse: collapse; font-size: 0.85rem; }
-.prose th { background: #1e293b; color: #f1f5f9; padding: 0.5rem; text-align: left; border: 1px solid #334155; }
-.prose td { padding: 0.5rem; border: 1px solid #334155; color: #cbd5e1; }
-.prose a { color: #10b981; text-decoration: underline; }
-.prose hr { border-color: #334155; margin: 1.5rem 0; }
+/* ============================================================
+   Header
+   ============================================================ */
+.site-header {
+  background: color-mix(in srgb, var(--bg-0) 72%, transparent) !important;
+  -webkit-backdrop-filter: saturate(160%) blur(14px);
+  backdrop-filter: saturate(160%) blur(14px);
+  border-bottom: 1px solid var(--hairline) !important;
+}
+@supports not (backdrop-filter: blur(1px)) {
+  .site-header { background: var(--bg-0) !important; }
+}
 
-html:not(.dark) .prose h1, html:not(.dark) .prose h2, html:not(.dark) .prose h3, html:not(.dark) .prose strong { color: #0f172a; }
-html:not(.dark) .prose p, html:not(.dark) .prose ul, html:not(.dark) .prose ol, html:not(.dark) .prose td { color: #334155; }
-html:not(.dark) .prose th { background: #f1f5f9; color: #0f172a; border-color: #cbd5e1; }
-html:not(.dark) .prose td { border-color: #e2e8f0; }
-html:not(.dark) .prose blockquote { color: #475569; }
+/* Brand mark — gradient chip around the emoji */
+.brand-mark {
+  display: grid;
+  place-items: center;
+  width: 38px; height: 38px;
+  border-radius: 11px;
+  background: linear-gradient(145deg, rgba(16,185,129,0.9), rgba(34,211,238,0.75));
+  box-shadow: 0 6px 18px -6px rgba(16,185,129,0.6), inset 0 1px 0 rgba(255,255,255,0.4);
+  font-size: 20px; line-height: 1;
+}
+.brand-title {
+  background: linear-gradient(90deg, var(--text), var(--text-dim));
+  -webkit-background-clip: text; background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: -0.01em;
+}
+
+/* Theme toggle + status pill polish */
+#theme-toggle { border: 1px solid transparent; transition: all .18s; }
+#theme-toggle:hover { background: var(--surface-2) !important; border-color: var(--hairline); }
+#market-status { border: 1px solid var(--hairline); backdrop-filter: blur(6px); }
+
+/* ============================================================
+   Tab navigation — pill + animated underline
+   ============================================================ */
+.tab-nav { gap: 2px; padding-top: 2px; }
+.tab-btn {
+  position: relative;
+  border-bottom: none !important;
+  border-radius: 10px 10px 0 0;
+  color: var(--text-mute);
+  transition: color .18s, background .18s;
+}
+.tab-btn:hover { color: var(--text); background: var(--surface); }
+.tab-btn.active {
+  color: var(--accent) !important;
+  background: linear-gradient(180deg, rgba(16,185,129,0.10), transparent);
+}
+.tab-btn.active::after {
+  content: "";
+  position: absolute; left: 12px; right: 12px; bottom: -1px; height: 2px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  box-shadow: 0 0 12px rgba(16,185,129,0.7);
+}
+
+/* ============================================================
+   Surfaces — turn every .bg-card into a glass panel
+   ============================================================ */
+.bg-card {
+  background: var(--surface) !important;
+  border-color: var(--hairline) !important;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  box-shadow: var(--shadow-md);
+}
+html:not(.dark) .bg-card {
+  background: var(--surface) !important;
+  box-shadow: var(--shadow-md);
+}
+/* Generic border token remap so the palette shifts everywhere at once */
+.border-slate-800 { border-color: var(--hairline) !important; }
+.border-slate-700 { border-color: var(--hairline-hi) !important; }
+html:not(.dark) .border-slate-800,
+html:not(.dark) .border-slate-700 { border-color: var(--hairline) !important; }
+
+/* Text token remaps (keeps contrast tuned per theme) */
+.text-slate-100 { color: var(--text) !important; }
+.text-slate-200 { color: var(--text) !important; }
+.text-slate-300 { color: var(--text-dim) !important; }
+.text-slate-400 { color: var(--text-dim) !important; }
+.text-slate-500, .text-slate-600 { color: var(--text-mute) !important; }
+
+/* ============================================================
+   Hero — latest report card
+   ============================================================ */
+.hero-card {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--hairline-hi) !important;
+  background:
+    radial-gradient(120% 140% at 0% 0%, rgba(16,185,129,0.16), transparent 55%),
+    radial-gradient(120% 140% at 100% 0%, rgba(34,211,238,0.10), transparent 55%),
+    var(--surface) !important;
+  box-shadow: var(--shadow-lg);
+}
+.hero-card::before {
+  content: "";
+  position: absolute; inset: 0; pointer-events: none;
+  border-radius: inherit;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.10);
+}
+html:not(.dark) .hero-card {
+  background:
+    radial-gradient(120% 140% at 0% 0%, rgba(16,185,129,0.10), transparent 55%),
+    radial-gradient(120% 140% at 100% 0%, rgba(34,211,238,0.08), transparent 55%),
+    #ffffff !important;
+}
+#open-latest { transition: all .18s; }
+#open-latest:hover { box-shadow: 0 0 0 1px rgba(16,185,129,0.4); transform: translateY(-1px); }
+html:not(.dark) #open-latest { background: rgba(16,185,129,0.14) !important; color: #047857 !important; }
+
+/* ============================================================
+   Section headings — accent bar + refined label
+   ============================================================ */
+.section-head {
+  display: flex; align-items: center; gap: .55rem;
+}
+.section-head::before {
+  content: "";
+  width: 3px; height: 1em;
+  border-radius: 2px;
+  background: linear-gradient(180deg, var(--accent), var(--accent-2));
+  box-shadow: 0 0 10px rgba(16,185,129,0.6);
+}
+
+/* ============================================================
+   Cards: report / stock tile / signal — depth + hover lift
+   ============================================================ */
+.report-card, .stock-tile {
+  background: var(--surface) !important;
+  border-color: var(--hairline) !important;
+  border-radius: var(--radius);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  box-shadow: var(--shadow-sm);
+  transition: transform .18s cubic-bezier(.2,.7,.3,1), border-color .18s, box-shadow .18s;
+}
+.report-card:hover, .stock-tile:hover {
+  transform: translateY(-3px);
+  border-color: var(--hairline-hi) !important;
+  box-shadow: var(--shadow-md), var(--ring);
+}
+
+/* Signal cards (injected in #signals-grid) — they use rounded-xl border p-3.
+   Give them the same glass treatment + a soft hover without touching JS. */
+#signals-grid > div,
+#changed-grid > div,
+#sector-grid > div {
+  background: var(--surface) !important;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  box-shadow: var(--shadow-sm);
+  transition: transform .18s, box-shadow .18s, border-color .18s;
+}
+#signals-grid > div:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+/* Indices strip cells */
+#indices-strip .bg-card {
+  transition: transform .15s, box-shadow .15s;
+}
+#indices-strip .bg-card:hover { transform: translateY(-2px); }
+
+/* Alerts — link rows get a subtle slide affordance */
+#alerts-list a { transition: transform .15s, filter .15s; }
+#alerts-list a:hover { transform: translateX(3px); }
+
+/* Live ticker container tightening */
+#tv-watchlist-ticker { min-height: 46px; }
+
+/* ============================================================
+   Badges — unify the little pills the JS emits
+   ============================================================ */
+[class*="rounded-full"].px-2,
+.rounded.px-1, .rounded.px-1\.5 { letter-spacing: .01em; }
+
+/* ============================================================
+   Buttons (portfolio / filters / forms)
+   ============================================================ */
+.filter-btn { transition: all .16s; border: 1px solid transparent; }
+.filter-btn:hover { border-color: var(--hairline-hi); }
+#add-position-btn, #pf-save { transition: all .16s; }
+#add-position-btn:hover, #pf-save:hover { transform: translateY(-1px); box-shadow: var(--ring); }
+#position-form input {
+  border: 1px solid var(--hairline);
+  background: var(--surface-2) !important;
+  transition: border-color .16s, box-shadow .16s;
+}
+#position-form input:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(16,185,129,0.18);
+}
+
+/* Portfolio table rows */
+#portfolio-table table tbody tr { transition: background .14s; }
+
+/* ============================================================
+   Modal
+   ============================================================ */
+#report-modal .bg-card { box-shadow: var(--shadow-lg); border-color: var(--hairline-hi) !important; }
+
+/* ============================================================
+   Markdown prose (report modal)
+   ============================================================ */
+.prose h1 { font-size: 1.5rem; font-weight: 800; margin: 1rem 0 .5rem; color: var(--text); letter-spacing: -.01em; }
+.prose h2 { font-size: 1.2rem; font-weight: 700; margin: 1.6rem 0 .6rem; color: var(--text); border-bottom: 1px solid var(--hairline); padding-bottom: .3rem; }
+.prose h3 { font-size: 1.05rem; font-weight: 700; margin: 1.1rem 0 .3rem; color: var(--text-dim); }
+.prose p  { margin: .55rem 0; line-height: 1.75; color: var(--text-dim); }
+.prose ul, .prose ol { margin: .5rem 0 .5rem 1.4rem; color: var(--text-dim); }
+.prose li { margin: .28rem 0; }
+.prose strong { color: var(--text); font-weight: 700; }
+.prose code {
+  background: rgba(148,163,184,0.14); color: #fbbf24;
+  padding: .12em .4em; border-radius: .3rem; font-size: .85em;
+  font-family: var(--font-mono, "JetBrains Mono", monospace);
+}
+.prose blockquote {
+  border-left: 3px solid var(--accent);
+  padding: .4rem 0 .4rem 1rem; color: var(--text-mute); margin: 1rem 0;
+  background: linear-gradient(90deg, rgba(16,185,129,0.06), transparent);
+  border-radius: 0 8px 8px 0;
+}
+.prose table { width: 100%; margin: 1rem 0; border-collapse: separate; border-spacing: 0; font-size: .85rem; border: 1px solid var(--hairline); border-radius: 10px; overflow: hidden; }
+.prose th { background: rgba(148,163,184,0.10); color: var(--text); padding: .55rem; text-align: left; border-bottom: 1px solid var(--hairline); }
+.prose td { padding: .55rem; border-bottom: 1px solid var(--hairline); color: var(--text-dim); }
+.prose tr:last-child td { border-bottom: none; }
+.prose a { color: var(--accent); text-decoration: none; border-bottom: 1px solid rgba(16,185,129,0.4); }
+.prose a:hover { border-bottom-color: var(--accent); }
+.prose hr { border: none; border-top: 1px solid var(--hairline); margin: 1.5rem 0; }
 html:not(.dark) .prose code { background: #f1f5f9; color: #b45309; }
 
-/* ===== Report card ===== */
-.report-card {
-  background: #111827;
-  border: 1px solid #1e293b;
-  border-radius: 0.75rem;
-  padding: 1rem;
-  cursor: pointer;
-  transition: all 0.15s;
-}
-.report-card:hover {
-  border-color: #10b981;
-  transform: translateY(-1px);
-}
-html:not(.dark) .report-card { background: #ffffff; border-color: #e2e8f0; }
+/* ============================================================
+   Utilities kept from the original
+   ============================================================ */
+.tab-panel.hidden { display: none; }
 
-/* ===== Watchlist tile ===== */
-.stock-tile {
-  background: #111827;
-  border: 1px solid #1e293b;
-  border-radius: 0.75rem;
-  padding: 0.875rem;
-  transition: all 0.15s;
-}
-.stock-tile:hover { border-color: #10b981; }
-html:not(.dark) .stock-tile { background: #ffffff; border-color: #e2e8f0; }
-
-/* ===== Line clamp utility ===== */
 .line-clamp-4 {
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
+  display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden;
 }
 
-/* ===== Live price flash on update ===== */
 @keyframes priceFlash {
-  0%   { background-color: rgba(16, 185, 129, 0.35); }
+  0%   { background-color: rgba(16,185,129,0.35); }
   100% { background-color: transparent; }
 }
-.price-flash {
-  animation: priceFlash 800ms ease-out;
-  border-radius: 4px;
-  padding: 0 4px;
-  margin: 0 -4px;
+.price-flash { animation: priceFlash 800ms ease-out; border-radius: 4px; padding: 0 4px; margin: 0 -4px; }
+
+/* Entrance animation for the main panel content */
+@keyframes fadeUp { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+main > section:not(.hidden) { animation: fadeUp .32s ease both; }
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
 }
 
-/* ===== Scrollbar ===== */
-::-webkit-scrollbar { width: 8px; height: 8px; }
+/* ---------- Scrollbar ---------- */
+::-webkit-scrollbar { width: 10px; height: 10px; }
 ::-webkit-scrollbar-track { background: transparent; }
-::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
-::-webkit-scrollbar-thumb:hover { background: #475569; }
+::-webkit-scrollbar-thumb { background: var(--hairline-hi); border-radius: 6px; border: 2px solid transparent; background-clip: padding-box; }
+::-webkit-scrollbar-thumb:hover { background: var(--text-mute); background-clip: padding-box; }
+
+/* Focus-visible accessibility ring */
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 6px; }

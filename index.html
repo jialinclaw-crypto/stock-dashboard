@@ -3,34 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#0a0e1a">
+  <meta name="theme-color" content="#080b14">
   <title>📈 股市儀表板 · Stock Dashboard</title>
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📈</text></svg>">
-  <!-- Tailwind Play CDN, pinned to 3.4.0 + SRI to prevent supply-chain attacks.
-       Future hardening: vendor pre-built CSS via tailwindcss CLI to drop CDN entirely. -->
-  <script
-    src="https://cdn.tailwindcss.com/3.4.0"
-    integrity="sha384-BFORbHAnibkzoc1a2dShGYmng06a+FfQET+B9Ugu+T8o+AWQjfQ4OJeWs024LXnN"
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"></script>
-  <script>
-    tailwind.config = {
-      darkMode: 'class',
-      theme: {
-        extend: {
-          colors: {
-            bg: { DEFAULT: '#0a0e1a', light: '#f8fafc' },
-            card: { DEFAULT: '#111827', light: '#ffffff' },
-            accent: { DEFAULT: '#10b981', red: '#ef4444' },
-          },
-          fontFamily: {
-            sans: ['-apple-system', 'BlinkMacSystemFont', '"Noto Sans TC"', 'sans-serif'],
-            mono: ['"SF Mono"', 'Menlo', 'monospace'],
-          },
-        }
-      }
-    }
-  </script>
+  <!-- Vendored, pre-compiled Tailwind (assets/tailwind.css) built from the actual
+       markup + app.js via the Tailwind CLI. Replaces the runtime Play CDN, which
+       JIT-compiled in the browser on every load — slow + flash-of-unstyled-content.
+       Rebuild after changing classes:
+         npx tailwindcss@3.4 -c tailwind.config.js -i input.css -o assets/tailwind.css --minify -->
+  <link rel="stylesheet" href="assets/tailwind.css">
+  <!-- Premium type (progressive: falls back to system + Noto Sans TC if unavailable) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&family=Noto+Sans+TC:wght@400;500;700&display=swap">
   <script
     src="https://cdn.jsdelivr.net/npm/marked@12.0.0/marked.min.js"
     integrity="sha384-NNQgBjjuhtXzPmmy4gurS5X7P4uTt1DThyevz4Ua0IVK5+kazYQI1W27JHjbbxQz"
@@ -46,12 +31,12 @@
 <body class="bg-bg dark:bg-bg text-slate-100 dark:text-slate-100 min-h-screen font-sans">
 
   <!-- Header -->
-  <header class="sticky top-0 z-50 backdrop-blur-md bg-bg/80 border-b border-slate-800">
+  <header class="site-header sticky top-0 z-50 border-b border-slate-800">
     <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
       <div class="flex items-center gap-3">
-        <span class="text-2xl">📈</span>
+        <span class="brand-mark">📈</span>
         <div>
-          <h1 class="text-base font-bold tracking-tight">股市儀表板</h1>
+          <h1 class="brand-title text-base font-bold tracking-tight">股市儀表板</h1>
           <p class="text-xs text-slate-400" id="header-subtitle">載入中…</p>
         </div>
       </div>
@@ -61,7 +46,7 @@
       </div>
     </div>
     <!-- Tab nav -->
-    <nav class="max-w-7xl mx-auto px-4 flex gap-1 overflow-x-auto text-sm">
+    <nav class="tab-nav max-w-7xl mx-auto px-4 flex gap-1 overflow-x-auto text-sm">
       <button data-tab="overview" class="tab-btn active px-4 py-2 border-b-2 border-accent text-accent font-medium whitespace-nowrap">📊 總覽</button>
       <button data-tab="reports" class="tab-btn px-4 py-2 border-b-2 border-transparent text-slate-400 hover:text-slate-200 whitespace-nowrap">📋 報告中心</button>
       <button data-tab="portfolio" class="tab-btn px-4 py-2 border-b-2 border-transparent text-slate-400 hover:text-slate-200 whitespace-nowrap">💼 我的部位</button>
@@ -85,7 +70,7 @@
       </div>
 
       <!-- Latest report card -->
-      <div id="latest-report-card" class="mb-6 bg-gradient-to-br from-emerald-900/40 to-slate-900 border border-emerald-500/30 rounded-xl p-5">
+      <div id="latest-report-card" class="hero-card mb-6 border border-emerald-500/30 rounded-xl p-5">
         <div class="flex items-start justify-between mb-3">
           <div>
             <p class="text-xs uppercase tracking-wider text-emerald-400 mb-1">最新報告</p>
@@ -119,7 +104,7 @@
       <!-- Signal cards grid (snapshot from JSON + optional live price overlay) -->
       <div id="signals-section" class="mb-6 hidden">
         <div class="flex items-center justify-between mb-3 flex-wrap gap-2">
-          <h3 class="text-sm font-semibold text-slate-400 uppercase tracking-wider">🚦 信號燈</h3>
+          <h3 class="section-head text-sm font-semibold text-slate-400 uppercase tracking-wider">🚦 信號燈</h3>
           <div class="flex items-center gap-3 text-[10px]">
             <span id="live-status-badge" class="px-2 py-0.5 rounded bg-slate-800 text-slate-400">📍 SNAPSHOT</span>
             <span id="signals-source" class="text-slate-600"></span>
@@ -132,7 +117,7 @@
       <!-- What's Changed since previous report -->
       <div id="changed-section" class="mb-6 hidden">
         <div class="flex items-center justify-between mb-2 flex-wrap gap-2">
-          <h3 class="text-sm font-semibold text-slate-400 uppercase tracking-wider">🔄 自上次報告以來</h3>
+          <h3 class="section-head text-sm font-semibold text-slate-400 uppercase tracking-wider">🔄 自上次報告以來</h3>
           <span id="changed-source" class="text-[10px] text-slate-600"></span>
         </div>
         <div id="changed-grid" class="grid grid-cols-1 md:grid-cols-3 gap-3"></div>
@@ -140,18 +125,18 @@
 
       <!-- Sector rotation (🔥 / 🌅 / 👁) -->
       <div id="sector-section" class="mb-6 hidden">
-        <h3 class="text-sm font-semibold text-slate-400 uppercase tracking-wider mb-2">🔄 產業輪動</h3>
+        <h3 class="section-head text-sm font-semibold text-slate-400 uppercase tracking-wider mb-2">🔄 產業輪動</h3>
         <div id="sector-grid" class="grid grid-cols-1 md:grid-cols-3 gap-3"></div>
       </div>
 
       <!-- Alerts ticker -->
       <div id="alerts-section" class="mb-6 hidden">
-        <h3 class="text-sm font-semibold text-slate-400 uppercase tracking-wider mb-2">⚠️ 警示</h3>
+        <h3 class="section-head text-sm font-semibold text-slate-400 uppercase tracking-wider mb-2">⚠️ 警示</h3>
         <div id="alerts-list" class="space-y-2"></div>
       </div>
 
       <!-- Live market widgets (ETF proxies — widgets only render stocks/ETFs, not indices) -->
-      <h3 class="text-sm font-semibold text-slate-400 uppercase tracking-wider mb-3">即時市場 <span class="text-[10px] text-slate-600 normal-case">· ETF 追蹤</span></h3>
+      <h3 class="section-head text-sm font-semibold text-slate-400 uppercase tracking-wider mb-3">即時市場 <span class="text-[10px] text-slate-600 normal-case">· ETF 追蹤</span></h3>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
 
         <div class="bg-card rounded-xl p-4 border border-slate-800">
@@ -184,7 +169,7 @@
       </div>
 
       <!-- Watchlist (NVDA, TSLA, AAPL, TSM + 2330, 2454, 2317) -->
-      <h3 class="text-sm font-semibold text-slate-400 uppercase tracking-wider mb-3">關注股</h3>
+      <h3 class="section-head text-sm font-semibold text-slate-400 uppercase tracking-wider mb-3">關注股</h3>
       <div class="grid grid-cols-2 md:grid-cols-4 gap-3" id="watchlist-grid">
         <!-- Cards injected by JS -->
       </div>

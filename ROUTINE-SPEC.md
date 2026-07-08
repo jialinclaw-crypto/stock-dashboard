@@ -43,33 +43,46 @@
   "published": "2026-07-07",
   "url": "https://…官方收聽連結",
   "summary": "重點摘要（見下方來源規則）",
-  "summary_source": "self_transcribed | official_notes | search",
+  "summary_source": "github_highlights | self_transcribed | official_notes | search",
   "mentioned_tickers": ["2330", "NVDA"],
   "our_take": "我們自己寫的一句：和持股的關聯"
 }
 ```
+> Dashboard 已依 `summary_source` 顯示來源 badge、把 portfolio 命中的 ticker 加 ★、有 `url` 才顯示「收聽整集」。
 
-### B‑前者（自己轉錄音檔 → 生成原創摘要）＝ 目標做法，**目前環境被擋，需先開通**
+### 這個環境實測的網路可達性（決定做法）
+| 來源 | 可達? | 說明 |
+|---|---|---|
+| `github.com` `git clone`（任意公開 repo） | ✅ | 已驗證可 clone 非本 repo 的公開專案 |
+| `raw.githubusercontent.com` | ✅ | 200，可直接取單一檔案 |
+| `api.github.com`（search / repos 任意） | ❌ | session 綁定，只允許本 repo scope → **無法用 API 搜尋** |
+| `itunes.apple.com` / SoundOn（RSS/mp3） | ❌ | egress policy `403 / connect_rejected` |
+| `gooayetranscript.com`、`vocus.cc`（逐字稿網站） | ❌ | egress policy `connect_rejected` |
+| `ffmpeg` / `faster-whisper` | ❌ | 未安裝；模型權重下載大概也被擋 |
 
-實測阻擋：
-1. **網路政策**：`itunes.apple.com` / SoundOn 主機 → egress proxy 回 `403 政策拒絕`（抓不到 mp3）。
-2. **無 STT 工具**：環境缺 `ffmpeg` 與 `faster-whisper`；模型權重下載也可能被政策擋。
+**結論**：現況唯一可行的取材路徑是 **git clone 一個「還在更新」的公開 GitHub 逐字稿/精華 repo**。
 
-**開通步驟（環境設定，使用者端）**：參考 https://code.claude.com/docs/en/claude-code-on-the-web
-- 放寬該 routine 環境的**網路政策**：允許 podcast 主機（SoundOn / Apple feed）與模型權重 CDN。
-- 在**環境 setup script** 安裝：`ffmpeg` 與 `pip install faster-whisper`（首次會下載模型）。
+### 做法 ①（推薦，現況可跑）：GitHub 逐字稿 repo → 生成原創摘要
+前置：需要一個**持續更新**的公開 repo URL（設為 `GOOAYE_REPO`）。
+> ⚠️ 已知 `SLMT/gooaye-usa-highlights` 內容停在 2020、已廢棄，不可用。請提供 live repo。
 
-**開通後的 pipeline（僅在有新集時執行，股癌約週更 2 集 → 多數早上是 no‑op）**：
-1. 抓 RSS（browser UA），比對 `published` 是否比上次記錄新；沒新集 → 沿用既有 `podcast` 區塊。
-2. 有新集 → 下載 enclosure mp3 → `ffmpeg` 轉檔 → `faster-whisper`（建議 `small`/`medium`）轉逐字稿。
-3. 由本模型**生成原創摘要**（`summary_source:"self_transcribed"`）：3–5 句重點 + `mentioned_tickers`（比對 portfolio）+ 一句 `our_take`。
-   - ⚠️ 只輸出**我們自己的摘要/評述**，不重製逐字稿全文（著作權）。
+pipeline（每日；股癌約週更 2 集，多數早上無新集 → no‑op）：
+1. `git clone --depth 1 $GOOAYE_REPO` 或用 `raw.githubusercontent.com` 取索引。
+2. 找出**最新一集**檔案（依日期/EP 編號排序）；比對是否比上次 `published` 新，沒有就沿用既有區塊。
+3. 讀該集內容 → 由本模型**生成 3–5 句原創摘要**（`summary_source:"github_highlights"`）＋比對 portfolio 得 `mentioned_tickers` ＋一句 `our_take`。
+   - ⚠️ 只輸出**我們自己的摘要/評述**，**不重製逐字稿全文**（著作權）；`url` 指向**官方**那集收聽連結。
 
-### 過渡 A（政策未開通前的合規備援）
-用 WebSearch 抓「股癌 最新一集」的**官方標題 / 日期 / 連結**，`summary` 取官方 show notes 節錄，
-`summary_source:"official_notes"`，`our_take` 由本模型針對 portfolio 補一句關聯。**不使用第三方爬來的逐字稿**。
+### 做法 ②（需開通環境）：B‑前者，自己轉錄音檔
+若放寬網路政策（允許 SoundOn/Apple + 模型 CDN）並在 setup script 裝 `ffmpeg` + `pip install faster-whisper`：
+抓 RSS → 下載 mp3 → `ffmpeg` → `faster-whisper`(small/medium) 轉錄 → 生成原創摘要（`summary_source:"self_transcribed"`）。
+邏輯同上，只是取材改成自轉錄。
+
+### 待辦（卡在使用者輸入）
+- [ ] 提供一個 **live 的 GitHub 逐字稿 repo URL** → 我把做法①整條接上（clone→找最新集→摘要→寫 podcast 區塊）。
+- [ ] 或決定走做法②並放寬環境設定。
 
 ---
 
 ## 版本
 - v3.1 — 加入 data_quality/降假精度、diff 近期性、podcast 區塊。Dashboard 對應 commit 見 git log。
+- v3.2 — podcast 取材改以 GitHub repo 為主（實測 podcast 主機/逐字稿網站被 egress policy 擋，git clone 可用）。Dashboard 已實作 podcast 卡片＋來源 badge＋持股命中 ★。

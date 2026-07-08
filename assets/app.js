@@ -449,11 +449,12 @@ async function loadSignals(latestReport) {
     renderSignalCards(sig);
     renderSectorRotation(sig);
     renderAlerts(sig);
+    renderPodcast(sig);
     // Re-render portfolio so P&L picks up the new prices
     renderPortfolio();
   } catch (e) {
     LATEST_SIGNALS = null;
-    ['indices-strip','market-view-banner','changed-section','signals-section','sector-section','alerts-section'].forEach(id => {
+    ['indices-strip','market-view-banner','changed-section','signals-section','sector-section','alerts-section','podcast-section'].forEach(id => {
       const el = document.getElementById(id);
       if (el) el.classList.add('hidden');
     });
@@ -706,6 +707,59 @@ function renderAlerts(sig) {
       ${arrow}
     </${tag}>`;
   }).join('');
+  section.classList.remove('hidden');
+}
+
+// ================== 股癌 Podcast card ==================
+// Summary provenance — honest labeling of where the recap came from.
+const PODCAST_SOURCE_META = {
+  self_transcribed:  { label: '自轉錄摘要', cls: 'bg-emerald-500/20 text-emerald-300' },
+  github_highlights: { label: 'GitHub 精華', cls: 'bg-emerald-500/20 text-emerald-300' },
+  official_notes:    { label: '官方摘要',   cls: 'bg-slate-700 text-slate-300' },
+  search:            { label: '搜尋彙整',   cls: 'bg-amber-500/20 text-amber-300' },
+};
+function renderPodcast(sig) {
+  const section = document.getElementById('podcast-section');
+  if (!section) return;
+  const p = sig.podcast;
+  if (!p || (!p.episode && !p.summary)) { section.classList.add('hidden'); return; }
+
+  const card = document.getElementById('podcast-card');
+  const url = safeURL(p.url);
+  card.setAttribute('href', url || '#');
+  // Non-navigable when no valid url (avoid a dead "#" jump)
+  if (!url) { card.removeAttribute('target'); card.style.cursor = 'default'; }
+  else { card.setAttribute('target', '_blank'); card.style.cursor = ''; }
+
+  document.getElementById('podcast-show').textContent = p.show || 'Gooaye 股癌';
+  document.getElementById('podcast-date').textContent = p.published ? `· ${p.published}` : '';
+  document.getElementById('podcast-episode').textContent = p.episode || '最新一集';
+  document.getElementById('podcast-summary').textContent = p.summary || '';
+
+  const takeEl = document.getElementById('podcast-take');
+  if (p.our_take) { takeEl.textContent = `💡 ${p.our_take}`; takeEl.classList.remove('hidden'); }
+  else takeEl.classList.add('hidden');
+
+  // Provenance badge
+  const badge = document.getElementById('podcast-source-badge');
+  const meta = PODCAST_SOURCE_META[p.summary_source];
+  if (meta) {
+    badge.textContent = meta.label;
+    badge.className = `text-[9px] px-1.5 py-0.5 rounded shrink-0 ${meta.cls}`;
+    badge.classList.remove('hidden');
+  } else badge.classList.add('hidden');
+
+  // Mentioned tickers — highlight the ones in the user's portfolio
+  const owned = new Set((getPortfolio() || []).map(x => String(x.symbol || '').toUpperCase()));
+  const tks = Array.isArray(p.mentioned_tickers) ? p.mentioned_tickers : [];
+  document.getElementById('podcast-tickers').innerHTML = tks.map(t => {
+    const T = String(t).toUpperCase();
+    const mine = owned.has(T);
+    const cls = mine ? 'bg-emerald-500/20 text-emerald-300' : 'bg-slate-800 text-slate-400';
+    return `<span class="font-mono text-[10px] px-1.5 py-0.5 rounded ${cls}">${esc(t)}${mine ? ' ★' : ''}</span>`;
+  }).join('');
+
+  document.getElementById('podcast-link').classList.toggle('hidden', !url);
   section.classList.remove('hidden');
 }
 

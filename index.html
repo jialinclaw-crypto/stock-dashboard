@@ -101,6 +101,30 @@
         </div>
       </div>
 
+      <!-- 股癌 podcast recommendation (populated by routine into signals JSON `podcast`) -->
+      <div id="podcast-section" class="mb-6 hidden">
+        <h3 class="section-head text-sm font-semibold text-slate-400 uppercase tracking-wider mb-2">🎧 股癌 每集推薦</h3>
+        <a id="podcast-card" href="#" target="_blank" rel="noopener"
+           class="podcast-card block bg-card rounded-xl border border-slate-800 p-4 no-underline">
+          <div class="flex items-start justify-between gap-3 mb-1">
+            <div class="flex items-center gap-2 min-w-0">
+              <span class="podcast-emoji text-2xl shrink-0">🎙️</span>
+              <div class="min-w-0">
+                <p class="text-[10px] uppercase tracking-wider text-slate-500"><span id="podcast-show">Gooaye 股癌</span> <span id="podcast-date" class="text-slate-600"></span></p>
+                <p id="podcast-episode" class="font-bold text-slate-100 truncate">—</p>
+              </div>
+            </div>
+            <span id="podcast-source-badge" class="text-[9px] px-1.5 py-0.5 rounded bg-slate-800 text-slate-400 shrink-0 hidden"></span>
+          </div>
+          <p id="podcast-summary" class="text-sm text-slate-300 leading-relaxed mt-2"></p>
+          <div id="podcast-take" class="hidden text-xs text-emerald-300/90 mt-2 pl-2 border-l-2 border-emerald-500/40"></div>
+          <div class="flex items-center justify-between mt-3">
+            <div id="podcast-tickers" class="flex flex-wrap gap-1"></div>
+            <span id="podcast-link" class="text-[11px] text-emerald-400 hidden">收聽整集 ↗</span>
+          </div>
+        </a>
+      </div>
+
       <!-- Signal cards grid (snapshot from JSON + optional live price overlay) -->
       <div id="signals-section" class="mb-6 hidden">
         <div class="flex items-center justify-between mb-3 flex-wrap gap-2">

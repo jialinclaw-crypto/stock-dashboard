@@ -272,6 +272,17 @@ html:not(.dark) #open-latest { background: rgba(16,185,129,0.14) !important; col
 [class*="rounded-full"].px-2,
 .rounded.px-1, .rounded.px-1\.5 { letter-spacing: .01em; }
 
+/* 股癌 podcast card */
+.podcast-card {
+  position: relative; overflow: hidden;
+  transition: transform .18s, box-shadow .18s, border-color .18s;
+  background:
+    radial-gradient(120% 160% at 100% 0%, rgba(139,92,246,0.10), transparent 55%),
+    var(--surface) !important;
+}
+.podcast-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-md), var(--ring); border-color: var(--hairline-hi) !important; }
+.podcast-card .podcast-emoji { filter: drop-shadow(0 2px 6px rgba(139,92,246,0.5)); }
+
 /* Estimate provenance tag — marks model-estimated (not computed) metrics */
 .est-tag {
   display: inline-block;

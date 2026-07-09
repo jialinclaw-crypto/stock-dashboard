@@ -1,0 +1,482 @@
+{
+  "_schema_version": 3,
+  "type": "morning",
+  "report_file": "股市-開盤前-20260710.md",
+  "date": "2026-07-10",
+  "weekday": "週五",
+  "generated_at": "2026-07-10T07:35:18+08:00",
+  "market_view": {
+    "level": "neutral",
+    "confidence": 0.65,
+    "headline": "颱風巴威台股今日全日休市；昨夜美股Nasdaq+1.3%/SOX+4%晶片全面回血，NVDA Kyber如期確認；週一7/13補漲機會明確，7/16台積電Q2法說為核心催化劑"
+  },
+  "indices": [
+    {
+      "name": "道瓊工業",
+      "ticker": "DJI",
+      "value": 52487,
+      "change_pct": 0.27,
+      "trend": "neutral",
+      "note": "7/9 晶片反彈+油穩，Dow溫和回升 +139pts"
+    },
+    {
+      "name": "S&P 500",
+      "ticker": "SPX",
+      "value": 7543,
+      "change_pct": 0.81,
+      "trend": "bullish",
+      "note": "7/9 科技+晶片帶動，S&P站回7,500"
+    },
+    {
+      "name": "Nasdaq",
+      "ticker": "IXIC",
+      "value": 26207,
+      "change_pct": 1.30,
+      "trend": "bullish",
+      "note": "7/9 AI晶片+光通訊族群帶動Nasdaq強彈"
+    },
+    {
+      "name": "費城半導體",
+      "ticker": "SOX",
+      "value": 13646,
+      "change_pct": 4.00,
+      "trend": "bullish",
+      "note": "7/9 NVDA Kyber確認+AI光通訊族群大反彈，兩日由12,466累計+9.5%"
+    },
+    {
+      "name": "VIX 恐慌指數",
+      "ticker": "VIX",
+      "value": 16.90,
+      "change_pct": 4.77,
+      "trend": "neutral",
+      "note": "VIX小升但維持17以下，美伊緊張延續、未達系統性恐慌"
+    },
+    {
+      "name": "美 10Y 殖利率",
+      "ticker": "US10Y",
+      "value": 4.50,
+      "change_pct": 0.00,
+      "trend": "neutral",
+      "note": "FOMC分歧持續，殖利率4.50%無明顯方向"
+    },
+    {
+      "name": "美元指數",
+      "ticker": "DXY",
+      "value": 101.0,
+      "change_pct": 0.15,
+      "trend": "neutral",
+      "note": "美元溫和升值，伊朗緊張提供避險需求"
+    },
+    {
+      "name": "WTI 原油",
+      "ticker": "WTI",
+      "value": 73.0,
+      "change_pct": -0.70,
+      "trend": "neutral",
+      "note": "美伊緊張但油價高位整理，未進一步飆升"
+    },
+    {
+      "name": "台股加權指數",
+      "ticker": "TAIEX",
+      "value": 45354,
+      "change_pct": -0.84,
+      "trend": "neutral",
+      "note": "7/9收45,354（-383pts），顱風假後7/13預計補漲；今日全日休市"
+    }
+  ],
+  "stocks": [
+    {
+      "signal_id": "stk-2330-2026-07-10-morning",
+      "ticker": "2330",
+      "name": "台積電",
+      "market": "TW",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.60,
+      "view": "法說前整理格局，ADR逆強（$440 +0.78%）暗示外資法說前看好；台股本尊受外資賣超拖累至2,415，7/13補漲機會看外資方向，7/16 Q2法說（EPS共識NT$103）為關鍵催化劑",
+      "rationale": "TSM ADR+0.78%逆強而2330下跌2.03%，ADR/本土背離暗示法說前離岸投資人樂觀；法說前持中性等確認",
+      "price": 2415,
+      "change_pct": -2.03,
+      "support": 2380,
+      "resistance": 2490,
+      "stop_loss": 2350,
+      "target": 2550,
+      "technicals": {
+        "rsi14": 45,
+        "macd": "空方但轉折訊號待確認",
+        "ma_alignment": "MA20<MA60，短線偏弱；ADR回穩暗示底部接近"
+      },
+      "valuation": {
+        "pe": 23,
+        "pe_percentile_5y": 45,
+        "verdict": "略低估；法說指引>$40B可提升至25-28x"
+      },
+      "sources": [
+        "https://investor.tsmc.com/english/quarterly-results/2026/q2",
+        "https://news.cnyes.com/news/id/6526586",
+        "https://tw.stock.yahoo.com/quote/2330.TW"
+      ],
+      "expires_at": "2026-07-10T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-2454-2026-07-10-morning",
+      "ticker": "2454",
+      "name": "聯發科",
+      "market": "TW",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.52,
+      "view": "從高點4,655回落至3,975（-14.6%），AI edge晶片（天璣9400+）需求穩健但短線跟隨大盤整理；等台積電法說帶動板塊風向，4,000整數關為關鍵支撐",
+      "rationale": "SOX+4%理論上利多聯發科，但台股休市日+法說前觀望氛圍使短線信號維持中性",
+      "price": 3975,
+      "change_pct": -0.50,
+      "support": 3800,
+      "resistance": 4100,
+      "stop_loss": 3700,
+      "target": 4200,
+      "technicals": {
+        "rsi14": 40,
+        "macd": "偏空，均線壓制",
+        "ma_alignment": "短線偏弱，均線死叉中"
+      },
+      "valuation": {
+        "pe": 24,
+        "pe_percentile_5y": 42,
+        "verdict": "合理；AI晶片需求增長若法說後確認可提升評價"
+      },
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/2454.TW",
+        "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2454"
+      ],
+      "expires_at": "2026-07-10T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-2317-2026-07-10-morning",
+      "ticker": "2317",
+      "name": "鴻海",
+      "market": "TW",
+      "signal": "🔴",
+      "direction": "bearish",
+      "confidence": 0.58,
+      "view": "連續多日在均線下方整理，從250高點跌至237.5（-5%），外資持續小賣。AI Server出貨已price in，EV業務缺乏新催化劑。颱風後7/13若大盤補漲，鴻海補漲幅度料有限；若大盤轉弱，補跌風險更大",
+      "rationale": "均線下方整理+外資賣超+缺乏催化劑=技術空方格局，颱風後不確定性加大",
+      "price": 237.5,
+      "change_pct": 0.0,
+      "support": 230,
+      "resistance": 250,
+      "stop_loss": 225,
+      "target": 250,
+      "technicals": {
+        "rsi14": 35,
+        "macd": "空方，死叉",
+        "ma_alignment": "跌破MA20/MA60，空頭排列"
+      },
+      "valuation": {
+        "pe": 9,
+        "pe_percentile_5y": 30,
+        "verdict": "低估值但缺乏動能；需EV訂單或AI伺服器加速才能重評"
+      },
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/2317.TW",
+        "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2317"
+      ],
+      "expires_at": "2026-07-10T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-NVDA-2026-07-10-morning",
+      "ticker": "NVDA",
+      "name": "輝達",
+      "market": "US",
+      "signal": "🟢",
+      "direction": "bullish",
+      "confidence": 0.72,
+      "view": "Kyber NVL144正式確認如期推進（否認2028延誤）為最大利多，消除近期最大不確定性。SOX+4%帶動，H200中國訂單、AI基礎設施需求維持；MSFT/GOOGL 7/29法說將進一步驗證。估值回到合理水位（Forward PE ~28x，距高點-14%）",
+      "rationale": "Kyber延誤風險消除+SOX+4%帶動=信心面大幅改善，升至bullish",
+      "price": 203,
+      "change_pct": 3.1,
+      "support": 195,
+      "resistance": 210,
+      "stop_loss": 190,
+      "target": 220,
+      "technicals": {
+        "rsi14": 50,
+        "macd": "轉折向上，偏多",
+        "ma_alignment": "MA50($185)有效支撐，MA200($160)多頭格局"
+      },
+      "valuation": {
+        "pe": 28,
+        "pe_percentile_5y": 20,
+        "verdict": "合理偏低；FY2026 Revenue $215.9B(+65%)，距高點折價顯著"
+      },
+      "sources": [
+        "https://www.tradingkey.com/analysis/stocks/us-stocks/262015350-nvidia-nvda-stock-forecast-july-2026-kyber-denial-goldman-tradingkey",
+        "https://stockanalysis.com/stocks/nvda/",
+        "https://finance.yahoo.com/quote/NVDA/"
+      ],
+      "expires_at": "2026-07-10T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-TSLA-2026-07-10-morning",
+      "ticker": "TSLA",
+      "name": "特斯拉",
+      "market": "US",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.50,
+      "view": "Nasdaq+1.3%帶動回升至≈$408，重回MA50($400)上方，技術面由偏空轉中性。7/30 Q2法說前缺乏新催化劑，FSD V14推進穩步但無重大新消息",
+      "rationale": "重回MA50上方+大盤回升=中性回穩，法說前觀望",
+      "price": 408,
+      "change_pct": 3.8,
+      "support": 380,
+      "resistance": 435,
+      "stop_loss": 365,
+      "target": 450,
+      "technicals": {
+        "rsi14": 52,
+        "macd": "由空轉平，動能回中性",
+        "ma_alignment": "重回MA50上方，中性"
+      },
+      "valuation": {
+        "pe": 100,
+        "pe_percentile_5y": 40,
+        "verdict": "成長型高估值；升息環境下仍有壓，法說驗證FSD商業化為關鍵"
+      },
+      "sources": [
+        "https://finance.yahoo.com/quote/TSLA/",
+        "https://tradingeconomics.com/tsla:us"
+      ],
+      "expires_at": "2026-07-10T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-AAPL-2026-07-10-morning",
+      "ticker": "AAPL",
+      "name": "蘋果",
+      "market": "US",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.57,
+      "view": "Broadcom $300億晶片合作為長線利多（強化AI自製晶片路線），股價回升至≈$317。7/30 Q2法說前短線中性，防守性大型股估值合理",
+      "rationale": "Broadcom合作案強化長線故事，但法說前無短期催化劑；維持中性",
+      "price": 317,
+      "change_pct": 1.2,
+      "support": 305,
+      "resistance": 325,
+      "stop_loss": 295,
+      "target": 335,
+      "technicals": {
+        "rsi14": 53,
+        "macd": "中性偏多",
+        "ma_alignment": "均線多頭排列穩健"
+      },
+      "valuation": {
+        "pe": 35,
+        "pe_percentile_5y": 52,
+        "verdict": "合理；AI iPhone週期+Broadcom合作可提升評價"
+      },
+      "sources": [
+        "https://finance.yahoo.com/quote/AAPL/",
+        "https://www.morningstar.com/stocks/xnas/aapl/quote"
+      ],
+      "expires_at": "2026-07-10T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-TSM-2026-07-10-morning",
+      "ticker": "TSM",
+      "name": "台積電ADR",
+      "market": "US",
+      "signal": "🟢",
+      "direction": "bullish",
+      "confidence": 0.68,
+      "view": "ADR昨夜逆強至$440（+0.78%），強過台股本尊2330（-2.03%），外資在ADR端積極建倉。ADR/2330背離為法說前外資看多的強烈訊號；7/16法說若指引>$40B，可挑戰$460-$470",
+      "rationale": "ADR強勢背離本土=外資法說前看多，信心升級至bullish",
+      "price": 440,
+      "change_pct": 0.78,
+      "support": 430,
+      "resistance": 450,
+      "stop_loss": 420,
+      "target": 470,
+      "technicals": {
+        "rsi14": 56,
+        "macd": "轉多，回升動能確立",
+        "ma_alignment": "突破MA20，短線多頭"
+      },
+      "valuation": {
+        "pe": 24,
+        "pe_percentile_5y": 45,
+        "verdict": "合理偏低；法說強勁可提升至27-30x"
+      },
+      "sources": [
+        "https://finance.yahoo.com/quote/TSM/",
+        "https://www.etoro.com/markets/tsm",
+        "https://investor.tsmc.com/english/quarterly-results/2026/q2"
+      ],
+      "expires_at": "2026-07-10T13:30:00+08:00"
+    }
+  ],
+  "alerts": [
+    {
+      "alert_id": "alt-typhoon-bawi-holiday",
+      "level": "warning",
+      "text": "颱風巴威：台北市7/10停班停課，台股（集中市場+期貨+外匯）全日休市確認；23檔個股除權息日（含聯詠、中信金、華航）順延至7/13（週一）。下次開盤7/13，補漲機會看外資動向",
+      "tickers": ["2330", "2454", "2317"],
+      "url": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E8%82%A17-10%E5%9B%A0%E9%A2%B1%E9%A2%A8%E4%BC%91%E5%B8%82-%E5%A4%A9-%E8%81%AF%E8%A9%A0-%E4%B8%AD%E4%BF%A1%E9%87%91%E7%AD%8923%E6%AA%94%E5%80%8B%E8%82%A1%E9%99%A4%E6%AC%8A%E6%81%AF%E9%A0%86%E5%BB%B6-130246948.html",
+      "source": "Yahoo Finance 台股"
+    },
+    {
+      "alert_id": "alt-tsmc-q2-earnings-jul16",
+      "level": "info",
+      "text": "TSMC Q2 2026法說7/16（倒數6天），EPS全年共識NT$103（小摩目標NT$3,100）；市場關注Q3指引>$40B、CoWoS/N2需求、毛利率68-70%能否守住。颱風假後法說前倉位調整窗口縮短至7/13-7/16",
+      "tickers": ["2330", "TSM", "2454", "NVDA"],
+      "url": "https://investor.tsmc.com/english/quarterly-results/2026/q2",
+      "source": "TSMC Investor Relations"
+    },
+    {
+      "alert_id": "alt-nvda-kyber-schedule",
+      "level": "info",
+      "text": "NVIDIA確認Kyber NVL144如期推進，否認2028延誤傳言；AI基礎設施資本支出週期不中斷，SOX 7/9+4%大反彈，後續由MSFT/GOOGL 7/29法說驗證AI capex延續性",
+      "tickers": ["NVDA", "2330", "TSM"],
+      "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262015350-nvidia-nvda-stock-forecast-july-2026-kyber-denial-goldman-tradingkey",
+      "source": "TradingKey / Goldman Sachs"
+    },
+    {
+      "alert_id": "alt-aapl-broadcom-chip-deal",
+      "level": "info",
+      "text": "Apple確認與Broadcom簽署約$300億晶片合作，涵蓋AI處理器與RF元件，強化自製晶片路線。Q2法說7/30前長線利多，AAPL估值得到AI iPhone週期故事支撐",
+      "tickers": ["AAPL"],
+      "url": "https://finance.yahoo.com/quote/AAPL/",
+      "source": "Yahoo Finance"
+    },
+    {
+      "alert_id": "alt-iran-ceasefire-over",
+      "level": "warning",
+      "text": "美伊緊張持續：Strait Attacks延燒，WTI $73/Brent $78高位維持；若WTI突破$80將觸發避險拋售+VIX飆升，為最大尾部風險。VIX 16.90，持續監控",
+      "tickers": ["2317", "TSLA"],
+      "url": "https://www.schwab.com/learn/story/stock-market-update-open",
+      "source": "Schwab Market Update"
+    },
+    {
+      "alert_id": "alt-cpi-july14",
+      "level": "warning",
+      "text": "美國CPI 6月7/14公布（台灣時間21:30），為FOMC 7/28-29升息決策關鍵；前值PCE 3.6%遠超2%目標，若CPI超預期10Y殖利率向上、台積電等高PE股承壓。CPI為本週最大宏觀風險",
+      "tickers": ["2330", "NVDA", "TSM", "TSLA"],
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "source": "Federal Reserve"
+    },
+    {
+      "alert_id": "alt-fomc-hawkish-hike-2026",
+      "level": "warning",
+      "text": "FOMC 6/17紀要鷹派：9/17委員支持2026年升息，PCE 3.6%遠超目標，市場9月升息概率40%+；10Y殖利率4.50%壓制高PE評價倍數股",
+      "tickers": ["NVDA", "TSLA", "AAPL", "TSM", "2330"],
+      "url": "https://www.cnbc.com/2026/07/08/with-minutes-due-feds-family-fight-over-interest-rates-could-drag-on.html",
+      "source": "CNBC"
+    },
+    {
+      "alert_id": "alt-deepseek-chip-inference",
+      "level": "warning",
+      "text": "DeepSeek自製AI推理晶片開發中（Reuters 7/7），目標降低對NVDA依賴；NVDA Kyber確認暫時抵銷市場憂慮，但長期衝擊AI推理需求模型的風險仍在持續監控中",
+      "tickers": ["NVDA", "2330", "2454"],
+      "url": "https://www.fool.com/coverage/stock-market-today/2026/07/09/stock-market-today-july-9-ai-chip-technology-stocks-rally-overcoming-ceasefire-worries/",
+      "source": "The Motley Fool"
+    }
+  ],
+  "sector_rotation": {
+    "strong": [
+      "AI晶片（SOX+4%，NVDA Kyber確認，光通訊族群帶動）",
+      "AI光通訊/基礎設施（Marvell、Corning、Coherent、Lumentum領漲）",
+      "台積電ADR（ADR逆強$440，外資法說前建倉）"
+    ],
+    "weak": [
+      "台股整體（颱風休市+外資賣超連5日，本土半導體弱於ADR）",
+      "鴻海/代工（均線下方，AI Server已price in，EV缺催化）",
+      "高PE成長股（FOMC升息壓制，TSLA、TSMC評價倍數承壓）"
+    ],
+    "watch": [
+      "台股7/13補漲動能（23檔除息順延+SOX強+外資轉買？）",
+      "台積電法說7/16（EPS共識NT$103，Q3指引為定調關鍵）",
+      "CPI 7/14（超預期=升息風險重燃；符預期=盤面偏多）",
+      "美伊緊張+油價WTI$75-80區間突破為最大宏觀尾部風險"
+    ]
+  },
+  "whats_changed": {
+    "compared_to": "股市-開盤前-20260709.md",
+    "compared_to_date": "2026-07-09",
+    "new": [
+      {
+        "type": "alert",
+        "alert_id": "alt-typhoon-bawi-holiday",
+        "summary": "颱風巴威確認：台股7/10全日休市，23檔除息股順延至7/13；全新警示（前日為颱風觀察，今日已確認全日休市）",
+        "tickers": ["2330", "2454", "2317"],
+        "from": "",
+        "to": "warning"
+      },
+      {
+        "type": "alert",
+        "alert_id": "alt-nvda-kyber-schedule",
+        "summary": "NVIDIA正式否認Kyber NVL144延誤，確認如期推進；消除近期最大不確定性，SOX+4%",
+        "tickers": ["NVDA", "2330", "TSM"],
+        "from": "",
+        "to": "info"
+      },
+      {
+        "type": "alert",
+        "alert_id": "alt-aapl-broadcom-chip-deal",
+        "summary": "Apple $300億Broadcom晶片合作確認，AI iPhone長線故事強化",
+        "tickers": ["AAPL"],
+        "from": "",
+        "to": "info"
+      },
+      {
+        "type": "stock_direction",
+        "summary": "鴻海2317由neutral轉bearish：均線下方整理、外資賣超、颱風後補跌風險加大",
+        "ticker": "2317",
+        "tickers": ["2317"],
+        "from": "neutral",
+        "to": "bearish"
+      },
+      {
+        "type": "stock_direction",
+        "summary": "NVDA由neutral升級至bullish：Kyber確認+SOX+4%，信心面大幅改善",
+        "ticker": "NVDA",
+        "tickers": ["NVDA"],
+        "from": "neutral",
+        "to": "bullish"
+      },
+      {
+        "type": "stock_direction",
+        "summary": "TSM由neutral升級至bullish：ADR逆強至$440（vs 2330跌2%），外資法說前積極建倉",
+        "ticker": "TSM",
+        "tickers": ["TSM"],
+        "from": "neutral",
+        "to": "bullish"
+      }
+    ],
+    "strengthened": [
+      {
+        "type": "alert",
+        "alert_id": "alt-tsmc-q2-earnings-jul16",
+        "summary": "法說倒數由8天縮至6天，颱風假縮短操作窗口；EPS共識升至NT$103，小摩目標NT$3,100，市場壓注加劇",
+        "tickers": ["2330", "TSM", "2454", "NVDA"],
+        "from": "info（倒數8天）",
+        "to": "info（倒數6天，壓注加劇）"
+      },
+      {
+        "type": "alert",
+        "alert_id": "alt-cpi-july14",
+        "summary": "CPI公布由6天縮至4天，升為warning級（前日為info）；颱風假後僅7/13一個交易日可提前因應",
+        "tickers": ["2330", "NVDA", "TSM", "TSLA"],
+        "from": "info",
+        "to": "warning"
+      }
+    ],
+    "removed": [
+      {
+        "type": "alert",
+        "alert_id": "alt-fed-warsh-rate-hike",
+        "summary": "Fed Warsh鷹派立場已充分消化於alt-fomc-hawkish-hike-2026，重複訊號移除",
+        "tickers": [],
+        "from": "info",
+        "to": ""
+      }
+    ]
+  }
+}

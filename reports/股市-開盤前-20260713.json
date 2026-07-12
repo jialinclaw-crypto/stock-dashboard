@@ -1,0 +1,545 @@
+{
+  "_schema_version": 3,
+  "type": "morning",
+  "report_file": "股市-開盤前-20260713.md",
+  "date": "2026-07-13",
+  "weekday": "週一",
+  "generated_at": "2026-07-13T07:34:48+08:00",
+  "market_view": {
+    "level": "cautious-bullish",
+    "confidence": 0.62,
+    "headline": "台股颱風假後補漲開盤、TSMC 法說倒數 3 天（7/16）；美股 VIX 降至 15 恐慌退潮；明日 CPI 與美伊軍事升溫為主要尾端風險"
+  },
+  "indices": [
+    {
+      "name": "道瓊工業",
+      "ticker": "DJI",
+      "value": 52637,
+      "change_pct": 0.28,
+      "trend": "neutral",
+      "note": "7/10 收 52,637（+150pt），防禦性輪動，溫和收高"
+    },
+    {
+      "name": "S&P 500",
+      "ticker": "SPX",
+      "value": 7575,
+      "change_pct": 0.4,
+      "trend": "bullish",
+      "note": "7/10 約 7,575，站穩 7,500 之上"
+    },
+    {
+      "name": "Nasdaq",
+      "ticker": "IXIC",
+      "value": 26286,
+      "change_pct": 0.3,
+      "trend": "neutral",
+      "note": "7/10 約 26,286，晶片回測略拖累"
+    },
+    {
+      "name": "費城半導體",
+      "ticker": "SOX",
+      "value": 12967,
+      "change_pct": -5.0,
+      "trend": "neutral",
+      "note": "7/10 收 12,967（區間 12,657-13,065），自上週四 +4% 高點 13,646 整固"
+    },
+    {
+      "name": "VIX 恐慌指數",
+      "ticker": "VIX",
+      "value": 15.03,
+      "change_pct": -5.11,
+      "trend": "bullish",
+      "note": "7/10 降至 15.03（-5%），系統性恐慌顯著收斂"
+    },
+    {
+      "name": "美 10Y 殖利率",
+      "ticker": "US10Y",
+      "value": 4.54,
+      "change_pct": -0.04,
+      "trend": "neutral",
+      "note": "7/10 約 4.54%，伊朗風險短線拉低殖利率"
+    },
+    {
+      "name": "美元指數",
+      "ticker": "DXY",
+      "value": 101.0,
+      "change_pct": 0.0,
+      "trend": "neutral",
+      "note": "避險需求與風險情緒相抵，DXY 持平"
+    },
+    {
+      "name": "WTI 原油",
+      "ticker": "WTI",
+      "value": 71.2,
+      "change_pct": -2.5,
+      "trend": "neutral",
+      "note": "7/10 週跌但週增 +3.5%，美伊升溫維持油價地緣溢價"
+    },
+    {
+      "name": "台股加權指數",
+      "ticker": "TAIEX",
+      "value": 45354,
+      "change_pct": -0.84,
+      "trend": "neutral",
+      "note": "7/9 收 45,354（上週最後交易日），7/10 颱風休市；今日補漲開盤，預估 45,650-45,950"
+    }
+  ],
+  "stocks": [
+    {
+      "signal_id": "stk-2330-2026-07-13-morning",
+      "ticker": "2330",
+      "name": "台積電",
+      "market": "TW",
+      "signal": "🟢",
+      "direction": "bullish",
+      "confidence": 0.68,
+      "view": "法說倒數 3 天（7/16），EPS 共識 NT$103、毛利率預期 67-68%（Q1: 66.2%）；ADR（TSM ~$438）強於本尊暗示外資法說前看好；今日颱風假後補漲，外資動向是關鍵。JP Morgan 目標 NT$3,100，逢低佈局邏輯清晰。",
+      "rationale": "TSMC 法說（7/16）3 日前 ADR 穩健，市場充分預期毛利率上修與全年指引上調",
+      "price": 2415,
+      "change_pct": -2.03,
+      "support": 2350,
+      "resistance": 2500,
+      "stop_loss": 2290,
+      "target": 2650,
+      "technicals": {
+        "rsi14": 55,
+        "macd": "MACD 正值轉強，訊號線走平",
+        "ma_alignment": "20MA(2430) 壓頂、60MA(2400) 接近支撐，多空拉鋸"
+      },
+      "valuation": {
+        "pe": 23.4,
+        "pe_percentile_5y": 45,
+        "verdict": "合理偏低；法說後若上修全年指引，P/E 重估空間至 28-30x"
+      },
+      "sources": [
+        "https://www.tipranks.com/news/tsmc-will-report-q2-earnings-on-july-16-should-investors-buy-the-stock-before-results",
+        "https://news.cnyes.com/news/id/6526586",
+        "https://investor.tsmc.com/english/quarterly-results/2026/q2"
+      ],
+      "expires_at": "2026-07-13T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-2454-2026-07-13-morning",
+      "ticker": "2454",
+      "name": "聯發科",
+      "market": "TW",
+      "signal": "🟢",
+      "direction": "bullish",
+      "confidence": 0.65,
+      "view": "AI ASIC 轉型明確利多——資料中心 2026 年指引翻倍至 $20 億美元；協助 Google TPU v7 Ironwood I/O 模組設計；目標 AI ASIC 市場 $70-80B 中搶 10-15%。Q4 2026 Tape-out 時程接近，下半年催化劑密集。手機晶片競爭壓力為短線估值折扣。",
+      "rationale": "AI ASIC 資料中心營收指引翻倍至 $2B、Google TPU 合作確立，帶動估值敘事切換",
+      "price": 3925,
+      "change_pct": -1.75,
+      "support": 3800,
+      "resistance": 4100,
+      "stop_loss": 3700,
+      "target": 4400,
+      "technicals": {
+        "rsi14": 52,
+        "macd": "MACD 由負轉正，動能初現",
+        "ma_alignment": "季線 (3800) 為強支撐，20MA(3950) 仍有壓力"
+      },
+      "valuation": {
+        "pe": 24,
+        "pe_percentile_5y": 40,
+        "verdict": "AI ASIC 框架切換後估值擴張空間大，但手機部門仍有折扣"
+      },
+      "sources": [
+        "https://247wallst.com/investing/2026/07/08/the-mediatek-ghost-story-just-dropped-the-worlds-most-powerful-custom-silicon-juggernaut-into-a-25-discount-zone/",
+        "https://www.techspot.com/news/110798-mediatek-targets-billion-dollar-ai-asic-business-smartphone.html"
+      ],
+      "expires_at": "2026-07-13T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-2317-2026-07-13-morning",
+      "ticker": "2317",
+      "name": "鴻海",
+      "market": "TW",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.55,
+      "view": "Q2 營收創同期最佳（8,218 億元），AI 伺服器旺季開啟，千億現金股利 7/31 發放。但管理層示警地緣政治風險，股價在 NT$235-250 區間整理；短線缺少急漲催化劑。逢回 NT$230 以下可關注長線進場機會。",
+      "rationale": "Q2 營收創同期最佳但管理層示警地緣政治，股利行情接近但股價已部分反映",
+      "price": 237.5,
+      "change_pct": 0.0,
+      "support": 230,
+      "resistance": 250,
+      "stop_loss": 225,
+      "target": 262,
+      "technicals": {
+        "rsi14": 46,
+        "macd": "MACD 負值收窄，動能趨緩但未翻正",
+        "ma_alignment": "月線 (235) 支撐，季線 (240) 仍有壓力"
+      },
+      "valuation": {
+        "pe": 12,
+        "pe_percentile_5y": 35,
+        "verdict": "低估值電子代工，殖利率約 3.5%，但成長溢價有限"
+      },
+      "sources": [
+        "https://www.cnyes.com/twstock/2317",
+        "https://tw.stock.yahoo.com/quote/2317.TW"
+      ],
+      "expires_at": "2026-07-13T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-NVDA-2026-07-13-morning",
+      "ticker": "NVDA",
+      "name": "輝達",
+      "market": "US",
+      "signal": "🟢",
+      "direction": "bullish",
+      "confidence": 0.68,
+      "view": "P/E 降至 7 年低點（~35x）；AI 需求廣化（銷售額 $2,160 億+65% GAAP 淨利）；分析師共識目標 $301（+43%）；中國 H200 銷售通道潛在打開是重要估值催化劑。SOX 短線整固後有望重啟上行，法說前 8/26 前持續積累倉位邏輯清晰。",
+      "rationale": "P/E 7 年低配合 AI 需求廣化，61 位分析師 Strong Buy 評級，中國 H200 通道消息為正面催化劑",
+      "price": 207,
+      "change_pct": 3.5,
+      "support": 195,
+      "resistance": 220,
+      "stop_loss": 185,
+      "target": 245,
+      "technicals": {
+        "rsi14": 58,
+        "macd": "MACD 正值且持續向上，動能良好",
+        "ma_alignment": "50MA (~198) 強支撐，價格高於所有主要均線"
+      },
+      "valuation": {
+        "pe": 35,
+        "pe_percentile_5y": 20,
+        "verdict": "P/E 7 年低，PEG 相對 AI 成長速度仍具吸引力"
+      },
+      "sources": [
+        "https://www.fool.com/investing/2026/07/12/nvidia-stock-just-did-something-for-the-first-time/",
+        "https://intellectia.ai/blog/nvidia-stock-analysis-july-2026",
+        "https://www.fxleaders.com/news/2026/07/10/nvidia-nvda-stock-slips-despite-strong-ai-demand-and-record-revenue/"
+      ],
+      "expires_at": "2026-07-13T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-TSLA-2026-07-13-morning",
+      "ticker": "TSLA",
+      "name": "特斯拉",
+      "market": "US",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.52,
+      "view": "$380-430 區間震盪格局，FSD 第 5 代進展與中國銷售為短線主軸，尚無突破方向信號。電動車競爭持續加溫（鴻海/鴻華代工競品），但估值溢價反映長期 FSD/機器人題材。觀望為宜。",
+      "rationale": "均線多空膠著，短線無明確方向信號，$380-430 震盪等突破",
+      "price": 408,
+      "change_pct": 0.5,
+      "support": 380,
+      "resistance": 435,
+      "stop_loss": 362,
+      "target": 460,
+      "technicals": {
+        "rsi14": 54,
+        "macd": "MACD 水平，多空平衡",
+        "ma_alignment": "均線多空交雜，整理格局"
+      },
+      "valuation": {
+        "pe": 108,
+        "pe_percentile_5y": 40,
+        "verdict": "高溢價反映 FSD/機器人長期期待，短線需交付量數據驗證"
+      },
+      "sources": [
+        "https://finance.yahoo.com/quote/TSLA/"
+      ],
+      "expires_at": "2026-07-13T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-AAPL-2026-07-13-morning",
+      "ticker": "AAPL",
+      "name": "蘋果",
+      "market": "US",
+      "signal": "🔴",
+      "direction": "bearish",
+      "confidence": 0.58,
+      "view": "7/10 跌逾 1% 至 $312，兩大利空同步打壓：① Apple 控告 OpenAI 竊取商業機密（法律不確定性）；② Q4 2026 記憶體供應瓶頸預警（Citrini Research）。MACD 翻負、跌破 20MA。中線多頭仍有 Wedbush $400 目標，但短線技術面轉弱，建議觀望至 $305 支撐再考慮。",
+      "rationale": "OpenAI 訴訟 + 記憶體供應預警同時打壓，MACD 翻負跌破 20MA 信號轉弱",
+      "price": 312,
+      "change_pct": -1.1,
+      "support": 305,
+      "resistance": 325,
+      "stop_loss": 295,
+      "target": 340,
+      "technicals": {
+        "rsi14": 47,
+        "macd": "MACD 翻負，動能轉弱",
+        "ma_alignment": "跌破 20MA (~318)，空方短線佔優"
+      },
+      "valuation": {
+        "pe": 32,
+        "pe_percentile_5y": 55,
+        "verdict": "合理但 Wedbush $400 多頭目標與短線利空形成拉鋸"
+      },
+      "sources": [
+        "https://earezki.com/ai-financial-news/2026-07-10-aapl/",
+        "https://macdailynews.com/2026/07/10/apple-emerges-as-the-ultimate-defensive-play-in-an-ai-driven-market/",
+        "https://www.thestreet.com/investing/stocks/veteran-analyst-resets-apple-stock-price-target-for-2026"
+      ],
+      "expires_at": "2026-07-13T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-TSM-2026-07-13-morning",
+      "ticker": "TSM",
+      "name": "台積電ADR",
+      "market": "US",
+      "signal": "🟢",
+      "direction": "bullish",
+      "confidence": 0.72,
+      "view": "Q2 EPS 共識 $3.81（年增 +54%）、Q2 營收 $400 億預期（+33% YoY）；Citi 上調目標，法說（7/16）前 ADR 受外資買盤支撐。相較本尊（2330）走勢更穩健，是法說前最清晰的佈局標的。法說後若管理層上修全年指引，上行空間至 $480-490。",
+      "rationale": "法說（7/16）3 日前，外資法說前佈局情緒濃，Q2 EPS +54% YoY 基本面扎實",
+      "price": 438,
+      "change_pct": 0.23,
+      "support": 420,
+      "resistance": 460,
+      "stop_loss": 405,
+      "target": 490,
+      "technicals": {
+        "rsi14": 62,
+        "macd": "MACD 正值加速，週線上升通道完整",
+        "ma_alignment": "所有主要均線向上排列，強勢多頭格局"
+      },
+      "valuation": {
+        "pe": 28.7,
+        "pe_percentile_5y": 50,
+        "verdict": "合理；法說後若指引上修可重估至 PE 32-35x，目標 $480-490"
+      },
+      "sources": [
+        "https://www.tipranks.com/news/citi-raises-tsmc-stock-price-target-ahead-of-q2-earnings-sees-higher-2026-revenue-guidance",
+        "https://www.marketbeat.com/earnings/reports/2026-7-16-taiwan-semiconductor-manufacturing-company-limited-stock/",
+        "https://finance.yahoo.com/markets/stocks/articles/tsmc-q2-earnings-preview-why-190000466.html"
+      ],
+      "expires_at": "2026-07-13T13:30:00+08:00"
+    }
+  ],
+  "alerts": [
+    {
+      "alert_id": "alt-tsmc-q2-earnings-jul16",
+      "level": "warning",
+      "text": "台積電 Q2 法說 7/16（週三）14:00，EPS 共識 $3.81（ADR）/ NT$103（本尊），毛利率預期 67-68%；全年指引是否上修、2027 年資本支出細節為最大焦點。法說前 3 日，最關鍵近期催化劑。",
+      "tickers": [
+        "2330",
+        "TSM",
+        "NVDA",
+        "2454"
+      ],
+      "url": "https://investor.tsmc.com/english/quarterly-results/2026/q2",
+      "source": "TSMC IR"
+    },
+    {
+      "alert_id": "alt-cpi-july14",
+      "level": "warning",
+      "text": "美國 CPI 明日（7/14）公布，預期核心 CPI 年增 3.1%；聯準會新主席 Warsh 純數據依賴，9/18 官員預期今年至少升息，超預期將重創科技股並推升殖利率。",
+      "tickers": [
+        "NVDA",
+        "AAPL",
+        "TSM",
+        "TSLA"
+      ],
+      "url": "https://www.gomarkets.com/en/articles/us-market-drivers-july-2026",
+      "source": "GoMarkets"
+    },
+    {
+      "alert_id": "alt-iran-hormuz-escalation",
+      "level": "warning",
+      "text": "美軍對伊朗發動新一波打擊，伊朗反擊巴林/科威特美軍設施；霍爾木茲海峽供應中斷（全球 20% 油氣），WTI 週漲 +3.5%。卡達外交斡旋中但協議遠未達成。能源股短線受惠，科技股有間接壓力。",
+      "tickers": [
+        "2317",
+        "TSLA"
+      ],
+      "url": "https://www.fxstreet.com/news/wti-consolidates-below-7200-as-traders-monitor-geopolitical-developments-202607100103",
+      "source": "FXStreet"
+    },
+    {
+      "alert_id": "alt-fomc-hawkish-hike-2026",
+      "level": "warning",
+      "text": "Fed 新主席 Warsh 移除前瞻指引改為純數據依賴；18 位官員中 9 位預期今年至少升息一次，2/3 預期超過一次。科技股估值承壓風險。",
+      "tickers": [
+        "NVDA",
+        "AAPL",
+        "TSM",
+        "TSLA"
+      ],
+      "url": "https://www.investing.com/analysis/july-market-outlook-tariffs-trade-and-the-next-inflation-test-200682939",
+      "source": "Investing.com"
+    },
+    {
+      "alert_id": "alt-aapl-openai-lawsuit",
+      "level": "warning",
+      "text": "Apple 控告 OpenAI 竊取商業機密，「每一層都違規」；AAPL 7/10 跌逾 1% 至 $312。法律訴訟時程不確定，中線多頭 Wedbush $400 目標仍在但短線信號轉弱。",
+      "tickers": [
+        "AAPL"
+      ],
+      "url": "https://earezki.com/ai-financial-news/2026-07-10-aapl/",
+      "source": "Dev|Journal"
+    },
+    {
+      "alert_id": "alt-mediatek-ai-asic-pivot",
+      "level": "info",
+      "text": "聯發科 AI ASIC 資料中心 2026 年指引翻倍至 $20 億美元，Google TPU v7 合作確立；Q4 2026 Tape-out 接近，估值框架切換至 AI ASIC。",
+      "tickers": [
+        "2454"
+      ],
+      "url": "https://www.techspot.com/news/110798-mediatek-targets-billion-dollar-ai-asic-business-smartphone.html",
+      "source": "TechSpot"
+    },
+    {
+      "alert_id": "alt-nvda-kyber-schedule",
+      "level": "info",
+      "text": "NVDA Kyber 架構如期確認，P/E 降至 7 年低點（~35x），分析師共識目標 $301；中國 H200 銷售通道潛在開放是短線催化劑。Q3 財報 8/26。",
+      "tickers": [
+        "NVDA"
+      ],
+      "url": "https://intellectia.ai/blog/nvidia-stock-analysis-july-2026",
+      "source": "Intellectia AI"
+    },
+    {
+      "alert_id": "alt-deepseek-chip-inference",
+      "level": "info",
+      "text": "DeepSeek 自研推理晶片進展持續，長期可能分流部分 NVDA 需求；近期影響有限，但需持續觀察。",
+      "tickers": [
+        "NVDA",
+        "2454"
+      ],
+      "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262018250-nvidia-nvda-stock-forecast-july-2026-deepseek-chip-long-setup-tradingkey",
+      "source": "TradingKey"
+    }
+  ],
+  "sector_rotation": {
+    "strong": [
+      "AI 晶片/半導體（法說催化）",
+      "能源（伊朗地緣溢價）",
+      "AI 伺服器供應鏈（鴻海 Q3 旺季）"
+    ],
+    "weak": [
+      "大型科技（AAPL 訴訟/記憶體隱患）",
+      "科技成長（CPI 升息預期壓估值）"
+    ],
+    "watch": [
+      "台灣電子（颱風後補漲、法說前佈局）",
+      "光通訊/CoWoS（TSMC 法說帶動供應鏈）",
+      "防禦股（VIX 降至 15 但尾端風險仍存）"
+    ]
+  },
+  "whats_changed": {
+    "compared_to": "股市-開盤前-20260710.md",
+    "compared_to_date": "2026-07-10",
+    "new": [
+      {
+        "type": "stock_direction",
+        "summary": "2330 方向反轉 neutral → bullish",
+        "ticker": "2330",
+        "from": "neutral",
+        "to": "bullish"
+      },
+      {
+        "type": "stock_direction",
+        "summary": "2454 方向反轉 neutral → bullish",
+        "ticker": "2454",
+        "from": "neutral",
+        "to": "bullish"
+      },
+      {
+        "type": "stock_direction",
+        "summary": "2317 方向反轉 bearish → neutral",
+        "ticker": "2317",
+        "from": "bearish",
+        "to": "neutral"
+      },
+      {
+        "type": "stock_direction",
+        "summary": "AAPL 方向反轉 neutral → bearish",
+        "ticker": "AAPL",
+        "from": "neutral",
+        "to": "bearish"
+      },
+      {
+        "type": "alert",
+        "summary": "新警示：alt-iran-hormuz-escalation — 美軍對伊朗發動新一波打擊，伊朗反擊巴林/科威特美軍設施；霍爾木茲海峽供應中斷（全球 20% 油氣），WTI 週漲 +3.",
+        "tickers": [
+          "2317",
+          "TSLA"
+        ],
+        "from": "",
+        "to": "warning"
+      },
+      {
+        "type": "alert",
+        "summary": "新警示：alt-aapl-openai-lawsuit — Apple 控告 OpenAI 竊取商業機密，「每一層都違規」；AAPL 7/10 跌逾 1% 至 $312。法律訴訟時",
+        "tickers": [
+          "AAPL"
+        ],
+        "from": "",
+        "to": "warning"
+      },
+      {
+        "type": "alert",
+        "summary": "新警示：alt-mediatek-ai-asic-pivot — 聯發科 AI ASIC 資料中心 2026 年指引翻倍至 $20 億美元，Google TPU v7 合作確立；Q4 2",
+        "tickers": [
+          "2454"
+        ],
+        "from": "",
+        "to": "info"
+      }
+    ],
+    "strengthened": [
+      {
+        "type": "alert",
+        "summary": "警示加重：alt-tsmc-q2-earnings-jul16 level info→warning",
+        "tickers": [
+          "NVDA",
+          "2454",
+          "TSM",
+          "2330"
+        ],
+        "from": "info",
+        "to": "warning"
+      },
+      {
+        "type": "alert",
+        "summary": "警示加重：alt-cpi-july14 level warning→warning，新增 tickers ['AAPL']",
+        "tickers": [
+          "AAPL",
+          "NVDA",
+          "TSM",
+          "TSLA"
+        ],
+        "from": "warning",
+        "to": "warning"
+      }
+    ],
+    "removed": [
+      {
+        "type": "alert",
+        "summary": "警示撤除：alt-typhoon-bawi-holiday",
+        "tickers": [
+          "2330",
+          "2454",
+          "2317"
+        ],
+        "from": "warning",
+        "to": ""
+      },
+      {
+        "type": "alert",
+        "summary": "警示撤除：alt-aapl-broadcom-chip-deal",
+        "tickers": [
+          "AAPL"
+        ],
+        "from": "info",
+        "to": ""
+      },
+      {
+        "type": "alert",
+        "summary": "警示撤除：alt-iran-ceasefire-over",
+        "tickers": [
+          "2317",
+          "TSLA"
+        ],
+        "from": "warning",
+        "to": ""
+      }
+    ]
+  }
+}

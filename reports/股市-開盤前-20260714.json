@@ -1,0 +1,387 @@
+{
+  "_schema_version": 3,
+  "type": "morning",
+  "report_file": "股市-開盤前-20260714.md",
+  "date": "2026-07-14",
+  "weekday": "週二",
+  "generated_at": "2026-07-14T07:34:44+08:00",
+  "market_view": {
+    "level": "cautious-neutral",
+    "confidence": 0.55,
+    "headline": "美股晶片板塊大跌+油價飆升+CPI今日公佈三重壓力；TSMC六月營收爆增68%為主要支撐；CPI為今日市場最重要分水嶺"
+  },
+  "whats_changed": {
+    "compared_to": "股市-開盤前-20260713.md",
+    "compared_to_date": "2026-07-13",
+    "new": [
+      {
+        "type": "alert",
+        "summary": "美國6月CPI今日公佈（台灣時間20:30），為本週最重要事件，熱超預期恐觸發Fed升息提前預期",
+        "tickers": ["NVDA", "TSLA", "AAPL", "TSM"],
+        "ticker": "",
+        "from": "",
+        "to": ""
+      },
+      {
+        "type": "alert",
+        "summary": "SK Hynix大跌觸發AI記憶體鏈擔憂，拖累NVDA(-3.4%)、AMD、Micron等晶片股週一重挫",
+        "tickers": ["NVDA"],
+        "ticker": "",
+        "from": "",
+        "to": ""
+      },
+      {
+        "type": "stock_direction",
+        "summary": "NVDA由偏多轉中性：SK Hynix記憶體鏈擔憂致週一-3.4%，CPI前法說期待降溫",
+        "ticker": "NVDA",
+        "tickers": ["NVDA"],
+        "from": "bullish",
+        "to": "neutral"
+      }
+    ],
+    "strengthened": [],
+    "removed": []
+  },
+  "indices": [
+    {
+      "name": "道瓊工業",
+      "ticker": "DJI",
+      "value": 52499,
+      "change_pct": -0.26,
+      "trend": "neutral",
+      "note": "7/13 收 52,499，能源股緩衝跌幅，防禦性輪動持續"
+    },
+    {
+      "name": "S&P 500",
+      "ticker": "SPX",
+      "value": 7515,
+      "change_pct": -0.79,
+      "trend": "neutral",
+      "note": "7/13 收 7,515，科技股拖累，7,500 支撐關鍵"
+    },
+    {
+      "name": "Nasdaq",
+      "ticker": "IXIC",
+      "value": 25873,
+      "change_pct": -1.55,
+      "trend": "bearish",
+      "note": "7/13 收 25,873，晶片/AI 股主要拖累，CPI 前弱勢"
+    },
+    {
+      "name": "費城半導體",
+      "ticker": "SOX",
+      "value": 12544,
+      "change_pct": -2.3,
+      "trend": "bearish",
+      "note": "7/13 ~12,544，SK Hynix 拖累記憶體鏈，短線轉弱"
+    },
+    {
+      "name": "VIX 恐慌指數",
+      "ticker": "VIX",
+      "value": 16.2,
+      "change_pct": 7.9,
+      "trend": "bearish",
+      "note": "7/13 估 ~16.2，從 15.03 上升，短線不確定性升溫"
+    },
+    {
+      "name": "美 10Y 殖利率",
+      "ticker": "US10Y",
+      "value": 4.57,
+      "change_pct": 0.07,
+      "trend": "neutral",
+      "note": "7/13 約 4.57%，油價推升通膨預期，CPI 前維持偏高"
+    },
+    {
+      "name": "美元指數",
+      "ticker": "DXY",
+      "value": 101.2,
+      "change_pct": 0.3,
+      "trend": "neutral",
+      "note": "7/13 ~101.2，避險需求溫和走強，臺幣承壓"
+    },
+    {
+      "name": "Brent 原油",
+      "ticker": "BRENT",
+      "value": 78.82,
+      "change_pct": 4.1,
+      "trend": "bullish",
+      "note": "7/13 飆升至 $78.82，美伊霍爾木茲緊張推升，尾端風險 $90+"
+    },
+    {
+      "name": "台股加權指數",
+      "ticker": "TAIEX",
+      "value": 45751,
+      "change_pct": 0.87,
+      "trend": "neutral",
+      "note": "7/13 收 45,751（符合預期），颱風假後補漲完成；7/14 預估開盤 45,200-45,500"
+    }
+  ],
+  "stocks": [
+    {
+      "signal_id": "stk-2330-2026-07-14-morning",
+      "ticker": "2330",
+      "name": "台積電",
+      "market": "TW",
+      "signal": "🟢",
+      "direction": "bullish",
+      "confidence": 0.70,
+      "view": "法說（7/16）倒數2天，六月營收NT$4,426.8億年增67.9%超頂端指引，EPS共識NT$103（年增59%），毛利率預期67-68%。NT$2,400為強支撐，法說前布局邏輯清晰。外資今日因美晶片板塊可能小量調倉，但不改中多格局。",
+      "rationale": "TSMC六月營收年增68%超預期，法說（7/16）Q3指引為確認催化，ADR $423支撐基本面",
+      "price": 2455,
+      "change_pct": 1.66,
+      "support": 2400,
+      "resistance": 2520,
+      "stop_loss": 2350,
+      "target": 2600,
+      "technicals": {
+        "rsi14": 62,
+        "macd": "黃金交叉，多頭排列",
+        "ma_alignment": "5MA > 20MA > 60MA 多頭排列"
+      },
+      "valuation": {
+        "pe": 21,
+        "pe_percentile_5y": 60,
+        "verdict": "AI 溢價合理，法說後若 Q3 指引上修則估值仍有空間"
+      },
+      "sources": [
+        "https://www.cnbc.com/2026/07/13/tsmc-june-revenue-rises-percent-ahead-second-quarter.html",
+        "https://finance.yahoo.com/markets/stocks/articles/tsmc-q2-earnings-preview-why-190000466.html",
+        "https://www.fool.com/investing/2026/07/13/taiwan-semiconductor-reports-earnings-july-16-here/"
+      ],
+      "expires_at": "2026-07-14T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-2454-2026-07-14-morning",
+      "ticker": "2454",
+      "name": "聯發科",
+      "market": "TW",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.55,
+      "view": "52週高位整固（NT$1,130-4,970），21位分析師全買進、均目標NT$4,841（+22.7%）。AI ASIC（OpenAI合作）進展正向，但Q2業績確認前（8月）市場觀望。今日受晶片大環境壓力，短線整固。",
+      "rationale": "高位整固等待Q2業績確認，AI ASIC敘事強但短線晶片板塊壓力不利突破",
+      "price": 3945,
+      "change_pct": 0.51,
+      "support": 3800,
+      "resistance": 4100,
+      "stop_loss": 3650,
+      "target": 4400,
+      "technicals": {
+        "rsi14": 58,
+        "macd": "中性偏多",
+        "ma_alignment": "偏多，高位整固中"
+      },
+      "valuation": {
+        "pe": 18,
+        "pe_percentile_5y": 55,
+        "verdict": "相對合理，AI ASIC接單落地後有重估空間"
+      },
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/2454.TW/",
+        "https://www.marketscreener.com/quote/stock/MEDIATEK-INC-6495333/"
+      ],
+      "expires_at": "2026-07-14T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-2317-2026-07-14-morning",
+      "ticker": "2317",
+      "name": "鴻海",
+      "market": "TW",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.52,
+      "view": "Q2營收NT$2.513兆年增39.8%超預期，AI伺服器首超消費電子佔比（40%）。股價YTD -6.68%反映地緣折價（美中晶片限制+中東地緣）。今日油價飆升再添成本壓力，但AI伺服器基本面改善中。",
+      "rationale": "AI伺服器佔比超越消費電子基本面改善，但地緣政治與成本壓力維持折價",
+      "price": 238,
+      "change_pct": 0.21,
+      "support": 230,
+      "resistance": 250,
+      "stop_loss": 222,
+      "target": 265,
+      "technicals": {
+        "rsi14": 52,
+        "macd": "中性",
+        "ma_alignment": "趨平，橫向整理"
+      },
+      "valuation": {
+        "pe": 14,
+        "pe_percentile_5y": 45,
+        "verdict": "偏低估值，地緣溢價折讓，AI伺服器改善為潛在重估觸媒"
+      },
+      "sources": [
+        "https://finance.yahoo.com/technology/ai/articles/foxconn-second-quarter-revenue-jumps-074232190.html",
+        "https://www.digitimes.com/news/a20260706PD223/foxconn-revenue-growth-2026-shipments.html"
+      ],
+      "expires_at": "2026-07-14T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-NVDA-2026-07-14-morning",
+      "ticker": "NVDA",
+      "name": "輝達",
+      "market": "US",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.52,
+      "view": "SK Hynix觸發記憶體鏈賣壓致7/13 -3.4%，MACD死叉短線轉弱。AI需求「極為強勁」（TSMC口吻），Blackwell爬坡中，中長期多頭論點不動搖。今日CPI是關鍵：冷→估值展開可測$215；熱→繼續壓至$195支撐。",
+      "rationale": "SK Hynix記憶體鏈擔憂致短線轉弱，CPI今日公佈為方向關鍵，中長期AI需求論點完整",
+      "price": 204,
+      "change_pct": -3.4,
+      "support": 195,
+      "resistance": 220,
+      "stop_loss": 183,
+      "target": 245,
+      "technicals": {
+        "rsi14": 52,
+        "macd": "死叉，短線偏弱",
+        "ma_alignment": "5MA跌破20MA，短線轉弱"
+      },
+      "valuation": {
+        "pe": 33,
+        "pe_percentile_5y": 55,
+        "verdict": "NTM P/E ~33x，2024年高峰~40x已回落，AI超循環撐住估值下限"
+      },
+      "sources": [
+        "https://finance.yahoo.com/technology/ai/articles/nvidia-broadcom-amd-lead-ai-130643330.html",
+        "https://www.tradingkey.com/news/market-movers/262027012-market-movers-nvda-20260713",
+        "https://www.gurufocus.com/news/8948648/nvidia-nvda-defies-market-trends-amidst-semiconductor-selloff"
+      ],
+      "expires_at": "2026-07-14T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-TSLA-2026-07-14-morning",
+      "ticker": "TSLA",
+      "name": "特斯拉",
+      "market": "US",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.50,
+      "view": "機器人計程車邁阿密上線、Austin Cybercab工程測試，Q2交付48萬輛。7/13 -3.5%跟隨大盤回調，法說（7/22）前獲利回吐。油價飆升不利車隊運營成本。下一催化：7/22法說確認全年交付指引和Robotaxi擴展計畫。",
+      "rationale": "法說（7/22）前觀望，Robotaxi擴展為利多但油價飆升與整體科技回調拖累",
+      "price": 394,
+      "change_pct": -3.5,
+      "support": 380,
+      "resistance": 420,
+      "stop_loss": 355,
+      "target": 450,
+      "technicals": {
+        "rsi14": 50,
+        "macd": "弱化中",
+        "ma_alignment": "中性"
+      },
+      "valuation": {
+        "pe": 75,
+        "pe_percentile_5y": 55,
+        "verdict": "高估值反映Robotaxi期望，法說後將決定期望是否兌現"
+      },
+      "sources": [
+        "https://www.tradingkey.com/news/market-movers/262026925-market-movers-tsla-20260713",
+        "https://finance.yahoo.com/markets/stocks/articles/tesla-rises-6-robotaxi-delivery-165732350.html"
+      ],
+      "expires_at": "2026-07-14T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-AAPL-2026-07-14-morning",
+      "ticker": "AAPL",
+      "name": "蘋果",
+      "market": "US",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.52,
+      "view": "7/13 -0.5%，相對晶片股防禦性表現強。iPhone 18週期進入倒計時，Apple Intelligence持續落地。RSI~55 MACD中性，油價飆升損及供應鏈成本但毛利結構強。CPI冷→估值擴張受益。",
+      "rationale": "防禦性優於晶片股，iPhone 18週期預期支撐，CPI冷為短線催化",
+      "price": 312,
+      "change_pct": -0.5,
+      "support": 305,
+      "resistance": 325,
+      "stop_loss": 293,
+      "target": 345,
+      "technicals": {
+        "rsi14": 55,
+        "macd": "中性",
+        "ma_alignment": "穩健偏多"
+      },
+      "valuation": {
+        "pe": 26,
+        "pe_percentile_5y": 58,
+        "verdict": "合理溢價，Apple Intelligence商業化為下一個重估觸媒"
+      },
+      "sources": [
+        "https://finance.yahoo.com/quote/AAPL/",
+        "https://www.cnbc.com/quotes/AMZN,%20AAPL,%20GOOGL,%20TSLA,%20MSFT,%20NVDA"
+      ],
+      "expires_at": "2026-07-14T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-TSM-2026-07-14-morning",
+      "ticker": "TSM",
+      "name": "台積電ADR",
+      "market": "US",
+      "signal": "🟢",
+      "direction": "bullish",
+      "confidence": 0.65,
+      "view": "7/13收$423.43（-2.46%），前日$434.11，跌幅大於本尊反映美晶片板塊情緒。六月營收年增68%牢固，法說（7/16 14:00台灣時間）是下一催化。20MA約$420支撐；CPI冷+法說順利，TSM有望回測$435-440。",
+      "rationale": "法說（7/16）前TSMC六月營收+68%奠基，ADR $420支撐關鍵，CPI冷+法說利好為最佳組合",
+      "price": 423.43,
+      "change_pct": -2.46,
+      "support": 415,
+      "resistance": 440,
+      "stop_loss": 400,
+      "target": 460,
+      "technicals": {
+        "rsi14": 58,
+        "macd": "偏多",
+        "ma_alignment": "20MA約$420支撐，整體偏多"
+      },
+      "valuation": {
+        "pe": 21,
+        "pe_percentile_5y": 60,
+        "verdict": "同2330，AI法說前合理偏高估值，Q3指引上修將進一步支撐"
+      },
+      "sources": [
+        "https://qz.com/tsmc-june-revenue-second-quarter-earnings-071326",
+        "https://en.sedaily.com/international/2026/07/13/tsmc-june-revenue-jumps-68-percent-q2-seen-at-record-high",
+        "https://vestedfinance.com/blog/us-stocks/tsmcs-q2-earnings-a-68-revenue-jump-and-one-big-takeaway/"
+      ],
+      "expires_at": "2026-07-14T13:30:00+08:00"
+    }
+  ],
+  "alerts": [
+    {
+      "alert_id": "alt-cpi-rate-hike",
+      "level": "warning",
+      "text": "美國6月CPI今日（台灣時間20:30）公佈，共識headline年增3.9%；若超預期Fed升息概率飆升，科技/成長股短線重壓",
+      "tickers": ["NVDA", "TSLA", "AAPL", "TSM", "2330"],
+      "url": "https://www.ig.com/uk/trading-strategies/us-cpi-june-2026-preview-what-to-expect-tomorrow-260713",
+      "source": "IG Markets"
+    },
+    {
+      "alert_id": "alt-iran-hormuz-oil",
+      "level": "warning",
+      "text": "美國宣布重啟霍爾木茲海峽封鎖行動，Brent原油單日漲逾4%至$78.82，地緣溢價加重通膨壓力並拖累科技股估值",
+      "tickers": ["TSLA", "AAPL", "2317"],
+      "url": "https://www.aljazeera.com/economy/2026/7/13/oil-prices-jump-as-us-and-iran-trade-attacks-over-strait-of-hormuz",
+      "source": "Al Jazeera"
+    },
+    {
+      "alert_id": "alt-skhynix-memory-selloff",
+      "level": "info",
+      "text": "SK Hynix單日大跌引發AI記憶體供需擔憂，連帶拖累NVDA(-3.4%)、Micron(-5.8%)、AMD等晶片股；屬短期技術修正，非AI基本面反轉",
+      "tickers": ["NVDA", "2330", "2454"],
+      "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-broadcom-amd-lead-ai-130643330.html",
+      "source": "Yahoo Finance"
+    },
+    {
+      "alert_id": "alt-tsmc-earnings-preview",
+      "level": "info",
+      "text": "TSMC六月營收NT$4,426.8億年增67.9%超頂端指引，Q2法說（7/16 14:00台灣時間）EPS共識NT$103、毛利率67-68%，Q3指引$42-44B為關鍵觀察點",
+      "tickers": ["2330", "TSM"],
+      "url": "https://www.cnbc.com/2026/07/13/tsmc-june-revenue-rises-percent-ahead-second-quarter.html",
+      "source": "CNBC"
+    }
+  ],
+  "sector_rotation": {
+    "strong": ["能源（油價飆升）", "防禦性消費", "傳統工業"],
+    "weak": ["半導體/記憶體（SK Hynix連鎖）", "AI基礎設施（CPI前觀望）", "成長科技（高利率壓力）"],
+    "watch": ["台灣電子（TSMC法說7/16決定方向）", "EV（TSLA法說7/22）", "AI ASIC（聯發科OpenAI合作進展）"]
+  }
+}

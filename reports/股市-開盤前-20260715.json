@@ -1,0 +1,401 @@
+{
+  "_schema_version": 3,
+  "type": "morning",
+  "report_file": "股市-開盤前-20260715.md",
+  "date": "2026-07-15",
+  "weekday": "週三",
+  "generated_at": "2026-07-15T07:34:44+08:00",
+  "market_view": {
+    "level": "cautious-bullish",
+    "confidence": 0.60,
+    "headline": "美6月CPI超預期降溫(3.5%)驅動科技反彈、NVDA+4.1%，台積電ADR+2.89%，法說倒數1天；Brent $87飆升美伊衝突重燃為尾部風險"
+  },
+  "indices": [
+    {
+      "name": "道瓊工業",
+      "ticker": "DJI",
+      "value": 52508,
+      "change_pct": 0.02,
+      "trend": "neutral",
+      "note": "7/14 收 52,508，能源股緩衝，整體持平"
+    },
+    {
+      "name": "S&P 500",
+      "ticker": "SPX",
+      "value": 7543,
+      "change_pct": 0.38,
+      "trend": "neutral",
+      "note": "7/14 收 7,543，CPI降溫後科技帶頭小幅反彈"
+    },
+    {
+      "name": "Nasdaq",
+      "ticker": "IXIC",
+      "value": 26107,
+      "change_pct": 0.90,
+      "trend": "bullish",
+      "note": "7/14 收 26,107，NVDA+4.1%帶動晶片族群，CPI降溫助攻"
+    },
+    {
+      "name": "費城半導體",
+      "ticker": "SOX",
+      "value": 12945,
+      "change_pct": 3.2,
+      "trend": "bullish",
+      "note": "7/14 估 ~12,945，NVDA領漲，SK Hynix賣壓退潮，晶片族群全面回彈"
+    },
+    {
+      "name": "VIX 恐慌指數",
+      "ticker": "VIX",
+      "value": 14.8,
+      "change_pct": -8.6,
+      "trend": "bullish",
+      "note": "7/14 估 ~14.8，CPI後恐慌明顯退潮，跌破15心理關卡"
+    },
+    {
+      "name": "美 10Y 殖利率",
+      "ticker": "US10Y",
+      "value": 4.48,
+      "change_pct": -0.14,
+      "trend": "bullish",
+      "note": "7/14 估 ~4.48%，CPI降溫壓低長端利率；油價飆升部分對沖"
+    },
+    {
+      "name": "美元指數",
+      "ticker": "DXY",
+      "value": 100.6,
+      "change_pct": -0.3,
+      "trend": "bullish",
+      "note": "7/14 ~100.6，CPI後美元弱化，台幣受惠小升"
+    },
+    {
+      "name": "Brent 原油",
+      "ticker": "BRENT",
+      "value": 87.0,
+      "change_pct": 4.8,
+      "trend": "bearish",
+      "note": "7/14 衝至 $87.0，美軍重啟霍爾木茲海峽封鎖+打擊伊朗設施，⚠️通膨風險重燃"
+    }
+  ],
+  "stocks": [
+    {
+      "signal_id": "stk-2330-2026-07-15-morning",
+      "ticker": "2330",
+      "name": "台積電",
+      "market": "TW",
+      "signal": "🟢",
+      "direction": "bullish",
+      "confidence": 0.72,
+      "view": "TSM ADR +2.89% ($421.58) 指引開盤 2,478–2,495；Q2法說明日（7/16）為最大催化劑，EPS共識$3.83(+55% YoY)，若毛利率≥67%將觸發重評估",
+      "rationale": "TSM ADR+2.89%帶動開高，台指期夜盤+445點，法說前夕多頭格局",
+      "price": 2410,
+      "change_pct": -1.23,
+      "support": 2400,
+      "resistance": 2550,
+      "stop_loss": 2380,
+      "target": 2550,
+      "technicals": {
+        "rsi14": 53,
+        "macd": "轉正交叉，短多訊號",
+        "ma_alignment": "短空長多，5日線下彎，月線支撐"
+      },
+      "valuation": {
+        "pe": 28,
+        "pe_percentile_5y": 60,
+        "verdict": "偏貴但法說上修EPS可合理化，目標5年P/E中位數 25-26x→2,550"
+      },
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/2330.TW",
+        "https://news.cnyes.com/news/id/6526586",
+        "https://matrixpro24.com/tsmc-market-analysis/"
+      ],
+      "expires_at": "2026-07-15T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-2454-2026-07-15-morning",
+      "ticker": "2454",
+      "name": "聯發科",
+      "market": "TW",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.48,
+      "view": "除息(7/7，NT$24.5)後未填息，昨收3,660遠低於參考價3,875；今日大盤反彈或有補漲，但填息壓力與消費電子循環弱勢使方向不明",
+      "rationale": "除息填息進度落後，外資賣壓未退，等待3,800以上確認方向",
+      "price": 3660,
+      "change_pct": -4.31,
+      "support": 3600,
+      "resistance": 3800,
+      "stop_loss": 3550,
+      "target": 3900,
+      "technicals": {
+        "rsi14": 42,
+        "macd": "死叉，負值區",
+        "ma_alignment": "空頭排列，5日/20日/60日均線全面下壓"
+      },
+      "valuation": {
+        "pe": 18,
+        "pe_percentile_5y": 40,
+        "verdict": "本益比18x尚屬合理，但填息未完成前估值支撐有限"
+      },
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/2454.TW",
+        "https://tw.stock.yahoo.com/news/%E8%81%AF%E7%99%BC%E7%A7%91%E7%A7%92%E5%A1%AB%E6%81%AF%EF%BC%81%E5%8F%B2%E4%B8%8A%E7%AC%AC4%E6%AC%A1%E7%95%B6%E6%97%A5%E9%81%94%E9%99%A3-%E8%82%A1%E5%83%B9%E5%8B%81%E6%8F%9A%E9%80%BE3-022149314.html"
+      ],
+      "expires_at": "2026-07-15T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-2317-2026-07-15-morning",
+      "ticker": "2317",
+      "name": "鴻海",
+      "market": "TW",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.50,
+      "view": "昨收236元相對抗跌，今日預估跟隨大盤補漲至238-240；AI伺服器GB300組裝+EV轉型為長線敘事，短線無獨立催化劑",
+      "rationale": "跟隨大盤補漲，無獨立catalyst，P/E 10x低估但需催化劑解鎖",
+      "price": 236,
+      "change_pct": -0.21,
+      "support": 230,
+      "resistance": 245,
+      "stop_loss": 228,
+      "target": 250,
+      "technicals": {
+        "rsi14": 48,
+        "macd": "微負值，橫盤整理",
+        "ma_alignment": "5日線持平，20日線下彎，60日線支撐"
+      },
+      "valuation": {
+        "pe": 10,
+        "pe_percentile_5y": 30,
+        "verdict": "10x低估，AI伺服器/EV轉型故事完整，但需法說/訂單催化"
+      },
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/2317.TW"
+      ],
+      "expires_at": "2026-07-15T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-NVDA-2026-07-15-morning",
+      "ticker": "NVDA",
+      "name": "輝達",
+      "market": "US",
+      "signal": "🟢",
+      "direction": "bullish",
+      "confidence": 0.70,
+      "view": "7/14大漲+4.1%至$211.84，H200晶片確認開始運往中國(消除最大疑慮)+Morgan Stanley OW重申+CPI降溫。分析師共識$301.62(超過40%上升空間)，10 Strong Buy+48 Buy",
+      "rationale": "H200出口障礙消除+CPI降溫+機構重申看多，三重催化驅動強彈",
+      "price": 211.84,
+      "change_pct": 4.1,
+      "support": 200,
+      "resistance": 220,
+      "stop_loss": 195,
+      "target": 230,
+      "technicals": {
+        "rsi14": 62,
+        "macd": "金叉，正值區，動能轉強",
+        "ma_alignment": "突破20日均線，短多訊號"
+      },
+      "valuation": {
+        "pe": 36,
+        "pe_percentile_5y": 55,
+        "verdict": "P/E 36x，分析師共識$301意味估值仍被低估，AI算力週期支撐"
+      },
+      "sources": [
+        "https://www.tradingkey.com/news/market-movers/262029663-market-movers-nvda-20260714",
+        "https://markets.financialcontent.com/stocks/article/stockstory-2026-7-14-nvidia-nvda-stock-trades-up-here-is-why"
+      ],
+      "expires_at": "2026-07-15T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-TSLA-2026-07-15-morning",
+      "ticker": "TSLA",
+      "name": "特斯拉",
+      "market": "US",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.45,
+      "view": "7/14 +0.4%至$396.30，$390-$400箱型整理，無特殊催化劑；Brent $87長線對EV有利但短線市場聚焦半導體，Warsh升息疑慮也壓制估值",
+      "rationale": "$390-$400箱型整理，無催化劑突破，保持中性觀望",
+      "price": 396.30,
+      "change_pct": 0.4,
+      "support": 380,
+      "resistance": 410,
+      "stop_loss": 375,
+      "target": 420,
+      "technicals": {
+        "rsi14": 50,
+        "macd": "平坦，箱型整理",
+        "ma_alignment": "均線糾結，方向不明"
+      },
+      "valuation": {
+        "pe": 55,
+        "pe_percentile_5y": 45,
+        "verdict": "P/E 55x，電動車/能源/AI機器人溢價；需明確catalyst突破"
+      },
+      "sources": [
+        "https://finance.yahoo.com/quote/TSLA/"
+      ],
+      "expires_at": "2026-07-15T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-AAPL-2026-07-15-morning",
+      "ticker": "AAPL",
+      "name": "蘋果",
+      "market": "US",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.48,
+      "view": "7/14 -0.7%至$315.13，OpenAI訴訟持續拖累，Apple Intelligence落地進度為市場疑慮；$310-$320 震盪，短線偏弱",
+      "rationale": "OpenAI訴訟+Apple Intelligence落地疑慮壓制股價，$310支撐觀察",
+      "price": 315.13,
+      "change_pct": -0.7,
+      "support": 310,
+      "resistance": 325,
+      "stop_loss": 305,
+      "target": 330,
+      "technicals": {
+        "rsi14": 46,
+        "macd": "負值，弱勢整理",
+        "ma_alignment": "5日線下彎，跌破20日均線"
+      },
+      "valuation": {
+        "pe": 30,
+        "pe_percentile_5y": 55,
+        "verdict": "P/E 30x，歷史中高位，服務/AI應用需兌現支撐估值"
+      },
+      "sources": [
+        "https://finance.yahoo.com/quote/AAPL/"
+      ],
+      "expires_at": "2026-07-15T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-TSM-2026-07-15-morning",
+      "ticker": "TSM",
+      "name": "台積電ADR",
+      "market": "US",
+      "signal": "🟢",
+      "direction": "bullish",
+      "confidence": 0.68,
+      "view": "7/14夜盤+2.89%至$421.58，折合台積電約2,480元；明日Q2法說(7/16)前夕籌碼積極，EPS共識$3.83，若毛利率≥67%可挑戰$440+",
+      "rationale": "法說倒數1天+H200/CPI雙重正面訊號+ADR強彈，布局正面",
+      "price": 421.58,
+      "change_pct": 2.89,
+      "support": 408,
+      "resistance": 440,
+      "stop_loss": 400,
+      "target": 450,
+      "technicals": {
+        "rsi14": 55,
+        "macd": "轉正，短多",
+        "ma_alignment": "突破5日均線，20日均線待確認"
+      },
+      "valuation": {
+        "pe": 27,
+        "pe_percentile_5y": 58,
+        "verdict": "P/E 27x，法說上修指引後合理化；目標$450基於Q2毛利率≥67%"
+      },
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/TSM",
+        "https://matrixpro24.com/tsmc-market-analysis/",
+        "https://www.fool.com/investing/2026/07/14/buying-tsmc-stock-before-july-16-just-became-a-no/"
+      ],
+      "expires_at": "2026-07-15T13:30:00+08:00"
+    }
+  ],
+  "alerts": [
+    {
+      "alert_id": "alt-tsmc-q2-earnings-july16",
+      "level": "warning",
+      "text": "台積電Q2法說明日（7/16）召開：EPS共識$3.83(+55% YoY)、Revenue $39.5-39.8B、GM指引65.5-67.5%（小摩估69.5%）。Q1 EPS $3.49/毛利66.2%曾超預期；法說結果為台積電+台指短期走勢最大分水嶺",
+      "tickers": ["2330", "TSM"],
+      "url": "https://matrixpro24.com/tsmc-market-analysis/",
+      "source": "MatrixPro24/Reuters"
+    },
+    {
+      "alert_id": "alt-iran-oil-blockade",
+      "level": "warning",
+      "text": "美軍重啟霍爾木茲海峽封鎖+打擊伊朗灣岸能源設施，Brent原油7/14飆至$87(+4.8%)。若持續將打臉CPI降溫趨勢，Fed升息壓力重燃，注意油價是否突破$90",
+      "tickers": ["NVDA", "TSLA", "AAPL", "TSM", "2330"],
+      "url": "https://fortune.com/article/price-of-oil-07-14-2026/",
+      "source": "Fortune/CNBC"
+    },
+    {
+      "alert_id": "alt-fed-warsh-hawkish",
+      "level": "info",
+      "text": "Fed主席Warsh在7/14聽證宣示「對通膨零容忍」，Fed內部約半數委員今年預計升息，但Warsh未給予明確利率指引。CPI降溫暫壓制升息預期，但油價若再漲可能重燃鷹派討論",
+      "tickers": ["NVDA", "TSLA", "AAPL"],
+      "url": "https://www.cnn.com/2026/07/14/economy/takeaways-kevin-warsh-congressional-testimony",
+      "source": "CNN Business"
+    },
+    {
+      "alert_id": "alt-nvda-h200-china-shipment",
+      "level": "info",
+      "text": "美國官員確認NVIDIA已開始向中國運送H200 AI晶片，新加坡/日本/馬來西亞設「白名單」加強合規。市場正面解讀，Morgan Stanley維持OW，分析師共識$301.62",
+      "tickers": ["NVDA"],
+      "url": "https://markets.financialcontent.com/stocks/article/stockstory-2026-7-14-nvidia-nvda-stock-trades-up-here-is-why",
+      "source": "FinancialContent/Morgan Stanley"
+    }
+  ],
+  "sector_rotation": {
+    "strong": ["AI/半導體 (NVDA+4.1%, SOX+3.2%)", "HPC/CoWoS封裝 (台積電法說前夕)", "大型科技 (Nasdaq+0.9%)"],
+    "weak": ["消費電子 (聯發科填息壓力)", "傳統能源消費股 (Brent $87推升成本)", "蘋果 (OpenAI訴訟)"],
+    "watch": ["電動車 (TSLA箱型整理，Brent長線利多)", "金融股 (Warsh升息分歧，關注美銀行7/16財報)", "油氣能源 (Brent $87突破為買入訊號)"]
+  },
+  "whats_changed": {
+    "compared_to": "股市-開盤前-20260714.md",
+    "compared_to_date": "2026-07-14",
+    "new": [
+      {
+        "type": "alert",
+        "summary": "台積電Q2法說明日（7/16）登場，EPS共識$3.83(+55% YoY)、毛利率指引65.5-67.5%，為本週最重大催化劑",
+        "tickers": ["2330", "TSM"],
+        "ticker": "",
+        "from": "",
+        "to": ""
+      },
+      {
+        "type": "alert",
+        "summary": "美軍重啟霍爾木茲海峽封鎖，Brent $87(+4.8%)，通膨風險從CPI降溫喜悅中逆轉",
+        "tickers": ["NVDA", "TSLA", "AAPL", "TSM", "2330"],
+        "ticker": "",
+        "from": "",
+        "to": ""
+      },
+      {
+        "type": "stock_direction",
+        "summary": "NVDA由中性轉偏多：H200晶片確認運往中國+Morgan Stanley OW重申+CPI降溫，7/14 +4.1%完全逆轉SK Hynix觸發跌勢",
+        "ticker": "NVDA",
+        "tickers": ["NVDA"],
+        "from": "neutral",
+        "to": "bullish"
+      }
+    ],
+    "strengthened": [
+      {
+        "type": "stock_direction",
+        "summary": "TSM (台積電ADR) 信心從0.62→0.68，ADR+2.89%+法說催化劑倒數1天，多頭力道加強",
+        "ticker": "TSM",
+        "tickers": ["TSM"],
+        "from": "bullish(0.62)",
+        "to": "bullish(0.68)"
+      }
+    ],
+    "removed": [
+      {
+        "type": "alert",
+        "summary": "美國6月CPI事件已落地（實際3.5%，低於3.8%預期），不確定性解除",
+        "tickers": ["NVDA", "TSLA", "AAPL", "TSM"],
+        "ticker": "",
+        "from": "alt-cpi-data-release",
+        "to": ""
+      },
+      {
+        "type": "alert",
+        "summary": "SK Hynix記憶體鏈賣壓警告已解除，NVDA +4.1%完全反彈，SOX恢復+3.2%",
+        "tickers": ["NVDA"],
+        "ticker": "",
+        "from": "alt-sk-hynix-memory-selloff",
+        "to": ""
+      }
+    ]
+  }
+}

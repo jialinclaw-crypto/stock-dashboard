@@ -1,0 +1,306 @@
+{
+  "_schema_version": "3",
+  "type": "close",
+  "report_file": "股市-收盤後-20260714.md",
+  "date": "2026-07-14",
+  "weekday": "週二",
+  "generated_at": "2026-07-14T14:05:00+08:00",
+  "expires_at": "2026-07-15T09:00:00+08:00",
+
+  "market_view": {
+    "tw_overall": "bearish_correction",
+    "us_overall": "neutral_cautious",
+    "short_term_bias": "neutral_cautious",
+    "key_risk": "CPI若高於4.2%預期則科技股再承壓；聯發科籌碼面持續惡化跌破3,800；外資是否真正轉向仍待盤後數據確認；台積電法說若僅達財測下緣則'賣消息'風險；油價急升壓縮降息預期",
+    "key_catalyst": "台積電Q2法說7/16（毛利率挑戰69.5%+、EPS全年100+、小摩目標3,100元）；今晚美國6月CPI若≤3.9%（共識，前值4.2%）利好科技股反彈；三大法人今日電金傳產輪買信號；Warsh聽證降息信號",
+    "note": "今日大跌-3.2%（估）為法說前正常技術修正；關鍵點位43,500-44,000已見三大法人接盤；一切等待CPI數據與法說結果。台積電3,100目標不變，聯發科籌碼面警訊持續。"
+  },
+
+  "indices": {
+    "TAIEX": {
+      "signal_id": "idx-TAIEX-2026-07-14-close",
+      "close": 44683,
+      "prev_close": 46144.17,
+      "change": -1461.17,
+      "change_pct": -3.16,
+      "direction": "down",
+      "note": "估計值（基於盤中13:00數據44,561加末盤微幅回升）；盤中低點43,654；今日高點即開盤45,364，高開低走形態；三大法人買超護盤後部分回穩。實際收盤以TWSE官方為準。",
+      "data_quality": "estimated"
+    }
+  },
+
+  "stocks": [
+    {
+      "ticker": "2330",
+      "name": "台積電",
+      "market": "TW",
+      "signal_id": "stk-2330-2026-07-14-close",
+      "direction": "neutral",
+      "confidence": "medium",
+      "price": 2415,
+      "prev_price": 2460,
+      "change": -45,
+      "change_pct": -1.83,
+      "rationale": "今日拉回-1.83%收2,415，從前高2,535回落逾4.7%。盤中低點約2,380（逼近20MA支撐）。法說倒數2天（7/16）為關鍵催化劑：若毛利率破69%+則看回2,500-2,550；若僅符合財測下緣則有賣消息風險測試2,350。三大法人今日仍列買超，機構不急出清。短線持中性，等待法說確立方向。TSM ADR盤前約421（-2.9%）亦反映科技股整體壓力。",
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/2330.TW",
+        "https://news.cnyes.com/news/id/6526586",
+        "https://finance.sina.com.cn/stock/usstock/c/2026-07-14/doc-inihtewq8638351.shtml",
+        "https://www.sinotrade.com.tw/richclub/hotstock/%E5%8F%B0%E7%A9%8D%E9%9B%BB%E6%B3%95%E8%AA%AA%E6%9C%836%E5%A4%A7%E4%BA%AE%E9%BB%9E%E6%95%B4%E7%90%86"
+      ],
+      "expires_at": "2026-07-15T09:00:00+08:00",
+      "data_quality": "estimated"
+    },
+    {
+      "ticker": "2454",
+      "name": "聯發科",
+      "market": "TW",
+      "signal_id": "stk-2454-2026-07-14-close",
+      "direction": "bearish",
+      "confidence": "high",
+      "price": 3865,
+      "prev_price": 3920,
+      "change": -55,
+      "change_pct": -1.40,
+      "rationale": "連續兩日籌碼惡化：昨日開高走低（4,095→3,920），今日再跌1.4%至3,865。3,900支撐有效跌破，下一支撐3,800-3,850。AI ASIC資料中心指引翻倍（$20億美元）基本面長線樂觀，但短線籌碼面鬆動、獲利了結壓力大，技術型態偏空。建議觀察3,800守否，若跌破恐測3,700。",
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/2454.TW",
+        "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2454"
+      ],
+      "expires_at": "2026-07-15T09:00:00+08:00",
+      "data_quality": "confirmed"
+    },
+    {
+      "ticker": "2317",
+      "name": "鴻海",
+      "market": "TW",
+      "signal_id": "stk-2317-2026-07-14-close",
+      "direction": "neutral",
+      "confidence": "medium",
+      "price": 232.5,
+      "prev_price": 242,
+      "change": -9.5,
+      "change_pct": -3.93,
+      "rationale": "今日拉回-3.93%至232.5，幅度超過大盤，吐回昨日部分漲幅。AI伺服器代工與電動車基本面未變，屬技術修正。昨日低點附近232-233已有支撐。等待大盤方向與CPI結果。",
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/2317.TW"
+      ],
+      "expires_at": "2026-07-15T09:00:00+08:00",
+      "data_quality": "confirmed"
+    },
+    {
+      "ticker": "NVDA",
+      "name": "輝達",
+      "market": "US",
+      "signal_id": "stk-NVDA-2026-07-14-close",
+      "direction": "neutral_cautious",
+      "confidence": "low",
+      "price": 210.96,
+      "prev_price": null,
+      "change": null,
+      "change_pct": null,
+      "note": "7/13美股收盤參考價。今晚（7/14台灣時間21:30）美股開盤後實際走勢以CPI數據為準。",
+      "rationale": "SOX上週已-2.3%，NVDA -3.4%。今晚CPI若≤3.9%，半導體反彈機率高；若>4.2%，可能進一步測試200MA。台積電法說7/16若超預期可帶動NVDA同步反彈。今晚是關鍵觀察點。",
+      "sources": [
+        "https://finance.yahoo.com/quote/NVDA/"
+      ],
+      "expires_at": "2026-07-15T09:00:00+08:00",
+      "data_quality": "prior_day_close"
+    },
+    {
+      "ticker": "TSLA",
+      "name": "特斯拉",
+      "market": "US",
+      "signal_id": "stk-TSLA-2026-07-14-close",
+      "direction": "neutral",
+      "confidence": "low",
+      "price": 407.76,
+      "prev_price": null,
+      "change": null,
+      "change_pct": null,
+      "note": "7/13美股收盤參考價；今晚等待CPI與市場情緒。",
+      "rationale": "無近期強力催化劑，隨大盤情緒走。CPI利多情境下可跟漲；利空情境繼續承壓。",
+      "sources": [
+        "https://finance.yahoo.com/quote/TSLA/"
+      ],
+      "expires_at": "2026-07-15T09:00:00+08:00",
+      "data_quality": "prior_day_close"
+    },
+    {
+      "ticker": "AAPL",
+      "name": "蘋果",
+      "market": "US",
+      "signal_id": "stk-AAPL-2026-07-14-close",
+      "direction": "neutral",
+      "confidence": "low",
+      "price": 315.32,
+      "prev_price": null,
+      "change": null,
+      "change_pct": null,
+      "note": "7/13估計價；今晚美股開盤後更新。",
+      "rationale": "Apple Intelligence推進中，相對防禦性強。CPI數據驅動短期走勢。",
+      "sources": [
+        "https://finance.yahoo.com/quote/AAPL/"
+      ],
+      "expires_at": "2026-07-15T09:00:00+08:00",
+      "data_quality": "prior_day_close"
+    },
+    {
+      "ticker": "TSM",
+      "name": "台積電ADR",
+      "market": "US",
+      "signal_id": "stk-TSM-2026-07-14-close",
+      "direction": "neutral",
+      "confidence": "medium",
+      "price": 421,
+      "prev_price": 434.11,
+      "change": -13.11,
+      "change_pct": -3.02,
+      "note": "今日盤前/盤中估計：TSM約421（-2.88%至-3%），源自Sina Finance「台积电跌2.88%」報導。今晚正式開盤後以實際收盤為準。",
+      "rationale": "ADR隨2330台股下跌而走弱，盤前約-2.88%。法說7/16前短線波動加大，機構維持布局。若法說超預期，ADR有機會迅速回升至440+。今晚CPI為另一變數。",
+      "sources": [
+        "https://finance.sina.com.cn/stock/usstock/c/2026-07-14/doc-inihtewq8638351.shtml",
+        "https://investor.tsmc.com/english/quarterly-results/2026/q2"
+      ],
+      "expires_at": "2026-07-15T09:00:00+08:00",
+      "data_quality": "estimated_premarket"
+    }
+  ],
+
+  "alerts": [
+    {
+      "alert_id": "alert-tsmc-earnings-call-20260716",
+      "level": "critical",
+      "title": "台積電 Q2 法說會 7/16（後天）—— 本週最大催化劑",
+      "body": "台積電將於7/16（週四）召開Q2法說會，倒數不到48小時。市場共識：Q2毛利率目標69-69.5%（小摩預期近70%），2026年EPS共識100+元，3年EPS目標170元（2028）。三大事項：(1)毛利率是否破69%，(2)全年/Q3財測是否上修，(3)CoWoS/先進封裝擴產指引。若超預期（毛利率破69%+上修展望）→ 台積電看2,500-2,550，TSM看440+，NVDA連帶受益。若僅達下緣 → 賣消息風險，2330測試2,350。",
+      "url": "https://investor.tsmc.com/english/quarterly-results/2026/q2",
+      "source": "TSMC Investor Relations / JP Morgan Research",
+      "expires_at": "2026-07-16T20:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-us-cpi-tonight-20260714",
+      "level": "critical",
+      "title": "美國 6 月 CPI 今晚 20:30（台灣時間）——二元事件",
+      "body": "美國6月CPI將於今晚20:30（台灣時間，ET08:30）公布。共識：headline 3.9%（前值4.2%），月增-0.1%（汽油-10%貢獻）；Core 共識2.8-2.9% YoY。若實際≤3.9%：Nasdaq預期反彈1-2%，NVDA/TSM受益，明日台股可能跳空回補；若>4.2%：降息預期壓縮，科技股繼續補跌，台積電法說前壓力更大。同日美銀行財報（JPM、GS、Citi、BAC、WFC）及Warsh聽證。",
+      "url": "https://www.bls.gov/cpi/",
+      "source": "US Bureau of Labor Statistics / MUFG Research",
+      "expires_at": "2026-07-14T22:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-mtk-chip-pressure-20260714",
+      "level": "warning",
+      "title": "聯發科（2454）連兩日籌碼惡化 — 3,865 跌破 3,900 支撐",
+      "body": "聯發科昨日（7/13）開盤4,095走低收3,920（警訊），今日再跌1.4%至3,865，正式有效跌破3,900支撐。連兩日上方籌碼沉重，與大盤弱勢形成共振。AI ASIC長線邏輯完整，但短線技術面偏空。關鍵支撐：3,800-3,850；若跌破，恐測3,700。建議持有者設定停損或等待企穩再加碼。",
+      "url": "https://tw.stock.yahoo.com/quote/2454.TW",
+      "source": "Yahoo股市/Goodinfo",
+      "expires_at": "2026-07-15T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-taiex-intraday-low-43654",
+      "level": "warning",
+      "title": "加權指數今日觸低 43,654 —— 關鍵支撐區間測試",
+      "body": "台股今日盤中最低至43,654，跌破市場原本預估的44,000支撐。幸而三大法人（電金傳產同步護盤）在低點撐起，終場估回43,600-44,700間。若明日再次跌破43,500，則中期趨勢有轉弱疑慮，需重新評估指數。反之，若今晚CPI利多帶動跳空，則今日低點可視為短線底部確立。本次低點也代表從7/13高點46,144至今日低點43,654累計跌幅約5.4%，屬正常法說前修正範疇。",
+      "url": "https://tw.stock.yahoo.com/quote/%5ETWII",
+      "source": "Yahoo股市",
+      "expires_at": "2026-07-15T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-foreign-reversal-signal-20260714",
+      "level": "info",
+      "title": "外資今日疑似轉向買超（待盤後數據確認）",
+      "body": "三大法人14日買超前十大（電金各三、傳產鋼鐵航運），綜合信號顯示外資在加權指數低點附近轉為淨買超。若盤後TWSE揭示外資確認買超，則為首次結束連賣7日的轉向信號，對台股中線恢復信心有正面意義。反之若仍賣超，則回彈力道依賴投信/自營。預計盤後17:00後揭示完整數據。",
+      "url": "https://www.twse.com.tw/zh/trading/foreign/bfi82u.html",
+      "source": "TWSE三大法人買賣金額統計表（盤後）",
+      "expires_at": "2026-07-15T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-asml-earnings-20260716",
+      "level": "info",
+      "title": "ASML 財報 7/16（與台積電同日）",
+      "body": "半導體設備龍頭ASML將於7/16與台積電同日公布財報。ASML訂單動向為半導體周期先行指標，若訂單超預期，強化半導體多頭敘事，對聯發科、台積電、NVDA均有正向連帶效應。",
+      "url": "https://www.cnbc.com/2026/07/10/stock-market-next-week-outlook-for-july-13-17-2026.html",
+      "source": "CNBC",
+      "expires_at": "2026-07-17T09:00:00+08:00"
+    }
+  ],
+
+  "whats_changed": {
+    "_vs_date": "2026-07-13",
+    "_vs_file": "股市-收盤後-20260713.json",
+    "summary": "市場由昨日補漲多頭反彈（+1.74%）急轉技術修正(-3.16%估)；台積電從bullish降為neutral（修正中等待法說）；聯發科從neutral升格為bearish（連兩日籌碼惡化跌破3,900）；鴻海從neutral_bullish降為neutral（吐回漲幅）；CPI事件從『明日』進入『今晚』高度緊張；新增低點警訊43,654與外資轉向觀察；台積電法說進入最後倒數48小時",
+    "direction_changes": [
+      {
+        "scope": "market_view.tw_overall",
+        "prev": "bullish_reversal",
+        "curr": "bearish_correction",
+        "reason": "加權指數-3.16%（估）創近期最大跌幅，從補漲轉為法說前技術修正。三大法人護盤存在，性質為中期多頭中的短線整理。"
+      },
+      {
+        "scope": "market_view.short_term_bias",
+        "prev": "cautiously_bullish",
+        "curr": "neutral_cautious",
+        "reason": "CPI數據未知情境下無法判斷明日方向；台積電法說結果亦未定；短線走勢完全取決於今晚CPI與7/16法說，故從偏多降為中性謹慎。"
+      },
+      {
+        "scope": "stocks.2330.direction",
+        "prev": "bullish",
+        "curr": "neutral",
+        "reason": "台積電今日-1.83%收2,415，技術上修正整理，法說前不確定性升高。20MA支撐2,380仍在，未破位，但需法說確認後才能恢復bullish。"
+      },
+      {
+        "scope": "stocks.2454.direction",
+        "prev": "neutral",
+        "curr": "bearish",
+        "reason": "連兩日籌碼惡化：昨日開高走低（+0.13%遠弱於大盤），今日再跌-1.4%有效跌破3,900支撐。技術形態轉為短線空頭。"
+      },
+      {
+        "scope": "stocks.2317.direction",
+        "prev": "neutral_bullish",
+        "curr": "neutral",
+        "reason": "鴻海今日-3.93%吐回昨日漲幅，基本面無變化，降回neutral。"
+      },
+      {
+        "scope": "stocks.TSM.direction",
+        "prev": "bullish",
+        "curr": "neutral",
+        "reason": "TSM ADR今日盤前-2.88%至約421（前日434.11），隨2330台股調整。法說倒數前波動加大，從bullish暫降neutral，等待7/16確認。"
+      },
+      {
+        "scope": "stocks.NVDA.direction",
+        "prev": "bullish",
+        "curr": "neutral_cautious",
+        "reason": "SOX上週-2.3%壓力持續，CPI數據今晚是關鍵變數；法說前整合，從bullish降為neutral_cautious。"
+      }
+    ],
+    "alerts_added": [
+      "alert-us-cpi-tonight-20260714",
+      "alert-mtk-chip-pressure-20260714",
+      "alert-taiex-intraday-low-43654",
+      "alert-foreign-reversal-signal-20260714"
+    ],
+    "alerts_removed": [
+      "alert-us-cpi-warsh-20260714（已進入今日，更新為alert-us-cpi-tonight-20260714）",
+      "alert-mtk-open-high-close-low-20260713（已升級為alert-mtk-chip-pressure-20260714，嚴重性上升）",
+      "alert-foreign-direction-unconfirmed-20260713（已更新為alert-foreign-reversal-signal-20260714）"
+    ],
+    "alerts_retained": [
+      {
+        "alert_id": "alert-tsmc-earnings-call-20260716",
+        "note": "法說進入48小時倒數，body更新強調三大事項（毛利率/全年財測/CoWoS擴產），level維持critical"
+      },
+      {
+        "alert_id": "alert-asml-earnings-20260716",
+        "note": "維持info，無變化"
+      }
+    ],
+    "alerts_upgraded": [
+      {
+        "alert_id": "alert-mtk-chip-pressure-20260714",
+        "prev_alert_id": "alert-mtk-open-high-close-low-20260713",
+        "prev_level": "warning",
+        "curr_level": "warning",
+        "note": "聯發科警訊升級：昨日開高走低，今日延續且跌破3,900關鍵支撐，連兩日惡化，嚴重性提升"
+      }
+    ]
+  }
+}

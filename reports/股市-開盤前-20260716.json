@@ -1,0 +1,441 @@
+{
+  "_schema_version": 3,
+  "type": "morning",
+  "report_file": "股市-開盤前-20260716.md",
+  "date": "2026-07-16",
+  "weekday": "週四",
+  "generated_at": "2026-07-16T07:35:00+08:00",
+  "market_view": {
+    "level": "cautious-bullish",
+    "confidence": 0.68,
+    "headline": "PPI+CPI雙降溫(5.5%/3.5%)壓制升息預期，AAPL+4.01%領攻科技、台股昨收45,631(+2%)；今日核心催化劑為台積電Q2法說14:00（GM能否突破67.5%決定短期走向）"
+  },
+  "indices": [
+    {
+      "name": "道瓊工業",
+      "ticker": "DJI",
+      "value": 52659,
+      "change_pct": 0.28,
+      "trend": "neutral",
+      "note": "7/15 收 52,659，能源股穩定，PPI 後整體溫和上漲"
+    },
+    {
+      "name": "S&P 500",
+      "ticker": "SPX",
+      "value": 7572,
+      "change_pct": 0.39,
+      "trend": "bullish",
+      "note": "7/15 收 7,572，PPI 降溫帶動，守住 7,550 關鍵支撐"
+    },
+    {
+      "name": "Nasdaq",
+      "ticker": "IXIC",
+      "value": 26269,
+      "change_pct": 0.61,
+      "trend": "bullish",
+      "note": "7/15 收 26,269，AAPL +4.01% 帶頭，科技全面收漲"
+    },
+    {
+      "name": "費城半導體",
+      "ticker": "SOX",
+      "value": 13050,
+      "change_pct": 0.8,
+      "trend": "bullish",
+      "note": "7/15 估 ~13,050，SK Hynix HBM +22% 引爆記憶體族群，NVDA 穩盤"
+    },
+    {
+      "name": "VIX 恐慌指數",
+      "ticker": "VIX",
+      "value": 15.03,
+      "change_pct": -1.2,
+      "trend": "neutral",
+      "note": "7/15 收 15.03，守在 15 心理關卡附近，市場情緒尚穩"
+    },
+    {
+      "name": "美 10Y 殖利率",
+      "ticker": "US10Y",
+      "value": 4.57,
+      "change_pct": -0.13,
+      "trend": "bullish",
+      "note": "7/15 收 4.57%，PPI 後自 4.63% 高點回落 6bps，利率壓力暫緩"
+    },
+    {
+      "name": "美元指數",
+      "ticker": "DXY",
+      "value": 100.1,
+      "change_pct": -0.5,
+      "trend": "bullish",
+      "note": "7/15 ~100.1，PPI 軟化後美元走弱，台幣/外資匯率環境改善"
+    },
+    {
+      "name": "Brent 原油",
+      "ticker": "BRENT",
+      "value": 80.17,
+      "change_pct": 1.05,
+      "trend": "neutral",
+      "note": "7/15 收 $80.17，自 $87 高點降溫（-8%），美伊衝突持續但初期恐慌消化"
+    },
+    {
+      "name": "加權指數 TAIEX",
+      "ticker": "TWII",
+      "value": 45631,
+      "change_pct": 2.0,
+      "trend": "bullish",
+      "note": "7/15 收 45,631（+894 點 +2.00%），CPI+PPI 連兩日降溫驅動外資回補"
+    },
+    {
+      "name": "台指期夜盤",
+      "ticker": "TXF",
+      "value": 46114,
+      "change_pct": 1.06,
+      "trend": "bullish",
+      "note": "7/15 夜盤收 ~46,114（+48 點），PPI 後進一步拉升，隱含今日開盤 46,000–46,200"
+    }
+  ],
+  "stocks": [
+    {
+      "signal_id": "stk-2330-2026-07-16-morning",
+      "ticker": "2330",
+      "name": "台積電",
+      "market": "TW",
+      "signal": "🟢",
+      "direction": "bullish",
+      "confidence": 0.78,
+      "view": "今日 Q2 法說 14:00 為最大催化劑：EPS 共識 $3.83(+55% YoY)、Revenue $39.5–40B、GM 65.5–67.5%。若 GM ≥ 67.5% 或 CoWoS H2 出貨量超預期，可看台積電 2,530–2,560；法說前台指期 +48 點隱含正面開盤，昨收 2,440",
+      "rationale": "台積電法說日(今日14:00)多頭最強催化劑，TSM ADR昨$420.71守穩，台指期夜盤+48點確認正面氛圍",
+      "price": 2440,
+      "change_pct": 0.83,
+      "support": 2420,
+      "resistance": 2500,
+      "stop_loss": 2380,
+      "target": 2550,
+      "technicals": {
+        "rsi14": 56,
+        "macd": "轉正交叉，短多訊號延續",
+        "ma_alignment": "月線 2,400 支撐，5 日線 2,450 壓力，法說突破後看月線上方多頭格局"
+      },
+      "valuation": {
+        "pe": 28,
+        "pe_percentile_5y": 62,
+        "verdict": "偏貴但法說 EPS 上修可合理化；若 EPS 提升至 $3.90+，目標 P/E 28x → 2,560"
+      },
+      "sources": [
+        "https://focustaiwan.tw/business/202607150015",
+        "https://www.techtimes.com/articles/320142/20260711/tsmc-q2-earnings-july-16-three-cowos-signals-that-test-ais-spending-ceiling.htm",
+        "https://investor.tsmc.com/english/quarterly-results/teleconference"
+      ],
+      "expires_at": "2026-07-16T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-2454-2026-07-16-morning",
+      "ticker": "2454",
+      "name": "聯發科",
+      "market": "TW",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.55,
+      "view": "昨收 3,740（+2.19%），SK Hynix HBM +22% 外溢效應帶動反彈，AI ASIC 轉型故事完整（高盛目標 2,454 元），但自 4,800 高點下降通道尚未完全突破，MA5 < MA20 空頭排列。需突破 3,900 確認底部翻轉",
+      "rationale": "SK Hynix HBM爆發與AI ASIC轉型支撐，但技術面下降趨勢尚未突破，信心略升至0.55",
+      "price": 3740,
+      "change_pct": 2.19,
+      "support": 3650,
+      "resistance": 3900,
+      "stop_loss": 3580,
+      "target": 4000,
+      "technicals": {
+        "rsi14": 52,
+        "macd": "負值但縮小中，MACD 柱狀由負轉縮，底部可能形成",
+        "ma_alignment": "MA5 < MA20（空頭排列），但 3,740 強力反彈暗示底部可能確認中"
+      },
+      "valuation": {
+        "pe": 42,
+        "pe_percentile_5y": 55,
+        "verdict": "AI 轉型溢價，H2 NRE 收入兌現為估值支撐關鍵"
+      },
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/2454.TW",
+        "https://www.sinotrade.com.tw/richclub/hotstock/%E8%81%AF%E7%99%BC%E7%A7%91-2454-%E6%B3%95%E8%AA%AA%E6%9C%83%E5%89%8D%E5%A4%95%E8%A9%B2%E7%95%99%E6%84%8F%E4%BB%80%E9%BA%BC-%E6%BC%B2%E5%81%9C2-090%E5%85%83%E5%89%B5%E5%A7%8B%E9%AB%98-AI-ASIC%E6%A5%AD%E5%8B%99%E9%BB%9E%E7%81%AB-%E5%A4%96%E8%B3%87%E5%96%8A%E9%80%B2%E4%B8%8A%E7%9C%8B2-454%E5%85%83-%E8%82%A1%E5%B8%82%E8%A9%B1%E9%A1%8C-69e6e8f386807e0a530a4ccb"
+      ],
+      "expires_at": "2026-07-16T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-2317-2026-07-16-morning",
+      "ticker": "2317",
+      "name": "鴻海",
+      "market": "TW",
+      "signal": "🟢",
+      "direction": "bullish",
+      "confidence": 0.65,
+      "view": "昨收 239（+1.49%），上半年累計營收 4.64 兆（+35% YoY）。AI 機櫃通吃 NVIDIA Vera Rubin NVL72、HGX NVL8、MGX 三大平台，2026E EPS ~14 元、2027E EPS 23.2 元，目標價 315 元（法人）。台積電法說若確認 H2 AI 需求，鴻海 AI 機櫃出貨能見度同步強化",
+      "rationale": "AI機櫃三大NVIDIA平台全覆蓋，H1營收+35%，法說催化劑透過供應鏈外溢，信心升至0.65",
+      "price": 239,
+      "change_pct": 1.49,
+      "support": 235,
+      "resistance": 250,
+      "stop_loss": 228,
+      "target": 265,
+      "technicals": {
+        "rsi14": 58,
+        "macd": "正區間，短多持續",
+        "ma_alignment": "均線多頭排列，月線 228 元強支撐，近期 250 壓力區"
+      },
+      "valuation": {
+        "pe": 17,
+        "pe_percentile_5y": 55,
+        "verdict": "P/E 17x 相對低估（AI轉型重估中），目標 13.5x * 2027E EPS 23 = 315元"
+      },
+      "sources": [
+        "https://tw.stock.yahoo.com/news/%E7%9B%AE%E6%A8%99%E5%83%B9%E9%A3%86%E4%B8%8A315%E5%85%83-%E9%B4%BB%E6%B5%B7eps%E9%A0%90%E4%BC%B023%E5%85%83-%E9%80%9A%E5%90%83%E8%BC%9D%E9%81%943%E5%A4%A7ai%E5%B9%B3%E5%8F%B0-%E9%BB%83%E4%BB%81%E5%8B%B3%E5%96%8A-%E4%B8%8B%E5%8D%8A%E5%B9%B4%E5%8F%B0%E7%81%A3%E6%9C%83%E5%BE%88%E5%BF%99-063000652.html",
+        "https://statementdog.com/news/17005"
+      ],
+      "expires_at": "2026-07-16T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-NVDA-2026-07-16-morning",
+      "ticker": "NVDA",
+      "name": "輝達",
+      "market": "US",
+      "signal": "🟢",
+      "direction": "bullish",
+      "confidence": 0.72,
+      "view": "昨收 $212.50（+0.33%），市值 $5.1 兆，H200 中國白名單出貨已啟動，Q1 FY27 Revenue $81.6B（+85% YoY）、Data Center $75.2B（+92%）。$212 接近近期高點，台積電法說若確認 CoWoS 需求超預期，NVDA 突破 $215–220 機率高",
+      "rationale": "AI需求不減，H200中國出貨啟動，$80B回購，台積電法說CoWoS指引為近期觸媒",
+      "price": 212.5,
+      "change_pct": 0.33,
+      "support": 205,
+      "resistance": 220,
+      "stop_loss": 200,
+      "target": 228,
+      "technicals": {
+        "rsi14": 62,
+        "macd": "正區間，動能持續",
+        "ma_alignment": "短中長均線多頭排列，$212 測試近期高點"
+      },
+      "valuation": {
+        "pe": 35,
+        "pe_percentile_5y": 65,
+        "verdict": "NTM P/E 35x，AI 超級週期支撐高溢價，GB300 交接期無明顯缺口"
+      },
+      "sources": [
+        "https://www.fxleaders.com/news/2026/07/15/nvidia-nvda-stock-price-forecast-nvda-tests-212-as-ai-demand-and-china-shipments-lift-outlook/",
+        "https://finance.yahoo.com/quote/NVDA/"
+      ],
+      "expires_at": "2026-07-16T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-TSLA-2026-07-16-morning",
+      "ticker": "TSLA",
+      "name": "特斯拉",
+      "market": "US",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.45,
+      "view": "昨收 $399.88（+0.97%），接近 $400 整數關卡心理壓力位。EV 交付量 H1 未大幅超預期，FSD 授權收入認列進度待確認。能源業務（Megapack）穩健，但整體無明確突破訊號，維持震盪整理",
+      "rationale": "$400整數關卡壓力明顯，缺乏近期基本面催化劑，等待突破確認",
+      "price": 399.88,
+      "change_pct": 0.97,
+      "support": 385,
+      "resistance": 415,
+      "stop_loss": 370,
+      "target": 420,
+      "technicals": {
+        "rsi14": 51,
+        "macd": "零軸附近整理，無方向訊號",
+        "ma_alignment": "短中期均線糾結，$400 為近期關鍵分水嶺"
+      },
+      "valuation": {
+        "pe": 85,
+        "pe_percentile_5y": 45,
+        "verdict": "高估值需 FSD/Robotaxi 收入兌現，目前仍是預期遊戲"
+      },
+      "sources": [
+        "https://finance.yahoo.com/quote/TSLA/"
+      ],
+      "expires_at": "2026-07-16T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-AAPL-2026-07-16-morning",
+      "ticker": "AAPL",
+      "name": "蘋果",
+      "market": "US",
+      "signal": "🟢",
+      "direction": "bullish",
+      "confidence": 0.65,
+      "view": "昨收 $327.50（+4.01%）——為近期最大單日漲幅，疑似 Apple Intelligence 重大服務/模型合作公告，iPhone 17 Pro 備貨強勁（台積電 3nm 受惠）。短期 RSI 接近超買（~66），但趨勢轉多，回測 $320 支撐可加碼",
+      "rationale": "昨日+4.01%突破前高，Apple Intelligence催化下信號由neutral翻bullish，台積電訂單正面效應",
+      "price": 327.5,
+      "change_pct": 4.01,
+      "support": 320,
+      "resistance": 335,
+      "stop_loss": 312,
+      "target": 342,
+      "technicals": {
+        "rsi14": 66,
+        "macd": "轉強穿越信號線，動能加速",
+        "ma_alignment": "均線多頭排列，昨日突破近期整理區，量價俱揚"
+      },
+      "valuation": {
+        "pe": 30,
+        "pe_percentile_5y": 60,
+        "verdict": "AI 溢價重評估中，iPhone 超級週期若確認則估值可進一步向上"
+      },
+      "sources": [
+        "https://finance.yahoo.com/quote/AAPL/",
+        "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-july-15-2026"
+      ],
+      "expires_at": "2026-07-16T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-TSM-2026-07-16-morning",
+      "ticker": "TSM",
+      "name": "台積電ADR",
+      "market": "US",
+      "signal": "🟢",
+      "direction": "bullish",
+      "confidence": 0.75,
+      "view": "昨收 $420.71（-0.21%），日內區間 $418.86–$431.06，市值 $1.95 兆。法說今日（7/16 台北 14:00）為最大短期催化劑：若 GM ≥ 67.5% + H2 收入上修，目標 $440–450；若 GM < 65.5% 恐回測 $408。法說前整理合理，多頭格局維持",
+      "rationale": "法說日前夕守穩$420，台指期夜盤+48點確認正面開盤，法說上行空間>下行空間",
+      "price": 420.71,
+      "change_pct": -0.21,
+      "support": 415,
+      "resistance": 430,
+      "stop_loss": 408,
+      "target": 445,
+      "technicals": {
+        "rsi14": 55,
+        "macd": "轉正區間，短期多頭格局",
+        "ma_alignment": "均線偏多，法說前法律區間 $418-431 整理"
+      },
+      "valuation": {
+        "pe": 28,
+        "pe_percentile_5y": 62,
+        "verdict": "市值 $1.95 兆，法說EPS上修可推目標至 $445-450（NTM P/E 28-30x）"
+      },
+      "sources": [
+        "https://finance.yahoo.com/quote/TSM/",
+        "https://www.tradingkey.com/analysis/stocks/us-stocks/262031904-tsmc-tsm-stock-forecast-july-15-2026-june-revenue-q2-earnings-tradingkey",
+        "https://investingengineer.com/tsmc-earnings-preview-july-16-2026/"
+      ],
+      "expires_at": "2026-07-16T13:30:00+08:00"
+    }
+  ],
+  "alerts": [
+    {
+      "alert_id": "alt-tsmc-q2-earnings-july16",
+      "level": "warning",
+      "text": "【今日】台積電Q2法說14:00開始：EPS共識$3.83(+55% YoY)、Revenue $39.5-40B、GM指引65.5-67.5%。若GM≥67.5%觸發重評估（目標2,550/TSM $445）；若GM<65.5%恐回吐。CoWoS H2出貨量指引、2nm量產時程為三大關注點",
+      "tickers": ["TSM", "2330", "2454", "2317", "NVDA"],
+      "url": "https://investor.tsmc.com/english/quarterly-results/teleconference",
+      "source": "TSMC IR"
+    },
+    {
+      "alert_id": "alt-ppi-cpi-double-cooling",
+      "level": "info",
+      "text": "美國6月PPI年增5.5%(預期6.2%)、核心PPI 4.7%(預期5.1%)；繼CPI 3.5%低於預期後再次確認通膨降溫。7月Fed升息概率從42%降至~17%，10Y殖利率回落至4.57%，美元弱化有利外資回補台股",
+      "tickers": ["SPX", "TWII"],
+      "url": "https://money.udn.com/money/story/11112/9630207",
+      "source": "經濟日報"
+    },
+    {
+      "alert_id": "alt-sk-hynix-hbm-record",
+      "level": "info",
+      "text": "SK Hynix ADR昨+22%創歷史新高，HBM4/CoWoS需求爆發遠超預期。台積電CoWoS封裝訂單受惠，聯發科AI HBM介面晶片連帶看好，南亞科/華邦電等台灣記憶體廠可能外溢受惠",
+      "tickers": ["2330", "2454", "TSM"],
+      "url": "https://www.odaily.news/en/post/5211903",
+      "source": "Odaily"
+    },
+    {
+      "alert_id": "alt-aapl-ai-surge",
+      "level": "info",
+      "text": "Apple(AAPL)昨+4.01%($327.50)近期最大單日漲幅，疑似Apple Intelligence重大服務/模型合作公告（TBC）。iPhone 17 Pro台積電3nm備貨受惠，蘋果供應鏈（大立光、可成）留意開盤動向",
+      "tickers": ["AAPL", "TSM", "2330"],
+      "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-july-15-2026",
+      "source": "TheStreet"
+    },
+    {
+      "alert_id": "alt-iran-oil-blockade",
+      "level": "info",
+      "text": "美伊衝突持續，但Brent原油從$87高點降溫至$80.17(+1.05%)，市場初期恐慌已部分消化。霍爾木茲海峽封鎖威脅仍在——若油價再突破$82-85，通膨敘事恐再起，注意Fed政策預期重估風險",
+      "tickers": ["BRENT"],
+      "url": "https://tradingeconomics.com/commodity/crude-oil",
+      "source": "Trading Economics"
+    },
+    {
+      "alert_id": "alt-nvda-h200-china-shipment",
+      "level": "info",
+      "text": "NVIDIA H200 AI晶片已通過合規開始向中國出貨（新加坡/日本/馬來西亞設白名單），中國AI基建需求回流。台積電CoWoS產能受惠，NVDA維持$212穩盤，目標$225-228",
+      "tickers": ["NVDA", "TSM"],
+      "url": "https://www.fxleaders.com/news/2026/07/15/nvidia-nvda-stock-price-forecast-nvda-tests-212-as-ai-demand-and-china-shipments-lift-outlook/",
+      "source": "FX Leaders"
+    }
+  ],
+  "sector_rotation": {
+    "strong": ["AI晶片/CoWoS封裝", "HBM記憶體", "蘋果供應鏈", "AI伺服器代工"],
+    "weak": ["傳統IT服務(IBM-25%)", "高油價受害股(航運/石化)", "美元敏感股"],
+    "watch": ["能源股(油價降溫但風險未除)", "Fed政策敏感債券代理股", "台積電法說後供應鏈反應"]
+  },
+  "whats_changed": {
+    "compared_to": "股市-開盤前-20260715.md",
+    "compared_to_date": "2026-07-15",
+    "new": [
+      {
+        "type": "stock_direction",
+        "summary": "AAPL 由 neutral 翻 bullish——昨日+4.01%($327.50→+$12.64)突破近期高點，疑似 Apple Intelligence 重大公告",
+        "ticker": "AAPL",
+        "from": "neutral",
+        "to": "bullish",
+        "tickers": ["AAPL"]
+      },
+      {
+        "type": "alert",
+        "summary": "新增 PPI+CPI 雙降溫警示：6月PPI 5.5%(預期6.2%)，7月升息概率從42%降至17%",
+        "alert_id": "alt-ppi-cpi-double-cooling",
+        "tickers": ["SPX", "TWII"]
+      },
+      {
+        "type": "alert",
+        "summary": "新增 SK Hynix HBM+22% 記錄新高警示，CoWoS 需求爆發外溢台積電/聯發科",
+        "alert_id": "alt-sk-hynix-hbm-record",
+        "tickers": ["2330", "2454", "TSM"]
+      },
+      {
+        "type": "alert",
+        "summary": "新增 Apple AI Surge 警示：AAPL+4.01%台積電3nm供應鏈受惠",
+        "alert_id": "alt-aapl-ai-surge",
+        "tickers": ["AAPL", "TSM", "2330"]
+      }
+    ],
+    "strengthened": [
+      {
+        "type": "alert",
+        "summary": "alt-tsmc-q2-earnings-july16 由「明日法說」升級為「今日法說（14:00）」，法說實際登場，不再是倒數，為全日最重大催化劑",
+        "alert_id": "alt-tsmc-q2-earnings-july16",
+        "tickers": ["TSM", "2330", "2454", "2317", "NVDA"]
+      },
+      {
+        "type": "stock_direction",
+        "summary": "台積電(2330) 維持 bullish，信心從 0.72 升至 0.78——法說當日催化劑升級，台指期夜盤+48點確認正面開盤",
+        "ticker": "2330",
+        "from": "bullish(0.72)",
+        "to": "bullish(0.78)",
+        "tickers": ["2330"]
+      },
+      {
+        "type": "stock_direction",
+        "summary": "鴻海(2317) 由 neutral 強化為 bullish(0.65)——AI機櫃三大NVIDIA平台全覆蓋，法說催化劑外溢效應提升信心",
+        "ticker": "2317",
+        "from": "neutral(0.5)",
+        "to": "bullish(0.65)",
+        "tickers": ["2317"]
+      }
+    ],
+    "removed": [
+      {
+        "type": "alert",
+        "summary": "alt-fed-warsh-hawkish 從 warning 降級為隱性風險：PPI+CPI 雙降溫後市場升息預期大幅退潮（42%→17%），該 alert 短期衝擊已消化",
+        "alert_id": "alt-fed-warsh-hawkish",
+        "tickers": []
+      }
+    ]
+  }
+}

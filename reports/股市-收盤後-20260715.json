@@ -1,0 +1,354 @@
+{
+  "_schema_version": "3",
+  "type": "close",
+  "report_file": "股市-收盤後-20260715.md",
+  "date": "2026-07-15",
+  "weekday": "週三",
+  "generated_at": "2026-07-15T14:05:00+08:00",
+  "expires_at": "2026-07-16T09:00:00+08:00",
+  "whats_changed": {
+    "_note": "與前一份收盤後報告（2026-07-14）比較",
+    "prev_report": "股市-收盤後-20260714.md",
+    "market_view_changes": [
+      {
+        "field": "tw_overall",
+        "prev": "bearish_correction",
+        "current": "tentative_recovery",
+        "note": "加權指數從前日估值低點小幅回穩+25點，但日K連二黑，回穩力道仍弱"
+      },
+      {
+        "field": "us_overall",
+        "prev": "neutral_cautious",
+        "current": "bullish",
+        "note": "美國6月CPI 3.5%遠優於預期3.8%，核心CPI 2.6%低於預期2.9%，Fed升息機率大跌，Nasdaq+0.9%"
+      }
+    ],
+    "stock_direction_changes": [
+      {
+        "ticker": "2454",
+        "name": "聯發科",
+        "prev_direction": "bearish",
+        "current_direction": "bearish",
+        "prev_price": 3865,
+        "current_price": 3660,
+        "note": "方向不變但跌幅加重：前日估3,865（實際~3,825），今日確認3,660（-4.31%）；連續破位，警訊升級，confidence從high→high且更確定"
+      },
+      {
+        "ticker": "NVDA",
+        "name": "輝達",
+        "prev_direction": "neutral_cautious",
+        "current_direction": "bullish",
+        "note": "CPI驚喜帶動7/14美市NVDA+4%至$211.86，降息預期回升提振高倍率半導體估值"
+      },
+      {
+        "ticker": "TAIEX",
+        "prev_direction": "down",
+        "current_direction": "slight_up",
+        "note": "前日-642pt（實際44,737.95），今日估+25pt（44,762），方向轉正但幅度微小"
+      }
+    ],
+    "new_alerts": [
+      {
+        "alert_id": "alert-military-rotation-20260715",
+        "type": "sector_rotation",
+        "note": "資金流入軍工/國防板塊：漢翔+5.17%、雷虎+5.81%、亞航漲停；美伊衝突持續+立院7/16無人機審查雙重催化"
+      },
+      {
+        "alert_id": "alert-2454-support-break-20260715",
+        "type": "support_break",
+        "note": "聯發科再破支撐：今日3,660跌破3,700，前日已破3,800，支撐接連失守，下一關注3,600"
+      },
+      {
+        "alert_id": "alert-tsmc-law-conference-20260716",
+        "type": "event_catalyst",
+        "note": "台積電Q2法說明日14:00，本週最大決策觸媒；超預期→2,550-2,600，僅達下緣→2,380測試"
+      }
+    ],
+    "resolved_alerts": [],
+    "data_quality_notes": "前日(7/14)收盤後報告含多項估計值；今日更正：TAIEX實際收44,737.95（前估44,683），2330實際收2,420（前估2,415），2317實際收236.5（前估232.5），2454實際~3,825（前估3,865）"
+  },
+  "market_view": {
+    "tw_overall": "tentative_recovery",
+    "us_overall": "bullish",
+    "short_term_bias": "neutral_cautious",
+    "key_risk": "TSMC法說若僅達財測下緣則賣消息風險（2,380測試）；聯發科跌破3,600恐引發IC設計板塊連鎖殺壓；外資連8日賣超量大；美伊衝突若升溫影響油價通膨預期；昇達科停牌重大訊息待確認",
+    "key_catalyst": "台積電Q2法說7/16 14:00（毛利≥67.5%+上調全年指引→爆漲觸媒）；立院7/16無人機條例審查（軍工股繼續利多）；Fed降息預期回升（CPI 3.5%超預期）；TSM ADR 7/15盤後反應法說預期",
+    "note": "今日小幅回穩但日K連二黑形態偏空；關鍵在明日法說，等待法說結果確立方向。聯發科為近期主要風險點，應緊盯3,600支撐。軍工板塊受地緣政治加持，為盤面亮點。"
+  },
+  "indices": {
+    "TAIEX": {
+      "signal_id": "idx-TAIEX-2026-07-15-close",
+      "close": 44762,
+      "prev_close": 44737.95,
+      "change": 24.05,
+      "change_pct": 0.054,
+      "direction": "slight_up",
+      "intraday_swing": 1000,
+      "note": "估計值（基於盤後媒體報導「收漲25點」）；實際以TWSE官方為準。日K連二黑（高開低走），最低點約44,200，盤中震幅逾千點。前日實際收盤44,737.95（修正前估44,683）。",
+      "data_quality": "estimated",
+      "sources": [
+        "https://tw.stock.yahoo.com/news/%E5%8F%B0%E8%82%A1%E7%9B%A4%E5%BE%8C-%E9%9C%87%E7%9B%AA%E9%80%BE%E5%8D%83%E9%BB%9E-%E6%94%B6%E6%BC%B225%E9%BB%9E-%E6%97%A5k%E9%80%A3%E4%BA%8C%E9%BB%91-075900429.html",
+        "https://www.twse.com.tw/zh/indices/taiex/mi-5min-hist.html"
+      ]
+    }
+  },
+  "stocks": [
+    {
+      "ticker": "2330",
+      "name": "台積電",
+      "market": "TW",
+      "signal_id": "stk-2330-2026-07-15-close",
+      "direction": "neutral_positive",
+      "confidence": "medium",
+      "price": 2445,
+      "prev_price": 2420,
+      "change": 25,
+      "change_pct": 1.03,
+      "rationale": "今日估收2,445（+1.03%），盤中高2,455低2,415，10:37報2,440；法說前買盤謹慎入場。前日實際確認收2,420（非前報告估2,415）。明日7/16 14:00 Q2法說是最大決策點：Q3收入指引$390~402B，毛利65.5~67.5%；若超預期（毛利≥67.5%+上修全年>30%）看2,550-2,600；若僅達下緣則賣消息風險至2,380。TSM ADR 7/14美市$421.58穩定，盤前$420.71。",
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/2330.TW",
+        "https://www.sinotrade.com.tw/richclub/hotstock/%E5%8F%B0%E7%A9%8D%E9%9B%BB%E6%B3%95%E8%AA%AA%E6%9C%836%E5%A4%A7%E4%BA%AE%E9%BB%9E%E6%95%B4%E7%90%86",
+        "https://www.techtimes.com/articles/320142/20260711/tsmc-q2-earnings-july-16-three-cowos-signals-that-test-ais-spending-ceiling.htm",
+        "https://investor.tsmc.com/english/quarterly-results/2026/q2"
+      ],
+      "expires_at": "2026-07-16T09:00:00+08:00",
+      "data_quality": "estimated",
+      "alerts": [
+        {
+          "alert_id": "alert-tsmc-law-conference-20260716",
+          "level": "high",
+          "type": "event_catalyst",
+          "message": "Q2法說明日14:00；超預期→2,550+，僅達下緣→賣消息2,380測試",
+          "url": "https://investor.tsmc.com/english/quarterly-results/2026/q2",
+          "source": "TSMC IR"
+        }
+      ]
+    },
+    {
+      "ticker": "2454",
+      "name": "聯發科",
+      "market": "TW",
+      "signal_id": "stk-2454-2026-07-15-close",
+      "direction": "bearish",
+      "confidence": "high",
+      "price": 3660,
+      "prev_price": 3825,
+      "change": -165,
+      "change_pct": -4.31,
+      "rationale": "今日確認收3,660（-4.31%），再破多道支撐。前日估3,865，實際約3,825，今再下跌165元。AI ASIC$20億目標翻倍為長線利多，但短線籌碼面持續惡化，外資和散戶雙重賣壓。3,700、3,800支撐接連失守，下一支撐3,600；若跌破恐測3,500。技術形態偏空，不建議短線進場。",
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/2454.TW",
+        "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2454",
+        "https://www.wantgoo.com/stock/2454"
+      ],
+      "expires_at": "2026-07-16T09:00:00+08:00",
+      "data_quality": "confirmed",
+      "alerts": [
+        {
+          "alert_id": "alert-2454-support-break-20260715",
+          "level": "high",
+          "type": "support_break",
+          "message": "聯發科再破支撐3,700，連續破位；關注3,600是否守住，跌破恐測3,500",
+          "url": "https://tw.stock.yahoo.com/quote/2454.TW",
+          "source": "Yahoo Stock TW"
+        }
+      ]
+    },
+    {
+      "ticker": "2317",
+      "name": "鴻海",
+      "market": "TW",
+      "signal_id": "stk-2317-2026-07-15-close",
+      "direction": "neutral",
+      "confidence": "medium",
+      "price": 235.5,
+      "prev_price": 236.5,
+      "change": -1,
+      "change_pct": -0.42,
+      "rationale": "今日確認收235.5（-0.42%），前日實際收236.5（非前估232.5）。量縮（46,505張），市場等待大盤方向確認。AI伺服器代工與電動車基本面不變，屬橫盤整理。支撐230；若TSMC法說強勁，供應鏈有望跟漲。前估低點232.5為誤差，實際走勢比昨日估計更穩健。",
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/2317.TW",
+        "https://www.cnyes.com/twstock/ps_historyprice.aspx?code=2317"
+      ],
+      "expires_at": "2026-07-16T09:00:00+08:00",
+      "data_quality": "confirmed"
+    },
+    {
+      "ticker": "NVDA",
+      "name": "輝達",
+      "market": "US",
+      "signal_id": "stk-NVDA-2026-07-15-close",
+      "direction": "bullish",
+      "confidence": "medium",
+      "price": 211.86,
+      "prev_price": 210.96,
+      "change": 0.9,
+      "change_pct": 4.0,
+      "note": "7/14美股收盤確認值。今晚（7/15台灣時間21:30）美股開盤後實際走勢視盤後消息而定。",
+      "rationale": "7/14美市NVDA+4%至$211.86，受CPI超預期（3.5%vs3.8%預期）帶動半導體族群全線飆漲；SOX指數同步上揚。台積電法說7/16若超預期，可進一步帶動NVDA突破$215-220。52週高點$235.74（5月），當前仍距高點10.2%。降息預期回升利好高倍率成長股估值。",
+      "sources": [
+        "https://www.tradingkey.com/news/market-movers/262029663-market-movers-nvda-20260714",
+        "https://www.marketbeat.com/instant-alerts/nvidia-nasdaqnvda-stock-price-up-41-whats-next-2026-07-14/",
+        "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-july-14-2026"
+      ],
+      "expires_at": "2026-07-16T09:00:00+08:00",
+      "data_quality": "confirmed"
+    },
+    {
+      "ticker": "TSLA",
+      "name": "特斯拉",
+      "market": "US",
+      "signal_id": "stk-TSLA-2026-07-15-close",
+      "direction": "neutral",
+      "confidence": "low",
+      "price": 393.05,
+      "prev_price": null,
+      "change": null,
+      "change_pct": null,
+      "note": "7/14美股收盤參考值。",
+      "rationale": "無重大觸媒，CPI利好帶動整體市場小漲，特斯拉收$393.05。今晚美股開盤後觀察Q2財報季是否有進一步消息。",
+      "sources": [
+        "https://finance.yahoo.com/quote/TSLA/"
+      ],
+      "expires_at": "2026-07-16T09:00:00+08:00",
+      "data_quality": "confirmed"
+    },
+    {
+      "ticker": "AAPL",
+      "name": "蘋果",
+      "market": "US",
+      "signal_id": "stk-AAPL-2026-07-15-close",
+      "direction": "neutral",
+      "confidence": "low",
+      "price": 315.42,
+      "prev_price": null,
+      "change": 0.56,
+      "change_pct": 0.18,
+      "note": "7/14美股收盤確認值。",
+      "rationale": "蘋果7/14微漲0.18%至$315.42，CPI利好但科技大型股反應偏謹慎，Q3財報前維持觀望。",
+      "sources": [
+        "https://finance.yahoo.com/quote/AAPL/"
+      ],
+      "expires_at": "2026-07-16T09:00:00+08:00",
+      "data_quality": "confirmed"
+    },
+    {
+      "ticker": "TSM",
+      "name": "台積電ADR",
+      "market": "US",
+      "signal_id": "stk-TSM-2026-07-15-close",
+      "direction": "neutral_positive",
+      "confidence": "medium",
+      "price": 421.58,
+      "prev_price": null,
+      "change": null,
+      "change_pct": null,
+      "note": "7/14美股收盤$421.58，盤前7/15報$420.71，微幅回落。",
+      "rationale": "法說前夕TSM ADR維持穩健，$420-422整理中。7/16台灣法說後反應更快（21:30台灣時間美市開盤）。若Q2超預期，TSM短期目標$440-450；若僅達預期，測試$410支撐。",
+      "sources": [
+        "https://finance.yahoo.com/quote/TSM/",
+        "https://investor.tsmc.com/english/quarterly-results/2026/q2"
+      ],
+      "expires_at": "2026-07-16T09:00:00+08:00",
+      "data_quality": "confirmed"
+    }
+  ],
+  "alerts": [
+    {
+      "alert_id": "alert-tsmc-law-conference-20260716",
+      "level": "critical",
+      "type": "event_catalyst",
+      "ticker": "2330",
+      "message": "【明日關鍵】台積電Q2法說2026/07/16 14:00。超預期（毛利≥67.5%+上修全年）→2,550+；僅達下緣→賣消息至2,380。CoWoS、2nm進度為市場焦點。",
+      "url": "https://investor.tsmc.com/english/quarterly-results/2026/q2",
+      "source": "TSMC IR"
+    },
+    {
+      "alert_id": "alert-2454-support-break-20260715",
+      "level": "high",
+      "type": "support_break",
+      "ticker": "2454",
+      "message": "聯發科連續破位（3,800→3,700→3,660），今日-4.31%確認。關注3,600是否守住；若破恐測3,500。短線不宜攤平。",
+      "url": "https://tw.stock.yahoo.com/quote/2454.TW",
+      "source": "Yahoo Stock TW / 玩股網"
+    },
+    {
+      "alert_id": "alert-military-rotation-20260715",
+      "level": "medium",
+      "type": "sector_rotation",
+      "ticker": null,
+      "message": "軍工/國防板塊強勢：漢翔+5.17%、雷虎+5.81%、亞航漲停。美伊衝突持續+立院7/16無人機條例審查雙重催化。資金輪動明顯，可能持續至法案通過。",
+      "url": "https://tw.stock.yahoo.com/news/%E3%80%90follow%E6%B3%95%E4%BA%BA%E3%80%91%E5%8F%B0%E8%82%A1%E9%9C%87%E7%9B%AA%E9%80%BE%E5%8D%83%E9%BB%9E%EF%BC%81%E6%8A%95%E4%BF%A1%E6%AD%BB%E5%AE%88%E5%A4%96%E8%B3%87%E9%80%A37%E7%A0%8D-%E7%BA%8C%E8%B3%A3%E8%B6%85195%E5%84%84%E5%85%83-070724988.html",
+      "source": "Yahoo Finance TW"
+    },
+    {
+      "alert_id": "alert-us-cpi-june2026",
+      "level": "medium",
+      "type": "macro_data",
+      "ticker": null,
+      "message": "美國6月CPI年增3.5%（預期3.8%），核心CPI 2.6%（預期2.9%）。Fed 7月升息機率從42%降至17%。利好全球科技股估值，Nasdaq+0.9%，NVDA+4%。",
+      "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-july-14-2026",
+      "source": "TheStreet / CNBC"
+    },
+    {
+      "alert_id": "alert-foreign-sell-streak-20260715",
+      "level": "medium",
+      "type": "institutional_flow",
+      "ticker": null,
+      "message": "外資估今日第8日連續賣超，7/14確認賣超195.77億（連7砍）。累計週賣超規模大，但今日預估縮至-80~100億，動能邊際遞減。",
+      "url": "https://www.twse.com.tw/zh/trading/foreign/t86.html",
+      "source": "TWSE 三大法人日報"
+    },
+    {
+      "alert_id": "alert-risedako-halt-20260715",
+      "level": "info",
+      "type": "special_event",
+      "ticker": "昇達科",
+      "message": "昇達科今日停牌，下午4pm召開重大訊息記者會，詳情待公布。",
+      "url": null,
+      "source": "盤中新聞"
+    }
+  ],
+  "institutional_flow": {
+    "date": "2026-07-15",
+    "data_quality": "estimated",
+    "foreign": {
+      "net_buy_sell": -90,
+      "unit": "億元TWD",
+      "consecutive_sell_days": 8,
+      "note": "估計值，第8日連續賣超；前日確認-195.77億，今日預估縮至-80~100億"
+    },
+    "trust_fund": {
+      "net_buy_sell": 70,
+      "unit": "億元TWD",
+      "note": "估計值，法說前持續加碼"
+    },
+    "dealer": {
+      "net_buy_sell": -25,
+      "unit": "億元TWD",
+      "note": "估計值，中性偏空"
+    },
+    "total_net": -45,
+    "confirmed_as_of": "2026-07-14",
+    "top_foreign_buy": ["台積電(2330)(估)", "漢翔(2634)(估)"],
+    "top_foreign_sell": ["友達(2409)(7/14確認居冠)", "聯發科(2454)(估)"]
+  },
+  "us_market_reference": {
+    "date": "2026-07-14",
+    "sp500": { "close": 7543.59, "change_pct": 0.38 },
+    "nasdaq": { "close": 26107.01, "change_pct": 0.9 },
+    "dow": { "close": 52508.27, "change_pct": 0.02 },
+    "cpi_june_2026": {
+      "headline_mom": -0.4,
+      "headline_yoy": 3.5,
+      "core_mom": 0.0,
+      "core_yoy": 2.6,
+      "vs_expectation": "大幅優於預期（headline預期3.8%，核心預期2.9%）",
+      "fed_impact": "7月升息機率從42%降至17%"
+    },
+    "sources": [
+      "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-july-14-2026",
+      "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-july-14-dow-sp-500-nasdaq-070833816.html"
+    ]
+  }
+}

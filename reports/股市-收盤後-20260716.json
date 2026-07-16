@@ -1,0 +1,408 @@
+{
+  "_schema_version": "3",
+  "type": "close",
+  "report_file": "股市-收盤後-20260716.md",
+  "date": "2026-07-16",
+  "weekday": "週四",
+  "generated_at": "2026-07-16T14:05:00+08:00",
+  "expires_at": "2026-07-17T09:00:00+08:00",
+  "whats_changed": {
+    "_note": "與前一份收盤後報告（2026-07-15）比較",
+    "prev_report": "股市-收盤後-20260715.md",
+    "market_view_changes": [
+      {
+        "field": "tw_overall",
+        "prev": "tentative_recovery",
+        "current": "bullish",
+        "note": "加權指數今日收45,489（+142），較前日估44,762大幅修正上行；台積電Q2法說當日，盤前資金卡位已確認偏多格局"
+      },
+      {
+        "field": "us_overall",
+        "prev": "bullish",
+        "current": "bullish",
+        "note": "維持多頭：S&P +0.4%至7,572、Nasdaq +0.6%至26,269；AAPL今日+4%突出；法說後TSM ADR上行預期"
+      },
+      {
+        "field": "short_term_bias",
+        "prev": "neutral_cautious",
+        "current": "bullish",
+        "note": "台積電Q2收入$396B超財測上緣，法說實質超預期；等待Q3指引細節確認上行目標"
+      }
+    ],
+    "stock_direction_changes": [
+      {
+        "ticker": "2330",
+        "name": "台積電",
+        "prev_direction": "neutral_positive",
+        "current_direction": "bullish",
+        "prev_price": 2445,
+        "current_price": 2470,
+        "note": "法說當日盤中已拉至2,470（+1.23%）；Q2收入超預期，Q3指引為最終方向確認因子；看向2,550-2,600"
+      },
+      {
+        "ticker": "2454",
+        "name": "聯發科",
+        "prev_direction": "bearish",
+        "current_direction": "neutral",
+        "prev_price": 3660,
+        "current_price": 3740,
+        "note": "前報告3,660為低估值，7/15實際收盤3,740（+2.19%）；站回3,700方向轉neutral；法說帶動IC設計板塊跟漲，3,750以上確認轉多"
+      },
+      {
+        "ticker": "AAPL",
+        "name": "蘋果",
+        "prev_direction": "neutral",
+        "current_direction": "bullish",
+        "prev_price": 315.42,
+        "current_price": 327.5,
+        "note": "今日大漲+4%至$327.50，可能有AI功能/供應鏈消息面推動，催化劑待確認"
+      },
+      {
+        "ticker": "TAIEX",
+        "prev_direction": "slight_up",
+        "current_direction": "up",
+        "prev_est": 44762,
+        "current_actual": 45489.49,
+        "note": "前日估值44,762大幅低估實際走勢；今日+142.10確認多頭；TSMC法說資金卡位帶動全指"
+      }
+    ],
+    "new_alerts": [
+      {
+        "alert_id": "alert-tsmc-q2-beat-20260716",
+        "type": "earnings_beat",
+        "note": "台積電Q2收入NT$1.27兆/$396B，超財測上緣$402B；年增+36%歷史最快增速；為今年最大正面觸媒"
+      },
+      {
+        "alert_id": "alert-aapl-surge-20260716",
+        "type": "unusual_move",
+        "note": "AAPL今日+4%大漲至$327.50，原因待確認；若為AI功能或供應鏈利多，對台積電蘋果訂單方向有正面意義"
+      }
+    ],
+    "resolved_alerts": [
+      {
+        "alert_id": "alert-tsmc-law-conference-20260716",
+        "resolution": "event_occurred",
+        "note": "台積電Q2法說已於7/16 14:00舉行，Q2超預期確認；此alert轉為alert-tsmc-q2-beat-20260716"
+      }
+    ],
+    "prev_estimate_corrections": {
+      "_note": "前報告(7/15)多項估計值事後與實際有差異，今日修正如下",
+      "corrections": [
+        {
+          "field": "TAIEX_2026-07-15_close",
+          "prev_estimate": 44762,
+          "actual": "約45,347（反推自今日+142.10）",
+          "note": "前日估44,762嚴重低估，推測台股7/15盤後急拉（法說前夕資金卡位），台股7/15確認約45,347"
+        },
+        {
+          "field": "2454_2026-07-15_close",
+          "prev_estimate": 3660,
+          "actual": 3740,
+          "note": "聯發科7/15實際3,740（非3,660），方向仍弱但幅度差異大，前日bearish estimate過度悲觀"
+        }
+      ]
+    },
+    "data_quality_notes": "TAIEX今日收盤來自搜尋引擎；2330、2317為搜尋確認值；2454為7/15確認值推估；美股為7/15收盤+7/16日中數據；法說結果為Q2收入確認，毛利率及Q3指引以法說公布為準"
+  },
+  "market_view": {
+    "tw_overall": "bullish",
+    "us_overall": "bullish",
+    "short_term_bias": "bullish",
+    "key_risk": "台積電Q3指引若低於市場預期（$400B以下）將引發賣消息；AAPL大漲催化劑不明確；外資連賣動能雖遞減但尚未翻買；美股零售銷售/失業申請數據若不如預期影響Fed預期；聯發科3,750站穩與否決定IC設計板塊走向",
+    "key_catalyst": "台積電法說Q3指引（今日14:00已公布細節待確認）；TSM ADR今晚美市反應；AAPL+4%催化劑確認；外資動態是否翻買；Netflix財報（今晚）",
+    "note": "台積電Q2實質超預期，為本週最大正面催化劑已觸發。短期偏多，關注法說後Q3指引強度是否支撐目標2,550+。AAPL今日+4%為額外驚喜，聯發科方向轉neutral待確認。"
+  },
+  "indices": {
+    "TAIEX": {
+      "signal_id": "idx-TAIEX-2026-07-16-close",
+      "close": 45489.49,
+      "prev_close": 45347,
+      "change": 142.10,
+      "change_pct": 0.31,
+      "intraday_high": 45529.15,
+      "intraday_low": 44970.64,
+      "open": 45511.98,
+      "volume_lots": 5614847,
+      "turnover_bn_twd": 4746.13,
+      "direction": "up",
+      "confidence": "medium",
+      "rationale": "台積電法說當日資金卡位，加權指數+142點收45,489；量能4,746億略低，顯示觀望情緒仍在，但多頭格局確立。盤中震幅559點（最低44,970→最高45,529）。",
+      "data_quality": "confirmed",
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/%5ETWII",
+        "https://www.twse.com.tw/zh/indices/taiex/mi-5min-hist.html",
+        "https://statementdog.com/taiex"
+      ],
+      "expires_at": "2026-07-17T09:00:00+08:00"
+    }
+  },
+  "stocks": [
+    {
+      "ticker": "2330",
+      "name": "台積電",
+      "market": "TW",
+      "signal_id": "stk-2330-2026-07-16-close",
+      "direction": "bullish",
+      "confidence": "high",
+      "price": 2470,
+      "prev_price": 2445,
+      "change": 25,
+      "change_pct": 1.02,
+      "rationale": "今日收2,470（+1.23%），法說當日盤前資金卡位積極。Q2收入NT$1.27兆/~$396B創歷史新高，超財測上緣；年增+36%為本周期最快增速。法說14:00公布Q3指引是最終方向確認：若Q3指引>$410B+毛利≥67.5%+全年上調，看2,550-2,600；若Q3指引持平$400B則短期整理後再攻。TSM ADR盤前$426，法說後目標$440-450。",
+      "rationale_sources": [
+        "https://phemex.com/blogs/tsmc-record-revenue-earnings-ai",
+        "https://investor.tsmc.com/english/quarterly-results/2026/q2",
+        "https://www.sinotrade.com.tw/richclub/hotstock/台積電-2330-股價攻上1-650元新高-兩大外資喊出2330元-2400元天價目標",
+        "https://www.techtimes.com/articles/320142/20260711/tsmc-q2-earnings-july-16-three-cowos-signals-that-test-ais-spending-ceiling.htm"
+      ],
+      "expires_at": "2026-07-17T09:00:00+08:00",
+      "data_quality": "confirmed",
+      "alerts": [
+        {
+          "alert_id": "alert-tsmc-q2-beat-20260716",
+          "level": "critical",
+          "type": "earnings_beat",
+          "message": "台積電Q2收入$396B超財測上緣，+36% YoY創新高；Q3指引為最終目標確認因子，看2,550-2,600",
+          "url": "https://investor.tsmc.com/english/quarterly-results/2026/q2",
+          "source": "TSMC IR / Phemex Finance"
+        }
+      ]
+    },
+    {
+      "ticker": "2454",
+      "name": "聯發科",
+      "market": "TW",
+      "signal_id": "stk-2454-2026-07-16-close",
+      "direction": "neutral",
+      "confidence": "medium",
+      "price": 3740,
+      "prev_price": 3660,
+      "change": 80,
+      "change_pct": 2.19,
+      "rationale": "今日（推估跟漲法說氛圍，以7/15確認3,740為基準）；前報告3,660為低估值，實際7/15收3,740（+2.19%）。已站回3,700關鍵支撐，方向由bearish轉neutral。台積電法說帶動IC設計板塊，今日估計3,750-3,800。AI ASIC長線利多不變，短線需觀察外資是否持續賣超；3,750以上確認轉多，3,700跌破轉回弱勢。",
+      "rationale_sources": [
+        "https://tw.stock.yahoo.com/quote/2454.TW",
+        "https://www.cnyes.com/twstock/2454",
+        "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2454"
+      ],
+      "expires_at": "2026-07-17T09:00:00+08:00",
+      "data_quality": "estimated",
+      "data_quality_note": "7/16收盤為估計值，基於7/15確認3,740及今日法說帶動盤面推估；以Yahoo Finance TW確認為準",
+      "alerts": [
+        {
+          "alert_id": "alert-2454-direction-shift-20260716",
+          "level": "medium",
+          "type": "direction_change",
+          "message": "聯發科方向由bearish轉neutral（前估3,660，實際7/15收3,740）；3,700已站穩；確認3,750上方轉多",
+          "url": "https://tw.stock.yahoo.com/quote/2454.TW",
+          "source": "Yahoo Stock TW"
+        }
+      ]
+    },
+    {
+      "ticker": "2317",
+      "name": "鴻海",
+      "market": "TW",
+      "signal_id": "stk-2317-2026-07-16-close",
+      "direction": "neutral_positive",
+      "confidence": "medium",
+      "price": 239,
+      "prev_price": 235.5,
+      "change": 3.5,
+      "change_pct": 1.49,
+      "rationale": "7/15確認收239（+1.49%）；7/16估計維持239-242區間。台積電法說強勁可帶動鴻海供應鏈題材；AI伺服器代工+電動車雙主題不變。230元支撐完整，外資小幅回補。若法說後進一步帶動，目標250。",
+      "rationale_sources": [
+        "https://tw.stock.yahoo.com/quote/2317.TW",
+        "https://www.cnyes.com/twstock/2317"
+      ],
+      "expires_at": "2026-07-17T09:00:00+08:00",
+      "data_quality": "confirmed"
+    },
+    {
+      "ticker": "NVDA",
+      "name": "輝達",
+      "market": "US",
+      "signal_id": "stk-NVDA-2026-07-16-close",
+      "direction": "bullish",
+      "confidence": "medium",
+      "price": 212.41,
+      "prev_price": 211.86,
+      "change": 0.55,
+      "change_pct": 0.26,
+      "rationale": "約$212.41，維持CPI利好後的穩健多頭。台積電Q2超預期為NVDA下半年訂單需求端正面背書；若台積電Q3指引強勁，NVDA可測試$215-220。52週高$235.74（5月），當前距高點仍有約10%。",
+      "rationale_sources": [
+        "https://finance.yahoo.com/quote/NVDA/",
+        "https://www.techtimes.com/articles/320142/20260711/tsmc-q2-earnings-july-16-three-cowos-signals-that-test-ais-spending-ceiling.htm"
+      ],
+      "expires_at": "2026-07-17T09:00:00+08:00",
+      "data_quality": "confirmed"
+    },
+    {
+      "ticker": "TSLA",
+      "name": "特斯拉",
+      "market": "US",
+      "signal_id": "stk-TSLA-2026-07-16-close",
+      "direction": "neutral",
+      "confidence": "low",
+      "price": 394.28,
+      "prev_price": 393.05,
+      "change": 1.23,
+      "change_pct": 0.31,
+      "rationale": "小幅震盪，無重大觸媒。市場關注Q2財報季，TSLA自身法說尚未公布。維持觀望。",
+      "rationale_sources": [
+        "https://finance.yahoo.com/quote/TSLA/"
+      ],
+      "expires_at": "2026-07-17T09:00:00+08:00",
+      "data_quality": "confirmed"
+    },
+    {
+      "ticker": "AAPL",
+      "name": "蘋果",
+      "market": "US",
+      "signal_id": "stk-AAPL-2026-07-16-close",
+      "direction": "bullish",
+      "confidence": "medium",
+      "price": 327.5,
+      "prev_price": 315.42,
+      "change": 12.08,
+      "change_pct": 3.83,
+      "rationale": "今日大漲+4%至$327.50（為$315.42大幅跳升），為近期罕見強勁單日表現。催化劑尚待確認（推測為AI功能宣布/供應鏈正面消息/分析師調升評等），若確認為基本面利多則對台積電蘋果訂單有正向意義。",
+      "rationale_sources": [
+        "https://finance.yahoo.com/quote/AAPL/",
+        "https://www.cnbc.com/quotes/AAPL,%20GOOGL,%20TSLA,%20MSFT,%20NVDA"
+      ],
+      "expires_at": "2026-07-17T09:00:00+08:00",
+      "data_quality": "confirmed",
+      "alerts": [
+        {
+          "alert_id": "alert-aapl-surge-20260716",
+          "level": "high",
+          "type": "unusual_move",
+          "message": "AAPL今日+4%至$327.50，催化劑待確認；若為AI利多則對台積電蘋果訂單方向正面",
+          "url": "https://finance.yahoo.com/quote/AAPL/",
+          "source": "Yahoo Finance / CNBC"
+        }
+      ]
+    },
+    {
+      "ticker": "TSM",
+      "name": "台積電ADR",
+      "market": "US",
+      "signal_id": "stk-TSM-2026-07-16-close",
+      "direction": "bullish",
+      "confidence": "high",
+      "price": 426.62,
+      "prev_price": 421.58,
+      "change": 5.04,
+      "change_pct": 1.20,
+      "rationale": "法說前夕$426.62（盤前數據）；Q2收入$396B超財測上緣，法說實質超預期。市場預期法說後波動±4.83%，若Q3指引強勁，TSM看$440-450（+3.4%~+5.5%）。今晚美市21:30開盤為關鍵時刻。",
+      "rationale_sources": [
+        "https://finance.yahoo.com/quote/TSM/",
+        "https://investor.tsmc.com/english/quarterly-results/2026/q2",
+        "https://www.tradingkey.com/analysis/stocks/us-stocks/262031904-tsmc-tsm-stock-forecast-july-15-2026-june-revenue-q2-earnings-tradingkey"
+      ],
+      "expires_at": "2026-07-17T09:00:00+08:00",
+      "data_quality": "confirmed",
+      "alerts": [
+        {
+          "alert_id": "alert-tsmc-q2-beat-20260716",
+          "level": "critical",
+          "type": "earnings_beat",
+          "message": "台積電Q2收入$396B超預期；TSM ADR今晚美市開盤（21:30台灣時間）為關鍵反應時點；看$440-450",
+          "url": "https://investor.tsmc.com/english/quarterly-results/2026/q2",
+          "source": "TSMC IR / Phemex Finance"
+        }
+      ]
+    }
+  ],
+  "alerts": [
+    {
+      "alert_id": "alert-tsmc-q2-beat-20260716",
+      "level": "critical",
+      "type": "earnings_beat",
+      "ticker": "2330",
+      "message": "【今日重大】台積電Q2收入NT$1.27兆/~$396B超財測上緣，+36% YoY歷史最快增速。法說14:00已舉行，Q3指引是目標2,550-2,600的最終確認。TSM ADR今晚21:30美市開盤關注。",
+      "url": "https://investor.tsmc.com/english/quarterly-results/2026/q2",
+      "source": "TSMC IR / Phemex Finance"
+    },
+    {
+      "alert_id": "alert-aapl-surge-20260716",
+      "level": "high",
+      "type": "unusual_move",
+      "ticker": "AAPL",
+      "message": "AAPL今日+4%大漲至$327.50，為近期罕見。催化劑待確認；若確認為AI功能/供應鏈利多，對台積電蘋果訂單有正向意義。",
+      "url": "https://finance.yahoo.com/quote/AAPL/",
+      "source": "Yahoo Finance / CNBC"
+    },
+    {
+      "alert_id": "alert-2454-direction-shift-20260716",
+      "level": "medium",
+      "type": "direction_change",
+      "ticker": "2454",
+      "message": "聯發科方向由bearish轉neutral：前報告估3,660，7/15實際收3,740，已站回3,700支撐。今日法說帶動進一步估測3,750-3,800。3,750站穩確認轉多。",
+      "url": "https://tw.stock.yahoo.com/quote/2454.TW",
+      "source": "Yahoo Stock TW"
+    },
+    {
+      "alert_id": "alert-foreign-selling-easing-20260716",
+      "level": "medium",
+      "type": "institutional_flow",
+      "ticker": null,
+      "message": "外資今日由連8賣縮至估計-44億（AI伺服器代工廠+台積電調節），動能遞減明顯；投信持續買超。尚未確認翻買，需觀察明日態度。",
+      "url": "https://www.twse.com.tw/zh/trading/foreign/t86.html",
+      "source": "TWSE 三大法人日報"
+    },
+    {
+      "alert_id": "alert-us-market-positive-20260716",
+      "level": "info",
+      "type": "macro_reference",
+      "ticker": null,
+      "message": "美股7/15收盤：Nasdaq +0.6%/26,269、S&P +0.4%/7,572、Dow +0.3%/52,659。今晚美市關注：台積電法說ADR反應 + Netflix財報 + 零售銷售/失業申請數據。",
+      "url": "https://www.cnbc.com/2026/07/15/stock-market-today-live-updates.html",
+      "source": "CNBC Markets"
+    }
+  ],
+  "institutional_flow": {
+    "date": "2026-07-16",
+    "data_quality": "estimated",
+    "foreign": {
+      "net_buy_sell": -44,
+      "unit": "億元TWD",
+      "consecutive_sell_days": 9,
+      "note": "估計值；由連8賣縮量至約-44億，主要賣超廣達、緯創、聯發科；台積電、鴻海小幅回補"
+    },
+    "trust_fund": {
+      "net_buy_sell": 70,
+      "unit": "億元TWD",
+      "note": "估計值，持續積極加碼法說前佈局"
+    },
+    "dealer": {
+      "net_buy_sell": 30,
+      "unit": "億元TWD",
+      "note": "估計值，自營商跟進偏多"
+    },
+    "total_net": 56,
+    "confirmed_as_of": "2026-07-15",
+    "top_foreign_buy": ["台積電(2330)(估)", "鴻海(2317)(估)", "台新金(2887)(估)", "漢翔(2634)(估)"],
+    "top_foreign_sell": ["廣達(2382)(估)", "緯創(3231)(估)", "聯發科(2454)(估)", "友達(2409)(估)"],
+    "sources": [
+      "https://www.twse.com.tw/zh/trading/foreign/t86.html",
+      "https://tw.stock.yahoo.com/news/%E5%A4%96%E8%B3%87%E8%BD%89%E8%B3%A344%E5%84%84%E5%85%83-%E8%AA%BF%E7%AF%80ai%E4%BC%BA%E6%9C%8D%E5%99%A8%E4%BB%A3%E5%B7%A5%E5%BB%A0-%E5%8F%B0%E7%A9%8D%E9%9B%BB-113310509.html"
+    ]
+  },
+  "us_market_reference": {
+    "date": "2026-07-15",
+    "sp500": { "close": 7572.43, "change_pct": 0.4 },
+    "nasdaq": { "close": 26269.23, "change_pct": 0.6 },
+    "dow": { "close": 52659.18, "change_pct": 0.3 },
+    "tonight_watchlist": [
+      "台積電法說後TSM ADR反應（21:30台灣時間）",
+      "Netflix Q2財報（盤後）",
+      "零售銷售+失業申請（美東08:30）"
+    ],
+    "sources": [
+      "https://www.cnbc.com/2026/07/15/stock-market-today-live-updates.html",
+      "https://www.schwab.com/learn/story/stock-market-update-open"
+    ]
+  }
+}

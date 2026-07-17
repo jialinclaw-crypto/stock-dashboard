@@ -1,0 +1,462 @@
+{
+  "_schema_version": "3",
+  "type": "close",
+  "report_file": "股市-收盤後-20260717.md",
+  "date": "2026-07-17",
+  "weekday": "週五",
+  "generated_at": "2026-07-17T14:05:00+08:00",
+  "expires_at": "2026-07-18T09:00:00+08:00",
+  "whats_changed": {
+    "_note": "與前一份收盤後報告（2026-07-16）比較",
+    "prev_report": "股市-收盤後-20260716.md",
+    "market_view_changes": [
+      {
+        "field": "tw_overall",
+        "prev": "bullish",
+        "current": "bearish_temporary",
+        "note": "加權指數今日盤中崩跌 -2,300+ 點（史上第二大盤中跌幅），收跌約 -641 點至約 44,848（-1.4%）；失守 45,000 關卡及 20MA 支撐。為情緒恐慌性殺盤，非基本面逆轉，標注 bearish_temporary。"
+      },
+      {
+        "field": "us_overall",
+        "prev": "bullish",
+        "current": "cautious",
+        "note": "Nasdaq 100 7/16 收盤 -1.62% 至 29,025；TSM ADR 法說後 -5%；NVDA 今日盤前 -1.7%；半導體賣壓延續，整體轉 cautious。AAPL 盤前 +0.39% 為局部防禦亮點。"
+      },
+      {
+        "field": "short_term_bias",
+        "prev": "bullish",
+        "current": "neutral_cautious",
+        "note": "台積電法說後「賣消息」：capex 上調 +15% 至 $600-640B、Q3 毛利率指引 65-67%（下修 ~2.7pp）；基本面長線未破，但短線估值修正需時間消化。"
+      }
+    ],
+    "stock_direction_changes": [
+      {
+        "ticker": "2330",
+        "name": "台積電",
+        "prev_direction": "bullish",
+        "current_direction": "neutral_negative",
+        "prev_price": 2470,
+        "current_price": 2400,
+        "note": "法說後「賣消息」，盤中最低約 2,325-2,370，尾盤回升至估 ~2,400（-70/-2.83%）。Q2 收入超預期本質正面，但 capex 暴增 + 毛利率下修引發市場重新訂價。方向由 bullish 降為 neutral_negative。"
+      },
+      {
+        "ticker": "2454",
+        "name": "聯發科",
+        "prev_direction": "neutral",
+        "current_direction": "bearish",
+        "prev_price": 3740,
+        "current_price": 3550,
+        "note": "半導體板塊全面殺盤；前日轉 neutral 所需的 3,700 支撐已告失守，今日估跌 -190/-5.1% 至約 3,550。方向轉 bearish，需觀察 3,500 支撐。"
+      },
+      {
+        "ticker": "2317",
+        "name": "鴻海",
+        "prev_direction": "neutral_positive",
+        "current_direction": "neutral",
+        "prev_price": 239,
+        "current_price": 232,
+        "note": "大盤重挫拖累，估跌 -7/-2.9% 至約 232。AI 伺服器代工主題未變，230 支撐完整，相對抗跌。方向從 neutral_positive 降回 neutral。"
+      },
+      {
+        "ticker": "NVDA",
+        "name": "輝達",
+        "prev_direction": "bullish",
+        "current_direction": "neutral_negative",
+        "prev_price": 212.41,
+        "current_price": 204,
+        "note": "Nasdaq 7/16 -1.62% + 今日盤前 -1.7%，估 NVDA 約 $204（高度估算，請以今晚美盤確認）；半導體賣壓 + AI ROI 疑慮壓制方向，由 bullish 轉 neutral_negative。"
+      },
+      {
+        "ticker": "AAPL",
+        "name": "蘋果",
+        "prev_direction": "bullish",
+        "current_direction": "neutral_positive",
+        "prev_price": 327.5,
+        "current_price": 325,
+        "note": "今日盤前 +0.39%，相對半導體抗跌；前日 +4% 催化劑尚未確認為基本面利多，方向由 bullish 調降至 neutral_positive，等待催化劑確認。"
+      },
+      {
+        "ticker": "TAIEX",
+        "prev_direction": "up",
+        "current_direction": "sharp_down_recovery",
+        "prev_est": 45489,
+        "current_actual": 44848,
+        "note": "盤中最大跌幅 -2,300+ 點（史上第二慘），終場收 ~44,848（-641/-1.4%）；長下影線 K 線型態顯示止跌訊號，但仍失守 45,000 關鍵點位。"
+      }
+    ],
+    "new_alerts": [
+      {
+        "alert_id": "alert-taiex-historic-crash-20260717",
+        "type": "extreme_volatility",
+        "note": "台股盤中跌逾 2,300 點，擠進史上前三大單日盤中跌幅；為今年繼 5/5（-2,694pt）後最嚴峻盤中崩跌，情緒恐慌指數極高"
+      },
+      {
+        "alert_id": "alert-tsmc-capex-shock-20260717",
+        "type": "earnings_guidance_revision",
+        "note": "台積電法說 2026 年 capex 上調至 $600-640B（+15%），Q3 毛利率指引 65-67%（較 Q2 的 67.7% 下修）；市場「賣消息」反應，引發半導體全面重估"
+      }
+    ],
+    "resolved_alerts": [
+      {
+        "alert_id": "alert-tsmc-q2-beat-20260716",
+        "resolution": "event_occurred_sell_the_news",
+        "note": "台積電 Q2 超預期已確認（$396B 超財測），但法說後市場以 capex 暴增 + 毛利率下修為由賣出，此 alert 轉為 alert-tsmc-capex-shock-20260717"
+      },
+      {
+        "alert_id": "alert-aapl-surge-20260716",
+        "resolution": "unresolved_catalyst",
+        "note": "AAPL 前日 +4% 催化劑仍未確認；今日盤前 +0.39% 維持相對強勢，保持觀察狀態"
+      }
+    ],
+    "prev_estimate_corrections": {
+      "_note": "前報告(7/16)多項估計值今日事後確認差異",
+      "corrections": [
+        {
+          "field": "TAIEX_2026-07-16_close",
+          "prev_estimate": 45489.49,
+          "actual": "待確認（Yahoo 盤中顯示昨收 45,624.98，與前報告 45,489 有差異，可能為計算基準不同或 TWSE 調整）",
+          "note": "前報告 TAIEX 7/16 收 45,489，Yahoo 今日盤中顯示昨收 45,624.98；差異約 135 點，可能影響今日跌點計算基準；標注待確認"
+        },
+        {
+          "field": "2454_2026-07-16_close",
+          "prev_estimate": "估 3,750-3,800（前報告 data_quality=estimated）",
+          "actual": "搜尋顯示 7/16 收 3,700（下跌 -40/-1.07%）",
+          "note": "聯發科 7/16 實際較預期偏弱，未能站上 3,750 方向確認點，前報告估計偏樂觀"
+        }
+      ]
+    },
+    "data_quality_notes": "TAIEX 今日收盤估值：基於鉅亨網「跌 642 點仍失守 45,000」+ ETtoday 等媒體交叉確認；2330 收盤為估計值（盤中最低 2,325-2,370 + 市場回升比例推估）；2454/2317 均為估算；美股以 7/16 收盤數據為基準，今日盤前數據為補充參考；三大法人以 Yahoo 頭條 -255.93 億為基準。全部非確認數值均已標注 data_quality: estimated。"
+  },
+  "market_view": {
+    "tw_overall": "bearish_temporary",
+    "us_overall": "cautious",
+    "short_term_bias": "neutral_cautious",
+    "key_risk": "外資持續賣超（連 10 賣）未見翻買；台積電 2,380 支撐若跌破則下行空間擴大至 2,320-2,340；TSM ADR 今晚美市若再跌破 $395 則週一台積電開盤壓力大；中東局勢升溫（美伊軍事交火）尚未降溫；AI ROI（投資回收期）疑慮短線難消化；聯發科 3,500 守與否是 IC 設計板塊訊號",
+    "key_catalyst": "TSM ADR 今晚 21:30 美市反應（守 $400 以上轉穩正面）；外資是否翻買（連 10 賣後止賣為最大潛在觸媒）；中東局勢是否降溫；NVDA 是否守 $200 支撐；下週台積電是否以盤築底反映基本面優先",
+    "note": "今日為情緒恐慌性殺盤，非台積電基本面逆轉。Q2 收入 +36% YoY 仍創歷史新高，AI 需求主軸不變。但資本支出 +15% 上調 + Q3 毛利率下修，市場需時間重新定價。長下影線 K 線型態有止跌訊號，下週守住 44,500 才有反彈基礎。TSM ADR 今晚表現是最重要的短期指引。"
+  },
+  "indices": {
+    "TAIEX": {
+      "signal_id": "idx-TAIEX-2026-07-17-close",
+      "close": 44848,
+      "prev_close": 45489,
+      "change": -641,
+      "change_pct": -1.41,
+      "intraday_high": null,
+      "intraday_low": 43080,
+      "open": null,
+      "volume_lots": null,
+      "turnover_bn_twd": 1100,
+      "direction": "sharp_down_recovery",
+      "confidence": "medium",
+      "rationale": "盤中最大跌幅 -2,300+ 點（史上第二大單日盤中跌幅），終場收跌 -641/-1.4% 至約 44,848，失守 45,000 關卡。成因：台積電法說 capex 暴增 + Q3 毛利率壓縮 + 南韓升息 + 中東升溫。長下影線 K 線有止跌訊號，但技術面仍空。",
+      "data_quality": "estimated",
+      "data_quality_note": "收盤值基於鉅亨網媒體報導 '跌 642 點失守 4萬5' 推算；intraday_low 為估計；turnover 為估算；以 TWSE 官方收盤為準",
+      "sources": [
+        "https://news.cnyes.com/news/id/6534246",
+        "https://newtalk.tw/news/view/2026-07-17/1047733",
+        "https://www.businesstoday.com.tw/article/category/183008/post/202607170020/"
+      ],
+      "expires_at": "2026-07-18T09:00:00+08:00"
+    }
+  },
+  "stocks": [
+    {
+      "ticker": "2330",
+      "name": "台積電",
+      "market": "TW",
+      "signal_id": "stk-2330-2026-07-17-close",
+      "direction": "neutral_negative",
+      "confidence": "medium",
+      "price": 2400,
+      "prev_price": 2470,
+      "change": -70,
+      "change_pct": -2.83,
+      "rationale": "今日收盤估約 2,400 元（-70/-2.83%）；盤中最低觸 2,325-2,370，尾盤收復。法說後「賣消息」：Q2 收入 $396B 創歷史新高（+36% YoY）本質正面，但 2026 年 capex 上調至 $600-640B（+15%）引發 AI 投資回收期疑慮；Q3 毛利率指引 65-67%（較 Q2 的 67.7% 下修 ~2.7pp），2nm 快速量產稀釋毛利。方向由 bullish 降為 neutral_negative，待市場估值重設完成。關鍵支撐 2,380，壓力 2,450。",
+      "rationale_sources": [
+        "https://news.nextapple.com/finance/20260716/4D6CA019A0A98A39F8EE6B02B0A89B00",
+        "https://udn.com/news/story/7251/9633675",
+        "https://tw.stock.yahoo.com/news/%E5%8F%B0%E7%A9%8D%E9%9B%BB%E6%B3%95%E8%AA%AA-%E4%B8%8A%E8%AA%BF%E8%B3%87%E6%9C%AC%E6%94%AF%E5%87%BA%E8%A1%9D%E7%A0%B4600%E5%84%84%E7%BE%8E%E5%85%83-%E9%81%94600-640%E5%84%84%E7%BE%8E%E5%85%83-062350711.html"
+      ],
+      "expires_at": "2026-07-18T09:00:00+08:00",
+      "data_quality": "estimated",
+      "data_quality_note": "收盤估算：盤中最低約 2,325-2,370 + 大盤回升比例（-2,300→-641 收復約 72%）推估尾盤約 2,400；以 Yahoo/Goodinfo 收盤確認為準",
+      "alerts": [
+        {
+          "alert_id": "alert-tsmc-capex-shock-20260717",
+          "level": "critical",
+          "type": "earnings_guidance_revision",
+          "message": "【今日重大】台積電法說 2026 capex 上調至 $600-640B（+15%）；Q3 毛利率指引 65-67%（下修）；市場「賣消息」，盤中跌幅 -2,300+ 點。基本面未逆轉，短線需消化估值壓力。TSM ADR 今晚 21:30 為關鍵觀察點。",
+          "url": "https://news.nextapple.com/finance/20260716/4D6CA019A0A98A39F8EE6B02B0A89B00",
+          "source": "壹蘋新聞 / Yahoo 股市"
+        }
+      ]
+    },
+    {
+      "ticker": "2454",
+      "name": "聯發科",
+      "market": "TW",
+      "signal_id": "stk-2454-2026-07-17-close",
+      "direction": "bearish",
+      "confidence": "medium",
+      "price": 3550,
+      "prev_price": 3700,
+      "change": -150,
+      "change_pct": -4.05,
+      "rationale": "今日估跌 -150~-200 元（-4~-5%）至約 3,550；前日在 3,700 支撐之上轉 neutral 的格局今日被半導體板塊全面殺盤打穿。3,700 支撐失守、方向轉 bearish。AI ASIC 長線故事不變，短線需等待 3,500 能否成新支撐。跌破 3,500 則往 3,300-3,350 看。",
+      "rationale_sources": [
+        "https://tw.stock.yahoo.com/quote/2454.TW",
+        "https://news.cnyes.com/news/id/6534246"
+      ],
+      "expires_at": "2026-07-18T09:00:00+08:00",
+      "data_quality": "estimated",
+      "data_quality_note": "收盤為估算（基於半導體板塊跌幅 5-8% 區間 + 大盤收復比例）；以 Yahoo Finance TW 確認為準",
+      "alerts": [
+        {
+          "alert_id": "alert-2454-support-break-20260717",
+          "level": "high",
+          "type": "support_break",
+          "message": "聯發科 3,700 支撐今日失守（估收 3,550），方向由 neutral 轉 bearish。3,500 為新觀察支撐，跌破轉向 3,300-3,350。",
+          "url": "https://tw.stock.yahoo.com/quote/2454.TW",
+          "source": "Yahoo Stock TW（估計）"
+        }
+      ]
+    },
+    {
+      "ticker": "2317",
+      "name": "鴻海",
+      "market": "TW",
+      "signal_id": "stk-2317-2026-07-17-close",
+      "direction": "neutral",
+      "confidence": "low",
+      "price": 232,
+      "prev_price": 239,
+      "change": -7,
+      "change_pct": -2.93,
+      "rationale": "估跌 -7/-2.93% 至約 232；大盤拖累但相對抗跌。AI 伺服器代工 + 電動車主題不變，230 元支撐完整。方向由 neutral_positive 降回 neutral，無重大利空。",
+      "rationale_sources": [
+        "https://tw.stock.yahoo.com/quote/2317.TW"
+      ],
+      "expires_at": "2026-07-18T09:00:00+08:00",
+      "data_quality": "estimated"
+    },
+    {
+      "ticker": "NVDA",
+      "name": "輝達",
+      "market": "US",
+      "signal_id": "stk-NVDA-2026-07-17-close",
+      "direction": "neutral_negative",
+      "confidence": "low",
+      "price": 204,
+      "prev_price": 212.41,
+      "change": -8.41,
+      "change_pct": -3.96,
+      "rationale": "7/16 Nasdaq -1.62% 拖累，今日盤前再跌 -1.7%，估 NVDA 約 $204（高度估算）。台積電 capex 暴增在市場解讀上隱含 NVDA 訂單強勁但引發 AI ROI 疑慮；短線 pullback 但 AI 主題長線不變。今晚美盤 $200 支撐關鍵。",
+      "rationale_sources": [
+        "https://finance.yahoo.com/quote/NVDA/history/",
+        "https://www.tradingkey.com/analysis/stocks/us-stocks/262034780-tsm-nvda-samsung-skhynix-dram-mu-spcx-sndk-tradingkey"
+      ],
+      "expires_at": "2026-07-18T09:00:00+08:00",
+      "data_quality": "estimated",
+      "data_quality_note": "美股今日尚未開盤（21:30 台灣時間），price 為估算；以今晚美盤收盤確認為準"
+    },
+    {
+      "ticker": "TSLA",
+      "name": "特斯拉",
+      "market": "US",
+      "signal_id": "stk-TSLA-2026-07-17-close",
+      "direction": "neutral",
+      "confidence": "low",
+      "price": 392,
+      "prev_price": 394.28,
+      "change": -2.28,
+      "change_pct": -0.58,
+      "rationale": "今日盤前 -0.47%，隨大盤情緒略跌；無重大自身催化劑。Q2 法說尚未公布。維持 neutral。",
+      "rationale_sources": [
+        "https://www.cnbc.com/quotes/MSFT,AAPL,AMZN,GOOGL,ASML,NVDA,TSM,TSLA"
+      ],
+      "expires_at": "2026-07-18T09:00:00+08:00",
+      "data_quality": "estimated",
+      "data_quality_note": "美股今日尚未開盤；price 為盤前估算"
+    },
+    {
+      "ticker": "AAPL",
+      "name": "蘋果",
+      "market": "US",
+      "signal_id": "stk-AAPL-2026-07-17-close",
+      "direction": "neutral_positive",
+      "confidence": "low",
+      "price": 325,
+      "prev_price": 327.5,
+      "change": -2.5,
+      "change_pct": -0.76,
+      "rationale": "今日盤前 +0.39%，相對半導體板塊抗跌明顯，防禦性買盤支撐。前日 +4% 催化劑仍待確認；若後續確認為 AI 功能/供應鏈利多，對台積電蘋果訂單方向正面。方向由 bullish 保守調降至 neutral_positive。",
+      "rationale_sources": [
+        "https://www.cnbc.com/quotes/MSFT,AAPL,AMZN,GOOGL,ASML,NVDA,TSM,TSLA"
+      ],
+      "expires_at": "2026-07-18T09:00:00+08:00",
+      "data_quality": "estimated",
+      "data_quality_note": "price 為估算（前日 327.5 - 大盤情緒小幅修正）；美股今日尚未開盤",
+      "alerts": [
+        {
+          "alert_id": "alert-aapl-surge-20260716",
+          "level": "medium",
+          "type": "unusual_move",
+          "message": "AAPL 前日 +4% 催化劑仍待確認（today 盤前 +0.39% 維持相對強）；若確認為 AI 利多則長線正向",
+          "url": "https://finance.yahoo.com/quote/AAPL/",
+          "source": "Yahoo Finance"
+        }
+      ]
+    },
+    {
+      "ticker": "TSM",
+      "name": "台積電ADR",
+      "market": "US",
+      "signal_id": "stk-TSM-2026-07-17-close",
+      "direction": "neutral_negative",
+      "confidence": "medium",
+      "price": 405,
+      "prev_price": 426.62,
+      "change": -21.62,
+      "change_pct": -5.07,
+      "rationale": "法說後「賣消息」：capex $600-640B（+15%）+ Q3 毛利率下修，TSM ADR 7/16 法說後盤後下跌約 5%，估收 ~$405。今日 21:30 台灣時間美盤開盤為最重要觀察點：守 $400 以上為台積電明日的正面訊號；跌破 $395 則週一開盤有壓力。",
+      "rationale_sources": [
+        "https://www.tradingkey.com/analysis/stocks/us-stocks/262034780-tsm-nvda-samsung-skhynix-dram-mu-spcx-sndk-tradingkey",
+        "https://news.nextapple.com/finance/20260716/4D6CA019A0A98A39F8EE6B02B0A89B00"
+      ],
+      "expires_at": "2026-07-18T09:00:00+08:00",
+      "data_quality": "estimated",
+      "data_quality_note": "price 基於前日 $426.62 下跌約 5% 估算；7/16 美市法說後盤後數據；以今晚美盤收盤確認為準",
+      "alerts": [
+        {
+          "alert_id": "alert-tsmc-capex-shock-20260717",
+          "level": "critical",
+          "type": "earnings_guidance_revision",
+          "message": "【重大】TSM ADR 法說後估跌 -5%；今晚 21:30 美盤開盤為最關鍵時點。守 $400 以上→台積電明日止跌訊號；跌破 $395→週一開盤壓力大。",
+          "url": "https://investor.tsmc.com/english/quarterly-results/2026/q2",
+          "source": "TSMC IR / TradingKey"
+        }
+      ]
+    }
+  ],
+  "alerts": [
+    {
+      "alert_id": "alert-taiex-historic-crash-20260717",
+      "level": "critical",
+      "type": "extreme_volatility",
+      "ticker": null,
+      "message": "【今日史上第二慘】台股盤中跌逾 2,300 點，創史上第二大單日盤中跌幅（僅次於今年 5/5 的 -2,694 點）；終場收跌 -641 點，失守 45,000 關卡。長下影線 K 線有止跌訊號，但技術面仍空。",
+      "url": "https://newtalk.tw/news/view/2026-07-17/1047733",
+      "source": "Newtalk 新聞 / 鉅亨網"
+    },
+    {
+      "alert_id": "alert-tsmc-capex-shock-20260717",
+      "level": "critical",
+      "type": "earnings_guidance_revision",
+      "ticker": "2330",
+      "message": "【今日重大觸媒】台積電法說 2026 capex 上調至 $600-640B（+15%，市場震驚）；Q3 毛利率指引 65-67%（下修 ~2.7pp）。Q2 收入 $396B+36% YoY 正面，但市場先賣。TSM ADR 今晚 21:30 美盤表現是下週方向關鍵指標。",
+      "url": "https://news.nextapple.com/finance/20260716/4D6CA019A0A98A39F8EE6B02B0A89B00",
+      "source": "壹蘋新聞 / TSMC IR"
+    },
+    {
+      "alert_id": "alert-2454-support-break-20260717",
+      "level": "high",
+      "type": "support_break",
+      "ticker": "2454",
+      "message": "聯發科 3,700 關鍵支撐今日失守（估收約 3,550），方向轉 bearish。下週 3,500 能否成新支撐是 IC 設計板塊訊號；跌破 3,500 轉向 3,300-3,350。",
+      "url": "https://tw.stock.yahoo.com/quote/2454.TW",
+      "source": "Yahoo 股市（估計）"
+    },
+    {
+      "alert_id": "alert-foreign-selling-day10-20260717",
+      "level": "high",
+      "type": "institutional_flow",
+      "ticker": null,
+      "message": "外資連 10 賣，今日三大法人合計估賣超 -255 億元（較昨日 -430 億小幅縮量）；外資尚未出現翻買訊號，需持續追蹤。止賣訊號出現才是市場反轉的重要確認。",
+      "url": "https://www.twse.com.tw/zh/trading/foreign/t86.html",
+      "source": "Yahoo 財經頭條 / TWSE（估計）"
+    },
+    {
+      "alert_id": "alert-mideast-risk-20260717",
+      "level": "medium",
+      "type": "macro_geopolitical",
+      "ticker": null,
+      "message": "中東局勢升溫：美國攻擊伊朗橋樑，伊朗回擊美軍巴林基地；為本次台股崩跌的助漲因素之一，局勢待降溫觀察。",
+      "url": "https://www.businesstoday.com.tw/article/category/183008/post/202607170020/",
+      "source": "今周刊"
+    },
+    {
+      "alert_id": "alert-us-market-cautious-20260717",
+      "level": "medium",
+      "type": "macro_reference",
+      "ticker": null,
+      "message": "美股 7/16：Nasdaq -1.62% 至約 29,025；TSM ADR 法說後估 -5%；NVDA 盤前 -1.7%；AAPL 盤前 +0.39%（相對抗跌）。今晚 21:30 台灣時間美盤開盤，半導體走勢為最大變數。",
+      "url": "https://www.oanda.jp/lab-education/market_news/2026_07_17_us100/",
+      "source": "OANDA Japan / TradingKey"
+    }
+  ],
+  "institutional_flow": {
+    "date": "2026-07-17",
+    "data_quality": "estimated",
+    "foreign": {
+      "net_buy_sell": -280,
+      "unit": "億元TWD",
+      "consecutive_sell_days": 10,
+      "note": "估計值；連 10 賣，主要賣超台積電、聯發科、廣達、聯電等半導體/AI 權值股"
+    },
+    "trust_fund": {
+      "net_buy_sell": 65,
+      "unit": "億元TWD",
+      "note": "估計值；低接護盤，力道有限"
+    },
+    "dealer": {
+      "net_buy_sell": -40,
+      "unit": "億元TWD",
+      "note": "估計值；避險賣壓"
+    },
+    "total_net": -255,
+    "confirmed_as_of": "2026-07-17（估計）",
+    "top_foreign_sell": ["台積電(2330)(估)", "聯發科(2454)(估)", "廣達(2382)(估)", "聯電(2303)(估)", "日月光(3711)(估)"],
+    "top_foreign_buy": ["中華電(2412)(估)", "台新金(2887)(估)", "玉山金(2884)(估)"],
+    "sources": [
+      "https://www.twse.com.tw/zh/trading/foreign/t86.html",
+      "https://tw.stock.yahoo.com/institutional-trading"
+    ],
+    "reference_headline": "三大法人賣超台股255.93億元（Yahoo 財經，2026-07-17 估）"
+  },
+  "us_market_reference": {
+    "date": "2026-07-16",
+    "data_quality": "confirmed",
+    "sp500": { "close": null, "change_pct": null, "note": "7/16 數據待確認" },
+    "nasdaq100": { "close": 29025.77, "change": -476.83, "change_pct": -1.62, "note": "2026-07-16 美市收盤" },
+    "tonight_watchlist": [
+      "TSM ADR 今晚 21:30 開盤走勢（守 $400 vs 跌破 $395）",
+      "NVDA 是否守 $200 支撐",
+      "S&P 500 / Nasdaq 整體情緒：AI ROI 疑慮是否持續擴散",
+      "中東局勢是否有降溫消息",
+      "AAPL 前日 +4% 催化劑確認與否"
+    ],
+    "sources": [
+      "https://www.oanda.jp/lab-education/market_news/2026_07_17_us100/",
+      "https://www.tradingkey.com/analysis/stocks/us-stocks/262034780-tsm-nvda-samsung-skhynix-dram-mu-spcx-sndk-tradingkey",
+      "https://www.fxleaders.com/news/2026/07/16/nasdaq-futures-hover-near-29650-as-tsmc-sell-the-news-weighs-on-tech-sentiment/"
+    ]
+  },
+  "tsmc_earnings_detail": {
+    "_note": "台積電 Q2 2026 法說重點（2026-07-16 公布）",
+    "q2_revenue_usd": "~396B",
+    "q2_revenue_twd": "~NT$1.27兆",
+    "q2_revenue_yoy_growth": "36%",
+    "q2_gross_margin": 67.7,
+    "q3_revenue_guidance_usd": "446-458B",
+    "q3_gross_margin_guidance": "65-67%",
+    "capex_2026_usd": "600-640B",
+    "capex_2026_change": "+15% vs 前次指引",
+    "key_concern": "2nm 快速量產稀釋毛利率 3-4pp；capex 暴增引發 AI 投資回收期疑慮",
+    "sources": [
+      "https://investor.tsmc.com/english/quarterly-results/2026/q2",
+      "https://news.nextapple.com/finance/20260716/4D6CA019A0A98A39F8EE6B02B0A89B00",
+      "https://tw.stock.yahoo.com/news/%E5%8F%B0%E7%A9%8D%E9%9B%BB%E6%B3%95%E8%AA%AA-%E4%B8%8A%E8%AA%BF%E8%B3%87%E6%9C%AC%E6%94%AF%E5%87%BA%E8%A1%9D%E7%A0%B4600%E5%84%84%E7%BE%8E%E5%85%83-%E9%81%94600-640%E5%84%84%E7%BE%8E%E5%85%83-062350711.html"
+    ]
+  }
+}

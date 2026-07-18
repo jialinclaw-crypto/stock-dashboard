@@ -1,0 +1,512 @@
+{
+  "_schema_version": 3,
+  "type": "weekly",
+  "report_file": "股市-週報-20260718.md",
+  "date": "2026-07-18",
+  "weekday": "週六",
+  "generated_at": "2026-07-18T09:00:00+08:00",
+  "expires_at": "2026-07-25T09:00:00+08:00",
+  "market_view": {
+    "tw_overall": "neutral_bearish",
+    "us_overall": "neutral_bearish",
+    "short_term_bias": "bearish",
+    "key_risk": "TSMC 法說後資本支出疑慮（$60-64B）+ Q3 GM 指引 65-67% 低於預期；SOX 費半從 ATH 累計 -21%；NVDA 跌破 $210 技術支撐；VIX 17.76 持續升溫；台股外資連續賣超",
+    "key_catalyst": "TSLA Q2 財報（7/22，Cybercab/Robotaxi 進度）；聯發科 RSI 19 超賣技術反彈；10Y 殖利率從 5.62% 回落至 4.56% 緩解壓力；AAPL 歷史新高顯示消費電子題材仍強",
+    "note": "本週為典型「買消息賣事實」週：TSMC Q2 財報歷史最強但市場失望法說指引，觸發半導體二次修正。SOX -9.5% 進入技術性熊市修正，但 VIX<20 顯示非恐慌性崩盤。FOMC 7/28-29 為下下週最大事件（hold 共識）；下週相對平靜，觀察 TSLA 財報與半導體止穩"
+  },
+  "indices": [
+    {
+      "name": "台股加權指數",
+      "ticker": "^TWII",
+      "close": 44848.0,
+      "prev_close": 45354.61,
+      "week_change": -506.61,
+      "week_change_pct": -1.12,
+      "week_high": 45631.59,
+      "week_low": 43556.0,
+      "volume_week_bn_twd_est": 35000.0,
+      "note": "7/14 三大法人賣超 753.6 億估收 44,738；7/15+893.64→45,631（週高）；7/16 法說觀望 -6.61→45,624.98（成交量3個月新低9,008億）；7/17 盤中崩跌 -2,300+pts 後強力收復，終場 -641pt at ~44,848；ATH 47,741（收盤 6/23）；20MA≈44,900，60MA≈43,700，200MA≈41,300；週RSI≈50-52",
+      "signal_id": "stk-TWII-2026-07-18-weekly",
+      "direction": "neutral_bearish",
+      "confidence": 0.60,
+      "rationale": "TSMC 法說後賣壓擴散全市場，外資連續賣超，跌破 20MA 約 44,900；但盤中 V 型收復顯示有承接力。短線支撐 44,500，60MA 43,700 為中期多頭防線；FOMC 等待期加 Big Tech 財報季（下下週）是主要觀望因素",
+      "sources": [
+        "https://www.cnbc.com/2026/07/16/stock-market-today-live-updates.html",
+        "https://vocus.cc/article/6a5199c2fd897800018205d9",
+        "https://www.sinotrade.com.tw/richclub/hotstock/%E5%8F%B0%E8%82%A1%E7%9B%A4%E5%BE%8C-%E5%8F%B0%E7%A9%8D%E9%9B%BB%E6%B3%95%E8%AA%AA%E5%89%B5%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%BC%B7%E5%96%AE%E5%AD%A3-%E5%A4%A7%E7%9B%A4%E8%A7%80%E6%9C%9B%E6%94%B6%E8%B7%8C6%E9%BB%9E-0716-6a58892c546795e51e5fa2a1"
+      ],
+      "expires_at": "2026-07-25T09:00:00+08:00"
+    },
+    {
+      "name": "S&P 500",
+      "ticker": "^GSPC",
+      "close": 7457.69,
+      "prev_close": 7578.0,
+      "week_change": -120.31,
+      "week_change_pct": -1.59,
+      "week_high": 7572.40,
+      "week_low": 7457.69,
+      "volume_week_bn_twd_est": null,
+      "note": "7/14 -0.8%→7,515；7/15 +0.38%→7,543；7/16 +0.38%→7,572；7/17 -1.01%→7,457.69（週收）；週跌 -1.6%",
+      "signal_id": "stk-GSPC-2026-07-18-weekly",
+      "direction": "neutral_bearish",
+      "confidence": 0.55,
+      "rationale": "S&P 500 週跌 -1.6%，半導體成份股拖累明顯；但 VIX 17.76（<20）顯示恐慌未到達；PPI 軟化+殖利率回落提供底部支撐；FOMC 7/28-29 前市場進入等待期",
+      "sources": [
+        "https://finance.yahoo.com/markets/live/stock-market-today-friday-july-17-dow-sp-500-nasdaq-092345307.html",
+        "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-july-14-2026"
+      ],
+      "expires_at": "2026-07-25T09:00:00+08:00"
+    },
+    {
+      "name": "Nasdaq",
+      "ticker": "^IXIC",
+      "close": 25520.24,
+      "prev_close": 26275.0,
+      "week_change": -754.76,
+      "week_change_pct": -2.87,
+      "week_high": 26269.23,
+      "week_low": 25520.24,
+      "volume_week_bn_twd_est": null,
+      "note": "7/14 -1.6%→25,873；7/15 +0.9%→26,107；7/16 +0.62%→26,269；7/17 -1.4%→25,520；週跌 -2.9%",
+      "signal_id": "stk-IXIC-2026-07-18-weekly",
+      "direction": "bearish",
+      "confidence": 0.60,
+      "rationale": "Nasdaq -2.9% 為三大指數中跌最深，科技/半導體成份股拖累；AAPL ATH 未能抵消 NVDA/AMD 等半導體賣壓；週 RSI 逼近 45，趨勢偏空",
+      "sources": [
+        "https://finance.yahoo.com/markets/live/stock-market-today-friday-july-17-dow-sp-500-nasdaq-092345307.html"
+      ],
+      "expires_at": "2026-07-25T09:00:00+08:00"
+    },
+    {
+      "name": "Dow Jones",
+      "ticker": "^DJI",
+      "close": 52146.42,
+      "prev_close": 52621.0,
+      "week_change": -474.58,
+      "week_change_pct": -0.90,
+      "week_high": 52658.64,
+      "week_low": 52146.42,
+      "volume_week_bn_twd_est": null,
+      "note": "7/14 -0.3%→52,499；7/15 +0.02%→52,508；7/16 +0.29%→52,659；7/17 -0.77%→52,146；週跌 -0.9%；Value/Industrial 相對抗跌",
+      "signal_id": "stk-DJI-2026-07-18-weekly",
+      "direction": "neutral",
+      "confidence": 0.50,
+      "rationale": "Dow 週跌僅 -0.9%，相對 Nasdaq -2.9% 明顯抗跌，典型科技 vs Value 輪動格局；但 Dow ATH 52,900 附近壓力仍在，等待更多指引",
+      "sources": [
+        "https://finance.yahoo.com/markets/live/stock-market-today-friday-july-17-dow-sp-500-nasdaq-092345307.html"
+      ],
+      "expires_at": "2026-07-25T09:00:00+08:00"
+    },
+    {
+      "name": "費城半導體指數",
+      "ticker": "^SOX",
+      "close": 11500.0,
+      "prev_close": 12713.0,
+      "week_change": -1213.0,
+      "week_change_pct": -9.54,
+      "week_high": 12713.0,
+      "week_low": 11500.0,
+      "volume_week_bn_twd_est": null,
+      "note": "週跌 -9.54%，第三週連跌（四週中第三次）；從 ATH 14,655（6/22）已累計下跌 -21.5%；技術性熊市修正；60MA ~12,000 已跌破；週 RSI ~28（極度超賣）；SMH ETF 本週 -9%",
+      "signal_id": "stk-SOX-2026-07-18-weekly",
+      "direction": "bearish",
+      "confidence": 0.72,
+      "rationale": "SOX 進入技術性熊市修正（-21% from ATH），TSMC 資本支出疑慮+AI 競爭擔憂加速賣壓；60MA 已跌破；但 RSI 28 為極度超賣，短線技術反彈條件成熟；中期轉多需等 SOX 重回 12,000 以上",
+      "sources": [
+        "https://finance.yahoo.com/markets/live/stock-market-today-friday-july-17-dow-sp-500-nasdaq-092345307.html",
+        "https://www.investing.com/indices/phlx-semiconductor-historical-data"
+      ],
+      "expires_at": "2026-07-25T09:00:00+08:00"
+    }
+  ],
+  "macro": {
+    "us_10y_yield": 4.56,
+    "us_30y_yield": 4.95,
+    "us_2y_yield": 4.15,
+    "vix": 17.76,
+    "dxy": 100.91,
+    "wti_crude": 83.0,
+    "fed_rate_current": "3.50-3.75%",
+    "fomc_outcome": "hold",
+    "fomc_next_meeting": "2026-07-28",
+    "ppi_june_yoy": 5.5,
+    "ppi_note": "7/15 PPI 5.5%（vs 預期 6.2%），低於預期；通膨降溫但尚未解除 Fed 觀望",
+    "note": "本週 10Y 殖利率從週高 5.62%（7/13）大幅回落至 4.56%，為正向訊號；PPI 5.5% 低於預期；DXY 100.91 走軟；VIX 17.76 升溫（前週 ~15.92）；中東地緣政治支撐原油；FOMC 7/28-29 為下下週最大事件（hold 共識）；Big Tech 財報季 7/29-30"
+  },
+  "stocks": [
+    {
+      "ticker": "2330",
+      "name": "台積電",
+      "market": "TW",
+      "price": {
+        "close": 2290.0,
+        "open": 2375.0,
+        "high": 2395.0,
+        "low": 2290.0,
+        "week_change": -155.0,
+        "week_change_pct": -6.3,
+        "currency": "TWD"
+      },
+      "technicals": {
+        "ma_20": 2380.0,
+        "ma_60": 2150.0,
+        "ma_200": 1900.0,
+        "rsi_weekly": 40.0,
+        "ath": 2660.0,
+        "pct_from_ath": -13.9
+      },
+      "signal_id": "stk-2330-2026-07-18-weekly",
+      "direction": "neutral_bearish",
+      "confidence": 0.65,
+      "rationale": "Q2 法說 EPS NT$27.25 創歷史新高但 Q3 GM 指引 65-67% 低於共識，資本支出 $60-64B 引爆「買消息賣事實」；7/17 單日 -7.29% 跌破 20MA（2,380）；短期支撐 2,200（60MA 之上）；長線基本面（40%+營收成長、EPS 百元共識）未逆轉，但估值修正期 2-4 週",
+      "sources": [
+        "https://www.fxleaders.com/news/2026/07/17/tsmc-tsm-stock-slips-despite-record-earnings-ai-rally-cools/",
+        "https://www.sec.gov/Archives/edgar/data/0001046179/000104617926000451/a2q26e_withguidancexfinal.htm",
+        "https://247wallst.com/investing/2026/07/16/price-prediction-after-a-record-77-profit-jump-where-does-tsmc-stock-go-from-here/"
+      ],
+      "expires_at": "2026-07-25T09:00:00+08:00"
+    },
+    {
+      "ticker": "2454",
+      "name": "聯發科",
+      "market": "TW",
+      "price": {
+        "close": 3370.0,
+        "open": null,
+        "high": null,
+        "low": null,
+        "week_change": null,
+        "week_change_pct": null,
+        "currency": "TWD"
+      },
+      "technicals": {
+        "ma_20": 3900.0,
+        "ma_60": 4200.0,
+        "ma_200": 4000.0,
+        "rsi_weekly": 19.49,
+        "ath": null,
+        "pct_from_ath": null
+      },
+      "signal_id": "stk-2454-2026-07-18-weekly",
+      "direction": "neutral_bearish",
+      "confidence": 0.55,
+      "rationale": "7/17 單日 -8.92%（從 3,700→3,370）；RSI 19.49 為極度超賣區（<30），已跌破布林帶下軌；技術性反彈條件成熟，目標 3,600-3,800；但中期轉多需 Meta AI ASIC 量產確認；多均線壓制，維持中性偏空但關注超賣反彈",
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/2454.TW/technical-analysis",
+        "https://poorstock.com/stock/2454"
+      ],
+      "expires_at": "2026-07-25T09:00:00+08:00"
+    },
+    {
+      "ticker": "2317",
+      "name": "鴻海",
+      "market": "TW",
+      "price": {
+        "close": 234.0,
+        "open": null,
+        "high": 242.5,
+        "low": 234.0,
+        "week_change": null,
+        "week_change_pct": null,
+        "currency": "TWD"
+      },
+      "technicals": {
+        "ma_20": 248.0,
+        "ma_60": 252.0,
+        "ma_200": 235.0,
+        "rsi_weekly": 38.0,
+        "ath": null,
+        "pct_from_ath": null
+      },
+      "signal_id": "stk-2317-2026-07-18-weekly",
+      "direction": "neutral_bearish",
+      "confidence": 0.50,
+      "rationale": "7/4 週暴跌 -11.6% 後本週企穩，7/16 短暫回到 242.50，但 7/17 再跌 -3.51% 至 234；仍在 20MA/60MA（248/252）雙均線壓制下；AI 伺服器佔營收近 50% 基本面強，但股價尚未確認反轉；維持中性偏空，等待法說或訂單利多催化",
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/2317.TW",
+        "https://news.pchome.com.tw/finance/cna/20260714/index-17840131723854718003.html"
+      ],
+      "expires_at": "2026-07-25T09:00:00+08:00"
+    },
+    {
+      "ticker": "NVDA",
+      "name": "輝達",
+      "market": "US",
+      "price": {
+        "close": 202.81,
+        "open": null,
+        "high": null,
+        "low": null,
+        "week_change": -13.0,
+        "week_change_pct": -6.0,
+        "currency": "USD"
+      },
+      "technicals": {
+        "ma_20": 215.0,
+        "ma_60": 190.0,
+        "ma_200": 165.0,
+        "rsi_weekly": 35.0,
+        "ath": 220.0,
+        "pct_from_ath": -7.8
+      },
+      "signal_id": "stk-NVDA-2026-07-18-weekly",
+      "direction": "bearish",
+      "confidence": 0.62,
+      "rationale": "SOX -9.5% 系統性賣壓波及，NVDA 跌破 $210 技術支撐（20MA ~$215）；H20 中國許可消息未能抵擋半導體修正浪潮；下方支撐 $195-200；RSI ~35 偏弱；需等 SOX 止穩或 Blackwell/Rubin 出貨超預期才能轉多",
+      "sources": [
+        "https://finance.yahoo.com/markets/live/stock-market-today-friday-july-17-dow-sp-500-nasdaq-092345307.html",
+        "https://www.cnbc.com/quotes/NVDA"
+      ],
+      "expires_at": "2026-07-25T09:00:00+08:00"
+    },
+    {
+      "ticker": "TSLA",
+      "name": "特斯拉",
+      "market": "US",
+      "price": {
+        "close": 385.03,
+        "open": null,
+        "high": 385.44,
+        "low": 384.36,
+        "week_change": 0.0,
+        "week_change_pct": 0.1,
+        "currency": "USD"
+      },
+      "technicals": {
+        "ma_20": 380.0,
+        "ma_60": 360.0,
+        "ma_200": 320.0,
+        "rsi_weekly": 55.0,
+        "ath": null,
+        "pct_from_ath": null
+      },
+      "signal_id": "stk-TSLA-2026-07-18-weekly",
+      "direction": "neutral",
+      "confidence": 0.45,
+      "rationale": "週持平（±0.1%），7/22（三）Q2 財報為最大不確定事件；交付 480K 已知，市場焦點在毛利率恢復+Cybercab/Robotaxi 進度；選擇權暗示 ±7.6% 擺幅；EPS 共識 $0.47-$0.55；財報超預期且有敘事升級→多方，否則「Sell the News」風險",
+      "sources": [
+        "https://blockonomi.com/tesla-tsla-earnings-preview-7-swing-expected-as-wall-street-eyes-robotaxi-updates/",
+        "https://www.tradingkey.com/analysis/stocks/us-stocks/262021897-tesla-tsla-stock-forecast-july-2026-q2-earnings-margins-cybercab-tradingkey",
+        "https://macdailynews.com/2026/07/17/apple-shares-hit-new-all-time-closing-and-intraday-highs-260717/"
+      ],
+      "expires_at": "2026-07-25T09:00:00+08:00"
+    },
+    {
+      "ticker": "AAPL",
+      "name": "蘋果",
+      "market": "US",
+      "price": {
+        "close": 333.74,
+        "open": null,
+        "high": null,
+        "low": null,
+        "week_change": 6.0,
+        "week_change_pct": 1.8,
+        "currency": "USD"
+      },
+      "technicals": {
+        "ma_20": 325.0,
+        "ma_60": 305.0,
+        "ma_200": 280.0,
+        "rsi_weekly": 68.0,
+        "ath": 333.74,
+        "pct_from_ath": 0.0
+      },
+      "signal_id": "stk-AAPL-2026-07-18-weekly",
+      "direction": "bullish",
+      "confidence": 0.67,
+      "rationale": "7/17 收盤歷史新高 $333.74，逆科技板塊下跌走強；Apple Intelligence 敘事+iPhone 17 備貨期待；資金從半導體輪轉至消費電子；週 RSI ~68（高位但未超買）；7/30 財報前多頭趨勢維持，守 $325 支撐",
+      "sources": [
+        "https://macdailynews.com/2026/07/17/apple-shares-hit-new-all-time-closing-and-intraday-highs-260717/",
+        "https://finance.yahoo.com/quote/AAPL/history/"
+      ],
+      "expires_at": "2026-07-25T09:00:00+08:00"
+    },
+    {
+      "ticker": "TSM",
+      "name": "台積電ADR",
+      "market": "US",
+      "price": {
+        "close": 422.0,
+        "open": null,
+        "high": null,
+        "low": null,
+        "week_change": -15.0,
+        "week_change_pct": -3.4,
+        "currency": "USD"
+      },
+      "technicals": {
+        "ma_20": 440.0,
+        "ma_60": 410.0,
+        "ma_200": 370.0,
+        "rsi_weekly": 42.0,
+        "ath": 460.0,
+        "pct_from_ath": -8.3
+      },
+      "signal_id": "stk-TSM-2026-07-18-weekly",
+      "direction": "neutral_bearish",
+      "confidence": 0.60,
+      "rationale": "TSMC 法說後 7/17 ADR 跌約 -3%；跟隨 2330 同步修正（-7.29% in TW），ADR 溢價約 10%；跌破 20MA（~$440）；下方支撐 $400 心理關口；長線基本面不變但短期承壓，方向同 2330",
+      "sources": [
+        "https://www.fxleaders.com/news/2026/07/17/tsmc-tsm-stock-slips-despite-record-earnings-ai-rally-cools/",
+        "https://finance.yahoo.com/quote/TSM/"
+      ],
+      "expires_at": "2026-07-25T09:00:00+08:00"
+    }
+  ],
+  "alerts": [
+    {
+      "alert_id": "alert-TSMC-earnings-selloff-20260717",
+      "level": "critical",
+      "title": "台積電 Q2 法說後崩跌 -7.29%——「買消息賣事實」引爆半導體二次修正",
+      "description": "TSMC Q2 EPS NT$27.25（+77.4% YoY，歷史新高）但 Q3 GM 指引 65-67%（低於共識 67.7%）+ 資本支出 $60-64B（AI ROI 疑慮），導致 2330 7/17 單日崩跌 -7.29%（2,470→2,290），ADR TSM 跌 -3%。台股大盤盤中暴跌 2,300+ 點後強力收復。短期支撐 2,200-2,290，20MA 約 2,380 為壓力",
+      "sources": [
+        "https://www.fxleaders.com/news/2026/07/17/tsmc-tsm-stock-slips-despite-record-earnings-ai-rally-cools/",
+        "https://www.sec.gov/Archives/edgar/data/0001046179/000104617926000451/a2q26e_withguidancexfinal.htm"
+      ],
+      "expires_at": "2026-07-25T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-SOX-correction-21pct-ATH-20260718",
+      "level": "critical",
+      "title": "SOX 費半從 ATH 累計下跌 -21.5%——本週 -9.5%，技術性熊市修正確立",
+      "description": "費城半導體指數從 6/22 ATH 14,655 累計跌至約 11,500（-21.5%），本週單週 -9.5% 為本年最大單週跌幅之一；SMH ETF 本週亦跌 -9%（三週中第三次週跌）；60MA ~12,000 已跌破；週 RSI ~28 進入極度超賣區，短線技術反彈條件成熟，但中期趨勢偏空",
+      "sources": [
+        "https://finance.yahoo.com/markets/live/stock-market-today-friday-july-17-dow-sp-500-nasdaq-092345307.html",
+        "https://www.investing.com/indices/phlx-semiconductor-historical-data"
+      ],
+      "expires_at": "2026-07-25T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-TSLA-earnings-7/22-20260718",
+      "level": "warning",
+      "title": "TSLA Q2 財報 7/22（三）收後——選擇權暗示 ±7.6% 擺幅",
+      "description": "Tesla Q2 財報 7/22 週三收後公布；EPS 共識 $0.47-$0.55；交付量 480K 已知（季超預期）；市場焦點：毛利率恢復（>18.5%？）+ Cybercab/Robotaxi 量產時程更新；選擇權定價 ±7.6% 擺幅；若同時達成毛利率超預期 + AI 進度里程碑則多方；否則「Sell the News」",
+      "sources": [
+        "https://blockonomi.com/tesla-tsla-earnings-preview-7-swing-expected-as-wall-street-eyes-robotaxi-updates/",
+        "https://www.tradingkey.com/analysis/stocks/us-stocks/262021897-tesla-tsla-stock-forecast-july-2026-q2-earnings-margins-cybercab-tradingkey"
+      ],
+      "expires_at": "2026-07-22T22:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-FOMC-7/28-waiting-20260718",
+      "level": "warning",
+      "title": "FOMC 7/28-29 等待期——下週相對平靜，市場消化半導體修正",
+      "description": "FOMC 7/28-29 利率決策（hold 共識，3.50-3.75%），下下週最大事件；本週 10Y 殖利率從 5.62% 高點大幅回落至 4.56%，部分緩解緊縮預期；7/29-30 大科技財報（MSFT/META、AAPL/AMZN）為財報季高峰；下週（7/21-7/25）相對平靜，但半導體估值正在重新定錨",
+      "sources": [
+        "https://tradersquant.com/calendar",
+        "https://daytradingtoolkit.com/market-insights/q2-2026-earnings-season-day-trading-preview"
+      ],
+      "expires_at": "2026-07-29T02:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-AAPL-ATH-divergence-20260718",
+      "level": "info",
+      "title": "AAPL 歷史新高 $333.74——消費電子 vs 半導體明顯分化",
+      "description": "蘋果 7/17 收盤歷史新高 $333.74，在 Nasdaq -1.4%、SOX -9.5% 週中逆勢上漲約 +2%；顯示資金輪轉：從半導體供應鏈 → 消費電子品牌；7/30 AAPL Q2 財報為下下週關鍵；Apple Intelligence + iPhone 17 下半年敘事完整，短期多頭格局維持",
+      "sources": [
+        "https://macdailynews.com/2026/07/17/apple-shares-hit-new-all-time-closing-and-intraday-highs-260717/"
+      ],
+      "expires_at": "2026-07-25T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-2454-RSI-oversold-20260718",
+      "level": "info",
+      "title": "聯發科 RSI 跌至 19.49——極度超賣，技術反彈機會窗口",
+      "description": "聯發科（2454）RSI 週線跌至 19.49（歷史性超賣），已跌破布林帶下軌；7/17 單日 -8.92%（3,700→3,370）；短線技術反彈目標 3,600-3,800；中期轉多需等 Meta AI ASIC 訂單確認或法說正面指引；保守者可等日線出現底部 K 線（量縮+止跌）再介入",
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/2454.TW/technical-analysis",
+        "https://poorstock.com/stock/2454"
+      ],
+      "expires_at": "2026-07-25T09:00:00+08:00"
+    }
+  ],
+  "whats_changed": {
+    "generated_at": "2026-07-18T09:00:00+08:00",
+    "vs_report": "股市-週報-20260704.json",
+    "vs_date": "2026-07-04",
+    "direction_changes": [
+      {
+        "ticker": "^TWII",
+        "prev_direction": "neutral_bullish",
+        "new_direction": "neutral_bearish",
+        "change": "降評",
+        "reason": "TSMC 法說後外資持續賣超，跌破 20MA；從 ATH 46,125（7/1）已回落 -3.2%"
+      },
+      {
+        "ticker": "^SOX",
+        "prev_direction": "bearish",
+        "new_direction": "bearish",
+        "change": "維持空頭，但幅度加深",
+        "reason": "SOX 本週再跌 -9.5%，從 ATH 累計 -21.5%（前週報 -10.2%，本週再一波）"
+      },
+      {
+        "ticker": "2330",
+        "prev_direction": "bullish",
+        "new_direction": "neutral_bearish",
+        "change": "降評（多頭→中性偏空）",
+        "reason": "Q2 法說後「買消息賣事實」，-7.29% 跌破 20MA；資本支出疑慮打壓估值"
+      },
+      {
+        "ticker": "2454",
+        "prev_direction": "neutral_bullish",
+        "new_direction": "neutral_bearish",
+        "change": "降評（中性偏多→中性偏空）",
+        "reason": "RSI 跌至 19.49 極度超賣，跌破布林帶下軌，7/17 單日 -8.92%"
+      },
+      {
+        "ticker": "NVDA",
+        "prev_direction": "neutral",
+        "new_direction": "bearish",
+        "change": "降評（中性→空頭）",
+        "reason": "SOX 系統性修正波及，跌破 20MA $215，H20 利多被市場無視"
+      },
+      {
+        "ticker": "AAPL",
+        "prev_direction": "neutral_bullish",
+        "new_direction": "bullish",
+        "change": "升評（中性偏多→多頭）",
+        "reason": "7/17 歷史新高 $333.74，逆勢走強；消費電子 vs 半導體分化"
+      },
+      {
+        "ticker": "TSM",
+        "prev_direction": "neutral_bullish",
+        "new_direction": "neutral_bearish",
+        "change": "降評（中性偏多→中性偏空）",
+        "reason": "跟隨 2330 法說後賣壓，ADR 跌 -3%，跌破 20MA"
+      },
+      {
+        "ticker": "TSLA",
+        "prev_direction": "neutral",
+        "new_direction": "neutral",
+        "change": "維持中性",
+        "reason": "週持平，7/22 財報為近期最大不確定事件，維持觀望"
+      },
+      {
+        "ticker": "2317",
+        "prev_direction": "neutral_bearish",
+        "new_direction": "neutral_bearish",
+        "change": "維持中性偏空",
+        "reason": "7/4 週暴跌後仍在均線壓制下，未確認反轉"
+      }
+    ],
+    "alerts_added": [
+      "alert-TSMC-earnings-selloff-20260717",
+      "alert-SOX-correction-21pct-ATH-20260718",
+      "alert-TSLA-earnings-7/22-20260718",
+      "alert-FOMC-7/28-waiting-20260718",
+      "alert-AAPL-ATH-divergence-20260718",
+      "alert-2454-RSI-oversold-20260718"
+    ],
+    "alerts_removed": [
+      "alert-SOX-weekly-crash-10pct-20260704",
+      "alert-FOMC-minutes-20260708",
+      "alert-NFP-June-weak-20260704",
+      "alert-CPI-June-watch-20260714",
+      "alert-Dow-ATH-value-rotation-20260701",
+      "alert-2317-foxconn-breakdown-20260704"
+    ],
+    "summary": "本週最重大變化：TSMC 法說引爆半導體二次修正，台積電（2330）、TSM、NVDA 全線降評；聯發科（2454）因 RSI 極度超賣降至中性偏空；AAPL 逆勢創 ATH 升評至多頭。前週 SOX 崩跌警報升級為更深的 -21% ATH 修正。所有方向變更均保守處理，避免過度樂觀。"
+  }
+}

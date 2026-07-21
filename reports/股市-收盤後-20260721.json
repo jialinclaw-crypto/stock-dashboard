@@ -1,0 +1,380 @@
+{
+  "_schema_version": "3",
+  "type": "close",
+  "report_file": "股市-收盤後-20260721.md",
+  "date": "2026-07-21",
+  "weekday": "週二",
+  "generated_at": "2026-07-21T14:02:00+08:00",
+  "expires_at": "2026-07-22T09:00:00+08:00",
+  "market_summary": {
+    "taiex": {
+      "close": 42449.7,
+      "change": -221.57,
+      "change_pct": -0.52,
+      "open": null,
+      "high": 42680,
+      "low": 42200,
+      "prev_close": 42671.27,
+      "volume_bn_twd": 983.86,
+      "data_confidence": "high",
+      "data_note": "收盤點位來自Taipei Times報導（-221.57至42,449.70，-0.52%），成交額NT$983.86億為同一來源確認。高低點為估算。注意：本地7/20報告估值42,922.61，與今日prev_close 42,671.27有落差，疑似7/20收盤較前估低。"
+    },
+    "tw_overall": "weak_stabilization",
+    "us_overall": "event_driven_tsla_earnings",
+    "short_term_bias": "neutral_cautious",
+    "narrative": "崩後第二交易日延續弱勢(-221pts, -0.52%)，但台積電技術反彈(+1.31%)貢獻約+240pts支撐，成交量縮至9,839億（前日12,130億）。最關鍵訊號：外資轉為淨買超+323.8億，為7/17史上最大賣超後首次明顯回流。底部確認尚需時間，TSLA Q2財報(美東7/22)為今晚核心事件。"
+  },
+  "institutional_flows": {
+    "date": "2026-07-21",
+    "foreign": {
+      "direction": "net_buy_significant",
+      "amount_bn_twd": 32.38,
+      "data_confidence": "medium",
+      "note": "外資淨買超+323.8億（32.38B TWD），崩後首次明顯買回。來源：Bloomberg/搜尋結果，方向性高信心，金額待TWSE官方確認。"
+    },
+    "investment_trust": {
+      "direction": "net_buy_small",
+      "data_confidence": "low",
+      "note": "估計逢低護盤，待確認"
+    },
+    "proprietary": {
+      "direction": "net_sell_small",
+      "data_confidence": "low",
+      "note": "估計避險賣壓延續，待確認"
+    },
+    "combined_estimate_bn_twd": "+300 至 +350（外資確認，投信/自營估算）"
+  },
+  "stocks": [
+    {
+      "signal_id": "stk-2330-2026-07-21-close",
+      "ticker": "2330",
+      "name": "台積電",
+      "market": "TW",
+      "price": 2340,
+      "price_prev": 2310,
+      "price_change": 30,
+      "price_change_pct": 1.3,
+      "direction": "neutral_positive",
+      "confidence": "medium",
+      "rationale": "技術性反彈+1.31%（Taipei Times確認），盤中單股貢獻約+240pts支撐指數。填補7/17跳空缺口下緣（~2,370）進行中。外資整體轉買有助題材，但台積電個股外資待確認。量縮（全市場9,839億 vs 前日12,130億）意味追高動能不足。",
+      "key_levels": {
+        "support": [
+          2290,
+          2250
+        ],
+        "resistance": [
+          2370,
+          2400
+        ]
+      },
+      "sources": [
+        "https://www.taipeitimes.com/News/biz/archives/2026/07/21/2003861083",
+        "https://finance.yahoo.com/quote/2330.TW/"
+      ],
+      "expires_at": "2026-07-22T09:00:00+08:00"
+    },
+    {
+      "signal_id": "stk-2454-2026-07-21-close",
+      "ticker": "2454",
+      "name": "聯發科",
+      "market": "TW",
+      "price": 3338,
+      "price_prev": 3355,
+      "price_change": -17,
+      "price_change_pct": -0.51,
+      "direction": "bearish",
+      "confidence": "medium",
+      "rationale": "連三日弱勢(-0.5%)，技術性超賣未見有效反彈。RSI估仍在22-30低位區，缺乏量能支撐。Meta ASIC合作為長線題材，短線難以催化。3,300整數關為關鍵支撐，跌破看3,200。",
+      "key_levels": {
+        "support": [
+          3300,
+          3200
+        ],
+        "resistance": [
+          3450,
+          3550
+        ]
+      },
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/2454.TW",
+        "https://www.taipeitimes.com/News/biz/archives/2026/07/21/2003861083"
+      ],
+      "expires_at": "2026-07-22T09:00:00+08:00"
+    },
+    {
+      "signal_id": "stk-2317-2026-07-21-close",
+      "ticker": "2317",
+      "name": "鴻海",
+      "market": "TW",
+      "price": 237.5,
+      "price_prev": 235.5,
+      "price_change": 2.0,
+      "price_change_pct": 0.85,
+      "direction": "neutral",
+      "confidence": "low",
+      "rationale": "小幅反彈+0.85%，AI伺服器題材維持，但整體市場弱勢限制漲幅。距全年高點314元（6/3）仍有24%空間。下一財報8/12為觀察點。",
+      "key_levels": {
+        "support": [
+          230,
+          220
+        ],
+        "resistance": [
+          245,
+          260
+        ]
+      },
+      "sources": [
+        "https://finance.yahoo.com/quote/2317.TW/",
+        "https://companiesmarketcap.com/foxconn/stock-price-history/"
+      ],
+      "expires_at": "2026-07-22T09:00:00+08:00"
+    },
+    {
+      "signal_id": "stk-NVDA-2026-07-21-close",
+      "ticker": "NVDA",
+      "name": "輝達",
+      "market": "US",
+      "price": 202.81,
+      "price_prev": 202.81,
+      "price_change": 0,
+      "price_change_pct": 0.0,
+      "direction": "neutral_negative",
+      "confidence": "medium",
+      "rationale": "7/20美股收$202.81，延續弱勢（7/20收盤較前一交易日-2.21%）。AI資本支出成效疑慮仍在，Big Tech財報週（7/22起）為關鍵觀察期。Blackwell需求基本面強，但估值修正未完成。",
+      "key_levels": {
+        "support": [
+          190,
+          180
+        ],
+        "resistance": [
+          215,
+          225
+        ]
+      },
+      "sources": [
+        "https://finance.yahoo.com/quote/NVDA/"
+      ],
+      "expires_at": "2026-07-22T09:00:00+08:00"
+    },
+    {
+      "signal_id": "stk-TSLA-2026-07-21-close",
+      "ticker": "TSLA",
+      "name": "特斯拉",
+      "market": "US",
+      "price": 380.84,
+      "price_prev": 380.04,
+      "price_change": 0.8,
+      "price_change_pct": 0.21,
+      "direction": "neutral_event_driven",
+      "confidence": "low",
+      "rationale": "Q2財報今晚（美東7/22盤後）公布，事件驅動高不確定性。市場預期：毛利率~17%回升、能源業務增長。超預期→科技股反彈觸媒；不如預期→AI題材補跌風險。股價$380.84（7/20收），距前高~$415仍有距離。",
+      "key_levels": {
+        "support": [
+          360,
+          340
+        ],
+        "resistance": [
+          400,
+          415
+        ]
+      },
+      "sources": [
+        "https://finance.yahoo.com/quote/TSLA/"
+      ],
+      "expires_at": "2026-07-22T09:00:00+08:00"
+    },
+    {
+      "signal_id": "stk-AAPL-2026-07-21-close",
+      "ticker": "AAPL",
+      "name": "蘋果",
+      "market": "US",
+      "price": 333.74,
+      "price_prev": 329.0,
+      "price_change": 4.74,
+      "price_change_pct": 1.44,
+      "direction": "neutral_positive",
+      "confidence": "medium",
+      "rationale": "7/20美股$333.74(+1.44%)，相對強勢。Apple Intelligence題材持續；供應鏈訊號（TSMC 3nm/2nm備貨）正面。Q3財報預計7/30公布。短線阻力$340，支撐$320。",
+      "key_levels": {
+        "support": [
+          320,
+          310
+        ],
+        "resistance": [
+          340,
+          355
+        ]
+      },
+      "sources": [
+        "https://finance.yahoo.com/quote/AAPL/"
+      ],
+      "expires_at": "2026-07-22T09:00:00+08:00"
+    },
+    {
+      "signal_id": "stk-TSM-2026-07-21-close",
+      "ticker": "TSM",
+      "name": "台積電ADR",
+      "market": "US",
+      "price": 402.3,
+      "price_prev": 398.37,
+      "price_change": 3.93,
+      "price_change_pct": 0.99,
+      "direction": "neutral_positive",
+      "confidence": "medium",
+      "rationale": "7/20/21 ADR $402.30(+0.99%)，與本地2330漲勢一致。台積電先行反彈為今日正面訊號。阻力$415-420（前跌缺口），支撐$385-390（週均）。",
+      "key_levels": {
+        "support": [
+          385,
+          370
+        ],
+        "resistance": [
+          415,
+          425
+        ]
+      },
+      "sources": [
+        "https://finance.yahoo.com/quote/TSM/"
+      ],
+      "expires_at": "2026-07-22T09:00:00+08:00"
+    }
+  ],
+  "alerts": [
+    {
+      "alert_id": "alert-taiex-post-crash-volatility-20260717",
+      "level": "high",
+      "type": "market_risk",
+      "title": "台股崩後震盪驗底期（Day 2）",
+      "body": "7/17史上最大單日跌點（-2,954pts, -6.47%）後連兩日收黑，底部未確認。今日外資轉買是正面訊號，需連續確認。預期波動持續至Big Tech財報週結束（~7/30）。",
+      "url": "https://www.taipeitimes.com/News/biz/archives/2026/07/21/2003861083",
+      "source": "Taipei Times",
+      "expires_at": "2026-07-22T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-tsla-q2-earnings-20260722",
+      "level": "high",
+      "type": "earnings_event",
+      "title": "TSLA Q2財報今晚公布（美東7/22盤後）",
+      "body": "特斯拉Q2財報美東今晚公布（台北時間7/23清晨）。關注：毛利率回升、能源業務、Robotaxi時程。超預期→科技股反彈觸媒；不如預期→補跌風險。影響明日台股科技股開盤。",
+      "url": "https://finance.yahoo.com/quote/TSLA/",
+      "source": "Yahoo Finance",
+      "expires_at": "2026-07-23T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-big-tech-earnings-week-20260722",
+      "level": "high",
+      "type": "market_event",
+      "title": "Big Tech 財報週（7/22-7/30）",
+      "body": "TSLA(7/22)→GOOGL/MSFT(~7/24)→META(~7/25)→AAPL(~7/30)。高波動期，每日財報結果將直接影響次日台股電子股。保持警覺，降低槓桿。",
+      "url": "https://www.taipeitimes.com/News/biz/archives/2026/07/21/2003861083",
+      "source": "Taipei Times + Bloomberg",
+      "expires_at": "2026-07-31T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-sox-bear-territory-20260721",
+      "level": "medium",
+      "type": "technical_risk",
+      "title": "SOX 半導體指數：熊市區間觀察",
+      "body": "SOX指數自高點下跌幅度在7/17達到臨界水準，今日台積電反彈使情況略改善，但SOX尚未確認反彈。聯發科、NVDA等持續弱勢為警示。",
+      "url": "https://finance.yahoo.com/quote/NVDA/",
+      "source": "Bloomberg",
+      "expires_at": "2026-07-22T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-foreign-buy-reversal-20260721",
+      "level": "medium",
+      "type": "institutional_signal",
+      "title": "外資轉買超+323.8億（需確認）",
+      "body": "外資今日淨買超約+323.8億TWD，為7/17史上最大賣超後首次明顯回流。單日回補可能是技術性，需連續2-3日確認方能視為趨勢逆轉。關注明日外資動向。",
+      "url": "https://www.twse.com.tw/zh/trading/foreign/t86.html",
+      "source": "Bloomberg/TWSE估算",
+      "expires_at": "2026-07-22T09:00:00+08:00"
+    }
+  ],
+  "whats_changed": {
+    "prev_report": "股市-收盤後-20260720.md",
+    "prev_date": "2026-07-20",
+    "summary": "外資方向重大逆轉（net_sell→net_buy_significant，+323.8億），台積電技術反彈確認。大盤仍收黑但幅度縮小。TSLA財報（今晚）為下一催化劑。",
+    "key_changes": [
+      "外資淨買超+323.8億（由賣轉買，崩後首次）",
+      "台積電+1.31%反彈，撐住指數-460→-221pts",
+      "聯發科持續弱勢（方向不變bearish）",
+      "新增alert：外資買超確認觀察期",
+      "TAIEX收盤落差：前報告估42,922 vs 今日implied prev_close 42,671（資料修正）"
+    ],
+    "diffs": [
+      {
+        "field": "market_summary.taiex.close",
+        "prev": 42922.61,
+        "curr": 42449.7,
+        "note": "TAIEX: 42922.61 → 42449.7（注：前日報告估值與今日implied prev_close有落差，以今日Taipei Times數據為準）"
+      },
+      {
+        "field": "institutional_flows.foreign.direction",
+        "prev": "net_sell",
+        "curr": "net_buy_significant",
+        "note": "外資方向逆轉：net_sell → net_buy_significant，崩後首次回流，重要信號"
+      },
+      {
+        "field": "stocks.2330.price",
+        "prev": 2310,
+        "curr": 2340,
+        "pct_change": 1.3
+      },
+      {
+        "field": "stocks.2454.price",
+        "prev": 3355,
+        "curr": 3338,
+        "pct_change": -0.51
+      },
+      {
+        "field": "stocks.2317.price",
+        "prev": 235.5,
+        "curr": 237.5,
+        "pct_change": 0.85
+      },
+      {
+        "field": "stocks.NVDA.price",
+        "prev": 202.81,
+        "curr": 202.81,
+        "pct_change": 0.0
+      },
+      {
+        "field": "stocks.TSLA.price",
+        "prev": 380.04,
+        "curr": 380.84,
+        "pct_change": 0.21
+      },
+      {
+        "field": "stocks.AAPL.price",
+        "prev": 329,
+        "curr": 333.74,
+        "pct_change": 1.44
+      },
+      {
+        "field": "stocks.TSM.price",
+        "prev": 398.37,
+        "curr": 402.3,
+        "pct_change": 0.99
+      },
+      {
+        "field": "alerts.new",
+        "items": [
+          "alert-big-tech-earnings-week-20260722",
+          "alert-taiex-post-crash-volatility-20260717",
+          "alert-sox-bear-territory-20260721",
+          "alert-foreign-buy-reversal-20260721"
+        ],
+        "note": "新增 alerts"
+      },
+      {
+        "field": "alerts.removed",
+        "items": [
+          "alert-big-tech-earnings-week-20260720",
+          "alert-taiex-post-crash-volatility-20260720",
+          "alert-sox-bear-territory-20260720"
+        ],
+        "note": "移除/過期 alerts（已由新版取代）"
+      }
+    ]
+  }
+}

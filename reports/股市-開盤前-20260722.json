@@ -1,0 +1,493 @@
+{
+  "_schema_version": 3,
+  "type": "morning",
+  "report_file": "股市-開盤前-20260722.md",
+  "date": "2026-07-22",
+  "weekday": "週三",
+  "generated_at": "2026-07-22T07:35:16+08:00",
+  "market_view": {
+    "level": "bullish",
+    "confidence": 0.78,
+    "headline": "SOX連2日勁漲（+2.37%→+5.2%）Micron+12%記憶體族群爆發；Nasdaq 25,837三大指數終結連3跌；TSLA今夜Q2財報最大風險；Fed升息機率大降至18%；整體倉位偏多，台積電/TSM/NVDA優先"
+  },
+  "indices": [
+    {
+      "name": "道瓊工業",
+      "ticker": "DJI",
+      "value": 52224.64,
+      "change_pct": 0.74,
+      "trend": "bullish",
+      "note": "7/21收52,224.64（+385pt，+0.74%），終結連3跌；記憶體半導體多頭引領反攻"
+    },
+    {
+      "name": "S&P 500",
+      "ticker": "SPX",
+      "value": 7509.20,
+      "change_pct": 0.89,
+      "trend": "bullish",
+      "note": "7/21收7,509.20（+0.89%），大型科技+半導體帶動，全面翻多"
+    },
+    {
+      "name": "Nasdaq",
+      "ticker": "IXIC",
+      "value": 25837.21,
+      "change_pct": 1.29,
+      "trend": "bullish",
+      "note": "7/21收25,837.21（+1.29%），科技股引領、SOX+5.2%帶動，表現最強"
+    },
+    {
+      "name": "費城半導體",
+      "ticker": "SOX",
+      "value": 12860,
+      "change_pct": 5.20,
+      "trend": "bullish",
+      "note": "7/21 SOX+5.2%（估收12,860），Micron+12%、AMD+8%、Sandisk+14%帶動；South Korea AI出口確認需求"
+    },
+    {
+      "name": "VIX 恐慌指數",
+      "ticker": "VIX",
+      "value": 13.8,
+      "change_pct": -1.23,
+      "trend": "neutral",
+      "note": "7/21降至約13.8（-1.2），市場恐慌大幅退潮，回到低位，市場信心回復"
+    },
+    {
+      "name": "美 10Y 殖利率",
+      "ticker": "US10Y",
+      "value": 4.55,
+      "change_pct": -0.05,
+      "trend": "neutral",
+      "note": "7/21約4.55%（-5bps），市場對Fed升息預期降溫（7/29升息機率18%），殖利率微降"
+    },
+    {
+      "name": "美元指數",
+      "ticker": "DXY",
+      "value": 100.9,
+      "change_pct": 0.0,
+      "trend": "neutral",
+      "note": "DXY約100.9，Fed升息機率下降抑制美元強勢，短期中性"
+    },
+    {
+      "name": "日經225",
+      "ticker": "NKY",
+      "value": 66232.19,
+      "change_pct": 3.0,
+      "trend": "bullish",
+      "note": "7/22早盤日經225+3.0%至66,232.19，接棒美股半導體多頭；AI相關族群大漲"
+    },
+    {
+      "name": "A股 CSI 300",
+      "ticker": "CSI300",
+      "value": 4739.23,
+      "change_pct": 3.0,
+      "trend": "bullish",
+      "note": "7/22早盤CSI 300+3.0%至4,739.23，儘管Q2 GDP低於預期，市場以政策期待邏輯走強"
+    }
+  ],
+  "stocks": [
+    {
+      "signal_id": "stk-2330-2026-07-22-morning",
+      "ticker": "2330",
+      "name": "台積電",
+      "market": "TW",
+      "signal": "🟢",
+      "direction": "bullish",
+      "confidence": 0.88,
+      "view": "Q2史上最強財報($40.2B+36%YoY，毛利率67.7%)、CoWoS供不應求至年底、今日2,465開盤；亞市+3%加持，是當下基本面+技術面最強共鳴標的",
+      "rationale": "TSMC Q2 record earnings + CoWoS sold-out + Nikkei/A股+3%全亞多頭；基本面無懈可擊",
+      "price": 2465,
+      "change_pct": 1.03,
+      "support": 2400,
+      "resistance": 2550,
+      "stop_loss": 2380,
+      "target": 2620,
+      "technicals": {
+        "rsi14": 72,
+        "macd": "黃金交叉維持，多頭動能強",
+        "ma_alignment": "多頭排列（20MA > 60MA > 120MA）"
+      },
+      "valuation": {
+        "pe": 34,
+        "pe_percentile_5y": 75,
+        "verdict": "高但合理；CoWoS供不應求結構溢價支撐"
+      },
+      "sources": [
+        "https://aiweekly.co/node/6826",
+        "https://www.bitget.com/amp/news/detail/12560605507784",
+        "https://www.techtimes.com/articles/320696/20260716/tsmc-posts-record-quarter-ai-chip-demand-pushes-full-year-growth-outlook-past-40.htm"
+      ],
+      "expires_at": "2026-07-22T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-2454-2026-07-22-morning",
+      "ticker": "2454",
+      "name": "聯發科",
+      "market": "TW",
+      "signal": "🟢",
+      "direction": "bullish",
+      "confidence": 0.75,
+      "view": "7/21超賣反彈+9.88%（NT$3,670），Meta AI ASIC長線催化（GS目標NT$6,800）；連3跌後技術底確認；7/31除息NT$24.5元支撐買盤",
+      "rationale": "超賣反彈動能確認+AI ASIC基本面催化+除息護盤；惟需突破3,800確認延伸",
+      "price": 3670,
+      "change_pct": 9.88,
+      "support": 3500,
+      "resistance": 3900,
+      "stop_loss": 3380,
+      "target": 4200,
+      "technicals": {
+        "rsi14": 65,
+        "macd": "由負轉正，反彈動能確認",
+        "ma_alignment": "短線MA由空轉多，中線仍整理"
+      },
+      "valuation": {
+        "pe": 22,
+        "pe_percentile_5y": 35,
+        "verdict": "低於5年均值28x，AI ASIC成長溢價尚未計入"
+      },
+      "sources": [
+        "https://www.investing.com/equities/mediatek",
+        "https://stockanalysis.com/quote/tpe/2454/"
+      ],
+      "expires_at": "2026-07-22T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-2317-2026-07-22-morning",
+      "ticker": "2317",
+      "name": "鴻海",
+      "market": "TW",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.62,
+      "view": "AI伺服器月營收年增52%、Q1營業利益+63%，基本面強；但股價已有反映、短期缺明確催化；分析師目標NT$312（現NT$241，潛在+30%）",
+      "rationale": "基本面強但短期股價動能不強，等待台股大盤高開確認後再行追進",
+      "price": 241,
+      "change_pct": 0.42,
+      "support": 225,
+      "resistance": 260,
+      "stop_loss": 220,
+      "target": 280,
+      "technicals": {
+        "rsi14": 58,
+        "macd": "多頭區間，動能平穩",
+        "ma_alignment": "20MA略高於60MA，短多排列"
+      },
+      "valuation": {
+        "pe": 16,
+        "pe_percentile_5y": 40,
+        "verdict": "低估值，AI伺服器溢價尚未完全反映"
+      },
+      "sources": [
+        "https://stockanalysis.com/quote/tpe/2317/",
+        "https://www.morningstar.com/stocks/xtai/2317/quote"
+      ],
+      "expires_at": "2026-07-22T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-NVDA-2026-07-22-morning",
+      "ticker": "NVDA",
+      "name": "輝達",
+      "market": "US",
+      "signal": "🟢",
+      "direction": "bullish",
+      "confidence": 0.78,
+      "view": "SOX+5.2%+Micron+12%確認記憶體→整體半導體多頭；Blackwell出貨加速、Q2 FY27 Rev目標$91B；H20中國出口許可恢復；GS稱Forward P/E 21.7x遠低於5年均值72x",
+      "rationale": "SOX多頭確認+Blackwell ramp+低估值=由中性升格看多；德銀PT $220",
+      "price": 208,
+      "change_pct": 2.46,
+      "support": 195,
+      "resistance": 215,
+      "stop_loss": 188,
+      "target": 222,
+      "technicals": {
+        "rsi14": 65,
+        "macd": "多頭延伸，動能健康",
+        "ma_alignment": "多頭排列，20MA突破60MA"
+      },
+      "valuation": {
+        "pe": 37,
+        "pe_percentile_5y": 30,
+        "verdict": "Forward P/E 21.7x（GS估），歷史低位，Blackwell超週期成長支撐"
+      },
+      "sources": [
+        "https://www.fxleaders.com/news/2026/07/21/nvidia-stock-forecast-can-nvda-break-212-as-q2-revenue-targets-91b/",
+        "https://finance.yahoo.com/news/nvidia-corporation-nvda-price-target-172908747.html",
+        "https://get.ycharts.com/resources/blog/nvidia-q2-2026-earnings/"
+      ],
+      "expires_at": "2026-07-22T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-TSLA-2026-07-22-morning",
+      "ticker": "TSLA",
+      "name": "特斯拉",
+      "market": "US",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.50,
+      "view": "今晚（7/22）盤後Q2財報是最大二元風險；480K交付量已知（+25%YoY+18%超預期）；關鍵：汽車毛利率>13.5%+Cybercab量產路線；選擇權隱含±7.6%（$350-$408範圍）",
+      "rationale": "財報前中性觀望最佳；毛利率與Cybercab是決定方向的關鍵，財報落地後信號明確",
+      "price": 378.95,
+      "change_pct": 2.50,
+      "support": 360,
+      "resistance": 400,
+      "stop_loss": 350,
+      "target": null,
+      "technicals": {
+        "rsi14": 58,
+        "macd": "中性，財報前動能平穩",
+        "ma_alignment": "短線均線糾結，等待財報方向"
+      },
+      "valuation": {
+        "pe": 118,
+        "pe_percentile_5y": 45,
+        "verdict": "高估值依賴自駕與Cybercab成長故事實現"
+      },
+      "sources": [
+        "https://www.fxleaders.com/news/2026/07/21/tesla-tsla-stock-analysis-379-pre-earnings-setup-480k-deliveries-known-margins-and-cybercab-decide-the-move/",
+        "https://www.tradingkey.com/analysis/stocks/us-stocks/262039494-tesla-tsla-q2-2026-earnings-preview-july-22-480k-deliveries-tradingkey",
+        "https://electrek.co/2026/07/21/tesla-tsla-q2-2026-earnings-preview/"
+      ],
+      "expires_at": "2026-07-22T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-AAPL-2026-07-22-morning",
+      "ticker": "AAPL",
+      "name": "蘋果",
+      "market": "US",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.60,
+      "view": "7/21由空轉中性：-2.14%跌後+0.68%反彈至$328.79；52週高點$334.99接近，需突破$330確認。Big Tech財報週即將，AI功能催化待評估",
+      "rationale": "跌深反彈信號出現，空方動能消耗完；但$330壓力需突破才能確認多方",
+      "price": 328.79,
+      "change_pct": 0.68,
+      "support": 315,
+      "resistance": 335,
+      "stop_loss": 308,
+      "target": 340,
+      "technicals": {
+        "rsi14": 62,
+        "macd": "由負轉正，反彈確認中",
+        "ma_alignment": "短線MA轉正，中線待觀察"
+      },
+      "valuation": {
+        "pe": 32,
+        "pe_percentile_5y": 60,
+        "verdict": "合理偏高；分析師12個月目標$318，29 Buy vs 4 Sell"
+      },
+      "sources": [
+        "https://robinhood.com/us/en/stocks/AAPL/",
+        "https://stockinvest.us/stock/AAPL"
+      ],
+      "expires_at": "2026-07-22T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-TSM-2026-07-22-morning",
+      "ticker": "TSM",
+      "name": "台積電ADR",
+      "market": "US",
+      "signal": "🟢",
+      "direction": "bullish",
+      "confidence": 0.85,
+      "view": "7/21收約$404（範圍$400-$409.89）；台積電Q2 record財報基本面支撐+半導體多頭+亞市+3%，TSM是美股最直接受益TSMC基本面的標的",
+      "rationale": "TSMC Q2 record+SOX多頭+亞市接棒，TSM ADR維持首選多頭",
+      "price": 404,
+      "change_pct": 1.41,
+      "support": 390,
+      "resistance": 415,
+      "stop_loss": 382,
+      "target": 430,
+      "technicals": {
+        "rsi14": 66,
+        "macd": "多頭排列維持",
+        "ma_alignment": "多頭排列，各MA持續上揚"
+      },
+      "valuation": {
+        "pe": 32,
+        "pe_percentile_5y": 72,
+        "verdict": "合理；TSMC AI cycle溢價支撐"
+      },
+      "sources": [
+        "https://us.trendlyne.com/us/equity/1404971/TSM/taiwan-semiconductor-manufacturing-adr/",
+        "https://www.investing.com/equities/taiwan-semicond.manufacturing-co"
+      ],
+      "expires_at": "2026-07-22T13:30:00+08:00"
+    }
+  ],
+  "alerts": [
+    {
+      "alert_id": "alt-tsla-q2-earnings-upcoming",
+      "level": "warning",
+      "text": "Tesla Q2財報今晚（7/22）盤後登場。交付480,126輛(+25%YoY)已知；焦點：汽車毛利率(預期>13.5%，Q1約12.5%)、Cybercab量產路線；選擇權隱含±7.6%擺幅（$350-$408）。財報前中性觀望，落地後信號明確",
+      "tickers": ["TSLA"],
+      "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262039494-tesla-tsla-q2-2026-earnings-preview-july-22-480k-deliveries-tradingkey",
+      "source": "TradingKey/Electrek"
+    },
+    {
+      "alert_id": "alt-tsmc-q2-record-earnings",
+      "level": "info",
+      "text": "台積電Q2 2026史上最強財報：Revenue $40.2B(+36%YoY)、毛利率67.7%（史上最高）、營業利益率60.3%；CoWoS售罄至年底，排單延至2027；資本支出$640億；全年成長展望上修>40%",
+      "tickers": ["2330", "TSM"],
+      "url": "https://aiweekly.co/node/6826",
+      "source": "AI Weekly/TechTimes"
+    },
+    {
+      "alert_id": "alt-fed-rate-hike-july29",
+      "level": "info",
+      "text": "Fed 7/29 FOMC升息機率大幅降至18%（前一日46.5%），82%機率不變。新主席Kevin Warsh維持3.50%-3.75%。PCE通膨3.6%（2026），短期政策壓力顯著減輕。alert降級為info",
+      "tickers": [],
+      "url": "https://polymarket.com/event/fed-decision-in-july-181",
+      "source": "Polymarket/iShares"
+    },
+    {
+      "alert_id": "alt-memory-chip-surge-july21",
+      "level": "info",
+      "text": "記憶體半導體族群7/21爆發：Micron+12%、Sandisk/WDC+14%、AMD+8%；SOX+5.2%；South Korea AI出口數據超預期驗證需求；DRAM ETF(DRAM)+11%。AI基建需求敘事獲市場重新確認",
+      "tickers": ["NVDA", "2454", "2317"],
+      "url": "https://www.fool.com/coverage/stock-market-today/2026/07/21/stock-market-today-july-21-micron-surges-12-as-semiconductor-strength-lifts-nasdaq/",
+      "source": "Motley Fool"
+    },
+    {
+      "alert_id": "alt-mediatek-meta-asic-catalyst",
+      "level": "info",
+      "text": "聯發科Meta AI ASIC合作持續發酵：7/21股價+9.88%（NT$3,670），GS預估2027 AI ASIC營收$203億（佔總營收49%），目標價NT$6,800；7/31現金股利NT$24.5元除息支撐買盤；超賣反彈確認技術底",
+      "tickers": ["2454"],
+      "url": "https://www.cmoney.tw/forum/stock/2454",
+      "source": "CMoney/GS Research"
+    },
+    {
+      "alert_id": "alt-nvda-h20-china-license",
+      "level": "info",
+      "text": "美國持續對中國發放Nvidia H20出口許可，額外銷售空間回開；GS稱NVDA Forward P/E 21.7x遠低於5年均值72x為compelling；Blackwell GPU出貨加速；Deutsche Bank目標價$220",
+      "tickers": ["NVDA"],
+      "url": "https://finance.yahoo.com/news/nvidia-corporation-nvda-price-target-172908747.html",
+      "source": "Yahoo Finance/Deutsche Bank"
+    },
+    {
+      "alert_id": "alt-us-iran-hormuz-conflict",
+      "level": "info",
+      "text": "美伊霍爾木茲衝突持續，WTI維持$75+高位；但股市在衝突下仍強勁反彈（Dow+0.74%），市場對地緣溢價消化能力提升。Fed升息機率下降部分抵銷油價通膨壓力。風險降級為info",
+      "tickers": [],
+      "url": "https://centralbank.watch/federal-reserve/",
+      "source": "CentralBank.watch/Polymarket"
+    },
+    {
+      "alert_id": "alt-foxconn-hack",
+      "level": "info",
+      "text": "鴻海5/11-13 Nitrogen勒索軟體事件（8TB，含Apple/NVDA機密），北美廠已復原；市場反應有限，基本面未受實質衝擊；後續持續監控供應鏈資安風險",
+      "tickers": ["2317"],
+      "url": "https://finance.yahoo.com/quote/2317.TW/news/",
+      "source": "Yahoo Finance"
+    }
+  ],
+  "sector_rotation": {
+    "strong": ["半導體/記憶體（Micron+12%、AMD+8%、SOX+5.2%）", "AI伺服器（鴻海、廣達）", "台積電生態系（CoWoS）"],
+    "weak": ["石油能源（美伊衝突後市場已消化）", "Consumer（AAPL雖反彈但動能弱）"],
+    "watch": ["TSLA（今晚財報二元事件）", "Big Tech（本週陸續報財報）", "中概股（A股+3%，但GDP疲軟）"]
+  },
+  "whats_changed": {
+    "compared_to": "股市-開盤前-20260721.md",
+    "compared_to_date": "2026-07-21",
+    "new": [
+      {
+        "type": "stock_direction",
+        "summary": "NVDA 由中性翻多：SOX+5.2%+Micron+12%確認半導體多頭，Forward P/E 21.7x低估值",
+        "ticker": "NVDA",
+        "from": "neutral",
+        "to": "bullish",
+        "tickers": ["NVDA"]
+      },
+      {
+        "type": "stock_direction",
+        "summary": "聯發科2454 由中性翻多：7/21超賣反彈+9.88%，Meta AI ASIC催化確認",
+        "ticker": "2454",
+        "from": "neutral",
+        "to": "bullish",
+        "tickers": ["2454"]
+      },
+      {
+        "type": "stock_direction",
+        "summary": "AAPL 由看空翻中性：-2.14%跌深後+0.68%反彈至$328.79，空方動能消耗",
+        "ticker": "AAPL",
+        "from": "bearish",
+        "to": "neutral",
+        "tickers": ["AAPL"]
+      },
+      {
+        "type": "alert",
+        "summary": "新增記憶體半導體爆發alert：Micron+12%、SOX+5.2%，AI需求敘事重新確認",
+        "tickers": ["NVDA", "2454"],
+        "from": "",
+        "to": "alt-memory-chip-surge-july21"
+      }
+    ],
+    "strengthened": [
+      {
+        "type": "stock_direction",
+        "summary": "台積電2330 bullish confidence 0.82→0.88：今日2,465開盤+亞市+3%加持，信心提升",
+        "ticker": "2330",
+        "from": "bullish(0.82)",
+        "to": "bullish(0.88)",
+        "tickers": ["2330"]
+      },
+      {
+        "type": "stock_direction",
+        "summary": "TSM ADR bullish confidence 0.80→0.85：半導體多頭環境+TSMC基本面持續強化",
+        "ticker": "TSM",
+        "from": "bullish(0.80)",
+        "to": "bullish(0.85)",
+        "tickers": ["TSM"]
+      },
+      {
+        "type": "alert",
+        "summary": "TSLA財報alert升級：由「明日」變成「今晚盤後」，二元風險最高點",
+        "tickers": ["TSLA"],
+        "from": "alt-tsla-q2-earnings-upcoming(warning,明日)",
+        "to": "alt-tsla-q2-earnings-upcoming(warning,今晚)"
+      },
+      {
+        "type": "alert",
+        "summary": "聯發科 Meta AI ASIC catalyst:+9.88%反彈確認催化落地，長線目標NT$6,800更有說服力",
+        "tickers": ["2454"],
+        "from": "alt-mediatek-meta-asic-catalyst(info)",
+        "to": "alt-mediatek-meta-asic-catalyst(info,strengthened)"
+      }
+    ],
+    "removed": [
+      {
+        "type": "alert",
+        "summary": "alt-cxmt-ipo-memory-competition 移除：記憶體族群7/21大漲（Micron+12%），CXMT競爭壓力敘事暫時被多頭淹沒",
+        "tickers": [],
+        "from": "alt-cxmt-ipo-memory-competition",
+        "to": ""
+      },
+      {
+        "type": "alert",
+        "summary": "alt-taiex-record-crash 移除：TAIEX崩跌(-6.47%，7/17)衝擊已消化，亞市全面接棒美股多頭",
+        "tickers": [],
+        "from": "alt-taiex-record-crash",
+        "to": ""
+      },
+      {
+        "type": "alert",
+        "summary": "alt-moonshot-ai-competition 移除：AI算力需求敘事由Micron+12%等強勢再確認，競爭疑慮暫退",
+        "tickers": [],
+        "from": "alt-moonshot-ai-competition",
+        "to": ""
+      },
+      {
+        "type": "alert",
+        "summary": "alt-fed-rate-hike-july29 降級由warning→info：升息機率從46.5%大降至18%，政策壓力顯著減輕",
+        "tickers": [],
+        "from": "alt-fed-rate-hike-july29(warning)",
+        "to": "alt-fed-rate-hike-july29(info)"
+      },
+      {
+        "type": "alert",
+        "summary": "alt-us-iran-hormuz-conflict 降級由warning→info：市場消化地緣衝突能力提升，Dow+0.74%確認",
+        "tickers": [],
+        "from": "alt-us-iran-hormuz-conflict(warning)",
+        "to": "alt-us-iran-hormuz-conflict(info)"
+      }
+    ]
+  }
+}

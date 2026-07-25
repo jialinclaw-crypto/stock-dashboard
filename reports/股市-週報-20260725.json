@@ -1,0 +1,483 @@
+{
+  "_schema_version": 3,
+  "type": "weekly",
+  "report_file": "股市-週報-20260725.md",
+  "date": "2026-07-25",
+  "weekday": "週六",
+  "generated_at": "2026-07-25T09:08:49+08:00",
+  "expires_at": "2026-08-01T09:00:00+08:00",
+  "market_view": {
+    "tw_overall": "neutral",
+    "us_overall": "neutral_bearish",
+    "short_term_bias": "neutral_bearish",
+    "key_risk": "FOMC 7/29-30 升息機率暴升至35%（9月82%）；TSLA Q2 爆雷FCF轉負引發Mag7 AI資本支出憂慮；Brent原油衝破$100（美-伊衝突）重燃通膨；Big Tech超級財報週（MSFT/META/AAPL/AMZN 7/29-30）集中轟炸；台股20MA（44,900）仍是壓力，外資買超持續性待確認",
+    "key_catalyst": "台股7/21史上最大單日漲點+1,783（SOX+5.2%帶動底部V型反彈）；外資7/22終結連13賣超（+173億）為本週最大底部訊號；石化傳產與被動元件輪動接棒；聯發科RSI從19反彈；若FOMC按兵+MSFT/META財報超預期，Nasdaq可能反彈3-5%",
+    "note": "本週最大戲劇：台股上下各逾千點（7/21 +1,783、7/24 -1,001），本質是7/17崩盤後的技術性反彈遭財報雷（TSLA/GOOGL）截斷。關鍵觀察：①FOMC是否真的升息（若升息，科技估值重評；按兵，財報驅動反彈）；②下週Mag7財報能否扭轉AI資本支出「燒錢無底洞」敘事；③台股外資連買能否持續（7/22終結連13賣後7/24又轉賣是警訊）。保守原則：不追高，等FOMC結果後再確認方向。"
+  },
+  "indices": [
+    {
+      "name": "台股加權指數",
+      "ticker": "^TWII",
+      "close": 43850.0,
+      "prev_close": 42671.0,
+      "week_change": 1179.0,
+      "week_change_pct": 2.77,
+      "week_high": 45089.82,
+      "week_low": 43641.0,
+      "volume_week_bn_twd_est": 32000.0,
+      "note": "7/20 -222→42,449；7/21 +1,783→44,232（史上最大單日漲點）；7/22 +593→44,825（外資終結連13賣）；7/23 +26→44,851（45K失守）；7/24 -1,001→43,850（TSLA/GOOGL財報雷，盤中破季線43,641）；20MA≈44,900（跌破警訊）；60MA≈43,500；200MA≈41,500；週高45,089（7/23晨）",
+      "signal_id": "stk-TWII-2026-07-25-weekly",
+      "direction": "neutral",
+      "confidence": 0.55,
+      "rationale": "本週史上最大單日漲點（7/21 +1,783）驗證底部承接力，全週漲+2.77%；但7/24再遭千點殺壓、外資7/24轉賣超、20MA跌破，顯示趨勢尚未確立反轉。60MA（43,500）是中期多空分界，待FOMC後確認方向。",
+      "sources": [
+        "https://newtalk.tw/news/view/2026-07-24/1049185",
+        "https://udn.com/news/story/7251/9585790",
+        "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-july-21-dow-sp-500-nasdaq-084631499.html"
+      ],
+      "expires_at": "2026-08-01T09:00:00+08:00"
+    },
+    {
+      "name": "S&P 500",
+      "ticker": "^GSPC",
+      "close": 7412.0,
+      "prev_close": 7457.69,
+      "week_change": -45.69,
+      "week_change_pct": -0.61,
+      "week_high": 7530.0,
+      "week_low": 7370.0,
+      "volume_week_bn_twd_est": null,
+      "note": "7/21 +0.9%；7/22 -0.14%→7,498.96；7/23 TSLA/GOOGL財報衝擊急跌；7/24 +0.05%→7,412（小幅穩住）；週跌-0.61%；油價$100+通膨+升息預期為主要壓力",
+      "signal_id": "stk-GSPC-2026-07-25-weekly",
+      "direction": "neutral_bearish",
+      "confidence": 0.55,
+      "rationale": "S&P週跌-0.61%，Mag7財報震撼後7/24勉強平盤。FOMC升息風險+油價通膨是雙重壓制。PCE數據（7/27）是調整升息預期的最近催化劑。",
+      "sources": [
+        "https://www.cnbc.com/2026/07/24/stock-market-next-week-outlook-for-july-27-31-2026.html",
+        "https://finance.yahoo.com/markets/live/stock-market-today-friday-july-24-dow-sp-500-nasdaq-081854465.html"
+      ],
+      "expires_at": "2026-08-01T09:00:00+08:00"
+    },
+    {
+      "name": "Nasdaq",
+      "ticker": "^IXIC",
+      "close": 24976.0,
+      "prev_close": 25520.24,
+      "week_change": -544.24,
+      "week_change_pct": -2.13,
+      "week_high": 25830.0,
+      "week_low": 24800.0,
+      "volume_week_bn_twd_est": null,
+      "note": "7/21 +1.3%（SOX帶動）；7/22 -0.57%→25,690；7/23 TSLA-14.52%/GOOGL-7% Mag7蒸發$800B；7/24 -0.64%→24,976；週跌-2.13%為三大指數最弱",
+      "signal_id": "stk-IXIC-2026-07-25-weekly",
+      "direction": "bearish",
+      "confidence": 0.6,
+      "rationale": "Nasdaq週跌-2.13%，科技財報雙雷+AI資本支出無上限恐慌是核心壓力。週 RSI 跌破50，方向轉空。FOMC升息確認將進一步壓制高估值成長股。",
+      "sources": [
+        "https://finance.yahoo.com/markets/live/stock-market-today-friday-july-24-dow-sp-500-nasdaq-081854465.html",
+        "https://www.fool.com/coverage/stock-market-today/2026/07/24/stock-market-today-july-24-dow-recovers-and-sandisk-tumbles-11-as-tech-stocks-fall-further/"
+      ],
+      "expires_at": "2026-08-01T09:00:00+08:00"
+    },
+    {
+      "name": "Dow Jones",
+      "ticker": "^DJI",
+      "close": 51947.0,
+      "prev_close": 52146.42,
+      "week_change": -199.42,
+      "week_change_pct": -0.38,
+      "week_high": 52450.0,
+      "week_low": 51600.0,
+      "volume_week_bn_twd_est": null,
+      "note": "7/21 +0.7%；7/22 -0.01%→52,218；7/23 科技財報衝擊；7/24 +0.46%→51,947（Dow相對抗跌，傳產/能源撐盤）；週跌-0.38%為三大最抗跌",
+      "signal_id": "stk-DJI-2026-07-25-weekly",
+      "direction": "neutral",
+      "confidence": 0.5,
+      "rationale": "Dow週跌僅-0.38%，能源/傳產相對受益油價攀升，Value輪動格局延續。但51,900支撐帶若失守，技術面轉弱。",
+      "sources": [
+        "https://finance.yahoo.com/markets/live/stock-market-today-friday-july-24-dow-sp-500-nasdaq-081854465.html"
+      ],
+      "expires_at": "2026-08-01T09:00:00+08:00"
+    },
+    {
+      "name": "費半 SOX",
+      "ticker": "SOX",
+      "close": 11900.0,
+      "prev_close": 11500.0,
+      "week_change": 400.0,
+      "week_change_pct": 3.48,
+      "week_high": 12350.0,
+      "week_low": 11200.0,
+      "volume_week_bn_twd_est": null,
+      "note": "7/21 +5.2%→12,350（超賣反彈，Micron+12%領漲）；後半週財報恐慌回落；週估+3.5%，從ATH累計修正約-18%（前週-21%）；仍在技術性熊市修正範疇",
+      "signal_id": "stk-SOX-2026-07-25-weekly",
+      "direction": "neutral_bearish",
+      "confidence": 0.5,
+      "rationale": "SOX週漲約+3.5%但反彈後半週即遭財報衝擊回落，11,000為中期多頭底線。NVDA 8月財報與FOMC是下週SOX方向關鍵。",
+      "sources": [
+        "https://note.com/karlo_investor/n/ncd141cc726ed?hl=en",
+        "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-july-21-dow-sp-500-nasdaq-084631499.html"
+      ],
+      "expires_at": "2026-08-01T09:00:00+08:00"
+    }
+  ],
+  "macro": {
+    "vix": {
+      "value": 20.0,
+      "prev": 17.76,
+      "direction": "up",
+      "note": "財報週衝擊+升息預期推升，從低17升至20左右；VIX<25仍非恐慌性崩盤，但警戒值上升"
+    },
+    "us_10y_yield": {
+      "value": 4.7,
+      "prev": 4.56,
+      "direction": "up",
+      "note": "升至2025年1月以來最高，接近測試5%心理關卡；FOMC升息預期+油價通膨雙重推升"
+    },
+    "dxy": {
+      "value": 101.0,
+      "prev": 100.91,
+      "direction": "flat",
+      "note": "美元指數大致平穩，但USD/JPY觸163（日圓1986年以來最弱），反映日本與美國利差持續擴大"
+    },
+    "brent_oil": {
+      "value": 100.0,
+      "prev": 83.0,
+      "direction": "up",
+      "note": "衝破$100大關（美-伊武裝衝突、胡塞武裝攻擊沙烏地油輪、霍爾木茲海峽供給風險），重燃通膨擔憂"
+    },
+    "fed_rate_hike_prob_jul29": {
+      "value": 0.35,
+      "prev": 0.18,
+      "direction": "up",
+      "note": "Fed 7/29升息機率從18%暴升至35%（一度46.5%）；9月升息機率82%；是年內最大單週升息預期躍升"
+    }
+  },
+  "stocks": [
+    {
+      "ticker": "2330",
+      "name": "台積電",
+      "market": "TW",
+      "close": 2360.0,
+      "prev_close": 2290.0,
+      "week_change": 70.0,
+      "week_change_pct": 3.06,
+      "ma_20": 2410.0,
+      "ma_60": 2180.0,
+      "ma_200": 1920.0,
+      "week_rsi": 47.0,
+      "note": "7/17 崩至2,290後，本週7/21反彈至2,380-2,400，7/23衝關2,430失敗，7/24科技恐慌再壓2,350-2,360；尾盤神秘大單護盤；20MA（約2,410）為最近壓力；7/24外資小幅賣超但尾盤有買盤",
+      "signal_id": "stk-2330-2026-07-25-weekly",
+      "direction": "neutral",
+      "confidence": 0.55,
+      "rationale": "週漲+3.06%，但仍在法說後修正區間內（2,290-2,430）震盪，20MA（2,410）壓制明顯。法說後AI資本支出疑慮未散，外資態度仍謹慎。2,350為關鍵多頭防線，跌破則測2,290低點。FOMC後若按兵不動+Mag7財報正向，有望再試2,430。",
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/2330.TW/technical-analysis",
+        "https://goodinfo.tw/tw/ShowBuySaleChart.asp?STOCK_ID=2330&CHT_CAT=DATE"
+      ],
+      "expires_at": "2026-08-01T09:00:00+08:00"
+    },
+    {
+      "ticker": "2454",
+      "name": "聯發科",
+      "market": "TW",
+      "close": 3720.0,
+      "prev_close": 3875.0,
+      "week_change": -155.0,
+      "week_change_pct": -4.0,
+      "ma_20": 3800.0,
+      "ma_60": 3600.0,
+      "ma_200": 3200.0,
+      "week_rsi": 42.0,
+      "note": "前週RSI低至19超賣，本週技術反彈至3,750-3,800附近；7/24 TSLA財報衝擊科技情緒，回落至3,720；外資7/22轉買是正面訊號但持續性待觀察；Q2財報（預計7/30-8/10公布）是下一催化劑",
+      "signal_id": "stk-2454-2026-07-25-weekly",
+      "direction": "neutral",
+      "confidence": 0.5,
+      "rationale": "前週RSI 19超賣後技術反彈，但漲勢未能延續（週估跌-4%）。AI ASIC+車用晶片基本面仍強。20MA（3,800）為壓力帶，60MA（3,600）為支撐底線。待Q2財報確認基本面。保守持觀望態度。",
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/2454.TW/technical-analysis",
+        "https://tw.stock.yahoo.com/quote/2454.TW/institutional-trading"
+      ],
+      "expires_at": "2026-08-01T09:00:00+08:00"
+    },
+    {
+      "ticker": "2317",
+      "name": "鴻海",
+      "market": "TW",
+      "close": 252.0,
+      "prev_close": 251.5,
+      "week_change": 0.5,
+      "week_change_pct": 0.2,
+      "ma_20": 248.0,
+      "ma_60": 235.0,
+      "ma_200": 215.0,
+      "week_rsi": 53.0,
+      "note": "7/22 +2.24%至251.5，7/23 GB300伺服器題材未助漲，7/24 TSLA FCF轉負（EV代工情緒受壓）外資賣超前3名（約-10,036張），收252附近；20MA（約248）已站上，60MA（235）為支撐",
+      "signal_id": "stk-2317-2026-07-25-weekly",
+      "direction": "neutral",
+      "confidence": 0.5,
+      "rationale": "週漲幾近平盤（+0.2%），20MA已站穩。GB300伺服器代工（德州廠量產）是中長線動能，但短線受TSLA EV代工情緒拖累。無明顯方向，等待AI伺服器訂單能見度更新。",
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/2317.TW/technical-analysis"
+      ],
+      "expires_at": "2026-08-01T09:00:00+08:00"
+    },
+    {
+      "ticker": "NVDA",
+      "name": "輝達",
+      "market": "US",
+      "close": 207.0,
+      "prev_close": 212.0,
+      "week_change": -5.0,
+      "week_change_pct": -2.36,
+      "ma_20": 210.0,
+      "ma_60": 195.0,
+      "ma_200": 162.0,
+      "week_rsi": 45.0,
+      "note": "7/21 SOX+5.2%帶動強彈，7/23 GOOGL AI資本支出$195-205B恐慌（需求可持續性質疑）回落至$208.75；7/24約$207；20MA（$210）為壓力；B300/GB300量產持續；8月財報（~8/27）為最大催化劑",
+      "signal_id": "stk-NVDA-2026-07-25-weekly",
+      "direction": "neutral_bearish",
+      "confidence": 0.55,
+      "rationale": "週跌-2.36%，20MA跌破為技術警訊。GOOGL AI資本支出引發「下游需求是否飽和」質疑壓制NVDA。但GB300量產確認+長期AI基建趨勢支撐$195-200底部。週RSI 45，短線偏弱。",
+      "sources": [
+        "https://note.com/karlo_investor/n/ncd141cc726ed?hl=en",
+        "https://www.gurufocus.com/news/8978471/tech-stocks-tumble-tsla-and-googl-weigh-on-consumer-discretionary-and-communication-services"
+      ],
+      "expires_at": "2026-08-01T09:00:00+08:00"
+    },
+    {
+      "ticker": "TSLA",
+      "name": "特斯拉",
+      "market": "US",
+      "close": 391.0,
+      "prev_close": 374.0,
+      "week_change": 17.0,
+      "week_change_pct": 4.55,
+      "ma_20": 355.0,
+      "ma_60": 340.0,
+      "ma_200": 300.0,
+      "week_rsi": 38.0,
+      "note": "7/23盤後Q2爆雷（EPS $0.33 miss 38%、FCF轉負、CAPEX+142%）；7/23收$319.69（-14.52%，本年最大單日跌幅）；7/24空頭大規模回補反彈至$391（+22%以上，極端波動）；YTD -15.3%；JPMorgan等下調目標價",
+      "signal_id": "stk-TSLA-2026-07-25-weekly",
+      "direction": "bearish",
+      "confidence": 0.65,
+      "rationale": "Q2財報基本面嚴重惡化：EPS miss 38%、汽車毛利率崩至1.4%、FCF首次轉負（-$10.9B）、CAPEX+142%（AI/Robotics燒錢）。7/24空頭回補反彈至$391，週線表面上漲+4.55%，但此反彈不代表基本面好轉。Cybercab量產時程為唯一做多邏輯（預計Q4）。中期偏空。",
+      "sources": [
+        "https://www.gurufocus.com/news/8978471/tech-stocks-tumble-tsla-and-googl-weigh-on-consumer-discretionary-and-communication-services",
+        "https://finance.yahoo.com/markets/live/stock-market-today-friday-july-24-dow-sp-500-nasdaq-081854465.html"
+      ],
+      "expires_at": "2026-08-01T09:00:00+08:00"
+    },
+    {
+      "ticker": "AAPL",
+      "name": "蘋果",
+      "market": "US",
+      "close": 321.0,
+      "prev_close": 333.74,
+      "week_change": -12.74,
+      "week_change_pct": -3.82,
+      "ma_20": 325.0,
+      "ma_60": 310.0,
+      "ma_200": 270.0,
+      "week_rsi": 52.0,
+      "note": "前週創ATH $333.74，本週受科技財報恐慌波及，7/24收$321，從ATH修正-3.8%；7/30 Q2財報（Apple Intelligence滲透率、iPhone 16S下季展望）是最大催化劑；YTD +22.8%仍為Mag7最強",
+      "signal_id": "stk-AAPL-2026-07-25-weekly",
+      "direction": "neutral",
+      "confidence": 0.55,
+      "rationale": "短線從ATH $333.74修正-3.8%，20MA（$325）附近支撐待確認。7/30財報為重要催化劑：Apple Intelligence成效（AI滲透率+ASP拉升）若正向，有望回測ATH；若保守指引，可能進一步修正至$310。YTD+22.8%基本面最強為多頭優勢。",
+      "sources": [
+        "https://seekingalpha.com/news/4617586-catalyst-watch-tech-majors-report-fomc-jersey-mikes-ipo-and-more-oil-anxiety"
+      ],
+      "expires_at": "2026-08-01T09:00:00+08:00"
+    },
+    {
+      "ticker": "TSM",
+      "name": "台積電ADR",
+      "market": "US",
+      "close": 413.0,
+      "prev_close": 422.0,
+      "week_change": -9.0,
+      "week_change_pct": -2.13,
+      "ma_20": 415.0,
+      "ma_60": 390.0,
+      "ma_200": 335.0,
+      "week_rsi": 46.0,
+      "note": "跟隨2330走弱，7/24收約$413（前週~$422）；ADR溢價壓縮中；美國亞利桑那廠4nm量產穩定但缺乏新催化劑；FOMC升息預期壓制外資ADR持倉",
+      "signal_id": "stk-TSM-2026-07-25-weekly",
+      "direction": "neutral_bearish",
+      "confidence": 0.5,
+      "rationale": "週跌-2.13%，跟隨台股電子盤。20MA（$415）附近是支撐兼壓力。FOMC升息確認則ADR遭外資持續調節；按兵不動+財報季正向則可回試$430+。與2330方向一致。",
+      "sources": [
+        "https://finance.yahoo.com/quote/NVDA/history/"
+      ],
+      "expires_at": "2026-08-01T09:00:00+08:00"
+    }
+  ],
+  "alerts": [
+    {
+      "alert_id": "alert-TSLA-Q2-earnings-crash-20260725",
+      "title": "TSLA Q2 財報爆雷——EPS miss 38%、FCF 首次轉負、CAPEX +142%",
+      "level": "critical",
+      "detail": "2026年7月23日TSLA Q2財報：EPS $0.33（預期$0.53，差距-38%）、汽車毛利率崩至1.4%（去年4.1%）、FCF首轉負（-$10.9B）、資本支出+142%至$57.9B（AI/Robotics投資）。7/23收$319.69（-14.52%，本年最大單日跌幅），7/24空頭回補至$391。JPMorgan/Mizuho等多家機構下調目標價。Cybercab Q4量產進度為下一催化劑，但近期財報面偏空。",
+      "url": "https://finance.yahoo.com/quote/TSLA/",
+      "source": "Tesla Q2 2026 Earnings Report",
+      "expires_at": "2026-08-01T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-GOOGL-AI-capex-overhang-20260725",
+      "title": "GOOGL AI 資本支出 $195-205B 引爆 Mag7「無底洞燒錢」恐慌",
+      "level": "critical",
+      "detail": "Alphabet Q2財報雖Cloud +82%、EPS $9.11超預期，但2026全年AI資本支出指引$195-205B遠超市場預期，市場解讀為「AI軍備競賽無上限」，引爆7/23整個科技族群-6%，Mag7蒸發市值近$800B。此恐慌波及NVDA（AI需求可持續性質疑）、台積電CoWoS訂單長期性疑慮。下週MSFT/META若提出相似高CAPEX指引，可能延續科技股賣壓。",
+      "url": "https://cryptobriefing.com/google-tesla-magnificent-seven-earnings-crypto/",
+      "source": "Alphabet Q2 2026 Earnings Call",
+      "expires_at": "2026-08-01T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-FOMC-7/29-rate-hike-risk-20260725",
+      "title": "FOMC 7/29-30 升息機率暴升至35%——年內最大宏觀事件",
+      "level": "critical",
+      "detail": "Fed funds futures顯示7/29升息25bps機率從18%（上週）暴升至35%（一度46.5%），9月升息機率達82%。驅動因子：Brent原油衝$100、TSLA財報顯示CAPEX+142%引發供應端通膨擔憂、10Y殖利率升至4.70%（2025年1月以來最高）。Fed若7/29升息，科技/成長股面臨估值重評、房貸成本上行、新興市場美元回流。台股電子股短線受壓。",
+      "url": "https://www.fool.com/investing/2026/07/24/probability-july-fed-rate-hike-tripled-last-week/",
+      "source": "CME FedWatch Tool / The Motley Fool",
+      "expires_at": "2026-08-01T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-oil-100-inflation-20260725",
+      "title": "Brent 原油衝破 $100——美-伊衝突重燃通膨擔憂",
+      "level": "warning",
+      "detail": "Brent原油衝破$100大關（前週~$83），美-伊軍事衝突升溫、胡塞武裝攻擊沙烏地油輪，霍爾木茲海峽供給風險再升。油價百元觸發通膨預期上行：10Y殖利率4.70%、Fed升息預期重燃。台灣石化傳產（台塑四寶）短線受益，但若持續高油價，企業成本壓力Q4開始侵蝕毛利。",
+      "url": "https://www.cnbc.com/2026/07/24/stock-market-next-week-outlook-for-july-27-31-2026.html",
+      "source": "CNBC Market Outlook",
+      "expires_at": "2026-08-01T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-mag7-super-earnings-week-20260725",
+      "title": "超級財報黃金週 7/29-30——MSFT/META/AAPL/AMZN+FOMC同步登場",
+      "level": "warning",
+      "detail": "下週（7/27-7/31）為年度最密集事件週：FOMC 7/29-30利率決策（升息vs按兵不動懸念最高）+MSFT Q2（7/29盤後）+META Q2（7/29盤後）+AAPL Q2（7/30盤後）+AMZN Q2（7/30盤後）。每日台股面臨美股盤後開盤缺口風險。AI資本支出數字（MSFT/META是否追隨GOOGL大幅增加）為最大變數，可能觸發半導體族群評價重估。",
+      "url": "https://seekingalpha.com/news/4617586-catalyst-watch-tech-majors-report-fomc-jersey-mikes-ipo-and-more-oil-anxiety",
+      "source": "Seeking Alpha Catalyst Watch",
+      "expires_at": "2026-08-01T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-tw-20ma-breakdown-20260725",
+      "title": "台股再度跌破 20MA（44,900）——趨勢確認前避免追高",
+      "level": "info",
+      "detail": "台股7/24收盤43,850，再度跌破20MA（約44,900），本週高點45,089上影線極長。外資7/22終結連13賣（+173億）是正向底部訊號，但7/24又轉賣超（-62億），連買訊號的持續性存疑。60MA（43,500）是中期多頭最後防線，若守住+FOMC按兵不動，則可期待再度反彈嘗試。季線43,641曾短暫跌破但尾盤拉回，顯示有承接。",
+      "url": "https://goodinfo.tw/tw/ShowK_Chart.asp?STOCK_ID=%E5%8A%A0%E6%AC%8A%E6%8C%87%E6%95%B8&CHT_CAT=WEEK",
+      "source": "Goodinfo Taiwan Stock Chart",
+      "expires_at": "2026-08-01T09:00:00+08:00"
+    }
+  ],
+  "whats_changed": {
+    "generated_at": "2026-07-25T09:08:49+08:00",
+    "compared_to": "2026-07-18",
+    "direction_changes": [
+      {
+        "id": "stk-TSLA-direction",
+        "ticker": "TSLA",
+        "name": "特斯拉",
+        "prev_direction": "neutral",
+        "new_direction": "bearish",
+        "reason": "Q2財報EPS miss 38%、FCF首次轉負、汽車毛利率崩至1.4%，7/23 -14.52%；基本面顯著惡化",
+        "significance": "high"
+      },
+      {
+        "id": "stk-IXIC-direction",
+        "ticker": "^IXIC",
+        "name": "Nasdaq",
+        "prev_direction": "bearish",
+        "new_direction": "bearish",
+        "reason": "方向維持，但壓力來源從上週TSMC法說轉為本週TSLA/GOOGL財報+AI資本支出恐慌+升息預期重燃",
+        "significance": "medium"
+      },
+      {
+        "id": "stk-TWII-direction",
+        "ticker": "^TWII",
+        "name": "台股加權指數",
+        "prev_direction": "neutral_bearish",
+        "new_direction": "neutral",
+        "reason": "台股7/21史上最大單日漲點+1,783，全週+2.77%，從neutral_bearish改善至neutral；但7/24再受壓，需FOMC後確認",
+        "significance": "medium"
+      },
+      {
+        "id": "stk-SOX-direction",
+        "ticker": "SOX",
+        "name": "費半SOX",
+        "prev_direction": "bearish",
+        "new_direction": "neutral_bearish",
+        "reason": "7/21 +5.2%（從ATH -21%極度超賣反彈），累計修正從-21%縮減至-18%；方向從bearish小幅改善",
+        "significance": "medium"
+      },
+      {
+        "id": "stk-NVDA-direction",
+        "ticker": "NVDA",
+        "name": "輝達",
+        "prev_direction": "bearish",
+        "new_direction": "neutral_bearish",
+        "reason": "從ATH修正後7/21跟隨SOX反彈，GOOGL AI資本支出質疑雖打壓，但未見新低；從bearish微幅改善",
+        "significance": "low"
+      }
+    ],
+    "alerts_resolved": [
+      {
+        "alert_id": "alert-TSLA-earnings-7/22-20260718",
+        "prev_title": "TSLA Q2 財報 7/22（三）收後——選擇權暗示 ±7% 擺幅",
+        "resolution": "財報已於7/22（美東）/7/23（台北）公布，EPS $0.33大幅遜於預期，已轉化為新critical alert（alert-TSLA-Q2-earnings-crash-20260725）",
+        "resolved_at": "2026-07-23T04:00:00+08:00"
+      },
+      {
+        "alert_id": "alert-2454-RSI-oversold-20260718",
+        "prev_title": "聯發科 RSI 跌至 19.49——極度超賣，技術反彈機會窗口",
+        "resolution": "聯發科RSI從19技術反彈，本週已回升至42附近，超賣狀態解除；機會窗口已結束，轉為中性觀察",
+        "resolved_at": "2026-07-22T14:30:00+08:00"
+      }
+    ],
+    "alerts_new": [
+      "alert-TSLA-Q2-earnings-crash-20260725",
+      "alert-GOOGL-AI-capex-overhang-20260725",
+      "alert-FOMC-7/29-rate-hike-risk-20260725",
+      "alert-oil-100-inflation-20260725",
+      "alert-mag7-super-earnings-week-20260725",
+      "alert-tw-20ma-breakdown-20260725"
+    ],
+    "alerts_escalated": [
+      {
+        "alert_id": "alert-FOMC-7/28-waiting-20260718",
+        "prev_level": "warning",
+        "note": "前週FOMC 7/28為「等待期」warning；本週升息機率從18%暴升至35%，已升級為critical（alert-FOMC-7/29-rate-hike-risk-20260725）"
+      }
+    ],
+    "macro_shifts": [
+      {
+        "indicator": "Fed 7/29 升息機率",
+        "prev": "18%",
+        "now": "35%（一度46.5%）",
+        "direction": "sharp_up",
+        "significance": "high"
+      },
+      {
+        "indicator": "Brent 原油",
+        "prev": "$83/桶",
+        "now": "$100/桶",
+        "direction": "sharp_up",
+        "significance": "high"
+      },
+      {
+        "indicator": "美10Y殖利率",
+        "prev": "4.56%",
+        "now": "4.70%",
+        "direction": "up",
+        "significance": "medium"
+      },
+      {
+        "indicator": "VIX",
+        "prev": "17.76",
+        "now": "~20",
+        "direction": "up",
+        "significance": "medium"
+      }
+    ],
+    "summary": "本週最大變化：①TSLA Q2爆雷從warning alert轉為critical事實（EPS miss、FCF轉負）；②FOMC升息機率從18%暴升至35%，宏觀風險顯著加重；③原油衝破$100重燃通膨；④台股出現史上最大單日漲點（+1,783）但接著週五又崩千點，底部V型未能確立；⑤外資7/22終結連13賣是本週唯一重要底部信號，但持續性存疑。整體從上週「半導體修正等待期」轉為「超級財報週+FOMC雙重壓力」格局，短期方向不明確。"
+  }
+}

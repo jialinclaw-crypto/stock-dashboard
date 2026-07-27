@@ -1,0 +1,351 @@
+{
+  "schema_version": "3",
+  "type": "close",
+  "generated_at": "2026-07-27T14:03:00+08:00",
+  "expires_at": "2026-07-28T09:00:00+08:00",
+  "market_summary": {
+    "taiex": {
+      "close_est": 43443,
+      "prev_close": 43654,
+      "change": -211,
+      "change_pct": -0.48,
+      "intraday_low": 43279,
+      "intraday_high": 43585,
+      "volume_bil_twd": 2800,
+      "confidence": "medium",
+      "note": "收盤估算值；盤中低點43,279，力守43,400整數關口；外資連7砍格局未改，技術面延續弱勢；7月以來累跌2,471點（-5.36%）"
+    },
+    "otc": {
+      "change": -28.57,
+      "confidence": "high",
+      "note": "OTC同步走跌"
+    },
+    "institutional_flow": {
+      "foreign": -195.77,
+      "trust": 96.0,
+      "proprietary": -110.98,
+      "proprietary_self": -19.64,
+      "proprietary_hedge": -91.34,
+      "total_net": -210.66,
+      "unit": "億TWD",
+      "foreign_consecutive_sell_days": 7,
+      "trust_consecutive_buy_days": 14
+    },
+    "foreign_top_sell": [
+      {
+        "ticker": "2409",
+        "name": "友達",
+        "sell_k_shares": 100,
+        "note": "超10萬張，今日外資賣超居冠"
+      }
+    ],
+    "foreign_top_buy": [
+      {
+        "ticker": "2610",
+        "name": "漢翔",
+        "note": "外資新進買超，防衛/軍工板塊輪動信號"
+      }
+    ]
+  },
+  "stocks": [
+    {
+      "signal_id": "stk-2330-2026-07-27-close",
+      "ticker": "2330",
+      "name": "台積電",
+      "market": "TW",
+      "price": 2330,
+      "price_prev": 2360,
+      "price_change": -30,
+      "price_change_pct": -1.27,
+      "direction": "neutral_negative",
+      "confidence": "medium",
+      "rationale": "台積電今日收約2,330元（估），盤中觸及2,330低點，技術面維持弱勢。TSM ADR週五（7/25）收403.41美元（-2.32%）已領跌。外資仍賣超，季線43,964失守後無支撐。2,300月線為下方最後重要支撐，若跌破恐下試2,280附近缺口。方向維持neutral_negative，信心中等（部分價格為估算）。",
+      "key_levels": {
+        "support": [2300, 2280],
+        "resistance": [2380, 2410]
+      },
+      "sources": [
+        "https://finance.ettoday.net/news/3208094",
+        "https://tw.stock.yahoo.com/quote/2330.TW/technical-analysis",
+        "https://finance.yahoo.com/quote/TSM/history/"
+      ],
+      "expires_at": "2026-07-28T09:00:00+08:00"
+    },
+    {
+      "signal_id": "stk-2454-2026-07-27-close",
+      "ticker": "2454",
+      "name": "聯發科",
+      "market": "TW",
+      "price": 3730,
+      "price_prev": 3720,
+      "price_prev_ex_div_adjusted": 3625,
+      "ex_dividend": true,
+      "ex_dividend_amount_est": 95,
+      "price_change_vs_adj": 105,
+      "price_change_pct_vs_adj": 2.9,
+      "price_change": 10,
+      "price_change_pct": 0.27,
+      "direction": "bullish",
+      "confidence": "medium",
+      "rationale": "聯發科今日除息（估約95元），開盤即完成填息，史上第4次秒填息，盤中漲逾3%。AAPL週五大漲3.53%提振蘋果供應鏈情緒為重要助力。AI ASIC及車用SoC需求基本面無惡化跡象，機構資金積極進場。方向由上日neutral升級為bullish，信心中等（除息金額及收盤為估算）。",
+      "key_levels": {
+        "support": [3650, 3600],
+        "resistance": [3800, 3900]
+      },
+      "sources": [
+        "https://tw.stock.yahoo.com/news/%E8%81%AF%E7%99%BC%E7%A7%91%E7%A7%92%E5%A1%AB%E6%81%AF%EF%BC%81%E5%8F%B2%E4%B8%8A%E7%AC%AC4%E6%AC%A1%E7%95%B6%E6%97%A5%E9%81%94%E9%99%A3-%E8%82%A1%E5%83%B9%E5%8B%81%E6%8F%9A%E9%80%BE3-022149314.html",
+        "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2454"
+      ],
+      "expires_at": "2026-07-28T09:00:00+08:00"
+    },
+    {
+      "signal_id": "stk-2317-2026-07-27-close",
+      "ticker": "2317",
+      "name": "鴻海",
+      "market": "TW",
+      "price": 254.5,
+      "price_prev": 252,
+      "price_change": 2.5,
+      "price_change_pct": 0.99,
+      "direction": "neutral_positive",
+      "confidence": "medium",
+      "rationale": "鴻海今日收254.5元（+1.19%），7月合併營收雙升創近8個月高，前7月累計締新猷，AI伺服器代工訂單確認度高。特斯拉EV代工拖累效應已局部消化，籌碼面今日較穩定。方向由上日neutral升級為neutral_positive。",
+      "key_levels": {
+        "support": [250, 248],
+        "resistance": [258, 262]
+      },
+      "sources": [
+        "https://tw.stock.yahoo.com/news/%E5%85%B6%E4%BB%96%E9%9B%BB-%E9%B4%BB%E6%B5%B77%E6%9C%88%E7%87%9F%E6%94%B6%E9%9B%99%E5%8D%87%E7%99%BB%E8%BF%918%E6%9C%88%E9%AB%98-%E6%94%9C%E5%89%8D7%E6%9C%88%E7%B7%A0%E6%96%B0%E7%8C%B7-075223384.html",
+        "https://www.cmoney.tw/forum/stock/2317"
+      ],
+      "expires_at": "2026-07-28T09:00:00+08:00"
+    },
+    {
+      "signal_id": "stk-NVDA-2026-07-27-close",
+      "ticker": "NVDA",
+      "name": "輝達",
+      "market": "US",
+      "price": 206.84,
+      "price_prev": 208.75,
+      "price_change": -1.91,
+      "price_change_pct": -0.92,
+      "note": "美股7/25（週五）收盤價，台股今日已反映",
+      "direction": "bullish",
+      "confidence": "medium",
+      "rationale": "NVDA週五收206.84美元（-0.92%），跌幅溫和，相對費半指數抗跌。GB300 Blackwell量產持續，8月財報為下一催化劑。方向維持bullish，支撐200美元為關鍵。",
+      "key_levels": {
+        "support": [200, 195],
+        "resistance": [215, 220]
+      },
+      "sources": [
+        "https://finance.yahoo.com/quote/NVDA/",
+        "https://finance.yahoo.com/quote/NVDA/history/"
+      ],
+      "expires_at": "2026-07-28T09:00:00+08:00"
+    },
+    {
+      "signal_id": "stk-TSLA-2026-07-27-close",
+      "ticker": "TSLA",
+      "name": "特斯拉",
+      "market": "US",
+      "price": 313.03,
+      "price_prev": 319.69,
+      "price_change": -6.66,
+      "price_change_pct": -2.08,
+      "note": "美股7/25（週五）收盤價，台股今日已反映",
+      "direction": "bearish",
+      "confidence": "high",
+      "rationale": "TSLA週五續跌2.08%至313.03美元，Q2財報爆雷（EPS$0.33 vs預期$0.53，FCF轉負）餘波未消，今年累跌約29%。市場對AI/Robotics資本支出回報疑慮持續，機構下調目標價。方向維持bearish（high）。",
+      "key_levels": {
+        "support": [300, 280],
+        "resistance": [330, 340]
+      },
+      "sources": [
+        "https://finance.yahoo.com/quote/TSLA/",
+        "https://www.bloomberg.com/news/articles/2026-07-22/tesla-second-quarter-earnings-miss-wall-street-s-expectations"
+      ],
+      "expires_at": "2026-07-28T09:00:00+08:00"
+    },
+    {
+      "signal_id": "stk-AAPL-2026-07-27-close",
+      "ticker": "AAPL",
+      "name": "蘋果",
+      "market": "US",
+      "price": 333.02,
+      "price_prev": 321.66,
+      "price_change": 11.36,
+      "price_change_pct": 3.53,
+      "note": "美股7/25（週五）收盤價，已帶動台灣蘋果供應鏈（聯發科秒填息部分歸因）",
+      "direction": "bullish",
+      "confidence": "medium",
+      "rationale": "AAPL週五大漲3.53%至333.02美元，Apple Intelligence需求回升或財報超預期為驅動力，對台灣蘋果供應鏈（聯發科、鴻海）有正面連帶效應。方向由上日neutral顯著升級為bullish。",
+      "key_levels": {
+        "support": [325, 318],
+        "resistance": [345, 355]
+      },
+      "sources": [
+        "https://finance.yahoo.com/quote/AAPL/",
+        "https://finance.yahoo.com/quote/AAPL/history/"
+      ],
+      "expires_at": "2026-07-28T09:00:00+08:00"
+    },
+    {
+      "signal_id": "stk-TSM-2026-07-27-close",
+      "ticker": "TSM",
+      "name": "台積電ADR",
+      "market": "US",
+      "price": 403.41,
+      "price_prev": 413.0,
+      "price_change": -9.59,
+      "price_change_pct": -2.32,
+      "note": "美股7/25（週五）收盤價",
+      "direction": "neutral_negative",
+      "confidence": "medium",
+      "rationale": "TSM ADR週五收403.41美元（-2.32%），與2330本地股同步承壓，外資對台積電持續減碼。ADR折價確認本地股賣壓方向。方向維持neutral_negative。",
+      "key_levels": {
+        "support": [395, 385],
+        "resistance": [415, 425]
+      },
+      "sources": [
+        "https://ts2.tech/en/tsmc-tpe2330-shares-friday-downturn-widens-adr-discount-by-14/",
+        "https://finance.yahoo.com/quote/TSM/history/"
+      ],
+      "expires_at": "2026-07-28T09:00:00+08:00"
+    }
+  ],
+  "alerts": [
+    {
+      "alert_id": "alert-foreign-7day-sell-2026-07-27",
+      "level": "high",
+      "title": "外資連7日賣超195億，累計賣壓持續加重",
+      "summary": "外資今日賣超195.77億元（連第7日），今日最大賣超為友達（2409）超10萬張。若明日延續為第8天，TAIEX 43,000整數關口恐受考驗。三大法人合計淨賣超210.66億元，偏空格局明確。",
+      "url": "https://tw.stock.yahoo.com/news/%E3%80%90follow%E6%B3%95%E4%BA%BA%E3%80%91%E5%8F%B0%E8%82%A1%E9%9C%87%E7%9B%AA%E9%80%BE%E5%8D%83%E9%BB%9E%EF%BC%81%E6%8A%95%E4%BF%A1%E6%AD%BB%E5%AE%88%E5%A4%96%E8%B3%87%E9%80%A37%E7%A0%8D-%E7%BA%8C%E8%B3%A3%E8%B6%85195%E5%84%84%E5%85%83-070724988.html",
+      "source": "Yahoo 奇摩股市"
+    },
+    {
+      "alert_id": "alert-mediatek-ex-div-instant-fill-2026-07-27",
+      "level": "medium",
+      "title": "聯發科除息秒填息：史上第4次當日達陣，盤中漲逾3%",
+      "summary": "聯發科（2454）今日除息約95元，開盤即完成填息（秒填息），盤中漲逾3%，為史上第4次當日填息紀錄。AAPL大漲帶動蘋果供應鏈情緒，基本面強健信心確認。",
+      "url": "https://tw.stock.yahoo.com/news/%E8%81%AF%E7%99%BC%E7%A7%91%E7%A7%92%E5%A1%AB%E6%81%AF%EF%BC%81%E5%8F%B2%E4%B8%8A%E7%AC%AC4%E6%AC%A1%E7%95%B6%E6%97%A5%E9%81%94%E9%99%A3-%E8%82%A1%E5%83%B9%E5%8B%81%E6%8F%9A%E9%80%BE3-022149314.html",
+      "source": "Yahoo 奇摩股市"
+    },
+    {
+      "alert_id": "alert-foxconn-july-revenue-2026-07-27",
+      "level": "medium",
+      "title": "鴻海7月營收創近8個月高，AI伺服器代工動能確認",
+      "summary": "鴻海（2317）公告7月合併營收雙升創近8個月新高，前7月累計成長創新猷。AI伺服器代工訂單持續放量，特斯拉EV拖累效應局部消化。股價今日上揚至254.5元（+1.19%）。",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%B6%E4%BB%96%E9%9B%BB-%E9%B4%BB%E6%B5%B77%E6%9C%88%E7%87%9F%E6%94%B6%E9%9B%99%E5%8D%87%E7%99%BB%E8%BF%918%E6%9C%88%E9%AB%98-%E6%94%9C%E5%89%8D7%E6%9C%88%E7%B7%A0%E6%96%B0%E7%8C%B7-075223384.html",
+      "source": "Yahoo 奇摩股市"
+    },
+    {
+      "alert_id": "alert-aapl-surge-2026-07-27",
+      "level": "medium",
+      "title": "AAPL週五大漲3.53%至$333，蘋果供應鏈受惠",
+      "summary": "Apple（AAPL）週五（7/25）收333.02美元（+3.53%），為今日台灣蘋果供應鏈走強（聯發科秒填息）重要催化劑。Apple Intelligence需求回升或財報超預期為驅動力。",
+      "url": "https://finance.yahoo.com/quote/AAPL/",
+      "source": "Yahoo Finance"
+    },
+    {
+      "alert_id": "alert-taiex-43k-risk-2026-07-27",
+      "level": "medium",
+      "title": "台股4萬點告急分析：2大變數恐引爆下一波賣壓",
+      "summary": "《中時》今日分析台股43,443點收盤後，40,000點告急風險：①美債殖利率走勢；②外資持續撤退台股。7月以來已跌5.36%，若外資賣超延續，43,000整數關口為近期關鍵防線。",
+      "url": "https://www.chinatimes.com/realtimenews/20260727001071-260410",
+      "source": "中時新聞網"
+    },
+    {
+      "alert_id": "alert-defense-rotation-2026-07-27",
+      "level": "low",
+      "title": "外資轉進漢翔等軍工股，防衛板塊輪動信號",
+      "summary": "外資今日在大規模賣超電子/面板的同時，新進買超漢翔（2610），顯示防衛/軍工板塊有資金輪動。可持續觀察漢翔後續籌碼動向。",
+      "url": "https://tw.stock.yahoo.com/news/%E3%80%90follow%E6%B3%95%E4%BA%BA%E3%80%91%E5%8F%B0%E8%82%A1%E9%9C%87%E7%9B%AA%E9%80%BE%E5%8D%83%E9%BB%9E%EF%BC%81%E6%8A%95%E4%BF%A1%E6%AD%BB%E5%AE%88%E5%A4%96%E8%B3%87%E9%80%A37%E7%A0%8D-%E7%BA%8C%E8%B3%A3%E8%B6%85195%E5%84%84%E5%85%83-070724988.html",
+      "source": "Yahoo 奇摩股市"
+    }
+  ],
+  "whats_changed": {
+    "generated_at": "2026-07-27T14:03:00+08:00",
+    "prev_report_date": "2026-07-24",
+    "direction_changes": [
+      {
+        "ticker": "2454",
+        "name": "聯發科",
+        "prev_direction": "neutral",
+        "curr_direction": "bullish",
+        "prev_price": 3720,
+        "curr_price": 3730,
+        "note": "除息秒填息（史上第4次），AAPL大漲帶動蘋果鏈，方向顯著升級"
+      },
+      {
+        "ticker": "2317",
+        "name": "鴻海",
+        "prev_direction": "neutral",
+        "curr_direction": "neutral_positive",
+        "prev_price": 252,
+        "curr_price": 254.5,
+        "note": "7月營收創近8個月高，基本面超預期"
+      },
+      {
+        "ticker": "AAPL",
+        "name": "蘋果",
+        "prev_direction": "neutral",
+        "curr_direction": "bullish",
+        "prev_price": 321.66,
+        "curr_price": 333.02,
+        "price_change_pct": 3.53,
+        "note": "週五大漲3.53%，方向大幅升級"
+      }
+    ],
+    "unchanged_directions": [
+      {
+        "ticker": "2330",
+        "name": "台積電",
+        "direction": "neutral_negative",
+        "note": "維持弱勢，價格續跌"
+      },
+      {
+        "ticker": "NVDA",
+        "name": "輝達",
+        "direction": "bullish",
+        "note": "小跌但方向不變"
+      },
+      {
+        "ticker": "TSLA",
+        "name": "特斯拉",
+        "direction": "bearish",
+        "note": "財報爆雷餘波，方向不變"
+      },
+      {
+        "ticker": "TSM",
+        "name": "台積電ADR",
+        "direction": "neutral_negative",
+        "note": "同步弱勢，方向不變"
+      }
+    ],
+    "new_alert_ids": [
+      "alert-foreign-7day-sell-2026-07-27",
+      "alert-mediatek-ex-div-instant-fill-2026-07-27",
+      "alert-foxconn-july-revenue-2026-07-27",
+      "alert-aapl-surge-2026-07-27",
+      "alert-taiex-43k-risk-2026-07-27",
+      "alert-defense-rotation-2026-07-27"
+    ],
+    "resolved_alert_ids": [
+      "alert-endofday-mystery-buy-2026-07-24",
+      "alert-taiex-44k-lost-2026-07-24"
+    ],
+    "continued_alert_ids": [
+      "alert-TSLA-crash-confirmed-2026-07-24",
+      "alert-AI-capex-overhang-2026-07-24",
+      "alert-foreign-sell-reversal-2026-07-24"
+    ],
+    "notes": [
+      "聯發科方向升級：neutral → bullish（除息秒填息，史上第4次，強烈bullish信號）",
+      "鴻海方向升級：neutral → neutral_positive（7月營收近8月高）",
+      "AAPL方向升級：neutral → bullish（週五+3.53%，供應鏈受惠）",
+      "alert-endofday-mystery-buy-2026-07-24 解除：上週五預言的「歷史級軋空」未成真，今日繼續跌211點",
+      "alert-taiex-44k-lost-2026-07-24 升級替換為 alert-taiex-43k-risk-2026-07-27（風險下移至43,000）",
+      "外資賣超連續天數：24日（估計第1天大規模賣超）→ 今日為連第7天；保守確認數字"
+    ]
+  }
+}

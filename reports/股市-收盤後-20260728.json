@@ -1,0 +1,404 @@
+{
+  "schema_version": "3",
+  "type": "close",
+  "generated_at": "2026-07-28T14:03:02+08:00",
+  "expires_at": "2026-07-29T09:00:00+08:00",
+  "data_confidence_note": "今日收盤數據部分為估算（標注 confidence:low），盤後官方數據請至 TWSE 查詢確認。",
+  "market_summary": {
+    "taiex": {
+      "close_est": 42350,
+      "prev_close": 43634,
+      "change": -1284,
+      "change_pct": -2.94,
+      "intraday_low": 41728,
+      "intraday_high": 43221,
+      "volume_bil_twd": 5000,
+      "confidence": "low",
+      "note": "收盤估算值（低信心）：盤中10:48最低41,728（跌4.37%），尾盤神秘大單拉抬台積電/聯發科後收斂跌幅，估算收42,350附近。前收43,634.19確認（CNA報導）。成交量估逾5,000億元（放量恐慌殺盤）。主因全球AI晶片崩跌：南韓KOSPI盤中跌8.2%觸熔斷，Samsung/SK海力士跌9%+。Bloomberg：Chip Rout Deepens on Funding Worry, China Competition。"
+    },
+    "otc": {
+      "change_est": -40,
+      "confidence": "low",
+      "note": "OTC估算同步重跌，電子類股全面下挫，南亞科/華邦電跌停"
+    },
+    "institutional_flow": {
+      "foreign": -300,
+      "trust": 10,
+      "proprietary": -80,
+      "total_net": -370,
+      "unit": "億TWD",
+      "confidence": "low",
+      "note": "今日法人數據為低信心估算，以官方TWSE收盤公告為準。外資預估大幅賣超（全球晶片崩跌背景），投信或少量護盤，自營避險賣出。",
+      "foreign_consecutive_sell_days_est": 5,
+      "note_consecutive": "7/27外資反手買超80.4億（終結連7日賣超），但今日全球晶片崩跌恐再度大賣，估計第2輪連賣第1日（保守估算）"
+    },
+    "foreign_top_sell_est": [
+      {
+        "ticker": "2330",
+        "name": "台積電",
+        "note": "外資連5砍（7/27確認連4砍），今日晶片崩跌環境必續賣；為主要賣超標的",
+        "confidence": "medium"
+      },
+      {
+        "ticker": "2454",
+        "name": "聯發科",
+        "note": "昨日秒填息利多今日完全消化，外資資料顯示今日拋售",
+        "confidence": "medium"
+      }
+    ],
+    "foreign_top_buy_est": [],
+    "sector_rotation": {
+      "heavy_sell": ["半導體", "DRAM/NAND（南亞科/華邦電跌停）", "電子下游"],
+      "relative_resilience": ["金融", "電信", "航運", "傳產"]
+    }
+  },
+  "stocks": [
+    {
+      "signal_id": "stk-2330-2026-07-28-close",
+      "ticker": "2330",
+      "name": "台積電",
+      "market": "TW",
+      "price": 2310,
+      "price_prev": 2350,
+      "price_change": -40,
+      "price_change_pct": -1.7,
+      "price_intraday_low": 2280,
+      "price_intraday_note": "10:48時報2,285（跌2.77%），尾盤大單拉回後估收2,310附近",
+      "direction": "bearish",
+      "confidence": "low",
+      "rationale": "台積電今日遭全球晶片崩跌重創，盤中最低觸及2,280元（Focus Taiwan 10:48報2,285，跌2.77%）。電子盤預收跌43元至2,320，開盤直殺2,280。尾盤神秘大單介入拉抬後估收約2,310元。外資連5砍確認。月線2,300告急，若今晚TSM ADR重跌，明日將面臨月線失守壓力。方向由昨日neutral_negative升級為bearish；若明日反彈（軋空說法），可能回歸neutral_negative。",
+      "key_levels": {
+        "support": [2280, 2260, 2200],
+        "resistance": [2350, 2380]
+      },
+      "sources": [
+        "https://focustaiwan.tw/business/202607280005",
+        "https://newtalk.tw/news/view/2026-07-28/1049724",
+        "https://tw.stock.yahoo.com/news/%E5%B0%BE%E7%9B%A4%E7%88%86%E5%A4%A7%E5%96%AE%E5%8E%9F%E5%9B%A0%E6%9B%9D%E5%85%89-%E5%8F%B0%E7%A9%8D%E9%9B%BB-%E8%81%AF%E7%99%BC%E7%A7%91%E8%A2%AB%E7%A5%9E%E7%A5%95%E8%B3%87%E9%87%91%E7%A1%AC%E6%8B%89-%E6%98%8E%E5%A4%A9%E5%B0%87%E8%BF%8E%E6%AD%B7%E5%8F%B2%E7%B4%9A%E8%BB%8B%E7%A9%BA%E8%A1%8C%E6%83%85-%E5%A4%96%E8%B3%87%E6%8B%8B%E5%94%AE%E6%85%98%E6%A5%AD%E5%90%8D%E5%96%AE%E7%AB%9F%E7%84%B6%E6%9C%89%E5%AE%83%E5%80%91-061822845.html"
+      ],
+      "expires_at": "2026-07-29T09:00:00+08:00"
+    },
+    {
+      "signal_id": "stk-2454-2026-07-28-close",
+      "ticker": "2454",
+      "name": "聯發科",
+      "market": "TW",
+      "price": 3500,
+      "price_prev": 3680,
+      "price_change": -180,
+      "price_change_pct": -4.89,
+      "price_intraday_low": 3350,
+      "price_intraday_note": "早盤跌近9%至3,425（開盤），最低估3,350附近；尾盤大單拉回後估收3,500",
+      "direction": "bearish",
+      "confidence": "low",
+      "rationale": "聯發科昨日除息秒填息（bullish），今日全球AI晶片崩跌，方向完全逆轉為bearish。早盤快訊指聯發科跌近9%，Newtalk報導開盤跌至3,425元（跌255元）。尾盤神秘大單同步拉抬聯發科，估收約3,500元。昨日填息優勢今日完全消化，AAPL供應鏈情緒轉冷。下方支撐3,400/3,300；若今晚美股AAPL跌跌，明日恐再測低。方向：bullish → bearish（重大逆轉）。",
+      "key_levels": {
+        "support": [3400, 3300, 3200],
+        "resistance": [3600, 3680]
+      },
+      "sources": [
+        "https://www.storm.mg/article/11152110",
+        "https://newtalk.tw/news/view/2026-07-28/1049724",
+        "https://tw.stock.yahoo.com/news/%E5%B0%BE%E7%9B%A4%E7%88%86%E5%A4%A7%E5%96%AE%E5%8E%9F%E5%9B%A0%E6%9B%9D%E5%85%89-%E5%8F%B0%E7%A9%8D%E9%9B%BB-%E8%81%AF%E7%99%BC%E7%A7%91%E8%A2%AB%E7%A5%9E%E7%A5%95%E8%B3%87%E9%87%91%E7%A1%AC%E6%8B%89-%E6%98%8E%E5%A4%A9%E5%B0%87%E8%BF%8E%E6%AD%B7%E5%8F%B2%E7%B4%9A%E8%BB%8B%E7%A9%BA%E8%A1%8C%E6%83%85-%E5%A4%96%E8%B3%87%E6%8B%8B%E5%94%AE%E6%85%98%E6%A5%AD%E5%90%8D%E5%96%AE%E7%AB%9F%E7%84%B6%E6%9C%89%E5%AE%83%E5%80%91-061822845.html"
+      ],
+      "expires_at": "2026-07-29T09:00:00+08:00"
+    },
+    {
+      "signal_id": "stk-2317-2026-07-28-close",
+      "ticker": "2317",
+      "name": "鴻海",
+      "market": "TW",
+      "price": 245,
+      "price_prev": 254.5,
+      "price_change": -9.5,
+      "price_change_pct": -3.73,
+      "price_intraday_note": "開盤241.5（跌4.35%），尾盤估收245附近",
+      "direction": "bearish",
+      "confidence": "low",
+      "rationale": "鴻海昨日neutral_positive（7月營收創8個月高），今日電子板塊全面下殺，開盤241.5元（跌11元，跌4.35%）。AI伺服器題材短線被拋棄。估收245元附近。下方支撐240整數關口，若失守恐下試235。方向：neutral_positive → bearish。",
+      "key_levels": {
+        "support": [240, 235],
+        "resistance": [252, 258]
+      },
+      "sources": [
+        "https://newtalk.tw/news/view/2026-07-28/1049724",
+        "https://focustaiwan.tw/business/202607280005"
+      ],
+      "expires_at": "2026-07-29T09:00:00+08:00"
+    },
+    {
+      "signal_id": "stk-NVDA-2026-07-28-close",
+      "ticker": "NVDA",
+      "name": "輝達",
+      "market": "US",
+      "price": 206.84,
+      "price_prev": 208.75,
+      "price_change": -1.91,
+      "price_change_pct": -0.92,
+      "note": "美股7/25（週五）最後確認收盤；今晚(7/28 ET)美股將開盤，預期重跌",
+      "tonight_outlook": "bearish",
+      "tonight_expected_change_pct": "-3% 至 -8%",
+      "direction": "bearish_watch",
+      "confidence": "medium",
+      "rationale": "NVDA上週五收206.84美元（上週確認數據）。今日亞洲晶片股崩盤（KOSPI -8.2%觸熔斷，台股跌4%+），今晚美股NVDA面臨極大下行壓力。Bloomberg「Chip Rout Deepens on Funding Worry, China Competition」，AI spending可持續性質疑升溫。方向由bullish大幅降級為bearish_watch。今晚200美元支撐關鍵。",
+      "key_levels": {
+        "support": [200, 190, 180],
+        "resistance": [210, 215]
+      },
+      "sources": [
+        "https://www.bloomberg.com/news/articles/2026-07-28/korean-stocks-sink-as-chipmakers-plung-on-deepening-ai-fatigue",
+        "https://abcnews.com/Business/ai-chip-stock-selloff/story?id=134844421",
+        "https://finance.yahoo.com/quote/NVDA/"
+      ],
+      "expires_at": "2026-07-29T09:00:00+08:00"
+    },
+    {
+      "signal_id": "stk-TSLA-2026-07-28-close",
+      "ticker": "TSLA",
+      "name": "特斯拉",
+      "market": "US",
+      "price": 313.03,
+      "price_prev": 319.69,
+      "price_change": -6.66,
+      "price_change_pct": -2.08,
+      "note": "美股7/25（週五）確認收盤；今晚(7/28 ET)美股將開盤",
+      "tonight_outlook": "bearish",
+      "tonight_expected_change_pct": "-2% 至 -5%",
+      "direction": "bearish",
+      "confidence": "high",
+      "rationale": "TSLA方向維持bearish（high）。Q2財報爆雷（EPS$0.33 vs預期$0.53，FCF轉負）未改，今日全球風險情緒崩跌將加重賣壓。今晚可能跌破300美元整數支撐。",
+      "key_levels": {
+        "support": [300, 280],
+        "resistance": [325, 340]
+      },
+      "sources": [
+        "https://finance.yahoo.com/quote/TSLA/",
+        "https://www.bloomberg.com/news/articles/2026-07-22/tesla-second-quarter-earnings-miss-wall-street-s-expectations"
+      ],
+      "expires_at": "2026-07-29T09:00:00+08:00"
+    },
+    {
+      "signal_id": "stk-AAPL-2026-07-28-close",
+      "ticker": "AAPL",
+      "name": "蘋果",
+      "market": "US",
+      "price": 333.02,
+      "price_prev": 321.66,
+      "price_change": 11.36,
+      "price_change_pct": 3.53,
+      "note": "美股7/25（週五）確認收盤；今晚(7/28 ET)美股將開盤",
+      "tonight_outlook": "neutral_negative",
+      "tonight_expected_change_pct": "-1% 至 -3%",
+      "direction": "neutral",
+      "confidence": "medium",
+      "rationale": "AAPL上週五大漲3.53%（bullish），但今日台灣蘋果供應鏈（聯發科跌9%）傳遞負面信號，全球風險情緒惡化。AAPL消費品牌韌性相對強，但晶片板塊恐慌氣氛下難獨善其身。方向由bullish降為neutral，今晚可能小跌1-3%。若跌破325美元，前高支撐區恐告失守。",
+      "key_levels": {
+        "support": [325, 318],
+        "resistance": [340, 350]
+      },
+      "sources": [
+        "https://finance.yahoo.com/quote/AAPL/",
+        "https://focustaiwan.tw/business/202607280005"
+      ],
+      "expires_at": "2026-07-29T09:00:00+08:00"
+    },
+    {
+      "signal_id": "stk-TSM-2026-07-28-close",
+      "ticker": "TSM",
+      "name": "台積電ADR",
+      "market": "US",
+      "price": 403.41,
+      "price_prev": 413.0,
+      "price_change": -9.59,
+      "price_change_pct": -2.32,
+      "note": "美股7/25（週五）確認收盤；今晚(7/28 ET)美股將開盤，本地2330今日重挫，ADR必然跟跌",
+      "tonight_outlook": "bearish",
+      "tonight_expected_change_pct": "-3% 至 -7%",
+      "direction": "bearish",
+      "confidence": "medium",
+      "rationale": "TSM ADR上週五收403.41美元（neutral_negative）。今日台本地2330盤中最低2,280（跌4%+），晚間ADR將大幅跟跌。若跌3-7%，ADR將落至375-391美元區間，跌破400整數支撐。Bloomberg報導全球晶片拋售深化。方向：neutral_negative → bearish。",
+      "key_levels": {
+        "support": [395, 380, 365],
+        "resistance": [410, 420]
+      },
+      "sources": [
+        "https://finance.yahoo.com/markets/stocks/articles/chip-stock-selloff-deepens-asia-035114530.html",
+        "https://www.bloomberg.com/news/articles/2026-07-28/korean-stocks-sink-as-chipmakers-plung-on-deepening-ai-fatigue",
+        "https://finance.yahoo.com/quote/TSM/"
+      ],
+      "expires_at": "2026-07-29T09:00:00+08:00"
+    }
+  ],
+  "alerts": [
+    {
+      "alert_id": "alert-global-chip-rout-2026-07-28",
+      "level": "critical",
+      "title": "全球AI晶片股崩潰：韓國KOSPI觸熔斷，AI疲勞論述升溫",
+      "summary": "今日亞洲股市遭遇2026年7月以來最大單日衝擊之一。南韓KOSPI盤中跌8.2%觸發熔斷機制（20分鐘停牌），三星電子、SK海力士各跌9%+。Bloomberg：「Chip Rout Deepens on Funding Worry, China Competition」。AI spending可持續性質疑論述蔓延，預計今晚美股NVDA、AMD、Broadcom將承受沉重賣壓。台指期夜盤已跌708點，外資期貨空單仍達7.8萬口。",
+      "url": "https://www.bloomberg.com/news/articles/2026-07-28/korean-stocks-sink-as-chipmakers-plung-on-deepening-ai-fatigue",
+      "source": "Bloomberg / Focus Taiwan"
+    },
+    {
+      "alert_id": "alert-taiex-42k-broken-2026-07-28",
+      "level": "high",
+      "title": "台股盤中破4萬2千點，加權指數觸41,728",
+      "summary": "加權指數今日盤中最低41,728.91（10:48），跌幅一度逾4.37%，跌破42,000整數支撐。分析師指出短期支撐落在40,000至42,000區間。尾盤神秘大單介入拉抬後收斂跌幅，估約收42,350。42,000現已轉為壓力，能否回補為明日關鍵觀察點。",
+      "url": "https://focustaiwan.tw/business/202607280005",
+      "source": "Focus Taiwan / Newtalk"
+    },
+    {
+      "alert_id": "alert-mystery-latebuy-squeeze-2026-07-28",
+      "level": "high",
+      "title": "尾盤神秘大單拉抬台積電/聯發科，明日「歷史級軋空」可能性受討論",
+      "summary": "今日尾盤出現大量神秘買單，同步拉抬台積電與聯發科，兩股收斂跌幅。期貨空單仍達7.8萬口（極高水位），若今晚美股止跌、明日開盤轉強，空單回補可能引發強烈反彈（「歷史級軋空」）。惟此為高度不確定性推測，需觀察今晚美股晶片股走向，謹慎為宜。",
+      "url": "https://tw.stock.yahoo.com/news/%E5%B0%BE%E7%9B%A4%E7%88%86%E5%A4%A7%E5%96%AE%E5%8E%9F%E5%9B%A0%E6%9B%9D%E5%85%89-%E5%8F%B0%E7%A9%8D%E9%9B%BB-%E8%81%AF%E7%99%BC%E7%A7%91%E8%A2%AB%E7%A5%9E%E7%A5%95%E8%B3%87%E9%87%91%E7%A1%AC%E6%8B%89-%E6%98%8E%E5%A4%A9%E5%B0%87%E8%BF%8E%E6%AD%B7%E5%8F%B2%E7%B4%9A%E8%BB%8B%E7%A9%BA%E8%A1%8C%E6%83%85-%E5%A4%96%E8%B3%87%E6%8B%8B%E5%94%AE%E6%85%98%E6%A5%AD%E5%90%8D%E5%96%AE%E7%AB%9F%E7%84%B6%E6%9C%89%E5%AE%83%E5%80%91-061822845.html",
+      "source": "Yahoo 奇摩股市"
+    },
+    {
+      "alert_id": "alert-dram-limitdown-2026-07-28",
+      "level": "medium",
+      "title": "南亞科（2408）、華邦電（2344）跌停，DRAM族群恐慌性拋售",
+      "summary": "今日南亞科與華邦電均亮跌停燈，DRAM/NAND族群恐慌性拋售。KOSPI大跌主因之一即SK海力士崩跌，DRAM需求前景遭重新定價。台灣DRAM族群若明日延續跌停，跌幅空間可觀。",
+      "url": "https://www.storm.mg/article/11152110",
+      "source": "Storm.mg / 下班經濟學"
+    },
+    {
+      "alert_id": "alert-ai-fatigue-structural-2026-07-28",
+      "level": "medium",
+      "title": "AI支出可持續性質疑升溫：全球結構性風險再起",
+      "summary": "Bloomberg、ABC News、Yahoo Finance等多家媒體同步報導AI晶片崩跌，核心敘事：超大規模AI基礎建設投資（Hyperscaler CAPEX）的回報時程及商業模式遭質疑，加上中國競爭加劇（Huawei AI晶片進展），引發市場重新定價。這不是單日波動，而是持續性的敘事轉換，需密切追蹤NVDA 8月財報前景。",
+      "url": "https://intellectia.ai/blog/ai-chip-stocks-july-2026-selloff",
+      "source": "Intellectia AI / Bloomberg"
+    },
+    {
+      "alert_id": "alert-tsla-300-risk-2026-07-28",
+      "level": "medium",
+      "title": "特斯拉300美元支撐告急，今晚可能跌破",
+      "summary": "TSLA上週五收313美元，Q2爆雷（EPS $0.33 vs預期$0.53）餘波未消，今晚全球風險情緒惡化下恐進一步下探。若跌破300美元整數支撐，技術面確認弱勢格局，下看280美元區間。",
+      "url": "https://finance.yahoo.com/quote/TSLA/",
+      "source": "Yahoo Finance / Bloomberg"
+    },
+    {
+      "alert_id": "alert-trust-buy-ended-2026-07-28",
+      "level": "low",
+      "title": "投信連23買超已終結（7/27），今日護盤力道待觀察",
+      "summary": "投信7/27終結連23日買超（買超2.79億後轉賣），今日大跌是否重啟護盤為關鍵觀察。若投信大幅加碼買進，可能稍微穩定市場；但在全球晶片崩跌背景下，護盤效果有限。",
+      "url": "https://www.cna.com.tw/news/afe/202607270243.aspx",
+      "source": "CNA 中央社"
+    }
+  ],
+  "whats_changed": {
+    "generated_at": "2026-07-28T14:03:02+08:00",
+    "prev_report_date": "2026-07-27",
+    "prev_taiex_close": 43634,
+    "curr_taiex_close_est": 42350,
+    "taiex_change": -1284,
+    "taiex_change_pct": -2.94,
+    "direction_changes": [
+      {
+        "ticker": "2330",
+        "name": "台積電",
+        "prev_direction": "neutral_negative",
+        "curr_direction": "bearish",
+        "prev_price": 2330,
+        "curr_price_est": 2310,
+        "price_intraday_low": 2280,
+        "note": "方向惡化：neutral_negative → bearish。盤中觸2,280月線支撐，外資連5砍。今晚TSM ADR動向為明日關鍵。"
+      },
+      {
+        "ticker": "2454",
+        "name": "聯發科",
+        "prev_direction": "bullish",
+        "curr_direction": "bearish",
+        "prev_price": 3730,
+        "curr_price_est": 3500,
+        "price_intraday_low_est": 3350,
+        "note": "重大逆轉：bullish（昨除息秒填息）→ bearish（今跌近9%）。昨日填息優勢24小時內完全消化。全球AI晶片崩跌打回原形。"
+      },
+      {
+        "ticker": "2317",
+        "name": "鴻海",
+        "prev_direction": "neutral_positive",
+        "curr_direction": "bearish",
+        "prev_price": 254.5,
+        "curr_price_est": 245,
+        "note": "方向惡化：neutral_positive → bearish。AI伺服器題材短線遭拋棄，開盤跌4.35%。昨日7月營收亮眼的利多被系統性賣壓完全淹沒。"
+      },
+      {
+        "ticker": "NVDA",
+        "name": "輝達",
+        "prev_direction": "bullish",
+        "curr_direction": "bearish_watch",
+        "prev_price": 206.84,
+        "curr_price_est": null,
+        "note": "方向大幅惡化：bullish → bearish_watch。美股今晚開盤（21:30 TPE），全球晶片崩跌背景下NVDA預期重壓。200美元支撐為關鍵。"
+      },
+      {
+        "ticker": "AAPL",
+        "name": "蘋果",
+        "prev_direction": "bullish",
+        "curr_direction": "neutral",
+        "prev_price": 333.02,
+        "curr_price_est": null,
+        "note": "方向降級：bullish → neutral。上週五大漲3.53%的正面動能今日被台灣供應鏈崩跌（聯發科-9%）部分抵消，今晚預期小跌1-3%。"
+      },
+      {
+        "ticker": "TSM",
+        "name": "台積電ADR",
+        "prev_direction": "neutral_negative",
+        "curr_direction": "bearish",
+        "prev_price": 403.41,
+        "curr_price_est": null,
+        "note": "方向惡化：neutral_negative → bearish。今日2330本地跌4%+，今晚ADR預期跌3-7%，400美元整數支撐告破。"
+      }
+    ],
+    "unchanged_directions": [
+      {
+        "ticker": "TSLA",
+        "name": "特斯拉",
+        "direction": "bearish",
+        "note": "維持bearish（high），Q2爆雷格局未變，今晚恐下探300美元支撐"
+      }
+    ],
+    "new_alert_ids": [
+      "alert-global-chip-rout-2026-07-28",
+      "alert-taiex-42k-broken-2026-07-28",
+      "alert-mystery-latebuy-squeeze-2026-07-28",
+      "alert-dram-limitdown-2026-07-28",
+      "alert-ai-fatigue-structural-2026-07-28",
+      "alert-tsla-300-risk-2026-07-28",
+      "alert-trust-buy-ended-2026-07-28"
+    ],
+    "resolved_alert_ids": [
+      "alert-mediatek-ex-div-instant-fill-2026-07-27",
+      "alert-aapl-surge-2026-07-27",
+      "alert-foxconn-july-revenue-2026-07-27"
+    ],
+    "continued_alert_ids": [
+      "alert-foreign-7day-sell-2026-07-27",
+      "alert-taiex-43k-risk-2026-07-27",
+      "alert-defense-rotation-2026-07-27",
+      "alert-TSLA-crash-confirmed-2026-07-24",
+      "alert-AI-capex-overhang-2026-07-24"
+    ],
+    "level_escalated_alert_ids": [
+      {
+        "alert_id": "alert-AI-capex-overhang-2026-07-24",
+        "prev_level": "medium",
+        "curr_level": "medium",
+        "note": "AI fatigue論述今日爆發性升溫，重要性顯著提升（今新增alert-ai-fatigue-structural-2026-07-28強化此主題）"
+      }
+    ],
+    "notes": [
+      "今日最重要事件：全球AI晶片崩跌，南韓KOSPI觸熔斷。台股盤中跌4.4%，創7月17日以來最大單日跌幅。",
+      "聯發科方向：bullish（昨日除息秒填息）→ bearish（今日跌近9%），24小時內完全逆轉，顯示市場對AI/蘋果供應鏈信心急速崩跌。",
+      "台積電方向：neutral_negative → bearish，月線2,300告急。",
+      "鴻海方向：neutral_positive → bearish，昨日營收利多24小時被消化。",
+      "NVDA：bullish → bearish_watch，今晚美股開盤最關鍵。",
+      "AAPL：bullish → neutral，上週五漲勢優勢被消耗。",
+      "TSM ADR：neutral_negative → bearish，今晚預期跌破400。",
+      "TSLA：bearish維持（high），方向不變。",
+      "whats_changed保守原則：收盤點數/個股收盤均為低信心估算，官方數據請以TWSE收盤公告為準。"
+    ]
+  }
+}

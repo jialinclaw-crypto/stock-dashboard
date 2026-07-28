@@ -1,0 +1,462 @@
+{
+  "_schema_version": 3,
+  "type": "morning",
+  "report_file": "股市-開盤前-20260729.md",
+  "date": "2026-07-29",
+  "weekday": "週三",
+  "generated_at": "2026-07-29T07:34:50+08:00",
+  "market_view": {
+    "level": "bearish",
+    "confidence": 0.65,
+    "headline": "TSM ADR -5%（$383）壓台積電開盤 + FOMC 今日凍息決策（台灣 7/30 凌晨 2:00，凍息機率 70% 但 Warsh 鷹派風險 30%）；AAPL $5T 里程碑提振情緒但半導體仍弱；聯發科 7/31 法說毛利率展望為近期最重要分水嶺"
+  },
+  "indices": [
+    {
+      "name": "道瓊工業",
+      "ticker": "DJI",
+      "value": 52210,
+      "change_pct": 0.3,
+      "trend": "neutral",
+      "note": "7/28 收約 52,210 附近（+0.3-0.5%）；AAPL $5T 里程碑 + 油價穩定提振傳產/防禦股；半導體弱勢抵消部分漲幅"
+    },
+    {
+      "name": "S&P 500",
+      "ticker": "SPX",
+      "value": 7413,
+      "change_pct": 0.0,
+      "trend": "neutral",
+      "note": "7/28 收約 7,413 近平收；AAPL 觸及 $5T 市值偏正，但 TSM ADR -5% 拖累半導體板塊；FOMC 前整體觀望"
+    },
+    {
+      "name": "Nasdaq",
+      "ticker": "IXIC",
+      "value": 24932,
+      "change_pct": -0.2,
+      "trend": "bearish",
+      "note": "7/28 收約 24,932（-0.2%）；TSM ADR -5%、半導體板塊整體弱勢；AAPL 逆勢提振但不足以帶正指數"
+    },
+    {
+      "name": "費城半導體",
+      "ticker": "SOX",
+      "value": 11920,
+      "change_pct": 0.1,
+      "trend": "neutral",
+      "note": "7/28 約 11,920 附近小幅整理；NVDA 底部測試 $197，TSM ADR 跌壓主要來自 7/28 本地收盤滯後效應；SOX 整體仍在週修正低位"
+    },
+    {
+      "name": "VIX 恐慌指數",
+      "ticker": "VIX",
+      "value": 18.42,
+      "change_pct": -1.34,
+      "trend": "neutral",
+      "note": "7/28 收 18.42（-1.34%）；FOMC 前市場謹慎但恐慌未升溫；若 FOMC 鷹派聲明，VIX 可能升破 20"
+    },
+    {
+      "name": "美 10Y 殖利率",
+      "ticker": "US10Y",
+      "value": 4.65,
+      "change_pct": 0.22,
+      "trend": "neutral",
+      "note": "7/28 約 4.65%（微升 +1bps）；FOMC 決策前維持 4.60-4.70% 區間；鷹派聲明可能推至 4.75%+ 壓制科技估值"
+    },
+    {
+      "name": "美元指數",
+      "ticker": "DXY",
+      "value": 101.52,
+      "change_pct": 0.6,
+      "trend": "neutral",
+      "note": "7/28 約 101.52（小升）；FOMC 等待觀望，美元略強；若凍息偏鴿則美元回落有利新興市場"
+    },
+    {
+      "name": "WTI 原油",
+      "ticker": "WTI",
+      "value": 82.0,
+      "change_pct": -0.7,
+      "trend": "neutral",
+      "note": "7/28 約 $82 附近震盪（自週一 $82.62 底部）；美伊談判持續但夜盤美軍攔截伊朗攻擊；油價底部尋找支撐，下方 $79-80 為關鍵"
+    },
+    {
+      "name": "Brent 原油",
+      "ticker": "BRENT",
+      "value": 89.5,
+      "change_pct": -0.9,
+      "trend": "neutral",
+      "note": "7/28 約 $89-90 附近；美伊外交停火仍在談判，底部企穩；持續注意地緣局勢反覆"
+    }
+  ],
+  "stocks": [
+    {
+      "signal_id": "stk-2330-2026-07-29-morning",
+      "ticker": "2330",
+      "name": "台積電",
+      "market": "TW",
+      "signal": "🔴",
+      "direction": "bearish",
+      "confidence": 0.68,
+      "view": "7/28 收 2,280（-70，-2.98%）；TSM ADR 7/28 美收 $383-387（自 $403 大跌 -5%），今日開盤有顯著跌壓；月線 ~2,250 為關鍵支撐，跌破恐測 2,200。AAPL 7/30 財報超預期為最近期反彈催化；FOMC 鴿派聲明亦有助 ADR 止穩",
+      "rationale": "TSM ADR 大跌 5% 領先反映，開盤跌壓明確；月線 2,250 為多空關鍵，失守則短線趨勢轉空",
+      "price": 2280,
+      "change_pct": -2.98,
+      "support": 2250,
+      "resistance": 2350,
+      "stop_loss": 2200,
+      "target": 2500,
+      "technicals": {
+        "rsi14": 44,
+        "macd": "負值，空頭動能延續",
+        "ma_alignment": "跌破 5 日均線 ~2,340 / 20 日均 ~2,320；月線 2,250 為最後支撐"
+      },
+      "valuation": {
+        "pe": 24.0,
+        "pe_percentile_5y": 25,
+        "verdict": "前瞻 P/E 24x 歷史低位，3nm H2 漲價 15%+CoWoS 擴產長線邏輯完整，短線 ADR 跌壓造成短暫折價買點"
+      },
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/2330.TW",
+        "https://www.cnbc.com/quotes/TSM",
+        "https://www.trendforce.com/news/2026/05/27/news-tsmc-reportedly-eyes-up-to-15-3nm-price-hike-in-2h26-further-5-10-seen-in-2027-amid-ai-asic-demand/"
+      ],
+      "expires_at": "2026-07-29T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-2454-2026-07-29-morning",
+      "ticker": "2454",
+      "name": "聯發科",
+      "market": "TW",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.55,
+      "view": "7/28 估收 ~3,720（弱勢整理）；7/31 法說會 Q2 結果 + 月銷售同步公布，H2 毛利率展望是多空關鍵（47-48% 反彈，≤46% 下探 3,450）；NVDA AI 融資疑慮延伸對 AI 晶片投資情緒不利；法說前維持觀望",
+      "rationale": "法說前方向不明，毛利率壓力+AI情緒拖累；7/31 展望是最重要觀察點，現在操作方向風險高",
+      "price": 3720,
+      "change_pct": -1.1,
+      "support": 3580,
+      "resistance": 3850,
+      "stop_loss": 3450,
+      "target": 4200,
+      "technicals": {
+        "rsi14": 45,
+        "macd": "負向持續，短線無強勢反彈訊號",
+        "ma_alignment": "持續在 20 日均線 ~3,750 下方整理，法說前難突破"
+      },
+      "valuation": {
+        "pe": 25.0,
+        "pe_percentile_5y": 58,
+        "verdict": "P/E 25x，毛利率創 19 季低壓估值；法說展望若正面可立即修復至 26-28x 合理範圍"
+      },
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/2454.TW",
+        "https://finance.biggo.com/news/twse_major_2454_1150515_174011",
+        "https://www.marketscreener.com/quote/stock/MEDIATEK-INC-6495333/calendar/"
+      ],
+      "expires_at": "2026-07-29T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-2317-2026-07-29-morning",
+      "ticker": "2317",
+      "name": "鴻海",
+      "market": "TW",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.60,
+      "view": "7/28 估收 ~248-252（小幅震盪）；AI 伺服器製造端邏輯（GB300 量產）不受 NVDA 融資疑慮直接衝擊；250 元支撐守穩則偏多格局維持；FOMC 若鴿派，有望反攻 262 壓力",
+      "rationale": "AI 製造端邏輯支撐，250 元守穩是偏多訊號；FOMC 前短線方向中性，等待確認",
+      "price": 250,
+      "change_pct": -0.99,
+      "support": 248,
+      "resistance": 262,
+      "stop_loss": 240,
+      "target": 275,
+      "technicals": {
+        "rsi14": 57,
+        "macd": "正向略收斂，多頭動能稍減",
+        "ma_alignment": "5 日均 ~252 / 20 日均 ~249，多頭排列維持"
+      },
+      "valuation": {
+        "pe": 12.0,
+        "pe_percentile_5y": 42,
+        "verdict": "P/E 12x，AI 伺服器溢價重定價中，相對低估；長線吸引"
+      },
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/2317.TW",
+        "https://www.storm.mg/article/11147190"
+      ],
+      "expires_at": "2026-07-29T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-NVDA-2026-07-29-morning",
+      "ticker": "NVDA",
+      "name": "輝達",
+      "market": "US",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.58,
+      "view": "7/28 收 $197.01（+0.25%）；自前日 -5% 跌破 $200 後小反彈，RSI 升至 ~40-42 超賣邊緣回升；底部測試中。$204-205 為反彈關鍵壓力；FOMC 鴿派 → 反彈至 $205；鷹派 → $185 支撐測試。DeepSeek 自建晶片消息為新競爭雜音，但 $1 兆確認訂單是基本面錨點",
+      "rationale": "前日大跌後底部測試、小反彈，RSI 接近超賣回升；AI 循環融資疑慮仍在但市場已部分消化；方向取決於 FOMC 聲明",
+      "price": 197.01,
+      "change_pct": 0.25,
+      "support": 185,
+      "resistance": 205,
+      "stop_loss": 210,
+      "target": 220,
+      "technicals": {
+        "rsi14": 42,
+        "macd": "負值但收斂中，底部測試訊號",
+        "ma_alignment": "$200/$205 均線阻力；長線均線空頭排列，但短線超賣回升"
+      },
+      "valuation": {
+        "pe": 34.0,
+        "pe_percentile_5y": 68,
+        "verdict": "前瞻 P/E 34x，AI 循環融資修正壓力仍存，但 $1 兆訂單確認基本面下限"
+      },
+      "sources": [
+        "https://www.fxleaders.com/news/2026/07/28/nvidias-ai-machine-is-printing-billions-so-why-is-nvda-stock-stuck-below-205/",
+        "https://www.tradingkey.com/analysis/stocks/us-stocks/262018250-nvidia-nvda-stock-forecast-july-2026-deepseek-chip-long-setup-tradingkey",
+        "https://stockanalysis.com/stocks/nvda/"
+      ],
+      "expires_at": "2026-07-29T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-TSLA-2026-07-29-morning",
+      "ticker": "TSLA",
+      "name": "特斯拉",
+      "market": "US",
+      "signal": "🔴",
+      "direction": "bearish",
+      "confidence": 0.75,
+      "view": "7/28 收 $308.10（日內 $304-317）；Q2 EPS 漏接 38.5%、FCF 負值、汽車毛利率低迷，財報後第三日仍無止穩跡象。RSI ~32 超賣但空頭趨勢確立；$299 是技術關鍵支撐，若破則測試 $285；FOMC 鷹派聲明進一步壓縮 P/E 90x 高估值",
+      "rationale": "財報爆雷後空頭格局確立，$299 是多空分水嶺；短線反彈需要具體利多（Cybercab 量產消息、Musk 聲明）才能扭轉",
+      "price": 308.1,
+      "change_pct": -0.6,
+      "support": 299,
+      "resistance": 325,
+      "stop_loss": 335,
+      "target": 285,
+      "technicals": {
+        "rsi14": 32,
+        "macd": "深入負值，空頭動能持續",
+        "ma_alignment": "跌破所有主要均線（5日/20日/50日），空頭排列確立"
+      },
+      "valuation": {
+        "pe": 90.0,
+        "pe_percentile_5y": 28,
+        "verdict": "P/E 90x，獲利品質惡化（EPS 漏接 38.5%），高估值+低獲利雙殺格局不變"
+      },
+      "sources": [
+        "https://247wallst.com/investing/2026/07/28/after-a-rough-post-earnings-week-where-does-tesla-go-from-here/",
+        "https://www.tradingkey.com/analysis/stocks/us-stocks/262054373-tesla-tsla-price-forecast-july-28-2026-299-support-fed-robotaxi-tradingkey",
+        "https://finance.yahoo.com/quote/TSLA/"
+      ],
+      "expires_at": "2026-07-29T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-AAPL-2026-07-29-morning",
+      "ticker": "AAPL",
+      "name": "蘋果",
+      "market": "US",
+      "signal": "🟢",
+      "direction": "bullish",
+      "confidence": 0.75,
+      "view": "7/28 收約 $340（日內觸及 $5 兆市值，重奪全球最高市值）；Q3 財報 7/30（Tim Cook 最後一次財報電話）；預估收入 $108.9B、EPS $1.89（YoY +15%）；連四季超越預期；技術多頭排列；$330 支撐守穩。若超預期（$112B+）聯動台積電 3nm/2nm 需求敘事走強",
+      "rationale": "$5T 市值里程碑 + Tim Cook 告別演出 + 連四季超預期，財報前 48 小時多頭情緒最強；$330 是守穩底線",
+      "price": 340.0,
+      "change_pct": 1.85,
+      "support": 330,
+      "resistance": 348,
+      "stop_loss": 320,
+      "target": 360,
+      "technicals": {
+        "rsi14": 64,
+        "macd": "正向持續，多頭動能強",
+        "ma_alignment": "5日/20日均線多頭排列，52週高點附近"
+      },
+      "valuation": {
+        "pe": 31.0,
+        "pe_percentile_5y": 62,
+        "verdict": "P/E 31x，財報偏高但若超預期（$112B+）可向下修正估值，支撐進一步上行"
+      },
+      "sources": [
+        "https://www.techtimes.com/articles/321734/20260727/apple-reclaims-worlds-most-valuable-spot-cooks-final-earnings-call-thursday.htm",
+        "https://www.cnbc.com/2026/07/28/apple-touches-5-trillion-market-cap-for-first-time-.html",
+        "https://appleinsider.com/articles/26/07/27/what-wall-street-expects-from-apples-q3-2026-earnings-on-july-30"
+      ],
+      "expires_at": "2026-07-29T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-TSM-2026-07-29-morning",
+      "ticker": "TSM",
+      "name": "台積電ADR",
+      "market": "US",
+      "signal": "🔴",
+      "direction": "bearish",
+      "confidence": 0.65,
+      "view": "7/28 美收 $383-387（自前收 $403.41 大跌 -5%）；跌破 20 日均線 ~$398，為今日台積電 2330 開盤跌壓主要來源。$370-375 為下方支撐（前低）；AAPL 7/30 財報超預期 → ADR 反彈機會；FOMC 鴿派 → ADR 底部確認",
+      "rationale": "ADR 大跌 5% 壓台積電今日開盤，短線趨勢偏空；$370 支撐若守穩可視為中線底部",
+      "price": 385.0,
+      "change_pct": -4.57,
+      "support": 370,
+      "resistance": 400,
+      "stop_loss": 360,
+      "target": 440,
+      "technicals": {
+        "rsi14": 44,
+        "macd": "轉負，短線空頭",
+        "ma_alignment": "跌破 20 日均 ~$398；長線多頭排列仍在但短線破位"
+      },
+      "valuation": {
+        "pe": 24.0,
+        "pe_percentile_5y": 25,
+        "verdict": "前瞻 P/E 24x 歷史低位；長線 3nm 漲價 + CoWoS 完整，短線 ADR 跌提供長線買點"
+      },
+      "sources": [
+        "https://wealth.esunbank.com.tw/usstock/esun/basic0002.xdjhtm?a=TSM",
+        "https://invest.cnyes.com/usstock/detail/TSM",
+        "https://www.cnbc.com/quotes/TSM"
+      ],
+      "expires_at": "2026-07-29T13:30:00+08:00"
+    }
+  ],
+  "alerts": [
+    {
+      "alert_id": "alt-fomc-july-2829",
+      "level": "warning",
+      "text": "FOMC 7/29 決策（台灣時間 7/30 凌晨 2:00）：第五度連凍 3.5-3.75% 機率 ~70%；Warsh 主席鷹派偏好（PCE 4.2% 仍遠超目標），30% 市場定價升息 25bps；油退為凍息提供空間但通膨韌性不容忽視。若聲明鷹派 → US10Y 升破 4.70%，明日台股跳空低開風險",
+      "tickers": ["NVDA", "TSLA", "2330", "2454"],
+      "url": "https://cambridgecurrencies.com/next-federal-reserve-interest-rate-decision/",
+      "source": "Cambridge Currencies/Forbes/Kiplinger"
+    },
+    {
+      "alert_id": "alt-nvda-openai-circular-financing",
+      "level": "warning",
+      "text": "NVDA AI 循環融資疑慮持續（第三日）：NVDA $2,500 億 OpenAI 融資擔保+累計 $7,500 億 AI 承諾被批評為循環融資；NVDA 跌破 $200 後 7/28 僅微反彈至 $197；DeepSeek 自建晶片消息為新競爭雜音；但 Microsoft/Amazon/Google/Meta $1 兆確認訂單是基本面底線",
+      "tickers": ["NVDA", "TSM", "2330"],
+      "url": "https://www.fxleaders.com/news/2026/07/28/nvidias-ai-machine-is-printing-billions-so-why-is-nvda-stock-stuck-below-205/",
+      "source": "FX Leaders/Bloomberg/CNBC"
+    },
+    {
+      "alert_id": "alt-aapl-q3-earnings-preview",
+      "level": "info",
+      "text": "AAPL Q3 財報 7/30 公布（Tim Cook 最後一次財報電話；接棒人 John Ternus）：預估收入 $108.9B，EPS $1.89（YoY +15%）；7/28 觸及 $5 兆市值里程碑，重奪全球第一；連四季超越預期；若 Q3 > $112B 將聯動台積電 3nm/2nm AI iPhone 需求敘事走強",
+      "tickers": ["AAPL", "TSM", "2330"],
+      "url": "https://www.cnbc.com/2026/07/28/apple-touches-5-trillion-market-cap-for-first-time-.html",
+      "source": "CNBC/AppleInsider/TechTimes"
+    },
+    {
+      "alert_id": "alt-mediatek-q2-margin-concern",
+      "level": "warning",
+      "text": "聯發科 7/31 法說（Q2 結果 + H2 毛利率展望）：Q2 毛利率 46.1% 創 19 季低；H2 毛利率展望 47-48% 則反彈，≤46% 則下探 3,450；AI ASIC（Meta+Google）及 2nm 旗艦晶片 Q3 底量產為中期正催化；法說前維持觀望",
+      "tickers": ["2454"],
+      "url": "https://finance.biggo.com/news/twse_major_2454_1150515_174011",
+      "source": "BigGo Finance/MediaTek IR/MarketScreener"
+    },
+    {
+      "alert_id": "alt-tsla-q2-earnings-miss",
+      "level": "warning",
+      "text": "TSLA Q2 爆雷延續第三日：EPS 漏接 38.5%（$0.33 vs 預估 $0.54），汽車毛利率低迷，FCF 轉負；$308 收盤，$299 為關鍵支撐；FOMC 鷹派聲明將進一步壓縮 P/E 90x 高估值；趨勢空頭確立",
+      "tickers": ["TSLA"],
+      "url": "https://247wallst.com/investing/2026/07/28/after-a-rough-post-earnings-week-where-does-tesla-go-from-here/",
+      "source": "247 Wall St/TradingKey/Fox Business"
+    },
+    {
+      "alert_id": "alt-oil-us-iran-de-escalation",
+      "level": "info",
+      "text": "美伊停火談判持續，油價 $81-83 整理：WTI 自週一 -8.7%（$82.6）後止穩；Trump 稱談判進展良好，但美軍 7/28 夜盤仍攔截一次伊朗攻擊，局勢仍有反覆；油穩有利台灣能源進口成本；若談判破局油價可能急彈",
+      "tickers": [],
+      "url": "https://www.cnbc.com/2026/07/28/oil-price-today-wti-brent-us-iran-hormuz.html",
+      "source": "CNBC/FX Leaders/Al Jazeera"
+    },
+    {
+      "alert_id": "alt-tsmc-3nm-price-hike-h2",
+      "level": "info",
+      "text": "台積電 3nm H2 2026 再漲 15%（日經亞洲確認）：2nm 2027 年再漲 5-10%；CoWoS 先進封裝產能 2026 年底達 12-13 萬片/月；TSM ADR 短線跌壓不改長線漲價題材；長線收入能見度提升",
+      "tickers": ["2330", "TSM", "NVDA", "AAPL"],
+      "url": "https://www.trendforce.com/news/2026/05/27/news-tsmc-reportedly-eyes-up-to-15-3nm-price-hike-in-2h26-further-5-10-seen-in-2027-amid-ai-asic-demand/",
+      "source": "TrendForce/Nikkei Asia"
+    },
+    {
+      "alert_id": "alt-deepseek-own-chip",
+      "level": "info",
+      "text": "DeepSeek 計劃自研 AI 晶片（Reuters）：中國 AI 公司 DeepSeek 宣布計劃開發自有晶片以切斷對 NVDA 依賴；短期對 NVDA 構成競爭雜音，但 DeepSeek 出貨時間表未明；若主要客戶也跟進自研，NVDA 護城河長線受侵蝕風險上升",
+      "tickers": ["NVDA"],
+      "url": "https://intellectia.ai/blog/nvidia-stock-analysis-july-2026",
+      "source": "Reuters/Intellectia AI"
+    }
+  ],
+  "sector_rotation": {
+    "strong": [
+      "AAPL 蘋果生態系（$5T 里程碑 + Tim Cook 告別演出 + 財報前 48 小時，防禦+成長兼具）",
+      "AI 伺服器代工製造端（鴻海 GB300 量產，邏輯不受 NVDA 融資疑慮直接衝擊）",
+      "台積電長線製程漲價（3nm H2 +15%，CoWoS 擴產；短線 ADR 跌壓為中線買點）",
+      "防禦型傳產（油退 $81-83 穩定，通膨緩和；FOMC 前資金避險轉向）"
+    ],
+    "weak": [
+      "半導體 AI 晶片（TSM ADR -5%，NVDA 仍在 $200 下方，AI 循環融資疑慮未消）",
+      "高估值成長股（US10Y 4.65%，FOMC 鷹派風險 30%；估值承壓）",
+      "電動車（TSLA Q2 爆雷後延續空頭，P/E 90x + 獲利品質惡化雙殺）",
+      "聯發科短線（毛利率 19 季低+法說前觀望氛圍；7/31 法說前難有突破）"
+    ],
+    "watch": [
+      "FOMC 敏感股（今深夜決策，Warsh 聲明鷹/鴿將驅動明日 7/30 科技/AI 板塊大幅波動）",
+      "AAPL 生態系（7/30 財報，Tim Cook 告別；超預期將聯動台積電、聯發科 AI 晶片需求）",
+      "聯發科（7/31 法說 H2 毛利率展望，多空分水嶺，下週初方向確認）",
+      "TSM ADR 反彈訊號（$370 守穩 + AAPL 財報正面 = 台積電短線底部機會）"
+    ]
+  },
+  "whats_changed": {
+    "compared_to": "股市-開盤前-20260728.md",
+    "compared_to_date": "2026-07-28",
+    "new": [
+      {
+        "type": "stock_direction",
+        "summary": "2330 台積電 方向由 neutral 轉為 bearish：TSM ADR 7/28 大跌 5%（$403→$383），開盤跌壓明確，短線跌破月線風險上升",
+        "ticker": "2330",
+        "tickers": ["2330"],
+        "from": "neutral (confidence 0.62)",
+        "to": "bearish (confidence 0.68)"
+      },
+      {
+        "type": "stock_direction",
+        "summary": "TSM ADR 方向由 neutral 轉為 bearish：7/28 大跌 5% 跌破 20 日均線 ~$398，短線趨勢確認轉空",
+        "ticker": "TSM",
+        "tickers": ["TSM"],
+        "from": "neutral (confidence 0.62)",
+        "to": "bearish (confidence 0.65)"
+      },
+      {
+        "type": "alert",
+        "summary": "新增 alt-deepseek-own-chip：DeepSeek 宣布自研 AI 晶片計劃，對 NVDA 構成長期競爭雜音",
+        "tickers": ["NVDA"],
+        "ticker": "",
+        "from": "",
+        "to": "alt-deepseek-own-chip"
+      }
+    ],
+    "strengthened": [
+      {
+        "type": "stock_direction",
+        "summary": "NVDA 方向由 bearish 升級為 neutral：$197 小反彈（+0.25%），RSI 從 38 回升至 42，底部測試訊號；但 $200 上方仍有壓力",
+        "ticker": "NVDA",
+        "tickers": ["NVDA"],
+        "from": "bearish (confidence 0.72)",
+        "to": "neutral (confidence 0.58)"
+      },
+      {
+        "type": "alert",
+        "summary": "alt-aapl-q3-earnings-preview 強化：AAPL 已觸及 $5T 市值（全球第一），距財報 < 48 小時，多頭情緒達峰；confidence 0.72→0.75",
+        "tickers": ["AAPL"],
+        "ticker": "AAPL",
+        "from": "財報前 48 小時偏多，confidence 0.72",
+        "to": "$5T 里程碑+Tim Cook 告別；財報 < 48 小時；confidence 0.75"
+      },
+      {
+        "type": "alert",
+        "summary": "alt-fomc-july-2829 進入最後決策日：今日 2pm ET 宣布（台灣 7/30 凌晨 2:00），市場風險窗口最大化",
+        "tickers": [],
+        "ticker": "",
+        "from": "FOMC 第一日（7/28）",
+        "to": "FOMC 決策日（7/29），今深夜公布，為最高風險時間窗口"
+      }
+    ],
+    "removed": []
+  }
+}

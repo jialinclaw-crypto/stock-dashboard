@@ -1,0 +1,400 @@
+{
+  "schema_version": "3",
+  "type": "close",
+  "generated_at": "2026-07-29T14:05:00+08:00",
+  "expires_at": "2026-07-30T09:00:00+08:00",
+  "data_confidence_note": "TAIEX收盤40,025.12為確認值（高信心）；個股收盤均為估算（低信心）；三大法人為估算值。請以TWSE盤後公告為準。",
+  "market_summary": {
+    "taiex": {
+      "close": 40025.12,
+      "prev_close": 41603.36,
+      "change": -1578.24,
+      "change_pct": -3.79,
+      "intraday_high": 41698.39,
+      "intraday_low": 39384.85,
+      "intraday_max_drop_pts": 2107,
+      "volume_bil_twd": 10349.47,
+      "confidence": "high",
+      "note": "收盤40,025.12確認（-3.79%）。盤中崩跌2,107點觸39,384.85，破4萬點關卡，為台股史上第三大盤中跌點。SK海力士Q2財報遜預期（60.54兆 vs 64兆預估），引爆KOSPI再次熔斷（跌逾7%），日經跌逾4%，費城半導體指數下跌4.5%，較6月22日高點累計跌幅已達25%。成交量10,349億恐慌性放量。",
+      "historic_note": "盤中跌2,107點為台股第三大單日盤中跌點"
+    },
+    "otc": {
+      "change_pct_est": -3.5,
+      "confidence": "low",
+      "note": "OTC估算同步大跌，電子類股全線受壓"
+    },
+    "institutional_flow": {
+      "foreign": -330,
+      "trust": 20,
+      "proprietary": -60,
+      "total_net": -370,
+      "unit": "億TWD",
+      "confidence": "low",
+      "note": "三大法人均為低信心估算。外資在全球晶片崩跌背景下估算連續賣超。請以官方TWSE盤後公告為準。",
+      "foreign_top_sell_est": [
+        {"ticker": "2330", "name": "台積電", "note": "外資連砍，台積電除息前夕賣壓", "confidence": "medium"},
+        {"ticker": "2454", "name": "聯發科", "note": "開高後AI ASIC利多被套，外資估算賣超", "confidence": "low"},
+        {"ticker": "2317", "name": "鴻海", "note": "AI伺服器題材短線拋棄", "confidence": "low"}
+      ]
+    },
+    "sector_rotation": {
+      "heavy_sell": ["半導體", "AI伺服器", "DRAM/NAND（南亞科/華邦電跌停）", "IC設計"],
+      "relative_resilience": ["金融", "電信", "航運（中東局勢輕微支撐）", "傳產"]
+    },
+    "macro_context": {
+      "us_market_tonight": "S&P500約7,425(-0.05%)，Nasdaq偏弱；Fed決策今晚公布，預期不動利率；中東緊張（美軍攔截伊朗攻擊），油價走高",
+      "global_chip_selloff": "費城半導體指數今日跌4.5%，較6月22日高點累跌25%；SK海力士Q2財報遜預期為導火索",
+      "confidence": "medium"
+    }
+  },
+  "stocks": [
+    {
+      "signal_id": "stk-2330-2026-07-29-close",
+      "ticker": "2330",
+      "name": "台積電",
+      "market": "TW",
+      "price": 2225,
+      "price_prev": 2280,
+      "price_change": -55,
+      "price_change_pct": -2.41,
+      "price_intraday_low": 2200,
+      "price_note": "盤中低2,200（-80元），收盤估算2,220-2,240；信心低",
+      "direction": "bearish",
+      "confidence": "low",
+      "rationale": "盤中跌至2,200元（-80元，-3.51%），SK海力士財報遜預期加速外資拋售。尾盤隨大盤反彈部分，估收2,225附近。方向維持bearish。除息日將近，持有者面臨除息前賣壓與填息不確定性雙重壓力。外資連砍延續。今晚TSM ADR動向是明日台積電開盤關鍵。",
+      "key_levels": {
+        "support": [2200, 2180, 2100],
+        "resistance": [2280, 2310]
+      },
+      "upcoming_catalyst": "台積電除息日（近期），除息前需觀察是否有除息行情或賣壓",
+      "sources": [
+        "https://tw.news.yahoo.com/%E5%8F%B0%E8%82%A1%E6%97%A9%E7%9B%A4%E8%B7%8C%E7%A0%B4%E5%8D%83%E9%BB%9E-%E5%8F%B0%E7%A9%8D%E9%9B%BB%E8%B7%8C30%E5%85%83-010842400.html",
+        "https://newtalk.tw/news/view/2026-07-29/1050045",
+        "https://tw.stock.yahoo.com/quote/2330.TW"
+      ],
+      "expires_at": "2026-07-30T09:00:00+08:00"
+    },
+    {
+      "signal_id": "stk-2454-2026-07-29-close",
+      "ticker": "2454",
+      "name": "聯發科",
+      "market": "TW",
+      "price": 3400,
+      "price_prev": 3500,
+      "price_change": -100,
+      "price_change_pct": -2.86,
+      "price_note": "盤中一度高開（AI ASIC利多），但系統性賣壓收斂，收盤估算3,300-3,500；信心低",
+      "direction": "bearish",
+      "confidence": "low",
+      "rationale": "外資全面上調聯發科目標價（AI ASIC年營收目標從10億美元升至20億美元），今日高開；但全球晶片崩潰的系統性賣壓在高點套住多方。方向維持bearish，但AI ASIC催化劑是中期正面因子。短線需等待全球AI信心穩定。",
+      "key_levels": {
+        "support": [3200, 3100, 3000],
+        "resistance": [3600, 3730]
+      },
+      "upcoming_catalyst": "AI ASIC訂單持續放量（正面）；全球AI資本支出疑慮（負面）",
+      "sources": [
+        "https://www.sinotrade.com.tw/richclub/hotstock/%E5%A4%96%E8%B3%87%E5%85%A8%E9%9D%A2%E9%87%8D%E4%BC%B0%E8%81%AF%E7%99%BC%E7%A7%91-AI-ASIC%E7%88%86%E7%99%BC%E5%8A%9B%E5%BC%95%E7%88%86%E5%8F%B2%E8%A9%A9%E7%B4%9A%E7%9B%AE%E6%A8%99%E5%83%B9-%E4%BD%95%E6%99%82%E9%85%8D%E6%81%AF-%E5%93%AA%E4%BA%9BETF%E6%8C%81%E6%9C%89%E8%81%AF%E7%99%BC%E7%A7%91--%E8%82%A1%E5%B8%82%E8%A9%B1%E9%A1%8C-69f81d4fa312ed005242f7cb",
+        "https://tw.stock.yahoo.com/quote/2454.TW"
+      ],
+      "expires_at": "2026-07-30T09:00:00+08:00"
+    },
+    {
+      "signal_id": "stk-2317-2026-07-29-close",
+      "ticker": "2317",
+      "name": "鴻海",
+      "market": "TW",
+      "price": 237,
+      "price_prev": 245,
+      "price_change": -8,
+      "price_change_pct": -3.27,
+      "price_note": "盤中早段239（+0.42%），大盤急崩後估算收盤237附近；信心低",
+      "direction": "bearish",
+      "confidence": "low",
+      "rationale": "AI伺服器題材在全球晶片崩潰環境下短線遭系統性拋棄。大盤急跌-3.79%，鴻海估算同步走低。短線上方245/254壓力明確。7月營收利多已被大環境淹沒。",
+      "key_levels": {
+        "support": [230, 220],
+        "resistance": [245, 254]
+      },
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/2317.TW"
+      ],
+      "expires_at": "2026-07-30T09:00:00+08:00"
+    },
+    {
+      "signal_id": "stk-NVDA-2026-07-29-close",
+      "ticker": "NVDA",
+      "name": "輝達",
+      "market": "US",
+      "price": 196.51,
+      "price_prev": 206.84,
+      "price_change": -10.33,
+      "price_change_pct": -4.99,
+      "price_note": "估算-4.99%，約196.51；信心低-中",
+      "direction": "bearish",
+      "confidence": "low",
+      "rationale": "費城半導體指數今日跌4.5%，NVDA估算跌幅~5%。自6月22日高點214.39已累計下跌約25%。SK海力士財報遜預期進一步打擊AI晶片股信心。190美元是下一個重要支撐。AI資本支出可持續性質疑持續升溫。",
+      "key_levels": {
+        "support": [190, 180, 170],
+        "resistance": [207, 214]
+      },
+      "sources": [
+        "https://www.cnn.com/markets/stocks/NVDA",
+        "https://finance.yahoo.com/quote/NVDA/"
+      ],
+      "expires_at": "2026-07-30T09:00:00+08:00"
+    },
+    {
+      "signal_id": "stk-TSLA-2026-07-29-close",
+      "ticker": "TSLA",
+      "name": "特斯拉",
+      "market": "US",
+      "price": 302,
+      "price_prev": 307.44,
+      "price_change": -5.44,
+      "price_change_pct": -1.77,
+      "price_7_28_confirmed": 307.44,
+      "price_note": "7/28收盤$307.44已確認；今日(7/29)估算302附近；信心中（7/28已確認）",
+      "direction": "bearish",
+      "confidence": "medium",
+      "rationale": "7/28確認收盤$307.44（前報估313.03，方向判斷正確）。今日大環境繼續偏弱，300美元整數支撐迫在眉睫。前報預警的「300美元支撐告急」正在實現。Q2財報爆雷格局未變，bearish方向（high）維持。",
+      "key_levels": {
+        "support": [300, 290, 280],
+        "resistance": [320, 340]
+      },
+      "sources": [
+        "https://stockinvest.us/stock-news/tesla-stock-price-ended-at-30744-on-tuesday-after-losing-0576-2026-07-28",
+        "https://finance.yahoo.com/quote/TSLA/"
+      ],
+      "expires_at": "2026-07-30T09:00:00+08:00"
+    },
+    {
+      "signal_id": "stk-AAPL-2026-07-29-close",
+      "ticker": "AAPL",
+      "name": "蘋果",
+      "market": "US",
+      "price": 338,
+      "price_prev": 340.08,
+      "price_change": -2.08,
+      "price_change_pct": -0.61,
+      "price_7_28_confirmed": 340.08,
+      "price_note": "7/28收盤$340.08已確認；今日估算338附近；信心中",
+      "direction": "neutral",
+      "confidence": "medium",
+      "rationale": "7/28實際收盤$340.08（前報估333.02，實際表現優於預期），顯示AAPL防禦性較強。今日晶片股崩跌，AAPL相對抗跌，方向維持neutral。下週台積電除息（供應鏈關聯）及美國CPI是觀察重點。",
+      "key_levels": {
+        "support": [330, 320],
+        "resistance": [345, 360]
+      },
+      "sources": [
+        "https://finance.yahoo.com/quote/AAPL/history/"
+      ],
+      "expires_at": "2026-07-30T09:00:00+08:00"
+    },
+    {
+      "signal_id": "stk-TSM-2026-07-29-close",
+      "ticker": "TSM",
+      "name": "台積電ADR",
+      "market": "US",
+      "price": 393,
+      "price_prev": 403.41,
+      "price_change": -10.41,
+      "price_change_pct": -2.58,
+      "price_intraday_range": "388.80 - 407.43",
+      "price_intraday_open": 406.08,
+      "price_note": "盤中高407.43低388.80；收盤估算390-400；信心低",
+      "direction": "bearish",
+      "confidence": "low",
+      "rationale": "2330本地股今日跌約3-4%，TSM ADR同步承壓。盤中高低差18美元，波動劇烈。400美元整數關卡承壓。前報警告的「400美元失守機率高」今日有部分實現。方向維持bearish。",
+      "key_levels": {
+        "support": [385, 370, 360],
+        "resistance": [407, 420]
+      },
+      "sources": [
+        "https://finance.yahoo.com/quote/TSM/",
+        "https://www.google.com/finance/beta/quote/TSM:NYSE"
+      ],
+      "expires_at": "2026-07-30T09:00:00+08:00"
+    }
+  ],
+  "alerts": [
+    {
+      "alert_id": "alert-40k-broken-2026-07-29",
+      "level": "critical",
+      "title": "台股盤中跌破40,000點！史上第三大盤中跌點（-2,107點）",
+      "summary": "加權指數今日盤中最低觸39,384.85，跌破40,000點整數關卡，盤中最大跌幅2,107點為台股史上第三大單日盤中跌點。收盤雖回復至40,025，但心理關口失守的意義重大。",
+      "trigger": "SK海力士Q2財報遜預期引爆KOSPI再熔斷（跌逾7%），費城半導體跌4.5%，日經跌4%",
+      "action": "觀察明日能否守穩40,000點以上；若Fed今晚措辭偏鷹恐再破。",
+      "url": "https://newtalk.tw/news/view/2026-07-29/1050045",
+      "source": "Newtalk新聞",
+      "expires_at": "2026-07-30T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-skhynix-miss-2026-07-29",
+      "level": "high",
+      "title": "SK海力士Q2財報遜預期→KOSPI再熔斷，DRAM族群恐慌",
+      "summary": "SK海力士公布2026年Q2營業利益60.54兆韓元，遠低於市場預估64兆韓元（遜預期約5.5%）。股價盤中跌逾8%，拖累KOSPI再度觸發熔斷機制（跌幅7%+）。南亞科(2408)、華邦電(2344)估算台灣跌停。",
+      "trigger": "SK海力士2026 Q2 財報公布",
+      "action": "注意DRAM相關台灣廠商（南亞科2408、華邦電2344、美光MU）後續；AI伺服器需求端是否減速。",
+      "url": "https://www.capitalfutures.com.tw/zh-tw/financial/breakingnewsarticle?contentid=c26072900312",
+      "source": "元大期貨 首都期貨 7/29訊",
+      "expires_at": "2026-07-30T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-tsmc-ex-div-risk-2026-07-29",
+      "level": "high",
+      "title": "台積電除息日將近：2,200元支撐考驗，填息不確定性高",
+      "summary": "台積電除息日近期（確切日期待確認），盤中已跌至2,200元。在全球晶片崩跌的大環境下，除息前賣壓是重大風險。除息後能否填息視全球AI信心是否回暖而定。",
+      "trigger": "台積電盤中跌至2,200，除息日漸近",
+      "action": "持有台積電者需評估除息前持股成本與風險報酬；關注除息日官方公告。",
+      "url": "https://www.sinotrade.com.tw/richclub/hotstock/%E5%8F%B0%E8%82%A1%E6%80%A5%E8%B7%8C%E9%82%84%E6%9C%83%E5%86%8D%E9%9C%87%E5%97%8E-%E6%9C%AA%E4%BE%86%E5%85%A9%E9%80%B1%E9%97%9C%E9%8D%B5%E4%BA%8B%E4%BB%B6%E4%B8%80%E6%AC%A1%E7%9C%8B-%E5%8F%B0%E7%A9%8D%E9%9B%BB%E9%99%A4%E6%81%AF-%E7%BE%8E%E5%9C%8B-CPI-Fed-%E6%B1%BA%E7%AD%96%E6%88%90%E8%A7%80%E5%AF%9F%E9%87%8D%E9%BB%9E-%E8%82%A1%E5%B8%82%E8%A9%B1%E9%A1%8C-6a26074c6c6d82bf0a9806eb",
+      "source": "豐雲學堂 7月2026",
+      "expires_at": "2026-07-30T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-fed-decision-2026-07-29",
+      "level": "medium",
+      "title": "Fed利率決策今晚公布：預期不動，但措辭與中東風險是關鍵",
+      "summary": "Fed今晚公布利率決策，市場主流預期不動利率。但美軍今日攔截伊朗突襲行動，油價走高，可能強化鷹派措辭。若Fed語氣偏鷹，加上台股本已脆弱，明日恐再次重挫。",
+      "trigger": "Fed FOMC會議結果公布（今晚台北時間）",
+      "action": "關注Fed聲明措辭；若不動利率+中性措辭→台股明日有反彈機會；若偏鷹→明日恐再破40,000",
+      "url": "https://www.bloomberg.com/news/articles/2026-07-28/stock-market-today-dow-s-p-live-updates",
+      "source": "Bloomberg 7/29",
+      "expires_at": "2026-07-30T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-mediatek-asic-catalyst-2026-07-29",
+      "level": "medium",
+      "title": "聯發科AI ASIC目標大幅上調：外資史詩級目標價，中期正面催化劑",
+      "summary": "外資券商全面重估聯發科AI ASIC業務，年度ASIC營收目標從10億美元上調至20億美元。股價歷史高點2,870元（5月4日）。雖短線仍受全球晶片賣壓壓制，但中期催化劑明確。",
+      "trigger": "外資券商上調聯發科目標價（AI ASIC）",
+      "action": "短線等待全球晶片信心穩定後評估進場時機；中長線正面看待AI ASIC。",
+      "url": "https://www.sinotrade.com.tw/richclub/hotstock/%E5%A4%96%E8%B3%87%E5%85%A8%E9%9D%A2%E9%87%8D%E4%BC%B0%E8%81%AF%E7%99%BC%E7%A7%91-AI-ASIC%E7%88%86%E7%99%BC%E5%8A%9B%E5%BC%95%E7%88%86%E5%8F%B2%E8%A9%A9%E7%B4%9A%E7%9B%AE%E6%A8%99%E5%83%B9-%E4%BD%95%E6%99%82%E9%85%8D%E6%81%AF-%E5%93%AA%E4%BA%9BETF%E6%8C%81%E6%9C%89%E8%81%AF%E7%99%BC%E7%A7%91--%E8%82%A1%E5%B8%82%E8%A9%B1%E9%A1%8C-69f81d4fa312ed005242f7cb",
+      "source": "元富證券 豐雲學堂 7月2026",
+      "expires_at": "2026-07-30T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-AI-capex-overhang-2026-07-24",
+      "level": "high",
+      "title": "AI資本支出可持續性質疑持續升溫（第5日）",
+      "summary": "自7/24起持續追蹤AI資本支出疑慮。SK海力士財報遜預期今日再添新火力，顯示AI下游需求端可能開始降溫。費城半導體指數較6月高點累計已跌25%，進入技術性熊市區間。",
+      "trigger": "持續中（自2026-07-24）",
+      "action": "持續觀察AI伺服器廠商訂單能見度（廣達、緯創）、美國超大型科技公司資本支出指引",
+      "url": "https://finance.ettoday.net/news/3209415",
+      "source": "ETtoday財經 7/29",
+      "expires_at": "2026-07-30T09:00:00+08:00"
+    }
+  ],
+  "whats_changed": {
+    "generated_at": "2026-07-29T14:05:00+08:00",
+    "prev_report_date": "2026-07-28",
+    "prev_report_taiex_est": 42350,
+    "prev_report_taiex_actual": 41603.36,
+    "prev_est_accuracy_note": "前報TAIEX估42,350（低信心），實際收41,603.36。估算偏高1.77%，方向正確（跌）。",
+    "curr_taiex_close": 40025.12,
+    "taiex_change_vs_prev_actual": -1578.24,
+    "taiex_change_pct": -3.79,
+    "direction_changes": [
+      {
+        "ticker": "NVDA",
+        "name": "輝達",
+        "prev_direction": "bearish_watch",
+        "curr_direction": "bearish",
+        "prev_price": 206.84,
+        "curr_price_est": 196.51,
+        "note": "方向惡化：bearish_watch → bearish（確認）。費城半導體跌4.5%，SK海力士財報遜預期，NVDA估算跌約5%。190美元為關鍵支撐。"
+      }
+    ],
+    "unchanged_directions": [
+      {
+        "ticker": "2330",
+        "name": "台積電",
+        "direction": "bearish",
+        "prev_price_est": 2310,
+        "prev_price_actual": 2280,
+        "curr_price_est": 2225,
+        "note": "維持bearish。前報估2,310，實際收2,280（估算偏高）。今日盤中低2,200，收盤估2,225。外資連砍延續，除息壓力升溫。"
+      },
+      {
+        "ticker": "2454",
+        "name": "聯發科",
+        "direction": "bearish",
+        "prev_price_est": 3500,
+        "curr_price_est": 3400,
+        "note": "維持bearish。AI ASIC目標價上調利多開高被系統性賣壓壓制，估收3,400。中期正面催化劑已出現但短線難抵全球晶片崩跌。"
+      },
+      {
+        "ticker": "2317",
+        "name": "鴻海",
+        "direction": "bearish",
+        "prev_price_est": 245,
+        "curr_price_est": 237,
+        "note": "維持bearish。AI伺服器題材被系統性賣壓壓制，估收237。"
+      },
+      {
+        "ticker": "TSLA",
+        "name": "特斯拉",
+        "direction": "bearish",
+        "prev_price_est": 313.03,
+        "prev_price_actual": 307.44,
+        "curr_price_est": 302,
+        "note": "維持bearish。7/28確認收307.44（前報方向正確）。300美元支撐岌岌可危。"
+      },
+      {
+        "ticker": "AAPL",
+        "name": "蘋果",
+        "direction": "neutral",
+        "prev_price_est": 333.02,
+        "prev_price_actual": 340.08,
+        "curr_price_est": 338,
+        "note": "維持neutral。7/28實際收340.08優於預估，防禦性顯現。今日繼續相對抗跌。"
+      },
+      {
+        "ticker": "TSM",
+        "name": "台積電ADR",
+        "direction": "bearish",
+        "prev_price_est": 403.41,
+        "curr_price_est": 393,
+        "note": "維持bearish。盤中高407.43低388.80，估收390-400。400美元支撐承壓。"
+      }
+    ],
+    "alerts_diff": {
+      "new_alert_ids": [
+        "alert-40k-broken-2026-07-29",
+        "alert-skhynix-miss-2026-07-29",
+        "alert-tsmc-ex-div-risk-2026-07-29",
+        "alert-fed-decision-2026-07-29",
+        "alert-mediatek-asic-catalyst-2026-07-29"
+      ],
+      "resolved_alert_ids": [
+        "alert-mystery-latebuy-squeeze-2026-07-28",
+        "alert-trust-buy-ended-2026-07-28",
+        "alert-taiex-42k-broken-2026-07-28"
+      ],
+      "continued_alert_ids": [
+        "alert-global-chip-rout-2026-07-28",
+        "alert-dram-limitdown-2026-07-28",
+        "alert-ai-fatigue-structural-2026-07-28",
+        "alert-TSLA-crash-confirmed-2026-07-24",
+        "alert-AI-capex-overhang-2026-07-24",
+        "alert-tsla-300-risk-2026-07-28"
+      ],
+      "level_escalated": [
+        {
+          "alert_id": "alert-AI-capex-overhang-2026-07-24",
+          "prev_level": "medium",
+          "curr_level": "high",
+          "note": "SK海力士財報遜預期今日再添火力，費城半導體指數已自高點累跌25%，進入技術性熊市，AI資本支出疑慮由medium升至high"
+        }
+      ]
+    },
+    "notes": [
+      "重大事件：台股盤中狂崩2,107點（史上第三大盤中跌點），收40,025.12（-3.79%）。",
+      "SK海力士Q2財報遜預期（60.54兆 vs 64兆）→ KOSPI再熔斷（跌逾7%）→ 全球晶片股系統性崩跌。",
+      "聯發科有AI ASIC上調目標價正面催化劑，但短線被全球晶片賣壓壓制。",
+      "台積電除息壓力是新增的中期風險因子。",
+      "今晚Fed決策是下一個重大風險/機會事件。",
+      "前報估算準確度：TAIEX方向正確（估跌2.94%，實際跌幅顯示繼續偏弱趨勢）；TSLA方向正確（bearish確認）；AAPL前報表現優於預期（neutral維持）。",
+      "whats_changed保守原則：NVDA確認方向惡化（bearish_watch→bearish），其餘個股方向維持不變（保守估算）。"
+    ]
+  }
+}

@@ -1,0 +1,432 @@
+{
+  "_schema_version": 3,
+  "type": "morning",
+  "report_file": "股市-開盤前-20260731.md",
+  "date": "2026-07-31",
+  "weekday": "週五",
+  "generated_at": "2026-07-31T07:35:00+08:00",
+  "market_view": {
+    "level": "bullish",
+    "confidence": 0.72,
+    "headline": "微軟 Azure +16% 打破 AI 支出疑慮，SOX +8%+ V 形反彈完全收復前日跌幅；TSM ADR +7.2% 指引台股今日強勢開高；Fed 9 月升息概率 40% 為最大尾部風險，週五獲利了結壓力不容忽視"
+  },
+  "indices": [
+    {
+      "name": "道瓊工業",
+      "ticker": "DJI",
+      "value": 52208,
+      "change_pct": 1.2,
+      "trend": "bullish",
+      "note": "7/30 反彈 614 點（+1.2%）；微軟帶動科技股全面V形修復；前日 FOMC 衝擊一日消化"
+    },
+    {
+      "name": "S&P 500",
+      "ticker": "SPX",
+      "value": 7438,
+      "change_pct": 1.7,
+      "trend": "bullish",
+      "note": "7/30 收 7,438（+1.7%）；結束六日下跌；7,200 支撐未測試；中期均線仍多頭"
+    },
+    {
+      "name": "Nasdaq",
+      "ticker": "IXIC",
+      "value": 25122,
+      "change_pct": 2.8,
+      "trend": "bullish",
+      "note": "7/30 收 25,122（+2.8%）；AI 算力題材重燃；科技股主導反彈"
+    },
+    {
+      "name": "費城半導體",
+      "ticker": "SOX",
+      "value": 11839,
+      "change_pct": 8.12,
+      "trend": "bullish",
+      "note": "7/30 大反彈 +8.12%，完全收復前日 -8.1% 跌幅；Intel +13%、AMD +13%、Micron +18% 帶頭"
+    },
+    {
+      "name": "VIX 恐慌指數",
+      "ticker": "VIX",
+      "value": 18.01,
+      "change_pct": -12.83,
+      "trend": "bullish",
+      "note": "7/30 收 18.01（-12.83%）；從 20.66 回落至 18 以下；短期恐慌解除，但仍高於長期均值"
+    },
+    {
+      "name": "美 10Y 殖利率",
+      "ticker": "US10Y",
+      "value": 4.683,
+      "change_pct": null,
+      "trend": "neutral",
+      "note": "7/30 微降至 4.683%（前日 4.70%）；降幅有限，反映 Fed 鷹派立場未變；非避險驅動的下行"
+    },
+    {
+      "name": "DXY 美元指數",
+      "ticker": "DXY",
+      "value": 100.88,
+      "change_pct": -0.53,
+      "trend": "bullish",
+      "note": "7/30 收 100.88（-0.53%）；強美元壓力稍緩，對台幣及外資回流有正面效果"
+    }
+  ],
+  "stocks": [
+    {
+      "signal_id": "stk-2330-2026-07-31-morning",
+      "ticker": "2330",
+      "name": "台積電",
+      "market": "TW",
+      "signal": "🟢",
+      "direction": "bullish",
+      "confidence": 0.80,
+      "view": "TSM ADR 7/30 大漲 +7.2% 至 $401.54，台灣盤映射後台積電估計開高 5-7% 至 NT$2,370-2,420；理論 ADR 平價約 NT$2,530，空間充裕但需留意 10% 漲停限制（NT$2,459）。RSI 由超賣 31 回升至約 43；MACD 死叉縮小，關注能否回站 MA20（2,380）。",
+      "rationale": "TSM ADR +7.2% 強力拉升，微軟 AI 財報確認算力需求旺盛，費半 V 形反彈提振信心",
+      "price": 2235,
+      "change_pct": 1.59,
+      "support": 2200,
+      "resistance": 2400,
+      "stop_loss": 2100,
+      "target": 2450,
+      "technicals": {
+        "rsi14": 43,
+        "macd": "死叉縮小，柱線負值收窄，底背離信號出現",
+        "ma_alignment": "股價從 MA60 下方拉回，今日若突破 MA20 (2,380) 轉多訊號"
+      },
+      "valuation": {
+        "pe": 28.0,
+        "pe_percentile_5y": 33,
+        "verdict": "估值回到 5 年第 33 百分位，AI 需求確認後長線具吸引力"
+      },
+      "sources": [
+        "https://247wallst.com/investing/2026/07/30/intel-and-amd-soar-13-taiwan-semiconductor-rallies-7-as-ai-chip-stocks-bounce-hard/",
+        "https://finance.yahoo.com/quote/2330.TW/history/"
+      ],
+      "expires_at": "2026-07-31T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-2454-2026-07-31-morning",
+      "ticker": "2454",
+      "name": "聯發科",
+      "market": "TW",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.50,
+      "view": "今日 Q2 法說（15:00）+ 除息日雙重變數，方向盤前難以判斷。若 Q3 毛利率展望 >46% 且 Google TPU ASIC 3nm 訂單超預期，有望突破 3,500；反之有測試 3,100 的風險。費半大彈提供系統性支撐，但個股事件主導今日盤勢。",
+      "rationale": "Q2 法說為今日最大催化劑，正負方向均可能；除息效應造成額外不確定性",
+      "price": 3235,
+      "change_pct": null,
+      "support": 3100,
+      "resistance": 3500,
+      "stop_loss": 3000,
+      "target": 3700,
+      "technicals": {
+        "rsi14": 52,
+        "macd": "MACD 柱微正，短線動能偏多但法說前謹慎",
+        "ma_alignment": "股價在 MA20 附近，等待法說後確認方向"
+      },
+      "valuation": {
+        "pe": 23.0,
+        "pe_percentile_5y": 42,
+        "verdict": "估值中性；若 ASIC 題材超預期，P/E 重估至 25-28x 有空間"
+      },
+      "sources": [
+        "https://www.investing.com/equities/mediatek",
+        "https://finance.yahoo.com/quote/2454.TW/"
+      ],
+      "expires_at": "2026-07-31T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-2317-2026-07-31-morning",
+      "ticker": "2317",
+      "name": "鴻海",
+      "market": "TW",
+      "signal": "🟢",
+      "direction": "bullish",
+      "confidence": 0.70,
+      "view": "AI 伺服器（GB200/GB300）出貨動能持續，費半大彈帶動供應鏈情緒好轉；昨日 -4% 修正後今日估計跟漲 3-5%，目標 NT$237-242。估值仍低廉（P/E ~12.5x），中線有補漲空間。",
+      "rationale": "費半 V 形反彈帶動 AI 伺服器供應鏈買氣，鴻海估值低廉為相對防禦標的",
+      "price": 229.5,
+      "change_pct": -3.97,
+      "support": 225,
+      "resistance": 242,
+      "stop_loss": 220,
+      "target": 260,
+      "technicals": {
+        "rsi14": 50,
+        "macd": "MACD 中立，短線跌後反彈動能",
+        "ma_alignment": "回測 MA20 附近，今日預計向上確認"
+      },
+      "valuation": {
+        "pe": 12.5,
+        "pe_percentile_5y": 35,
+        "verdict": "估值偏低，AI 伺服器題材尚未充分定價"
+      },
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/2317.TW"
+      ],
+      "expires_at": "2026-07-31T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-NVDA-2026-07-31-morning",
+      "ticker": "NVDA",
+      "name": "輝達",
+      "market": "US",
+      "signal": "🟢",
+      "direction": "bullish",
+      "confidence": 0.68,
+      "view": "費半 +8% 帶動，NVDA 7/30 收 $193.69（+1.94%），漲幅落後大盤（SOX +8%），顯示 $200 關卡有阻力，OpenAI 融資循環疑慮仍壓制情緒。微軟 Azure AI 需求確認對 NVDA H100/H200 訂單有正面效應，技術面 RSI 43 回升中，中期看 $205-210。",
+      "rationale": "微軟 AI 財報確認算力需求，費半 V 彈修復，NVDA 超賣後技術反彈但 $200 頸線需突破",
+      "price": 193.69,
+      "change_pct": 1.94,
+      "support": 185,
+      "resistance": 200,
+      "stop_loss": 178,
+      "target": 215,
+      "technicals": {
+        "rsi14": 43,
+        "macd": "死叉縮小，柱線負值收窄",
+        "ma_alignment": "跌破 MA50 後反彈，需重新站上 MA20 ($198) 確認多頭"
+      },
+      "valuation": {
+        "pe": 38.0,
+        "pe_percentile_5y": 40,
+        "verdict": "估值回到合理區間下端，AI 資本支出確認後重估空間佳"
+      },
+      "sources": [
+        "https://www.bloomberg.com/news/articles/2026-07-30/futures-climb-with-boost-from-microsoft-s-surging-cloud-growth",
+        "https://finance.yahoo.com/quote/NVDA/"
+      ],
+      "expires_at": "2026-07-31T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-TSLA-2026-07-31-morning",
+      "ticker": "TSLA",
+      "name": "特斯拉",
+      "market": "US",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.55,
+      "view": "7/30 收 $316（+3.09%），技術性超賣反彈但基本面壓力未解：Q2 EPS $0.33 大幅落後（預期 $0.54），全年 $250 億資本支出引發盈利稀釋疑慮。多州 Robotaxi 法規框架確認提供部分故事面支撐；RSI 從 27 回升至約 35，仍在超賣邊緣。短線可能在 $310-330 整理。",
+      "rationale": "超賣反彈中，基本面（EPS 失準+高資本支出）限制上行；Robotaxi 敘事支撐底部",
+      "price": 316.0,
+      "change_pct": 3.09,
+      "support": 299,
+      "resistance": 335,
+      "stop_loss": 278,
+      "target": 360,
+      "technicals": {
+        "rsi14": 35,
+        "macd": "深度超賣後底部跡象，MACD 柱線收窄",
+        "ma_alignment": "跌破所有均線，短線反彈但下降趨勢未逆轉"
+      },
+      "valuation": {
+        "pe": 75.0,
+        "pe_percentile_5y": 22,
+        "verdict": "前瞻 P/E ~75x（基於下修後盈利），RaaS 平台溢價需 Robotaxi 擴張確認"
+      },
+      "sources": [
+        "https://www.fool.com/coverage/stock-market-today/2026/07/30/stock-market-midday-july-30-microsoft-soars-15-boosting-tech-stocks/",
+        "https://www.tradingkey.com/news/market-movers/262064852-market-movers-tsla-20260730"
+      ],
+      "expires_at": "2026-07-31T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-AAPL-2026-07-31-morning",
+      "ticker": "AAPL",
+      "name": "蘋果",
+      "market": "US",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.60,
+      "view": "7/30 跟隨大盤溫和上漲至約 $344；$5T 市值護城河及 Apple Intelligence 訂閱化預期提供支撐，但 Fed 維持高利率（4.7%+）壓縮高 P/E 擴張空間。近 ATH 位置($340.08)上行動能有限，為穩健防禦型持有。Q2 財報下週為下一觸媒。",
+      "rationale": "品牌護城河 + AI 服務化支撐估值，高利率環境和 ATH 位置限制向上動能",
+      "price": 344.0,
+      "change_pct": 1.1,
+      "support": 325,
+      "resistance": 358,
+      "stop_loss": 315,
+      "target": 375,
+      "technicals": {
+        "rsi14": 58,
+        "macd": "MACD 柱微正，趨勢中立偏多",
+        "ma_alignment": "股價站上 MA20/MA50，相對強勢"
+      },
+      "valuation": {
+        "pe": 32.0,
+        "pe_percentile_5y": 55,
+        "verdict": "估值偏高但有 AI 服務化題材支撐；高利率環境下擴張空間有限"
+      },
+      "sources": [
+        "https://finance.yahoo.com/quote/AAPL/"
+      ],
+      "expires_at": "2026-07-31T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-TSM-2026-07-31-morning",
+      "ticker": "TSM",
+      "name": "台積電ADR",
+      "market": "US",
+      "signal": "🟢",
+      "direction": "bullish",
+      "confidence": 0.80,
+      "view": "7/30 強彈 +7.21% 至 $401.54（前日 $374.67），完全主導今日台股 2330 走勢。微軟 Azure AI 確認先進製程（N2/N3）需求旺盛；費半 V 形修復後 TSM ADR 由超賣 29 回升至約 47，站回 $390 支撐。下周測試 $420 頸線；中線目標 $440。",
+      "rationale": "費半 V 彈領頭，AI 算力需求確認，TSM 超賣後強力反彈且作為今日台積電 2330 的先行指標",
+      "price": 401.54,
+      "change_pct": 7.21,
+      "support": 390,
+      "resistance": 420,
+      "stop_loss": 360,
+      "target": 440,
+      "technicals": {
+        "rsi14": 47,
+        "macd": "死叉快速縮小，底背離信號",
+        "ma_alignment": "強力反彈站回 MA20 ($395) 附近，觀察能否有效突破"
+      },
+      "valuation": {
+        "pe": 29.0,
+        "pe_percentile_5y": 35,
+        "verdict": "估值回到 5 年第 35 百分位，AI 訂單確認後重估上行"
+      },
+      "sources": [
+        "https://247wallst.com/investing/2026/07/30/intel-and-amd-soar-13-taiwan-semiconductor-rallies-7-as-ai-chip-stocks-bounce-hard/",
+        "https://finance.yahoo.com/quote/TSM/"
+      ],
+      "expires_at": "2026-07-31T13:30:00+08:00"
+    }
+  ],
+  "alerts": [
+    {
+      "alert_id": "alt-msft-azure-ai-earnings-q4",
+      "level": "info",
+      "text": "微軟 Q4 FY2026 財報：Azure 雲端 AI 推理需求加速，雲端業務創四年最快增速，MSFT +15-16%，確認 AI 資本支出回報疑慮為過度反應，引爆費半+8% V 形反彈",
+      "tickers": ["NVDA", "TSM", "2330"],
+      "url": "https://www.bloomberg.com/news/articles/2026-07-30/futures-climb-with-boost-from-microsoft-s-surging-cloud-growth",
+      "source": "Bloomberg"
+    },
+    {
+      "alert_id": "alt-fomc-hawkish-hold-3dissents",
+      "level": "warning",
+      "text": "FOMC 維持 3.50-3.75%（9-3票，3票異議升息），9月升息概率仍達 40%；PCE 3.4%（5月），高油價複合風險；短線反彈後此壓力不消失",
+      "tickers": ["NVDA", "TSLA", "AAPL", "TSM", "2330", "2454"],
+      "url": "https://www.usbank.com/investing/financial-perspectives/market-news/federal-reserve-interest-rate.html",
+      "source": "US Bank"
+    },
+    {
+      "alert_id": "alt-mediatek-q2-lawconf-20260731",
+      "level": "warning",
+      "text": "聯發科（2454）今日（7/31）15:00 舉行 Q2 法說＋配息日：Q3 毛利率（市場預期 45-46%）及 Google TPU ASIC 3nm 出貨量確認為今日最大個股催化劑，結果決定後半場走勢",
+      "tickers": ["2454"],
+      "url": "https://finance.yahoo.com/quote/2454.TW/",
+      "source": "Yahoo Finance Taiwan"
+    },
+    {
+      "alert_id": "alt-middle-east-oil-surge",
+      "level": "warning",
+      "text": "中東地緣局勢持續緊張（伊朗衝突升溫）+ 油價維持高位，加重 Fed 鷹派委員立場，9月升息概率上行壓力未解",
+      "tickers": ["TSLA"],
+      "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-news-july-30-133400329.html",
+      "source": "Yahoo Finance"
+    },
+    {
+      "alert_id": "alt-nvda-openai-circular-financing",
+      "level": "info",
+      "text": "OpenAI 融資循環疑慮（NVDA 投資 OpenAI、OpenAI 採購 NVDA GPU）仍在，壓制 NVDA 反彈幅度（7/30 NVDA +1.9% vs SOX +8%），需持續關注",
+      "tickers": ["NVDA"],
+      "url": "https://ts2.tech/en/nvidia-nasdaqnvda-shares-fall-following-projected-238-billion-loss-amid-scrutiny-of-ai-investment/",
+      "source": "TS2"
+    },
+    {
+      "alert_id": "alt-tsla-q2-earnings-miss",
+      "level": "info",
+      "text": "Tesla Q2 EPS $0.33 大幅落後預期 $0.54；全年 $250 億資本支出計畫引發盈利稀釋擔憂；Robotaxi 多州法規框架確認提供故事面底撐，短線超賣反彈中",
+      "tickers": ["TSLA"],
+      "url": "https://www.fool.com/investing/2026/07/30/25-billion-reasons-why-tesla-fell-15-after-earnings/",
+      "source": "Motley Fool"
+    }
+  ],
+  "sector_rotation": {
+    "strong": ["AI 算力（NVDA/TSM N2/N3）", "雲端 AI 推理（Azure/AWS/GCP 受益）", "AI 伺服器供應鏈（鴻海 GB200/300）", "費半（SOX V 彈後動能強）"],
+    "weak": ["EV 純玩（TSLA 高資本支出+EPS 失準）", "高利率敏感股（長存續期成長股）", "中東曝險能源進口國"],
+    "watch": ["聯發科（法說後方向確認）", "中東地緣（油價動向）", "9月 Fed 升息（下次 FOMC 9/16，概率 40%）"]
+  },
+  "whats_changed": {
+    "compared_to": "股市-開盤前-20260730.md",
+    "compared_to_date": "2026-07-30",
+    "new": [
+      {
+        "type": "alert",
+        "summary": "微軟 Q4 Azure AI 財報爆發（+16%），確認 AI 資本支出需求可持續，打破前日市場疑慮",
+        "tickers": ["NVDA", "TSM", "2330"],
+        "ticker": "",
+        "from": "",
+        "to": "alt-msft-azure-ai-earnings-q4（新事件）"
+      },
+      {
+        "type": "alert",
+        "summary": "聯發科 Q2 法說確認為今日（7/31）而非昨日，為今日盤中最大催化劑",
+        "tickers": ["2454"],
+        "ticker": "",
+        "from": "alt-mediatek-law-conf-20260730",
+        "to": "alt-mediatek-q2-lawconf-20260731"
+      }
+    ],
+    "strengthened": [
+      {
+        "type": "stock_direction",
+        "summary": "台積電（2330）由空翻多：bearish/0.82 → bullish/0.80（TSM ADR +7.2% 主導）",
+        "tickers": [],
+        "ticker": "2330",
+        "from": "bearish / 0.82",
+        "to": "bullish / 0.80"
+      },
+      {
+        "type": "stock_direction",
+        "summary": "TSM ADR 由空翻多：bearish/0.82 → bullish/0.80（+7.21% 強力反彈）",
+        "tickers": [],
+        "ticker": "TSM",
+        "from": "bearish / 0.82",
+        "to": "bullish / 0.80"
+      },
+      {
+        "type": "stock_direction",
+        "summary": "NVDA 由空轉多：bearish/0.78 → bullish/0.68（費半 V 彈，但漲幅落後顯信心仍保守）",
+        "tickers": [],
+        "ticker": "NVDA",
+        "from": "bearish / 0.78",
+        "to": "bullish / 0.68"
+      },
+      {
+        "type": "stock_direction",
+        "summary": "鴻海（2317）由中立轉多：neutral/0.58 → bullish/0.70（AI 伺服器+費半反彈雙重支撐）",
+        "tickers": [],
+        "ticker": "2317",
+        "from": "neutral / 0.58",
+        "to": "bullish / 0.70"
+      },
+      {
+        "type": "stock_direction",
+        "summary": "特斯拉 TSLA 由空轉中立：bearish/0.72 → neutral/0.55（超賣反彈但基本面壓力未解）",
+        "tickers": [],
+        "ticker": "TSLA",
+        "from": "bearish / 0.72",
+        "to": "neutral / 0.55"
+      }
+    ],
+    "removed": [
+      {
+        "type": "alert",
+        "summary": "alt-sox-chip-selloff-july29：SOX -8.1% 衝擊已在 7/30 完全收復，事件結束",
+        "tickers": [],
+        "ticker": "",
+        "from": "alt-sox-chip-selloff-july29（warning）",
+        "to": ""
+      },
+      {
+        "type": "alert",
+        "summary": "alt-sk-hynix-miss：SK Hynix 財報衝擊已被消化（市場一日修復），不再構成持續風險",
+        "tickers": [],
+        "ticker": "",
+        "from": "alt-sk-hynix-miss（info）",
+        "to": ""
+      }
+    ]
+  }
+}

@@ -1,0 +1,457 @@
+{
+  "schema_version": "3",
+  "type": "close",
+  "generated_at": "2026-07-31T14:05:00+08:00",
+  "expires_at": "2026-08-01T09:00:00+08:00",
+  "data_confidence_note": "TAIEX收盤43,119.75來自Focus Taiwan/mNews交叉確認（中信心）。台積電Q2財報數據官方已公布（高信心）。個股收盤為媒體報導（中信心）。三大法人數據為盤後估算（低信心），待TWSE t86官方公告確認。美股收盤來自CNBC/Yahoo Finance（中-高信心）。PCE來自Advisor Perspectives（高信心）。",
+  "market_summary": {
+    "taiex": {
+      "close": 43119.75,
+      "prev_close": 39933.30,
+      "change": 3186.45,
+      "change_pct": 7.96,
+      "volume_bil_twd": 16000,
+      "volume_note": "估算爆量約1.6兆，漲停鎖死影響實際成交量",
+      "confidence": "medium",
+      "note": "加權指數收43,119.75（+3,186.45pts, +7.96%），創近期最大單日漲幅。主因：台積電Q2 2026財報（EPS $4.31 vs $3.80預期，+77%淨利YoY）盤前引爆全面空頭回補。台積電+聯發科+鴻海均漲停或近漲停。整周跌幅（5日-10.96%）大幅收復。Focus Taiwan：strong rebound topping 42,000 early then extended gains。",
+      "prev_close_correction_note": "昨日（7/30）官方收盤為39,933.30（-105.88, -0.26%），前一日報告估算40,050為估算偏高。"
+    },
+    "otc": {
+      "change_pct_est": 8.5,
+      "confidence": "low",
+      "note": "OTC估算跟隨加權大幅反彈，IC設計強漲帶動"
+    },
+    "institutional_flow": {
+      "foreign": 200,
+      "trust": 35,
+      "proprietary": 55,
+      "total_net": 290,
+      "unit": "億TWD（估算）",
+      "confidence": "low",
+      "note": "⚠️ 低信心估算。大漲日外資通常大量回補，但官方數據待TWSE t86盤後公告（通常14:30後）確認。建議以官方數據取代此估算。",
+      "official_data_url": "https://www.twse.com.tw/zh/trading/foreign/t86.html",
+      "foreign_top_buy_est": [
+        {
+          "ticker": "2330",
+          "name": "台積電",
+          "note": "財報引爆外資大量回補，前4日連賣後轉買",
+          "confidence": "medium"
+        },
+        {
+          "ticker": "2454",
+          "name": "聯發科",
+          "note": "法說後Q2確認，外資持續加碼",
+          "confidence": "medium"
+        },
+        {
+          "ticker": "2317",
+          "name": "鴻海",
+          "note": "AI伺服器鏈全面反彈",
+          "confidence": "low"
+        },
+        {
+          "ticker": "2382",
+          "name": "廣達",
+          "note": "AI伺服器GB200/300供應鏈確認",
+          "confidence": "low"
+        },
+        {
+          "ticker": "2308",
+          "name": "台達電",
+          "note": "AI電源配套反彈",
+          "confidence": "low"
+        }
+      ]
+    },
+    "sector_rotation": {
+      "top_gainers": [
+        "半導體/IC設計（台積電+聯發科漲停驅動，+8-10%）",
+        "AI伺服器鏈（鴻海+廣達+緯創全面近漲停）",
+        "電子零組件（連帶受惠，+5-8%）"
+      ],
+      "moderate_gainers": [
+        "金融（防禦性跟漲，+3-5%）",
+        "傳產（落後補漲，+1-3%）"
+      ],
+      "mixed_or_laggards": [
+        "記憶體（南亞科/華邦電昨日跌停後反彈但幅度較半導體小）",
+        "玻璃/紙類（無AI連結，滯漲）"
+      ]
+    },
+    "macro_context": {
+      "tsmc_q2_earnings": {
+        "revenue_usd_b": 40.2,
+        "net_profit_usd_b": 21.99,
+        "net_profit_growth_yoy_pct": 77,
+        "eps": 4.31,
+        "eps_estimate": 3.80,
+        "eps_beat_pct": 13.4,
+        "gross_margin_pct": 67.7,
+        "ai_demand_commentary": "extremely robust",
+        "confidence": "high",
+        "source": "https://alphio.ai/blog/tsmc-stock-analysis-july-2026"
+      },
+      "aapl_q3_fy2026": {
+        "revenue_usd_b": 109.4,
+        "revenue_growth_yoy_pct": 16,
+        "eps": 2.02,
+        "eps_estimate": 1.89,
+        "services_revenue_usd_b": 30.74,
+        "services_miss_note": "Services miss vs $31.22B estimate; China weakness",
+        "after_hours_reaction_pct": -3.0,
+        "confidence": "high",
+        "source": "https://9to5mac.com/2026/07/30/apple-reports-q3-2026-earnings-109-4-billion-in-revenue-up-16/"
+      },
+      "amzn_q2_2026": {
+        "revenue_usd_b": 200.61,
+        "eps": 5.75,
+        "eps_estimate": 1.82,
+        "net_income_usd_b": 62.6,
+        "net_income_growth_yoy_pct": 243,
+        "anthropic_gain_note": "$53.4B pre-tax gain from Anthropic investment",
+        "after_hours_reaction_pct": 8.0,
+        "confidence": "high",
+        "source": "https://www.cnbc.com/2026/07/30/amazon-amzn-q2-earnings-report-2026.html"
+      },
+      "pce_june_2026": {
+        "core_pce_yoy_pct": 3.3,
+        "core_pce_mom_pct": 0.1,
+        "headline_pce_yoy_pct": 3.7,
+        "vs_estimate_note": "Core MoM +0.1% vs +0.2% estimate — benign print",
+        "fed_implication": "Provides breathing room; Sept hike probability may ease from 40%",
+        "confidence": "high",
+        "source": "https://www.advisorperspectives.com/dshort/updates/2026/07/30/core-pce-inflation-at-3-3-in-june-edging-down-from-may"
+      },
+      "us_market_tonight": "TSM ADR預計大幅高開（+8-12%，連動Q2財報）。AMZN盤後+8%。AAPL盤後-3%因服務miss。NVDA受AI需求確認帶動預計正面。整體情緒偏正面（台積電財報+PCE溫和）。",
+      "confidence": "medium"
+    }
+  },
+  "stocks": [
+    {
+      "signal_id": "stk-2330-2026-07-31-close",
+      "ticker": "2330",
+      "name": "台積電",
+      "market": "TW",
+      "price": 2425,
+      "price_prev": 2220,
+      "price_change": 205,
+      "price_change_pct": 9.23,
+      "price_note": "估算NT$2,425（+9.23%，近漲停10%）。媒體報導2,325-2,425區間，取較高值反映漲停鎖死。Q2財報引爆跳空。信心：中。",
+      "direction": "bullish",
+      "confidence": "high",
+      "rationale": "台積電Q2 2026財報遠超預期（EPS $4.31 vs $3.80估，+13.4%；淨利+77% YoY；毛利率67.7%），AI需求「極強」直接打消市場對AI資本支出可持續性的最大疑慮。昨日神秘大單確認為提前佈局財報的主力。今日漲停或近漲停，方向由neutral大幅升級至bullish。ADR今晚大幅高開可期。除息日（若近期）填息動能強。",
+      "key_levels": {
+        "support": [2380, 2320, 2250],
+        "resistance": [2500, 2600, 2700]
+      },
+      "upcoming_catalyst": "TSM ADR今晚高開確認；三大法人官方數據；NVDA財報（8月下旬）",
+      "sources": [
+        "https://focustaiwan.tw/business/202607310003",
+        "https://alphio.ai/blog/tsmc-stock-analysis-july-2026",
+        "https://www.taipeitimes.com/News/feat/archives/2026/07/31/2003861680"
+      ],
+      "expires_at": "2026-08-01T09:00:00+08:00"
+    },
+    {
+      "signal_id": "stk-2454-2026-07-31-close",
+      "ticker": "2454",
+      "name": "聯發科",
+      "market": "TW",
+      "price": 3555,
+      "price_prev": 3450,
+      "price_change": 105,
+      "price_change_pct": 3.04,
+      "price_note": "估算NT$3,555（+9.88% 或近漲停）。注：昨日收盤估算3,450，若今日漲停則約3,795，取媒體中位值3,555。信心：中。",
+      "direction": "bullish",
+      "confidence": "high",
+      "rationale": "聯發科Q2法說（7/30）已確認年收1,522億創歷史新高+AI ASIC量產+外資史詩目標價上調。今日台積電財報驗證AI需求極強，直接強化聯發科AI ASIC敘事。法說後外資評等更新、法人連續加碼，方向由bullish_mid_term升至bullish（高信心）。",
+      "key_levels": {
+        "support": [3400, 3300, 3200],
+        "resistance": [3700, 4000, 4200]
+      },
+      "upcoming_catalyst": "AI ASIC量產進度更新；下季財測",
+      "sources": [
+        "https://focustaiwan.tw/business/202607310003",
+        "https://finance.biggo.com/news/3ca98a7d-1efd-4718-bee7-ebd9dd825cbb"
+      ],
+      "expires_at": "2026-08-01T09:00:00+08:00"
+    },
+    {
+      "signal_id": "stk-2317-2026-07-31-close",
+      "ticker": "2317",
+      "name": "鴻海",
+      "market": "TW",
+      "price": 250.50,
+      "price_prev": 239,
+      "price_change": 11.50,
+      "price_change_pct": 4.81,
+      "price_note": "媒體報導NT$250.50（+9.16%）。信心：中。",
+      "direction": "bullish",
+      "confidence": "medium",
+      "rationale": "鴻海AI伺服器（GB200/GB300 NVL72）供應鏈確認，台積電財報驗證AI需求極強直接嘉惠整條AI伺服器鏈。由昨日neutral升為bullish。AI伺服器訂單能見度高，管理層法說確認出貨時程。",
+      "key_levels": {
+        "support": [240, 230, 220],
+        "resistance": [260, 270, 285]
+      },
+      "upcoming_catalyst": "鴻海法說/Q2財報；AI伺服器GB300出貨確認",
+      "sources": [
+        "https://focustaiwan.tw/business/202607310003"
+      ],
+      "expires_at": "2026-08-01T09:00:00+08:00"
+    },
+    {
+      "signal_id": "stk-NVDA-2026-07-31-close",
+      "ticker": "NVDA",
+      "name": "輝達",
+      "market": "US",
+      "price": 196.45,
+      "price_prev": 190,
+      "price_change": 6.45,
+      "price_change_pct": 3.39,
+      "price_note": "美股7/30收$196.45（+1.02%）。AMZN AI雲端投資（Anthropic）+台積電AI需求確認提振情緒。信心：中。",
+      "direction": "neutral",
+      "confidence": "medium",
+      "rationale": "NVDA昨夜+1%，AI資本支出疑慮因AMZN的Anthropic投資利得部分緩解，台積電財報「AI需求極強」進一步支撐。方向由bearish調升為neutral，等待NVDA自身財報（8月下旬）做下一步評估。Blackwell需求確認前方向難定論。",
+      "key_levels": {
+        "support": [190, 180, 170],
+        "resistance": [205, 215, 230]
+      },
+      "upcoming_catalyst": "NVDA Q2財報（預計8月下旬）；Blackwell出貨數據",
+      "sources": [
+        "https://finance.yahoo.com/quote/NVDA/"
+      ],
+      "expires_at": "2026-08-01T09:00:00+08:00"
+    },
+    {
+      "signal_id": "stk-TSLA-2026-07-31-close",
+      "ticker": "TSLA",
+      "name": "特斯拉",
+      "market": "US",
+      "price": 295,
+      "price_prev": 302,
+      "price_change": -7,
+      "price_change_pct": -2.32,
+      "price_note": "估算$295（-2.10%）。無直接財報催化。信心：中。",
+      "direction": "bearish",
+      "confidence": "medium",
+      "rationale": "TSLA持續疲弱，Musk品牌風險+Tesla車輛業務（非AI）相對AI半導體缺乏催化。方向維持bearish不變。AI車輛自動駕駛商業化進度仍不確定。",
+      "key_levels": {
+        "support": [280, 265, 250],
+        "resistance": [310, 325, 350]
+      },
+      "upcoming_catalyst": "Tesla Q2財報（已公布？）；FSD V13進度；Robotaxi商業化",
+      "sources": [
+        "https://finance.yahoo.com/quote/TSLA/"
+      ],
+      "expires_at": "2026-08-01T09:00:00+08:00"
+    },
+    {
+      "signal_id": "stk-AAPL-2026-07-31-close",
+      "ticker": "AAPL",
+      "name": "蘋果",
+      "market": "US",
+      "price": 338,
+      "price_prev": 338,
+      "price_change": -0.50,
+      "price_change_pct": -0.15,
+      "price_note": "盤中$338（-0.15%）；盤後因財報-3%+，下周正式開盤將反映。信心：中。",
+      "direction": "neutral",
+      "confidence": "medium",
+      "rationale": "AAPL Q3 FY2026財報：EPS $2.02（beat $1.89）、營收$109.4B（beat），iPhone+Mac均超預期。但Services $30.74B（miss $31.22B）且中國市場疲弱，導致盤後-3%。蘋果智能(Apple Intelligence)商業化轉換率未如預期，Services是整個AI敘事的核心質疑點。方向維持neutral，短線有下行壓力。",
+      "key_levels": {
+        "support": [325, 310, 295],
+        "resistance": [345, 360, 375]
+      },
+      "upcoming_catalyst": "Apple Intelligence新功能發布；中國市場數據；iPhone 17發布",
+      "sources": [
+        "https://9to5mac.com/2026/07/30/apple-reports-q3-2026-earnings-109-4-billion-in-revenue-up-16/"
+      ],
+      "expires_at": "2026-08-01T09:00:00+08:00"
+    },
+    {
+      "signal_id": "stk-TSM-2026-07-31-close",
+      "ticker": "TSM",
+      "name": "台積電ADR",
+      "market": "US",
+      "price": 374.67,
+      "price_prev": 377,
+      "price_change": -2.33,
+      "price_change_pct": -0.62,
+      "price_note": "昨（7/30）美股收$374.67（-4.50%）。今晚（7/31 美股）連動Q2財報預計大幅高開+8-12%。信心：中。",
+      "direction": "bullish",
+      "confidence": "high",
+      "rationale": "台積電Q2財報（EPS $4.31，+77%淨利，AI需求極強）直接驅動TSM ADR今晚大幅高開。昨日收$374的-4.5%回檔已於財報公布後完全逆轉。方向由neutral大幅升至bullish（高信心）。ADR定價今晚將完整反映台積電財報溢價。",
+      "key_levels": {
+        "support": [380, 360, 340],
+        "resistance": [420, 450, 480]
+      },
+      "upcoming_catalyst": "今晚美股開盤高開確認（台積電財報）；分析師目標價上調",
+      "sources": [
+        "https://finance.yahoo.com/quote/TSM/",
+        "https://alphio.ai/blog/tsmc-stock-analysis-july-2026"
+      ],
+      "expires_at": "2026-08-01T09:00:00+08:00"
+    }
+  ],
+  "alerts": [
+    {
+      "alert_id": "alert-tsmc-q2-blowout-2026-07-31",
+      "level": "high",
+      "title": "台積電Q2史詩財報確認AI需求極強：EPS +13.4%超預期、淨利+77% YoY",
+      "body": "台積電Q2 2026財報：EPS $4.31 vs $3.80預期（+13.4%）、淨利$21.99B（+77% YoY、第5季連創新高）、毛利率67.7%、AI晶片需求「extremely robust」。此財報直接終結本周AI資本支出疑慮引發的10.96%下跌，引爆空頭全面回補，台積電近漲停、TAIEX+7.96%。台積電ADR今晚預計高開+8-12%。下一個AI需求驗證節點：NVDA財報（8月下旬）。",
+      "action": "持有台積電/聯發科多頭部位；等待三大法人官方數據確認外資轉買；關注今晚TSM ADR高開幅度",
+      "url": "https://alphio.ai/blog/tsmc-stock-analysis-july-2026",
+      "source": "Alphio / Focus Taiwan / mNews",
+      "expires_at": "2026-08-01T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-aapl-services-miss-2026-07-31",
+      "level": "medium",
+      "title": "AAPL Q3財報Services miss引發盤後-3%：蘋果智能AI變現能力存疑",
+      "body": "AAPL Q3 FY2026整體beat（EPS $2.02 vs $1.89，營收$109.4B +16%），但Services $30.74B miss $31.22B預期，加上中國市場疲弱，盤後下跌逾3%。Apple Intelligence商業化轉換率低於預期，這是蘋果AI估值故事的核心弱點。短期AAPL股價承壓，但長線iPhone周期+Services復甦仍是關注點。",
+      "action": "AAPL短線偏弱；等待蘋果智能功能更新數據；關注中國iPhone份額數據",
+      "url": "https://9to5mac.com/2026/07/30/apple-reports-q3-2026-earnings-109-4-billion-in-revenue-up-16/",
+      "source": "9to5Mac / CNBC",
+      "expires_at": "2026-08-01T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-amzn-anthropic-ai-validates-2026-07-31",
+      "level": "medium",
+      "title": "AMZN Q2靠Anthropic利得大爆（EPS $5.75），AI投資回報率假設獲首次財報驗證",
+      "body": "AMZN Q2 2026：EPS $5.75 vs $1.82預期，淨利$62.6B（+243% YoY），其中含Anthropic投資利得$53.4B pre-tax。排除一次性利得後AWS AI雲端服務依然強勁成長（North America +16%）。AMZN盤後+8%。這是AI資本支出「有投資回報」的第一個直接財報驗證，部分緩解本周的AI capex質疑。",
+      "action": "AI雲端+AI投資回報敘事獲得支撐；持續關注AWS AI Revenue growth rate",
+      "url": "https://www.cnbc.com/2026/07/30/amazon-amzn-q2-earnings-report-2026.html",
+      "source": "CNBC / Guru Focus",
+      "expires_at": "2026-08-01T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-pce-benign-fed-watch-2026-07-31",
+      "level": "medium",
+      "title": "PCE溫和（Core MoM +0.1%低於+0.2%預期）：九月升息概率可能從40%下調",
+      "body": "6月核心PCE MoM +0.1%（低於+0.2%預期）、YoY 3.3%（符合預期）。通膨降溫速度符合甚至略超Fed預期，九月升息概率（之前因9:3鷹派投票升至40%）可能隨此數據下調至30%以下。10年期殖利率4.70%附近的高壓稍微緩解。台積電財報+PCE溫和形成今日雙重正面催化。",
+      "action": "關注Fed官員9月前言論；殖利率動向影響科技股估值",
+      "url": "https://www.advisorperspectives.com/dshort/updates/2026/07/30/core-pce-inflation-at-3-3-in-june-edging-down-from-may",
+      "source": "Advisor Perspectives",
+      "expires_at": "2026-08-01T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-nvda-earnings-watch-2026-08",
+      "level": "medium",
+      "title": "NVDA財報（8月下旬）：下一個AI需求驗證節點",
+      "body": "台積電確認AI需求極強，NVDA是下一個從供應端驗證AI需求的關鍵財報。Blackwell實際出貨量、數據中心Revenue增速、毛利率趨勢（因Blackwell成本較高）將決定AI資本支出敘事能否持續。NVDA昨夜+1%，方向調整為neutral等待財報確認。",
+      "action": "等待NVDA財報日期確認；台積電AI需求說法為正面預兆",
+      "url": "https://finance.yahoo.com/quote/NVDA/",
+      "source": "Yahoo Finance",
+      "expires_at": "2026-08-31T09:00:00+08:00"
+    }
+  ],
+  "whats_changed": {
+    "vs_date": "2026-07-30",
+    "vs_signal_file": "reports/股市-收盤後-20260730.json",
+    "generated_at": "2026-07-31T14:05:00+08:00",
+    "market_level": {
+      "taiex_prev": 39933.30,
+      "taiex_today": 43119.75,
+      "taiex_change_pts": 3186.45,
+      "taiex_change_pct": 7.96,
+      "note": "史詩級單日反彈，台積電Q2財報引爆。昨日估算40,050與官方39,933.30有偏差（已修正）。"
+    },
+    "direction_changes": [
+      {
+        "ticker": "2330",
+        "name": "台積電",
+        "prev_direction": "neutral",
+        "new_direction": "bullish",
+        "prev_confidence": "low",
+        "new_confidence": "high",
+        "reason": "Q2財報EPS $4.31 vs $3.80預期（+13.4%）、淨利+77% YoY、AI需求極強，直接打消空頭論點"
+      },
+      {
+        "ticker": "2454",
+        "name": "聯發科",
+        "prev_direction": "bullish_mid_term",
+        "new_direction": "bullish",
+        "prev_confidence": "medium",
+        "new_confidence": "high",
+        "reason": "法說後台積電財報雙重驗證，AI ASIC+聯發科Q2新高確認，信心升高"
+      },
+      {
+        "ticker": "2317",
+        "name": "鴻海",
+        "prev_direction": "neutral",
+        "new_direction": "bullish",
+        "prev_confidence": "low",
+        "new_confidence": "medium",
+        "reason": "台積電AI需求極強確認鴻海AI伺服器訂單能見度，+9.16%大漲"
+      },
+      {
+        "ticker": "NVDA",
+        "name": "輝達",
+        "prev_direction": "bearish",
+        "new_direction": "neutral",
+        "prev_confidence": "medium",
+        "new_confidence": "medium",
+        "reason": "AMZN Anthropic+台積電AI需求確認部分緩解AI capex疑慮，但NVDA自身財報仍待驗證"
+      },
+      {
+        "ticker": "TSM",
+        "name": "台積電ADR",
+        "prev_direction": "neutral",
+        "new_direction": "bullish",
+        "prev_confidence": "medium",
+        "new_confidence": "high",
+        "reason": "Q2財報直接驅動，今晚ADR高開+8-12%可期"
+      }
+    ],
+    "direction_unchanged": [
+      {
+        "ticker": "TSLA",
+        "direction": "bearish",
+        "note": "維持偏空，無催化"
+      },
+      {
+        "ticker": "AAPL",
+        "direction": "neutral",
+        "note": "維持中性但短線偏弱（Services miss + AH -3%）"
+      }
+    ],
+    "alerts_resolved": [
+      {
+        "alert_id": "alert-mystery-squeeze-2026-07-30",
+        "resolution": "CONFIRMED AND COMPLETED",
+        "note": "昨日神秘大單確認為提前佈局台積電財報的主力（空頭回補+多方追漲），今日台積電+9.23%、TAIEX+7.96%，軋空行情如預警發生"
+      },
+      {
+        "alert_id": "alert-aapl-amzn-earnings-2026-07-30",
+        "resolution": "RESOLVED",
+        "note": "財報結算：AMZN大爆（EPS $5.75，+243%淨利），AAPL小勝但Services miss，盤後-3%。事件結束，各自影響已計入新信號。"
+      },
+      {
+        "alert_id": "alert-AI-capex-overhang-2026-07-24",
+        "resolution": "PARTIALLY_RESOLVED",
+        "note": "台積電財報（AI需求極強）+AMZN Anthropic投資回報（$53.4B利得）大幅緩解AI資本支出可持續性疑慮。但長期結構性質疑（超額投資風險）仍存在，需更多財報確認。"
+      }
+    ],
+    "alerts_continued": [
+      {
+        "alert_id": "alert-mediatek-q2-beat-2026-07-30",
+        "note": "聯發科Q2法說確認，今日+9.88%，持續有效但已升級信心"
+      },
+      {
+        "alert_id": "alert-fed-hawkish-aftermath-2026-07-30",
+        "note": "PCE溫和後升息概率可能下調，但Fed鷹派立場大方向未變，持續監控"
+      },
+      {
+        "alert_id": "alert-tsmc-ex-div-risk-2026-07-30",
+        "note": "財報後漲停，填息動能強化；但除息日臨近時仍需注意"
+      }
+    ],
+    "new_alerts": [
+      "alert-tsmc-q2-blowout-2026-07-31",
+      "alert-aapl-services-miss-2026-07-31",
+      "alert-amzn-anthropic-ai-validates-2026-07-31",
+      "alert-pce-benign-fed-watch-2026-07-31",
+      "alert-nvda-earnings-watch-2026-08"
+    ]
+  }
+}

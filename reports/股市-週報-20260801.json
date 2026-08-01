@@ -1,0 +1,437 @@
+{
+  "_schema_version": "3.0",
+  "type": "weekly",
+  "report_file": "股市-週報-20260801.md",
+  "date": "2026-08-01",
+  "weekday": "週六",
+  "generated_at": "2026-08-01T09:09:03+08:00",
+  "expires_at": "2026-08-08T09:00:00+08:00",
+  "market_view": {
+    "taiwan": "cautious_bullish",
+    "us": "neutral",
+    "rationale": "7/31史詩反彈（+7.96%）驗證40,000支撐，AI capex超級週期持續，但FOMC鷹派（9月升息40%）與Brent油價$100+為重大下行尾部風險，週線仍在下降通道中，需量能確認。",
+    "week_summary": "FOMC鷹派凍息→崩盤→Big Tech AI財報V形反彈；台股週線-1.67%，但7/31創史上最大漲點+3,186pt"
+  },
+  "indices": [
+    {
+      "name": "台股加權指數",
+      "symbol": "^TWII",
+      "prev_close": 43850,
+      "current_close": 43119.75,
+      "weekly_change_pct": -1.67,
+      "weekly_change_pts": -730.25,
+      "note": "7/31單日+3,186pt創史上最大漲點；7/29盤中跌破40,000；7月累計-3,006pt"
+    },
+    {
+      "name": "S&P 500",
+      "symbol": "^GSPC",
+      "prev_close": 7413,
+      "current_close": 7489.72,
+      "weekly_change_pct": 1.03,
+      "note": "7月連四個月收漲；7/29 FOMC日-1.52%但後兩日完全收復"
+    },
+    {
+      "name": "Nasdaq",
+      "symbol": "^IXIC",
+      "prev_close": 24932,
+      "current_close": 25460,
+      "weekly_change_pct": 2.12,
+      "note": "7/30 Nasdaq年內最佳日（MSFT +15%）；7/31再+1.32%"
+    },
+    {
+      "name": "Dow Jones",
+      "symbol": "^DJI",
+      "prev_close": 52210,
+      "current_close": 53085,
+      "weekly_change_pct": 1.68,
+      "note": "7/29暴跌-1,153pt後兩日V形反彈"
+    },
+    {
+      "name": "SOX費城半導體",
+      "symbol": "^SOX",
+      "current_close": null,
+      "weekly_change_pct": null,
+      "note": "7/29單日-8.1%（年內最大），7/30完全收復+8%+"
+    },
+    {
+      "name": "VIX恐慌指數",
+      "symbol": "^VIX",
+      "prev_close": 18.0,
+      "current_close": 17.09,
+      "weekly_change_pct": -5.1,
+      "note": "7/29峰值20.66；7/31收17.09，恐慌退潮"
+    }
+  ],
+  "macro": {
+    "us_10y_yield": {
+      "value": 4.67,
+      "unit": "%",
+      "prev": 4.6,
+      "change": "+0.07%",
+      "note": "7/29升破4.70%後略回落；FOMC鷹派後仍偏高"
+    },
+    "dxy": {
+      "value": 100.12,
+      "change": "-0.76%",
+      "note": "7/31跌至100.12，弱美元利好新興市場"
+    },
+    "brent_oil": {
+      "value": 100.5,
+      "unit": "USD/bbl",
+      "note": "突破$100大關，中東美-伊衝突，通膨尾部風險"
+    },
+    "fed": {
+      "rate": "3.50-3.75%",
+      "decision": "hold",
+      "vote": "9-3（3名委員主張升息）",
+      "sep_hike_prob": "40%",
+      "note": "PCE核心+0.1% MoM降溫，但3名鷹派委員為年內最大異數"
+    },
+    "pce_core_mom": {
+      "value": 0.1,
+      "unit": "%MoM",
+      "note": "7/31公布，低於預期，提供降溫訊號"
+    },
+    "ai_capex_4_hyperscalers": {
+      "value": "720-745B USD",
+      "unit": "cumulative 2026F",
+      "note": "MSFT+AMZN+META+GOOGL合計，驗證AI軍備競賽持續"
+    }
+  },
+  "stocks": [
+    {
+      "signal_id": "stk-2330-2026-08-01-weekly",
+      "ticker": "2330",
+      "name": "台積電",
+      "market": "TW",
+      "price": 2425,
+      "currency": "TWD",
+      "prev_week_price": 2350,
+      "weekly_change_pct": 3.19,
+      "direction": "bullish",
+      "confidence": 0.78,
+      "rationale": "7/31漲停2,425收復關鍵位置；四大超級雲端商$720-745B資本支出直接受惠，2nm/CoWoS全球唯一供應商。7/29盤中低2,200回測200MA有效支撐。外資目標最高3,100元。關鍵風險：9月Fed升息可能再度打壓。",
+      "key_support": 2350,
+      "key_resistance": 2500,
+      "ma20": 2300,
+      "ma60": 2420,
+      "ma200": 2150,
+      "weekly_rsi": 57,
+      "sources": [
+        "https://udn.com/news/story/7251/9662713",
+        "https://www.ntdtv.com/b5/2026/07/31/a104120131.html",
+        "https://news.nextapple.com/finance/20260731/13CEE8C93B7BC352B6203ED5C17AFA59"
+      ],
+      "expires_at": "2026-08-08T09:00:00+08:00"
+    },
+    {
+      "signal_id": "stk-2454-2026-08-01-weekly",
+      "ticker": "2454",
+      "name": "聯發科",
+      "market": "TW",
+      "price": 3555,
+      "currency": "TWD",
+      "prev_week_price": 3500,
+      "weekly_change_pct": 1.57,
+      "direction": "bullish",
+      "confidence": 0.82,
+      "rationale": "Q2法說炸裂：單季收入1,522億創五季新高，AI ASIC下半年量產確認，Q4預計爆發$20B。外資史詩級上調目標。AI ASIC轉型是台股最純正故事之一。",
+      "key_support": 3200,
+      "key_resistance": 4000,
+      "ma20": 3100,
+      "ma60": 3500,
+      "ma200": 3200,
+      "weekly_rsi": 62,
+      "sources": [
+        "https://tw.stock.yahoo.com/news/%E5%8F%B0%E8%82%A1%E7%9B%A4%E5%BE%8C-%E6%BC%B2794%E9%BB%9E%E5%89%B5%E6%AD%B7%E5%B9%B4%E6%9C%80%E5%A4%A7%E6%BC%B2%E9%BB%9E-%E9%80%A32%E6%97%A5%E5%BC%B7%E5%BD%881464%E9%BB%9E-060405959.html"
+      ],
+      "expires_at": "2026-08-08T09:00:00+08:00"
+    },
+    {
+      "signal_id": "stk-2317-2026-08-01-weekly",
+      "ticker": "2317",
+      "name": "鴻海",
+      "market": "TW",
+      "price": 250.5,
+      "currency": "TWD",
+      "prev_week_price": 235,
+      "weekly_change_pct": 6.38,
+      "direction": "neutral",
+      "confidence": 0.55,
+      "rationale": "7/31漲9.15%跟上反彈，但AI伺服器（GB300/500 CoWoS）訂單量產細節仍需確認。短線技術修復，中期方向取決於下週AI伺服器訂單更新。保守評估中性。",
+      "key_support": 235,
+      "key_resistance": 265,
+      "ma20": 232,
+      "ma60": 255,
+      "ma200": 230,
+      "weekly_rsi": 50,
+      "sources": [
+        "https://newtalk.tw/news/view/2026-07-31/1050542"
+      ],
+      "expires_at": "2026-08-08T09:00:00+08:00"
+    },
+    {
+      "signal_id": "stk-NVDA-2026-08-01-weekly",
+      "ticker": "NVDA",
+      "name": "輝達",
+      "market": "US",
+      "price": 195.04,
+      "currency": "USD",
+      "prev_week_price": 200,
+      "weekly_change_pct": -2.48,
+      "direction": "neutral",
+      "confidence": 0.58,
+      "rationale": "AI capex超級週期驗證利多，但8/26 Q2 FY2027財報前不確定性高；7月波動$190-$214。估值高（P/E ~35x FY2027），先觀望至財報。中性持有。",
+      "key_support": 190,
+      "key_resistance": 214,
+      "ma20": 198,
+      "ma60": 200,
+      "ma200": 175,
+      "weekly_rsi": 48,
+      "sources": [
+        "https://www.cnbc.com/quotes/NVDA",
+        "https://www.financecalendar.com/event/nvda-earnings-august-2026/"
+      ],
+      "expires_at": "2026-08-08T09:00:00+08:00"
+    },
+    {
+      "signal_id": "stk-TSLA-2026-08-01-weekly",
+      "ticker": "TSLA",
+      "name": "特斯拉",
+      "market": "US",
+      "price": 307.44,
+      "currency": "USD",
+      "prev_week_price": 432,
+      "weekly_change_pct": -28.8,
+      "direction": "bearish",
+      "confidence": 0.85,
+      "rationale": "Q2 EPS $0.33爆雷（miss 38%），FCF轉負，7月累跌26%，5連跌-22.4%。技術面完全破位，強力阻力$350-370。無明確近期催化劑。強烈迴避。",
+      "key_support": 290,
+      "key_resistance": 370,
+      "ma20": 380,
+      "ma60": 400,
+      "ma200": 350,
+      "weekly_rsi": 28,
+      "sources": [
+        "https://finance.yahoo.com/quote/TSLA/history/"
+      ],
+      "expires_at": "2026-08-08T09:00:00+08:00"
+    },
+    {
+      "signal_id": "stk-AAPL-2026-08-01-weekly",
+      "ticker": "AAPL",
+      "name": "蘋果",
+      "market": "US",
+      "price": 333.43,
+      "currency": "USD",
+      "prev_week_price": 358,
+      "weekly_change_pct": -6.87,
+      "direction": "bearish",
+      "confidence": 0.68,
+      "rationale": "7/31財報後-7%，服務/中國雙弱，Apple Intelligence滲透率遜色。Huawei競爭持續壓制中國市占。短期支撐$320-325；觀察iPhone 16S秋季展望才考慮重新評估。",
+      "key_support": 320,
+      "key_resistance": 360,
+      "ma20": 345,
+      "ma60": 355,
+      "ma200": 320,
+      "weekly_rsi": 35,
+      "sources": [
+        "https://finance.yahoo.com/markets/live/stock-market-today-friday-july-31-dow-sp-500-nasdaq-081227738.html"
+      ],
+      "expires_at": "2026-08-08T09:00:00+08:00"
+    },
+    {
+      "signal_id": "stk-TSM-2026-08-01-weekly",
+      "ticker": "TSM",
+      "name": "台積電ADR",
+      "market": "US",
+      "price": 403.31,
+      "currency": "USD",
+      "prev_week_price": 390,
+      "weekly_change_pct": 3.41,
+      "direction": "bullish",
+      "confidence": 0.76,
+      "rationale": "7/30單日+7.2%至$401.54，7/31 $403.31。與台積電TW同步受惠AI capex超級週期；弱美元（DXY 100.12）提供額外順風。目標$450。",
+      "key_support": 390,
+      "key_resistance": 450,
+      "ma20": 385,
+      "ma60": 400,
+      "ma200": 360,
+      "weekly_rsi": 58,
+      "sources": [
+        "https://www.cnbc.com/quotes/2330-TW"
+      ],
+      "expires_at": "2026-08-08T09:00:00+08:00"
+    }
+  ],
+  "alerts": [
+    {
+      "alert_id": "alert-FOMC-sep-hike-risk-20260801",
+      "level": "critical",
+      "title": "FOMC 9月升息尾部風險（概率40%）",
+      "summary": "7/29 FOMC鷹派凍息，3名委員主張立即升息，9月升息機率急升至40%。若8/7非農就業強勁，概率將突破60%，引爆全市場新一輪去風險拋售。",
+      "detail": "美國 10 年期殖利率 4.67%，PCE 核心 +0.1% MoM 降溫，但 3 名鷹派委員為年內最大不確定性。非農（8/7）是下週最大市場風險開關。",
+      "action": "WATCH",
+      "expires_at": "2026-08-08T09:00:00+08:00",
+      "url": "https://www.cnbc.com/2026/07/28/stock-market-today-live-updates.html",
+      "source": "CNBC / FOMC Statement"
+    },
+    {
+      "alert_id": "alert-AI-capex-supercycle-confirmed-20260801",
+      "level": "info",
+      "title": "AI 資本支出超級週期驗證（$720-745B 四大超級雲端商）",
+      "summary": "MSFT Azure +16%、AMZN AWS 超強、META/GOOGL同步上調；四大超級雲端商 2026 全年資本支出合計 $720-745B，創歷史記錄。台積電/NVDA 最強結構性利多確認。",
+      "detail": "MSFT +15%（7/30），AMZN +15%（7/31）。AI 軍備競賽確認，CoWoS、HBM、2nm 需求能見度大幅提升。",
+      "action": "ACCUMULATE_TSMC_NVDA",
+      "expires_at": "2026-08-08T09:00:00+08:00",
+      "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-july-31-dow-sp-500-nasdaq-081227738.html",
+      "source": "Yahoo Finance / Big Tech Earnings"
+    },
+    {
+      "alert_id": "alert-TSLA-Q2-crash-bearish-20260801",
+      "level": "critical",
+      "title": "TSLA Q2 爆雷 + 月跌 26%，持續看空",
+      "summary": "特斯拉 Q2 EPS $0.33（miss 38%），FCF 轉負。7 月累跌 26.01%，5 連跌 -22.4%。技術面完全破位，強力阻力 $350-370，無近期催化劑。",
+      "detail": "FCF 負轉是最大警訊，反映 AI/機器人訂單延遲兌現。7/28 低觸 $297.38，反彈至 $307 短線壓力仍重。",
+      "action": "AVOID",
+      "expires_at": "2026-08-08T09:00:00+08:00",
+      "url": "https://finance.yahoo.com/quote/TSLA/history/",
+      "source": "Tesla Earnings / Yahoo Finance"
+    },
+    {
+      "alert_id": "alert-AAPL-services-china-miss-20260801",
+      "level": "warning",
+      "title": "AAPL 財報後 -7%：服務/中國雙弱",
+      "summary": "蘋果 7/30 財報 EPS 小勝，但服務收入及中國市場均不達預期，Apple Intelligence 滲透率令人失望，7/31 崩跌 -7% 至 $333.43。",
+      "detail": "Huawei 持續蠶食中國高端市占；Apple Intelligence 換機潮未爆發。支撐 $320-325，觀察秋季 iPhone 16S 展望。",
+      "action": "REDUCE",
+      "expires_at": "2026-08-08T09:00:00+08:00",
+      "url": "https://www.cnbc.com/2026/07/30/stock-market-today-live-updates.html",
+      "source": "CNBC / Apple Earnings"
+    },
+    {
+      "alert_id": "alert-brent-oil-100-inflation-20260801",
+      "level": "warning",
+      "title": "Brent 原油突破 $100，通膨二次壓力",
+      "summary": "中東美-伊衝突升溫，Brent 原油突破 $100 大關。若持續，將強化 Fed 鷹派論點，提高 9 月升息概率，對風險資產形成雙重壓制。",
+      "detail": "本週油價創年內新高；PCE Core 雖 +0.1% 降溫，能源項目可能在下月數據中再次反彈。",
+      "action": "MONITOR",
+      "expires_at": "2026-08-08T09:00:00+08:00",
+      "url": "https://www.riotimesonline.com/global-economy-briefing-july-31-2026/",
+      "source": "Global Economy Briefing"
+    },
+    {
+      "alert_id": "alert-NVDA-earnings-Aug26-20260801",
+      "level": "info",
+      "title": "NVDA 財報倒計時：8/26 Q2 FY2027",
+      "summary": "NVIDIA 8/26 盤後公布 Q2 FY2027 財報（截止季度 7/27）。AI capex 超級週期驗證後，市場對 H100/H200/Blackwell 出貨量及 Q3 指引期望值極高。",
+      "detail": "4 大超級雲端商均確認 AI 資本支出大幅擴張，NVDA FY2027 收入預估上修。$190 為強支撐，等財報前不建議重大加碼。",
+      "action": "HOLD_WATCH",
+      "expires_at": "2026-08-29T09:00:00+08:00",
+      "url": "https://www.financecalendar.com/event/nvda-earnings-august-2026/",
+      "source": "Finance Calendar"
+    }
+  ],
+  "whats_changed": {
+    "generated_at": "2026-08-01T09:09:03+08:00",
+    "prev_report": "股市-週報-20260725.json",
+    "summary": "台積電/聯發科/TSM方向升級bullish（AI capex超級週期驗證+法說強勁）；AAPL財報後降為bearish（服務/中國雙弱）；NVDA從neutral_bearish升回neutral（待8/26財報）。FOMC升息風險新增critical警示。上週超級財報週預警alerts全數消化，油價警示更新為新alert。TSLA看空警示延續。",
+    "direction_changes": [
+      {
+        "ticker": "2330",
+        "name": "台積電",
+        "prev": "neutral",
+        "curr": "bullish",
+        "reason": "7/31漲停收2,425；AI capex超級週期驗證；7/29低2,200有效回測200MA"
+      },
+      {
+        "ticker": "2454",
+        "name": "聯發科",
+        "prev": "neutral",
+        "curr": "bullish",
+        "reason": "Q2法說炸裂：收入1,522億五季新高；AI ASIC Q4 $20B量產確認"
+      },
+      {
+        "ticker": "NVDA",
+        "name": "輝達",
+        "prev": "neutral_bearish",
+        "curr": "neutral",
+        "reason": "AI capex驗證提升，但8/26財報前仍保守中性；由偏空改回中性"
+      },
+      {
+        "ticker": "AAPL",
+        "name": "蘋果",
+        "prev": "neutral",
+        "curr": "bearish",
+        "reason": "7/31財報後-7%；服務/中國雙弱；Apple Intelligence滲透遜色"
+      },
+      {
+        "ticker": "TSM",
+        "name": "台積電ADR",
+        "prev": "neutral_bearish",
+        "curr": "bullish",
+        "reason": "7/30 +7.2%至$401.54；AI capex驗證；DXY弱美元順風"
+      }
+    ],
+    "new_alerts": [
+      {
+        "alert_id": "alert-FOMC-sep-hike-risk-20260801",
+        "level": "critical",
+        "title": "FOMC 9月升息尾部風險（概率40%）"
+      },
+      {
+        "alert_id": "alert-AI-capex-supercycle-confirmed-20260801",
+        "level": "info",
+        "title": "AI 資本支出超級週期驗證（$720-745B）"
+      },
+      {
+        "alert_id": "alert-TSLA-Q2-crash-bearish-20260801",
+        "level": "critical",
+        "title": "TSLA Q2 爆雷 + 月跌26%，持續看空"
+      },
+      {
+        "alert_id": "alert-AAPL-services-china-miss-20260801",
+        "level": "warning",
+        "title": "AAPL 財報後 -7%：服務/中國雙弱"
+      },
+      {
+        "alert_id": "alert-brent-oil-100-inflation-20260801",
+        "level": "warning",
+        "title": "Brent 原油突破 $100，通膨二次壓力"
+      },
+      {
+        "alert_id": "alert-NVDA-earnings-Aug26-20260801",
+        "level": "info",
+        "title": "NVDA 財報倒計時：8/26 Q2 FY2027"
+      }
+    ],
+    "removed_alerts": [
+      {
+        "alert_id": "alert-TSLA-Q2-earnings-crash-20260725",
+        "reason": "已消化；本週更新為新alert延續"
+      },
+      {
+        "alert_id": "alert-GOOGL-AI-capex-overhang-20260725",
+        "reason": "已解除：GOOGL/MSFT/AMZN/META財報驗證AI capex確有回報"
+      },
+      {
+        "alert_id": "alert-FOMC-7/29-rate-hike-risk-20260725",
+        "reason": "FOMC已公布（維持+3鷹派委員），新alert取代"
+      },
+      {
+        "alert_id": "alert-oil-100-inflation-20260725",
+        "reason": "更新為新alert（油價實際突破$100）"
+      },
+      {
+        "alert_id": "alert-mag7-super-earnings-week-20260725",
+        "reason": "財報週已結束；結果已消化入本週各股方向"
+      },
+      {
+        "alert_id": "alert-tw-20ma-breakdown-20260725",
+        "reason": "7/31大反彈後技術面格局重設，重新評估"
+      }
+    ],
+    "level_changes": [],
+    "conservative_note": "方向升級基於強烈財報數據（MSFT +16%/AMZN EPS $5.75/聯發科法說）為依據；FOMC升息尾部風險（40%）與油價$100+限制整體升級幅度，整體信心分數保守（0.55-0.85區間）。"
+  }
+}

@@ -1,0 +1,435 @@
+{
+  "_schema_version": 3,
+  "type": "morning",
+  "report_file": "股市-開盤前-20260803.md",
+  "date": "2026-08-03",
+  "weekday": "週一",
+  "generated_at": "2026-08-03T07:30:00+08:00",
+  "market_view": {
+    "level": "bullish",
+    "confidence": 0.70,
+    "headline": "Amazon Q2 $200.6B + AWS +36.7% + capex $220B 確認 AI 算力超級週期；台股週五已享 9-10% 大補漲，週一高開整理概率高；蘋果指引失望拖累鴻海；8/7 非農就業為本週最大尾部風險，Fed 升息壓力未消"
+  },
+  "indices": [
+    {
+      "name": "道瓊工業",
+      "ticker": "DJI",
+      "value": 52485,
+      "change_pct": 0.53,
+      "trend": "bullish",
+      "note": "8/1（五）+277 點（+0.53%）；週漲 +1%；7 月月線 +0.3%（第 4 連月漲）；AI 財報週科技股帶動整體市場"
+    },
+    {
+      "name": "S&P 500",
+      "ticker": "SPX",
+      "value": 7552,
+      "change_pct": 0.7,
+      "trend": "bullish",
+      "note": "8/1 估 +0.7%；7 月月線 -0.1%（科技大跌後月底技術反彈勉強守平）；Amazon/Alphabet 財報激勵"
+    },
+    {
+      "name": "Nasdaq 100",
+      "ticker": "NDX",
+      "value": 25351,
+      "change_pct": 0.6,
+      "trend": "bullish",
+      "note": "8/1 +0.6%；7 月月線 -3.2%（7/29 FOMC 衝擊一日 -1,100pt 道瓊，後全收復）"
+    },
+    {
+      "name": "費城半導體",
+      "ticker": "SOX",
+      "value": 12022,
+      "change_pct": 1.5,
+      "trend": "bullish",
+      "note": "7/30 大反彈 +8.12%；8/1 繼續整理性上漲；Amazon $220B AI capex 直接驅動需求"
+    },
+    {
+      "name": "VIX 恐慌指數",
+      "ticker": "VIX",
+      "value": 17.09,
+      "change_pct": -17.28,
+      "trend": "bullish",
+      "note": "從 7/29 衝破 20 後急速回落至 17.09；短期恐慌解除，但 10 月 Fed 升息尾部風險仍存"
+    },
+    {
+      "name": "美 10Y 殖利率",
+      "ticker": "US10Y",
+      "value": 4.74,
+      "change_pct": null,
+      "trend": "bearish",
+      "note": "4.74%（+6bp vs 上週）；Fed 鷹派維持，3 票異議升息，10 月升息概率 ~40%；高殖利率壓制估值"
+    },
+    {
+      "name": "美元指數",
+      "ticker": "DXY",
+      "value": 99.78,
+      "change_pct": -0.08,
+      "trend": "neutral",
+      "note": "99.78，微幅偏弱；低於 100 心理關卡，有利台幣/新興市場"
+    }
+  ],
+  "stocks": [
+    {
+      "signal_id": "stk-2330-2026-08-03-morning",
+      "ticker": "2330",
+      "name": "台積電",
+      "market": "TW",
+      "signal": "🟢",
+      "direction": "bullish",
+      "confidence": 0.82,
+      "view": "中線多頭續航，短線超買整理。Amazon 上調 AI 資本支出至 $220B，直接利好台積電 N3/N2 及 CoWoS 先進封裝訂單。週五漲停板（+9.98%）後，週一高開整理概率高，RSI ~82 嚴重超買，勿追高。",
+      "rationale": "Amazon $220B AI capex 確認 N3/N2 需求；週五已充分反映，週一整理後再評估加碼時機",
+      "price": 2425,
+      "change_pct": 9.98,
+      "support": 2350,
+      "resistance": 2500,
+      "stop_loss": 2300,
+      "target": 2550,
+      "technicals": {
+        "rsi14": 83,
+        "macd": "黃金交叉後動能趨緩，需等高點修正",
+        "ma_alignment": "多頭排列（5>10>20>60 日均線）"
+      },
+      "valuation": {
+        "pe": 24.3,
+        "pe_percentile_5y": 62,
+        "verdict": "小幅溢價（5 年中位數 ~22x），AI 需求見度支撐合理"
+      },
+      "sources": [
+        "https://au.investing.com/news/transcripts/earnings-call-transcript-mediatek-q2-2026-revenue-beats-guidance-as-ai-push-grows-93CH-4566402",
+        "https://www.cnbc.com/2026/07/30/amazon-amzn-q2-earnings-report-2026.html",
+        "https://finance.ettoday.net/news/3197187"
+      ],
+      "expires_at": "2026-08-03T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-2454-2026-08-03-morning",
+      "ticker": "2454",
+      "name": "聯發科",
+      "market": "TW",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.55,
+      "view": "Q2 法說結果中性：營收超指引 +4.6%，但毛利率 46.2%（YoY -2.9pp）略壓縮，手機業務 -14% QoQ 仍弱，AI Edge/資料中心 ASIC 處早期階段。週五已漲近 10%，短線整理壓力大；Google TPU ASIC 3nm 出貨量確認為下一個催化劑。",
+      "rationale": "法說毛利率略低、手機弱，AI ASIC 早期，估值偏高需業績追趕；大漲後整理",
+      "price": 3555,
+      "change_pct": 9.89,
+      "support": 3200,
+      "resistance": 3700,
+      "stop_loss": 3150,
+      "target": 3800,
+      "technicals": {
+        "rsi14": 78,
+        "macd": "短線超買，MACD 正值但斜率縮小",
+        "ma_alignment": "多頭排列，短線整理不改中線趨勢"
+      },
+      "valuation": {
+        "pe": 52,
+        "pe_percentile_5y": 80,
+        "verdict": "估值偏高（基於年化 EPS ~NT$68），需 ASIC 訂單擴大才能支撐"
+      },
+      "sources": [
+        "https://au.investing.com/news/transcripts/earnings-call-transcript-mediatek-q2-2026-revenue-beats-guidance-as-ai-push-grows-93CH-4566402",
+        "https://za.investing.com/news/company-news/mediatek-q2-2026-slides-revenue-beats-guidance-amid-margin-pressure-93CH-4399094"
+      ],
+      "expires_at": "2026-08-03T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-2317-2026-08-03-morning",
+      "ticker": "2317",
+      "name": "鴻海",
+      "market": "TW",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.50,
+      "view": "蘋果 Q4 FY26 指引 9-11%（低於市場預期 12%），iPhone 旺季備貨量能見度降低，對鴻海 iPhone 組裝收入形成壓力。AI 伺服器（GB200 NVL72）訂單正面抵銷部分，但難獨撐。週五大漲 +9.15% 後整理壓力與 AAPL 逆風並存。",
+      "rationale": "蘋果 Q4 指引低預期壓縮鴻海 iPhone 訂單能見度；等 8 月鴻海自身法說確認",
+      "price": 250.5,
+      "change_pct": 9.15,
+      "support": 235,
+      "resistance": 265,
+      "stop_loss": 230,
+      "target": 270,
+      "technicals": {
+        "rsi14": 72,
+        "macd": "大漲後短線轉高；MACD 正值但需等回調健康",
+        "ma_alignment": "多頭排列，但 AAPL 短線逆風可能引發整理"
+      },
+      "valuation": {
+        "pe": 14,
+        "pe_percentile_5y": 40,
+        "verdict": "低估值（14x），具防禦性，但 iPhone 毛利薄，AI 伺服器貢獻仍小"
+      },
+      "sources": [
+        "https://www.cnbc.com/2026/07/30/apple-earnings-live-updates.html",
+        "https://www.techtimes.com/articles/322442/20260731/apple-q3-2026-earnings-record-revenue-worsening-mac-supply-below-consensus-q4-outlook.htm"
+      ],
+      "expires_at": "2026-08-03T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-NVDA-2026-08-03-morning",
+      "ticker": "NVDA",
+      "name": "輝達",
+      "market": "US",
+      "signal": "🟢",
+      "direction": "bullish",
+      "confidence": 0.78,
+      "view": "Amazon Q2 巨幅超預期、AWS capex 上調至 $220B 確認 Blackwell GPU 需求強勁持續；Alphabet 同步擴張算力。37 家分析師共識 Buy，均值目標 $302；Vera Rubin 平台 H2 開始出貨。8 月底財報（FY27 Q2）為短線催化劑，市場預期季度營收 $91-102B。當前 $200 附近整合，等財報突破。",
+      "rationale": "Amazon $220B capex + AWS +36.7% 直接確認 Blackwell GPU 需求；8 月底財報為催化劑",
+      "price": 200.75,
+      "change_pct": 3.46,
+      "support": 190,
+      "resistance": 215,
+      "stop_loss": 188,
+      "target": 240,
+      "technicals": {
+        "rsi14": 62,
+        "macd": "轉正，健康上升趨勢",
+        "ma_alignment": "多頭排列（50 > 200 日均線），趨勢完整"
+      },
+      "valuation": {
+        "pe": 45,
+        "pe_percentile_5y": 50,
+        "verdict": "基於 FY27 EPS ~$4.5 前向 PE ~45x，AI 超級週期支撐，合理偏貴"
+      },
+      "sources": [
+        "https://www.cnbc.com/2026/07/30/amazon-amzn-q2-earnings-report-2026.html",
+        "https://intellectia.ai/blog/nvda-stock-analysis-august-2026",
+        "https://www.tipranks.com/stocks/nvda/forecast"
+      ],
+      "expires_at": "2026-08-03T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-TSLA-2026-08-03-morning",
+      "ticker": "TSLA",
+      "name": "特斯拉",
+      "market": "US",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.50,
+      "view": "Q2 FY26 交付 480,126 輛（+18% vs 預期）正面，毛利率 21.1%（+500bp YoY）回升，但 EPS $0.33 遠低於預期 $0.54（受高資本支出衝擊），營業利益率降至 1.4%。Musk 主導全面轉向 Robotaxi：Cybercab 量產、Optimus 機器人 Fremont 廠中。估值完全 discount 未來 Robotaxi 假設，執行風險高。2026 YTD -7%，區間 $295-$330 震盪。",
+      "rationale": "本業盈利薄但Robotaxi故事撐估值；執行時程不確定性高，中性等待法規催化劑",
+      "price": 310,
+      "change_pct": null,
+      "support": 295,
+      "resistance": 330,
+      "stop_loss": 290,
+      "target": 360,
+      "technicals": {
+        "rsi14": 52,
+        "macd": "中性，無明顯方向",
+        "ma_alignment": "短均與長均糾纏，無明顯多空優勢"
+      },
+      "valuation": {
+        "pe": null,
+        "pe_percentile_5y": null,
+        "verdict": "本業 PE 無意義（EPS 極薄）；Robotaxi 故事支撐 $300+ 底部"
+      },
+      "sources": [
+        "https://www.cnbc.com/2026/07/22/tesla-tsla-q2-2026-earnings-report.html",
+        "https://finance.yahoo.com/markets/stocks/articles/tesla-rises-6-robotaxi-delivery-165732350.html"
+      ],
+      "expires_at": "2026-08-03T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-AAPL-2026-08-03-morning",
+      "ticker": "AAPL",
+      "name": "蘋果",
+      "market": "US",
+      "signal": "🔴",
+      "direction": "bearish",
+      "confidence": 0.72,
+      "view": "Q3 FY26 創紀錄但 Q4 指引失望：9-11%（vs 預期 12%），服務收入 $30.74B 小 miss（vs $31.22B 預期），DRAM/NAND 記憶體成本大幅上漲壓縮毛利率（Q4 指引 47-48%），Siri AI 升級進度滯後。股價 -7.35% 至 $308.91，後續可能測試 $295-300 支撐。直到 Q4 供給瓶頸解除訊號或記憶體成本緩和前，短線偏空。",
+      "rationale": "Q4 指引低預期+服務miss+記憶體成本壓毛利，短線無正面催化劑",
+      "price": 308.91,
+      "change_pct": -7.35,
+      "support": 295,
+      "resistance": 320,
+      "stop_loss": 290,
+      "target": 295,
+      "technicals": {
+        "rsi14": 42,
+        "macd": "死叉，空頭動能增強",
+        "ma_alignment": "跌破 20 日/50 日均線，短期空頭排列"
+      },
+      "valuation": {
+        "pe": 28.9,
+        "pe_percentile_5y": 52,
+        "verdict": "PE ~29x（基於 FY26E EPS ~$10.7），指引下修後估值偏貴，壓力在成長放緩"
+      },
+      "sources": [
+        "https://www.cnbc.com/2026/07/30/apple-earnings-live-updates.html",
+        "https://www.techtimes.com/articles/322442/20260731/apple-q3-2026-earnings-record-revenue-worsening-mac-supply-below-consensus-q4-outlook.htm",
+        "https://www.tradingkey.com/analysis/stocks/us-stocks/262066627-us-stock-apple-aapl-ipad-mac-tim-cook-dram-nand-tradingkey"
+      ],
+      "expires_at": "2026-08-03T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-TSM-2026-08-03-morning",
+      "ticker": "TSM",
+      "name": "台積電ADR",
+      "market": "US",
+      "signal": "🟢",
+      "direction": "bullish",
+      "confidence": 0.82,
+      "view": "與 2330 完全同步（1 ADR = 5 股，$405 對應台股 NT$2,425 高度吻合）。Amazon $220B AI capex 直接利好 TSM N3/N2 訂單；TSM ADR 是美股投資者布局台積電 AI 晶片最直接管道。Q3 2026 法說（10 月中旬）為下一個催化劑。",
+      "rationale": "Amazon/Alphabet AI capex 擴張直接利好台積電 ADR；與 2330 同向，週一或見技術整理",
+      "price": 405.32,
+      "change_pct": null,
+      "support": 385,
+      "resistance": 430,
+      "stop_loss": 378,
+      "target": 445,
+      "technicals": {
+        "rsi14": 68,
+        "macd": "正值，趨勢向上但短線動能稍緩",
+        "ma_alignment": "多頭排列，高於所有主要均線"
+      },
+      "valuation": {
+        "pe": 24.3,
+        "pe_percentile_5y": 62,
+        "verdict": "同 2330，~24x PE 小幅溢價，AI 需求支撐"
+      },
+      "sources": [
+        "https://www.alphaquery.com/stock/TSM/earnings-history",
+        "https://www.cnbc.com/2026/07/31/apple-aapl-amazon-amzn-stock-today.html"
+      ],
+      "expires_at": "2026-08-03T13:30:00+08:00"
+    }
+  ],
+  "alerts": [
+    {
+      "alert_id": "alt-aapl-q4-guidance-miss",
+      "level": "warning",
+      "text": "蘋果 Q4 FY26 指引 9-11%（市場預期 12%）低預期；服務收入 $30.74B vs 預期 $31.22B miss；記憶體成本飆升壓縮毛利率至 47-48%；供給瓶頸非供應商問題而是需求低估 → 鴻海 iPhone 旺季訂單能見度降低",
+      "tickers": ["AAPL", "2317"],
+      "url": "https://www.cnbc.com/2026/07/30/apple-earnings-live-updates.html",
+      "source": "CNBC"
+    },
+    {
+      "alert_id": "alt-amazon-aws-capex-raise",
+      "level": "info",
+      "text": "Amazon Q2 FY26：營收 $200.6B（+20% YoY，超預期 $196.9B），AWS +36.7%（第 5 連季加速），2026 年全年資本支出上調至 $2,200 億（AI 算力基礎設施）；2027-2028 算力已被預訂 → 直接利好台積電 / 輝達 Blackwell 訂單能見度",
+      "tickers": ["NVDA", "TSM", "2330"],
+      "url": "https://www.cnbc.com/2026/07/30/amazon-amzn-q2-earnings-report-2026.html",
+      "source": "CNBC"
+    },
+    {
+      "alert_id": "alt-fomc-hawkish-hold-3dissents",
+      "level": "warning",
+      "text": "FOMC 維持 3.50-3.75%（9-3 票，3 票異議升息），10 月升息概率 ~40%；美 10Y 殖利率 4.74% 高位；PCE 仍高，油價複合通膨壓力未消 → 高估值成長股承壓",
+      "tickers": ["NVDA", "TSLA", "AAPL"],
+      "url": "https://www.cnbc.com/2026/06/17/fed-interest-rate-decision-june-2026.html",
+      "source": "CNBC"
+    },
+    {
+      "alert_id": "alt-jobs-report-aug7",
+      "level": "warning",
+      "text": "美國 7 月非農就業報告（NFP）8/7（五）08:30 ET 公布；6 月僅 +57K（vs 預期 +110K）；若 7 月續弱 → Fed 升息壓力降低（短線利多）；若意外強勁 → 10 月升息概率上升（利空）。本週最大尾部風險。",
+      "tickers": [],
+      "url": "https://www.bls.gov/news.release/empsit.htm",
+      "source": "BLS"
+    },
+    {
+      "alert_id": "alt-middle-east-oil-surge",
+      "level": "warning",
+      "text": "中東地緣局勢持續緊張（伊朗衝突）+ 油價維持高位，加重 Fed 鷹派委員通膨立場，10 月升息概率上行壓力未解；能源成本上升亦壓縮科技公司資料中心電力成本",
+      "tickers": [],
+      "url": "https://streetstats.finance/rates/fedfunds",
+      "source": "StreetStats"
+    },
+    {
+      "alert_id": "alt-tsla-q2-earnings-miss",
+      "level": "info",
+      "text": "Tesla Q2 FY26 EPS $0.33（vs 預期 $0.54）大幅落後；全年 $250 億資本支出（Robotaxi/Optimus）引發盈利稀釋擔憂；Robotaxi 多州法規框架確認提供估值底撐但執行時程不確定",
+      "tickers": ["TSLA"],
+      "url": "https://www.cnbc.com/2026/07/22/tesla-tsla-q2-2026-earnings-report.html",
+      "source": "CNBC"
+    }
+  ],
+  "sector_rotation": {
+    "strong": ["AI/雲端算力（AWS/Google Cloud 加速）", "半導體設備（CoWoS/HBM）", "AI 基礎設施（IDC/電力）"],
+    "weak": ["消費電子（AAPL 供給/成本壓力）", "手機晶片（聯發科手機 -14% QoQ）", "傳統消費（就業放緩）"],
+    "watch": ["Robotaxi/自駕（TSLA 法規進度）", "記憶體（DRAM 成本上漲 → 供應商受益 or 下游壓縮）", "8/7 NFP 後債市走向"]
+  },
+  "whats_changed": {
+    "compared_to": "股市-開盤前-20260731.md",
+    "compared_to_date": "2026-07-31",
+    "new": [
+      {
+        "type": "stock_direction",
+        "ticker": "AAPL",
+        "from": "neutral",
+        "to": "bearish",
+        "summary": "蘋果 Q4 FY26 指引 9-11%（低於預期 12%）＋服務收入 miss＋記憶體成本壓毛利 → 方向由中性轉空"
+      },
+      {
+        "type": "stock_direction",
+        "ticker": "2317",
+        "from": "bullish",
+        "to": "neutral",
+        "summary": "鴻海由多轉中性：蘋果 Q4 指引低預期，iPhone 旺季組裝訂單能見度降低"
+      },
+      {
+        "type": "alert",
+        "summary": "蘋果 Q4 指引失望，記憶體成本壓縮毛利率，供應鏈（鴻海）面臨短線逆風",
+        "tickers": ["AAPL", "2317"],
+        "from": "",
+        "to": "alt-aapl-q4-guidance-miss"
+      },
+      {
+        "type": "alert",
+        "summary": "Amazon 大幅上調 2026 資本支出至 $220B，AI 算力需求能見度空前，利好台積電/輝達",
+        "tickers": ["NVDA", "TSM", "2330"],
+        "from": "",
+        "to": "alt-amazon-aws-capex-raise"
+      },
+      {
+        "type": "alert",
+        "summary": "7 月非農就業報告 8/7 公布，6 月僅 +57K 大幅不如預期，本週最大 Fed 政策尾部風險",
+        "tickers": [],
+        "from": "",
+        "to": "alt-jobs-report-aug7"
+      }
+    ],
+    "strengthened": [
+      {
+        "type": "stock_direction",
+        "ticker": "NVDA",
+        "from": "bullish(0.68)",
+        "to": "bullish(0.78)",
+        "summary": "輝達信心由 0.68 → 0.78：Amazon/Alphabet 資本支出激增確認 Blackwell GPU 需求強勁"
+      },
+      {
+        "type": "stock_direction",
+        "ticker": "2330",
+        "from": "bullish(0.80)",
+        "to": "bullish(0.82)",
+        "summary": "台積電信心小幅提升：Amazon $220B capex 直接利好 N3/N2 及 CoWoS 訂單能見度"
+      },
+      {
+        "type": "stock_direction",
+        "ticker": "TSM",
+        "from": "bullish(0.80)",
+        "to": "bullish(0.82)",
+        "summary": "TSM ADR 同 2330：AI capex 需求確認推升信心"
+      }
+    ],
+    "removed": [
+      {
+        "type": "alert",
+        "summary": "微軟 Azure Q4 財報催化劑已消化（7/30 事件已發生），不再為新催化劑",
+        "tickers": [],
+        "from": "alt-msft-azure-ai-earnings-q4",
+        "to": ""
+      },
+      {
+        "type": "alert",
+        "summary": "聯發科 7/31 Q2 法說已舉行（EPS NT$15.28，毛利率 46.2%），事件驅動已過",
+        "tickers": ["2454"],
+        "from": "alt-mediatek-q2-lawconf-20260731",
+        "to": ""
+      }
+    ]
+  }
+}

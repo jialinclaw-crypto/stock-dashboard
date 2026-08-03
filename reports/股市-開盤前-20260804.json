@@ -1,0 +1,413 @@
+{
+  "_schema_version": 3,
+  "type": "morning",
+  "report_file": "股市-開盤前-20260804.md",
+  "date": "2026-08-04",
+  "weekday": "週二",
+  "generated_at": "2026-08-04T07:34:47+08:00",
+  "market_view": {
+    "level": "bullish",
+    "confidence": 0.76,
+    "headline": "美伊談判重啟 → 原油急跌5%（WTI $80），道瓊歷史新高53,178（+1.32%），10Y殖利率骤降52bp至4.22%（9月降息預期大增），VIX 15.99恐慌解除；NVDA +3.01% AI需求確認；AAPL四連跌拖累蘋果供應鏈；8/7非農報告為本週最大尾部風險"
+  },
+  "indices": [
+    {
+      "name": "道瓊工業",
+      "ticker": "DJI",
+      "value": 53178,
+      "change_pct": 1.32,
+      "trend": "bullish",
+      "note": "8/3 +693pts（+1.32%）歷史收盤新高；美伊談判+油價崩 主導；大型科技+一般工業全面上漲"
+    },
+    {
+      "name": "S&P 500",
+      "ticker": "SPX",
+      "value": 7600,
+      "change_pct": 1.48,
+      "trend": "bullish",
+      "note": "8/3 +1.48%；距6月全時高僅差0.3%；能源股下跌但科技/消費領漲"
+    },
+    {
+      "name": "Nasdaq 綜合",
+      "ticker": "COMP",
+      "value": 25914,
+      "change_pct": 2.10,
+      "trend": "bullish",
+      "note": "8/3 +2.10%；NVDA+3%、TSLA+3.39% 帶動科技板塊全面反彈"
+    },
+    {
+      "name": "費城半導體",
+      "ticker": "SOX",
+      "value": 12263,
+      "change_pct": 2.0,
+      "trend": "bullish",
+      "note": "估值 +2.0%（NVDA+3.01%帶動）；10Y殖利率降52bp直接利好高估值晶片股"
+    },
+    {
+      "name": "VIX 恐慌指數",
+      "ticker": "VIX",
+      "value": 15.99,
+      "change_pct": -6.44,
+      "trend": "bullish",
+      "note": "8/3 降至15.99（-6.44%）；伊朗談判解除地緣風險溢價，短線恐慌消散"
+    },
+    {
+      "name": "美 10Y 殖利率",
+      "ticker": "US10Y",
+      "value": 4.22,
+      "change_pct": null,
+      "trend": "bullish",
+      "note": "4.22%（vs 前週 4.74%，大降52bp）；市場壓注9月降息，利好科技/成長股估值"
+    },
+    {
+      "name": "美元指數",
+      "ticker": "DXY",
+      "value": 99.91,
+      "change_pct": -0.08,
+      "trend": "neutral",
+      "note": "99.91，仍低於100心理關卡；美元偏弱有利台幣升值及外資流入台股"
+    },
+    {
+      "name": "WTI 原油",
+      "ticker": "WTI",
+      "value": 80,
+      "change_pct": -5.0,
+      "trend": "bearish",
+      "note": "8/3 急跌>5%至$80；美伊談判重啟+Trump批能源公司暴利；資料中心電力成本憂慮緩解"
+    }
+  ],
+  "stocks": [
+    {
+      "signal_id": "stk-2330-2026-08-04-morning",
+      "ticker": "2330",
+      "name": "台積電",
+      "market": "TW",
+      "signal": "🟢",
+      "direction": "bullish",
+      "confidence": 0.78,
+      "view": "昨日（8/3）-2.27%漲停後技術回調屬健康整理。今日NVDA +3.01%、10Y殖利率-52bp提供雙重正向先行指標，AI CoWoS/N2需求超級週期不變。RSI從82回落至約75，超買壓力緩解，今日估反彈1-2%至2,400-2,420區間。",
+      "rationale": "NVDA +3%夜盤先行+殖利率骤降52bp，台積電漲停後技術整理完畢估今日反彈",
+      "price": 2370,
+      "change_pct": -2.27,
+      "support": 2350,
+      "resistance": 2450,
+      "stop_loss": 2320,
+      "target": 2500,
+      "technicals": {
+        "rsi14": 75,
+        "macd": "bullish（+擴散中，DIF>DEA）",
+        "ma_alignment": "價格>MA5>MA20>MA60，多頭排列，短線超買後整理"
+      },
+      "valuation": {
+        "pe": 39.5,
+        "pe_percentile_5y": 72,
+        "verdict": "AI溢價合理；CoWoS/N2先進製程供不應求，長線估值可支撐"
+      },
+      "sources": [
+        "https://udn.com/news/story/7251/9666862",
+        "https://finance.ettoday.net/news/3212399",
+        "https://www.storm.mg/article/11153475"
+      ],
+      "expires_at": "2026-08-04T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-2454-2026-08-04-morning",
+      "ticker": "2454",
+      "name": "聯發科",
+      "market": "TW",
+      "signal": "🟢",
+      "direction": "bullish",
+      "confidence": 0.70,
+      "view": "8/3漲停（+9.99%→3,910元）確認 AI ASIC 買盤湧入，Q4 $200億美元訂單能見度已被市場正面解讀。今日（8/4）漲停後獲利了結壓力大，預期開高後整理，區間3,750-4,050。RSI ~83嚴重超買，不追高，但多頭方向確認，回測3,750支撐可考慮加碼。",
+      "rationale": "Q2法說AI ASIC Q4$200億確認+漲停驗證買盤；短線超買整理後中線多頭不變",
+      "price": 3910,
+      "change_pct": 9.99,
+      "support": 3750,
+      "resistance": 4000,
+      "stop_loss": 3650,
+      "target": 4200,
+      "technicals": {
+        "rsi14": 83,
+        "macd": "bullish（強力擴張，漲停後MACD柱狀圖放大）",
+        "ma_alignment": "價格大幅突破所有均線，短線嚴重超買需整理"
+      },
+      "valuation": {
+        "pe": 39,
+        "pe_percentile_5y": 70,
+        "verdict": "AI ASIC 題材驅動估值擴張，Q4落地後或面臨修正；長線仍合理"
+      },
+      "sources": [
+        "https://udn.com/news/story/7251/9666862",
+        "https://www.storm.mg/article/11153475"
+      ],
+      "expires_at": "2026-08-04T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-2317-2026-08-04-morning",
+      "ticker": "2317",
+      "name": "鴻海",
+      "market": "TW",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.48,
+      "view": "AAPL在美四連跌累計 >10%，iPhone Q4旺季訂單能見度持續受壓。正向抵消：AI伺服器ODM業務直接受益Amazon/Azure $2200億capex；美股大漲+油跌對鴻海AI伺服器毛利率有利。短線雙向拉扯，中性評估。",
+      "rationale": "AAPL -10%四連跌壓制iPhone訂單能見度 vs AI伺服器ODM動能，多空拮抗",
+      "price": 253,
+      "change_pct": 0.99,
+      "support": 248,
+      "resistance": 260,
+      "stop_loss": 244,
+      "target": 285,
+      "technicals": {
+        "rsi14": 52,
+        "macd": "neutral（DIF≈DEA，多空平衡）",
+        "ma_alignment": "價格在MA5、MA20之間震盪，方向不明"
+      },
+      "valuation": {
+        "pe": 12.7,
+        "pe_percentile_5y": 35,
+        "verdict": "低估值但AAPL拖累；AI伺服器業務若持續擴大可帶動重估"
+      },
+      "sources": [
+        "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2317",
+        "https://tw.yahoo.com/news/鴻海-2317"
+      ],
+      "expires_at": "2026-08-04T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-NVDA-2026-08-04-morning",
+      "ticker": "NVDA",
+      "name": "輝達",
+      "market": "US",
+      "signal": "🟢",
+      "direction": "bullish",
+      "confidence": 0.78,
+      "view": "8/3 +3.01%至$206.79，AI資料中心需求強勁（Q2 DC +92%、FY26營收$215.9B）。10Y殖利率-52bp直接利好高成長估值。61位分析師均評Strong Buy，目標$302.83（+46%）。最大風險：$250B OpenAI融資背書疑慮可能引發財務波動。8/26 Q2 FY27財報為下一超級催化劑。",
+      "rationale": "AI算力超級週期核心受益者；Q2 DC +92%確認，10Y降52bp直接提升估值；8/26財報催化",
+      "price": 206.79,
+      "change_pct": 3.01,
+      "support": 200,
+      "resistance": 215,
+      "stop_loss": 195,
+      "target": 280,
+      "technicals": {
+        "rsi14": 57,
+        "macd": "bullish（DIF>DEA，MACD轉正擴張）",
+        "ma_alignment": "價格>MA20>MA50，中期多頭排列"
+      },
+      "valuation": {
+        "pe": 27,
+        "pe_percentile_5y": 55,
+        "verdict": "FY27E高速成長支撐當前估值；AI基礎設施capex飛輪確認"
+      },
+      "sources": [
+        "https://www.fxleaders.com/news/2026/08/03/nvidia-stock-forecast-today-nvda-holds-200-as-250b-ai-financing-risk-tests-bulls/",
+        "https://www.tradingkey.com/news/market-movers/262071068-market-movers-nvda-20260803",
+        "https://invezz.com/news/2026/08/03/nvidia-stock-climbs-3-as-ai-infrastructure-demand-boosts-investor-sentiment/"
+      ],
+      "expires_at": "2026-08-04T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-TSLA-2026-08-04-morning",
+      "ticker": "TSLA",
+      "name": "特斯拉",
+      "market": "US",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.50,
+      "view": "8/3 +3.39%至$320.50，跟隨大盤反彈（非基本面驅動）。Q2 EPS $0.33大幅遜色（vs 預期$0.54），全年$250億capex稀釋盈利。Robotaxi多州法規框架確認有估值催化劑，但亞洲EV市占持續流失至大陸廠商。短線跟漲，中線觀望。",
+      "rationale": "技術反彈非基本面改善；EPS miss+亞洲市占流失 vs Robotaxi催化劑，多空平衡",
+      "price": 320.50,
+      "change_pct": 3.39,
+      "support": 310,
+      "resistance": 330,
+      "stop_loss": 300,
+      "target": 380,
+      "technicals": {
+        "rsi14": 45,
+        "macd": "neutral（接近零軸，多空交戰）",
+        "ma_alignment": "價格在MA20附近，方向不明"
+      },
+      "valuation": {
+        "pe": null,
+        "pe_percentile_5y": null,
+        "verdict": "N/M（EPS $0.33遜色，傳統估值失效；Robotaxi/Optimus光學估值支撐）"
+      },
+      "sources": [
+        "https://www.tradingkey.com/news/market-movers/262070995-market-movers-tsla-20260803",
+        "https://www.tipranks.com/news/article/aapl-meta-and-tsla-stocks-whats-ahead-after-slight-correction-in-august"
+      ],
+      "expires_at": "2026-08-04T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-AAPL-2026-08-04-morning",
+      "ticker": "AAPL",
+      "name": "蘋果",
+      "market": "US",
+      "signal": "🔴",
+      "direction": "bearish",
+      "confidence": 0.70,
+      "view": "8/3 -1.5%至$304.28，四連跌累計 >10%（從$344高點跌落）。Q3 FY26 EPS beat含金量低（靠關稅退款$0.11/股），Q4指引9-11%（vs 預期12%），中國/Services雙miss。RSI ~34接近超賣，技術面短線可能有反彈，但基本面問題未解，不宜建多。",
+      "rationale": "Q4指引失望+關稅$200億成本問題+中國miss，四連跌基本面惡化；技術超賣有短彈但不看多",
+      "price": 304.28,
+      "change_pct": -1.50,
+      "support": 300,
+      "resistance": 315,
+      "stop_loss": 295,
+      "target": 380,
+      "technicals": {
+        "rsi14": 34,
+        "macd": "bearish（DIF<DEA，死叉持續擴大）",
+        "ma_alignment": "價格<MA5<MA20，空頭排列；RSI接近30超賣警戒"
+      },
+      "valuation": {
+        "pe": 34,
+        "pe_percentile_5y": 58,
+        "verdict": "關稅退款高估EPS品質；實際盈利能力打折後估值偏高"
+      },
+      "sources": [
+        "https://www.fxleaders.com/news/2026/07/30/apple-earnings-sends-aapl-stock-toward-300-as-weak-outlook-and-china-sales-trigger-selloff/",
+        "https://finance.yahoo.com/markets/stocks/articles/apple-stock-falls-again-four-204149277.html",
+        "https://ts2.tech/en/apple-nasdaqaapl-shares-drop-7-4-after-eps-beat-largely-attributed-to-tariff-refunds/"
+      ],
+      "expires_at": "2026-08-04T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-TSM-2026-08-04-morning",
+      "ticker": "TSM",
+      "name": "台積電ADR",
+      "market": "US",
+      "signal": "🟢",
+      "direction": "bullish",
+      "confidence": 0.75,
+      "view": "8/3 估收~$412（+1.9%），受美股大漲+NVDA +3%雙重帶動。2330在TW技術回調-2.27%，但美國夜盤定價反映長線AI需求超級週期，與2330短線走勢略有背離。10Y殖利率骤降52bp直接提升ADR估值吸引力，外資流入台積電概率上升。",
+      "rationale": "NVDA +3%帶動+殖利率降52bp，美國市場定價AI需求超級週期高於台股短線技術回調",
+      "price": 412,
+      "change_pct": 1.90,
+      "support": 405,
+      "resistance": 430,
+      "stop_loss": 395,
+      "target": 470,
+      "technicals": {
+        "rsi14": 62,
+        "macd": "bullish（DIF>DEA，黃金交叉維持）",
+        "ma_alignment": "價格>MA20>MA50，多頭排列"
+      },
+      "valuation": {
+        "pe": 28,
+        "pe_percentile_5y": 65,
+        "verdict": "AI算力需求持續支撐估值擴張；N2/CoWoS訂單能見度為估值底撐"
+      },
+      "sources": [
+        "https://www.thestreet.com/stock-market-today/stock-market-today-aug-3-2026-dow-jones-sp-500-nasdaq-big-tech-oil",
+        "https://finance.yahoo.com/markets/live/stock-market-today-monday-august-3-dow-sp-500-nasdaq-big-tech-oil-092516872.html"
+      ],
+      "expires_at": "2026-08-04T13:30:00+08:00"
+    }
+  ],
+  "alerts": [
+    {
+      "alert_id": "alt-iran-ceasefire-oil-drop",
+      "level": "info",
+      "text": "川普宣布暫停攻擊伊朗、重啟外交談判 → WTI原油急跌>5%至$80；地緣風險溢價大幅消退，全球市場 risk-on；資料中心電力成本憂慮同步緩解，利好台積電、NVDA",
+      "tickers": ["2330", "NVDA", "TSM", "2454"],
+      "url": "https://www.thestreet.com/stock-market-today/stock-market-today-aug-3-2026-dow-futures-climb-as-oil-slides-on-renewed-iran-talks",
+      "source": "TheStreet"
+    },
+    {
+      "alert_id": "alt-jobs-report-aug7",
+      "level": "warning",
+      "text": "美國7月非農就業報告（NFP）8/7（五）08:30 ET公布；6月僅+57K（vs預期+110K）；若7月續弱→9月降息確定（利多）；若意外強勁→降息預期逆轉（利空）。本週最大尾部風險，建議8/7前降低高槓桿敞口。",
+      "tickers": ["2330", "NVDA", "TSM", "2454", "AAPL", "TSLA"],
+      "url": "https://www.cnbc.com/2026/08/02/stock-market-today-live-updates.html",
+      "source": "CNBC"
+    },
+    {
+      "alert_id": "alt-aapl-q4-guidance-miss",
+      "level": "warning",
+      "text": "蘋果Q4 FY26指引9-11%（市場預期12%）低預期；Q3 EPS beat品質差（關稅退款貢獻$0.11/股）；服務+中國均miss；10年累計關稅成本$200億；iPhone供應瓶頸非短期可解 → 鴻海iPhone旺季訂單能見度持續降低",
+      "tickers": ["AAPL", "2317"],
+      "url": "https://www.fxleaders.com/news/2026/07/30/apple-earnings-sends-aapl-stock-toward-300-as-weak-outlook-and-china-sales-trigger-selloff/",
+      "source": "FX Leaders"
+    },
+    {
+      "alert_id": "alt-amazon-aws-capex-raise",
+      "level": "info",
+      "text": "Amazon Q2 FY26：AWS +36.7%（第5連季加速），2026全年資本支出上調至$2,200億（AI算力基礎設施）；2027-2028算力已被預訂 → 直接利好台積電/NVDA Blackwell訂單能見度；鴻海AI伺服器ODM同步受益",
+      "tickers": ["2330", "NVDA", "TSM", "2317"],
+      "url": "https://www.bloomberg.com/news/articles/2026-08-02/oil-slumps-us-futures-rise-on-iran-talks-optimism-markets-wrap",
+      "source": "Bloomberg"
+    },
+    {
+      "alert_id": "alt-fomc-hawkish-hold-3dissents",
+      "level": "info",
+      "text": "FOMC維持3.50-3.75%（仍有3票異議升息），但美10Y殖利率從4.74%骤降至4.22%（-52bp），市場壓注9月降息概率大增。高殖利率壓力明顯緩解，成長股/AI晶片類直接受益。",
+      "tickers": ["NVDA", "2330", "TSM", "2454"],
+      "url": "https://fred.stlouisfed.org/series/VIXCLS",
+      "source": "FRED / Fed"
+    },
+    {
+      "alert_id": "alt-nvda-aug26-earnings-catalyst",
+      "level": "info",
+      "text": "NVDA Q2 FY27財報8/26盤後公布（超級催化劑）：預計資料中心收入持續加速，Blackwell供應鏈突破關鍵驗證。8/26前AI晶片板塊估值有提前布局窗口。",
+      "tickers": ["NVDA", "2330", "TSM", "2454"],
+      "url": "https://invezz.com/news/2026/08/03/nvidia-stock-climbs-3-as-ai-infrastructure-demand-boosts-investor-sentiment/",
+      "source": "Invezz"
+    }
+  ],
+  "sector_rotation": {
+    "strong": ["AI晶片（台積電、NVDA、TSM）", "AI伺服器/ODM（鴻海、廣達）", "AI ASIC設計（聯發科）", "一般科技（受殖利率降帶動）"],
+    "weak": ["蘋果供應鏈（鴻海iPhone端、日月光）", "能源/油股（WTI急跌5%）", "Apple（四連跌>10%）"],
+    "watch": ["8/7非農就業後科技板塊方向", "台幣升值受益族群（外資流入）", "油價進一步走勢（伊朗談判進展）"]
+  },
+  "whats_changed": {
+    "compared_to": "股市-開盤前-20260803.md",
+    "compared_to_date": "2026-08-03",
+    "new": [
+      {
+        "type": "alert",
+        "summary": "美伊談判重啟 + 原油急跌5%（全新地緣利多）：前報告因伊朗衝突發警告，今日川普喊停攻擊轉外交談判，地緣風險溢價消退",
+        "tickers": ["2330", "NVDA", "TSM"],
+        "ticker": "",
+        "from": "",
+        "to": "alt-iran-ceasefire-oil-drop (info)"
+      },
+      {
+        "type": "alert",
+        "summary": "NVDA 8/26 Q2 FY27財報超級催化劑提示（前報告已提及但未成獨立alert）",
+        "tickers": ["NVDA", "2330", "TSM", "2454"],
+        "ticker": "",
+        "from": "",
+        "to": "alt-nvda-aug26-earnings-catalyst (info)"
+      }
+    ],
+    "strengthened": [
+      {
+        "type": "stock_direction",
+        "summary": "聯發科（2454）由 neutral → bullish：8/3漲停板+9.99%確認AI ASIC買盤湧入，信心度從0.55升至0.70",
+        "tickers": ["2454"],
+        "ticker": "2454",
+        "from": "neutral (confidence=0.55)",
+        "to": "bullish (confidence=0.70)"
+      },
+      {
+        "type": "topic",
+        "summary": "FOMC鷹派風險從 warning 降為 info：10Y殖利率骤降52bp（4.74%→4.22%），9月降息預期大增，高殖利率壓制估值的風險明顯緩解",
+        "tickers": ["NVDA", "2330", "TSM"],
+        "ticker": "",
+        "from": "alt-fomc-hawkish-hold-3dissents level=warning",
+        "to": "alt-fomc-hawkish-hold-3dissents level=info"
+      }
+    ],
+    "removed": [
+      {
+        "type": "alert",
+        "summary": "中東油價高漲警告解除（alt-middle-east-oil-surge）：川普談判取代軍事行動，WTI油跌至$80，原先警告的通膨+Fed鷹派壓力此因子已消退",
+        "tickers": ["2330", "NVDA"],
+        "ticker": "",
+        "from": "alt-middle-east-oil-surge (warning)",
+        "to": ""
+      }
+    ]
+  }
+}

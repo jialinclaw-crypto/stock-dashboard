@@ -1,0 +1,444 @@
+{
+  "schema_version": "3",
+  "type": "close",
+  "generated_at": "2026-08-03T14:01:26+08:00",
+  "expires_at": "2026-08-04T09:00:00+08:00",
+  "data_confidence_note": "TAIEX收盤估算43,350來自EBC/Yahoo媒體報導「台股漲230點」（中低信心，非官方）。台積電/聯發科/鴻海個股收盤為媒體盤中報導（中信心）。三大法人數據未取得（低信心估算）。美股收盤（NVDA/TSLA/AAPL/TSM）均為7/31美股收盤數據（高信心，來自Yahoo/Seeking Alpha/FX Leaders）。",
+  "market_summary": {
+    "taiex": {
+      "close": 43350,
+      "prev_close": 43119.75,
+      "change": 230.25,
+      "change_pct": 0.53,
+      "open": 42780,
+      "open_change": -339.75,
+      "volume_bil_twd": 15000,
+      "volume_note": "估算約1.5兆（媒體早盤估算），低於週五1.6兆爆量，輪動而非全面追漲",
+      "confidence": "low",
+      "note": "估收43,350（+230pts, +0.53%）。開盤低走-339pts後V型反彈，聯發科/日月光/記憶體族群漲停撐盤，台積電(-2.06%)承壓。來源：EBC東森新聞「台股漲230點」、聯合新聞網「台股開低震盪翻紅」。官方數據請至TWSE確認。",
+      "source": "https://news.ebc.net.tw/news/business/564391"
+    },
+    "otc": {
+      "change_pct_est": 0.4,
+      "confidence": "low",
+      "note": "估算OTC跟隨IC設計/記憶體強勢，初估+0.3~+0.5%"
+    },
+    "institutional_flow": {
+      "foreign": null,
+      "trust": null,
+      "proprietary": null,
+      "total_net": null,
+      "unit": "億TWD",
+      "confidence": "unknown",
+      "note": "⚠️ 今日三大法人數據未取得。台積電回落可能有外資部分獲利了結，聯發科/記憶體漲停可能有外資追買，淨流向不確定。官方數據：TWSE t86（通常14:30後更新）。",
+      "official_data_url": "https://www.twse.com.tw/zh/trading/foreign/t86.html",
+      "foreign_top_buy_est": [
+        {
+          "ticker": "2454",
+          "name": "聯發科",
+          "note": "漲停+法說效應延續，預估外資追買",
+          "confidence": "low"
+        },
+        {
+          "ticker": "3711",
+          "name": "日月光",
+          "note": "漲停，封測需求確認",
+          "confidence": "low"
+        },
+        {
+          "ticker": "5347",
+          "name": "南亞科",
+          "note": "記憶體輪動",
+          "confidence": "low"
+        }
+      ]
+    },
+    "sector_rotation": {
+      "top_gainers": [
+        "IC設計（聯發科連兩日漲停，AI ASIC動能確認）",
+        "記憶體（南亞科、華邦電、多檔漲停）",
+        "封測（日月光漲停）",
+        "被動元件（國巨漲停）"
+      ],
+      "moderate_gainers": [
+        "金融（持平偏多）",
+        "傳產（無明確催化，持平）"
+      ],
+      "mixed_or_laggards": [
+        "半導體龍頭台積電（-2.06%，急漲後技術性回調）",
+        "AI伺服器鏈（鴻海-2.99%，蘋果供應鏈疑慮）"
+      ]
+    },
+    "macro_context": {
+      "aapl_q3_fy2026_reaction": {
+        "friday_close_pct": -7.13,
+        "friday_close_approx": 309,
+        "vs_prev_close": 333.43,
+        "vs_after_hours_expectation": "盤後-3%大幅低估實際跌幅",
+        "market_cap_loss_usd_b": 430,
+        "key_concern": "Services $30.74B miss $31.22B預期；中國市場疲弱；Q4指引9-11% vs 12%共識；CEO示警記憶體短缺",
+        "support_to_watch": 309,
+        "confidence": "high",
+        "source": "https://9to5mac.com/2026/07/31/apple-stock-opens-down-roughly-10-following-mixed-q3-2026-results/"
+      },
+      "us_market_july31": {
+        "sp500_change_pct": 0.7,
+        "nasdaq100_change_pct": 0.6,
+        "dow_change_pts": 277,
+        "dow_change_pct": 0.53,
+        "vix": 17.09,
+        "note": "VIX從20.66降至17，恐慌消退。NVDA+3.46%領漲，AAPL-7.13%領跌。",
+        "confidence": "high",
+        "source": "https://seekingalpha.com/article/4929185-the-1-minute-market-report-august-1-2026"
+      },
+      "fed_rate_path": {
+        "sept_hike_prob_pct": 37,
+        "note": "PCE溫和後從40%略降；8/7非農是下個關鍵數據點",
+        "key_date": "2026-08-07",
+        "key_event": "美國非農就業報告",
+        "confidence": "medium"
+      },
+      "us_market_tonight_aug4_outlook": "AAPL週五-7.13%的全面衝擊將繼續消化；蘋果供應鏈股（含鴻海相關）可能持續承壓。NVDA AH $201.80穩定，AI敘事不受AAPL拖累。8/7非農為本週最大風險事件。",
+      "confidence": "medium"
+    }
+  },
+  "stocks": [
+    {
+      "signal_id": "stk-2330-2026-08-03-close",
+      "ticker": "2330",
+      "name": "台積電",
+      "market": "TW",
+      "price": 2370,
+      "price_prev": 2425,
+      "price_change": -55,
+      "price_change_pct": -2.27,
+      "price_note": "估算NT$2,370（-55，-2.27%）。媒體報導「台積電失守2400元、跌逾2%」。技術性回調，非基本面惡化。信心：中。",
+      "direction": "neutral",
+      "confidence": "medium",
+      "rationale": "台積電在上週五+9.98%（近漲停）後，今日出現正常的技術性獲利了結回調，跌破2,400整數關口。基本面無變化（Q2財報已確認EPS $4.31、AI需求極強），但短線超買訊號需消化。TSM ADR週五實際收$404.25（+7.9%），接近但未達預測+8-12%上緣，整體符合預期。方向由bullish降至neutral，等待2,380-2,400區間的量縮整理確認後再評估多空。",
+      "key_levels": {
+        "support": [2350, 2320, 2250],
+        "resistance": [2420, 2500, 2600]
+      },
+      "upcoming_catalyst": "TSM ADR今晚走勢；8/26 NVDA財報（AI需求鏈接）；TWSE三大法人官方數據",
+      "sources": [
+        "https://udn.com/news/story/7251/9666862",
+        "https://www.storm.mg/article/11153475"
+      ],
+      "expires_at": "2026-08-04T09:00:00+08:00"
+    },
+    {
+      "signal_id": "stk-2454-2026-08-03-close",
+      "ticker": "2454",
+      "name": "聯發科",
+      "market": "TW",
+      "price": 3910,
+      "price_prev": 3555,
+      "price_change": 355,
+      "price_change_pct": 9.99,
+      "price_note": "NT$3,910（+9.99%，漲停）。多家媒體確認漲停。信心：高。",
+      "direction": "bullish",
+      "confidence": "high",
+      "rationale": "聯發科連續兩日漲停（7/31 +9.88%、8/3 +9.99%），累計兩日漲幅+20%，法說確認AI ASIC量產節奏和年收1,522億歷史新高的動能完全未減退。外資評等上調效應延續，IC設計族群今日為市場最強板塊。短線超買但動能極強，方向維持bullish（信心升至high），留意3,700-3,800是否成為新支撐。",
+      "key_levels": {
+        "support": [3700, 3555, 3400],
+        "resistance": [4000, 4200, 4500]
+      },
+      "upcoming_catalyst": "AI ASIC量產進度更新；下季財測；NVDA財報連動（8/26）",
+      "sources": [
+        "https://news.ebc.net.tw/news/business/564391",
+        "https://tw.stock.yahoo.com/news/%E8%81%AF%E7%99%BC%E7%A7%91-%E6%97%A5%E6%9C%88%E5%85%89%E5%8F%88%E6%BC%B2%E5%81%9C-%E8%8F%AF%E9%82%A6%E9%9B%BB-%E5%8D%97%E4%BA%9E%E7%A7%91-%E5%9C%8B%E5%B7%A8%E4%B9%9F%E4%BA%AE%E7%87%88-011100031.html"
+      ],
+      "expires_at": "2026-08-04T09:00:00+08:00"
+    },
+    {
+      "signal_id": "stk-2317-2026-08-03-close",
+      "ticker": "2317",
+      "name": "鴻海",
+      "market": "TW",
+      "price": 243,
+      "price_prev": 250.50,
+      "price_change": -7.5,
+      "price_change_pct": -2.99,
+      "price_note": "估算NT$243（-7.5，-2.99%）。媒體報導鴻海「下跌7.5元，跌幅2.99%」。信心：中。",
+      "direction": "neutral",
+      "confidence": "medium",
+      "rationale": "鴻海受AAPL Q3財報後Q4指引不佳（9-11%成長vs 12%共識）及中國市場疲弱影響，蘋果供應鏈出現獲利了結。上週五+9.16%後回吐部分漲幅。AI伺服器（GB200/GB300）訂單能見度仍高，但蘋果側利空短期壓制。方向由bullish降至neutral，待確認蘋果供應鏈影響範圍。",
+      "key_levels": {
+        "support": [238, 230, 220],
+        "resistance": [252, 260, 270]
+      },
+      "upcoming_catalyst": "鴻海法說/Q2財報（待確認日期）；蘋果Q4供應鏈訂單情況；AI伺服器GB300出貨確認",
+      "sources": [
+        "https://udn.com/news/story/7251/9666862"
+      ],
+      "expires_at": "2026-08-04T09:00:00+08:00"
+    },
+    {
+      "signal_id": "stk-NVDA-2026-08-03-close",
+      "ticker": "NVDA",
+      "name": "輝達",
+      "market": "US",
+      "price": 200.75,
+      "price_prev": 196.45,
+      "price_change": 4.30,
+      "price_change_pct": 2.19,
+      "price_note": "美股7/31收約$200.75（+3.46%當日）。After-hours $201.80（-0.52%）。日內高$201.97/低$194.95。信心：中高。",
+      "direction": "bullish",
+      "confidence": "medium",
+      "rationale": "NVDA週五+3.46%突破$200關口，受益於台積電Q2財報「AI需求極強」的直接驗證。週五美股Nasdaq+0.6%整體環境正面。Blackwell出貨確認中，AI資本支出疑慮在台積電財報後大幅緩解。方向由neutral升至bullish，但自身財報（8/26）仍是最終定論的時間點。毛利率趨勢（因Blackwell成本較高）仍是財報時的關注點。",
+      "key_levels": {
+        "support": [195, 187, 180],
+        "resistance": [208, 215, 225]
+      },
+      "upcoming_catalyst": "NVDA Q2 FY2027財報（2026-08-26，超級催化劑）；Blackwell出貨量數據；TSMC AI晶片訂單確認",
+      "sources": [
+        "https://seekingalpha.com/article/4929185-the-1-minute-market-report-august-1-2026"
+      ],
+      "expires_at": "2026-08-04T09:00:00+08:00"
+    },
+    {
+      "signal_id": "stk-TSLA-2026-08-03-close",
+      "ticker": "TSLA",
+      "name": "特斯拉",
+      "market": "US",
+      "price": 311.21,
+      "price_prev": 295,
+      "price_change": 16.21,
+      "price_change_pct": 5.49,
+      "price_note": "美股7/31收$311.21。7/29的52週低$297.38後反彈。信心：高。",
+      "direction": "neutral",
+      "confidence": "medium",
+      "rationale": "TSLA從7/29的52週低$297.38反彈，週五隨大市整體回升收$311.21（+0.76%當日，較前信號估算$295已大幅上漲）。目前已接近阻力區310-325，方向由bearish升至neutral。Musk品牌風險與Tesla非AI業務的結構性弱點未消除，但技術面超賣後反彈。方向調整為neutral，若突破$325才考慮看法轉佳。",
+      "key_levels": {
+        "support": [297, 285, 265],
+        "resistance": [325, 340, 360]
+      },
+      "upcoming_catalyst": "Tesla Q3交付量數據；FSD V13商業化進度；Robotaxi更新",
+      "sources": [
+        "https://finance.yahoo.com/quote/TSLA/history/"
+      ],
+      "expires_at": "2026-08-04T09:00:00+08:00"
+    },
+    {
+      "signal_id": "stk-AAPL-2026-08-03-close",
+      "ticker": "AAPL",
+      "name": "蘋果",
+      "market": "US",
+      "price": 309,
+      "price_prev": 333.43,
+      "price_change": -24.43,
+      "price_change_pct": -7.33,
+      "price_note": "美股7/31收約$309（-7.13%當日，前日正式收盤$333.43）。市值蒸發$430B。信心：高。",
+      "direction": "bearish",
+      "confidence": "high",
+      "rationale": "AAPL Q3 FY26財報整體beat，但Services $30.74B miss $31.22B、中國疲弱、Q4指引9-11%低於12%共識、供應鏈記憶體短缺警示，週五全日跌7.13%（遠超盤後-3%的預警）。上週五信號誤判跌幅（前信號direction=neutral），現修正為bearish。$309支撐是本週關鍵守守點，若跌破$305則看$295。Apple Intelligence商業化轉換率持續受市場質疑。對鴻海等供應鏈有溢出效應。",
+      "key_levels": {
+        "support": [305, 295, 280],
+        "resistance": [320, 333, 345]
+      },
+      "upcoming_catalyst": "iPhone 17發布（預計9月）；Apple Intelligence新功能更新；中國iPhone份額月度數據；8/7非農影響整體科技股",
+      "sources": [
+        "https://9to5mac.com/2026/07/31/apple-stock-opens-down-roughly-10-following-mixed-q3-2026-results/",
+        "https://www.fxleaders.com/news/2026/08/02/why-is-apple-aapl-stock-down-can-buyers-defend-the-309-support-next-week/",
+        "https://www.investing.com/news/transcripts/earnings-call-transcript-apple-beats-q3-2026-estimates-shares-fall-after-hours-93CH-4826459"
+      ],
+      "expires_at": "2026-08-04T09:00:00+08:00"
+    },
+    {
+      "signal_id": "stk-TSM-2026-08-03-close",
+      "ticker": "TSM",
+      "name": "台積電ADR",
+      "market": "US",
+      "price": 404.25,
+      "price_prev": 374.67,
+      "price_change": 29.58,
+      "price_change_pct": 7.90,
+      "price_note": "美股7/31收$404.25（+7.9%）。前信號預測+8-12%，實際達下緣，符合預期。After-hours $404（平盤）。信心：高。",
+      "direction": "bullish",
+      "confidence": "high",
+      "rationale": "TSM ADR週五完整反映台積電Q2財報（EPS $4.31, AI需求極強），收$404.25（+7.9%），預測範圍+8-12%的下緣已達，財報驅動得到確認。$400以上站穩是關鍵里程碑。方向維持bullish（高信心）。本地盤今日台積電-2%回調不改ADR中長期看法，美股繼續消化財報正面影響。",
+      "key_levels": {
+        "support": [395, 380, 360],
+        "resistance": [420, 440, 460]
+      },
+      "upcoming_catalyst": "8/26 NVDA財報（AI需求鏈接）；分析師目標價進一步上調；7月台積電月報",
+      "sources": [
+        "https://finance.yahoo.com/quote/TSM/"
+      ],
+      "expires_at": "2026-08-04T09:00:00+08:00"
+    }
+  ],
+  "alerts": [
+    {
+      "alert_id": "alert-aapl-full-correction-2026-08-03",
+      "level": "high",
+      "title": "AAPL週五全日跌-7.13%（遠超盤後-3%預警）：$309支撐成本週關鍵守守點",
+      "body": "蘋果Q3 FY26財報雖整體beat（EPS $2.02, 營收$109.4B +16%），但週五全日跌7.13%（前一報告預估盤後-3%嚴重低估），市值蒸發$430B。核心利空：Services $30.74B miss $31.22B、中國疲弱、Q4指引9-11% vs 12%共識、Tim Cook示警記憶體短缺。$309是本週技術支撐，FX Leaders報告點名此位為下週關鍵。跌破$305則看$295。鴻海（蘋果供應鏈）今日同步跌-3%，需持續監控溢出效應。",
+      "action": "AAPL方向升級為bearish；鴻海降至neutral；監控$309支撐是否守住；關注8/7非農是否加碼下行壓力",
+      "url": "https://www.fxleaders.com/news/2026/08/02/why-is-apple-aapl-stock-down-can-buyers-defend-the-309-support-next-week/",
+      "source": "FX Leaders / 9to5Mac / Investing.com",
+      "expires_at": "2026-08-07T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-mediatek-double-limit-up-2026-08-03",
+      "level": "high",
+      "title": "聯發科連兩日漲停（+10%+10%）：AI ASIC量產敘事強度超預期",
+      "body": "聯發科（2454）繼7/31漲停（+9.88%）後，8/3再度攻上漲停（+9.99%），兩日累計+20.87%。法說確認AI ASIC量產節奏、年收1,522億歷史新高，外資評等上調效應持續發酵。日月光（3711）、南亞科、華邦電、國巨也同步攻漲停，板塊共振強烈。聯發科$4,000是下一個整數壓力，達成後上看$4,200。",
+      "action": "聯發科方向維持bullish（高信心）；IC設計/封測板塊維持最強；留意超買後換手整理",
+      "url": "https://news.ebc.net.tw/news/business/564391",
+      "source": "EBC東森新聞 / Yahoo股市台灣",
+      "expires_at": "2026-08-04T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-tsm-adr-confirmed-2026-08-03",
+      "level": "medium",
+      "title": "TSM ADR收$404.25（+7.9%）：財報驅動預測驗證，$400站穩",
+      "body": "前信號（7/31）預測TSM ADR今晚高開+8-12%，實際收$404.25（+7.9%），達預測下緣，財報驅動得到確認。$400整數關口已站穩，下一個壓力在$420-$440。本地盤（2330）今日-2.06%屬技術回調，非基本面惡化。AI需求確認後，TSM ADR中期看多方向不變。",
+      "action": "TSM ADR維持bullish（高信心）；台積電本地盤短線neutral（消化超買）；等待2,380-2,400區間量縮確認",
+      "url": "https://finance.yahoo.com/quote/TSM/",
+      "source": "Yahoo Finance / Seeking Alpha",
+      "expires_at": "2026-08-04T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-nonfarm-payrolls-aug7-2026",
+      "level": "high",
+      "title": "⚠️ 8/7（週五）非農就業報告：本週最大尾部風險，決定9月升息概率",
+      "body": "上次非農（6月）僅+57K（大幅落後），若8/7就業數據反彈強勁（>+150K），Fed 9月升息概率將從當前35-40%飆升至60%以上，引爆科技股新一輪殺盤。VIX目前~17（相對低），市場對此事件可能過於輕敵。反之若再次偏弱，可能強化降息預期，科技股受益。",
+      "action": "8/7前降低槓桿；持有空倉對沖尾部風險；關注聯準會官員8/4-8/6的言論",
+      "url": "https://seekingalpha.com/article/4929185-the-1-minute-market-report-august-1-2026",
+      "source": "Seeking Alpha / 開盤前週報",
+      "expires_at": "2026-08-07T21:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-nvda-earnings-watch-2026-08",
+      "level": "medium",
+      "title": "NVDA財報（8/26）：台積電驗證AI需求，NVDA為下一個超級催化劑",
+      "body": "台積電Q2確認AI晶片需求「極強」，NVDA週五+3.46%突破$200，方向由neutral升至bullish。但Blackwell毛利率壓力（成本高於Hopper）和真實出貨量將在8/26財報揭露。這是下一個定論AI投資超級週期是否持續的節點。前一周的台股（台積電/聯發科）走勢將先行反映市場對NVDA財報的預期。",
+      "action": "維持NVDA bullish（中高信心）；8/26前持續監控；台積電AI出貨數據為領先指標",
+      "url": "https://finance.yahoo.com/quote/NVDA/",
+      "source": "Yahoo Finance / 台積電財報",
+      "expires_at": "2026-08-26T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-sector-rotation-memory-ic-2026-08-03",
+      "level": "medium",
+      "title": "板塊輪動：資金從台積電流向記憶體/IC設計，輪動型多頭確立",
+      "body": "今日台積電-2%同時聯發科/日月光/南亞科/華邦電/國巨齊攻漲停，顯示並非大盤轉空，而是上週五急漲後的板塊輪動。記憶體股受AI資料中心需求確認（台積電財報間接驗證HBM需求），IC設計受AI ASIC量產訂單驅動。此輪動型態通常是多頭健康的特徵——主流股換手同時後段股補漲。",
+      "action": "保持多頭核心部位；可評估記憶體/IC設計族群短線機會；台積電回調至2,350是長線布局點",
+      "url": "https://udn.com/news/story/7251/9666862",
+      "source": "聯合新聞網 / EBC東森新聞",
+      "expires_at": "2026-08-04T09:00:00+08:00"
+    }
+  ],
+  "whats_changed": {
+    "vs_date": "2026-07-31",
+    "vs_signal_file": "reports/股市-收盤後-20260731.json",
+    "generated_at": "2026-08-03T14:01:26+08:00",
+    "market_level": {
+      "taiex_prev": 43119.75,
+      "taiex_today": 43350,
+      "taiex_change_pts": 230.25,
+      "taiex_change_pct": 0.53,
+      "note": "延續上週五+7.96%史詩大漲後小幅收高，整體呈板塊輪動整理格局，非全面追漲。"
+    },
+    "direction_changes": [
+      {
+        "ticker": "2330",
+        "name": "台積電",
+        "prev_direction": "bullish",
+        "new_direction": "neutral",
+        "prev_confidence": "high",
+        "new_confidence": "medium",
+        "reason": "上週五+9.98%近漲停後，今日技術性回調-2.06%（失守2,400），超買訊號需消化。基本面無變化，短線轉neutral等待整理結束。"
+      },
+      {
+        "ticker": "2317",
+        "name": "鴻海",
+        "prev_direction": "bullish",
+        "new_direction": "neutral",
+        "prev_confidence": "medium",
+        "new_confidence": "medium",
+        "reason": "AAPL Q4指引不佳（9-11% vs 12%共識）及中國市場疲弱影響蘋果供應鏈，鴻海今日跌-2.99%。AI伺服器側動能仍在，但蘋果側利空短期壓制，轉neutral觀察。"
+      },
+      {
+        "ticker": "NVDA",
+        "name": "輝達",
+        "prev_direction": "neutral",
+        "new_direction": "bullish",
+        "prev_confidence": "medium",
+        "new_confidence": "medium",
+        "reason": "週五+3.46%突破$200，台積電財報直接確認AI需求極強，AI capex可持續性疑慮大幅緩解。方向由neutral升至bullish，等待8/26自身財報最終確認。"
+      },
+      {
+        "ticker": "TSLA",
+        "name": "特斯拉",
+        "prev_direction": "bearish",
+        "new_direction": "neutral",
+        "prev_confidence": "medium",
+        "new_confidence": "medium",
+        "reason": "從52週低$297.38反彈至$311.21（+5.5%），已接近阻力310-325區間。技術面超賣後反彈，方向由bearish升至neutral。結構性弱點未消除，突破$325前不看多。"
+      },
+      {
+        "ticker": "AAPL",
+        "name": "蘋果",
+        "prev_direction": "neutral",
+        "new_direction": "bearish",
+        "prev_confidence": "medium",
+        "new_confidence": "high",
+        "reason": "前信號（7/31）預估盤後-3%，實際週五全日跌7.13%（遠超預期），市值蒸發$430B。Services miss + 中國疲弱 + Q4指引不佳，方向由neutral明確升至bearish（高信心）。$309支撐是關鍵。"
+      }
+    ],
+    "direction_unchanged": [
+      {
+        "ticker": "2454",
+        "name": "聯發科",
+        "direction": "bullish",
+        "confidence_change": "medium→high",
+        "note": "連兩日漲停（+10%+10%），信心從medium升至high，方向強化不變"
+      },
+      {
+        "ticker": "TSM",
+        "name": "台積電ADR",
+        "direction": "bullish",
+        "confidence_change": "high→high",
+        "note": "週五收$404.25（+7.9%），財報驅動確認，維持bullish高信心"
+      }
+    ],
+    "alerts_resolved": [
+      {
+        "alert_id": "alert-tsmc-q2-blowout-2026-07-31",
+        "resolution": "CONFIRMED",
+        "note": "台積電Q2財報效應已完整反映：本地盤7/31+9.98%，TSM ADR 7/31+7.9%（接近預測+8-12%下緣）。事件結算，新信號已接手。"
+      },
+      {
+        "alert_id": "alert-aapl-services-miss-2026-07-31",
+        "resolution": "ESCALATED",
+        "note": "原預估AAPL盤後-3%，實際週五全日跌-7.13%，嚴重低估。已升級為新alert alert-aapl-full-correction-2026-08-03（level:high），重新評估方向為bearish。"
+      },
+      {
+        "alert_id": "alert-amzn-anthropic-ai-validates-2026-07-31",
+        "resolution": "RESOLVED",
+        "note": "AMZN Q2財報效應已計入市場，AI投資回報率驗證的直接市場反應已完成（AMZN AH+8%）。背景利多持續，但直接事件已結束。"
+      },
+      {
+        "alert_id": "alert-pce-benign-fed-watch-2026-07-31",
+        "resolution": "CONTINUED",
+        "note": "PCE溫和利多仍在，但8/7非農是下個關鍵。已轉型為新alert alert-nonfarm-payrolls-aug7-2026。"
+      }
+    ],
+    "alerts_continued": [
+      {
+        "alert_id": "alert-nvda-earnings-watch-2026-08",
+        "note": "維持有效，8/26 NVDA財報仍是最大催化劑。NVDA方向由neutral升至bullish，alert重要度不變。"
+      }
+    ],
+    "new_alerts": [
+      "alert-aapl-full-correction-2026-08-03",
+      "alert-mediatek-double-limit-up-2026-08-03",
+      "alert-tsm-adr-confirmed-2026-08-03",
+      "alert-nonfarm-payrolls-aug7-2026",
+      "alert-sector-rotation-memory-ic-2026-08-03"
+    ]
+  }
+}

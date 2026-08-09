@@ -1,0 +1,410 @@
+{
+  "_schema_version": 3,
+  "type": "morning",
+  "report_file": "股市-開盤前-20260810.md",
+  "date": "2026-08-10",
+  "weekday": "週一",
+  "generated_at": "2026-08-10T07:35:20+08:00",
+  "market_view": {
+    "level": "bullish",
+    "confidence": 0.72,
+    "headline": "七月非農 -23K 驚喜 → Fed 升息概率驟降 → S&P/Nasdaq 雙創歷史新高；NVDA +2.3%、10Y-7bps、DXY 99.6 三重正面先行，台股今日估高開 0.5-1%；8/26 NVDA 財報為最大近期催化劑"
+  },
+  "indices": [
+    {
+      "name": "道瓊工業",
+      "ticker": "DJI",
+      "value": 54036.93,
+      "change_pct": 0.28,
+      "trend": "bullish",
+      "note": "8/7 +151.83 pts（+0.28%）；就業數據驅動第五連週上漲；防禦板塊 + 工業股聯袂上揚"
+    },
+    {
+      "name": "S&P 500",
+      "ticker": "SPX",
+      "value": 7757.64,
+      "change_pct": 0.62,
+      "trend": "bullish",
+      "note": "8/7 +47.68 pts（+0.62%）歷史新高；軟體 + 大型科技領漲；NFP -23K 觸媒"
+    },
+    {
+      "name": "Nasdaq 綜合",
+      "ticker": "COMP",
+      "value": 26690.62,
+      "change_pct": 1.30,
+      "trend": "bullish",
+      "note": "8/7 +342.26 pts（+1.30%）歷史新高；NVDA +2.3%、TSLA +2.8% 帶動科技板塊強彈"
+    },
+    {
+      "name": "費城半導體",
+      "ticker": "SOX",
+      "value": 12357,
+      "change_pct": 1.5,
+      "trend": "bullish",
+      "note": "估 +1.5%（以 NVDA +2.3%、Nasdaq +1.30% 推算）；AI 晶片板塊受益殖利率下行"
+    },
+    {
+      "name": "VIX 恐慌指數",
+      "ticker": "VIX",
+      "value": 14.90,
+      "change_pct": -1.65,
+      "trend": "bullish",
+      "note": "8/7 收 14.90（-1.65%）；低恐慌確認 risk-on；弱就業 = 降息預期復甦"
+    },
+    {
+      "name": "美 10Y 殖利率",
+      "ticker": "US10Y",
+      "value": 4.60,
+      "change_pct": null,
+      "trend": "bullish",
+      "note": "8/7 收 4.60%（-7bps）；NFP -23K → 市場重燃降息預期，殖利率下行利好成長股"
+    },
+    {
+      "name": "美元指數",
+      "ticker": "DXY",
+      "value": 99.60,
+      "change_pct": -0.33,
+      "trend": "neutral",
+      "note": "99.60（-0.33%）；守 100 以下；美元弱勢利好台幣升值 + 外資流入台股"
+    },
+    {
+      "name": "WTI 原油",
+      "ticker": "WTI",
+      "value": 80,
+      "change_pct": 0,
+      "trend": "neutral",
+      "note": "維持 $80 附近；伊朗談判繼續進行，地緣溢價低位；資料中心電力成本壓力穩定"
+    },
+    {
+      "name": "台灣加權指數",
+      "ticker": "TAIEX",
+      "value": 44225.91,
+      "change_pct": -0.38,
+      "trend": "neutral",
+      "note": "8/7 -170.79 pts（-0.38%）；單週大漲 2.57%（+1,106 pts）後獲利了結整理；法人賣超 NT$442 億"
+    }
+  ],
+  "stocks": [
+    {
+      "signal_id": "stk-2330-2026-08-10-morning",
+      "ticker": "2330",
+      "name": "台積電",
+      "market": "TW",
+      "signal": "🟢",
+      "direction": "bullish",
+      "confidence": 0.72,
+      "view": "TAIEX 週五 -0.38% 獲利了結為正常整理。美股 Nasdaq +1.30%、NVDA +2.3%、10Y -7bps 三重先行正向訊號，ADR TSM ~$418 支撐。Blackwell CoWoS 60% 產能鎖定至 2026 年中，N2 良率穩步提升，AI 超級週期評估不變。今日估開高 0.5-1%（NT$2,380-2,400），守 NT$2,320 支撐。",
+      "rationale": "美股 AI 板塊強彈 + 殖利率降 7bps，ADR TSM $418 先行確認，台積電今日估高開",
+      "price": 2365,
+      "change_pct": -0.4,
+      "support": 2320,
+      "resistance": 2450,
+      "stop_loss": 2270,
+      "target": 2500,
+      "technicals": {
+        "rsi14": 62,
+        "macd": "bullish（DIF>DEA，週線黃金交叉確認）",
+        "ma_alignment": "價格>MA20>MA60，多頭排列；RSI 從超買 80+ 健康回落至 62"
+      },
+      "valuation": {
+        "pe": 39.5,
+        "pe_percentile_5y": 72,
+        "verdict": "AI CoWoS/N2 溢價合理；長線估值可支撐至 2500-2600"
+      },
+      "sources": [
+        "https://www.taiwannews.com.tw/news/6417394",
+        "https://focustaiwan.tw/business/202608070015",
+        "https://finance.biggo.com/news/76253818-5ff8-44b8-bc37-d0cc3920f865"
+      ],
+      "expires_at": "2026-08-10T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-2454-2026-08-10-morning",
+      "ticker": "2454",
+      "name": "聯發科",
+      "market": "TW",
+      "signal": "🟢",
+      "direction": "bullish",
+      "confidence": 0.68,
+      "view": "8/7 收 NT$3,900（-0.51%）；七月 AI bubble 崩跌後反彈勢頭持續，天璣 9400 AIoT 需求穩健，Q4 旺季 Android SoC 訂單視野清晰。美元弱 + 殖利率降利好估值修復。技術面 RSI 58 中性偏強，4,000 關卡為近期目標。",
+      "rationale": "AI Edge 晶片出貨 + Q4 旺季訂單 + 殖利率下行三重支撐，估今日跟漲 1-1.5%",
+      "price": 3900,
+      "change_pct": -0.51,
+      "support": 3700,
+      "resistance": 4100,
+      "stop_loss": 3620,
+      "target": 4200,
+      "technicals": {
+        "rsi14": 58,
+        "macd": "bullish（週線轉正，日線 DIF 靠近 DEA）",
+        "ma_alignment": "價格>MA20，MA60 仍在整理；週線趨勢翻多"
+      },
+      "valuation": {
+        "pe": 22,
+        "pe_percentile_5y": 55,
+        "verdict": "相對台積電折價合理；AI Edge + 旺季訂單驅動 PE 修復空間大"
+      },
+      "sources": [
+        "https://www.investing.com/equities/mediatek",
+        "https://www.taiwannews.com.tw/news/6417394"
+      ],
+      "expires_at": "2026-08-10T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-2317-2026-08-10-morning",
+      "ticker": "2317",
+      "name": "鴻海",
+      "market": "TW",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.53,
+      "view": "8/7 收 NT$260（-1.70%），跑輸大盤。iPhone 旺季訂單因蘋果低引導（9-11%）能見度偏低；AI 伺服器 ODM 業務（Amazon 資本支出 $2,200 億利好）部分對衝。短線無明確催化劑，區間震盪格局。",
+      "rationale": "蘋果 Q4 低引導壓抑 iPhone 訂單能見度，AI 伺服器對衝有限，維持中性觀望",
+      "price": 260,
+      "change_pct": -1.70,
+      "support": 250,
+      "resistance": 272,
+      "stop_loss": 244,
+      "target": 285,
+      "technicals": {
+        "rsi14": 48,
+        "macd": "neutral（DIF、DEA 均在零軸附近盤整）",
+        "ma_alignment": "價格在 MA20 附近整理，方向不明"
+      },
+      "valuation": {
+        "pe": 14,
+        "pe_percentile_5y": 35,
+        "verdict": "低估；但 iPhone 收入能見度不佳為壓制因素，AI 伺服器訂單能見度確認前難以突破"
+      },
+      "sources": [
+        "https://www.google.com/finance/beta/quote/2317:TPE",
+        "https://www.fxleaders.com/news/2026/07/30/apple-earnings-sends-aapl-stock-toward-300-as-weak-outlook-and-china-sales-trigger-selloff/"
+      ],
+      "expires_at": "2026-08-10T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-NVDA-2026-08-10-morning",
+      "ticker": "NVDA",
+      "name": "輝達",
+      "market": "US",
+      "signal": "🟢",
+      "direction": "bullish",
+      "confidence": 0.82,
+      "view": "8/7 收 $223.96（+2.3%）。Blackwell GB300 出貨份額超越 GB200，四大 CSP 合計 $7,000 億資本支出需求確認。Q2 FY27 指引 $91B，8/26 財報為最大近期催化劑；弱就業 → 殖利率降 → AI 估值修復。出口管制走私案（$25 億）為監控風險，但短期不影響 Blackwell 供應鏈。",
+      "rationale": "Blackwell 供不應求 + $91B 收入指引 + 殖利率下行三重支撐，財報前布局窗口",
+      "price": 223.96,
+      "change_pct": 2.30,
+      "support": 210,
+      "resistance": 235,
+      "stop_loss": 203,
+      "target": 248,
+      "technicals": {
+        "rsi14": 65,
+        "macd": "bullish（強勢 DIF>DEA 擴散，週線多頭排列）",
+        "ma_alignment": "價格>MA5>MA20>MA60，強多頭排列"
+      },
+      "valuation": {
+        "pe": 33,
+        "pe_percentile_5y": 68,
+        "verdict": "FY27 P/E ~33x；Blackwell 超週期增速超越歷史估值，合理；8/26 財報為確認點"
+      },
+      "sources": [
+        "https://www.fool.com/coverage/stock-market-today/2026/08/07/stock-market-today-aug-7-markets-rally-on-jobs-shock-and-atlassian-surges-35/",
+        "https://www.fxleaders.com/news/2026/08/04/nvidia-stock-forecast-today-nvda-reclaims-210-as-ai-demand-outweighs-financing-concerns/",
+        "https://intellectia.ai/blog/nvda-stock-analysis-august-2026"
+      ],
+      "expires_at": "2026-08-10T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-TSLA-2026-08-10-morning",
+      "ticker": "TSLA",
+      "name": "特斯拉",
+      "market": "US",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.52,
+      "view": "8/7 收 $328.58（+2.8%），跟隨大盤 risk-on 反彈，非基本面驅動。FSD v14 商業化 + Robotaxi 時間表為長線催化劑，缺乏近期確定性訊號。中國市場競爭壓力（比亞迪）持續；Musk 政治曝光為雙面刃。區間震盪操作策略。",
+      "rationale": "搭大盤反彈但缺基本面催化劑，FSD/Robotaxi 進展為唯一大幅上攻觸媒",
+      "price": 328.58,
+      "change_pct": 2.80,
+      "support": 310,
+      "resistance": 348,
+      "stop_loss": 298,
+      "target": 365,
+      "technicals": {
+        "rsi14": 58,
+        "macd": "neutral（週線轉正但動能尚弱）",
+        "ma_alignment": "價格略高於 MA20，MA60 仍有壓力"
+      },
+      "valuation": {
+        "pe": 105,
+        "pe_percentile_5y": 42,
+        "verdict": "高 PE 反映 Robotaxi 期望值；FSD 商業化延遲則下行風險大"
+      },
+      "sources": [
+        "https://x.com/marketsday/status/2085938429976867286",
+        "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-aug-7-2026"
+      ],
+      "expires_at": "2026-08-10T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-AAPL-2026-08-10-morning",
+      "ticker": "AAPL",
+      "name": "蘋果",
+      "market": "US",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.50,
+      "view": "8/7 收 $313.33（+0.3%），僅小幅跟漲。Q4 FY26 指引 9-11% 低預期，服務 + 中國均 miss，累計關稅成本 $200 億。Apple Intelligence 普及率爬坡；越南 / 印度供應鏈轉移中但短線 EPS 中性。缺乏上攻動能，維持區間整理。",
+      "rationale": "低引導 + 中國 miss + 高估值，缺乏短線催化劑；AI 功能差異化尚未反映在銷售",
+      "price": 313.33,
+      "change_pct": 0.30,
+      "support": 300,
+      "resistance": 325,
+      "stop_loss": 292,
+      "target": 338,
+      "technicals": {
+        "rsi14": 50,
+        "macd": "neutral（DIF=DEA，方向待確認）",
+        "ma_alignment": "價格在 MA20 附近，方向中性"
+      },
+      "valuation": {
+        "pe": 29,
+        "pe_percentile_5y": 58,
+        "verdict": "服務護城河支撐合理 PE；但指引低預期讓擴張空間受限"
+      },
+      "sources": [
+        "https://www.fxleaders.com/news/2026/07/30/apple-earnings-sends-aapl-stock-toward-300-as-weak-outlook-and-china-sales-trigger-selloff/",
+        "https://x.com/marketsday/status/2085938429976867286"
+      ],
+      "expires_at": "2026-08-10T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-TSM-2026-08-10-morning",
+      "ticker": "TSM",
+      "name": "台積電ADR",
+      "market": "US",
+      "signal": "🟢",
+      "direction": "bullish",
+      "confidence": 0.70,
+      "view": "8/7 ADR 估收 ~$418（參考前收盤數據）。DXY 99.60 美元弱勢 + NVDA +2.3% + 10Y -7bps 三重正向訊號。美國鳳凰城廠 N4 良率超越預期，地緣風險折價縮小。與 2330 連動，今日估跟漲 0.5-1%。",
+      "rationale": "ADR 受美元弱 + NVDA 強帶動，鳳凰城廠良率確認降低地緣折價",
+      "price": 418.20,
+      "change_pct": null,
+      "support": 400,
+      "resistance": 438,
+      "stop_loss": 390,
+      "target": 455,
+      "technicals": {
+        "rsi14": 62,
+        "macd": "bullish（週線多頭排列確認）",
+        "ma_alignment": "價格>MA20>MA60，多頭格局"
+      },
+      "valuation": {
+        "pe": 39,
+        "pe_percentile_5y": 70,
+        "verdict": "ADR 對 2330 溢價 5-8% 合理；AI 配置需求強，美股資金流入確認"
+      },
+      "sources": [
+        "https://finance.yahoo.com/quote/TSM/",
+        "https://www.taiwannews.com.tw/news/6417394"
+      ],
+      "expires_at": "2026-08-10T13:30:00+08:00"
+    }
+  ],
+  "alerts": [
+    {
+      "alert_id": "alt-july-jobs-realized",
+      "level": "info",
+      "text": "七月非農就業 -23,000（預期 +95,000），為巨大負驚喜；Fed 九月升息概率從 57% 驟降至 42%，市場 risk-on 反應；S&P/Nasdaq 雙創歷史新高，10Y 殖利率 -7bps 至 4.60%。利好成長股 / AI 晶片板塊；長期經濟走軟隱憂仍需追蹤。",
+      "tickers": ["2330", "NVDA", "TSM", "2454", "AAPL", "TSLA"],
+      "url": "https://qz.com/us-payrolls-july-2026-jobs-report-080726",
+      "source": "Quartz / CNBC"
+    },
+    {
+      "alert_id": "alt-nvda-aug26-earnings-catalyst",
+      "level": "info",
+      "text": "NVDA Q2 FY27 財報 8/26 盤後公布（距今 16 日）：指引 $91.0B（±2%）；Blackwell GB300 出貨份額超越 GB200，四大 CSP 合計資本支出 $7,000 億。財報前 AI 晶片板塊估值有提前布局窗口，台積電 + 聯發科同步受益。",
+      "tickers": ["NVDA", "2330", "TSM", "2454"],
+      "url": "https://www.financecalendar.com/event/nvda-earnings-august-2026/",
+      "source": "Finance Calendar / SPGlobal"
+    },
+    {
+      "alert_id": "alt-nvda-chip-smuggling-china",
+      "level": "warning",
+      "text": "美方起訴 3 人共謀走私約 $25 億 Supermicro 伺服器（含受限 NVDA GPU）至中國，至少 $5.1 億已運抵。出口管制執法力度持續升級，NVDA + TSMC 相關 CoWoS 供應鏈需追蹤政策收緊風險。",
+      "tickers": ["NVDA", "2330", "TSM"],
+      "url": "https://sourceability.com/post/geopolitics-are-reshaping-semiconductor-supply-chain-risk-in-2026",
+      "source": "Sourceability / DOJ"
+    },
+    {
+      "alert_id": "alt-aapl-q4-guidance-miss",
+      "level": "warning",
+      "text": "蘋果 Q4 FY26 指引 9-11%（市場預期 12%）低預期；Q3 EPS beat 品質差（關稅退款貢獻 $0.11/股）；服務 + 中國均 miss；累計關稅成本 $200 億；iPhone 供應瓶頸非短期可解 → 鴻海 iPhone 旺季訂單能見度持續偏低。",
+      "tickers": ["AAPL", "2317"],
+      "url": "https://www.fxleaders.com/news/2026/07/30/apple-earnings-sends-aapl-stock-toward-300-as-weak-outlook-and-china-sales-trigger-selloff/",
+      "source": "FX Leaders"
+    },
+    {
+      "alert_id": "alt-amazon-aws-capex-raise",
+      "level": "info",
+      "text": "Amazon Q2 FY26：AWS +36.7%（第 5 連季加速），2026 全年資本支出上調至 $2,200 億（AI 算力基礎設施）；2027-2028 算力已被預訂 → 直接利好台積電 / NVDA Blackwell 訂單能見度；鴻海 AI 伺服器 ODM 同步受益。",
+      "tickers": ["2330", "NVDA", "TSM", "2317"],
+      "url": "https://www.cnbc.com/2026/08/06/stock-market-today-live-updates.html",
+      "source": "CNBC / Bloomberg"
+    },
+    {
+      "alert_id": "alt-iran-ceasefire-oil-drop",
+      "level": "info",
+      "text": "美伊談判繼續進行，WTI 原油維持 $80 區間；地緣風險溢價低位，全球 risk-on 維持；資料中心電力成本憂慮穩定，利好台積電 / NVDA。",
+      "tickers": ["2330", "NVDA", "TSM"],
+      "url": "https://www.thestreet.com/stock-market-today/stock-market-today-aug-3-2026-dow-futures-climb-as-oil-slides-on-renewed-iran-talks",
+      "source": "TheStreet"
+    }
+  ],
+  "sector_rotation": {
+    "strong": ["AI 晶片", "資料中心", "雲端基礎設施", "軟體 SaaS"],
+    "weak": ["消費電子 / iPhone 供應鏈", "能源", "銀行（殖利率下行壓縮淨息差）"],
+    "watch": ["AI 伺服器 ODM（鴻海）", "電動車（TSLA Robotaxi）", "半導體設備（出口管制風險）"]
+  },
+  "whats_changed": {
+    "compared_to": "股市-開盤前-20260804.md",
+    "compared_to_date": "2026-08-04",
+    "new": [
+      {
+        "type": "alert",
+        "summary": "七月非農就業 -23K 實現（事前警告已成事後結果），市場 risk-on，升息概率驟降",
+        "tickers": ["2330", "NVDA", "TSM", "2454"],
+        "alert_id": "alt-july-jobs-realized"
+      },
+      {
+        "type": "alert",
+        "summary": "美方起訴 $25 億 NVDA GPU 走私至中國案，出口管制執法升級",
+        "tickers": ["NVDA", "2330", "TSM"],
+        "alert_id": "alt-nvda-chip-smuggling-china"
+      }
+    ],
+    "strengthened": [
+      {
+        "type": "alert",
+        "summary": "NVDA 財報 8/26 距今縮短至 16 日，布局窗口更緊迫",
+        "tickers": ["NVDA", "2330", "TSM", "2454"],
+        "alert_id": "alt-nvda-aug26-earnings-catalyst"
+      }
+    ],
+    "removed": [
+      {
+        "type": "alert",
+        "summary": "七月非農報告（8/7）事前尾部風險警告已解除（數據已公布）",
+        "tickers": ["2330", "NVDA", "TSM", "2454", "AAPL", "TSLA"],
+        "alert_id": "alt-jobs-report-aug7"
+      },
+      {
+        "type": "alert",
+        "summary": "FOMC 鷹派持平 / 殖利率 4.22% 時代警告解除（殖利率已移動至 4.60% 後再次因就業下行 7bps）",
+        "tickers": ["NVDA", "2330", "TSM", "2454"],
+        "alert_id": "alt-fomc-hawkish-hold-3dissents"
+      }
+    ]
+  }
+}

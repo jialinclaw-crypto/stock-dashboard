@@ -1,0 +1,369 @@
+{
+  "schema_version": "v3",
+  "type": "weekly",
+  "generated_at": "2026-08-15T09:10:00+08:00",
+  "expires_at": "2026-08-22T09:00:00+08:00",
+  "report_period": {
+    "from": "2026-08-11",
+    "to": "2026-08-15",
+    "label": "2026年第33週"
+  },
+  "market_summary": {
+    "taiex": {
+      "close": 45750,
+      "weekly_change_pct": 1.5,
+      "note": "週四盤中高點 45,811；週五小幅整理估收 45,750"
+    },
+    "sp500": {
+      "close": 7785,
+      "weekly_change_pct": 1.2,
+      "note": "週四創 ATH 7,799，週五微幅回落"
+    },
+    "nasdaq": {
+      "close": 26750,
+      "weekly_change_pct": 1.5,
+      "note": "連三週收紅"
+    },
+    "sox": {
+      "close": 12400,
+      "weekly_change_pct": 2.5,
+      "note": "週一收 12,098；AI 晶片需求推升"
+    },
+    "vix": 15.28,
+    "us10y_yield": 4.65,
+    "dxy": 99.83
+  },
+  "stocks": [
+    {
+      "signal_id": "stk-2330-2026-08-15-weekly",
+      "ticker": "2330",
+      "name": "台積電",
+      "market": "TW",
+      "price": 2435,
+      "currency": "TWD",
+      "prev_week_price": 2425,
+      "weekly_change_pct": 0.4,
+      "direction": "bullish",
+      "confidence": 0.78,
+      "rationale": "站穩 2,430 窄幅整理，技術面健康，三線多排。TSMC-Sony 合資計畫強化護城河，外資目標 3,100 不變。CoWoS 全球唯一，NVDA 財報是最直接催化劑。2,380（20MA）是強力支撐。",
+      "key_support": 2380,
+      "key_resistance": 2500,
+      "ma20": 2380,
+      "ma60": 2420,
+      "ma200": 2180,
+      "weekly_rsi": 62,
+      "sources": [
+        "https://www.twse.com.tw/exchangeReport/STOCK_DAY?response=html&stockNo=2330",
+        "https://tw.stock.yahoo.com/quote/2330.TW/technical-analysis",
+        "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2330"
+      ],
+      "expires_at": "2026-08-22T09:00:00+08:00"
+    },
+    {
+      "signal_id": "stk-2454-2026-08-15-weekly",
+      "ticker": "2454",
+      "name": "聯發科",
+      "market": "TW",
+      "price": 4210,
+      "currency": "TWD",
+      "prev_week_price": 3920,
+      "weekly_change_pct": 5.3,
+      "direction": "bullish",
+      "confidence": 0.82,
+      "rationale": "本週最強個股，+5.3%，自八月初累計 +18.4%。Q2 法說超預期（1,522億創五季新高），AI ASIC 下半年量產確認，外資持續上調目標。RSI 68 接近超買，若 NVDA 財報不如預期可能短線獲利了結，4,000 是第一防線。中期多頭格局強。",
+      "key_support": 4000,
+      "key_resistance": 4500,
+      "ma20": 3800,
+      "ma60": 3500,
+      "ma200": 3200,
+      "weekly_rsi": 68,
+      "sources": [
+        "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2454",
+        "https://tw.stock.yahoo.com/quote/2454.TW",
+        "https://www.cnyes.com/twstock/ps_historyprice.aspx?code=2454"
+      ],
+      "expires_at": "2026-08-22T09:00:00+08:00"
+    },
+    {
+      "signal_id": "stk-2317-2026-08-15-weekly",
+      "ticker": "2317",
+      "name": "鴻海",
+      "market": "TW",
+      "price": 262,
+      "currency": "TWD",
+      "prev_week_price": 255,
+      "weekly_change_pct": 2.7,
+      "direction": "neutral",
+      "confidence": 0.55,
+      "rationale": "緩步回升站回均線之上，技術修復中。GB300/GB500 CoWoS 訂單量產細節仍待確認，NVDA 財報是關鍵觸媒。RSI 58 中性偏多，275 突破前觀望。",
+      "key_support": 250,
+      "key_resistance": 275,
+      "ma20": 250,
+      "ma60": 255,
+      "ma200": 235,
+      "weekly_rsi": 58,
+      "sources": [
+        "https://goodinfo.tw/tw2/ShowK_Chart.asp?STOCK_ID=2317&CHT_CAT=DATE",
+        "https://histock.tw/stock/2317"
+      ],
+      "expires_at": "2026-08-22T09:00:00+08:00"
+    },
+    {
+      "signal_id": "stk-NVDA-2026-08-15-weekly",
+      "ticker": "NVDA",
+      "name": "輝達",
+      "market": "US",
+      "price": 225.3,
+      "currency": "USD",
+      "prev_week_price": 210,
+      "weekly_change_pct": 7.1,
+      "direction": "bullish",
+      "confidence": 0.75,
+      "rationale": "本週大漲 +7%，進入 8/26 財報前敏感窗口。AMD 先行驗證強勁 AI 需求，市場預期 Q2 EPS $2.07（年增 +100%），營收 $91-95B。Blackwell 持續量產，四大雲端商資本支出 $720-745B 確認。Risk: 估值高（35x FY2027），Buy the rumor 風險，財報前不追高。",
+      "key_support": 210,
+      "key_resistance": 250,
+      "ma20": 210,
+      "ma60": 200,
+      "ma200": 180,
+      "weekly_rsi": 65,
+      "sources": [
+        "https://intellectia.ai/blog/nvidia-earnings-preview-august-2026",
+        "https://www.benzinga.com/crypto/cryptocurrency/26/08/61132379/nvidia-q2-earnings-august-2026-nvda-250-prediction-market",
+        "https://seekingalpha.com/article/4930651-nvidia-earnings-amds-results-point-to-massive-ai-demand-preview"
+      ],
+      "expires_at": "2026-08-22T09:00:00+08:00"
+    },
+    {
+      "signal_id": "stk-TSLA-2026-08-15-weekly",
+      "ticker": "TSLA",
+      "name": "特斯拉",
+      "market": "US",
+      "price": 342,
+      "currency": "USD",
+      "prev_week_price": 330,
+      "weekly_change_pct": 3.6,
+      "direction": "neutral",
+      "confidence": 0.52,
+      "rationale": "從 RSI 28 極度超賣反彈，本週 +3.6%，自低點累計回升 +11%。技術修復而非趨勢反轉——股價仍在 20MA $360 以下，RSI 40 仍偏空。若 NVDA 財報點燃科技全面走強可受惠；若 Warsh 鷹派則高估值受壓。保守評估中性。",
+      "key_support": 320,
+      "key_resistance": 380,
+      "ma20": 360,
+      "ma60": 380,
+      "ma200": 300,
+      "weekly_rsi": 40,
+      "sources": [
+        "https://finance.yahoo.com/quote/TSLA/",
+        "https://www.youtube.com/watch?v=ie6nDdz9EPY"
+      ],
+      "expires_at": "2026-08-22T09:00:00+08:00"
+    },
+    {
+      "signal_id": "stk-AAPL-2026-08-15-weekly",
+      "ticker": "AAPL",
+      "name": "蘋果",
+      "market": "US",
+      "price": 305,
+      "currency": "USD",
+      "prev_week_price": 312,
+      "weekly_change_pct": -2.2,
+      "direction": "bearish",
+      "confidence": 0.72,
+      "rationale": "後財報持續下跌，自七月底財報已跌逾 10%。三重利空：(1) DRAM/NAND 記憶體成本暴衝壓縮毛利；(2) 服務收入 $30.7B 低於預期；(3) Jefferies 下調至 Underperform，全玻璃 iPhone 計畫取消，目標價 $264。RSI 38 接近超賣但無止跌訊號，$295-300（200MA）是關鍵支撐。不接刀，等超賣反彈確認。",
+      "key_support": 295,
+      "key_resistance": 320,
+      "ma20": 320,
+      "ma60": 340,
+      "ma200": 270,
+      "weekly_rsi": 38,
+      "sources": [
+        "https://finance.yahoo.com/markets/stocks/articles/apple-stock-falls-again-four-204149277.html",
+        "https://finance.yahoo.com/video/apple-downgraded-jefferies-over-iphone-202918014.html",
+        "https://macdailynews.com/2026/08/13/apples-5-post-earnings-slide-looks-familiar-history-points-to-a-rebound/"
+      ],
+      "expires_at": "2026-08-22T09:00:00+08:00"
+    },
+    {
+      "signal_id": "stk-TSM-2026-08-15-weekly",
+      "ticker": "TSM",
+      "name": "台積電ADR",
+      "market": "US",
+      "price": 430.49,
+      "currency": "USD",
+      "prev_week_price": 420,
+      "weekly_change_pct": 2.5,
+      "direction": "bullish",
+      "confidence": 0.8,
+      "rationale": "技術格局最為健康，三線多排，RSI 63。延續多頭走勢，受惠 AI capex 超週期——CoWoS 全球唯一、2nm 推進順利。$415（20MA）是強力支撐。NVDA 財報是近期最直接催化劑。",
+      "key_support": 415,
+      "key_resistance": 450,
+      "ma20": 415,
+      "ma60": 420,
+      "ma200": 360,
+      "weekly_rsi": 63,
+      "sources": [
+        "https://finance.yahoo.com/quote/TSM/",
+        "https://tw.tradingview.com/chart/TSM/9xGKqWMP-TSM-approaching-strong-support"
+      ],
+      "expires_at": "2026-08-22T09:00:00+08:00"
+    }
+  ],
+  "alerts": [
+    {
+      "alert_id": "alert-nvda-earnings-20260826",
+      "level": "high",
+      "title": "NVDA Q2 FY2027 財報（8/26 收盤後）",
+      "body": "市場預期 EPS $2.07（+100% YoY）、營收 $91-95B（+96%）。結果牽動 AI 全供應鏈——台積電 CoWoS、聯發科 ASIC、鴻海 AI 伺服器全部受影響。若超預期，SOX 有望突破 13,000；若符合預期但無驚喜，Buy-the-rumor 賣壓可能出現。",
+      "direction": "watch",
+      "url": "https://www.financecalendar.com/event/nvda-earnings-august-2026/",
+      "source": "FinanceCalendar / Benzinga",
+      "expires_at": "2026-08-26T23:59:59+08:00"
+    },
+    {
+      "alert_id": "alert-jackson-hole-20260827",
+      "level": "high",
+      "title": "Jackson Hole 央行年會（8/27-29）：Warsh 新主席首秀",
+      "body": "新任 Fed 主席 Kevin Warsh 於 8/28（週五）早上發表首次重量級政策演說，主題「金融創新：支付與政策影響」。Warsh 風格傾向鷹派，若釋出意外緊縮訊號，10Y 殖利率可能快速拉升至 4.9%+，壓縮高估值科技股。這是 2026 下半年最重要的宏觀事件之一。",
+      "direction": "watch",
+      "url": "https://www.regardsofwallstreet.com/news/jackson-hole-2026-dates-schedule-warsh-first-speech",
+      "source": "Regards of Wallstreet / FinanceCalendar",
+      "expires_at": "2026-08-29T23:59:59+08:00"
+    },
+    {
+      "alert_id": "alert-aapl-weakness-20260815",
+      "level": "medium",
+      "title": "AAPL 後財報持續走弱，關注 $295 支撐",
+      "body": "蘋果自財報後已跌逾 10%，Jefferies 下調至 Underperform（目標 $264），全玻璃 iPhone 取消、記憶體成本、服務收入三連炸。Apple 概念股（組裝、鏡頭）台股面臨壓力。$295-300（200MA）是關鍵支撐，若跌破將引發進一步恐慌賣壓。",
+      "direction": "bearish",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/apple-stock-falls-again-four-204149277.html",
+      "source": "Yahoo Finance / FastCompany / MacDaily News",
+      "expires_at": "2026-08-22T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-taiex-46000-20260815",
+      "level": "medium",
+      "title": "台股挑戰 46,000 關卡，觀察外資動向",
+      "body": "台股加權指數本週收盤預估 45,600-45,750，距離 46,000 整數關一步之遙。VIX 15 低位代表市場信心強，但也意味一旦 NVDA 財報 or Jackson Hole 有任何負面意外，波動會急速放大。外資買超延續性是關鍵。",
+      "direction": "bullish",
+      "url": "https://news.cnyes.com/news/id/6480462",
+      "source": "鉅亨網",
+      "expires_at": "2026-08-22T09:00:00+08:00"
+    }
+  ],
+  "whats_changed": {
+    "direction_changes": [
+      {
+        "ticker": "NVDA",
+        "name": "輝達",
+        "prev_direction": "neutral",
+        "curr_direction": "bullish",
+        "prev_price": 195.04,
+        "curr_price": 225.3,
+        "note": "neutral → bullish"
+      },
+      {
+        "ticker": "TSLA",
+        "name": "特斯拉",
+        "prev_direction": "bearish",
+        "curr_direction": "neutral",
+        "prev_price": 307.44,
+        "curr_price": 342,
+        "note": "bearish → neutral"
+      }
+    ],
+    "price_changes": [
+      {
+        "ticker": "2454",
+        "name": "聯發科",
+        "prev_price": 3555,
+        "curr_price": 4210,
+        "change_pct": 18.42
+      },
+      {
+        "ticker": "NVDA",
+        "name": "輝達",
+        "prev_price": 195.04,
+        "curr_price": 225.3,
+        "change_pct": 15.51
+      },
+      {
+        "ticker": "TSLA",
+        "name": "特斯拉",
+        "prev_price": 307.44,
+        "curr_price": 342,
+        "change_pct": 11.24
+      },
+      {
+        "ticker": "AAPL",
+        "name": "蘋果",
+        "prev_price": 333.43,
+        "curr_price": 305,
+        "change_pct": -8.53
+      },
+      {
+        "ticker": "TSM",
+        "name": "台積電ADR",
+        "prev_price": 403.31,
+        "curr_price": 430.49,
+        "change_pct": 6.74
+      }
+    ],
+    "new_alerts": [
+      {
+        "alert_id": "alert-jackson-hole-20260827",
+        "title": "Jackson Hole 央行年會（8/27-29）：Warsh 新主席首秀",
+        "level": "high"
+      },
+      {
+        "alert_id": "alert-aapl-weakness-20260815",
+        "title": "AAPL 後財報持續走弱，關注 $295 支撐",
+        "level": "medium"
+      },
+      {
+        "alert_id": "alert-nvda-earnings-20260826",
+        "title": "NVDA Q2 FY2027 財報（8/26 收盤後）",
+        "level": "high"
+      },
+      {
+        "alert_id": "alert-taiex-46000-20260815",
+        "title": "台股挑戰 46,000 關卡，觀察外資動向",
+        "level": "medium"
+      }
+    ],
+    "removed_alerts": [
+      {
+        "alert_id": "alert-FOMC-sep-hike-risk-20260801",
+        "title": "FOMC 9月升息尾部風險（概率40%）",
+        "reason": "expired_or_resolved"
+      },
+      {
+        "alert_id": "alert-NVDA-earnings-Aug26-20260801",
+        "title": "NVDA 財報倒計時：8/26 Q2 FY2027",
+        "reason": "expired_or_resolved"
+      },
+      {
+        "alert_id": "alert-AI-capex-supercycle-confirmed-20260801",
+        "title": "AI 資本支出超級週期驗證（$720-745B 四大超級雲端商）",
+        "reason": "expired_or_resolved"
+      },
+      {
+        "alert_id": "alert-brent-oil-100-inflation-20260801",
+        "title": "Brent 原油突破 $100，通膨二次壓力",
+        "reason": "expired_or_resolved"
+      },
+      {
+        "alert_id": "alert-AAPL-services-china-miss-20260801",
+        "title": "AAPL 財報後 -7%：服務/中國雙弱",
+        "reason": "expired_or_resolved"
+      },
+      {
+        "alert_id": "alert-TSLA-Q2-crash-bearish-20260801",
+        "title": "TSLA Q2 爆雷 + 月跌 26%，持續看空",
+        "reason": "expired_or_resolved"
+      }
+    ],
+    "level_escalations": [],
+    "summary": "方向改變：NVDA neutral→bullish、TSLA bearish→neutral；大幅波動：2454 +18.42%、NVDA +15.51%、TSLA +11.24%、AAPL -8.53%、TSM +6.74%；新增 4 個警示；解除 6 個舊警示",
+    "compared_to": "reports/股市-週報-20260801.json",
+    "compared_date": "2026-08-01"
+  }
+}

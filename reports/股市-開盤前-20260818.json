@@ -1,0 +1,391 @@
+{
+  "_schema_version": 3,
+  "type": "morning",
+  "report_file": "股市-開盤前-20260818.md",
+  "date": "2026-08-18",
+  "weekday": "週二",
+  "generated_at": "2026-08-18T07:34:42+08:00",
+  "market_view": {
+    "level": "neutral",
+    "confidence": 0.58,
+    "headline": "美股8/17三大指數跌0.3-0.5%但SOX逆勢走強(+0.2%收12,417)；伊朗60天停火到期無協議，WTI $82.39(+1.5%)、US10Y 4.692%持高位；DXY 99.63走弱為台股帶來外資回流條件；台積電8/17已跌破2,400收NT$2,395，8/18關鍵觀察：TSMC隨美晶片股反彈？外資是否進場？NVDA 8/26法說前置布局期"
+  },
+  "indices": [
+    {
+      "name": "道瓊工業",
+      "ticker": "DJI",
+      "value": 53459.78,
+      "change_pct": -0.51,
+      "trend": "bearish",
+      "note": "8/17 -272.63pts；伊朗停火到期無協議，能源/原物料撐盤，科技拖累"
+    },
+    {
+      "name": "S&P 500",
+      "ticker": "SPX",
+      "value": 7745.06,
+      "change_pct": -0.52,
+      "trend": "bearish",
+      "note": "8/17 多數股票下跌，半導體為少數上漲板塊"
+    },
+    {
+      "name": "Nasdaq 綜合",
+      "ticker": "COMP",
+      "value": 26644.91,
+      "change_pct": -0.32,
+      "trend": "bearish",
+      "note": "8/17 大型科技混沌，半導體相對抗跌"
+    },
+    {
+      "name": "費城半導體",
+      "ticker": "SOX",
+      "value": 12417.0,
+      "change_pct": 0.20,
+      "trend": "bullish",
+      "note": "8/17 逆勢走強；NVDA 法說前布局、AI 需求信心支撐"
+    },
+    {
+      "name": "VIX 恐慌指數",
+      "ticker": "VIX",
+      "value": 14.25,
+      "change_pct": -2.60,
+      "trend": "bullish",
+      "note": "8/17 收 14.25（-0.38）；市場雖跌但非恐慌性拋售"
+    },
+    {
+      "name": "美 10Y 殖利率",
+      "ticker": "US10Y",
+      "value": 4.692,
+      "change_pct": null,
+      "trend": "bearish",
+      "note": "8/17 +4bps 至 4.692%；油價升溫通脹預期，殖利率小升"
+    },
+    {
+      "name": "WTI 原油",
+      "ticker": "WTI",
+      "value": 82.39,
+      "change_pct": 1.50,
+      "trend": "bearish",
+      "note": "8/17 伊朗停火到期無協議，供給風險再現；WTI $82.39"
+    },
+    {
+      "name": "美元指數",
+      "ticker": "DXY",
+      "value": 99.63,
+      "change_pct": -0.31,
+      "trend": "bullish",
+      "note": "8/17 收 99.63（-0.31%）；美元走弱，有利外資回流台股"
+    }
+  ],
+  "stocks": [
+    {
+      "signal_id": "stk-2330-2026-08-18-morning",
+      "ticker": "2330",
+      "name": "台積電",
+      "market": "TW",
+      "signal": "🔴",
+      "direction": "bearish",
+      "confidence": 0.62,
+      "view": "8/17 跌破 2,400 關口收 NT$2,395(-1.64%)；技術面轉弱。但 SOX +0.2%、TSM ADR $426.35，外部訊號稍正面；8/18 觀察量能能否支撐反彈收復 2,440",
+      "rationale": "跌破關鍵支撐2,400，技術空頭；SOX逆強提供反彈機會但需量能確認",
+      "price": 2395,
+      "change_pct": -1.64,
+      "support": 2380,
+      "resistance": 2440,
+      "stop_loss": 2350,
+      "target": 2480,
+      "technicals": {
+        "rsi14": 43,
+        "macd": "偏空交叉",
+        "ma_alignment": "空頭排列"
+      },
+      "valuation": {
+        "pe": 28.0,
+        "pe_percentile_5y": 55,
+        "verdict": "合理，但高利率環境有壓"
+      },
+      "sources": [
+        "https://finance.biggo.com/news/8e3990ab-b39f-438b-adaa-f968123c7d0e",
+        "https://finance.yahoo.com/quote/TSM/"
+      ],
+      "expires_at": "2026-08-18T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-2454-2026-08-18-morning",
+      "ticker": "2454",
+      "name": "聯發科",
+      "market": "TW",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.55,
+      "view": "8/17 收 NT$4,210(-0.35%)，跌幅遠小於大盤，AI Edge SoC 需求支撐；NVDA 法說前半導體族群有布局動機，聯發科為潛在受惠標的",
+      "rationale": "相對抗跌，AI Edge SoC題材支撐；NVDA法說前可能帶動半導體輪漲",
+      "price": 4210,
+      "change_pct": -0.35,
+      "support": 4150,
+      "resistance": 4280,
+      "stop_loss": 4100,
+      "target": 4350,
+      "technicals": {
+        "rsi14": 48,
+        "macd": "中性整理",
+        "ma_alignment": "短期整理"
+      },
+      "valuation": {
+        "pe": 25.0,
+        "pe_percentile_5y": 50,
+        "verdict": "合理估值"
+      },
+      "sources": [
+        "https://finance.biggo.com/news/8e3990ab-b39f-438b-adaa-f968123c7d0e"
+      ],
+      "expires_at": "2026-08-18T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-2317-2026-08-18-morning",
+      "ticker": "2317",
+      "name": "鴻海",
+      "market": "TW",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.50,
+      "view": "8/17 收 NT$259.5(-0.96%)；AI 伺服器接單題材支撐基本面，但技術面偏弱。NVDA 法說前 AI 伺服器鏈有布局動機",
+      "rationale": "AI伺服器接單支撐基本面，技術面偏弱但有NVDA法說前題材支撐",
+      "price": 259.5,
+      "change_pct": -0.96,
+      "support": 255,
+      "resistance": 265,
+      "stop_loss": 252,
+      "target": 270,
+      "technicals": {
+        "rsi14": 42,
+        "macd": "偏空",
+        "ma_alignment": "均線偏弱"
+      },
+      "valuation": {
+        "pe": 15.0,
+        "pe_percentile_5y": 40,
+        "verdict": "相對便宜"
+      },
+      "sources": [
+        "https://finance.biggo.com/news/8e3990ab-b39f-438b-adaa-f968123c7d0e"
+      ],
+      "expires_at": "2026-08-18T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-NVDA-2026-08-18-morning",
+      "ticker": "NVDA",
+      "name": "輝達",
+      "market": "US",
+      "signal": "🟢",
+      "direction": "bullish",
+      "confidence": 0.70,
+      "view": "8/17 收 $225.06（日內 224.60-227.92），晶片股逆勢走強；8/26 法說日為最大催化劑，市場估 Q2 FY27 營收 $28.7B+（+50% YoY），黑瓦特架構需求強勁",
+      "rationale": "半導體族群逆勢走強+8/26法說前布局動機；AI基礎建設需求維持高能見度",
+      "price": 225.06,
+      "change_pct": 0.18,
+      "support": 220,
+      "resistance": 232,
+      "stop_loss": 218,
+      "target": 238,
+      "technicals": {
+        "rsi14": 54,
+        "macd": "偏多轉正",
+        "ma_alignment": "短期均線走強"
+      },
+      "valuation": {
+        "pe": 45.0,
+        "pe_percentile_5y": 70,
+        "verdict": "AI成長溢價合理，但高估值需法說護盤"
+      },
+      "sources": [
+        "https://intellectia.ai/blog/nvda-earnings-august-26-2026",
+        "https://247wallst.com/investing/2026/08/13/3-semiconductor-stocks-to-buy-before-the-next-ai-earnings-wave-in-august/",
+        "https://finance.yahoo.com/quote/NVDA/"
+      ],
+      "expires_at": "2026-08-18T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-TSLA-2026-08-18-morning",
+      "ticker": "TSLA",
+      "name": "特斯拉",
+      "market": "US",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.48,
+      "view": "近期收盤約 $340 附近；EV 競爭激烈，Optimus 機器人為長期期待但近期無重大催化劑。市場整體承壓下偏整理格局",
+      "rationale": "無近期催化劑，EV競爭激烈；Optimus機器人題材為長期看點但短期難推動",
+      "price": 340,
+      "change_pct": null,
+      "support": 328,
+      "resistance": 355,
+      "stop_loss": 323,
+      "target": 362,
+      "technicals": {
+        "rsi14": 46,
+        "macd": "中性整理",
+        "ma_alignment": "整理格局"
+      },
+      "valuation": {
+        "pe": 70.0,
+        "pe_percentile_5y": 65,
+        "verdict": "機器人期待值為估值主要支撐"
+      },
+      "sources": [
+        "https://finance.yahoo.com/quote/TSLA/"
+      ],
+      "expires_at": "2026-08-18T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-AAPL-2026-08-18-morning",
+      "ticker": "AAPL",
+      "name": "蘋果",
+      "market": "US",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.55,
+      "view": "8/17 收 $305.24（日內 302.94-307.66，量縮 38M vs 均量 46M）；Rothschild Redburn 升評至買進，目標 $260→$400（+53.8%），Apple Intelligence 換機週期題材；量縮顯示市場接受度尚未完全轉化為買盤",
+      "rationale": "分析師大幅升評至$400提供基本面支撐，但量縮且大盤承壓，短期上行需觀察",
+      "price": 305.24,
+      "change_pct": -0.22,
+      "support": 298,
+      "resistance": 315,
+      "stop_loss": 295,
+      "target": 330,
+      "technicals": {
+        "rsi14": 52,
+        "macd": "中性偏多",
+        "ma_alignment": "短期整理"
+      },
+      "valuation": {
+        "pe": 35.07,
+        "pe_percentile_5y": 60,
+        "verdict": "合理；分析師目標$400暗示顯著上行空間"
+      },
+      "sources": [
+        "https://www.benzinga.com/trading-ideas/movers/26/08/61259595/could-apple-stock-be-headed-to-400",
+        "https://finance.yahoo.com/quote/AAPL/"
+      ],
+      "expires_at": "2026-08-18T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-TSM-2026-08-18-morning",
+      "ticker": "TSM",
+      "name": "台積電ADR",
+      "market": "US",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.52,
+      "view": "8/17 收 $426.35；本島 TSMC 跌破 2,400（NT$2,395），ADR 相對抗跌，反映外資看法略較樂觀；SOX 逆強為支撐；追蹤 8/18 台灣盤動向",
+      "rationale": "ADR相對本島抗跌，外資較樂觀；但本島跌破2,400仍為短期負面信號",
+      "price": 426.35,
+      "change_pct": -0.80,
+      "support": 415,
+      "resistance": 435,
+      "stop_loss": 410,
+      "target": 445,
+      "technicals": {
+        "rsi14": 45,
+        "macd": "中性",
+        "ma_alignment": "追蹤本島走勢"
+      },
+      "valuation": {
+        "pe": 28.0,
+        "pe_percentile_5y": 55,
+        "verdict": "合理，ADR溢價因外資信心"
+      },
+      "sources": [
+        "https://finance.yahoo.com/quote/TSM/"
+      ],
+      "expires_at": "2026-08-18T13:30:00+08:00"
+    }
+  ],
+  "alerts": [
+    {
+      "alert_id": "alt-iran-ceasefire-expiry",
+      "level": "warning",
+      "text": "美伊60天停火8/17到期、無協議，伊朗官員警告將採攻勢；荷莫茲海峽封鎖風險重現，Brent $91/WTI $82.39，油價通脹壓力對Fed降息預期構成威脅",
+      "tickers": ["2330", "2317", "NVDA", "TSLA"],
+      "url": "https://www.cnbc.com/2026/08/16/stock-market-today-live-updates-.html",
+      "source": "CNBC / Reuters"
+    },
+    {
+      "alert_id": "alt-nvda-earnings-aug26",
+      "level": "info",
+      "text": "NVDA 8/26（法說後市場）Q2 FY27 財報：分析師估營收$28.7B（+50% YoY），黑瓦特架構AI基礎建設需求維持高水位；半導體族群有1週布局窗口",
+      "tickers": ["NVDA", "TSM", "2330", "2454", "2317"],
+      "url": "https://intellectia.ai/blog/nvda-earnings-august-26-2026",
+      "source": "Intellectia.ai / FinanceCalendar"
+    },
+    {
+      "alert_id": "alt-aapl-redburn-upgrade",
+      "level": "info",
+      "text": "Rothschild Redburn 分析師 James Cordwell 升評 AAPL 至買進，目標從$260上調至$400（+53.8%），認為 Apple Intelligence 帶動超級換機週期",
+      "tickers": ["AAPL"],
+      "url": "https://www.benzinga.com/trading-ideas/movers/26/08/61259595/could-apple-stock-be-headed-to-400",
+      "source": "Benzinga / Rothschild Redburn"
+    },
+    {
+      "alert_id": "alt-empire-state-manufacturing",
+      "level": "info",
+      "text": "8月紐約 Empire State 製造業指數 20.6，創四年最高；製造業動能強勁但強化 Fed 晚降息預期，利率環境對高PE科技股不利",
+      "tickers": [],
+      "url": "https://www.cnbc.com/2026/08/16/stock-market-today-live-updates-.html",
+      "source": "CNBC / NY Fed"
+    }
+  ],
+  "sector_rotation": {
+    "strong": ["能源", "原物料", "製造業"],
+    "weak": ["大型科技", "消費性電子（量縮）", "台灣半導體（跟跌）"],
+    "watch": ["美國半導體（逆勢強，NVDA法說前）", "台股外資動向（DXY走弱）"]
+  },
+  "whats_changed": {
+    "compared_to": "股市-開盤前-20260812.md",
+    "compared_to_date": "2026-08-12",
+    "new": [
+      {
+        "type": "alert",
+        "summary": "AAPL Rothschild Redburn 分析師大幅升評至買進、目標$400（新事件，8/12後發生）",
+        "tickers": ["AAPL"],
+        "ticker": "",
+        "from": "",
+        "to": ""
+      },
+      {
+        "type": "alert",
+        "summary": "NVDA 8/26 法說日進入 1 週倒計時，布局窗口明確（8/12 尚無此緊迫性）",
+        "tickers": ["NVDA", "2330", "2454", "2317"],
+        "ticker": "",
+        "from": "",
+        "to": ""
+      }
+    ],
+    "strengthened": [
+      {
+        "type": "alert",
+        "summary": "Iran 地緣風險由「荷莫茲確認封閉」升級為「60天停火到期、無協議、伊朗威脅採攻勢」，風險等級上升",
+        "tickers": ["2330", "2317"],
+        "ticker": "",
+        "from": "alt-iran-hormuz（荷莫茲封閉）",
+        "to": "alt-iran-ceasefire-expiry（停火到期、重啟風險）"
+      },
+      {
+        "type": "stock_direction",
+        "summary": "SOX 從 8/12 低點 11,994 回升至 12,417（+3.5%），美半導體族群信心回復；台積電ADR相對本島抗跌",
+        "tickers": ["NVDA", "TSM"],
+        "ticker": "SOX",
+        "from": "SOX 11,994（8/12）",
+        "to": "SOX 12,417（8/17）"
+      }
+    ],
+    "removed": [
+      {
+        "type": "alert",
+        "summary": "WTI 急漲 +5% 油價衝擊警報（8/12 WTI +5%衝擊性事件）已平息，油價目前穩定在$82附近（+1.5%，非急漲）",
+        "tickers": [],
+        "ticker": "",
+        "from": "WTI 急漲 +5% 至$82.13（8/11衝擊事件）",
+        "to": ""
+      }
+    ]
+  }
+}

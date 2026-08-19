@@ -1,0 +1,506 @@
+{
+  "_schema_version": 3,
+  "type": "morning",
+  "report_file": "股市-開盤前-20260820.md",
+  "date": "2026-08-20",
+  "weekday": "週四",
+  "generated_at": "2026-08-20T07:35:14+08:00",
+  "market_view": {
+    "level": "cautiously_bullish",
+    "confidence": 0.55,
+    "headline": "美股8/19三大指數全面回升(+0.25~+0.43%)，財政部倍增長債回購令殖利率從4.692%降至4.70%；但SOX費半仍-0.8%、記憶體股持續弱勢。台股8/19大跌589點失守季線，8/20在ADR支撐下可望小幅反彈，NVDA 8/26法說為最大催化劑"
+  },
+  "indices": [
+    {
+      "name": "道瓊工業",
+      "ticker": "DJI",
+      "value": 42850,
+      "change_pct": 0.25,
+      "trend": "bullish",
+      "note": "8/19 財政部倍增長債回購提振信心，週期股/健康護理領漲"
+    },
+    {
+      "name": "S&P 500",
+      "ticker": "SPX",
+      "value": 7748,
+      "change_pct": 0.43,
+      "trend": "bullish",
+      "note": "8/19 連三日跌後反彈，多數股票上漲但科技/晶片板塊承壓"
+    },
+    {
+      "name": "Nasdaq 綜合",
+      "ticker": "COMP",
+      "value": 26751,
+      "change_pct": 0.4,
+      "trend": "bullish",
+      "note": "8/19 大型科技微幅回升，TSLA拉抬科技板塊表現"
+    },
+    {
+      "name": "費城半導體",
+      "ticker": "SOX",
+      "value": 11820,
+      "change_pct": -0.8,
+      "trend": "bearish",
+      "note": "8/19 記憶體股(MU/WDC)繼續承壓，SK Hynix回購計畫稍緩情緒，費半仍收黑"
+    },
+    {
+      "name": "VIX 恐慌指數",
+      "ticker": "VIX",
+      "value": 15.05,
+      "change_pct": -5.0,
+      "trend": "bullish",
+      "note": "8/19 VIX急降至15.05，市場情緒明顯修復，財政部行動降低系統性風險"
+    },
+    {
+      "name": "美 10Y 殖利率",
+      "ticker": "US10Y",
+      "value": 4.7,
+      "change_pct": null,
+      "trend": "bullish",
+      "note": "8/19 從4.692%回落至4.70%；財政部回購壓低長端，但Fed鷹派紀錄限制降幅"
+    },
+    {
+      "name": "WTI 原油",
+      "ticker": "WTI",
+      "value": 82.5,
+      "change_pct": 0.1,
+      "trend": "neutral",
+      "note": "8/19 伊朗停火談判仍僵持，油價維持高位，通膨預期風險持續"
+    },
+    {
+      "name": "美元指數",
+      "ticker": "DXY",
+      "value": 99.66,
+      "change_pct": 0.0,
+      "trend": "bullish",
+      "note": "8/19 小幅走弱，外資回流台股的匯率條件改善"
+    },
+    {
+      "name": "台股加權指數",
+      "ticker": "TWII",
+      "value": 44719.35,
+      "change_pct": -1.3,
+      "trend": "bearish",
+      "note": "8/19 大跌589點，失守季線(44,811)及45K大關，電子股無力，三大法人合賣708億，台指期結算壓低"
+    }
+  ],
+  "stocks": [
+    {
+      "signal_id": "stk-2330-2026-08-20-morning",
+      "ticker": "2330",
+      "name": "台積電",
+      "market": "TW",
+      "signal": "🔴",
+      "direction": "bearish",
+      "confidence": 0.65,
+      "view": "8/19收NT$2,350(-30,-1.26%)，連兩日K黑失守季線。ADR TSM $412.27暗示現貨有支撐；8/19費半跌幅收斂至-0.8%，美股整體回升，8/20可測試反彈2,380-2,400。技術面短線空頭，但RSI~38接近超賣，關注外資是否轉買及量能能否縮減",
+      "rationale": "技術面空頭排列但RSI接近超賣；ADR未破前低提供潛在反彈基礎",
+      "price": 2350,
+      "change_pct": -1.26,
+      "support": 2320,
+      "resistance": 2400,
+      "stop_loss": 2260,
+      "target": 2480,
+      "technicals": {
+        "rsi14": 38,
+        "macd": "死叉擴張中，仍負值",
+        "ma_alignment": "空頭排列：MA20>MA60>現價"
+      },
+      "valuation": {
+        "pe": 26,
+        "pe_percentile_5y": 35,
+        "verdict": "5年估值下緣，若2350成底具修復空間"
+      },
+      "sources": [
+        "https://finance.ettoday.net/news/3221922",
+        "https://tw.news.yahoo.com/%E5%8F%B0%E8%82%A1%E6%94%B6%E7%9B%A4%E8%B7%8C589%E9%BB%9E-%E5%A4%B1%E5%AE%88%E5%AD%A3%E7%B7%9A%E7%B4%8444811%E9%BB%9E-%E5%8F%B0%E7%A9%8D%E9%9B%BB%E8%B7%8C30%E5%85%83-010830635.html",
+        "https://news.cnyes.com/news/id/6581392"
+      ],
+      "expires_at": "2026-08-20T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-2454-2026-08-20-morning",
+      "ticker": "2454",
+      "name": "聯發科",
+      "market": "TW",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.52,
+      "view": "8/19收NT$3,845(-40,-1.03%)，跌幅相對溫和。手機/車用晶片需求穩定，3,800為關鍵支撐；若守住可逢低佈局。Q3法說前等待業績確認，短線中性偏弱",
+      "rationale": "跌幅溫和顯示基本面支撐；3800支撐關鍵，Q3業績為催化劑",
+      "price": 3845,
+      "change_pct": -1.03,
+      "support": 3800,
+      "resistance": 3950,
+      "stop_loss": 3650,
+      "target": 4050,
+      "technicals": {
+        "rsi14": 42,
+        "macd": "弱勢負乖離",
+        "ma_alignment": "短線空頭，長線多頭未破"
+      },
+      "valuation": {
+        "pe": 21,
+        "pe_percentile_5y": 45,
+        "verdict": "合理偏低，中長線具吸引力"
+      },
+      "sources": [
+        "https://udn.com/news/story/7251/9701129",
+        "https://news.cnyes.com/news/id/6581392"
+      ],
+      "expires_at": "2026-08-20T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-2317-2026-08-20-morning",
+      "ticker": "2317",
+      "name": "鴻海",
+      "market": "TW",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.48,
+      "view": "8/19電子股整體弱勢，鴻海估收約240元附近(-2.4%)。AI伺服器訂單題材持續，但需Q3財報確認業績。235為強支撐，若大盤反彈有補漲空間",
+      "rationale": "AI Server題材完整但需業績兌現；估值低位具安全邊際",
+      "price": 240,
+      "change_pct": -2.4,
+      "support": 235,
+      "resistance": 250,
+      "stop_loss": 225,
+      "target": 260,
+      "technicals": {
+        "rsi14": 47,
+        "macd": "平盤偏空",
+        "ma_alignment": "60日線關鍵支撐"
+      },
+      "valuation": {
+        "pe": 11,
+        "pe_percentile_5y": 20,
+        "verdict": "歷史低位，具安全邊際"
+      },
+      "sources": [
+        "https://udn.com/news/story/7251/9701129",
+        "https://finance.ettoday.net/news/3221922"
+      ],
+      "expires_at": "2026-08-20T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-NVDA-2026-08-20-morning",
+      "ticker": "NVDA",
+      "name": "輝達",
+      "market": "US",
+      "signal": "🟢",
+      "direction": "bullish",
+      "confidence": 0.7,
+      "view": "8/19收$219.00(-0.3%)，記憶體帶動晶片板塊小跌，但NVDA本身基本面強勁。8/26 Q2法說會是最大催化劑：預期Q2營收$93-95B、EPS $2.06，AI加速器市佔仍達80%。法說前偏震盪整理，法說後決定半導體板塊走向",
+      "rationale": "8/26法說超預期機率高；AI需求強勁，法說前震盪後催化上漲",
+      "price": 219.0,
+      "change_pct": -0.3,
+      "support": 210.0,
+      "resistance": 225.0,
+      "stop_loss": 195.0,
+      "target": 245.0,
+      "technicals": {
+        "rsi14": 55,
+        "macd": "弱多頭收斂",
+        "ma_alignment": "多頭，均線上揚"
+      },
+      "valuation": {
+        "pe": 35,
+        "pe_percentile_5y": 60,
+        "verdict": "Forward PE 35x，已計入高成長，法說需超預期才能拉升"
+      },
+      "sources": [
+        "https://intellectia.ai/blog/nvda-earnings-preview-august-2026",
+        "https://www.financecalendar.com/event/nvda-earnings-august-2026/",
+        "https://247wallst.com/investing/2026/08/13/3-semiconductor-stocks-to-buy-before-the-next-ai-earnings-wave-in-august/"
+      ],
+      "expires_at": "2026-08-20T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-TSLA-2026-08-20-morning",
+      "ticker": "TSLA",
+      "name": "特斯拉",
+      "market": "US",
+      "signal": "🟢",
+      "direction": "bullish",
+      "confidence": 0.68,
+      "view": "8/19大漲4.2%至$351.23，Austin Cybercab無線充電站許可+Einride 500輛Tesla Semi訂單雙催化。RSI 63，突破20/60日均線，短線動能強。下個催化劑：Cybercab試營運里程碑；止損$305",
+      "rationale": "Cybercab商業化加速+大型商業Semi訂單；技術面突破，動能強",
+      "price": 351.23,
+      "change_pct": 4.2,
+      "support": 330.0,
+      "resistance": 360.0,
+      "stop_loss": 305.0,
+      "target": 395.0,
+      "technicals": {
+        "rsi14": 63,
+        "macd": "金叉擴張中",
+        "ma_alignment": "強勢多頭，突破20/60日均線"
+      },
+      "valuation": {
+        "pe": 90,
+        "pe_percentile_5y": 70,
+        "verdict": "高估值但Robotaxi商業化可重新定義估值框架"
+      },
+      "sources": [
+        "https://markets.financialcontent.com/stocks/article/stockstory-2026-8-19-tesla-tsla-stock-is-up-what-you-need-to-know",
+        "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-aug-19-2026"
+      ],
+      "expires_at": "2026-08-20T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-AAPL-2026-08-20-morning",
+      "ticker": "AAPL",
+      "name": "蘋果",
+      "market": "US",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.55,
+      "view": "8/19收$310.03(持平)，科技股中相對抗跌。分析師目標均價$325.70，28買5賣，iPhone 18供應鏈穩定(鴻海/台積電)。Apple Intelligence功能展示為下一個看點；短線中性偏多",
+      "rationale": "基本面穩健、相對抗跌；iPhone 18超循環預期為中期催化劑",
+      "price": 310.03,
+      "change_pct": 0.0,
+      "support": 300.0,
+      "resistance": 320.0,
+      "stop_loss": 285.0,
+      "target": 335.0,
+      "technicals": {
+        "rsi14": 52,
+        "macd": "中性",
+        "ma_alignment": "多頭但走勢平緩"
+      },
+      "valuation": {
+        "pe": 29,
+        "pe_percentile_5y": 65,
+        "verdict": "合理偏高，需iPhone 18超循環驅動進一步上漲"
+      },
+      "sources": [
+        "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-aug-19-2026"
+      ],
+      "expires_at": "2026-08-20T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-TSM-2026-08-20-morning",
+      "ticker": "TSM",
+      "name": "台積電ADR",
+      "market": "US",
+      "signal": "🔴",
+      "direction": "bearish",
+      "confidence": 0.58,
+      "view": "8/19收$412.27(-0.3%)，與台積電現貨2350元連動，費半-0.8%壓力下相對穩定。$400為心理強支撐；NVDA 8/26法說為外部最大催化劑，超預期可帶動TSM回測$425-445",
+      "rationale": "跟隨台積電現貨空頭走勢；$400支撐強，NVDA法說為反彈催化劑",
+      "price": 412.27,
+      "change_pct": -0.3,
+      "support": 400.0,
+      "resistance": 425.0,
+      "stop_loss": 380.0,
+      "target": 450.0,
+      "technicals": {
+        "rsi14": 40,
+        "macd": "弱空、負乖離",
+        "ma_alignment": "跌破20日線"
+      },
+      "valuation": {
+        "pe": 22,
+        "pe_percentile_5y": 40,
+        "verdict": "合理，NVDA法說超預期可提升估值預期"
+      },
+      "sources": [
+        "https://finance.yahoo.com/quote/TSM/",
+        "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-aug-19-2026"
+      ],
+      "expires_at": "2026-08-20T13:30:00+08:00"
+    }
+  ],
+  "alerts": [
+    {
+      "alert_id": "alt-fed-hawkish-minutes",
+      "level": "warning",
+      "text": "Fed 7月會議紀錄偏鷹：多數委員認為若通膨未降溫、利率可能需進一步上調。殖利率雖短暫受財政部回購壓低，但結構性升息風險持續，壓抑外資回流台股意願",
+      "tickers": [
+        "2330",
+        "2454",
+        "NVDA",
+        "AAPL",
+        "TSM"
+      ],
+      "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262118019-us-stock-pre-market-fed-minutes-ai-chip-memory-stocks-mu-wdc-falling-tradingkey",
+      "source": "TradingKey / CNBC"
+    },
+    {
+      "alert_id": "alt-sox-memory-selloff",
+      "level": "warning",
+      "text": "SOX費半8/18重挫-4.9%（記憶體MU/WDC/AMD為重災區），是台股8/19電子股無力主因；8/19跌幅收斂至-0.8%但庫存修正壓力未解，台積電先進製程直接影響有限但市場情緒連動",
+      "tickers": [
+        "2330",
+        "2454",
+        "TSM",
+        "NVDA"
+      ],
+      "url": "https://finance.ettoday.net/news/3221922",
+      "source": "ETtoday財經"
+    },
+    {
+      "alert_id": "alt-nvda-earnings-aug26",
+      "level": "info",
+      "text": "NVDA 8/26 Q2 FY2027法說會：分析師預期營收$93-95B、EPS $2.06，AI加速器市佔80%。台積電(先進製程代工方)、聯發科(AI PC)、鴻海(AI Server)均有連動效應",
+      "tickers": [
+        "NVDA",
+        "2330",
+        "2454",
+        "2317",
+        "TSM"
+      ],
+      "url": "https://intellectia.ai/blog/nvda-earnings-preview-august-2026",
+      "source": "intellectia.ai / FinanceCalendar"
+    },
+    {
+      "alert_id": "alt-tsla-cybercab-charging",
+      "level": "info",
+      "text": "Tesla Austin Cybercab無線充電站許可文件曝光+Einride訂購500輛Tesla Semi，TSLA大漲4.2%至$351.23；Robotaxi商業化題材持續發酵",
+      "tickers": [
+        "TSLA"
+      ],
+      "url": "https://markets.financialcontent.com/stocks/article/stockstory-2026-8-19-tesla-tsla-stock-is-up-what-you-need-to-know",
+      "source": "FinancialContent / TheStreet"
+    },
+    {
+      "alert_id": "alt-treasury-buyback-doubled",
+      "level": "info",
+      "text": "美財政部倍增長債回購上限($2B→$4B)，聚焦20-30年期，US10Y從高點回落至4.70%；短期正面但結構性利率壓力未解",
+      "tickers": [
+        "2330",
+        "TSM",
+        "NVDA"
+      ],
+      "url": "https://www.cnbc.com/2026/08/18/stock-market-today-live-updates.html",
+      "source": "CNBC"
+    }
+  ],
+  "sector_rotation": {
+    "strong": [
+      "汽車/EV(TSLA Robotaxi)",
+      "健康醫療",
+      "傳統製造/AI Server(鴻海)",
+      "防禦型(金融/電信)"
+    ],
+    "weak": [
+      "記憶體(MU/WDC)",
+      "費半整體",
+      "台股電子股"
+    ],
+    "watch": [
+      "台積電先進製程(NVDA法說後)",
+      "封測族群(SOX走向)",
+      "AI PC(聯發科Q3業績)"
+    ]
+  },
+  "whats_changed": {
+    "compared_to": "股市-開盤前-20260818.md",
+    "compared_to_date": "2026-08-18",
+    "new": [
+      {
+        "type": "stock_direction",
+        "summary": "特斯拉(TSLA) 方向翻轉: neutral → bullish",
+        "ticker": "TSLA",
+        "from": "neutral",
+        "to": "bullish",
+        "tickers": [
+          "TSLA"
+        ]
+      },
+      {
+        "type": "stock_direction",
+        "summary": "台積電ADR(TSM) 方向翻轉: neutral → bearish",
+        "ticker": "TSM",
+        "from": "neutral",
+        "to": "bearish",
+        "tickers": [
+          "TSM"
+        ]
+      },
+      {
+        "type": "alert",
+        "summary": "新警示: Fed 7月會議紀錄偏鷹：多數委員認為若通膨未降溫、利率可能需進一步上調。殖利率雖短暫受財政部回購壓低，但結構性升息風險",
+        "ticker": "",
+        "from": "",
+        "to": "warning",
+        "tickers": [
+          "2330",
+          "2454",
+          "NVDA",
+          "AAPL",
+          "TSM"
+        ]
+      },
+      {
+        "type": "alert",
+        "summary": "新警示: SOX費半8/18重挫-4.9%（記憶體MU/WDC/AMD為重災區），是台股8/19電子股無力主因；8/19跌幅收斂至",
+        "ticker": "",
+        "from": "",
+        "to": "warning",
+        "tickers": [
+          "2330",
+          "2454",
+          "TSM",
+          "NVDA"
+        ]
+      },
+      {
+        "type": "alert",
+        "summary": "新警示: Tesla Austin Cybercab無線充電站許可文件曝光+Einride訂購500輛Tesla Semi，TSL",
+        "ticker": "",
+        "from": "",
+        "to": "info",
+        "tickers": [
+          "TSLA"
+        ]
+      },
+      {
+        "type": "alert",
+        "summary": "新警示: 美財政部倍增長債回購上限($2B→$4B)，聚焦20-30年期，US10Y從高點回落至4.70%；短期正面但結構性利率壓",
+        "ticker": "",
+        "from": "",
+        "to": "info",
+        "tickers": [
+          "2330",
+          "TSM",
+          "NVDA"
+        ]
+      }
+    ],
+    "strengthened": [],
+    "removed": [
+      {
+        "type": "alert",
+        "summary": "警示移除: alt-iran-ceasefire-expiry",
+        "ticker": "",
+        "from": "warning",
+        "to": "",
+        "tickers": [
+          "2330",
+          "2317",
+          "NVDA",
+          "TSLA"
+        ]
+      },
+      {
+        "type": "alert",
+        "summary": "警示移除: alt-aapl-redburn-upgrade",
+        "ticker": "",
+        "from": "info",
+        "to": "",
+        "tickers": [
+          "AAPL"
+        ]
+      },
+      {
+        "type": "alert",
+        "summary": "警示移除: alt-empire-state-manufacturing",
+        "ticker": "",
+        "from": "info",
+        "to": "",
+        "tickers": []
+      }
+    ]
+  }
+}

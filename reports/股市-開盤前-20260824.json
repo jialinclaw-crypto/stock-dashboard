@@ -1,0 +1,405 @@
+{
+  "_schema_version": 3,
+  "type": "morning",
+  "report_file": "股市-開盤前-20260824.md",
+  "date": "2026-08-24",
+  "weekday": "週一",
+  "generated_at": "2026-08-24T07:34:56+08:00",
+  "market_view": {
+    "level": "cautiously_neutral",
+    "confidence": 0.55,
+    "headline": "美股8/21止跌回升（道瓊+0.98%/S&P+0.43%/Nasdaq+0.43%），VIX降至2026年低點15.13但SOX費半仍逆勢-0.51%；TSLA大漲+5.14%，NVDA穩定$216.85；本週關鍵：NVDA Q2法說8/26（EPS預期$2.09）+ Jackson Hole Warsh首演講8/28；台股週一料小幅跟漲，法說前維持觀望"
+  },
+  "indices": [
+    {
+      "name": "道瓊工業",
+      "ticker": "DJI",
+      "value": 53277,
+      "change_pct": 0.98,
+      "trend": "bullish",
+      "note": "8/21 全面回升，消費/工業板塊領漲，Walmart 重挫影響逐步消散"
+    },
+    {
+      "name": "S&P 500",
+      "ticker": "SPX",
+      "value": 7674,
+      "change_pct": 0.43,
+      "trend": "bullish",
+      "note": "8/21 溫和回升，但半導體弱勢抑制漲幅；距前高有空間"
+    },
+    {
+      "name": "Nasdaq 綜合",
+      "ticker": "COMP",
+      "value": 26180,
+      "change_pct": 0.43,
+      "trend": "bullish",
+      "note": "8/21 回升，TSLA貢獻明顯；NVDA法說前科技股謹慎偏多"
+    },
+    {
+      "name": "費城半導體",
+      "ticker": "SOX",
+      "value": 11740,
+      "change_pct": -0.51,
+      "trend": "bearish",
+      "note": "8/21 逆勢下跌 -0.51%，即便大盤回升仍走弱，AI晶片資本支出回收疑慮持續"
+    },
+    {
+      "name": "VIX 恐慌指數",
+      "ticker": "VIX",
+      "value": 15.13,
+      "change_pct": -5.50,
+      "trend": "bullish",
+      "note": "8/21 降至2026年低點，市場恐慌解除，但也帶來自滿風險警示"
+    },
+    {
+      "name": "美 10Y 殖利率",
+      "ticker": "US10Y",
+      "value": 4.22,
+      "change_pct": null,
+      "trend": "neutral",
+      "note": "維持4.22%穩定，市場充分定價Fed 9月降息25bps"
+    },
+    {
+      "name": "DXY 美元指數",
+      "ticker": "DXY",
+      "value": 102.5,
+      "change_pct": null,
+      "trend": "neutral",
+      "note": "小幅波動，Jackson Hole前維持中性"
+    }
+  ],
+  "stocks": [
+    {
+      "signal_id": "stk-2330-2026-08-24-morning",
+      "ticker": "2330",
+      "name": "台積電",
+      "market": "TW",
+      "signal": "🟢",
+      "direction": "bullish",
+      "confidence": 0.62,
+      "view": "週五 +1.05% 收回 NT$2,400 關鍵支撐，技術面改善；NVDA 8/26 法說為直接催化劑，若 AI 需求確認強勁，CoWoS 封裝訂單能見度提升，目標 NT$2,550",
+      "rationale": "NVDA法說前TSMC最直接受益者，技術面企穩MA20支撐，風險報酬比偏正面",
+      "price": 2400,
+      "change_pct": 1.05,
+      "support": 2350,
+      "resistance": 2500,
+      "stop_loss": 2300,
+      "target": 2550,
+      "technicals": {
+        "rsi14": 55,
+        "macd": "轉正，金叉雛形",
+        "ma_alignment": "價格>MA20(~2350)>MA50(~2320)，MA排列轉多"
+      },
+      "valuation": {
+        "pe": 25.0,
+        "pe_percentile_5y": 55,
+        "verdict": "合理偏高，AI溢價仍在"
+      },
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/2330.TW",
+        "https://www.wantgoo.com/stock/2330"
+      ],
+      "expires_at": "2026-08-24T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-2454-2026-08-24-morning",
+      "ticker": "2454",
+      "name": "聯發科",
+      "market": "TW",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.50,
+      "view": "Q2 淨利 YoY-12.6%、手機收入 YoY-20%，但 AI ASIC Q4 量產如期、Smart Edge+26%；NT$3,785 技術中性，等待手機回暖或 AI ASIC 量產確認再積極做多",
+      "rationale": "Q2財報手機端疲弱拖累利潤，雖AI方向正確但短期利空尚未完全消化",
+      "price": 3785,
+      "change_pct": 2.30,
+      "support": 3600,
+      "resistance": 4000,
+      "stop_loss": 3500,
+      "target": 4000,
+      "technicals": {
+        "rsi14": 48,
+        "macd": "負值但趨平，動能回溫中",
+        "ma_alignment": "價格接近MA20，排列中性"
+      },
+      "valuation": {
+        "pe": 18.0,
+        "pe_percentile_5y": 40,
+        "verdict": "合理估值，但利潤下修壓力需消化"
+      },
+      "sources": [
+        "https://www.investing.com/news/transcripts/earnings-call-transcript-mediatek-q2-2026-revenue-beats-guidance-as-ai-push-grows-93CH-4826949",
+        "https://tw.stock.yahoo.com/quote/2454.TW/technical-analysis"
+      ],
+      "expires_at": "2026-08-24T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-2317-2026-08-24-morning",
+      "ticker": "2317",
+      "name": "鴻海",
+      "market": "TW",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.55,
+      "view": "Q2 EPS NT$4.27、稅後淨利 NT$599 億均為 Q2 歷史新高（YoY+35%），AI 伺服器全年出貨倍增，但股價 NT$246.50 反應平淡；P/E 12x 具相對低估吸引力，等待量能突破 NT$260 壓力再確認",
+      "rationale": "基本面極強但股價未能反應，需確認外資是否在出貨；靜待技術突破信號",
+      "price": 246.5,
+      "change_pct": 0.00,
+      "support": 240,
+      "resistance": 260,
+      "stop_loss": 235,
+      "target": 268,
+      "technicals": {
+        "rsi14": 50,
+        "macd": "接近零軸，方向待確認",
+        "ma_alignment": "中性排列，需突破均線壓力"
+      },
+      "valuation": {
+        "pe": 12.0,
+        "pe_percentile_5y": 35,
+        "verdict": "相對低估，AI伺服器成長未充分反映"
+      },
+      "sources": [
+        "https://www.foxconn.com/zh-tw/press-center/press-releases/latest-news/2017",
+        "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%B4%BB%E6%B5%B7%E5%B0%87%E6%96%BC115%E5%B9%B48%E6%9C%8812%E6%97%A5%E5%8F%AC%E9%96%8B2026%E5%B9%B4%E7%AC%AC%E4%BA%8C%E5%AD%A3%E6%B3%95%E4%BA%BA%E8%AA%AA%E6%98%8E%E6%9C%83-074352587.html"
+      ],
+      "expires_at": "2026-08-24T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-NVDA-2026-08-24-morning",
+      "ticker": "NVDA",
+      "name": "輝達",
+      "market": "US",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.50,
+      "view": "法說前中性觀望。8/26 Q2 FY2027 法說市場預期 EPS $2.09、營收 ~$28.7B（YoY+50%+）；分析師 59:1 強烈買入，均價目標 $304.73；現價 $216.85 距 52 週高點 $236.54 有空間，但法說前風險不對稱，建議法說後確認方向再行動",
+      "rationale": "法說前最大不確定性，結果將決定全球半導體供應鏈方向，不建議重倉進入法說",
+      "price": 216.85,
+      "change_pct": null,
+      "support": 205,
+      "resistance": 230,
+      "stop_loss": 200,
+      "target": 250,
+      "technicals": {
+        "rsi14": 52,
+        "macd": "中性，法說前波動收窄",
+        "ma_alignment": "均線排列中性，靜待法說催化"
+      },
+      "valuation": {
+        "pe": 35.0,
+        "pe_percentile_5y": 70,
+        "verdict": "高估值需強勁法說支撐，AI成長溢價合理但風險高"
+      },
+      "sources": [
+        "https://finance.yahoo.com/markets/stocks/articles/history-says-happen-nvidia-stock-155700687.html",
+        "https://stockanalysis.com/stocks/nvda/"
+      ],
+      "expires_at": "2026-08-24T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-TSLA-2026-08-24-morning",
+      "ticker": "TSLA",
+      "name": "特斯拉",
+      "market": "US",
+      "signal": "🟢",
+      "direction": "bullish",
+      "confidence": 0.58,
+      "view": "週五大漲 +5.14% 至 $362.86，突破前高並轉強；動能明顯改善，RSI ~62 尚未過熱。可能受 Robotaxi 進展或宏觀情緒改善帶動，技術面多頭確立；建議等待 $340-350 回測或 $380 突破確認後擇機佈局",
+      "rationale": "技術突破加上動能翻多，+5.14%大漲後需確認守穩$350以上支撐",
+      "price": 362.86,
+      "change_pct": 5.14,
+      "support": 340,
+      "resistance": 380,
+      "stop_loss": 335,
+      "target": 395,
+      "technicals": {
+        "rsi14": 62,
+        "macd": "多頭信號，柱狀體擴大",
+        "ma_alignment": "價格大幅突破均線，多頭排列確立"
+      },
+      "valuation": {
+        "pe": 80.0,
+        "pe_percentile_5y": 60,
+        "verdict": "高溢價，但EV+Robotaxi成長邏輯支撐"
+      },
+      "sources": [
+        "https://www.tradingkey.com/news/market-movers/262124793-market-movers-tsla-20260821",
+        "https://finance.yahoo.com/quote/TSLA/"
+      ],
+      "expires_at": "2026-08-24T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-AAPL-2026-08-24-morning",
+      "ticker": "AAPL",
+      "name": "蘋果",
+      "market": "US",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.55,
+      "view": "週五微跌 -0.63% 至 $309.35；P/E 35.6x 偏高，分析師均價目標與現價差距有限，缺乏明確催化劑；Apple Intelligence 落地情況為中期關鍵，短期維持中性",
+      "rationale": "高P/E缺乏短期催化劑，技術面弱於大盤，但品牌護城河支撐下行風險有限",
+      "price": 309.35,
+      "change_pct": -0.63,
+      "support": 300,
+      "resistance": 320,
+      "stop_loss": 295,
+      "target": 320,
+      "technicals": {
+        "rsi14": 48,
+        "macd": "弱勢偏空，低於零軸",
+        "ma_alignment": "價格在MA20下方，排列偏弱"
+      },
+      "valuation": {
+        "pe": 35.6,
+        "pe_percentile_5y": 72,
+        "verdict": "偏高估值，需Apple Intelligence驅動新成長週期"
+      },
+      "sources": [
+        "https://ts2.tech/en/apple-stock-slips-as-35-6-times-p-e-leaves-5-5-to-wall-street-target/",
+        "https://finance.yahoo.com/quote/AAPL/"
+      ],
+      "expires_at": "2026-08-24T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-TSM-2026-08-24-morning",
+      "ticker": "TSM",
+      "name": "台積電ADR",
+      "market": "US",
+      "signal": "🟢",
+      "direction": "bullish",
+      "confidence": 0.60,
+      "view": "與 2330 高度連動，參考價 ~$415；美股市場週五回升環境有利 TSM；NVDA 法說前謹慎偏多，法說正面確認 AI 晶片需求後可望突破 $430 壓力，目標 $445",
+      "rationale": "AI晶片需求法說催化在即，TSM ADR與2330同步，技術面偏多",
+      "price": 415.0,
+      "change_pct": null,
+      "support": 400,
+      "resistance": 430,
+      "stop_loss": 395,
+      "target": 445,
+      "technicals": {
+        "rsi14": 54,
+        "macd": "輕微正值，中性偏多",
+        "ma_alignment": "價格在均線之上，多頭排列"
+      },
+      "valuation": {
+        "pe": 24.0,
+        "pe_percentile_5y": 52,
+        "verdict": "合理估值，AI溢價支撐"
+      },
+      "sources": [
+        "https://www.investing.com/equities/taiwan-semicond.manufacturing-co",
+        "https://finance.yahoo.com/quote/TSM/"
+      ],
+      "expires_at": "2026-08-24T13:30:00+08:00"
+    }
+  ],
+  "alerts": [
+    {
+      "alert_id": "alt-nvda-earnings-aug26",
+      "level": "warning",
+      "text": "NVDA Q2 FY2027 法說 8/26（美東）倒數2天：預期 EPS $2.09、營收 ~$28.7B（YoY+50%+），AI需求確認為全球半導體/AI供應鏈最重要催化劑，結果決定台積電、聯發科、SOX方向，法說前維持觀望",
+      "tickers": ["NVDA", "2330", "2454", "TSM"],
+      "url": "https://finance.yahoo.com/markets/stocks/articles/history-says-happen-nvidia-stock-155700687.html",
+      "source": "Yahoo Finance"
+    },
+    {
+      "alert_id": "alt-jackson-hole-warsh-2026",
+      "level": "warning",
+      "text": "Jackson Hole 年會 8/27-29：新任聯準會主席 Kevin Warsh（2026/5 就任，鷹派背景）將於 8/28 發表首次 Jackson Hole 演講，政策立場尚不明朗，若展現鷹派信號將壓制降息預期並衝擊成長股",
+      "tickers": ["DJI", "SPX", "COMP"],
+      "url": "https://www.regardsofwallstreet.com/news/jackson-hole-2026-dates-schedule-warsh-first-speech",
+      "source": "Regards of Wallstreet"
+    },
+    {
+      "alert_id": "alt-fed-sept-rate-cut",
+      "level": "info",
+      "text": "市場充分定價 Fed 9 月降息 25bps（機率 ~85%），10Y 殖利率穩定在 4.22%；Jackson Hole Warsh 演講為下一個政策信號節點，若改變預期將引發大幅市場重定價",
+      "tickers": ["US10Y", "SPX"],
+      "url": "https://fred.stlouisfed.org/graph/?g=qhh9",
+      "source": "FRED / St. Louis Fed"
+    },
+    {
+      "alert_id": "alt-sox-underperformance",
+      "level": "info",
+      "text": "SOX 費城半導體週五逆勢下跌 -0.51%（大盤漲日），連日弱於大盤，反映市場對 AI 資本支出可持續性與晶片庫存週期的疑慮，需等 NVDA 法說確認方向",
+      "tickers": ["SOX", "NVDA", "2330", "2454"],
+      "url": "https://www.nasdaq.com/market-activity/index/sox",
+      "source": "Nasdaq"
+    },
+    {
+      "alert_id": "alt-vix-complacency-risk",
+      "level": "info",
+      "text": "VIX 降至 2026 年低點 15.13（-5.50%），市場恐慌情緒顯著緩解，但同時出現「自滿風險」：若 NVDA 法說或 Warsh 演講出現負面意外，低波動率環境下的修正幅度可能更劇烈",
+      "tickers": ["VIX", "SPX"],
+      "url": "https://www.cnbc.com/2026/08/17/stock-market-volatility-vix-wall-street.html",
+      "source": "CNBC"
+    }
+  ],
+  "sector_rotation": {
+    "strong": ["AI伺服器/ODM（鴻海、廣達）", "電動車（TSLA）", "工業/國防"],
+    "weak": ["半導體設備（SOX持續弱勢）", "手機IC（聯發科手機端-20%）", "消費零售"],
+    "watch": ["AI晶片（NVDA法說後決定方向）", "台積電先進封裝（CoWoS/SoIC）", "金融/銀行（Jackson Hole後）"]
+  },
+  "whats_changed": {
+    "compared_to": "股市-開盤前-20260821.md",
+    "compared_to_date": "2026-08-21",
+    "new": [
+      {
+        "type": "alert",
+        "summary": "Jackson Hole 2026 新增：新主席 Warsh 首次演講（8/28），鷹派背景帶來政策不確定性，升息/降息路徑可能重定價",
+        "tickers": ["DJI", "SPX", "COMP"],
+        "alert_id": "alt-jackson-hole-warsh-2026"
+      },
+      {
+        "type": "alert",
+        "summary": "VIX 自滿風險新增：VIX 降至 2026 年低點 15.13，市場過度樂觀警示",
+        "tickers": ["VIX", "SPX"],
+        "alert_id": "alt-vix-complacency-risk"
+      }
+    ],
+    "strengthened": [
+      {
+        "type": "stock_direction",
+        "ticker": "TSLA",
+        "summary": "特斯拉方向由 neutral → bullish：週五大漲 +5.14%（$340→$362.86），技術多頭確立，信心由 0.45 升至 0.58",
+        "from": "neutral",
+        "to": "bullish"
+      },
+      {
+        "type": "stock_direction",
+        "ticker": "2330",
+        "summary": "台積電由 neutral → bullish：週五 +1.05% 收回 NT$2,400，NVDA 法說倒數加持，信心由 0.52 升至 0.62",
+        "from": "neutral",
+        "to": "bullish"
+      },
+      {
+        "type": "topic",
+        "summary": "整體市場方向由 cautiously_bearish → cautiously_neutral：美股三大指數週五全面回升，VIX大幅下滑，恐慌情緒消退",
+        "from": "cautiously_bearish",
+        "to": "cautiously_neutral"
+      },
+      {
+        "type": "alert",
+        "summary": "NVDA法說警示持續強化：距法說僅剩2天，重要性進一步提升至最高級別",
+        "alert_id": "alt-nvda-earnings-aug26",
+        "from": "warning",
+        "to": "warning"
+      }
+    ],
+    "removed": [
+      {
+        "type": "alert",
+        "summary": "alt-walmart-earnings-miss 移除：Walmart 8/20 財報事件已過，市場衝擊消化完畢，大盤週五回升確認",
+        "alert_id": "alt-walmart-earnings-miss",
+        "tickers": ["WMT"]
+      },
+      {
+        "type": "alert",
+        "summary": "alt-sector-rotation-tech-to-value 移除：週五大盤回升且TSLA、台積電多數科技股轉多，純防禦板塊輪動信號暫時減弱",
+        "alert_id": "alt-sector-rotation-tech-to-value",
+        "tickers": ["SOX"]
+      }
+    ]
+  }
+}

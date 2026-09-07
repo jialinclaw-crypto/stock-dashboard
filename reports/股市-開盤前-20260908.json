@@ -1,0 +1,438 @@
+{
+  "_schema_version": 3,
+  "type": "morning",
+  "report_file": "股市-開盤前-20260908.md",
+  "date": "2026-09-08",
+  "weekday": "週二",
+  "generated_at": "2026-09-08T07:34:47+08:00",
+  "market_view": {
+    "level": "cautiously_bearish",
+    "confidence": 0.62,
+    "headline": "NFP+16.2萬逼升息（9/16 FOMC升息機率66%）、10Y殖利率飆至4.82%，美股面臨後勞工節升息壓力；但AI基本面依然強勁（NVDA Q2 EPS $2.22大超預期、鴻海AI伺服器首破50%佔比+52%）；台股TAIEX昨收47,041（+1.05%），今日謹慎開盤、AI供應鏈相對抗跌"
+  },
+  "indices": [
+    {
+      "name": "道瓊工業",
+      "ticker": "DJI",
+      "value": 53414,
+      "change_pct": -0.51,
+      "trend": "bearish",
+      "note": "9/4 小跌，NFP超強後升息疑慮壓制反彈；9/7休市，今日重開面對政策不確定性"
+    },
+    {
+      "name": "S&P 500",
+      "ticker": "SPX",
+      "value": 7719,
+      "change_pct": -0.38,
+      "trend": "bearish",
+      "note": "9/4 溫和收跌，高估值板塊受殖利率上升壓力；FOMC升息預期為近期最大風險"
+    },
+    {
+      "name": "Nasdaq 綜合",
+      "ticker": "COMP",
+      "value": 26507,
+      "change_pct": -0.29,
+      "trend": "bearish",
+      "note": "9/4 跌幅相對較小；NVDA法說後AI股提供支撐，但利率敏感性高"
+    },
+    {
+      "name": "費城半導體",
+      "ticker": "SOX",
+      "value": 12050,
+      "change_pct": -0.2,
+      "trend": "neutral",
+      "note": "估值；NVDA Q2大幅超預期應有所提振，但升息環境壓制多頭動能"
+    },
+    {
+      "name": "VIX 恐慌指數",
+      "ticker": "VIX",
+      "value": 14.8,
+      "change_pct": 0.0,
+      "trend": "neutral",
+      "note": "維持低位，但升息確認後波動率有上升空間；短線自滿風險仍存"
+    },
+    {
+      "name": "美 10Y 殖利率",
+      "ticker": "US10Y",
+      "value": 4.82,
+      "change_pct": null,
+      "trend": "bearish",
+      "note": "NFP後飆升至4.82%，2023年11月以來新高；對高本益比成長股構成最大壓力"
+    },
+    {
+      "name": "DXY 美元指數",
+      "ticker": "DXY",
+      "value": 99.16,
+      "change_pct": 0.25,
+      "trend": "neutral",
+      "note": "NFP後小幅走強，但週中受Warsh言論打壓；Fed升息確認可能推升DXY"
+    },
+    {
+      "name": "台股加權指數",
+      "ticker": "TAIEX",
+      "value": 47041,
+      "change_pct": 1.05,
+      "trend": "bullish",
+      "note": "9/7強收+1.05%（+490點）；AI伺服器題材發酵，今日（9/8）面對美股升息壓力測試"
+    }
+  ],
+  "stocks": [
+    {
+      "signal_id": "stk-2330-2026-09-08-morning",
+      "ticker": "2330",
+      "name": "台積電",
+      "market": "TW",
+      "signal": "🟢",
+      "direction": "bullish",
+      "confidence": 0.68,
+      "view": "NVDA Q2大幅超預期確認CoWoS/先進封裝需求強勁，台積電為最直接受益者；TAIEX 9/7強收+1.05%，技術面多頭格局維持；估計NT$2,450附近，壓力NT$2,500；升息環境為風險但AI需求強度可對沖",
+      "rationale": "NVDA Q2超預期+鴻海AI伺服器+52%雙重確認AI需求，台積電基本面最硬",
+      "price": 2450,
+      "change_pct": null,
+      "support": 2380,
+      "resistance": 2500,
+      "stop_loss": 2320,
+      "target": 2550,
+      "technicals": {
+        "rsi14": 63,
+        "macd": "正值，多頭格局維持",
+        "ma_alignment": "價格>MA20(~2380)>MA50(~2340)，多頭排列穩固"
+      },
+      "valuation": {
+        "pe": 24.5,
+        "pe_percentile_5y": 58,
+        "verdict": "合理偏高，AI需求確認後溢價支撐"
+      },
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/2330.TW",
+        "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2026"
+      ],
+      "expires_at": "2026-09-08T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-2454-2026-09-08-morning",
+      "ticker": "2454",
+      "name": "聯發科",
+      "market": "TW",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.55,
+      "view": "近期大漲至NT$4,780（從8/24報告NT$3,785漲幅+26%），RSI進入超買區（~72）；AI ASIC Q4量產如期、Smart Edge持續成長為長期利多；但急漲後短線整理風險高，不宜追高",
+      "rationale": "長線AI方向正確但短線超買需整理，漲幅已反映近期利多",
+      "price": 4780,
+      "change_pct": 8.27,
+      "support": 4580,
+      "resistance": 4900,
+      "stop_loss": 4400,
+      "target": 5000,
+      "technicals": {
+        "rsi14": 72,
+        "macd": "強勢正值，但動能可能過熱",
+        "ma_alignment": "大幅超越MA20/MA50，多頭但超買"
+      },
+      "valuation": {
+        "pe": 23.9,
+        "pe_percentile_5y": 52,
+        "verdict": "急漲後估值偏高，需業績確認支撐"
+      },
+      "sources": [
+        "https://en.macromicro.me/series/2744/tw-2454_tw-close",
+        "https://finance.yahoo.com/quote/2454.TW/"
+      ],
+      "expires_at": "2026-09-08T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-2317-2026-09-08-morning",
+      "ticker": "2317",
+      "name": "鴻海",
+      "market": "TW",
+      "signal": "🟢",
+      "direction": "bullish",
+      "confidence": 0.72,
+      "view": "8月AI伺服器帶動營收NT$9,218億（YoY+52%，歷史次高）；AI伺服器業務首次超越消費電子（>50%營收）；股價估計NT$265，突破前壓力NT$260，P/E ~12x估值仍低；Young Liu目標2026年AI機架出貨翻倍可能超越",
+      "rationale": "月報業績大幅超預期，AI伺服器里程碑確認，估值低具補漲空間",
+      "price": 265,
+      "change_pct": null,
+      "support": 255,
+      "resistance": 275,
+      "stop_loss": 248,
+      "target": 285,
+      "technicals": {
+        "rsi14": 63,
+        "macd": "轉正，突破形態",
+        "ma_alignment": "突破MA20/MA50壓力，多頭排列形成中"
+      },
+      "valuation": {
+        "pe": 12.0,
+        "pe_percentile_5y": 38,
+        "verdict": "低估，AI伺服器成長溢價尚未充分反映"
+      },
+      "sources": [
+        "https://www.intellinews.com/foxconn-posts-record-august-sales-in-taiwan-on-ai-server-demand-465979/",
+        "https://www.taipeitimes.com/News/biz/archives/2026/09/07/2003863790"
+      ],
+      "expires_at": "2026-09-08T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-NVDA-2026-09-08-morning",
+      "ticker": "NVDA",
+      "name": "輝達",
+      "market": "US",
+      "signal": "🟢",
+      "direction": "bullish",
+      "confidence": 0.70,
+      "view": "財年Q2 EPS $2.22（大超預期$2.09）、營收$96.2B（YoY+106%）；Q3指引$108B（YoY+89%）；收購Hugging Face $129億強化AI生態；但升息（10Y 4.82%）對高本益比構成壓力，短線需確認法說漲幅守得住",
+      "rationale": "超強業績+收購確認AI生態布局，基本面無懈可擊；升息環境為唯一顧慮",
+      "price": 232.0,
+      "change_pct": null,
+      "support": 222,
+      "resistance": 242,
+      "stop_loss": 218,
+      "target": 250,
+      "technicals": {
+        "rsi14": 60,
+        "macd": "正值，法說後多頭格局",
+        "ma_alignment": "大幅超越MA20/MA50，強勢多頭"
+      },
+      "valuation": {
+        "pe": 26.2,
+        "pe_percentile_5y": 48,
+        "verdict": "相對合理，高成長（EPS YoY+120%）支撐估值"
+      },
+      "sources": [
+        "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2026",
+        "https://www.fool.com/investing/2026/08/31/prediction-this-is-where-nvidia-stock-will-be-when/"
+      ],
+      "expires_at": "2026-09-08T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-TSLA-2026-09-08-morning",
+      "ticker": "TSLA",
+      "name": "特斯拉",
+      "market": "US",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.48,
+      "view": "Cybercab 發表後多位分析師評估混合至失望，執行細節模糊；升息環境對TSLA高本益比估值不利；多空分歧明顯，維持觀望，等待方向確認",
+      "rationale": "Cybercab受挫+升息壓力雙重不利，但長期FSD潛力仍存；短線不確定性高",
+      "price": 315.0,
+      "change_pct": null,
+      "support": 300,
+      "resistance": 335,
+      "stop_loss": 295,
+      "target": 345,
+      "technicals": {
+        "rsi14": 45,
+        "macd": "接近零軸，方向待確認",
+        "ma_alignment": "中性，壓均線整理"
+      },
+      "valuation": {
+        "pe": 63.0,
+        "pe_percentile_5y": 45,
+        "verdict": "估值偏高，Cybercab落地不確定性下溢價難維持"
+      },
+      "sources": [
+        "https://finance.yahoo.com/quote/TSLA/",
+        "https://www.cnbc.com/quotes/TSLA"
+      ],
+      "expires_at": "2026-09-08T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-AAPL-2026-09-08-morning",
+      "ticker": "AAPL",
+      "name": "蘋果",
+      "market": "US",
+      "signal": "🟡",
+      "direction": "neutral",
+      "confidence": 0.52,
+      "view": "9/9 iPhone新品發表會（CEO Ternus首次主導），Apple Intelligence AI升級為焦點；YTD+21%表現優異，但升息環境（10Y 4.82%）對PE~37x有壓力；發表前「買預期」窗口，發表後注意「賣消息」風險",
+      "rationale": "9/9催化劑可能引發短線漲勢，但升息壓估值+賣消息風險相互抵消",
+      "price": 278.0,
+      "change_pct": null,
+      "support": 268,
+      "resistance": 290,
+      "stop_loss": 262,
+      "target": 295,
+      "technicals": {
+        "rsi14": 55,
+        "macd": "輕微正值，中性偏多",
+        "ma_alignment": "價格在MA20上方，排列偏多但動能放緩"
+      },
+      "valuation": {
+        "pe": 37.0,
+        "pe_percentile_5y": 70,
+        "verdict": "估值偏高，升息環境下溢價面臨壓力"
+      },
+      "sources": [
+        "https://finance.yahoo.com/markets/stocks/articles/ai-laggard-apple-sitting-pretty-150214875.html",
+        "https://finance.yahoo.com/quote/AAPL/"
+      ],
+      "expires_at": "2026-09-08T13:30:00+08:00"
+    },
+    {
+      "signal_id": "stk-TSM-2026-09-08-morning",
+      "ticker": "TSM",
+      "name": "台積電ADR",
+      "market": "US",
+      "signal": "🟢",
+      "direction": "bullish",
+      "confidence": 0.66,
+      "view": "TSM ADR $428.91（9/7），已突破前報告壓力$430；NVDA Q2確認AI需求強勁，目標$445；升息（10Y 4.82%）及DXY走強對ADR有估值壓力，但TSMC基本面強度足以支撐；今日（9/8）跟隨美股表現",
+      "rationale": "AI需求確認後TSMC ADR延續多頭，已突破前壓力位；升息為唯一風險",
+      "price": 428.91,
+      "change_pct": null,
+      "support": 415,
+      "resistance": 445,
+      "stop_loss": 408,
+      "target": 455,
+      "technicals": {
+        "rsi14": 63,
+        "macd": "正值，多頭格局",
+        "ma_alignment": "強勢多頭排列，均線向上"
+      },
+      "valuation": {
+        "pe": 24.5,
+        "pe_percentile_5y": 58,
+        "verdict": "合理偏高，AI溢價支撐"
+      },
+      "sources": [
+        "https://www.investing.com/equities/taiwan-semicond.manufacturing-co",
+        "https://finance.yahoo.com/quote/TSM/"
+      ],
+      "expires_at": "2026-09-08T13:30:00+08:00"
+    }
+  ],
+  "alerts": [
+    {
+      "alert_id": "alt-fed-sept-rate-hike",
+      "level": "warning",
+      "text": "Fed 9/16 FOMC升息25bps機率飆至66%（前次報告預期降息85%，方向完全逆轉）：8/5 NFP+16.2萬遠超預期（+5.3萬），Fed主席Warsh稱「通膨改善不夠」；10Y殖利率升至4.82%（2023年11月新高），為高估值成長股最大系統性風險",
+      "tickers": ["SPX", "COMP", "NVDA", "TSLA", "AAPL"],
+      "url": "https://www.chase.com/personal/investments/learning-and-insights/article/september-2026-rate-hike-now-expected-amid-energy-shocks",
+      "source": "Chase / CME FedWatch"
+    },
+    {
+      "alert_id": "alt-foxconn-record-aug-sales",
+      "level": "info",
+      "text": "鴻海8月AI伺服器帶動營收NT$9,218億（US$29.14B），YoY+52%，歷史單月次高；AI伺服器業務首次突破50%總營收里程碑，超越消費電子成為最大事業群；全年AI機架出貨目標翻倍進行中",
+      "tickers": ["2317", "NVDA"],
+      "url": "https://www.taipeitimes.com/News/biz/archives/2026/09/07/2003863790",
+      "source": "Taipei Times / Digitimes"
+    },
+    {
+      "alert_id": "alt-apple-iphone-launch-sept9",
+      "level": "info",
+      "text": "蘋果9/9 iPhone新品發表會（明日台北時間凌晨）：新CEO John Ternus首次主導，Apple Intelligence AI功能升級為焦點；AAPL YTD+21%，發表前「買預期」窗口，發表後留意「賣消息」風險",
+      "tickers": ["AAPL", "TSM", "2330"],
+      "url": "https://finance.yahoo.com/markets/stocks/articles/ai-laggard-apple-sitting-pretty-150214875.html",
+      "source": "Yahoo Finance"
+    },
+    {
+      "alert_id": "alt-nvda-huggingface-acquisition",
+      "level": "info",
+      "text": "NVDA宣布以$129億收購AI模型平台Hugging Face，為公司史上第二大收購（僅次於$200億Groq案）；鞏固從晶片到模型推論平台的AI全棧生態；Q2同時大幅超預期：EPS $2.22（vs $2.09）、營收$96.2B（YoY+106%）",
+      "tickers": ["NVDA", "2330", "TSM"],
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2026",
+      "source": "NVIDIA Newsroom / Motley Fool"
+    }
+  ],
+  "sector_rotation": {
+    "strong": ["AI伺服器供應鏈（鴻海/緯創/廣達）", "先進封裝（CoWoS）", "NVDA生態相關"],
+    "weak": ["高本益比成長股（升息壓估值）", "TSLA Robotaxi（執行疑慮）", "消費型消費電子"],
+    "watch": ["AAPL（9/9事件驅動）", "台積電（技術面多頭但注意升息）", "台幣匯率（DXY升強壓台幣）"]
+  },
+  "whats_changed": {
+    "compared_to": "股市-開盤前-20260824.md",
+    "compared_to_date": "2026-08-24",
+    "new": [
+      {
+        "type": "alert",
+        "summary": "Fed政策逆轉：從降息預期（85%）翻轉為升息預期（66%），NFP+16.2萬觸發",
+        "tickers": ["SPX", "COMP", "NVDA", "TSLA", "AAPL"],
+        "alert_id": "alt-fed-sept-rate-hike"
+      },
+      {
+        "type": "alert",
+        "summary": "鴻海8月AI伺服器業績創歷史次高（+52% YoY），AI伺服器首超50%總營收",
+        "tickers": ["2317", "NVDA"],
+        "alert_id": "alt-foxconn-record-aug-sales"
+      },
+      {
+        "type": "alert",
+        "summary": "蘋果9/9 iPhone發表會（CEO Ternus首次主導），為近期事件驅動催化劑",
+        "tickers": ["AAPL"],
+        "alert_id": "alt-apple-iphone-launch-sept9"
+      },
+      {
+        "type": "alert",
+        "summary": "NVDA宣布$129億收購Hugging Face；Q2 EPS $2.22大超預期，AI生態全棧整合",
+        "tickers": ["NVDA", "2330", "TSM"],
+        "alert_id": "alt-nvda-huggingface-acquisition"
+      },
+      {
+        "type": "stock_direction",
+        "summary": "鴻海 2317：neutral → bullish，8月業績+52%確認AI伺服器超強基本面",
+        "ticker": "2317",
+        "from": "neutral",
+        "to": "bullish"
+      },
+      {
+        "type": "stock_direction",
+        "summary": "聯發科 2454：方向維持neutral但價格從NT$3,785大漲至NT$4,780（+26%），信心降低（超買整理風險）",
+        "ticker": "2454",
+        "from": "neutral",
+        "to": "neutral"
+      }
+    ],
+    "strengthened": [
+      {
+        "type": "stock_direction",
+        "summary": "台積電 2330：bullish confidence 0.62→0.68，NVDA Q2超預期確認CoWoS需求，基本面強化",
+        "ticker": "2330",
+        "from": "bullish(0.62)",
+        "to": "bullish(0.68)"
+      },
+      {
+        "type": "stock_direction",
+        "summary": "NVDA：bullish confidence 0.60→0.70，Q2法說超預期+Hugging Face收購雙重催化強化多頭",
+        "ticker": "NVDA",
+        "from": "bullish(0.60)",
+        "to": "bullish(0.70)"
+      },
+      {
+        "type": "stock_direction",
+        "summary": "TSM ADR：bullish confidence 0.60→0.66，已突破前報告壓力$430（現$428.91貼近突破位）",
+        "ticker": "TSM",
+        "from": "bullish(0.60)",
+        "to": "bullish(0.66)"
+      }
+    ],
+    "removed": [
+      {
+        "type": "alert",
+        "summary": "alt-nvda-earnings-aug26：NVDA Q2法說已於8/26結束，結果超預期，事件已消化",
+        "alert_id": "alt-nvda-earnings-aug26"
+      },
+      {
+        "type": "alert",
+        "summary": "alt-jackson-hole-warsh-2026：Jackson Hole年會8/27-29已結束，Warsh鷹派信號已市場定價",
+        "alert_id": "alt-jackson-hole-warsh-2026"
+      },
+      {
+        "type": "alert",
+        "summary": "alt-fed-sept-rate-cut：Fed降息預期已完全逆轉（現為升息66%），原alert不再適用",
+        "alert_id": "alt-fed-sept-rate-cut"
+      },
+      {
+        "type": "alert",
+        "summary": "alt-sox-underperformance：SOX在NVDA法說超預期後已回升，相對弱勢現象已修正",
+        "alert_id": "alt-sox-underperformance"
+      },
+      {
+        "type": "alert",
+        "summary": "alt-vix-complacency-risk：VIX升息環境下性質改變，自滿風險已轉為升息風險，原alert置換",
+        "alert_id": "alt-vix-complacency-risk"
+      }
+    ]
+  }
+}

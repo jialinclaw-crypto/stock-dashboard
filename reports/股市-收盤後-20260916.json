@@ -1,0 +1,258 @@
+{
+  "schema_version": 3,
+  "type": "close",
+  "generated_at": "2026-09-16T14:02:07+08:00",
+  "expires_at": "2026-09-17T09:00:00+08:00",
+  "data_confidence_note": "TAIEX 9/16收盤為估計值（含除息-56.59pts）；三大法人詳細數據待確認；US股為9/15美東收盤；2330為除息日（參考價2378）；AAPL有兩份相互矛盾數據",
+  "market_summary": {
+    "taiex": {
+      "close": 45450,
+      "close_note": "估計值：9/15收45,511，今日3檔除息自動下調56.59點，調整後估計約45,450附近。精確收盤待官方確認。",
+      "prev_close": 45511,
+      "change_pts_ex_div_adjusted": -5,
+      "change_pts_raw_estimate": -61,
+      "volume_note": "9/15成交量縮至今年次低；今日數據待確認",
+      "ex_dividend_effect_pts": -56.59,
+      "key_events": [
+        "台積電(2330)除息7元，指數影響-55.64點",
+        "另2檔個股除息合計-0.95點",
+        "9/15大跌351點(-0.77%)，市場偏弱",
+        "9/15成交量今年次低"
+      ]
+    },
+    "institutional_flow": {
+      "note": "9/16盤後法人詳細數據尚未取得；最近可得資料為9/9，外資當日賣超台積電2,559張",
+      "foreign_net_B": null,
+      "investment_trust_net_B": null,
+      "dealer_net_B": null,
+      "data_date": "2026-09-09"
+    }
+  },
+  "stocks": [
+    {
+      "signal_id": "stk-2330-2026-09-16-close",
+      "ticker": "2330",
+      "name": "台積電",
+      "market": "TW",
+      "direction": "bullish",
+      "confidence": "medium",
+      "price": {
+        "close": 2378,
+        "close_note": "除息日參考價2378.0元；最後買進日(9/15)收盤2385元；配息7元（季配息歷史新高）",
+        "prev_close": 2385,
+        "dividend_ex_today_twd": 7,
+        "dividend_payment_date": "2026-10-08"
+      },
+      "rationale": "除息殖利率0.29%填息難度極低；歷史28次除息22次(79%)當日填息；外資持股69.29%長期高水位；AI CoWoS/HPC需求強勁；下次除息12/10維持7元。短線觀察外資是否趁除息借機出貨。",
+      "sources": [
+        "https://news.cnyes.com/news/id/6606965",
+        "https://tw.stock.yahoo.com/news/%E5%8F%B0%E7%A9%8D%E9%9B%BB%E7%AD%893%E6%AA%94%E5%80%8B%E8%82%A19-16%E9%99%A4%E6%81%AF-%E5%BD%B1%E9%9F%BF%E5%8F%B0%E8%82%A1%E6%8C%87%E6%95%B856-59%E9%BB%9E-091703278.html",
+        "https://www.sinotrade.com.tw/richclub/hotstock/%E5%8F%B0%E7%A9%8D%E9%9B%BB-2330-%E8%82%A1%E5%83%B9%E6%94%BB%E4%B8%8A1-650%E5%85%83%E6%96%B0%E9%AB%98"
+      ],
+      "expires_at": "2026-09-17T09:00:00+08:00"
+    },
+    {
+      "signal_id": "stk-2454-2026-09-16-close",
+      "ticker": "2454",
+      "name": "聯發科",
+      "market": "TW",
+      "direction": "bullish",
+      "confidence": "medium",
+      "price": {
+        "close": 4430,
+        "close_note": "今日收4430元，下跌130元(-2.85%)；9/15收4560元",
+        "prev_close": 4560,
+        "change_pct": -2.85,
+        "since_prev_signal_pct": 16.9
+      },
+      "rationale": "今日單日回調不改中期格局。自8/24訊號(3790元)以來累計+16.9%，AI Edge SoC（天璣旗艦）、車用IC持續擴張，SEMICON Taiwan 2026後效應延續。值得注意短線超漲後的回調風險。",
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/2454.TW",
+        "https://www.sinotrade.com.tw/richclub/hotstock/SEMICON-Taiwan-2026-%E5%8D%8A%E5%B0%8E%E9%AB%94%E5%B1%95%E5%BF%85%E7%9C%8B%E4%BA%AE%E9%BB%9E"
+      ],
+      "expires_at": "2026-09-17T09:00:00+08:00"
+    },
+    {
+      "signal_id": "stk-2317-2026-09-16-close",
+      "ticker": "2317",
+      "name": "鴻海",
+      "market": "TW",
+      "direction": "neutral",
+      "confidence": "low",
+      "price": {
+        "close": 259.5,
+        "close_note": "取自財報狗statementdog最近資料，確切日期不確定；8/24訊號為246元",
+        "prev_signal_price": 246,
+        "since_prev_signal_pct": 5.5
+      },
+      "rationale": "AI伺服器機架(GB200 NVL72)組裝受益，Blackwell出貨期稼動率高。股價從246小幅上漲。數據時間不確定，保守評neutral。",
+      "sources": [
+        "https://statementdog.com/analysis/2317"
+      ],
+      "expires_at": "2026-09-17T09:00:00+08:00"
+    },
+    {
+      "signal_id": "stk-NVDA-2026-09-16-close",
+      "ticker": "NVDA",
+      "name": "輝達",
+      "market": "US",
+      "direction": "bullish",
+      "confidence": "medium",
+      "price": {
+        "close": 212.39,
+        "close_note": "9/15美東收盤；前收218.29，日跌2.7%；前訊號(8/24)為216.85",
+        "prev_close_usd": 218.29,
+        "change_pct": -2.7,
+        "prev_signal_price": 216.85,
+        "since_prev_signal_pct": -2.1
+      },
+      "rationale": "下次Q3財報11/17，無近期催化劑，短期動能稍減。AI GPU需求基本面依然強勁（Blackwell出貨、H100延伸訂單），維持偏多但暫降為中信心等待財報確認。",
+      "sources": [
+        "https://finance.yahoo.com/quote/NVDA/history/",
+        "https://finance.yahoo.com/quote/NVDA/"
+      ],
+      "expires_at": "2026-09-17T09:00:00+08:00"
+    },
+    {
+      "signal_id": "stk-TSLA-2026-09-16-close",
+      "ticker": "TSLA",
+      "name": "特斯拉",
+      "market": "US",
+      "direction": "bullish",
+      "confidence": "medium",
+      "price": {
+        "close": 378.67,
+        "close_note": "9/15美東收盤，+0.63%；前訊號(8/24)為362.86",
+        "change_pct": 0.63,
+        "prev_signal_price": 362.86,
+        "since_prev_signal_pct": 4.4
+      },
+      "rationale": "自8/24訊號362.86→9/15收378.67，+4.4%，強勢延續。方向不變。",
+      "sources": [
+        "https://finance.yahoo.com/quote/TSLA/"
+      ],
+      "expires_at": "2026-09-17T09:00:00+08:00"
+    },
+    {
+      "signal_id": "stk-AAPL-2026-09-16-close",
+      "ticker": "AAPL",
+      "name": "蘋果",
+      "market": "US",
+      "direction": "neutral",
+      "confidence": "low",
+      "price": {
+        "close": 331.34,
+        "close_note": "9/15美東收盤；另有267.61報價，兩份來源互相矛盾，保守取331.34，低信心。前訊號(8/24)309.35。",
+        "close_alt": 267.61,
+        "close_alt_note": "存疑，可能為錯誤或不同時間點數據",
+        "prev_signal_price": 309.35
+      },
+      "rationale": "數據有歧異，無法確認精確收盤。若確認在330附近，代表自前訊號+7.1%，方向應升為bullish；若267則bearish。保守維持neutral待確認。",
+      "sources": [
+        "https://stockanalysis.com/stocks/aapl/history/",
+        "https://finance.yahoo.com/quote/AAPL/"
+      ],
+      "expires_at": "2026-09-17T09:00:00+08:00"
+    },
+    {
+      "signal_id": "stk-TSM-2026-09-16-close",
+      "ticker": "TSM",
+      "name": "台積電ADR",
+      "market": "US",
+      "direction": "neutral",
+      "confidence": "medium",
+      "price": {
+        "close": 404.98,
+        "close_note": "9/15美東收盤，+0.63%；前訊號(8/24)為413.83",
+        "change_pct": 0.63,
+        "prev_signal_price": 413.83,
+        "since_prev_signal_pct": -2.1
+      },
+      "rationale": "台積電除息對ADR有技術性影響（每股配息7元/30≈0.23美元理論調整）。從前訊號413.83→404.98，回落2.1%，短線動能稍弱。從bullish調整至neutral，等待除息消化後走勢確認。",
+      "sources": [
+        "https://finance.yahoo.com/quote/TSM/"
+      ],
+      "expires_at": "2026-09-17T09:00:00+08:00"
+    }
+  ],
+  "alerts": [
+    {
+      "alert_id": "alert-2026-09-16-tsmc-ex-div-7",
+      "level": "high",
+      "title": "台積電(2330)今日除息7元——季配息歷史新高，填息進度觀察",
+      "url": "https://news.cnyes.com/news/id/6606965",
+      "source": "鉅亨網",
+      "summary": "台積電2026Q1季配息NT$7元/股，創歷史最高。今日(9/16)除息，參考價2378元，前收2385元。殖利率0.29%，歷史填息速度極快（79%當日）。現金10/8入帳。指數自然下調55.64點。下次12/10再配7元。",
+      "expires_at": "2026-09-17T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-2026-09-16-mediatek-mid-term-surge",
+      "level": "medium",
+      "title": "聯發科(2454)今日回調-2.85%，但中期自8月累漲+16.9%",
+      "url": "https://tw.stock.yahoo.com/quote/2454.TW",
+      "source": "Yahoo Stock TW",
+      "summary": "聯發科今日收4430元，單日回調130元。自8/24參考(3790元)以來累計+16.9%，AI Edge SoC及車用IC題材持續。單日回調視為獲利了結，不改中期偏多格局。",
+      "expires_at": "2026-09-17T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-2026-09-16-taiex-consecutive-weakness",
+      "level": "medium",
+      "title": "台股連日弱勢：9/15跌351點+今日除息下調56點",
+      "url": "https://finance.ettoday.net/news/3237780",
+      "source": "ETtoday財經雲",
+      "summary": "台股9/15大跌351點至45,511，成交量縮至今年次低。9/16三檔除息合計下調指數56.59點。市場短線偏謹慎，台積電填息表現是今日情緒轉折指標。需留意是否出現技術性支撐。",
+      "expires_at": "2026-09-17T09:00:00+08:00"
+    },
+    {
+      "alert_id": "alert-2026-09-16-nvda-pre-earnings-vacuum",
+      "level": "info",
+      "title": "NVDA進入財報空窗期——Q3財報11/17，近期小幅回落至212",
+      "url": "https://finance.yahoo.com/quote/NVDA/",
+      "source": "Yahoo Finance",
+      "summary": "NVDA 9/15收212.39，較前收218.29跌2.7%。下次Q3財報11/17，中間無重大催化。AI需求基本面強但進入「等待財報確認」空窗，短期可能橫盤震盪。",
+      "expires_at": "2026-09-17T09:00:00+08:00"
+    }
+  ],
+  "whats_changed": {
+    "vs_report": "股市-收盤後-20260824",
+    "vs_date": "2026-08-24",
+    "summary": "聯發科方向由neutral升為bullish（累漲+16.9%）；TSM由bullish降為neutral（回落2.1%）；NVDA維持bullish但价格小幅回落；TSLA bullish續強；台積電除息後評估維持bullish；AAPL數據衝突保守評neutral。",
+    "stock_direction_changes": [
+      {
+        "ticker": "2454",
+        "name": "聯發科",
+        "prev_direction": "neutral",
+        "new_direction": "bullish",
+        "reason": "8/24→9/16累計漲幅+16.9%（3790→4430），AI Edge SoC動能確認"
+      },
+      {
+        "ticker": "TSM",
+        "name": "台積電ADR",
+        "prev_direction": "bullish",
+        "new_direction": "neutral",
+        "reason": "413.83→404.98，回落2.1%；台積電除息技術影響，短線動能稍弱，等待確認"
+      }
+    ],
+    "alerts_added": [
+      "alert-2026-09-16-tsmc-ex-div-7",
+      "alert-2026-09-16-mediatek-mid-term-surge",
+      "alert-2026-09-16-taiex-consecutive-weakness",
+      "alert-2026-09-16-nvda-pre-earnings-vacuum"
+    ],
+    "alerts_removed_from_prev": [
+      "alert-2026-08-24-nvda-earnings-imminent",
+      "alert-2026-08-24-taiex-45k-broken-again",
+      "alert-2026-08-24-umc-limit-up-result",
+      "alert-2026-08-24-memory-sector-hot"
+    ],
+    "price_changes": {
+      "2330": { "prev": 2400, "now": 2378, "note": "除息-7元調整後參考價，前收2385" },
+      "2454": { "prev": 3790, "now": 4430, "pct": "+16.9%" },
+      "2317": { "prev": 246, "now": 259.5, "pct": "+5.5%", "note": "數據日期不確定" },
+      "NVDA": { "prev": 216.85, "now": 212.39, "pct": "-2.1%" },
+      "TSLA": { "prev": 362.86, "now": 378.67, "pct": "+4.4%" },
+      "AAPL": { "prev": 309.35, "now": 331.34, "pct": "+7.1%", "note": "另有267.61報價，數據有歧異" },
+      "TSM":  { "prev": 413.83, "now": 404.98, "pct": "-2.1%" }
+    }
+  }
+}
